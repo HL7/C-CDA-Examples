@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
+    <!-- Allergies (entries required) section template -->
+    <code code="48765-2" codeSystem="2.16.840.1.113883.6.1"/>
+    <title>Allergies, Adverse Reactions and Alerts</title>
+    <text>No Known Drug Allergies</text>
+    <entry typeCode="DRIV">
+        <!-- Allergy Concern Act -->
+        <act classCode="ACT" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+            <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+            <!-- SDWG supports 48765-2 or CONC in the code element -->
+            <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+            <statusCode code="active"/>
+            <!--currently tracked concerns are active concerns-->
+            <effectiveTime>
+                <low value="20140104"/>
+                <!--show time when the concern first began being tracked-->
+            </effectiveTime>
+            <entryRelationship typeCode="SUBJ">
+                <!-- No Known Drug Allergies -->
+                <!-- The negationInd = true negates the observation/value -->
+                <!-- The use of negationInd corresponds with the newer Observation.valueNegationInd -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <!-- allergy - intolerance observation template -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                    <id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                    <statusCode code="completed"/>
+                    <!-- N/A - author/time records when this assertion was made -->
+                    <effectiveTime nullFlavor="NA"/>
+                    <value xsi:type="CD" code="416098002" displayName="Drug allergy (disorder)"
+                        codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                    <author>
+                        <time value="20140104123506+0500"/>
+                        <assignedAuthor>
+                            <id extension="99999999" root="2.16.840.1.113883.4.6"/>
+                            <code code="200000000X" codeSystem="2.16.840.1.113883.6.101"
+                                displayName="Allopathic &amp; Osteopathic Physicians"/>
+                            <telecom use="WP" value="tel:555-555-1002"/>
+                            <assignedPerson>
+                                <name>
+                                    <given>Henry</given>
+                                    <family>Seven</family>
+                                </name>
+                            </assignedPerson>
+                        </assignedAuthor>
+                    </author>
+                    <!-- In C-CDA R2.1 the participant is required. -->
+                    <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                            <playingEntity classCode="MMAT">
+                                <code nullFlavor="NA"/>
+                            </playingEntity>
+                        </participantRole>
+                    </participant>
+                </observation>
+            </entryRelationship>
+        </act>
+    </entry>
+</section>
+

@@ -1,0 +1,130 @@
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+	<!-- Allergies (entries required) section template -->
+	<code code="48765-2" codeSystem="2.16.840.1.113883.6.1"/>
+	<title>Allergies, Adverse Reactions and Alerts</title>
+	<text>
+		<table>
+			<thead>
+				<tr>
+					<th>Allergen</th>
+					<th>Reaction</th>
+					<th>Reaction Severity</th>
+					<th>Documentation Date</th>
+					<th>Start Date</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ID="allergy2">
+					<td ID="allergy2allergen">Penicillin</td>
+					<td ID="allergy2reaction">Anaphylaxis</td>
+					<td ID="allergy2reactionseverity">Severe</td>
+					<td>Jan 4 2014</td>
+					<td>2006</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry typeCode="DRIV">
+		<act classCode="ACT" moodCode="EVN">
+			<!-- ** Allergy problem act ** -->
+			<templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01"/>
+			<id root="4a2ac5fc-0c85-4223-baee-c2e254803974" />
+			<code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+			<statusCode code="active"/>
+			<!-- This is the time stamp for when the allergy was first documented as a concern-->
+			<effectiveTime>
+				<low value="20140104123506+0500"/>
+			</effectiveTime>
+			<author>
+				<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+				<time value="20140104"/>
+				<assignedAuthor>
+					<id extension="99999999" root="2.16.840.1.113883.4.6"/>
+					<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine" />
+					<telecom use="WP" value="tel:555-555-1002"/>
+					<assignedPerson>
+						<name>
+							<given>Henry</given>
+							<family>Seven</family>
+						</name>
+					</assignedPerson>
+				</assignedAuthor>
+			</author>
+			<entryRelationship typeCode="SUBJ">
+				<observation classCode="OBS" moodCode="EVN">
+					<!-- allergy observation template -->
+					<templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09"/>
+					<id root="4a2ac5fc-0c85-4223-baee-c2e254803974"/>
+					<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+					<statusCode code="completed"/>
+					<!-- This is the time stamp for the biological onset of the allergy. -->
+					<!-- Just the year is shown since a specific month and date was not reported -->
+					<effectiveTime>
+						<low value="2006"/>
+					</effectiveTime>
+					<!-- This specifies that the allergy is to a medication in contrast to other allergies (substance) -->
+					<value xsi:type="CD" code="416098002" displayName="drug allergy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+					<author>
+						<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+						<time value="20140104"/>
+						<assignedAuthor>
+							<id extension="99999999" root="2.16.840.1.113883.4.6"/>
+							<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine" />
+							<telecom use="WP" value="tel:555-555-1002"/>
+							<assignedPerson>
+								<name>
+									<given>Henry</given>
+									<family>Seven</family>
+								</name>
+							</assignedPerson>
+						</assignedAuthor>
+					</author>
+					<participant typeCode="CSM">
+						<participantRole classCode="MANU">
+							<playingEntity classCode="MMAT">
+								<!-- RxNorm is used to report specific drug allergies. Note to use NDF-RT for drug classes -->
+								<!-- Best practice is to report drug allergies at ingredient level (e.g. penicillin) not at the adminsitration level (e.g. 10mg tablet)-->
+								<code code="7980" displayName="penicillin" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+									<originalText>
+										<reference value="#allergy2allergen"/>
+									</originalText>
+								</code>
+							</playingEntity>
+						</participantRole>
+					</participant>
+					<entryRelationship typeCode="MFST" inversionInd="true">
+						<observation classCode="OBS" moodCode="EVN">
+							<!-- Reaction Observation template -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.9" extension="2014-06-09"/>
+							<id root="0506c036-adfb-4e6e-b9e1-eea76177ead5"/>
+							<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+							<text>
+								<reference value="#allergy2reaction"/>
+							</text>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<low value="2006"/>
+								<high nullFlavor="NA"/>
+							</effectiveTime>
+							<value xsi:type="CD" code="39579001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Anaphylaxis"/>
+							<!-- The Severity observation is no longer recommended, use criticality observation in future exchanges -->
+							<entryRelationship typeCode="SUBJ" inversionInd="true">
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- Severity Observation template -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.8" extension="2014-06-09"/>
+									<code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+									<text>
+										<reference value="#allergy2reactionseverity"/>
+									</text>
+									<statusCode code="completed"/>
+									<value xsi:type="CD" code="24484000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Severe"/>
+								</observation>
+							</entryRelationship>
+						</observation>
+					</entryRelationship>
+				</observation>
+			</entryRelationship>
+		</act>
+	</entry>
+</section>

@@ -1,0 +1,261 @@
+<!-- Allergies Section -->
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+	<!-- Allergies (entries required) section template -->
+	<code code="48765-2" codeSystem="2.16.840.1.113883.6.1"/>
+	<title>Allergies, Adverse Reactions and Alerts</title>
+	<text>
+		<list>
+			<item ID="AllergyIntoleranceObservation_1.1">
+				<table>
+					<thead>
+						<tr>
+							<th ID="AllergyIntolerance_1.1Label">Allergy or Intolerance</th>
+							<th ID="AllergyIntolerance_1.1Data">Data</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th ID="AllergyType_1.1L">Type:</th>
+							<td ID="AllergyType_1.1D">Drug intolerance (disorder)</td>
+						</tr>
+						<tr>
+							<th ID="AllergyAgent_1.1L">Agent:</th>
+							<td ID="AllergyAgent_1.1D">Codeine</td>
+						</tr>
+						<tr>
+							<th>Allergy Start Date:</th>
+							<td>03/15/2010</td>
+						</tr>
+						<tr>
+							<th>Allergy End Date:</th>
+							<td/>
+						</tr>
+						<tr>
+							<th ID="Reactions_1.1Label">Reactions:</th>
+							<td>
+								<list>
+									<item>
+										<table>
+											<thead>
+												<tr>
+												<th>Start Date</th>
+												<th>End Date</th>
+												<th ID="REACT_1.1.0L">Reaction</th>
+												<th ID="SEV_1.1.0L">Severity</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+												<td>01/29/2012</td>
+												<td>01/29/2012</td>
+												<td ID="REACT_1.1.1D">Nausea</td>
+												<td ID="SEV_1.1.1D">Severe</td>
+												</tr>
+												<tr>
+												<td>03/15/2010</td>
+												<td>03/15/2010</td>
+												<td ID="REACT_1.1.2D">Nausea</td>
+												<td ID="SEV_1.1.2D">Mild</td>
+												</tr>
+											</tbody>
+										</table>
+									</item>
+								</list>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</item>
+		</list>
+	</text>
+	<entry typeCode="DRIV">
+		<act classCode="ACT" moodCode="EVN">
+			<!-- ** Allergy problem act ** -->
+			<templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01"/>
+			<id root="4a2ac5fc-0c85-4223-baee-c2e254803974"/>
+			<code code="CONC" codeSystem="2.16.840.1.113883.5.6"
+				displayName="Allergies, adverse reactions, alerts" codeSystemName="LOINC">
+				<originalText>
+					<reference value="#AllergyIntoleranceObservation_1.1"/>
+				</originalText>
+			</code>
+			<text>
+				<reference value="#AllergyIntoleranceObservation_1.1"/>
+			</text>
+			<statusCode code="active"/>
+			<!-- This is the time stamp for when the allergy was first documented as a concern-->
+			<effectiveTime>
+				<low value="20140103"/>
+				<!--show time when this author's concern about the allergy became active. -->
+				<high nullFlavor="NA"/>
+			</effectiveTime>
+
+			<author>
+				<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+				<time value="20140103102500-0500"/>
+				<assignedAuthor>
+					<id extension="99999999" root="2.16.840.1.113883.4.6"/>
+					<!-- Root means NPI number. -->
+					<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101"
+						codeSystemName="Health Care Provider Taxonomy"
+						displayName="Family Medicine"/>
+					<telecom use="WP" value="tel:555-555-1002"/>
+					<assignedPerson>
+						<name>
+							<given>Henry</given>
+							<family>Seven</family>
+						</name>
+					</assignedPerson>
+				</assignedAuthor>
+			</author>
+			<entryRelationship typeCode="SUBJ">
+				<observation classCode="OBS" moodCode="EVN">
+					<!-- allergy observation template -->
+					<templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09"/>
+					<id root="4a2ac5fc-0c85-4223-baee-c2e254803974"/>
+					<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+					<statusCode code="completed"/>
+					<effectiveTime>
+						<low value="20100315"/>
+					</effectiveTime>
+					<!-- The time when this was biologically relevant ie True for the patient. -->
+					<!-- As a minimum time interval over which this is true, populate the effectiveTime/low with the current time. -->
+					<!-- It would be equally valid to have a longer range of time over which this statement was represented as being true. -->
+					<!-- As a maximum, you would never indicate an effectiveTime/high that was greater than the current point in time. -->
+					<value xsi:type="CD" code="59037007" displayName="Drug intolerance (disorder)"
+						codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+						<originalText>
+							<reference value="#AllergyType_1.1D"/>
+						</originalText>
+					</value>
+			<author>
+				<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+				<time value="20140103102500-0500"/>
+				<assignedAuthor>
+					<id extension="99999999" root="2.16.840.1.113883.4.6"/>
+					<!-- Root means NPI number. -->
+					<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101"
+						codeSystemName="Health Care Provider Taxonomy"
+						displayName="Family Medicine"/>
+					<telecom use="WP" value="tel:555-555-1002"/>
+					<assignedPerson>
+						<name>
+							<given>Henry</given>
+							<family>Seven</family>
+						</name>
+					</assignedPerson>
+				</assignedAuthor>
+			</author>
+					<informant>
+						<assignedEntity>
+							<!-- This is a fictional OID and identifier for the patient. This should be adapted to local implementation -->
+							<id root="2.16.840.1.113883.3.3208.101.2"
+								extension="20130607100800-Patient1"/>
+							<addr use="HP">
+								<streetAddressLine>1111 StreetName St.</streetAddressLine>
+								<city>Silver Spring</city>
+								<state>MD</state>
+								<postalCode>20901</postalCode>
+								<country>US</country>
+							</addr>
+							<telecom value="tel:+1(301)111-1111" use="HP"/>
+							<assignedPerson>
+								<name>
+									<given>Patient</given>
+									<family>One</family>
+								</name>
+							</assignedPerson>
+						</assignedEntity>
+					</informant>
+					<participant typeCode="CSM">
+						<participantRole classCode="MANU">
+							<playingEntity classCode="MMAT">
+								<code code="2670" displayName="Codeine"
+									codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+									<originalText>
+										<reference value="#AllergyAgent_1.1D"/>
+									</originalText>
+								</code>
+							</playingEntity>
+						</participantRole>
+					</participant>
+					<entryRelationship typeCode="MFST" inversionInd="true">
+						<observation classCode="OBS" moodCode="EVN">
+							<!-- Reaction Observation template -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.9" extension="2014-06-09"/>
+							<id root="0506c036-adfb-4e6e-b9e1-eea76177ead5"/>
+							<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<low value="20120129"/>
+								<!-- Not sure about the effectiveTime for reaction -->
+								<high value="20120129"/>
+							</effectiveTime>
+							<value xsi:type="CD" code="422587007"
+								codeSystem="2.16.840.1.113883.6.96" displayName="Nausea">
+								<originalText>
+									<reference value="#REACT_1.1.1D"/>
+								</originalText>
+							</value>
+							<entryRelationship typeCode="SUBJ" inversionInd="true">
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- Severity Observation template -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.8"
+										extension="2014-06-09"/>
+									<code code="SEV" codeSystem="2.16.840.1.113883.5.4"
+										codeSystemName="ActCode"/>
+									<statusCode code="completed"/>
+									<value xsi:type="CD" code="24484000" displayName="Severe"
+										codeSystem="2.16.840.1.113883.6.96"
+										codeSystemName="SNOMED CT">
+										<originalText>
+											<reference value="#SEV_1.1.1D"/>
+										</originalText>
+									</value>
+								</observation>
+							</entryRelationship>
+						</observation>
+					</entryRelationship>
+				</observation>
+			</entryRelationship>
+			<!-- Note that multiple reactions may be recorded to the same substance ([0..*] -->
+			<entryRelationship typeCode="MFST" inversionInd="true">
+				<observation classCode="OBS" moodCode="EVN">
+					<!-- Reaction Observation template -->
+					<templateId root="2.16.840.1.113883.10.20.22.4.9" extension="2014-06-09"/>
+					<id root="fea0b775-f3fe-4e0a-9c4f-4a5c235c2af0"/>
+					<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+
+					<statusCode code="completed"/>
+					<effectiveTime>
+						<low value="20100315"/>
+						<!-- Not sure about the effectiveTime for reaction -->
+						<high value="20100315"/>
+					</effectiveTime>
+					<value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96"
+						displayName="Nausea">
+						<originalText>
+							<reference value="#REACT_1.1.2D"/>
+						</originalText>
+					</value>
+					<entryRelationship typeCode="SUBJ" inversionInd="true">
+						<observation classCode="OBS" moodCode="EVN">
+							<!-- Severity Observation template -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.8" extension="2014-06-09"/>
+							<code code="SEV" codeSystem="2.16.840.1.113883.5.4"
+								codeSystemName="ActCode"/>
+							<statusCode code="completed"/>
+							<value xsi:type="CD" code="255604002" displayName="Mild"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+								<originalText>
+									<reference value="#SEV_1.1.2D"/>
+								</originalText>
+							</value>
+						</observation>
+					</entryRelationship>
+				</observation>
+			</entryRelationship>
+		</act>
+	</entry>
+</section>
