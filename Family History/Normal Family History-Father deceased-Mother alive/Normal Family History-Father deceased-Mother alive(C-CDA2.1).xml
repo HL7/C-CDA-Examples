@@ -1,0 +1,197 @@
+<section>
+	<!-- C-CDAR2 Example Family History Section -->
+	<templateId root="2.16.840.1.113883.10.20.22.2.15" extension="2015-08-01"/>
+	<code code="10157-6" codeSystem="2.16.840.1.113883.6.1" displayName="Family History"/>
+	<title>Family History</title>
+	<text>
+		<!-- Narrative may be structured in any manner, but clear references between the narrative and discrete entries are encouraged -->
+		<table>
+			<thead>
+				<tr>
+					<th>Family Member</th>
+					<th>Relation</th>
+					<th>Problem</th>
+					<th>Age of Onset</th>
+					<th>Comments</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2">Lucas Valieri</td>
+					<td ID="FH1rel" rowspan="2">Dad</td>
+					<td ID="FH1prob1">Stroke</td>
+					<td ID="FH1prob1age">72</td>
+					<td ID="FH1prob1comment">Cause of death, January 2003</td>
+				</tr>
+				<tr>
+					<td ID="FH1prob2">High Blood Pressure</td>
+					<td/>
+					<td/>
+				</tr>
+				<tr>
+					<td>Mia Jones</td>
+					<td ID="FH2rel">Mom</td>
+					<td ID="FH2prob">No known problems</td>
+					<td/>
+					<td/>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<!-- Father died of a stroke -->
+	<entry>
+		<!-- Organizes the Father's medical history --> 
+		<organizer classCode="CLUSTER" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.45" extension="2015-08-01"/>
+			<!-- Unique identifier for this family member's HISTORY (not the individual) -->
+			<id root="01faa204-db62-4610-864f-cb50b650d0fa" />
+			<statusCode code="completed"/>
+			<subject typeCode="SBJ">
+				<relatedSubject classCode="PRS">
+					<!-- Identifies subject's relationship to recordTarget (i.e. Patient) -->
+					<code code="FTH" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="Natural Parent">
+						<originalText>
+							<reference value="#FH1rel"/>
+						</originalText>
+					</code>
+					<subject>
+						<!-- Unique ID for the father as an individual -->
+						<sdtc:id extension="98765432-1" root="1.3.6.1.4.1.16517.1" xmlns:sdtc="urn:hl7-org:sdtc" />
+						<!-- Father's name; could be sent formatted or as a string like this -->
+						<name>Lucas Valieri</name>
+						<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+						<!-- Father's birth date/time, SHOULD be sent. In this example, we did not know the 
+						     father's birth date, so we assert that the birthTime is "Unknown" -->
+						<birthTime nullFlavor="UNK" />
+						<!-- Identifies the father's living status as deceased. -->
+						<sdtc:deceasedInd value="true" xmlns:sdtc="urn:hl7-org:sdtc" />
+						<!-- Date and optional time of death (only needed if deceasedInd="true") -->
+						<sdtc:deceasedTime value="200301" />
+					</subject>
+				</relatedSubject>
+			</subject>
+			<!-- Stroke observation -->
+			<component>
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
+					<!-- Unique ID for this individual observation -->
+					<id root="02faa204-db62-4610-864f-cb50b650d0fa" />
+					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
+						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
+					</code>
+					<statusCode code="completed"/>
+					<!-- Date of the stroke -->
+					<effectiveTime value="200301" />
+					<!-- The actual finding on the father. 
+						 Note: this is deliberately NOT set to 275104002-Family History of Stroke, 
+					     since we are saying the father had a "stroke" not a "family history of stroke".
+					     Family History of Stroke would be a valid code to add to the recordTarget's problem list.-->
+					<value xsi:type="CD" code="230690007" codeSystem="2.16.840.1.113883.6.96" displayName="Stroke">
+						<originalText>
+							<reference value="#FH1prob1"/>
+						</originalText>
+					</value>
+					<!-- Age at the time of the event -->
+					<entryRelationship typeCode="SUBJ" inversionInd="true">
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+							<code code="445518008" displayName="Age at Onset" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+							<text>
+								<reference value="#FH1prob1age"/>
+							</text>
+							<statusCode code="completed"/>
+							<!-- 'a' is UCUM for Years -->
+							<value xsi:type="PQ" unit="a" value="72"/>
+						</observation>
+					</entryRelationship>
+					<!-- This finding was the cause of death -->
+					<entryRelationship typeCode="CAUS">
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.47"/>
+							<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+							<text>
+								<reference value="#FH1prob1comment"/>
+							</text>
+							<statusCode code="completed"/>
+							<value xsi:type="CD" code="419099009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Dead"/>
+						</observation>
+					</entryRelationship>
+				</observation>
+			</component>
+			<!-- High Blood Pressure observation -->
+			<component>
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
+					<!-- Unique ID for this individual observation -->
+					<id root="04faa204-db62-4610-864f-cb50b650d0fa" />
+					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
+						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
+					</code>
+					<statusCode code="completed"/>
+					<!-- Date of blood pressure (unknown) -->
+					<effectiveTime nullFlavor="UNK" />
+					<!-- The actual finding on the father. 
+						Again, not using 160357008-Family History of Hypertension, since we're stating
+						the father HAD hypertension, not a family history of hypertension -->
+					<value xsi:type="CD" code="59621000" codeSystem="2.16.840.1.113883.6.96" displayName="Essential Hypertension">
+						<originalText>
+							<reference value="#FH1prob2"/>
+						</originalText>
+					</value>
+				</observation>
+			</component>
+		</organizer>
+	</entry>
+	<!-- Mother living with no known problems -->
+	<entry>
+		<!-- Organizes the Mother's medical history --> 
+		<organizer classCode="CLUSTER" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.45" extension="2015-08-01"/>
+			<!-- Unique identifier for this family member's HISTORY (not the individual) -->
+			<id root="03faa204-db62-4610-864f-cb50b650d0fa" />
+			<statusCode code="completed"/>
+			<subject>
+				<relatedSubject classCode="PRS">
+					<!-- Identifies subject's relationship to recordTarget (i.e. Patient) -->
+					<code code="MTH" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="Natural Parent">
+						<originalText>
+							<reference value="#FH2rel"/>
+						</originalText>
+					</code>
+					<subject>
+						<!-- Unique ID for the mother as an individual 
+						     (note - different extension than father) -->
+						<sdtc:id extension="98765432-2" root="1.3.6.1.4.1.16517.1" xmlns:sdtc="urn:hl7-org:sdtc" />
+						<!-- Mother's name; could be sent formatted or as a string like this -->
+						<name>Mia Jones</name>
+						<administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"/>
+						<!-- Mother's birth time, SHOULD be sent -->
+						<birthTime nullFlavor="UNK" />
+						<!-- Identifies the mother's living status as living. -->
+						<sdtc:deceasedInd value="false" xmlns:sdtc="urn:hl7-org:sdtc" />
+					</subject>
+				</relatedSubject>
+			</subject>
+			<component>
+				<observation classCode="OBS" moodCode="EVN" negationInd="true">
+					<!-- Similar to no known problems or allergies,
+					     the use of negationInd corresponds with the newer Observation.ValueNegationInd 
+					     The negationInd = true negates the value element -->
+					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
+					<!-- Unique ID for this individual observation -->
+					<id root="05faa204-db62-4610-864f-cb50b650d0fa" />
+					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
+						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
+					</code>
+					<text>
+						<reference value="#FH2prob"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime nullFlavor="NI" />
+					<!-- Generic problem; negationInd identifies the mother has having no active problems-->
+					<value xsi:type="CD" code="55607006" codeSystem="2.16.840.1.113883.6.96" displayName="Problem" />
+				</observation>
+			</component>
+		</organizer>
+	</entry>
+</section>

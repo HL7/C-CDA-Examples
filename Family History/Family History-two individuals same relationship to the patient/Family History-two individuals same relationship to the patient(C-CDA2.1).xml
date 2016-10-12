@@ -1,0 +1,133 @@
+<section>
+	<!-- C-CDAR2 Example Family History Section for two siblings -->
+	<templateId root="2.16.840.1.113883.10.20.22.2.15" extension="2015-08-01"/>
+	<code code="10157-6" codeSystem="2.16.840.1.113883.6.1" displayName="Family History"/>
+	<title>Family History</title>
+	<text>
+		<paragraph>James, <content ID="FamHist1rel">brother</content>, born 1982</paragraph>
+		<list>
+			<item ID="FamHist1prob1">High blood pressure</item>
+			<item ID="FamHist1prob2">Diabetes</item>
+		</list>
+		<paragraph>Gerald, <content ID="FamHist2rel">brother</content>, born 1985</paragraph>
+		<list>
+			<item ID="FamHist2prob1">Asthma</item>
+		</list>
+	</text>
+	<!-- James' history -->
+	<entry> 
+		<organizer classCode="CLUSTER" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.45" extension="2015-08-01"/>
+			<!-- Unique identifier for this family member's HISTORY (not the individual) -->
+			<id root="01faa204-0000-4610-864f-cb50b650d0fa" />
+			<statusCode code="completed"/>
+			<subject>
+				<relatedSubject classCode="PRS">
+					<!-- Identifies relationship; though there are two brothers, the separation into 
+					     two different organizers with their own subject identifies these as two 
+					     distinct individuals. The subject/@sdtc:id can also futher identify the individuals.-->
+					<code code="BRO" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="Brother">
+						<originalText>
+							<reference value="#FamHist1rel"/>
+						</originalText>
+					</code>
+					<subject>
+						<!-- Unique ID for the brother as an individual -->
+						<sdtc:id extension="98765432-1" root="1.3.6.1.4.1.16517.1" xmlns:sdtc="urn:hl7-org:sdtc" />
+						<name>James</name>
+						<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+						<birthTime value="1982" />
+					</subject>
+				</relatedSubject>
+			</subject>
+			<!-- High Blood Pressure observation -->
+			<component>
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
+					<!-- Unique ID for this individual observation -->
+					<id root="02faa204-0000-4610-864f-cb50b650d0fa" />
+					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
+						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
+					</code>
+					<statusCode code="completed"/>
+					<!-- Since we do not know when the brother was diagnosed with High Blood pressure, the effective time is UNKown -->
+					<effectiveTime nullFlavor="UNK" />
+					<!-- SNOMED code for High Blood Pressure -->
+					<value xsi:type="CD" code="59621000" codeSystem="2.16.840.1.113883.6.96" displayName="Essential Hypertension">
+						<originalText>
+							<reference value="#FamHist1prob1"/>
+						</originalText>
+					</value>
+				</observation>
+			</component>
+			<!-- Diabetes observation -->
+			<component>
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
+					<!-- Unique ID for this individual observation -->
+					<id root="03faa204-0000-4610-864f-cb50b650d0fa" />
+					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
+						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
+					</code>
+					<statusCode code="completed"/>
+					<!-- Since we do not know when the brother was diagnosed with Diabetes, the effective time is UNKown -->
+					<effectiveTime nullFlavor="UNK" />
+					<!-- SNOMED code for Diabetes -->
+					<value xsi:type="CD" code="73211009" codeSystem="2.16.840.1.113883.6.96" displayName="Diabetes Mellitus">
+						<originalText>
+							<reference value="#FamHist1prob2"/>
+						</originalText>
+					</value>
+				</observation>
+			</component>
+		</organizer>
+	</entry>
+	<!-- Gerald's History-->
+	<entry>
+		<organizer classCode="CLUSTER" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.45" extension="2015-08-01"/>
+			<!-- Unique identifier for this family member's HISTORY (not the individual) -->
+			<id root="01faa204-1111-4610-864f-cb50b650d0fa" />
+			<statusCode code="completed"/>
+			<subject>
+				<relatedSubject classCode="PRS">
+					<!-- Identifies relationship; though there are two brothers, the separation into 
+						two different organizers with their own subject identifies these as two 
+						distinct individuals. The subject/@sdtc:id can also futher identify the individuals.-->
+					<code code="BRO" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="Brother">
+						<originalText>
+							<reference value="#FamHist2rel"/>
+						</originalText>
+					</code>
+					<subject>
+						<!-- Unique ID for the brother as an individual; note the extension is different from James's id -->
+						<sdtc:id extension="98765432-2" root="1.3.6.1.4.1.16517.1" xmlns:sdtc="urn:hl7-org:sdtc" />
+						<name>Gerald</name>
+						<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
+						<birthTime value="1985" />
+					</subject>
+				</relatedSubject>
+			</subject>
+			<!-- Asthma observation -->
+			<component>
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
+					<!-- Unique ID for this individual observation -->
+					<id root="03faa204-1111-4610-864f-cb50b650d0fa" />
+					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
+						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
+					</code>
+					<statusCode code="completed"/>
+					<!-- Since we do not know when the brother was diagnosed with asthma, the effective time is UNKown -->
+					<effectiveTime nullFlavor="UNK" />
+					<!-- SNOMED code for Asthma -->
+					<value xsi:type="CD" code="195967001" codeSystem="2.16.840.1.113883.6.96" displayName="Asthma (disorder)">
+						<originalText>
+							<reference value="#FamHist2prob1"/>
+						</originalText>
+					</value>
+				</observation>
+			</component>
+		</organizer>
+	</entry>
+</section>

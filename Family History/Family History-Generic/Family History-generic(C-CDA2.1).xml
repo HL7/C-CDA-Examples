@@ -1,0 +1,89 @@
+<section>
+	<!-- C-CDAR2 Example Family History Section (Generic Family History)-->
+	<templateId root="2.16.840.1.113883.10.20.22.2.15" extension="2015-08-01"/>
+	<code code="10157-6" codeSystem="2.16.840.1.113883.6.1" displayName="Family History"/>
+	<title>Family History</title>
+	<text>
+		<!-- Family history is intended to convery information about discrete family members' health conditions.
+			The best way to convey "Family history of heart disease" would be to identify which family members
+			actually HAD heart disease.
+			The best way to convey "No family history of asthma" would be to explicitly state:
+			The father did not have asthma.
+			The mother did not have asthma.
+			The grandfather did not have asthma.
+		    ...and so on.
+		
+			An alternative to using this section to convey generic family history would be to add
+			codes from the SNOMED 416471007: Family Medical History hierarchy to the patient's problem list.
+			
+			This example, however, shows how to convey generic family history in the Family History
+			section in the absence of any known discrete family relationships.
+		-->
+		
+		<paragraph>Patient has a family history of <content ID="FHGeneric1prob">heart disease</content>.</paragraph>
+		<paragraph>Patient has no known family history of <content ID="FHGeneric2prob">asthma</content>.</paragraph>
+	</text>
+	<!-- Generic family member's history -->
+	<entry>
+		<organizer classCode="CLUSTER" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.45" extension="2015-08-01"/>
+			<!-- Unique ID for the collection of observations about "generic family member" -->
+			<id root="01faa204-3333-4610-864f-cb50b650d0fa" />
+			<statusCode code="completed"/>
+			<subject>
+				<relatedSubject classCode="PRS">
+					<!-- Identifies this subject as a generic 'Family Member' -->
+					<code code="FAMMEMB" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="Family Member" />
+					<!-- No additional subject information is necessary, since we are not talking about an individual person -->
+				</relatedSubject>
+			</subject>
+			<!-- Heart Disease observation -->
+			<component>
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
+					<!-- Unique ID for this individual observation -->
+					<id root="02faa204-3333-4610-864f-cb50b650d0fa" />
+					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
+						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
+					</code>
+					<statusCode code="completed"/>
+					<!-- Since no date is given, effectiveTime is UNKnown -->
+					<effectiveTime nullFlavor="UNK" />
+					<!-- SNOMED for Heart Disease
+						 Note: explicitly NOT using 266894000: FH Cardiovascular disease, since we are scoped by the "family member"
+						 The family member has 'Heart Disease', not a 'Family History of Heart Disease'
+						-->
+					<value xsi:type="CD" code="56265001" codeSystem="2.16.840.1.113883.6.96" displayName="Heart Disease (Disorder)">
+						<originalText>
+							<reference value="#FHGeneric1prob"/>
+						</originalText>
+					</value>
+				</observation>
+			</component>
+			<!-- Asthma negative observation -->
+			<component>
+				<!-- Similar to Problem Observation, negationInd here represents Observation.ValueNegation,
+				     stating the relative does NOT have asthma-->
+				<observation classCode="OBS" moodCode="EVN" negationInd="true">
+					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
+					<!-- Unique ID for this individual observation -->
+					<id root="04faa204-3333-4610-864f-cb50b650d0fa" />
+					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
+						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
+					</code>
+					<statusCode code="completed"/>
+					<!-- Since no date is given, effectiveTime is UNKnown -->
+					<effectiveTime nullFlavor="UNK" />
+					<!-- SNOMED for Asthma 
+						Again, not using 160377001: Family History of Asthma. That code would be 
+					    appropriate for the patient's own problem list. -->
+					<value xsi:type="CD" code="195967001" codeSystem="2.16.840.1.113883.6.96" displayName="Asthma">
+						<originalText>
+							<reference value="#FHGeneric2prob"/>
+						</originalText>
+					</value>
+				</observation>
+			</component>
+		</organizer>
+	</entry>
+</section>
