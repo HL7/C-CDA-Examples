@@ -1,0 +1,223 @@
+<section> 
+	<!-- Created for discussion on SDWG CDA Example Task Force. -->
+	<!-- This is an example of a hospitalization as may be shown in encounters section. -->
+	<!-- This example demonstrates how billable diagnoses could be included, if they are available -->
+	<templateId root="2.16.840.1.113883.10.20.22.2.22.1" extension="2015-08-01"/>
+	<id root="6bc0419f-0398-4a56-8642-7054cbef448c"/>
+	<code code="46240-8" codeSystem="2.16.840.1.113883.6.1" displayName="Encounters" codeSystemName="LOINC"/>
+	<title>Encounters</title>
+	<text>
+		<table>
+			<thead>
+				<tr>
+					<th>Encounter Type</th>
+					<th>Provider</th>
+					<th>Primary Diagnosis</th>
+					<th>Other Diagnoses</th>
+					<th>Start Date</th>
+					<th>End Date</th>
+					<th>Location</th>
+					<th>Discharge Disposition</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td ID="Enc1_Type">Inpatient</td>
+					<td>James Getwell, DO</td>
+					<td ID="Enc1_Dx1">Congestive Heart Failure</td>
+					<td>
+						<content ID="Enc1_Dx2">Diabetes</content> 
+					</td>
+					<td>10/28/2014 12:22pm</td>
+					<td>10/31/2014 3:04pm</td>
+					<td>Good Day Hospital (878)378-0909 1002 Healthcare Dr., Portland, OR, 97005</td>
+					<td>Nursing Home</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry>
+		<encounter moodCode="EVN" classCode="ENC">
+			<templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
+			<id root="248b2c03-2013-e138-07d1-001A64958C30"/>
+			<!-- CPT code should be used for ambulatory visits, but for a hosptialization, another codeSystem is more appropriate-->
+			<code code="99238" displayName="Discharge day management services" codeSystem="2.16.840.1.113883.6.12">
+				<originalText>
+					<reference value="#Enc1_Type"/>
+				</originalText>
+				<translation code="IMP" codeSystem="2.16.840.1.113883.5.4" displayName="Inpatient" codeSystemName="Act Encounter Code - Act Code"/>
+			</code>
+			
+			<!-- for a hospitalization, the low and high effectiveTimes would logically be admission and discharge date/time. --> 
+			<effectiveTime xsi:type="IVL_TS">
+				<low value ="201410281222+0500" />
+				<high value="201410311504+0500" /> 
+			</effectiveTime>
+			<!-- Note that sdtc extension is used to document dischargeDisposition in encounters -->
+			<sdtc:dischargeDispositionCode code="04" displayName="Discharged/Transferred to a Facility that Provides Custodial or Supportive Care" 
+				codeSystem="2.16.840.1.113883.6.301.5" codeSystemName="NUBC UB-04 FL17">
+			</sdtc:dischargeDispositionCode>
+			<performer typeCode="PRF">
+				<time>
+					<low value="201410281222+0500" />
+					<high value="201410311504+0500" />
+				</time>
+				<assignedEntity classCode="ASSIGNED">
+					<id root="2.16.840.1.113883.4.6" extension="12345679"/>
+					<code code="200000000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="ProviderCodes" displayName="Allopathic &amp; Osteopathic Physicians" />
+					<addr use="WP">
+						<streetAddressLine>763 Horseshoe Rd</streetAddressLine>
+						<city>Gotham</city>
+						<state>OR</state>
+						<postalCode>98764</postalCode>
+					</addr>
+					<telecom use="WP" value="tel:+1(814)788-8000"/>
+					<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+						<name>
+							<given>James</given>
+							<family>Getwell</family>
+							<suffix>DO</suffix>
+						</name>
+					</assignedPerson>
+				</assignedEntity>
+			</performer>
+			<participant typeCode="LOC">
+				<!-- Service Delivery Location Template -->
+				<participantRole classCode="SDLOC">
+					<templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+					<code code="1061-1" codeSystem="2.16.840.1.113883.6.259" codeSystemName="Healthcare Service Location" displayName="Inpatient medical ward" />
+					<addr use="WP">
+						<streetAddressLine>1002 Healthcare Dr</streetAddressLine>
+						<city>Portland</city>
+						<state>OR</state>
+						<postalCode>97005</postalCode>
+					</addr>
+					<telecom use="WP" value="tel:+1(878)378-0909"/>
+					<playingEntity classCode="PLC" determinerCode="INSTANCE">
+						<name>Good Day Hospital</name>
+					</playingEntity>
+				</participantRole>
+			</participant>
+			<entryRelationship typeCode="SUBJ">
+				<!-- This is the primary diagnosis on the bill -->
+				<!-- Hospital discharge diagnosis act -->
+				<act moodCode="EVN" classCode="ACT">
+					<templateId root="2.16.840.1.113883.10.20.22.4.33" extension="2015-08-01"/>
+					<id root="1d7ff347-9dce-44db-8f66-fc17d8dc4aca"/>
+					<code code="11535-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital Discharge Diagnosis"/>
+					<statusCode code="active"/>
+					<!-- This represents the time that the concern was authored. Since this is a hospital discharge diagnosis, this is when it was coded-->
+					<effectiveTime xsi:type="IVL_TS">
+						<low value="20141102145806+0500" />
+					</effectiveTime>
+					<entryRelationship typeCode="SUBJ" inversionInd="false">
+						<!-- Problem Observation -->
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
+							<id root="20cdd1a0-6136-4939-802f-edfebe9320bc" />
+							<!-- We'll use the type of diagnosis, since this is a coded diagnosis, not from problem list-->
+							<code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="282291009" displayName="Diagnosis">
+								<translation code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis"/>
+							</code>
+							<text>
+								<reference value="#Enc1_Dx1" />
+							</text>
+							<statusCode code="completed" />
+							<effectiveTime>
+								<!-- This represents the date of biological onset. Since this is a coded diagnosis, this may not be documented.-->
+								<low nullFlavor="UNK" />
+							</effectiveTime>
+							<!-- This denotes that the diagnosis is the principal diagnosis. There is generally only a single diagnosis for coded bill.-->
+							<!-- This current modeling aligns with QRDA. Substantial discussion occurred on the task force regarding this method. --> 
+							<!-- Additional comments on this approach should be included in comments on the QRDA Implementation Guide. We will revisit if QRDA changes their standard approach.  --> 
+							<priorityCode code="63161005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Principal"/>
+							<!-- This is a hospital discharge diagnosis, so the ICD-9 (or ICD-10) diagnosis is in translation. -->
+							<!-- If a SNOMED is available for this, it could be included, but mapping back from ICD-9 may not always be possible. -->
+							<value xsi:type="CD" nullFlavor="OTH">
+								<originalText>
+									<reference value="#Enc1_Dx1" />
+								</originalText>
+								<translation xsi:type="CD" code="428.0" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9" displayName="Congestive heart failure, unspecified" />
+							</value>
+							<author>
+								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+								<time value="20141031"/>
+								<assignedAuthor>
+									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
+									<code code="204C00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Neuromusculoskeletal Medicine, Sports Medicine" />
+									<telecom use="WP" value="tel:555-555-1002"/>
+									<assignedPerson>
+										<name>
+											<given>Henry</given>
+											<family>Seven</family>
+										</name>
+									</assignedPerson>
+								</assignedAuthor>
+							</author>
+						</observation>
+					</entryRelationship>
+				</act>
+			</entryRelationship>
+			<entryRelationship typeCode="SUBJ">
+				<!-- Hospital discharge diagnosis act -->
+				<act moodCode="EVN" classCode="ACT">
+					<templateId root="2.16.840.1.113883.10.20.22.4.33" extension="2015-08-01"/>
+					<id root="f07886ea-7879-478e-8155-5c2cce5cba6a"/>
+					<code code="11535-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital Discharge Diagnosis"/>
+					<statusCode code="active"/>
+					<!-- This represents the time that the concern was authored. Since this is a hospital discharge diagnosis, this is when it was coded-->
+					<effectiveTime xsi:type="IVL_TS">
+						<low value="20141102145806+0500" />
+					</effectiveTime>
+					<entryRelationship typeCode="SUBJ" inversionInd="false">
+						<!-- Problem Observation -->
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
+							<id root="5f9b714d-a6ec-4f8f-95ae-ea75e5a54bac" />
+							<!-- We'll use the type of diagnosis, since this is a coded diagnosis, not from problem list-->
+							<code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="282291009" displayName="Diagnosis">
+								<translation code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis"/>
+							</code>
+							<text>
+								<reference value="#Enc1_Dx2" />
+							</text>
+							<statusCode code="completed" />
+							<effectiveTime>
+								<!-- This represents the date of biological onset. Since this is a coded diagnosis, this may not be documented.-->
+								<low nullFlavor="UNK" />
+							</effectiveTime>
+							<!-- This denotes that the diagnosis is a secondary diagnosis. There may be multiple secondary diagnoses on coded bills.-->
+							<!-- This current modeling aligns with QRDA. Substantial discussion occurred on the task force regarding this method. --> 
+							<!-- Additional comments on this approach should be included in comments on the QRDA Implementation Guide. We will revisit if QRDA changes their standard approach.  --> 
+							<priorityCode code="2603003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Secondary"/>
+							<!-- This is a hospital discharge diagnosis, so the ICD-9 (or ICD-10) diagnosis is in translation. -->
+							<!-- If a SNOMED is available for this, it could be included, but mapping back from ICD-9 may not always be possible. -->
+							<value xsi:type="CD" nullFlavor="OTH">
+								<originalText>
+									<reference value="#Enc1_Dx2" />
+								</originalText>
+								<translation xsi:type="CD" code="250.00" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9" displayName="Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled" />
+							</value>
+							<author>
+								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+								<time value="20141031"/>
+								<assignedAuthor>
+									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
+									<code code="204C00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Neuromusculoskeletal Medicine, Sports Medicine" />
+									<telecom use="WP" value="tel:555-555-1002"/>
+									<assignedPerson>
+										<name>
+											<given>Henry</given>
+											<family>Seven</family>
+										</name>
+									</assignedPerson>
+								</assignedAuthor>
+							</author>
+						</observation>
+					</entryRelationship>
+				</act>
+			</entryRelationship>
+		</encounter>
+	</entry>
+</section>
+
