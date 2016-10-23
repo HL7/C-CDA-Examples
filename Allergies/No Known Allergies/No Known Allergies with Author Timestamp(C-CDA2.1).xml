@@ -1,13 +1,14 @@
 <section>
     <!-- *** Allergies and Intolerances Section (entries required) (V3) *** -->
-    <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
     <templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
     <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
     <title>ALLERGIES AND ADVERSE REACTIONS</title>
     <text>No Known Allergies</text>
     <entry typeCode="DRIV">
         <!-- Allergy Concern Act -->
         <act classCode="ACT" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
             <templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01"/>
             <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
             <!-- SDWG supports 48765-2 or CONC in the code element -->
@@ -40,6 +41,7 @@
                 <!-- The use of negationInd corresponds with the newer Observation.valueNegationInd -->
                 <observation classCode="OBS" moodCode="EVN" negationInd="true">
                     <!-- allergy - intolerance observation template -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
                     <templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09"/>
                     <id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>

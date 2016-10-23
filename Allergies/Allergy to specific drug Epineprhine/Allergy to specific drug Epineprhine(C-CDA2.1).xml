@@ -1,4 +1,5 @@
 <section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
 	<templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
 	<!-- Allergies (entries required) section template -->
 	<code code="48765-2" codeSystem="2.16.840.1.113883.6.1"/>
@@ -36,6 +37,7 @@
 	<entry typeCode="DRIV">
 		<act classCode="ACT" moodCode="EVN">
 			<!-- ** Allergy problem act ** -->
+			<templateId root="2.16.840.1.113883.10.20.22.4.30"/>
 			<templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01"/>
 			<id root="4a2ac5fc-0c85-4223-baee-c2e254803974"/>
 			<code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
@@ -63,6 +65,7 @@
 			<entryRelationship typeCode="SUBJ">
 				<observation classCode="OBS" moodCode="EVN">
 					<!-- allergy observation template -->
+					<templateId root="2.16.840.1.113883.10.20.22.4.7"/>
 					<templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09"/>
 					<id root="4a2ac5fc-0c85-4223-baee-c2e254803974"/>
 					<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
@@ -130,6 +133,7 @@
 					<entryRelationship typeCode="MFST" inversionInd="true">
 						<observation classCode="OBS" moodCode="EVN">
 							<!-- Reaction Observation template -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.9"/>
 							<templateId root="2.16.840.1.113883.10.20.22.4.9" extension="2014-06-09"/>
 							<id root="0506c036-adfb-4e6e-b9e1-eea76177ead5"/>
 							<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
@@ -146,6 +150,7 @@
 							<entryRelationship typeCode="SUBJ" inversionInd="true">
 								<observation classCode="OBS" moodCode="EVN">
 									<!-- Severity Observation template -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.8"/>
 									<templateId root="2.16.840.1.113883.10.20.22.4.8"
 										extension="2014-06-09"/>
 									<code code="SEV" codeSystem="2.16.840.1.113883.5.4"
@@ -167,6 +172,7 @@
 			<entryRelationship typeCode="MFST" inversionInd="true">
 				<observation classCode="OBS" moodCode="EVN">
 					<!-- Reaction Observation template -->
+					<templateId root="2.16.840.1.113883.10.20.22.4.9"/>
 					<templateId root="2.16.840.1.113883.10.20.22.4.9" extension="2014-06-09"/>
 					<id root="fea0b775-f3fe-4e0a-9c4f-4a5c235c2af0"/>
 					<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
@@ -183,6 +189,7 @@
 					<entryRelationship typeCode="SUBJ" inversionInd="true">
 						<observation classCode="OBS" moodCode="EVN">
 							<!-- Severity Observation template -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.8"/>
 							<templateId root="2.16.840.1.113883.10.20.22.4.8" extension="2014-06-09"/>
 							<code code="SEV" codeSystem="2.16.840.1.113883.5.4"
 								codeSystemName="ActCode"/>

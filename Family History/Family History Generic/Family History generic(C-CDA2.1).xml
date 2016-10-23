@@ -1,5 +1,6 @@
 <section>
 	<!-- C-CDAR2 Example Family History Section (Generic Family History)-->
+	<templateId root="2.16.840.1.113883.10.20.22.2.15"/>
 	<templateId root="2.16.840.1.113883.10.20.22.2.15" extension="2015-08-01"/>
 	<code code="10157-6" codeSystem="2.16.840.1.113883.6.1" displayName="Family History"/>
 	<title>Family History</title>
@@ -26,6 +27,7 @@
 	<!-- Generic family member's history -->
 	<entry>
 		<organizer classCode="CLUSTER" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.45"/>
 			<templateId root="2.16.840.1.113883.10.20.22.4.45" extension="2015-08-01"/>
 			<!-- Unique ID for the collection of observations about "generic family member" -->
 			<id root="01faa204-3333-4610-864f-cb50b650d0fa" />
@@ -40,6 +42,7 @@
 			<!-- Heart Disease observation -->
 			<component>
 				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.46"/>
 					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
 					<!-- Unique ID for this individual observation -->
 					<id root="02faa204-3333-4610-864f-cb50b650d0fa" />
@@ -65,6 +68,7 @@
 				<!-- Similar to Problem Observation, negationInd here represents Observation.ValueNegation,
 				     stating the relative does NOT have asthma-->
 				<observation classCode="OBS" moodCode="EVN" negationInd="true">
+					<templateId root="2.16.840.1.113883.10.20.22.4.46"/>
 					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
 					<!-- Unique ID for this individual observation -->
 					<id root="04faa204-3333-4610-864f-cb50b650d0fa" />

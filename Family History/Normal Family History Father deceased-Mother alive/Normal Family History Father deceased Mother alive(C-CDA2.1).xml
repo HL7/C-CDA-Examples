@@ -1,5 +1,6 @@
 <section>
 	<!-- C-CDAR2 Example Family History Section -->
+	<templateId root="2.16.840.1.113883.10.20.22.2.15"/>
 	<templateId root="2.16.840.1.113883.10.20.22.2.15" extension="2015-08-01"/>
 	<code code="10157-6" codeSystem="2.16.840.1.113883.6.1" displayName="Family History"/>
 	<title>Family History</title>
@@ -42,6 +43,7 @@
 	<entry>
 		<!-- Organizes the Father's medical history --> 
 		<organizer classCode="CLUSTER" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.45"/>
 			<templateId root="2.16.840.1.113883.10.20.22.4.45" extension="2015-08-01"/>
 			<!-- Unique identifier for this family member's HISTORY (not the individual) -->
 			<id root="01faa204-db62-4610-864f-cb50b650d0fa" />
@@ -73,6 +75,7 @@
 			<!-- Stroke observation -->
 			<component>
 				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.46"/>
 					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
 					<!-- Unique ID for this individual observation -->
 					<id root="02faa204-db62-4610-864f-cb50b650d0fa" />
@@ -121,6 +124,7 @@
 			<!-- High Blood Pressure observation -->
 			<component>
 				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.46"/>
 					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
 					<!-- Unique ID for this individual observation -->
 					<id root="04faa204-db62-4610-864f-cb50b650d0fa" />
@@ -146,6 +150,7 @@
 	<entry>
 		<!-- Organizes the Mother's medical history --> 
 		<organizer classCode="CLUSTER" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.45"/>
 			<templateId root="2.16.840.1.113883.10.20.22.4.45" extension="2015-08-01"/>
 			<!-- Unique identifier for this family member's HISTORY (not the individual) -->
 			<id root="03faa204-db62-4610-864f-cb50b650d0fa" />
@@ -177,6 +182,7 @@
 					<!-- Similar to no known problems or allergies,
 					     the use of negationInd corresponds with the newer Observation.ValueNegationInd 
 					     The negationInd = true negates the value element -->
+					<templateId root="2.16.840.1.113883.10.20.22.4.46"/>
 					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
 					<!-- Unique ID for this individual observation -->
 					<id root="05faa204-db62-4610-864f-cb50b650d0fa" />

@@ -2,6 +2,7 @@
 	<!-- Created for discussion on SDWG CDA Example Task Force. -->
 	<!-- This is an example of a hospitalization as may be shown in encounters section. -->
 	<!-- This example demonstrates how billable diagnoses could be included, if they are available -->
+	<templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
 	<templateId root="2.16.840.1.113883.10.20.22.2.22.1" extension="2015-08-01"/>
 	<id root="6bc0419f-0398-4a56-8642-7054cbef448c"/>
 	<code code="46240-8" codeSystem="2.16.840.1.113883.6.1" displayName="Encounters" codeSystemName="LOINC"/>
@@ -38,6 +39,7 @@
 	</text>
 	<entry>
 		<encounter moodCode="EVN" classCode="ENC">
+			<templateId root="2.16.840.1.113883.10.20.22.4.49"/>
 			<templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
 			<id root="248b2c03-2013-e138-07d1-001A64958C30"/>
 			<!-- CPT code should be used for ambulatory visits, but for a hosptialization, another codeSystem is more appropriate-->
@@ -102,6 +104,7 @@
 				<!-- This is the primary diagnosis on the bill -->
 				<!-- Hospital discharge diagnosis act -->
 				<act moodCode="EVN" classCode="ACT">
+					<templateId root="2.16.840.1.113883.10.20.22.4.33"/>
 					<templateId root="2.16.840.1.113883.10.20.22.4.33" extension="2015-08-01"/>
 					<id root="1d7ff347-9dce-44db-8f66-fc17d8dc4aca"/>
 					<code code="11535-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital Discharge Diagnosis"/>
@@ -113,8 +116,9 @@
 					<entryRelationship typeCode="SUBJ" inversionInd="false">
 						<!-- Problem Observation -->
 						<observation classCode="OBS" moodCode="EVN">
-							<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
-							<id root="20cdd1a0-6136-4939-802f-edfebe9320bc" />
+							<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+							<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+							<id root="20cdd1a0-6136-4939-802f-edfebe9320bc"/>
 							<!-- We'll use the type of diagnosis, since this is a coded diagnosis, not from problem list-->
 							<code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="282291009" displayName="Diagnosis">
 								<translation code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis"/>
@@ -161,6 +165,7 @@
 			<entryRelationship typeCode="SUBJ">
 				<!-- Hospital discharge diagnosis act -->
 				<act moodCode="EVN" classCode="ACT">
+					<templateId root="2.16.840.1.113883.10.20.22.4.33"/>
 					<templateId root="2.16.840.1.113883.10.20.22.4.33" extension="2015-08-01"/>
 					<id root="f07886ea-7879-478e-8155-5c2cce5cba6a"/>
 					<code code="11535-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital Discharge Diagnosis"/>
@@ -172,8 +177,9 @@
 					<entryRelationship typeCode="SUBJ" inversionInd="false">
 						<!-- Problem Observation -->
 						<observation classCode="OBS" moodCode="EVN">
-							<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
-							<id root="5f9b714d-a6ec-4f8f-95ae-ea75e5a54bac" />
+							<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+							<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+							<id root="5f9b714d-a6ec-4f8f-95ae-ea75e5a54bac"/>
 							<!-- We'll use the type of diagnosis, since this is a coded diagnosis, not from problem list-->
 							<code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="282291009" displayName="Diagnosis">
 								<translation code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis"/>

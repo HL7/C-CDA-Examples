@@ -1,4 +1,5 @@
 <section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
 	<templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
 	<!-- Allergies (entries required) section template -->
 	<code code="48765-2" codeSystem="2.16.840.1.113883.6.1"/>
@@ -28,8 +29,9 @@
 	<entry typeCode="DRIV">
 		<act classCode="ACT" moodCode="EVN">
 			<!-- ** Allergy problem act ** -->
+			<templateId root="2.16.840.1.113883.10.20.22.4.30"/>
 			<templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01"/>
-			<id root="0fffb34f-c1e0-47c2-92af-c414a3ff21ec" />
+			<id root="0fffb34f-c1e0-47c2-92af-c414a3ff21ec"/>
 			<code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
 			<statusCode code="active"/>
 			<!-- This is the time stamp for when the allergy was first documented as a concern-->
@@ -54,6 +56,7 @@
 			<entryRelationship typeCode="SUBJ">
 				<observation classCode="OBS" moodCode="EVN">
 					<!-- allergy observation template -->
+					<templateId root="2.16.840.1.113883.10.20.22.4.7"/>
 					<templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09"/>
 					<id root="0fffb34f-c1e0-47c2-92af-c414a3ff21ec"/>
 					<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
@@ -110,6 +113,7 @@
 					<entryRelationship typeCode="MFST" inversionInd="true">
 						<observation classCode="OBS" moodCode="EVN">
 							<!-- Reaction Observation template -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.9"/>
 							<templateId root="2.16.840.1.113883.10.20.22.4.9" extension="2014-06-09"/>
 							<id root="d89ce431-e0f1-4f8d-a81f-489b6ed91f09"/>
 							<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
@@ -125,7 +129,9 @@
 							<entryRelationship typeCode="SUBJ" inversionInd="true">
 								<observation classCode="OBS" moodCode="EVN">
 									<!-- Severity Observation template -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.8" extension="2014-06-09"/>
+									<templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+									<templateId root="2.16.840.1.113883.10.20.22.4.8"
+ extension="2014-06-09"/>
 									<code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
 									<text>
 										<reference value="#allergy5reactionseverity"/>
