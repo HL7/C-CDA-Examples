@@ -1,0 +1,64 @@
+<component>
+    <section>
+        <!-- conforms to Immunizations section with entries optional -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.2" extension="2015-08-01"/>
+        <!-- Immunizations section with entries required -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.2.1" extension="2015-08-01"/>
+        <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+            displayName="History of immunizations"/>
+        <title>IMMUNIZATIONS</title>
+        <text>
+            <content ID="immunSect"/>
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Vaccine</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ID="immun1">
+                        <td> Unknown Immunization  Status</td>
+                        <td>Nov 1999</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </text>
+        <entry>
+            <substanceAdministration moodCode="EVN" classCode="SBADM" negationInd="false" nullFlavor="NI">
+                <!--  We selected NI for this example, C-CDA R2 may describe other appropriate nullFlavors -->
+                <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+                <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01"/>
+                <!--  ****   Immunization activity template    **** -->
+                <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f88"/>
+                <!-- No information on whether the patient received a vaccination -->
+                <text>
+                    <reference value="#immun1"/>
+                </text>
+                <!-- Link to narrative stating no information on whether the patient received a vaccination -->
+                <statusCode code="completed"/>
+                <effectiveTime value="199911"/>
+                <!-- Date which you do not know whether or not patient received a vaccination -->
+                <consumable>
+                    <manufacturedProduct classCode="MANU">
+                        <!-- ** Immunization medication information ** -->
+                        <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                        <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
+                        <manufacturedMaterial>
+                            <!-- Needed to use nullFlavor of OTH since templates requires CVX in code element-->
+                            <code nullFlavor="OTH">
+                                <!-- Optional original text -->
+                                <originalText>Vaccination</originalText>
+                                <translation code="71181003" displayName="vaccine"
+                                    codeSystem="2.16.840.1.113883.6.96"
+                                    codeSystemName="SNOMED CT"/>
+                            </code>
+                        </manufacturedMaterial>
+                    </manufacturedProduct>
+                </consumable>
+            </substanceAdministration>
+        </entry>
+    </section>
+</component>

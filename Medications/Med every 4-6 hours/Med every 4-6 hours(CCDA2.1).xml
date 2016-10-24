@@ -1,0 +1,108 @@
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+    <!-- Medication Section (entries required) -->
+    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication Use"/>
+    <title>MEDICATIONS</title>
+    <text>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Medication</th>
+                    <th>Instructions</th>
+                    <th>Dosage</th>
+                    <th>Effective Dates (start - stop)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ID="Medication_1">
+                    <td>
+                        <content ID="MedicationName_1" xmlns="urn:hl7-org:v3">Sudafed 30mg Oral Tablet</content>
+                    </td>
+                    <td>
+                        <content ID="MedicationSig_1" xmlns="urn:hl7-org:v3">take 2 tablets every 4-6 hours</content>
+                    </td>
+                    <td>
+                        <content ID="MedicationDosage_1" xmlns="urn:hl7-org:v3">30 MG</content>
+                    </td>
+                    <td>Jan-18-2014 - </td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="INT">
+            <!-- This medication use case is a medication to be administered. If it has been already administered use moodCode = "EVN". If an ordered drug then use moodCode = "RQO" -->
+            <!-- Dependencies exist between moodCode, statusCode and effectiveTime  -->
+            <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+            <id root="36edd5f0-0b15-49f6-a395-7752b4f18b77"/>
+            <text>
+                <!-- This reference refers to medication information in unstructured portion of section-->
+                <reference value="#Medication_1"/>
+            </text>
+            <statusCode code="active"/>
+            <!-- This first effectiveTime shows that medication was prescribed on January 18, 2014 (not known to have stopped)-->
+            <effectiveTime xsi:type="IVL_TS">
+                <low value="20140118"/>
+                <high nullFlavor="NI"/>
+            </effectiveTime>
+            <!-- This second effectiveTime represents every 4-6 hours from medication sig. -->
+            <!-- InstituionSpecified = "false" is implied in ths omission of this attribute and means that it must be administered exactly once per day-->
+            <!-- InstituionSpecified = "true"which is not default would mean that receiving institution has flexibility in dosing schedule-->
+            <!-- Operator "A" means that this timing information is in addition to previous effectiveTime information provided-->
+            <effectiveTime xsi:type="PIVL_TS" operator="A">
+                <period xsi:type="IVL_PQ">
+                    <low value="4" unit="h"/>
+                    <high value="6" unit="h"/>
+                </period>
+            </effectiveTime>
+            <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+            <!-- This relates directly to the code used for medication. Since it's a tablet, then only specified needed in dose is 2x per administration-->
+            <doseQuantity value="2"/>
+            <consumable>
+                <manufacturedProduct classCode="MANU">
+                    <!-- ** Medication information ** -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                    <id root="0be61984-eaa5-46b3-b75b-1d1ba28b5fff"/>
+                    <manufacturedMaterial>
+                        <!-- Medications should be specified at a level corresponding to prescription when possible, such as 30mg oral tablet (branded)-->
+                        <code code="1049529" displayName="Sudafed 30 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                            <originalText>
+                                <reference value="#MedicationName_1"/>
+                            </originalText>
+                        </code>
+                    </manufacturedMaterial>
+                </manufacturedProduct>
+            </consumable>
+            <author>
+                <!-- Time the author noted that patient is on medication -->
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <time value="20140118"/>
+                <assignedAuthor>
+                    <id extension="66666" root="2.16.840.1.113883.4.6"/>
+                    <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
+                        codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+                    <addr>
+                        <streetAddressLine>6666 StreetName St.</streetAddressLine>
+                        <city>Silver Spring</city>
+                        <state>MD</state>
+                        <postalCode>20901</postalCode>
+                        <country>US</country>
+                    </addr>
+                    <telecom value="tel:+1(301)666-6666" use="WP"/>
+                    <assignedPerson>
+                        <name>
+                            <given>Heartly</given>
+                            <family>Sixer</family>
+                            <suffix>MD</suffix>
+                        </name>
+                    </assignedPerson>
+                </assignedAuthor>
+            </author>
+        </substanceAdministration>
+    </entry>
+</section>

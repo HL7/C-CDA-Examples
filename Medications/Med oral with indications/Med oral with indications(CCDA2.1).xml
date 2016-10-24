@@ -1,0 +1,127 @@
+<!-- 
+		Summary of example:
+		Indication (NOT a PRN) - Ibuprofen 600mg Oral Tablet, 1 tablet Every 6 Hours for joint pain
+			
+		For comparison purposes, it may be worth looking at the following additional examples:
+			1. PRN with a coded precondition - Ibuprofen 600mg Oral Tablet, 1 tablet Every 6 Hours PRN for joint pain
+			2. Instructions; similar to above but NOT a PRN - Ibuprofen 600mg Oral Tablet, 1 tablet Every 6 Hours  as Directed
+-->
+<section>
+    <!-- Medications section with entries required -->
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication Use"/>
+    <title>MEDICATIONS</title>
+    <text>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Medication</th>
+                    <th>Instructions</th>
+                    <th>Dosage</th>
+                    <th>Effective Dates (start - stop)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ID="Medication_4">
+                    <td>
+                        <content ID="MedicationName_4">Ibuprofen 600mg Oral Tablet</content>
+                    </td>
+                    <td>
+                        <content ID="MedicationSig_4">take 1 tablet Every 6 Hours for <content ID="MedicationIndication_4">joint pain</content></content>
+                    </td>
+                    <td>
+                        <content ID="MedicationDosage_4">600 MG</content>
+                    </td>
+                    <td>Mar-10-2013 - </td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    
+    <!-- Indication; NOT a PRN - Ibuprofen 600mg Oral Tablet, 1 tablet Every 6 Hours for joint pain
+				as if "for" was written as "because of", so coded with an indication, not precondition -->
+    <entry>
+        <substanceAdministration classCode="SBADM" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+            <id extension="500035" root="1.3.6.1.4.1.22812.3.99930.3.4.9"/>
+            <id extension="500013" root="1.3.6.1.4.1.22812.3.99930.3.4.9"/>
+            <text>
+                <reference value="#Medication_4"/>
+            </text>
+            <statusCode code="active"/>
+            <effectiveTime xsi:type="IVL_TS">
+                <low value="20130310"/>
+                <high nullFlavor="NI"/>
+            </effectiveTime>
+            <!-- for the frequency of every 6 hours, we omit the institutionSpecified="false" attribute as false is the default value 
+				the reader is referred to the Frequency examples for more information.
+			-->
+            <effectiveTime xsi:type="PIVL_TS" operator="A">
+                <period value="6" unit="h"/>
+            </effectiveTime>
+            <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1"
+                codeSystemName="NCI Thesaurus" displayName="Oral"/>
+            <doseQuantity value="1"/>
+            <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                    <manufacturedMaterial>
+                        <code code="197806" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Ibuprofen 600mg Oral Tablet">
+                            <originalText>
+                                <reference value="#MedicationName_4"/>
+                            </originalText>
+                            <translation code="00603402221" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="Ibuprofen 600mg Oral Tablet"/>
+                        </code>
+                        <name>Ibuprofen</name>
+                    </manufacturedMaterial>
+                </manufacturedProduct>
+            </consumable>
+            <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <time value="20130310"/>
+                <assignedAuthor>
+                    <id extension="66666" root="2.16.840.1.113883.4.6"/>
+                    <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
+                        codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+                    <addr>
+                        <streetAddressLine>6666 StreetName St.</streetAddressLine>
+                        <city>Silver Spring</city>
+                        <state>MD</state>
+                        <postalCode>20901</postalCode>
+                        <country>US</country>
+                    </addr>
+                    <telecom value="tel:+1(301)666-6666" use="WP"/>
+                    <assignedPerson>
+                        <name>
+                            <given>Heartly</given>
+                            <family>Sixer</family>
+                            <suffix>MD</suffix>
+                        </name>
+                    </assignedPerson>
+                </assignedAuthor>
+            </author>
+            <!-- a problem indication of joint pain -->
+            <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09"/>
+                    <id extension="44" root="1.3.6.1.4.1.22812.3.99930.3.4.1.3"/>
+                    <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="404684003" displayName="Finding"/>
+                    <text>
+                        <reference value="#MedicationIndication_4"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low nullFlavor="NI"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="57676002" codeSystem="2.16.840.1.113883.6.96" displayName="Joint pain" />
+                </observation>
+            </entryRelationship>
+        </substanceAdministration>
+    </entry>
+</section>

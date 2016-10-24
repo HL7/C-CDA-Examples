@@ -1,0 +1,117 @@
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+    <!-- Medication Section (entries required) -->
+    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication Use"/>
+    <title>MEDICATIONS</title>
+    <text>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Medication</th>
+                    <th>Instructions</th>
+                    <th>Dosage</th>
+                    <th>Effective Dates (start - stop)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ID="Medication_0">
+                    <td>
+                        <content ID="MedicationName_0" xmlns="urn:hl7-org:v3">Ibuprofen 600mg Oral Tablet</content>
+                    </td>
+                    <td>
+                        <content ID="MedicationSig_0" xmlns="urn:hl7-org:v3">take 1 tablet QID PRN</content>
+                    </td>
+                    <td>
+                        <content ID="MedicationDosage_0" xmlns="urn:hl7-org:v3">600 MG</content>
+                    </td>
+                    <td>Dec-18-2013 - </td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="INT">
+            <!-- This medication use case is a medication to be administered. If it has been already administered use moodCode = "EVN". If an ordered drug then use moodCode = "RQO" -->
+            <!-- Dependencies exist between moodCode, statusCode and effectiveTime  -->
+            <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+            <id root="47d3e719-f688-459d-bcdc-47c6de0767a9"/>
+            <text>
+                <!-- This reference refers to medication information in unstructured portion of section-->
+                <reference value="#Medication_0"/>
+            </text>
+            <statusCode code="active"/>
+            <!-- This first effectiveTime shows that medication was added on December 18, 2013 (not known to have stopped)-->
+            <effectiveTime xsi:type="IVL_TS">
+                <low value="20131218"/>
+                <high nullFlavor="NI"/>
+            </effectiveTime>
+            <!-- This second effectiveTime represents QID from medication sig. -->
+            <!-- InstituionSpecified = "true" means that it can be given 4 times per day but need not be exactly timed to every 6 hours-->
+            <!-- InstituionSpecified = "false" would mean that timing needs to be administered exactly as structured-->
+            <!-- Operator "A" means that this timing information is in addition to previous effectiveTime information provided-->
+            <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="6" unit="h"/>
+            </effectiveTime>
+            <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+            <!-- This relates directly to the code used for medication. Since it's a tablet, then only specified needed in dose is 1x per administration-->
+            <doseQuantity value="1"/>
+            <consumable>
+                <manufacturedProduct classCode="MANU">
+                    <!-- ** Medication information ** -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                    <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
+                    <manufacturedMaterial>
+                        <!-- Medications should be specified at a level corresponding to prescription when possible, such as 600mg oral tablet (non-branded)-->
+                        <code code="197806" displayName="Ibuprofen 600mg Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                            <originalText>
+                                <reference value="#MedicationName_0"/>
+                            </originalText>
+                            <translation code="00603402221" codeSystem="2.16.840.1.113883.6.69"
+                                codeSystemName="NDC" displayName="Ibuprofen 600mg Oral Tablet"/>
+                        </code>
+                    </manufacturedMaterial>
+                </manufacturedProduct>
+            </consumable>
+            <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <!-- Time the author noted that patient is on no medications -->
+                <time value="20131218"/>
+                <assignedAuthor>
+                    <id extension="66666" root="2.16.840.1.113883.4.6"/>
+                    <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
+                        codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+                    <addr>
+                        <streetAddressLine>6666 StreetName St.</streetAddressLine>
+                        <city>Silver Spring</city>
+                        <state>MD</state>
+                        <postalCode>20901</postalCode>
+                        <country>US</country>
+                    </addr>
+                    <telecom value="tel:+1(301)666-6666" use="WP"/>
+                    <assignedPerson>
+                        <name>
+                            <given>Heartly</given>
+                            <family>Sixer</family>
+                            <suffix>MD</suffix>
+                        </name>
+                    </assignedPerson>
+                </assignedAuthor>
+            </author>
+            <precondition typeCode="PRCN">
+                <criterion>
+                    <!-- ** Precondition for substance administration ** -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.25"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.25" extension="2014-06-09"/>
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                    <!-- If a precondition were specified in medication sig, you would include code here. Include nullFlavor="NI" when PRN specified but without precondition-->
+                    <value xsi:type="CD" nullFlavor="NI"  />
+                </criterion>
+            </precondition>
+        </substanceAdministration>
+    </entry>
+</section>
