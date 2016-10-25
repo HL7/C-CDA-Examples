@@ -1,0 +1,97 @@
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+    <!-- Problem Section with Coded Entries Required -->
+    <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+    <!-- Problem Section with Coded Entries Required -->
+    <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+        displayName="Problem List"/>
+    <title>PROBLEMS</title>
+    <text ID="Concern_1"> Problem Concern:<br/> Concern Tracker Start Date: 06/07/2013 16:05:06<br/>
+        Concern Tracker End Date: <br/> Concern Status: Active<br/>
+        <content ID="problems1">No known <content ID="problemType1">problems.</content></content>
+    </text>
+    <entry typeCode="DRIV">
+        <!-- Problem Concern Act -->
+        <act classCode="ACT" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+            <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+            <!-- SDWG supports 48765-2 or CONC in the code element -->
+            <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+            <text>
+                <reference value="#Concern_1"/>
+            </text>
+            <statusCode code="active"/>
+            <!-- So long as the underlying condition is of concern to the provider (i.e., as long as the condition, 
+                    whether active or resolved, is of ongoing concern and interest to the provider), the statusCode is “active”. 
+                    Only when the underlying condition is no longer of concern is the statusCode set to “completed”. -->
+            <effectiveTime>
+                <low value="20130607160506"/>
+                <!-- The effectiveTime reflects the time that the underlying condition was felt to be a concern; 
+                        it may or may not correspond to the effectiveTime of the condition (e.g., even five years later, the clinician may remain concerned about a prior heart attack).-->
+            </effectiveTime>
+            <!-- status is active so high is not applicable. If high is present it should have nullFlavor of NA-->
+
+            <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <time value="20130607160506"/>
+                <assignedAuthor>
+                    <id extension="66666" root="2.16.840.1.113883.4.6"/>
+                    <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
+                        codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+                    <addr>
+                        <streetAddressLine>6666 StreetName St.</streetAddressLine>
+                        <city>Silver Spring</city>
+                        <state>MD</state>
+                        <postalCode>20901</postalCode>
+                        <country>US</country>
+                    </addr>
+                    <telecom value="tel:+1(301)666-6666" use="WP"/>
+                    <assignedPerson>
+                        <name>
+                            <given>Heartly</given>
+                            <family>Sixer</family>
+                            <suffix>MD</suffix>
+                        </name>
+                    </assignedPerson>
+                </assignedAuthor>
+            </author>
+            <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <!-- The negationInd is used to indicate the absence of the condition in observation/value (Observation.ValueNegationInd). 
+                            A negationInd of "true" coupled with an observation/value of SNOMED code 55607006 "Problem" 
+                            indicates that the patient has no known conditions. -->
+                    <!-- problem observation template -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                    <id root="4adc1021-7b14-11db-9fe1-0800200c9a67"/>
+                    <code code="64572001" displayName="Disease" codeSystem="2.16.840.1.113883.6.96"
+                        codeSystemName="SNOMED CT">
+                        <translation code="75323-6" codeSystem="2.16.840.1.113883.6.1"
+                            codeSystemName="LOINC" displayName="Condition"/>
+                    </code>
+                    <text>
+                        <reference value="#problems1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20130607160506"/>
+                    </effectiveTime>
+                    <!-- The time when this was biologically relevant ie True for the patient. -->
+                    <!-- As a minimum time interval over which this is true, populate the effectiveTime/low with the current time. -->
+                    <!-- It would be equally valid to have a longer range of time over which this statement was represented as being true. -->
+                    <!-- As a maximum, you would never indicate an effectiveTime/high that was greater than the current point in time. -->
+
+                    <!-- This idea assumes that the value element could come from the Problem value set, or-->
+                    <!-- when negationInd was true, is could also come from the ProblemType value set (and code would be ASSERTION). -->
+                    <value xsi:type="CD" code="55607006" displayName="Problem"
+                        codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                        <originalText>
+                            <reference value="#problemType1"/>
+                        </originalText>
+                    </value>
+                </observation>
+            </entryRelationship>
+        </act>
+    </entry>
+</section>

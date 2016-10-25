@@ -1,0 +1,47 @@
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+	<code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PROCEDURES"/>
+	<title>Procedures</title>
+	<text>
+		<table>
+			<thead>
+				<tr>
+					<th>Description</th>
+					<th>Date and Time (Range)</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ID="Procedure3">
+					<td ID="ProcedureDesc3">Individual Counseling For Medical Nutrition </td>
+					<td>29 Mar 2014 10:45am</td>
+					<td>Completed</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry typeCode="DRIV">
+		<!-- Act should be used for care of the patient that cannot be classified as a procedure or observation (e.g. wound dressing change, counseling) -->
+		<act classCode="ACT" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.12"/>
+			<templateId root="2.16.840.1.113883.10.20.22.4.12" extension="2014-06-09"/>
+			<id root="9c0f070c-2e9e-4be1-a5b5-ff6d0f68123c"/>
+			<code code="61310001" codeSystem="2.16.840.1.113883.6.96" displayName="Nutrition education" codeSystemName="SNOMED-CT">
+				<originalText>
+					<reference value="#ProcedureDesc3"/>
+				</originalText>
+				<translation code="97802" codeSystem="2.16.840.1.113883.6.12" displayName="Medical nutrition therapy; initial" codeSystemName="CPT" />
+				<translation code="S9470" codeSystem="2.16.840.1.113883.6.13" displayName="Nutritional counseling, diet" codeSystemName="HCPCS"/>
+				<!-- For some activities, ICD-9 and ICD-10 procedure codes may not apply (e.g. nutritional counseling). ICD-9 and ICD-10 diagnosis codes translate and shown below-->
+				<translation code="V65.3" codeSystem="2.16.840.1.113883.6.103" displayName="Dietary surveillance and counseling" codeSystemName="ICD-9 Diagnosis"/>
+				<translation code="Z71.3" codeSystem="2.16.840.1.113883.6.90" displayName="Dietary counseling and surveillance" codeSystemName="ICD-10 Diagnosis"/>
+			</code>
+			<text>
+				<reference value="#Procedure3" />
+			</text>
+			<statusCode code="completed"/>
+			<effectiveTime value="20140329104513+0500"/>
+		</act>
+	</entry>
+</section>

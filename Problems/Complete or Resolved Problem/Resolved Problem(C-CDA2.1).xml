@@ -1,0 +1,101 @@
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+	<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" displayName="Problem List"/>
+	<title>Problem List</title>
+	<text>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Dates</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ID="Problem1">
+					<td ID="ProblemDescription1">Acute pharyngitis</td>
+					<td>
+						<content>Onset: Apr 2 2014</content>
+						<br />
+						<content>Resolution: Apr 5 2014</content>
+					</td>
+					<td>Resolved</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry>
+		<act classCode="ACT" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.3" />
+			<templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+			<id root="e5fbc288-659f-4aeb-a5e1-eb7cc8fcdfaf" />
+			<code code="CONC" codeSystem="2.16.840.1.113883.5.6" />
+			<!-- Since this is a resolved problem, the concern status has been changed to completed. -->
+			<!-- While clinicians can track resolved problems, generally active problems will have active concern status and resolved concerns will be completed -->
+			<statusCode code="completed" />
+			<effectiveTime>
+				<!-- This represents the time that the clinician began tracking the concern. This may frequently be an EHR timestamp-->
+				<low value="20140403124536+0500" />
+				<!-- This represents the time that the clinician stopped actively the concern. This may frequently be an EHR timestamp-->
+				<high value="20140407102516+0500" />
+			</effectiveTime>
+			<entryRelationship typeCode="SUBJ">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+					<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+					<id extension="10241108" root="1.3.6.1.4.1.22812.4.111.0.4.1.2.1" />
+					<code code="55607006" displayName="Problem"
+						codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+						<translation code="75326-9" codeSystem="2.16.840.1.113883.6.1"
+							codeSystemName="LOINC" displayName="Problem"/>
+					</code>
+					<text>
+						<reference value="#Problem1" />
+					</text>
+					<statusCode code="completed" />
+					<effectiveTime>
+						<!-- This represents the date of biological onset. This can be before the patient vistited the clinician, as illustrated in this example-->
+						<low value="20140402" />
+						<!-- This represents the date of resolution. Since this a boundary condition, if you wish to include the full day, the boundary should be padded or be the start of next day -->
+						<!-- This reflects a common confusion point since people often consider dates to include the day at the boundary, but this ia RIM-related boundary constraint-->
+						<high value="20140405235959+0500"/>
+					</effectiveTime>
+					<!-- This is a SNOMED code as the primary vocabulary for problem lists-->
+					<value xsi:type="CD" code="363746003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Acute pharyngitis">
+						<originalText>
+							<reference value="#ProblemDescription1" />
+						</originalText>
+						<!-- These are common translations of the SNOMED code, ICd-9 and ICd-10 are often used in billing-->
+						<translation xsi:type="CD" code="462" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9" displayName="Acute pharyngitis" />
+						<translation xsi:type="CD" code="J02.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD-10" displayName="Acute pharyngitis" />
+					</value>
+					<author>
+						<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+						<time value="20140407"/>
+						<assignedAuthor>
+							<id extension="66666" root="2.16.840.1.113883.4.6"/>
+							<code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
+								codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+							<addr>
+								<streetAddressLine>6666 StreetName St.</streetAddressLine>
+								<city>Silver Spring</city>
+								<state>MD</state>
+								<postalCode>20901</postalCode>
+								<country>US</country>
+							</addr>
+							<telecom value="tel:+1(301)666-6666" use="WP"/>
+							<assignedPerson>
+								<name>
+									<given>Heartly</given>
+									<family>Sixer</family>
+									<suffix>MD</suffix>
+								</name>
+							</assignedPerson>
+						</assignedAuthor>
+					</author>
+				</observation>
+			</entryRelationship>
+		</act>
+	</entry>
+</section>

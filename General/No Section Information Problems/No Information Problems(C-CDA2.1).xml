@@ -1,0 +1,17 @@
+<!-- ************************* PROBLEM LIST ****************************** -->
+<component>
+    <!-- nullFlavor of NI indicates No Information.-->
+    <!-- SITE and NIST TTT Validators has been updated to check for sections with nullFlavor -->
+    <section nullFlavor="NI">
+        <!-- conforms to Problems section with entries optional -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.5"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.5" extension="2015-08-01"/>
+        <!-- conforms to Problems section with entries required -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+        <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+            displayName="PROBLEM LIST"/>
+        <title>PROBLEMS</title>
+        <text>No Information</text>
+    </section>
+</component>

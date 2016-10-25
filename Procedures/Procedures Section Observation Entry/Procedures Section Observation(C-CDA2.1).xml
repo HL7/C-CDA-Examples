@@ -1,0 +1,48 @@
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+	<code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PROCEDURES"/>
+	<title>Procedures</title>
+	<text>
+		<table>
+			<thead>
+				<tr>
+					<th>Description</th>
+					<th>Date and Time (Range)</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ID="Procedure2">
+					<td ID="ProcedureDesc2">Electrocardiogram (12-Lead)</td>
+					<td>29 Mar 2014 09:15am</td>
+					<td>Completed</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry typeCode="DRIV">
+		<!-- Observations should be used for care that result in information about the patient (e.g. a diagnostic test & result) but do not alter physical state-->
+		<observation classCode="OBS" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.13"/>
+			<templateId root="2.16.840.1.113883.10.20.22.4.13" extension="2014-06-09"/>
+			<id root="c03e5445-af1b-4911-a419-e2782f21448c"/>
+			<code code="268400002" codeSystem="2.16.840.1.113883.6.96" displayName="12 lead ECG" codeSystemName="SNOMED-CT">
+				<originalText>
+					<reference value="#ProcedureDesc2"/>
+				</originalText>
+				<translation code="93000" codeSystem="2.16.840.1.113883.6.12" displayName="Electrocardiogram, complete" codeSystemName="CPT" />
+				<translation code="G8704" codeSystem="2.16.840.1.113883.6.13" displayName="12-Lead Electrocardiogram (Ecg) Performed" codeSystemName="HCPCS"/>
+				<translation code="89.52" codeSystem="2.16.840.1.113883.6.104" displayName="Electrocardiogram" codeSystemName="ICD-9 Procedure"/>
+				<translation code="4A02X4Z" codeSystem="2.16.840.1.113883.6.4" displayName="Measurement of Cardiac Electrical Activity, External Approach" codeSystemName="ICD-10 Procedure"/>
+			</code>
+			<text>
+				<reference value="#Procedure2" />
+			</text>
+			<statusCode code="completed"/>
+			<effectiveTime value="20140329091522+0500" />
+			<!-- When choosing an observation, value records relevant findings-->
+			<value xsi:type="CD" code="251135002" codeSystem="2.16.840.1.113883.6.96" displayName="Borderline normal ECG" codeSystemName="SNOMED-CT" />
+		</observation>
+	</entry>
+</section>
