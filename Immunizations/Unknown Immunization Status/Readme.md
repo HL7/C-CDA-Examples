@@ -28,10 +28,7 @@
 * This is an example of how an author can record they do now know whether the patient has received any vaccinations.
 ###Custodian
 
-* John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
-
-
-
+* Brett Marquard, brett@riverrockassociates.com (GitHub: brettmarquard)
 ###Keywords
 
-* substance, immunzation
+* substance, immunzation 

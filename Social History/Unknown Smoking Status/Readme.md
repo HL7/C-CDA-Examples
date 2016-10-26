@@ -31,4 +31,4 @@
 
 ###Keywords
 
-* Social History
+* Social History, Smoking

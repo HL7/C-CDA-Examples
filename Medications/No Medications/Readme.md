@@ -10,7 +10,7 @@
 
 * 2.16.840.1.113883.10.20.22.2.1.1:2014-06-09
 
-* 2.16.840.1.113883.10.20.22.4.16:2014-06-09
+* Medication Activity 2.16.840.1.113883.10.20.22.4.16:2014-06-09
 
 * 2.16.840.1.113883.10.20.22.4.23:2014-06-09
 * 2.16.840.1.113883.10.20.22.4.119
@@ -28,10 +28,7 @@
 * This is an example of no medications
 ###Custodian
 
-* John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
-
-
-
+* Brett Marquard, brett@riverrockassociates.com (GitHub: brettmarquard)
 ###Keywords
 
 * medications

@@ -1,0 +1,67 @@
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+	<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+		displayName="RESULTS"/>
+	<title>RESULTS</title>
+	<text>
+		<table border="1" width="100%">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Actual Result</th>
+					<th>Date</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>CBC with Ordered Manual Differential panel - Blood</td>
+					<td/>
+					<td>8/6/2012</td>
+				</tr>
+				<tr>
+					<td>
+						<content ID="result5">Leukocytes [#/​volume] in Blood by Manual count
+							[LOINC: 804-5]</content>
+					</td>
+					<!-- Representation of the pending test in the narrative section -->
+					<td>Pending</td>
+					<td>8/6/2012</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry typeCode="DRIV">
+		<organizer classCode="BATTERY" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+			<templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+			<id root="7d5a02b0-67a4-11db-bd13-0800200c9a66"/>
+			<code xsi:type="CE" code="57782-5"
+				displayName="CBC with Ordered Manual Differential panel - Blood"
+				codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1"/>
+			<!-- Status is active since all components are not complete -->
+			<statusCode code="active"/>
+			<component>
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+					<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+					<id root="68762391-bfa5-4dfa-9f6f-d37109a97d19"/>
+					<code xsi:type="CE" code="804-5"
+						displayName="Leukocytes [#/​volume] in Blood by Manual count"
+						codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#result5"/>
+					</text>
+					<!-- Status of this test is active -->
+					<statusCode code="active"/>
+					<effectiveTime value="20120806"/>
+					<!-- This should represent what the EHR or other system received from the lab -->
+					<!-- The more common scenario is the result is not present -->
+					<!-- The task force created this example becasue it came up during certification testing-->
+					<!-- We do not believe this is a common scenario -->
+                    <value xsi:type="PQ" nullFlavor="NA"/>									
+                </observation>
+			</component>
+		</organizer>
+	</entry>
+</section>

@@ -34,4 +34,4 @@
 
 ###Keywords
 
-* Encounters
+* Hospital Encounter, Discharge Diagnoses, participant, performer

@@ -30,10 +30,7 @@
 * This is an example of a propensity to drug adverse event with information on multiple allergic reactions each with reaction severity. It was based upon discussion with Rob Hausam and John D'Amore and Russ Leftwich in coordination with Patient Care Committee. This sample replaces the Epinephrine sample which had less clinical accuracy/relevance. See DSTU 219 for update regarding act/code.
 ###Custodian
 
-* John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
-
-
-
+* Lisa R. Nelson LisaRNelson@cox.net (GitHub: lisarnelson)
 ###Keywords
 
 * substance, allergies, allergy

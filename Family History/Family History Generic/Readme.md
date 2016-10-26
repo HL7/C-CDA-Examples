@@ -7,12 +7,8 @@
 
 ###C-CDA 2.1 Example: 
 
-* 2.16.840.1.113883.10.20.22.2.22.1:2015-08-01
-* 2.16.840.1.113883.10.20.22.4.49:2015-08-01
-* 2.16.840.1.113883.10.20.22.4.32
-* 2.16.840.1.113883.10.20.22.4.33:2015-08-01
-* 2.16.840.1.113883.10.20.22.4.4:2015-08-01
-* 2.16.840.1.113883.10.20.22.4.119
+* Family History Organizer (2.16.840.1.113883.10.20.22.4.45 2015-08-01)
+* Family History Observation (2.16.840.1.113883.10.20.22.4.46 2015-08-01)
 
 ###Reference to full CDA sample:
 * Family history in empty CCD
@@ -28,10 +24,7 @@
 * Example shows generic "family history of x" and "no family history of x" with commentary suggesting better options.
 ###Custodian
 
-* John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
-
-
-
+* Benjamin Flessner, benjamin@epic.com (GitHub: benjaminflessner)
 ###Keywords
 
 * Family History

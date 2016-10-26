@@ -2,7 +2,7 @@
 
 * Approval Status: Pending
 
-* Example Task Force: Approved <put approval date here>
+* Example Task Force: Approved 4/10/2014
 
 * SDWG: Withdrawn from consideration since not clinically relevant.
 

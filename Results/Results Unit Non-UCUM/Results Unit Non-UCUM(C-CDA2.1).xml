@@ -1,0 +1,100 @@
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+	<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+		displayName="Relevant diagnostic tests and/or laboratory data"/>
+	<title>Results</title>
+	<text>
+		<table>
+			<thead>
+				<tr>
+					<th>Description</th>
+					<th>Value / Unit</th>
+					<th>Interpretation</th>
+					<th>Reference Range</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th colspan="4"><content ID="test1">CBC</content>at 02-13-2014 10:37a </th>
+				</tr>
+				<tr>
+					<td ID="component1">Platelet count</td>
+					<td>152 THOUS/MCL</td>
+					<td>Normal</td>
+					<td>150-400</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry>
+		<organizer classCode="BATTERY" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+			<templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+			<id root="1.2.3.4" extension="abcd"/>
+			<code code="57021-8" displayName="CBC W Auto Differential panel"
+				codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+				<!-- Name of test as recorded in the narrative -->
+				<originalText>
+					<reference value="#test1"/>
+				</originalText>
+			</code>
+			<statusCode code="completed"/>
+			<effectiveTime>
+				<low value="20140213103700-0600"/>
+				<high value="20140213103700-0600"/>
+			</effectiveTime>
+			<!-- Component for 'Platelets' observation and value -->
+			<component>
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+					<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+					<id root="1.2.3.4.5" extension="efgh"/>
+					<code code="26515-7" displayName="Platelets [#/volume] in Blood"
+						codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+						<!-- Representation of this observation name in the narrative -->
+						<originalText>
+							<reference value="#component1"/>
+						</originalText>
+					</code>
+					<statusCode code="completed"/>
+					<effectiveTime value="20140213103700-0600"/>
+					<!-- Lab sends a result to an EHR or another system with discrete units 
+                          that have not been translated to UCUM -->
+					<!-- value/@nullFlavor must be used since the unit is not specified in UCUM-->
+					<value xsi:type="PQ" nullFlavor="OTH">
+						<!-- The units for this lab result require translation to be conformant to UCUM.-->
+						<!-- translation/@nullFlavor must be used since the unit is not specified in any coding system-->
+						<!-- This doesn't mean the value is null, but that the code/codeSystem is unknown -->
+						<translation value="152" nullFlavor="OTH">
+							<!-- originalText representing the units received from the lab.-->
+							<!-- It does NOT include the value-->
+							<originalText>THOUS/MCL</originalText>
+						</translation>
+					</value>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<!-- Optional reference range - in this case no UCUM available -->
+					<referenceRange>
+						<observationRange>
+							<!-- Reference ranges must follow the same method as value if UCUM is unknown-->
+							<value xsi:type="IVL_PQ">
+								<low nullFlavor="OTH">
+									<translation value="150" nullFlavor="OTH">
+										<originalText>THOUS/MCL</originalText>
+									</translation>
+								</low>
+								<high nullFlavor="OTH">
+									<translation value="400" nullFlavor="OTH">
+										<originalText>THOUS/MCL</originalText>
+									</translation>
+								</high>
+							</value>
+							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation a specific patient value-->
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						</observationRange>
+					</referenceRange>
+				</observation>
+			</component>
+		</organizer>
+	</entry>
+</section>

@@ -1,0 +1,93 @@
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+	<!-- Results Section with Coded Entries Required-->
+	<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+		displayName="Relevant diagnostic tests and/or laboratory data"/>
+	<title>Results</title>
+	<text>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Description</th>
+					<th>Value / Unit</th>
+					<th>Interpretation</th>
+					<th>Reference Range</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th colspan="4">Glucose [Mass/Volume] In Capillary Blood at 03-02-2014 9:08a</th>
+				</tr>
+				<tr>
+					<td ID="SomeReferenceGoesHere4">Glucose [Mass/Volume] In Capillary Blood</td>
+					<td>&gt; 500 mg/dL</td>
+					<td>High - Above Instrument Scale</td>
+					<td>80-140 mg/dL</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry>
+		<organizer classCode="BATTERY" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+			<templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+			<id root="cda1fc54-59fb-412d-86e0-acf6b78aa9a6"/>
+			<code code="32016-8" displayName="Glucose [Mass/Volume] In Capillary Blood"
+				codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+			<statusCode code="completed"/>
+			<effectiveTime>
+				<low value="2014030200908+0500"/>
+				<high value="2014030200908+0500"/>
+			</effectiveTime>
+			<component>
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+					<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+					<id root="cda1fc54-59fb-412d-86e0-acf6b78aa9a6"/>
+					<code code="32016-8" displayName="Glucose [Mass/Volume] In Capillary Blood"
+						codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#SomeReferenceGoesHere4"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="201403020908+0500"/>
+					<!-- Representing a result higher than the measurement range of an instrument. -->
+					<!-- Example is that a point-of-care glucose meter may return >500 for very high glucose values-->
+					<value xsi:type="IVL_PQ">
+						<!-- The lower bound represents the minimum value based on lab result-->
+						<!-- We've shown a greater than (NOT greater than or equal to) in this example. -->
+						<!-- Note that if the inclusive attribute is not specified, then it defaults to true -->
+						<low value="500" unit="mg/dL" inclusive="false"/>
+						<!-- The upper bound is set to nullFlavor of positive infinity since it could be any number greater than 500-->
+						<high nullFlavor="PINF"/>
+					</value>
+					<!-- Interpretation states that this is high off instrument scale. Critically high could also be denoted by "HH"-->
+					<interpretationCode code=">" codeSystem="2.16.840.1.113883.5.83"/>
+					<referenceRange>
+						<observationRange>
+							<!-- Reference ranges can be expressed as structured physical quantity interval-->
+							<value xsi:type="IVL_PQ">
+								<low value="80" unit="mg/dL"/>
+								<high value="140" unit="mg/dL"/>
+							</value>
+							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation a specific patient value-->
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						</observationRange>
+					</referenceRange>
+					<referenceRange>
+						<observationRange>
+							<!-- Reference ranges can be expressed as structured physical quantity interval-->
+							<value xsi:type="IVL_PQ">
+								<low value="140" unit="mg/dL"/>
+								<high value="500" unit="mg/dL"/>
+							</value>
+							<!-- This interpretation code denotes that this reference range is for hight results. This is not the interpretation a specific patient value-->
+							<interpretationCode code="H" codeSystem="2.16.840.1.113883.5.83"/>
+						</observationRange>
+					</referenceRange>
+				</observation>
+			</component>
+		</organizer>
+	</entry>
+</section>

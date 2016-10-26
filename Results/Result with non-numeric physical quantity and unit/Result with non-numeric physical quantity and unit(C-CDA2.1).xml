@@ -1,0 +1,102 @@
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+	<!-- Results Section with Coded Entries Required-->
+	<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+		displayName="Relevant diagnostic tests and/or laboratory data"/>
+	<title>Results</title>
+	<text>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Description</th>
+					<th>Value</th>
+					<th>Unit</th>
+					<th>Interpretation</th>
+					<th>Reference Range</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th colspan="4">Lipid Panel, 10/20/2013 9:08 am</th>
+				</tr>
+				<tr ID="result1">
+					<td>Triglycerides</td>
+					<td>450</td>
+					<td>mg/dL</td>
+					<td>Abnormal</td>
+					<td>&lt;150 mg/dL</td>
+				</tr>
+				<tr ID="result2">
+					<td>LDL, Calculated</td>
+					<!-- Example value filed from HL7 interface, paired with a real unit -->
+					<td>Unable to calculate</td>
+					<td>mg/dL</td>
+					<td/>
+					<td/>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry>
+		<organizer classCode="BATTERY" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+			<templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+			<id root="f16043d8-8d93-41a1-9682-a6cc7215572c"/>
+			<code code="24331-1" displayName="Lipid Panel" codeSystem="2.16.840.1.113883.6.1"
+				codeSystemName="LOINC"/>
+			<statusCode code="completed"/>
+			<effectiveTime>
+				<low value="201310200908+0500"/>
+				<high value="201310200908+0500"/>
+			</effectiveTime>
+			<!-- This component just here to show a typical PQ result, as well as the basis for an atypical LDL result -->
+			<component>
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+					<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+					<id root="ccccccd8-8d93-41a1-9682-a6cc7215572c"/>
+					<code code="3043-7" displayName="Triglycerides"
+						codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#result1"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="201310200908+0500"/>
+					<value xsi:type="PQ" value="450" unit="mg/dL"/>
+					<!-- optional interpretationCode/referenceRange snipped for brevity -->
+				</observation>
+			</component>
+			<component>
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+					<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+					<id root="eeeee3d8-8d93-41a1-9682-a6cc7215572c"/>
+					<code code="13457-7" displayName="Cholesterol in LDL by calculation"
+						codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#result2"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="201310200908+0500"/>
+					<!-- When non-numeric, value is a string and does not contain the units.
+                         If coming from a v2 message, this contains only the value from OBX-5 -->
+					<value xsi:type="ST">Unable to calculate</value>
+					<!-- Units are expressed in a related component observation.
+                         The code (question) is the SNOMED code for units.
+                         The value (answer) is represented as xsi:type="CD" with a codeSystem of UCUM.
+                         Note - if the unit is non-UCUM (such as receiving a string in OBX-6), 
+                         the value element would be a string with xsi:type="ST". -->
+					<entryRelationship typeCode="COMP">
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="246514001" displayName="units"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+							<value xsi:type="CD" code="mg/dL" codeSystem="2.16.840.1.113883.6.8"
+								codeSystemName="UCUM"/>
+						</observation>
+					</entryRelationship>
+				</observation>
+			</component>
+		</organizer>
+	</entry>
+</section>

@@ -27,7 +27,7 @@
 
 ###Comments
 
-* This is an example of an allergy to a drug class (penicillins) using NDF-RT as terminology with information on both allergic reaction and reaction severity. 
+* This is an example of an allergy to a drug class (penicillins) using NDF-RT as terminology with information on both allergic reaction and reaction severity. See DSTU 219 for update regarding act/code
 ###Custodian
 
 * John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)

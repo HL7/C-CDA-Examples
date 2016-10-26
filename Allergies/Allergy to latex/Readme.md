@@ -2,6 +2,7 @@
 
 * Approval Status: Approved
 * Example Task Force: 4/17/2014
+* Example Task Force (review 2): 3/12/2015
 * SDWG: 3/19/2015
 
 
@@ -26,7 +27,7 @@
 
 ###Comments
 
-* This is an example of a propensity to substance allergy with information on both allergic reaction and reaction severity. It was based upon discussion with Russ Leftwich and Lisa Nelson in coordination with Patient Care Committee. 
+* This is an example of a propensity to substance allergy with information on both allergic reaction and reaction severity. It was based upon discussion with Russ Leftwich and Lisa Nelson in coordination with Patient Care Committee. See DSTU 219 for update regarding act/code.
 ###Custodian
 
 * John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)

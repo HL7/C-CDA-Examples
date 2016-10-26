@@ -26,7 +26,7 @@
 
 ###Comments
 
-* This is an example of an allergy to a specific drug (penicillin) using RxNorm as terminology with information on both allergic reaction and reaction severity. For drug allergies, this example illustrates a good practice of encoding the allergen at the ingredient level (penicillin) not administration level (10 mg tablet). 
+* This is an example of an allergy to a specific drug (penicillin) using RxNorm as terminology with information on both allergic reaction and reaction severity. For drug allergies, this example illustrates a good practice of encoding the allergen at the ingredient level (penicillin) not administration level (10 mg tablet). See DSTU 219 for update regarding act/code. 
 * Multiple reactions are listed in some examples
 ###Custodian
 

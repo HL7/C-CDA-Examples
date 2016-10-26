@@ -12,7 +12,7 @@
 * 2.16.840.1.113883.10.20.22.4.119
 
 ###Reference to full CDA sample:
-* Procedure in empty CCD
+* Problems in empty CCD
 
 
 ###Validation location
@@ -22,7 +22,7 @@
 
 ###Comments
 
-* This example illustrates how a procedure which "alters the physical state" of the patient and should be classified as a procedure.
+* This example illustrates an act within a procedure section.
 ###Custodian
 
 * John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)

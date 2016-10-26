@@ -1,18 +1,18 @@
 ##Approval Status 
 
 * Approval Status: Approved
-* Example Task Force: 5/22/2014
-* SDWG: 5/29/2014
-
+* Example Task Force: 3/5/2015
+* SDWG: 3/12/2015
 
 ###C-CDA 2.1 Example: 
 
-* 2.16.840.1.113883.10.20.22.2.7.1:2014-06-09
-* 2.16.840.1.113883.10.20.22.4.12:2014-06-09
+* 2.16.840.1.113883.10.20.22.2.3.1:2015-08-01
+* 2.16.840.1.113883.10.20.22.4.1:2015-08-01
 * 2.16.840.1.113883.10.20.22.4.119
+* 2.16.840.1.113883.10.20.22.4.2:2015-08-01
 
 ###Reference to full CDA sample:
-* Problems in empty CCD
+* Results in empty CCD
 
 
 ###Validation location
@@ -22,7 +22,7 @@
 
 ###Comments
 
-* This example illustrates how a procedure which "alters the physical state" of the patient and should be classified as a procedure.
+* This is an example of a value from a lab result that may not be structured.
 ###Custodian
 
 * John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
@@ -31,4 +31,4 @@
 
 ###Keywords
 
-* problems
+* Results

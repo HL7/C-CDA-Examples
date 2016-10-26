@@ -1,8 +1,10 @@
 <component>
     <section>
         <!-- conforms to Immunizations section with entries optional -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.2"/>        
         <templateId root="2.16.840.1.113883.10.20.22.2.2" extension="2015-08-01"/>
         <!-- Immunizations section with entries required -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.2.1"/>
         <templateId root="2.16.840.1.113883.10.20.22.2.2.1" extension="2015-08-01"/>
         <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
             displayName="History of immunizations"/>
