@@ -1,7 +1,7 @@
 ##Approval Status 
 
 * Approval Status: Approved
-* Example Task Force: 3/13
+* Example Task Force: 3/13/2014
 * SDWG: 4/10/2014
 
 
