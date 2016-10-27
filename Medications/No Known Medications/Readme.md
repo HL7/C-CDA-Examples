@@ -2,7 +2,7 @@
 
 * Approval Status: Pending
 
-* Example Task Force: Approved <put approval date here>
+* Example Task Force: Approved 
 
 
 ###C-CDA 2.1 Example: 
@@ -26,13 +26,10 @@
 
 ###Comments
 
-* This is an example of a CCD Transition of ambulatory care with no known medications
+* This is an example of no known medications
 ###Custodian
 
-* John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
-
-
-
+* Brett Marquard, brett@riverrockassociates.com (GitHub: brettmarquard)
 ###Keywords
 
 * medications

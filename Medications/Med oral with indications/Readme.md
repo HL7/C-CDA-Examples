@@ -29,10 +29,7 @@
 * This is an example of a medication administered orally with indications.
 ###Custodian
 
-* John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
-
-
-
+* George Cole
 ###Keywords
 
 * medications
