@@ -1,6 +1,6 @@
 ##Approval Status 
 
-* Approval Status: Withdrawn
+* Approval Status: Approved
 * Example Task Force: Approved 4/10/2014
 
 * SDWG: Withdrawn from consideration since not clinically relevant.
