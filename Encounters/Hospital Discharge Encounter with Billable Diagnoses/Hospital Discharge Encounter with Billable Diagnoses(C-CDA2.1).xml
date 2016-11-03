@@ -22,7 +22,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
+				<tr ID="Encounter1">
 					<td ID="Enc1_Type">Inpatient</td>
 					<td>James Getwell, DO</td>
 					<td ID="Enc1_Dx1">Congestive Heart Failure</td>
@@ -49,7 +49,9 @@
 				</originalText>
 				<translation code="IMP" codeSystem="2.16.840.1.113883.5.4" displayName="Inpatient" codeSystemName="Act Encounter Code - Act Code"/>
 			</code>
-			
+			<text>
+				<reference value="#Encounter1" />
+			</text>
 			<!-- for a hospitalization, the low and high effectiveTimes would logically be admission and discharge date/time. --> 
 			<effectiveTime xsi:type="IVL_TS">
 				<low value ="201410281222+0500" />
