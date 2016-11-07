@@ -15,7 +15,7 @@
 * N/A
 
 ###Comments
-* This is a reference to a google document of common medication frequency patterns
+* This is a reference to a google document of [common medication frequency patterns](https://docs.google.com/document/d/1Y0Z458o_MrR2aPnpx6EygO6hpI88Bl95esjRWZ0agtY/edit)
 
 ###Custodian
 
