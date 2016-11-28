@@ -1,0 +1,82 @@
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+	<!-- Results Section with Coded Entries Required-->
+	<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+		displayName="Relevant diagnostic tests and/or laboratory data"/>
+	<title>Results</title>
+	<text>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Description</th>
+					<th>Value / Unit</th>
+					<th>Interpretation</th>
+					<th>Reference Range</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th colspan="4">Natriuretic Peptide B [Mass/Volume] In Blood at 10-20-2013 9:08a
+					</th>
+				</tr>
+				<tr>
+					<td ID="SomeReferenceGoesHere2">Natriuretic Peptide B [Mass/Volume] In
+						Blood</td>
+					<td>&lt;= 5pg/dL</td>
+					<td>Normal</td>
+					<td>0-100 pg/dL</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry>
+		<organizer classCode="BATTERY" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+			<templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+			<id root="df0f809e-f0a9-4a30-aad0-92b5cc868b67"/>
+			<code code="42637-9" displayName="Natriuretic Peptide B [Mass/Volume] In Blood"
+				codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+			<statusCode code="completed"/>
+			<effectiveTime>
+				<low value="201310200908+0500"/>
+				<high value="201310200908+0500"/>
+			</effectiveTime>
+			<component>
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+					<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+					<id root="df0f809e-f0a9-4a30-aad0-92b5cc868b67"/>
+					<code code="42637-9" displayName="Natriuretic Peptide B [Mass/Volume] In Blood"
+						codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#SomeReferenceGoesHere2"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="201310200908+0500"/>
+					<!-- Representing a result of less than with type of interval -->
+					<value xsi:type="IVL_PQ">
+						<!-- The lower bound for most physical measures of less than will be zero-->
+						<!-- Note that if the inclusive attribute is not specified, then it defaults to true -->
+						<low value="0" unit="pg/mL" inclusive="true"/>
+						<!-- The upper bound is based upon information returned in lab result, such as less than or equal to 5pg/mL (Note this is different than less than)-->
+						<!-- Note that if the inclusive attribute is not specified, then it defaults to true -->
+						<high value="5" unit="pg/mL" inclusive="true"/>
+					</value>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<referenceRange>
+						<observationRange>
+							<!-- Reference ranges can be expressed as structured physical quantity interval-->
+							<value xsi:type="IVL_PQ">
+								<low value="0" unit="pg/mL"/>
+								<high value="100" unit="pg/mL"/>
+							</value>
+							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation a specific patient value-->
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						</observationRange>
+					</referenceRange>
+				</observation>
+			</component>
+		</organizer>
+	</entry>
+</section>

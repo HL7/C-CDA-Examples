@@ -1,0 +1,139 @@
+<!-- Results with Lab Location this example shows content from the 2015 Certification Sender test file: 170.315_e1_vdt_amb_sample1_v8.pdf
+		since the focus of the example is upon the test data statement shown below, multiple actual results values are removed:
+		Laboratory Location Details for the above Laboratory Results: The laboratory location details are required to meet the 42 CFR 493.1291(c)(1) through (7) requirements identified in the Regulation
+-->
+<component>
+    <section>
+        <!-- ... this component / section is templated as a C-CDA R2.1 Results Section, entries required -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.3" extension="2015-08-01"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.3"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+        <code code="30954-2" codeSystem="2.16.840.1.113883.6.1"/>
+        <title>Results</title>
+        <text>
+            <table>
+                <!-- the results display in 3 columns: 
+								col 1: Result Organizer detail, containing the ordered test, date/time
+								col 2: the name and result of the items that are resulted
+								col 3: additional result details, such as ranges, interpretations, comments
+						-->
+                <colgroup>
+                    <col width="20%"/>
+                    <col width="40%"/>
+                    <col width="40%"/>
+                </colgroup>
+                <tbody styleCode="xRowGroup">
+                    <tr>
+                        <td>
+                            <content styleCode="xLabel xContentWrapping" ID="_3ffb46b1-9fe4-45f3-9a0f-e0e492563e7b">Urinanalysis macro (dipstick) panel</content>
+                            <br/>
+                            <content styleCode="xSecondary xContentWrapping">22-Jun-2015</content>
+                        </td>
+                        <!-- the CLIA requirement for Lab Location is to show the location in the human readable text -->
+                        <td>
+                            <content styleCode="xLabel">Laboratory: </content>
+                            <content> Value Labs</content>
+                            <content> 2474, Rocky place Beaverton OR 97006</content>
+                            <content> tel:+1-(555)666-1002</content>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <!-- rows removed just to simplify example -->
+                    <tr ID="_13a52df8-79ed-4689-a9da-14c5905de830">
+                        <td>
+                        </td>
+                        <td>
+                            <content styleCode="xSecondary" ID="_ea838e08-d5eb-4ed4-a176-e5f9a831a780">Specific gravity of Urine by Test strip</content>
+                            <content styleCode="xSecondary"> 1.015</content>
+                        </td>
+                        <td>
+                            <content styleCode="xLabel xSecondary">Range: </content>
+                            <!-- SDWG Example agreed to ID reference here since moving to td would mean text 'Range' is in observation -->
+                            <content ID="_08b7d0ee-aff1-4144-a3a5-c89d56d855ad">
+                                <content styleCode="xSecondary">1.005</content>
+                                <content styleCode="xSecondary"> - </content>
+                                <content styleCode="xSecondary">1.030</content>
+                            </content>
+                            <br/>
+                        </td>
+                    </tr>
+                    <!-- rows removed just to simplify example -->
+                </tbody>
+            </table>
+        </text>
+        <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+                <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+                <id root="1.3.6.1.4.1.22812.20.1.1.4.5" extension="1"/>
+                <code code="24357-6" codeSystem="2.16.840.1.113883.6.1">
+                    <originalText>
+                        <!-- reference the text of the organizer code -->
+                        <reference value="#_3ffb46b1-9fe4-45f3-9a0f-e0e492563e7b"/>
+                    </originalText>
+                </code>
+                <statusCode code="completed"/>
+                <effectiveTime xsi:type="IVL_TS">
+                    <!-- if present, this shall contain the range of times of the resulted components -->
+                    <low value="20150622"/>
+                    <high value="20150622"/>
+                </effectiveTime>
+                <!-- The lab reporting location and details are recorded here as the lab was the performed of the battery of tests -->
+                <!-- Receiving systems may see the lab reporting location in the author particitipant since the original 2015 ONC certification suggested the author -->
+                <!-- Sending systems SHOULD always place the lab reporting location in the performer-->
+                <performer typeCode="PRF">
+                    <assignedEntity>
+                        <id root="2.16.840.1.113883.19.5"/>
+                        <representedOrganization>
+                            <name>Value Labs</name>
+                            <telecom value="tel:+1-(555)666-1002"/>
+                            <addr>
+                                <streetAddressLine>2474, Rocky place</streetAddressLine>
+                                <city>Beaverton</city>
+                                <state>OR</state>
+                                <postalCode>97006</postalCode>
+                            </addr>
+                        </representedOrganization>
+                    </assignedEntity>
+                </performer>
+                <!-- components removed to simplify example -->
+                <component>
+                    <observation classCode="OBS" moodCode="EVN">
+                        <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                        <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                        <id root="1.3.6.1.4.1.22812.20.1.1.4.5" extension="13"/>
+                        <code code="5811-5" codeSystem="2.16.840.1.113883.6.1">
+                            <originalText>
+                                <!-- reference the text of the coded component -->
+                                <reference value="#_ea838e08-d5eb-4ed4-a176-e5f9a831a780"/>
+                            </originalText>
+                        </code>
+                        <text>
+                            <!-- reference the entire text of the component -->
+                            <reference value="#_13a52df8-79ed-4689-a9da-14c5905de830"/>
+                        </text>
+                        <statusCode code="completed"/>
+                        <effectiveTime value="20150622"/>
+                        <value xsi:type="PQ" value="1.015" unit="1"/>
+                        <referenceRange>
+                            <observationRange>
+                                <text>
+                                    <!-- reference the text of the reference range -->
+                                    <reference value="#_08b7d0ee-aff1-4144-a3a5-c89d56d855ad"/>
+                                </text>
+                                <value xsi:type="IVL_PQ">
+                                    <low value="1.005" unit="1"/>
+                                    <high value="1.030" unit="1"/>
+                                </value>
+                            </observationRange>
+                        </referenceRange>
+                    </observation>
+                </component>
+                <!-- components removed to simplify example -->
+            </organizer>
+        </entry>
+    </section>
+</component>
+

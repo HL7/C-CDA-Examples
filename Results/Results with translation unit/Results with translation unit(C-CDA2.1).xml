@@ -1,0 +1,87 @@
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+	<!-- Results Section with Coded Entries Required-->
+	<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+		displayName="Relevant diagnostic tests and/or laboratory data"/>
+	<title>Results</title>
+	<text>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Description</th>
+					<th>Value / Unit</th>
+					<th>Interpretation</th>
+					<th>Reference Range</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th colspan="4">Platelets [#/volume] in Blood at 10-20-2013 9:08a </th>
+				</tr>
+				<tr ID="SomeReferenceGoesHere5">
+					<td>Platelets [#/volume] in Blood</td>
+					<td>152 THOUS/MCL</td>
+					<td>Normal</td>
+					<td>150-400</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry>
+		<organizer classCode="BATTERY" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+			<templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+			<id root="f16043d8-8d93-41a1-9682-a6cc7215572c"/>
+			<code code="26515-7" displayName="Platelets [#/volume] in Blood"
+				codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+			<statusCode code="completed"/>
+			<effectiveTime>
+				<low value="201310200908+0500"/>
+				<high value="201310200908+0500"/>
+			</effectiveTime>
+			<component>
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+					<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+					<id root="f16043d8-8d93-41a1-9682-a6cc7215572c"/>
+					<code code="26515-7" displayName="Platelets [#/volume] in Blood"
+						codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#SomeReferenceGoesHere5"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime>
+						<low value="201310200908+0500"/>
+						<high value="201310200908+0500"/>
+					</effectiveTime>
+					<!-- Representing a result which has been translated from a non-UCUM code (e.g. result reported from external lab)-->
+					<value xsi:type="PQ" value="152" unit="10*3/uL"/>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<!-- This entryRelationship presents the translation from originalText to the units-->
+					<entryRelationship typeCode="COMP">
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="246514001" displayName="units"
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+							<value xsi:type="CD" code="10*3/uL" codeSystem="2.16.840.1.113883.6.8"
+								codeSystemName="UCUM">
+								<originalText>THOUS/MCL</originalText>
+							</value>
+						</observation>
+					</entryRelationship>
+					<referenceRange>
+						<observationRange>
+							<!-- Reference ranges can be expressed as structured physical quantity interval-->
+							<value xsi:type="IVL_PQ">
+								<low value="150" unit="10*3/uL"/>
+								<high value="400" unit="10*3/uL"/>
+							</value>
+							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation a specific patient value-->
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+						</observationRange>
+					</referenceRange>
+				</observation>
+			</component>
+		</organizer>
+	</entry>
+</section>
