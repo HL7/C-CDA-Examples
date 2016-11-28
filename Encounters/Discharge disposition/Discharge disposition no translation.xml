@@ -1,0 +1,107 @@
+<!-- ************************ ENCOUNTERS *********************** -->
+<component>
+    <section>
+        <!-- *** Encounters section (entries required) (V3) *** -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.22.1" extension="2015-08-01"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
+        <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+        <title>ENCOUNTERS</title>
+        <text>
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Encounter</th>
+                        <th>Performer</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                        <th>Discharge Disposition</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ID="Encounter1">
+                        <td ID="Encounter1_Type"> Checkup Examination </td>
+                        <td>Performer Name</td>
+                        <td>Community Urgent Care 1007 Health Drive, Portland OR</td>
+                        <td>September 27, 2012 at 1:00pm</td>
+                        <td ID="Encounter1_DischargeDispositionCode">Disenrolled</td>
+                        <td ID="Encounter1_DischargedToLoc">N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </text>
+        <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+                <!-- ** Encounter Activity (V3) ** -->
+                <templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
+                <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+                <id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
+                <code code="99213" displayName="Office outpatient visit 15 minutes" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12">
+                    <originalText>
+                        <reference value="#Encounter1_Type"/>
+                    </originalText>
+                    <!-- MAY MAY contain zero or one [0..1] translation (CONF:1198-32323)
+									The translation may exist to map the code of EncounterTypeCode (2.16.840.1.113883.3.88.12.80.32) valueset to the code of Encounter Planned (2.16.840.1.113883.11.20.9.52) valueset.
+								<translation code="AMB" codeSystem="2.16.840.1.113883.5.4" displayName="Ambulatory" codeSystemName="HL7 ActEncounterCode"/>
+								-->
+                </code>
+                <text>
+                    <reference value="#Encounter1"/>
+                </text>
+                <effectiveTime value="201209271300+0500"/>
+                <!--  This shows use of the discharge disposition extension AND shows using both the suggested encoding from C-CDA R2.1 and some local Good Health Hospital codes. -->
+                <sdtc:dischargeDispositionCode nullFlavor="OTH">
+                    <originalText>
+                        <reference value="#Encounter1_DischargeDispositionCode"></reference>
+                    </originalText>
+                    <!-- Good Health Hospital (local OID) to represent their local code system. -->
+                    <translation code="DE" codeSystem="2.16.840.1.113883.19.5" codeSystemName="Good Health Local Discharge Code System" displayName="Disenrolled"/>
+                </sdtc:dischargeDispositionCode>
+                <performer>
+                    <assignedEntity>
+                        <!-- Provider NPI "333444555" -->
+                        <id extension="333444555" root="2.16.840.1.113883.4.6"/>
+                        <code code="59058001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="General Physician"/>
+                    </assignedEntity>
+                </performer>
+                <participant typeCode="LOC">
+                    <participantRole classCode="SDLOC">
+                        <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+                        <!-- Service Delivery Location template -->
+                        <code code="1160-1" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthcareServiceLocation" displayName="Urgent Care Center"/>
+                        <addr>
+                            <streetAddressLine>1007 Health Drive</streetAddressLine>
+                            <city>Portland</city>
+                            <state>OR</state>
+                            <postalCode>99123</postalCode>
+                            <country>US</country>
+                        </addr>
+                        <telecom use="WP" value="tel: +1(555)555-1030"/>
+                        <playingEntity classCode="PLC">
+                            <name>Good Health Urgent Care</name>
+                        </playingEntity>
+                    </participantRole>
+                </participant>
+                <entryRelationship typeCode="RSON">
+                    <!-- ** Indivcation (V2) ** -->
+                    <observation classCode="OBS" moodCode="EVN">
+                        <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09"/>
+                        <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                        <id root="db734647-fc99-424c-a864-7e3cda82e703" extension="45665"/>
+                        <!-- code is required; MAY be selected from ValueSet Problem Type (LOINC) urn:oid:2.16.840.1.113883.3.88.12.3221.7.2 STATIC 2014-09-02 (CONF:1098-31229) -->
+                        <code code="404684003" displayName="Finding" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96">
+                            <!--  of course this MAY be present 
+										<translation code="75321-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clinical finding"/>-->
+                        </code>
+                        <statusCode code="completed"/>
+                        <effectiveTime>
+                            <low value="201209251130+0500"/>
+                        </effectiveTime>
+                        <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96"/>
+                    </observation>
+                </entryRelationship>
+            </encounter>
+        </entry>
+    </section>
+</component>
+
