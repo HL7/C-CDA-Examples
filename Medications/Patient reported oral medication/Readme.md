@@ -1,6 +1,6 @@
 ##Approval Status 
 
-* Approval Status: Not yet approved
+* Approval Status: draft
 * Example Task Force: 
 * SDWG: 
 
