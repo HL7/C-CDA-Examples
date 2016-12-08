@@ -22,7 +22,7 @@
 
 ###Comments
 
-* This is an example of a hospitalization with discharge disposition. There are two examples to demonstrate sending only a local code, or a translation to a local code.
+* This is an example of a hospitalization with discharge disposition. There are two examples to demonstrate sending only a local code, or a translation to a local code. The Discharge Disposition includes both the standard code and a local code. The Discharge Disposition Local code only includes a local code
 ###Custodian
 
 * Lisa Nelson (GitHub: lisarnelson)
