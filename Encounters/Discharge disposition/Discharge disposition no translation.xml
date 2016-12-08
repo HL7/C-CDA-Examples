@@ -82,6 +82,25 @@
                         </playingEntity>
                     </participantRole>
                 </participant>
+		<participant typeCode="DST">
+                    <participantRole classCode="SDLOC">
+                        <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+                        <!-- Discharged To Location template -->
+                        <!-- How do we represent this concept of "the 'discharged to' location? -->
+                        <code code="1105-6" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthcareServiceLocation" displayName="Long-Term Care Rehabilitation Unit"/>
+                        <addr>
+                            <streetAddressLine>200 Rehab Road</streetAddressLine>
+                            <city>Portland</city>
+                            <state>Ny</state>
+                            <postalCode>19123</postalCode>
+                            <country>US</country>
+                        </addr>
+                        <telecom use="WP" value="tel: +1(123)555-1030"/>
+                        <playingEntity classCode="PLC">
+                            <name>Sunnyview Rehab Hospital</name>
+                        </playingEntity>
+                    </participantRole>
+                </participant>
                 <entryRelationship typeCode="RSON">
                     <!-- ** Indivcation (V2) ** -->
                     <observation classCode="OBS" moodCode="EVN">
