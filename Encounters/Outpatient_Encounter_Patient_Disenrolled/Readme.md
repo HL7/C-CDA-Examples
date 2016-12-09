@@ -22,7 +22,8 @@
 
 ###Comments
 
-* This is an example of a hospitalization with discharge disposition. There are two examples to demonstrate sending only a local code, or a translation to a local code. The Discharge Disposition includes both the standard code and a local code. The Discharge Disposition Local code only includes a local code
+* This is an example of an outpatient visit discharge disposition. In order to support a local Discharge Disposition code the dischargeDisposition contains the "OTH" nullFlavor.
+
 ###Custodian
 
 * Lisa Nelson (GitHub: lisarnelson)
@@ -31,4 +32,4 @@
 
 ###Keywords
 
-* Hospital discharge disposition, local code
+* Outpatient discharge disposition, local code, nullFlavor
