@@ -55,7 +55,7 @@
                         <reference value="#Encounter1_DischargeDispositionCode"></reference>
                     </originalText>
                     <!-- Good Health Hospital (local OID) to represent their local code system. -->
-                    <translation code="DE" codeSystem="2.16.840.1.113883.19.5" codeSystemName="Good Health Local Discharge Code System" displayName="Disenrolled"/>
+                    <translation code="DE" codeSystem="2.16.840.1.113883.19.5" codeSystemName="Community Urgent Care Local Discharge Code" displayName="Disenrolled"/>
                 </sdtc:dischargeDispositionCode>
                 <performer>
                     <assignedEntity>
@@ -78,7 +78,7 @@
                         </addr>
                         <telecom use="WP" value="tel: +1(555)555-1030"/>
                         <playingEntity classCode="PLC">
-                            <name>Good Health Urgent Care</name>
+                            <name>Community Urgent Care</name>
                         </playingEntity>
                     </participantRole>
                 </participant>
