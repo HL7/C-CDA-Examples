@@ -22,7 +22,7 @@
                     <tr id="Encounter1">
                         <td id="Encounter1_Type"> Inpatient Hospital Care - moderate complexity</td>
                         <td>Performer Name</td>
-                        <td>Community Urgent Care Center</td>
+                        <td>Community Medical Center</td>
                         <td>September 27, 2012 at 1:00pm</td>
                         <td id="Encounter1_DischargeDispositionCode">Discharged/transferred to an intermediate-care facility (ICF)</td>
                         <td id="Encounter1_DischargedToLoc">Sunnyview Rehab Hospital</td>
@@ -55,7 +55,7 @@
                         <reference value="#Encounter1_DischargedDispositionCode"></reference>
                     </originalText>
                     <!-- Good Health Hospital (local OID) to represent their local code system. -->
-                    <translation code="HOSSVR" codeSystem="2.16.840.1.113883.19.5" codeSystemName="Good Health Local Discharge Code System" displayName="SUNNYVIEW REHAB HOSPITAL"/>
+                    <translation code="HOSSVR" codeSystem="2.16.840.1.113883.19.5" codeSystemName="Community Medical Center Local Discharge Codes" displayName="SUNNYVIEW REHAB HOSPITAL"/>
                 </sdtc:dischargeDispositionCode>
                 <performer>
                     <assignedEntity>
@@ -68,7 +68,7 @@
                     <participantRole classCode="SDLOC">
                         <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
                         <!-- Service Delivery Location template -->
-                        <code code="1160-1" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthcareServiceLocation" displayName="Urgent Care Center"/>
+                        <code code="1060-3" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthcareServiceLocation" displayName="Inpatient Medical Ward"/>
                         <addr>
                             <streetAddressLine>1007 Health Drive</streetAddressLine>
                             <city>Portland</city>
@@ -78,7 +78,7 @@
                         </addr>
                         <telecom use="WP" value="tel: +1(555)555-1030"/>
                         <playingEntity classCode="PLC">
-                            <name>Good Health Urgent Care</name>
+                            <name>Community Medical Center</name>
                         </playingEntity>
                     </participantRole>
                 </participant>
