@@ -20,7 +20,7 @@
                 </thead>
                 <tbody>
                     <tr id="Encounter1">
-                        <td id="Encounter1_Type"> Checkup Examination </td>
+                        <td id="Encounter1_Type"> Inpatient Hospital Care - moderate complexity</td>
                         <td>Performer Name</td>
                         <td>Community Urgent Care Center</td>
                         <td>September 27, 2012 at 1:00pm</td>
@@ -36,7 +36,7 @@
                 <templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
                 <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
                 <id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
-                <code code="99213" displayName="Office outpatient visit 15 minutes" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12">
+                <code code="99221" displayName="Initial hospital care, per day, for the evaluation and management of a patient - 50 minutes" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12">
                     <originalText>
                         <reference value="#Encounter1_Type"/>
                     </originalText>
