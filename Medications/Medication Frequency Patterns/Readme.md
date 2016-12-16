@@ -22,4 +22,4 @@
 * Brett Marquard, brett@riverrockassociates.com (GitHub: brettmarquard)
 ###Keywords
 
-* medication frequencies
+* medication frequencies, bid, two times daily, q12h, every 12 hours, tid, three times daily, q8h, every 8 hours, qid, four times daily, q6h, every 6 hours, qd, daily, q24h, every 24 hours, qod, every other day, qm, Once a month, Every other week, 1 hour after meal, before dinner, before lunch (from lat. ante cibus diurnus)
