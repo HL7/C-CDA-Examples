@@ -15,7 +15,7 @@
 * N/A
 
 ###Comments
-* This is a reference to a google document of [medication statusCodes](https://docs.google.com/spreadsheets/d/1d0RJoyzVQISK4ai3zbjKT6PCuOEQzgWBCqarDHyD-JE/edit#gid=798164205) SDWG developed this with the Pharmacy WG. 
+* This is a reference to a google document of [medication statusCodes](https://docs.google.com/spreadsheets/d/1d0RJoyzVQISK4ai3zbjKT6PCuOEQzgWBCqarDHyD-JE/edit). SDWG developed this with the Pharmacy WG. 
 
 ###Custodian
 
