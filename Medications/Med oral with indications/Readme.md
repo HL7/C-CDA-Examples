@@ -2,8 +2,8 @@
 
 * Approval Status: Pending
 
-* Example Task Force: Approved <put approval date here>
-
+* Example Task Force: 12/15/2016
+* SDWG:
 
 ###C-CDA 2.1 Example: 
 
@@ -26,7 +26,8 @@
 
 ###Comments
 
-* This is an example of a medication administered orally with indications.
+* This is an example of a medication administered orally with a PRN coded precondtion, instructions (not PRN), and indications (not PRN).
+
 ###Custodian
 
 * George Cole
