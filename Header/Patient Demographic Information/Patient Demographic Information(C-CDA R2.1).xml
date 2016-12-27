@@ -1,0 +1,61 @@
+<recordTarget>
+    <patientRole>
+        <!-- The @root OID below (which is fictional) would be specific to an institution's record identifier system. -->  
+        <id root="2.16.840.1.113883.3.6132" extension="345678912-0154"/>
+        <!-- HP is "primary home" from valueSet 2.16.840.1.113883.1.11.10637 -->
+        <addr use="HP">
+            <!-- You can have multiple [1..4] streetAddressLine elements. Single shown below -->
+            <streetAddressLine>1436 Jennyhill Ln.</streetAddressLine>
+            <city>Hollywood</city>
+            <!-- 5 or 9 digit zip codes from valueSet 2.16.840.1.113883.3.88.12.80.2-->
+            <!-- PostalCode is required if the country is US. If country is not specified, it's assumed to be US. If country -->
+            <!-- is something other than US, the postalCode MAY be present but MAY be bound to different vocabularies -->
+            <postalCode>90068</postalCode>
+            <!-- State is required if the country is US. If country is not specified, it's assumed to be US. -->
+            <!-- If country is something other than US, the state MAY be present but MAY be bound to different vocabularies -->
+            <!-- OR is "Oregon" from valueSet 2.16.840.1.113883.3.88.12.80.1 -->
+            <state>CA</state>
+            <!-- US is the two digit code for "United States" -->
+            <country>US</country>
+        </addr>
+        <!-- MC is "mobile contact" from HL7 AddressUse 2.16.840.1.113883.5.1119 -->
+        <telecom value="tel:+1(565)867-5309" use="MC"/>
+        <!-- Multiple telecoms are possible -->
+        <telecom value="mailto://adam@diameterhealth.com" use="WP"/>
+        <patient>
+            <name use="L">
+                <given>Adam</given>
+                <family>Everyman</family>
+            </name>
+            <!-- From CDA R2 on administrativeGender Code: This attribute does not include terms related to clinical gender. 
+			Gender is a complex physiological, genetic and sociological concept that requires multiple observations in order to be 
+			comprehensively described. The purpose of this attribute is to provide a high level classification that can additionally 
+			be used for the appropriate allocation of inpatient bed assignment.-->
+            <!-- Sex at birth and gender identity may be specified in social history -->
+            <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Male" codeSystemName="AdministrativeGender"/>
+            <birthTime value="19621022"/>
+            <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus"/>
+            <religiousAffiliationCode code="1013" displayName="Christian (non-Catholic, non-specific)" codeSystem="2.16.840.1.113883.5.1076" codeSystemName="HL7 Religious Affiliation"/>
+            <!-- CDC Race and Ethnicity code set contains the five minimum race and ethnicity categories defined by OMB Standards -->
+            <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="OMB Standards for Race and Ethnicity"/>
+            <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="OMB Standards for Race and Ethnicity"/>
+            <languageCommunication>
+                <languageCode code="eng"/>
+                <!-- "eng" is ISO 639-2 alpha-3 code for "English" -->
+                <modeCode code="ESP" displayName="Expressed spoken" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
+                <proficiencyLevelCode code="E" displayName="Excellent" codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency"/>
+                <preferenceInd value="true"/>
+            </languageCommunication>
+            <!-- Multiple languages are permitted. Only one should have a preferenceInd = true --> 
+            <languageCommunication>
+                <languageCode code="ita"/>
+                <!-- "ita" is ISO 639-2 alpha-3 code for "Italian" -->
+                <modeCode code="ESP" displayName="Expressed spoken" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
+                <proficiencyLevelCode code="G" displayName="Good" codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency"/>
+                <!-- Patient's preferred language -->
+                <preferenceInd value="false"/>
+            </languageCommunication>
+        </patient>
+    </patientRole>
+</recordTarget>
+
