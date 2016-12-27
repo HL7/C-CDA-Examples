@@ -1,0 +1,89 @@
+<!-- Transition of Care snip to show Care Team from test data for 170.315_b1 Ambulatory
+    
+B)	Relevant Information regarding the Visit
+Care Team
+•	Dr Albert Davis, 2472 Rocky place, Beaverton, OR 97006
+•	Tracy Davis, 555-555-1002, 2472 Rocky place, Beaverton, OR 97006
+
+This example includes members of the Care Team in the documentationOf/serviceEvent.
+
+From C-CDA R2.1 we have this statement:
+	A serviceEvent represents the main act being documented, such as a colonoscopy or a cardiac stress study. In a provision of healthcare serviceEvent, the care providers, PCP, or other longitudinal providers, are recorded within the serviceEvent.
+	
+and for serviceEvent/performer the guide says:
+	The performer participant represents clinicians who actually and principally carry out the serviceEvent. In a transfer of care this represents the healthcare providers involved in the current or pertinent historical care of the patient. Preferably, the patient’s key healthcare care team members would be listed, particularly their primary physician and any active consulting physicians, therapists, and counselors
+	
+For single encounter events, the guide says:
+	If the document is about a single encounter, the providers associated can be recorded in the componentOf/encompassingEncounter template. The componentOf/encompassingEncounter may be used to document any subset of the providers on the care team that were active participants in the encounter.
+ -->
+<documentationOf>
+    <serviceEvent classCode="PCPR">
+        <id extension="5283815" root="1.3.6.1.4.1.22812.4.99930.4.3.8"/>
+        <!-- The service event being documented is shown as happening from 10 - 10:30am Eastern on 6/22/2015. 
+			     The date is in the Test Data for §170.315(b)(1) Transitions of care the test data. -->
+        <effectiveTime>
+            <low value="20150622100000-0600"/>
+            <high value="20150622103000-0600"/>
+        </effectiveTime>
+        <!-- Preferably, the patient’s key healthcare care team members would be listed, particularly their primary physician and any active consulting physicians, therapists, and counselors.
+					there are two Care Team members, so two performer elements. 
+								 -->
+        <performer typeCode="PRF">
+            <!-- we infer from the test data description that Dr Davis is the PCP -->
+            <!-- MAY provide functionCode -->
+            <functionCode codeSystem="2.16.840.1.113883.5.88" code="PCP" displayName="Primary Care Physician"/>
+            <!-- we do not know how long Dr Davis has been associated with the patient	-->
+            <time>
+                <low nullFlavor="UNK"/>
+            </time>
+            <assignedEntity>
+                <!-- a fake NPI number -->
+                <id extension="1111111111" root="2.16.840.1.113883.4.6"/>
+                <!-- optional, and NOT in Test data: a code from the NUCC Health Care Provider taxonomy showing this is an an internal medicine provider -->
+                <code codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy" code="207R00000X" displayName="Internal Medicine"/>
+                <!-- work address -->
+                <addr use="WP">
+                    <streetAddressLine>Neighborhood Physicians Practice</streetAddressLine>
+                    <streetAddressLine>2472 Rocky place</streetAddressLine>
+                    <city>Beaverton</city>
+                    <state>OR</state>
+                    <postalCode>97006</postalCode>
+                    <country>US</country>
+                </addr>
+                <assignedPerson>
+                    <name>
+                        <prefix qualifier="TITLE">Dr</prefix>						
+                        <given>Albert</given>
+                        <family>Davis</family>
+                    </name>
+                </assignedPerson>
+            </assignedEntity>
+        </performer>
+        <performer typeCode="PRF">
+            <time>
+                <low nullFlavor="UNK"/>
+            </time>
+            <assignedEntity>
+                <!-- this provider has an id, but it is not an NPI  -->
+                <id extension="91138" root="1.3.6.1.4.1.22812.4.99930.4"/>
+                <!-- optional, and NOT in test data: the provider is a Registered Nurse -->
+                <code codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy" code="163W00000X" displayName="Registered Nurse"/>
+                <addr use="WP">
+                    <streetAddressLine>Neighborhood Physicians Practice</streetAddressLine>
+                    <streetAddressLine>2472 Rocky place</streetAddressLine>
+                    <city>Beaverton</city>
+                    <state>OR</state>
+                    <postalCode>97006</postalCode>
+                    <country>US</country>
+                </addr>
+                <telecom value="tel:+1-(555)555-1002" use="WP"/>
+                <assignedPerson>
+                    <name>
+                        <given>Tracy</given>
+                        <family>Davis</family>
+                    </name>
+                </assignedPerson>
+            </assignedEntity>
+        </performer>
+    </serviceEvent>
+</documentationOf>
