@@ -23,7 +23,7 @@
 
 ###Comments
 
-* This example illustrates how to structure Patient Demographics for the 170.314(b)(2) Transitions of care – A) Patient Demographics.
+* This example illustrates how to structure Patient Demographics for the 170.314(b)(2) Transitions of care - A) Patient Demographics.
 
 ###Certification
 * ONC
