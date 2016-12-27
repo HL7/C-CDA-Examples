@@ -1,6 +1,6 @@
 ##Approval Status 
 
-* Approval Status: Approved
+* Approval Status: Pending
 * Example Task Force: 7/7/2016
 * SDWG: 7/7/2016
 
