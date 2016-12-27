@@ -1,0 +1,25 @@
+<component>
+    <section>
+        <!-- Goals Section -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.60"/>
+        <code code="61146-7" displayName="Goals" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+        <title>Goals Section</title>
+        <text><paragraph ID="Goals">Patient is targeting a pulse oximetry of 92% and a weight of 195 lbs</paragraph></text>
+        <entry>
+            <!-- Goal Observation -->
+            <observation classCode="OBS" moodCode="GOL">
+                <!-- Goal Observation -->
+                <templateId root="2.16.840.1.113883.10.20.22.4.121"/>
+                <!-- If you have an id for your goal, include here -->
+                <id nullFlavor="UNK"/>
+                <code nullFlavor="UNK"/>
+                <text><reference value="#Goals"></reference></text>
+                <statusCode code="active"/>
+                <!-- Author could be included to indicate a patient authored goal or a provider different than the document or section author. -->
+                <!-- See HL7 DSTU comment which relaxed the requirement to include the author (867) -->
+                <!-- http://www.hl7.org/dstucomments/showdetail_comment.cfm?commentid=867 -->
+            </observation>
+        </entry>
+    </section>
+</component>
+
