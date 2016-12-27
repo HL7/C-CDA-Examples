@@ -4,17 +4,21 @@
 * Example Task Force: 9/24/2015
 * SDWG: 10/15/2015
 * SDWG C-CDA R2.1 Upgrade: 
+
 ###C-CDA 2.1 Example: 
  
 
 * recordTarget
+
 ###Reference to full CDA sample:
 * Empty CCD
+
 
 
 ###Validation location
 
 * [SITE](https://sitenv.org/c-cda-validator)
+
 
 
 ###Comments
@@ -23,9 +27,11 @@
 
 ###Certification
 * ONC
+
 ###Custodian
 
 * John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
+
 
 
 
