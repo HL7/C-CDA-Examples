@@ -4,8 +4,10 @@
 * Example Task Force: 1/9/2014
 * SDWG: 1/16/2014
 
+* SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
 ###C-CDA 2.1 Example: 
+ 
 
 * Allergy Concern Act 2.16.840.1.113883.10.20.22.4.30:2015-08-01
 
