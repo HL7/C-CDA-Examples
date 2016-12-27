@@ -1,0 +1,100 @@
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>    
+    <!-- Problem Section with Coded Entries Required -->            
+    <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>     
+    <!-- Problem Section with Coded Entries Required -->
+    <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
+    <title>PROBLEMS</title>
+    <text ID="Concern_1">
+        <table>
+            <thead>
+                <tr>
+                    <td>Start Time:</td>
+                    <td>End Time:</td>
+                    <td>Status:</td>
+                    <td>Problem:</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ID="problems1">
+                    <td>12/01/2015 16:05:06</td>
+                    <td></td>
+                    <td>Active</td>
+                    <td ID="problem1">No Diabetes (ruled out)</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- The statement above and the associated problem observation could be placed in the History of Past Illness Section -->
+    </text>
+    <entry typeCode="COMP">
+        <!-- Problem Concern Act -->	
+        <act classCode="ACT" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+            <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+            <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+            <text><reference value="#Concern_1"></reference></text>
+            <statusCode code="completed"/> <!-- The concern is not active, in terms of there being an active condition to be managed.-->
+            <effectiveTime>
+                <low value="20151201071605"/> <!-- Time at which THIS “concern” began being tracked.-->
+                <high nullFlavor="NA"/>
+            </effectiveTime> <!-- status is active so high is not applicable. If high is present it should have nullFlavor of NA-->
+            <!-- Optional Author Element-->
+            <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <time value="2015120171605"/>
+                <assignedAuthor>
+                    <id extension="666545666" root="2.16.840.1.113883.4.6"/>
+                    <code code="363LA2100X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC"
+                        displayName="Nurse Practitioner - Acute Care"/>
+                    <addr>
+                        <streetAddressLine>6666 StreetName St.</streetAddressLine>
+                        <city>Silver Spring</city><state>MD</state><postalCode>20901</postalCode>
+                        <country>US</country>
+                    </addr>
+                    <telecom value="tel:+1(301)666-6666" use="WP"/>
+                    <assignedPerson>
+                        <name>
+                            <given>Jenheartly</given>
+                            <family>Sixer</family>
+                            <suffix>NP</suffix>
+                        </name>
+                    </assignedPerson>
+                </assignedAuthor>
+            </author>
+            <entryRelationship typeCode="SUBJ">
+                <!-- This problem observation could be placed in the History of Past Illness Section -->
+                <!-- Or, in future, in the Health Concerns Section -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <!-- Model of Meaning for No Diabetes -->
+                    <!-- The use of negationInd corresponds with the newer Observation.ValueNegationInd -->
+                    <!-- The negationInd = true negates the value element. --> 
+                    <!-- problem observation template -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                    <id root="4adc1021-7b14-11db-9fe1-0800200c9a69"/>
+                    <code code="55607006" displayName="Problem"
+                        codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                        <translation code="75326-9" codeSystem="2.16.840.1.113883.6.1"
+                            codeSystemName="LOINC" displayName="Problem"/>
+                    </code>
+                    <text><reference value="#problems1"></reference></text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20151201160506"/>
+                    </effectiveTime>
+                    <!-- The time when this was biologically relevant ie True for the patient. -->
+                    <!-- As a minimum time interval over which this is true, populate the effectiveTime/low with the current time. -->
+                    <!-- It would be equally valid to have a longer range of time over which this statement was represented as being true. -->
+                    <!-- As a maximum, you would never indicate an effectiveTime/high that was greater than the current point in time. -->
+                    <value xsi:type="CD" code="44054006"
+                        displayName="Diabetes Mellitus Type 2 (Disorder)"
+                        codeSystem="2.16.840.1.113883.6.96"
+                        codeSystemName="SNOMED CT">
+                        <originalText><reference value="#problem1"></reference></originalText>
+                    </value>
+                </observation>
+            </entryRelationship>
+        </act>
+    </entry>
+</section>
