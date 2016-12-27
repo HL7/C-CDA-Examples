@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <section>
+        <!-- Health Concerns Section -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.58" extension="2015-08-01"/>
+        <code code="75310-3" displayName="Health Concerns Document" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+        <title>Health Concerns</title>
+        <text><paragraph ID="Concern">On March 1, 2014, the patient expressed concern about spreading their Community Acquired Pneumonia.</paragraph></text>
+        <entry>
+            <!-- Health Concern Act -->
+            <act classCode="ACT" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.132" extension="2015-08-01"/>
+                <id nullFlavor="UNK"/>
+                <!-- Fixed act/code in C-CDA -->
+                <code code="75310-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health Concern"/>
+                <text><reference value="#Concern"></reference></text>
+                <statusCode code="active"/>
+            </act>
+        </entry>
+    </section>
+</component>
+
+
+
