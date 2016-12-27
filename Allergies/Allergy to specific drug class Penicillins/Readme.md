@@ -2,16 +2,13 @@
 
 * Approval Status: Approved
 * Example Task Force: 4/10/2014
-* SDWG: 4/24/2014
+* SDWG: 4/24/2014
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
 ###C-CDA 2.1 Example: 
- 
 
 * 2.16.840.1.113883.10.20.22.2.6.1:2015-08-01
-
 * Allergy Concern Act 2.16.840.1.113883.10.20.22.4.30:2015-08-01
-
 * Allergy Intolerance Observation 2.16.840.1.113883.10.20.22.4.7:2014-06-09
 * Reaction Observation 2.16.840.1.113883.10.20.22.4.9:2014-06-09
 * Severity Observation 2.16.840.1.113883.10.20.22.4.8:2014-06-09
