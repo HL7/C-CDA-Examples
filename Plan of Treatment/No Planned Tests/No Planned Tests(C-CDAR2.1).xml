@@ -1,0 +1,78 @@
+<!-- This is an example of where a nullFlavor of OTH is used to represent the negation of any planned procedure -->
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+    <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment Plan"/>
+    <title>Plan of Treatment</title>
+    <text>
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Date and Time (Range)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PLANNED TESTS</td>
+                </tr>
+                <tr>
+                    <td ID="PlannedTestDesc1">No Planned Tests</td>
+                </tr>
+                <tr>
+                    <td>PLANNED PROCEDURES</td>
+                </tr>
+                <tr ID="PlannedProcedure1">
+                    <td ID="PlannedProcedureDesc1">Laparoscopic Appendectomy</td>
+                    <td>05/02/2015</td>
+                    <td>Scheduled</td>
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    <entry typeCode="DRIV">
+        <!-- For this example, we are recommended action.negationInd task force recommendation -->
+        <observation classCode="OBS" moodCode="INT" negationInd="true">
+            <!-- ** Plan of care activity observation ** -->
+            <templateId root="2.16.840.1.113883.10.20.22.4.44" extension="2014-06-09"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.44"/>
+            <id root="c03e5445-af1b-4911-a419-e2782f21448c"/>
+            <!--If a code is available for the general concept for which there is no information (e.g. Problem), use that 
+			    code in the code attribute, otherwise use a nullFlavor of OTH -->
+            <code nullFlavor="OTH">
+                <originalText>
+                    <reference value="#PlannedTestDesc1"/>
+                </originalText>
+            </code>
+            <statusCode code="active"/>
+            <!-- nullFlavor of NA used since no time is applicable in this context.-->
+            <effectiveTime nullFlavor="NA"/>
+            <!-- nullFlavor of NA used since no value is applicable in this context.-->
+            <value xsi:type="CD" nullFlavor="NA"/>
+        </observation>
+    </entry>
+    <entry typeCode="DRIV">
+        <procedure moodCode="RQO" classCode="PROC">
+            <!-- ** Plan of care procedure** -->
+            <templateId root="2.16.840.1.113883.10.20.22.4.41" extension="2014-06-09"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
+            <id root="9a6d1bac-17d3-4195-89a4-1121bc809b4a"/>
+            <code code="6025007" displayName="Laparoscopic appendectomy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                <originalText>
+                    <reference value="#PlannedProcedureDesc1" />
+                </originalText>
+            </code>
+            <text>
+                <reference value="#PlannedProcedure1" />
+            </text>
+            <statusCode code="active"/>
+            <!-- Effective times can be either a value or interval. For procedures with start and stop times, an interval would be more appropriate -->
+            <effectiveTime value="20150502"/>
+            <!-- methodCode indicates how the procedure was performed. It cannot conflict with the code used for procedure-->
+            <methodCode code="51316009" codeSystem="2.16.840.1.113883.6.96" displayName="Laparoscopic procedure" codeSystemName="SNOMED-CT" />
+            <!-- targetSiteCode indicates the body site addressed by procedure and must be from value set 2.16.840.1.113883.3.88.12.3221.8.9-->
+            <targetSiteCode code="181255000" codeSystem="2.16.840.1.113883.6.96" displayName="Entire Appendix" codeSystemName="SNOMED-CT" />
+        </procedure>
+    </entry>
+</section>

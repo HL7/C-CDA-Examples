@@ -1,0 +1,52 @@
+<component>
+    <!-- here is the optional Plan of Treatment -->
+    <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+        <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+            displayName="Plan of Care"/>
+        <title>Plan of Treatment</title>
+        <!-- one Planned Observation in the human readable text and as a discrete entry -->
+        <text>
+            <!-- this section may contain many different Planned items, so we use the table caption to help identify each -->
+            <table>
+                <caption>Planned Observation</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ID="ID0EFFFFFFCAB2">
+                        <td ID="ID0EFAAAAACAB2">EKG 12 channel panel</td>
+                        <td>June 23, 2015</td>
+                        <td/>
+                    </tr>
+                </tbody>
+            </table>
+        </text>
+        <!-- a planned observation entry -->
+        <entry>
+            <!-- observation with moodCode indicating Intent -->
+            <observation classCode="OBS" moodCode="INT">
+                <templateId root="2.16.840.1.113883.10.20.22.4.44" extension="2014-06-09"/>
+                <templateId root="2.16.840.1.113883.10.20.22.4.44"/>
+                <id root="b52bee94-c34b-4e2c-8c15-5ad9d6def205"/>
+                <code code="34534-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                    displayName="EKG 12 channel panel">
+                    <originalText>
+                        <reference value="#ID0EFAAAAACAB2"/>
+                    </originalText>
+                </code>
+                <text>
+                    <!-- referencing the entire text -->
+                    <reference value="#ID0EFFFFFFCAB2"/>
+                </text>
+                <statusCode code="active"/>
+                <effectiveTime value="20150623"/>
+            </observation>
+        </entry>
+    </section>
+</component>
