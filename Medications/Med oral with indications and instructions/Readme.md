@@ -26,7 +26,7 @@
 
 ###Comments
 
-* This is an example of a medication administered orally with a PRN coded precondtion, instructions (not PRN), and indications (not PRN).
+* This is an example of a medication administered orally with a PRN coded precondition, instructions (not PRN), and indications (not PRN).
 
 ###Custodian
 
