@@ -1,7 +1,7 @@
 ##Approval Status 
 
 * Approval Status: Pending
-* Example Task Force: 12/15/15
+* Example Task Force: 12/15/2015
 * SDWG: 2/11/2016
 * SDWG C-CDA R2.1 Upgrade: 
 
