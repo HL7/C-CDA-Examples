@@ -1,7 +1,7 @@
 ##Approval Status 
 
 * Approval Status: Pending
-* Example Task Force: 12/15/2015
+* Example Task Force: 12/15/15
 * SDWG: 2/11/2016
 * SDWG C-CDA R2.1 Upgrade: 
 
@@ -23,7 +23,7 @@
 
 ###Comments
 
-* This is an example of how to link a concern to a problem in the problem list section.
+* This is an example of how to link a concern to a problem in the problem list section with linkHTML.
 
 ###Custodian
 
@@ -34,4 +34,4 @@
 
 ###Keywords
 
-* entry reference
+* linkHTML, entry reference
