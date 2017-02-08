@@ -1,9 +1,9 @@
 ##Approval Status 
 
-* Approval Status: Pending
+* Approval Status: Approved
 * SDWG Reviewed: 3/10/2016
 * SDWG approved: 3/31/2016
-* SDWG C-CDA R2.1 Upgrade: 
+* SDWG C-CDA R2.1 Upgrade: 2/2/2017
 
 ###C-CDA 2.1 Example: 
 
