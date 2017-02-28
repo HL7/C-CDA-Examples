@@ -1,0 +1,75 @@
+<!-- An example of how to use a qualifier. This example shows presence of a problem/value/translation, although it could also be used to refine the problem/value -->
+<!-- The use of qualifiers could also be used on other sections, such as qualifying a procedure -->
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+    <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" displayName="Problem List"/>
+    <title>Problem List</title>
+    <text>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Dates</th>
+                    <th>Location/Qualifier</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ID="Problem1">
+                    <td ID="ProblemDescription1">Below Knee Amputation</td>
+                    <td>
+                        <content>Onset: Apr 2 2014</content>
+                    </td>
+                    <td>Left</td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    <entry>
+        <act classCode="ACT" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+            <id root="e5fbc288-659f-4aeb-a5e1-eb7cc8fcdfaf" />
+            <code code="CONC" codeSystem="2.16.840.1.113883.5.6" />
+            <!-- While clinicians can track resolved problems, generally active problems will have active concern status and resolved concerns will be completed -->
+            <statusCode code="active" />
+            <effectiveTime>
+                <!-- This represents the time that the clinician began tracking the concern. This may frequently be an EHR timestamp-->
+                <low value="20140403124536-0500" />
+            </effectiveTime>
+            <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                    <id root="ac416033-3cc1-4485-ab31-36ce7669f55c" />
+                    <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="55607006" displayName="Problem" >
+                        <translation code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+                    </code>
+                    <text>
+                        <reference value="#Problem1" />
+                    </text>
+                    <statusCode code="completed" />
+                    <effectiveTime>
+                        <!-- This represents the date of biological onset. This can be before the patient vistited the clinician, as illustrated in this example-->
+                        <low value="20140402" />
+                    </effectiveTime>
+                    <!-- This is a SNOMED code as the primary vocabulary for problem lists. It would be preferable to have a SNOMED code but no direct translation is available here. -->
+                    <value xsi:type="CD" nullFlavor="OTH">
+                        <originalText>
+                            <reference value="#ProblemDescription1" />
+                        </originalText>
+                        <translation xsi:type="CD" code="V49.75" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9" displayName="Below Knee Amputation Status" />
+                    </value>
+                    <!-- Recommendation of task force that laterality on problems should be in targetSiteCode rather than on the value or value/translation elements -->
+                    <targetSiteCode xsi:type="CD" code="30021000" codeSystem="2.16.840.1.113883.6.96" displayName="Lower leg structure">
+                        <!-- This is an example of a qualifer which would affect a quality measure (e.g. cms 123 Diabetes Foot Exam) -->
+                        <qualifier>
+                            <name code="272741003" codeSystem="2.16.840.1.113883.6.96" displayName="Laterality" />
+                            <value code="7771000" codeSystem="2.16.840.1.113883.6.96" displayName="Left"/>
+                        </qualifier>
+                    </targetSiteCode>
+                </observation>
+            </entryRelationship>
+        </act>
+    </entry>
+</section>
+
