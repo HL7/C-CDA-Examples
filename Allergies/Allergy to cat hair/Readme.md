@@ -34,7 +34,10 @@
 * John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
 
 
-
 ###Keywords
 
 * substance, allergies, allergy
+
+###Permalink
+
+*ad811b5c30103652f64000ae9a9d7092279d22b3
