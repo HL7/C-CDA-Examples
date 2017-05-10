@@ -23,7 +23,7 @@
 
 ###Comments
 
-* This example illustrates how a procedure which "alters the physical state" of the patient and should be classified as a procedure.
+* This example illustrates an act within a procedure section.
 ###Custodian
 
 * John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
