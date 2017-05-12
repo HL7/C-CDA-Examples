@@ -22,7 +22,7 @@
         </thead>
         <tbody>
           <tr>
-            <td ID="implant1">Drug Eluting Coronary Stent (LIBERTE TAXUS 3.00 mm)</td>
+            <td ID="implantOne">Drug Eluting Coronary Stent (LIBERTE TAXUS 3.00 mm)</td>
             <td>Left Anterior Descending Coronary Artery</td>
             <td>Boston Scientific</td>
             <td>(01)00848486001048(11)160330(10)ABC124</td>
@@ -32,7 +32,7 @@
             <td>Implanted 04/13/2016 by Fleming, Barry</td>
           </tr>
           <tr>
-            <td ID="implant2">Drug Eluting Coronary Stent (LIBERTE TAXUS 2.75 mm)</td>
+            <td ID="implantTwo">Drug Eluting Coronary Stent (LIBERTE TAXUS 2.75 mm)</td>
             <td>Left Anterior Descending Coronary Artery</td>
             <td>Boston Scientific</td>
             <td>(01)00848486001048(11)160542(10)ABC125</td>
@@ -83,7 +83,7 @@
             <playingDevice>
               <code nullFlavor="UNK">
                 <originalText>
-                  <reference value="#implant1"/>
+                  <reference value="#implantOne"/>
                 </originalText>
               </code>
             </playingDevice>
@@ -136,7 +136,7 @@
             <playingDevice>
               <code nullFlavor="UNK">
                 <originalText>
-                  <reference value="#implant2"/>
+                  <reference value="#implantTwo"/>
                 </originalText>
               </code>
             </playingDevice>
