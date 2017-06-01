@@ -1,1 +1,1 @@
-##General Section Examples from C-CDA 
+##General Examples from C-CDA 
