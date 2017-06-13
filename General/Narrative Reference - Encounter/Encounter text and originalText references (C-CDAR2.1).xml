@@ -1,0 +1,54 @@
+<component>
+	<!-- The following section is fictitious - it exists solely for the purpose of showing examples of text/reference and originalText/reference from discrete entry children. As such, many elements are omitted and replaced by ... comments. The text and content in the discrete entry elements does not use actual clinical content, but instead relies on filler text commonly used in publishing and graphic design. -->
+	<section>
+		<!--  ... -->
+		<text>
+			<!-- The text in this section is created strictly to illustrate how discrete entry child elements make references into the human readable text.  -->
+			<!-- this table is used for an encounter; the ID values are meant to be unique across the whole document -->
+			<table>
+				<tbody>
+					<tr ID="encounterFullTextReference1">
+						<td ID="encounterCodeReference1">Praesent vitae dignissim risus
+							<br/>
+							<!-- ... -->
+						</td>
+						<td>
+							mightBeSomeDate 
+							<br/>
+							mightbeSomeProviderName
+							<br/>
+							mightbeSomeFacilityName
+							<br/>
+							mightbeSomeAddress
+							<br/>
+							mightbeSomePhoneNumber
+						</td>
+						<td>labelText: mmm DD YYYY</td>
+					</tr>
+				</tbody>
+			</table>
+		</text>
+		<!-- This illustrates a simple encounter. In C-CDA the encounter activity may be in an Encounters Section, or ir may be the child of other acts -->
+		<entry>
+			<encounter classCode="ENC" moodCode="EVN">
+				<!-- ... -->
+				<!-- the code of an encounter provides us with the encounter type, and SHOULD have an originalText/reference as we expect the human readable to reflect the type of encounter -->
+				<code code="4567" codeSystem="1.2.3.4.5.6.7.8.42" displayName="praesent vitae">
+					<originalText>
+						<!-- Example of referenced text: ED Visit 
+											note that the reference is does not include the label in the human readable content; we do not want the reference to return labelText: ED Visit
+									-->
+						<reference value="#encounterCodeReference1"/>
+					</originalText>
+				</code>
+				<!-- a reference to the entire human readable text of the encounter is useful -->
+				<text>
+					<!-- Example of referenced text: ED Visit Encounter Reason: Acute Anxiety Encounter Diagnosis: Acute onset Anxiety 10/11/14 Acupun, Allison Rex ED 3000 New Bern Ave Raleigh 27610 tel:+1-(919)350-8000 Discharge Disposition: Discharged/transferred to an intermediate-care facility (ICF) Comments: noted uncontrollable rocking -->
+					<reference value="#encounterFullTextReference1"/>
+				</text>
+				<!-- ... -->
+				<effectiveTime value="YYYMMDD"/>
+			</encounter>
+		</entry>
+	</section>
+</component>

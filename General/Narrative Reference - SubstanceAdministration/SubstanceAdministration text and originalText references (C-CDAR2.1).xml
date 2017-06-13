@@ -1,0 +1,74 @@
+<component>
+	<!-- The following section is fictitious - it exists solely for the purpose of showing examples of text/reference and originalText/reference from discrete entry children. As such, many elements are omitted and replaced by ... comments. The text and content in the discrete entry elements does not use actual clinical content, but instead relies on filler text commonly used in publishing and graphic design. -->
+	<section>
+		<!--  ... -->
+		<text>
+			<!-- The text in this section is created strictly to illustrate how discrete entry child elements make references into the human readable text.  -->
+			<!-- this table is used for a simple sunstanceAdministration; the ID values are meant to be unique across the whole document -->
+			<table>
+				<tbody>
+					<tr ID="simpleSubstanceAdministrationFullTextReference1">
+						<td>
+							<content>
+								<content ID="substanceAdministrationProductCodeTextReference1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</content>
+								<content ID="substanceAdministrationFreeTextSIGReference1"> Aenean commodo ligula eget dolor. Aenean massa.</content>
+								<br/>
+								<!-- ... -->
+							</content>
+						</td>
+						<td>
+							<!-- ... -->
+						</td>
+						<td>
+							<!-- ... -->
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</text>
+		<!-- This illustrates a simple substanceAdministration. In C-CDA this is used for both Immunization and Medication Activity -->
+		<entry>
+			<substanceAdministration classCode="SBADM" moodCode="EVN">
+				<!-- ... -->
+				<!-- Could include code element, although rarely used in substanceAdministration -->
+				<!-- the entire text of the substanceAdministration
+									Example, of a medication: 0.3 ML Enoxaparin Sodium 100 MG/ML Prefilled Syringe 100 MG injected DAILY AS DIRECTED. Site: Upper abdomen Quantity: 100 Refills: 5001 Administer one syringe daily for 7 days. Call for signs of bleeding. Ordered: 1-Jan-2013 Primari, Phillip Start: 14-Jul-2014 End: 14-Jul-2014 Reaction: Hives (Moderate), Abdominal pain (Severe), Vomiting (Severe) Indication: DVT Generic substitution allowed. Comment: Patient is having difficulty paying co-pays for this medication
+							-->
+				<text>
+					<reference value="#simpleSubstanceAdministrationFullTextReference1"/>
+				</text>
+				<consumable>
+					<manufacturedProduct classCode="MANU">
+						<!-- ... -->
+						<manufacturedMaterial>
+							<code code="89012" codeSystem="1.2.3.4.5.6.7.8.42" displayName="lorem ipsum dolor sit amet">
+								<originalText>
+									<!-- notice this reference is just to a piece of the entire substanceAdministration text, and that the reference text is different than the code @displayName -->
+									<reference value="#substanceAdministrationProductCodeTextReference1"/>
+								</originalText>
+							</code>
+							<name>lorem ipsum</name>
+						</manufacturedMaterial>
+					</manufacturedProduct>
+				</consumable>
+				<!-- ... -->
+				<!-- because of the importance of the following entryRelationship, we show actual templateId content for the Medication Free Text SIG and recommend viewing this as a SHOULD -->
+				<entryRelationship typeCode="COMP">
+					<substanceAdministration classCode="SBADM" moodCode="INT">
+						<templateId root="2.16.840.1.113883.10.20.22.4.147"/>
+						<code code="76662-6" codeSystem="2.16.840.1.113883.6.1"/>
+						<text>
+							<reference value="#substanceAdministrationFreeTextSIGReference1"/>
+						</text>
+						<consumable>
+							<manufacturedProduct>
+								<manufacturedLabeledDrug nullFlavor="NA"/>
+							</manufacturedProduct>
+						</consumable>
+					</substanceAdministration>
+				</entryRelationship>
+				<!-- ... -->
+			</substanceAdministration>
+		</entry>
+	</section>
+</component>
