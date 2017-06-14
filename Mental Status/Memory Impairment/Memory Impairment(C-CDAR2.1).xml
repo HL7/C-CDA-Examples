@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <section>
     <!-- This is an example of how to affirmatively assert there is a memory (cognitive) impairment -->
-    <!-- Based on Transitions of Care test scenario, inpatient for MU2 170.314(b)(2)-->
+    <!-- Original design influenced by Transitions of Care test scenario, inpatient for MU2 170.314(b)(2)-->
     <!-- Note that in C-CDA 1.1, functional and cognitive status (mental) are within the same section -->
     <!-- Section not backwards compaitble with prior 2.16.840.1.113883.10.20.22.2.14 since new section --> 
     <templateId root="2.16.840.1.113883.10.20.22.2.56" extension="2015-08-01" />
@@ -20,7 +19,7 @@
             </thead>
             <tbody>
                 <tr ID="MS_Narrative1">
-                    <td>Cognitive Status</td> 
+                    <td ID="MS_Type1">Cognitive Status</td> 
                     <!-- Some systems may just report this to day rather than hour and minute timestamp. Both of which are acceptable. -->
                     <td>August 15 2012, 5:32pm</td>
                     <td ID="MS_Finding1">Memory Impairment</td>
@@ -31,12 +30,14 @@
     </text>
     <entry>
         <!-- Template for Mental Status Result Observation. Note other templates may apply. -->
-        <!-- We chose Result Observation since C-CDA R2.1 merged Mental Status Result Observation and Cognitive Status Result Observation. -->
         <observation classCode="OBS" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.74"/>
             <templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2015-08-01"/>
             <id root="faa09c19-fa1f-4a6c-ae79-10a3b711550f"/>
             <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="373930000" displayName="Cognitive function finding">
+                <originalText>
+                    <reference value="#MS_Type1"></reference>
+                </originalText>
                 <translation code="75275-8" 
                     displayName="Cognitive function"
                     codeSystem="2.16.840.1.113883.6.1"
