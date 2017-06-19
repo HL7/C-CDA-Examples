@@ -36,3 +36,7 @@
 ###Keywords
 
 * Hospital Encounter, Discharge Diagnoses, participant, performer
+
+###Permalink 
+
+* 3234327a1a0d4fe4909634591cdfc12b46f0f95d

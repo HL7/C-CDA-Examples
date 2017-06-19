@@ -33,3 +33,7 @@
 ###Keywords
 
 * Social History, Smoking
+
+###Permalink 
+
+* c9c2657d9d9de7824b3afdc51cc442a8b899aea5

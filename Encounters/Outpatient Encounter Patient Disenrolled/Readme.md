@@ -33,3 +33,8 @@
 ###Keywords
 
 * Outpatient discharge disposition, local code, nullFlavor
+
+
+###Permalink 
+
+* 0358fc1a4bbe08d617113988efb1bfc873f8f1aa
