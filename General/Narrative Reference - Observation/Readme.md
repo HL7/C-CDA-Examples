@@ -22,9 +22,3 @@
 ###Keywords
 
 * narrative, narrative-entry, linking text
-
-
-
-###Permalink 
-
-* d1ffa6a994d551b91ad0532807777fd735a158de
