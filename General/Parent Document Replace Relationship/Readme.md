@@ -23,9 +23,3 @@
 ###Keywords
 
 * parentDocument, relatedDocument, CCD
-
-
-
-###Permalink 
-
-* d707eae2706e80427ce3728b8e275e274140ddd6
