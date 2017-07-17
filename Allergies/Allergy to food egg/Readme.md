@@ -38,3 +38,8 @@
 ###Keywords
 
 * substance, allergies, allergy
+
+
+###Permalink 
+
+* 9731b470c5291fabfafb97268bdc0820f0058bc9

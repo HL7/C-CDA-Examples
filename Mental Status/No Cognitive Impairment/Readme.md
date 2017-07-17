@@ -1,8 +1,8 @@
 ##Approval Status 
 
 * Approval Status: Pending
-* Example Task Force: 6/18/2015
-* SDWG: 7/9/2015
+* Example Task Force: 6/18/2015, 6/15/2017
+* SDWG: 
 * SDWG C-CDA R2.1 Upgrade: 
 
 ###C-CDA 2.1 Example: 
@@ -33,3 +33,8 @@
 
 
 
+
+
+###Permalink 
+
+* 4774a74b86f9cde7943fc987ffd1f6121f8ca578

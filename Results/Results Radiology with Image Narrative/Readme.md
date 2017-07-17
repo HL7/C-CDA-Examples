@@ -37,3 +37,7 @@
 ###Keywords
 
 * Radiology, Imaging Study, Narrative
+
+###Permalink 
+
+* 26323b29d7ae6e03727e442b0884aff337f8627a

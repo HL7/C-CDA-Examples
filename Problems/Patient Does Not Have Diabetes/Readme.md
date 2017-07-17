@@ -36,3 +36,7 @@
 ###Keywords
 
 * negation
+
+###Permalink 
+
+* c1b6f960a26505ba83d7acb3ad7efc4d2ad10e4f
