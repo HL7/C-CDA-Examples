@@ -1,8 +1,8 @@
 ##Approval Status 
 
-* Approval Status: Pending
+* Approval Status: Approved
 * Example Task Force: 6/1/2017
-* SDWG: 
+* SDWG: 7/6/2017
 
 ###C-CDA 2.1 Example: 
 * Applies to all C-CDA/CDA templates with this entry type
