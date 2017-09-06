@@ -1,0 +1,66 @@
+<!-- Note: several other data elements are required to meet C-CDA R2.1 requirements -->
+    <recordTarget>
+        <patientRole>
+            <!-- Here is the medical record number of this patient at the nested provider organization.
+                 This examples assumes the OID 2.16.840.1.113883.1.111.12345 
+                 uniquely identifies the encompassed Provider Organization's local 
+                 medical record number assigning system.-->
+            <!-- A receiving system only knows this is an MRN by looking up the root oid in a repository. -->
+            <id root="2.16.840.1.113883.1.111.12345" extension="12345" 
+                assigningAuthorityName="River Valley Health Services Locally-assigned Medical Record Number"/>
+            <!-- Here are additional identifiers different care organizations. 
+                OIDs are synthetic. Production implementations use the actual OID registered for the assigningAuthority. -->
+            <id root="1.3.6.1.4.1.1234.13.20.9999.1.3.7.4" extension="6789" assigningAuthorityName="Lawrence and Memorial: Westerly Hospital locally assigned Medical Record Number"/>
+            <id root="1.3.6.1.4.1.1234.13.20.9999.1.3.7.3" extension="2345" assigningAuthorityName="LifeSpan: Buttler Hospital Locally-assigned Patient Account Number"/>
+            <id root="1.3.6.1.4.1.1234.13.20.9999.1.3.7.6" extension="06726-161" assigningAuthorityName="Rhode Island Qyality Institute: CurrentCare HIE Locally-assigned Identifier"/>
+            <!-- More ids may be used. -->
+            <addr>
+                <streetAddressLine>1 Happy Valley Road</streetAddressLine>
+                <city>Westerly</city>
+                <state>RI</state>
+                <postalCode>02891</postalCode>
+                <country nullFlavor="UNK"/>
+            </addr>
+            <telecom use="WP" value="tel:+1(401)348-2345"/>
+            <telecom use="HP" value="tel:+1(401)641-2345"/>
+            <telecom value="mailto:lindanelson@gmail.edu"/>
+            <patient>
+                <name use="L">
+                    <family>Nelson</family>
+                    <given qualifier="CL">Linda</given>
+                </name>
+                <administrativeGenderCode code="F" displayName="Female"
+                    codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender"/>
+                <birthTime value="19620828"/>
+                <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2"
+                    codeSystemName="HL7 MaritalStatus"/>
+                <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238"
+                    codeSystemName="CDC Race and Ethnicity"/>
+                <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino"
+                    codeSystem="2.16.840.1.113883.6.238" codeSystemName="CDC Race and Ethnicity"/>
+                <languageCommunication>
+                    <templateId root="2.16.840.1.113883.3.88.11.32.2"/>
+                    <languageCode code="eng"/>
+                    <preferenceInd value="true"/>
+                </languageCommunication>
+            </patient>
+            <providerOrganization>
+                <!-- This is a synthetic OID for the example.  
+                    Production implementations use the actual OID registered 
+                    for the designated assigningAuthority. -->
+                <!-- A receiving system only knows this is an MRN by looking up the root oid in a repository. -->
+                <id root="2.16.840.1.113883.1.111.12345" 
+                    assigningAuthorityName="River Valley Health Services local patient Medical Record Number" />
+                <!-- More ids may be used. -->
+                <name>River Valley Health Services</name>
+                <telecom use="WP" value="tel:+1(401)539-4321"/>
+                <addr>
+                    <streetAddressLine>823 Main Street</streetAddressLine>
+                    <city>River Valley</city>
+                    <state>RI</state>
+                    <postalCode>028321</postalCode>
+                    <country>US</country>
+                </addr>
+            </providerOrganization>
+        </patientRole>
+    </recordTarget>
