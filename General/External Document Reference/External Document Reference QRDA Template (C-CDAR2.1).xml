@@ -1,0 +1,134 @@
+<!-- This example illustrates how parts of a specific entry may refer to an external document and/or act, observation, procedure 
+	 The use case would be where information from a prior document have been imported and 
+	 other information may be available in the newly created clinical document. 
+	 It uses the QRDA template for external document reference 2.16.840.1.113883.10.20.22.4.115:2014-06-09 
+	 It references the approved active problem example http://cdasearch.hl7.org/examples/view/b6f23e38249108eb5bc47905c949e9bb59fc33b4 -->
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+	<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" displayName="Problem List"/>
+	<title>Problem List</title>
+	<text>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Dates</th>
+					<th>Status</th>
+					<th>Author</th>
+					<th>Author Time</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ID="Problem1">
+					<td ID="Problem1Value">Community Acquired Pneumonia</td>
+					<td>Onset: February 27 2014</td>
+					<td>Active</td>
+					<td>Heartly Sixer, MD (NPI: 66666)</td>
+					<td>Mar 2, 2014</td>
+					<!-- Additional information linking to source document may be appropriate based on use case -->
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry>
+		<act classCode="ACT" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.3" />
+			<templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+			<!-- Since this represents an element which has been imported from the original document 
+			but may vary from original act, a different GUID is used to idenitfy  -->
+			<!-- Some systems may also include the original id here. This example did 
+			not since the externalObservation is more appropriate -->
+			<id root="11526f79-94a3-4682-a969-0f3d039db732"/>
+			<code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+			<statusCode code="active"/>
+			<effectiveTime>
+				<low value="20140302124536+0500"/>
+			</effectiveTime>
+			<entryRelationship typeCode="SUBJ">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.4" />
+					<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+					<!-- Since this represents an element which has been imported from the original document 
+					but may vary from original observation, a different GUID is used to idenitfy  -->
+					<!-- Some systems may also include the original id here. This example did 
+					not since the externalObservation is more appropriate -->
+					<id root="35e97377-b63b-4e6a-a53e-9cfb016bea0b"/>
+					<code code="55607006" displayName="Problem"
+						codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+						<translation code="75326-9" codeSystem="2.16.840.1.113883.6.1"
+							codeSystemName="LOINC" displayName="Problem"/>
+					</code>
+					<text>
+						<reference value="#Problem1"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime>
+						<low value="20140227"/>
+					</effectiveTime>
+					<value xsi:type="CD" code="385093006" codeSystem="2.16.840.1.113883.6.96"
+						codeSystemName="SNOMED CT" displayName="Community Acquired Pneumonia">
+						<originalText>
+							<reference value="#Problem1Value" />
+						</originalText>
+					</value>
+					<!-- Since no changes were made to the observation, the orginal author is included here -->
+					<author>
+						<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+						<time value="20140302124536"/>
+						<assignedAuthor>
+							<id extension="66666" root="2.16.840.1.113883.4.6"/>
+							<code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
+								codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+							<addr>
+								<streetAddressLine>6666 StreetName St.</streetAddressLine>
+								<city>Silver Spring</city>
+								<state>MD</state>
+								<postalCode>20901</postalCode>
+								<country>US</country>
+							</addr>
+							<telecom value="tel:+1(301)666-6666" use="WP"/>
+							<assignedPerson>
+								<name>
+									<given>Heartly</given>
+									<family>Sixer</family>
+									<suffix>MD</suffix>
+								</name>
+							</assignedPerson>
+						</assignedAuthor>
+					</author>
+					<!-- This reference refers to the external document where the problem was documented -->
+					<!-- It uses a template for externalDocument from the QRDA 1 3.1 Implementation Guide-->
+					<reference typeCode="REFR">
+						<externalDocument classCode="DOCCLIN" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.115" extension="2014-06-09" />
+							<!-- This refers to the ClinicalDocument/id of the original document -->
+							<id extension="TT661" root="2.16.840.1.113883.19.5.99999.1"/>							
+							<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34133-9" displayName="Summary of episode note" />
+							<!-- While not required, there is a benefit of using <setId> and <versionNumber> as a secondary key on documents.   
+							If the flow from a document source system or repository to a destination system is infrequent or  not able to guarantee 
+							sequential transmission of  document revisions.  The setId and versionNumber pair are actually better for detecting which 
+							new document revises a previous older version of that document.  -->
+							<!-- If setId and versionNumber are not available or applicable, they may be omitted -->
+							<!-- This refers to the ClinicalDocument/setId and versionNumber of the original document -->
+							<setId root="004bb033-b948-4f4c-b5bf-a8dbd7d8dd40"/>
+							<versionNumber value="1"/>
+						</externalDocument>
+					</reference>
+					<!-- This reference refers to the observation within external document the where the problem was documented -->
+					<!-- Other options are the use of reference/externalAct or reference/externalProcedures -->
+					<reference typeCode="REFR">
+						<externalObservation classCode="OBS" moodCode="EVN">
+							<!-- This refers to the observation/id of the original observation -->
+							<!-- If there are multiple id elements, all should be included -->
+							<id extension="10241104348" root="1.3.6.1.4.1.22812.4.111.0.4.1.2.1"/>
+							<code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+								<translation code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+							</code>
+						</externalObservation>
+					</reference>
+				</observation>
+			</entryRelationship>
+		</act>
+	</entry>
+</section>
