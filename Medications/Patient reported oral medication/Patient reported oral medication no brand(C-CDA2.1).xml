@@ -21,10 +21,10 @@
                         <content ID="MedicationName_8" xmlns="urn:hl7-org:v3">ECHINACEA ANGUSTIFOLIA Extract</content>
                     </td>
                     <td>
-                        <content ID="MedicationSig_8" xmlns="urn:hl7-org:v3">Patient reports taking once daily</content>
+                        <content>Patient reports taking once daily</content>
                     </td>
                     <td>
-                        <content ID="MedicationDosage_8" xmlns="urn:hl7-org:v3">unknown</content>
+                        <content>unknown</content>
                     </td>
                     <td>Apr-09-2014 - </td>
                     <td>Active</td>

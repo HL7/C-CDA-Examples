@@ -21,10 +21,10 @@
                         <content ID="MedicationName_1" xmlns="urn:hl7-org:v3">Sudafed 30mg Oral Tablet</content>
                     </td>
                     <td>
-                        <content ID="MedicationSig_1" xmlns="urn:hl7-org:v3">take 2 tablets every 4-6 hours</content>
+                        <content>take 2 tablets every 4-6 hours</content>
                     </td>
                     <td>
-                        <content ID="MedicationDosage_1" xmlns="urn:hl7-org:v3">30 MG</content>
+                        <content>30 MG</content>
                     </td>
                     <td>Jan-18-2014 - </td>
                     <td>Active</td>

@@ -21,10 +21,10 @@
                         <content ID="MedicationName_2" xmlns="urn:hl7-org:v3">Azithromycin 250mg Oral Tablet</content>
                     </td>
                     <td>
-                        <content ID="MedicationSig_2" xmlns="urn:hl7-org:v3">take 2 tablets on day 1, 1 tablet days 2-5</content>
+                        <content>take 2 tablets on day 1, 1 tablet days 2-5</content>
                     </td>
                     <td>
-                        <content ID="MedicationDosage_2" xmlns="urn:hl7-org:v3">250 MG</content>
+                        <content>250 MG</content>
                     </td>
                     <td>Mar-10-2014 - Mar-14-2014</td>
                     <td>Active</td>

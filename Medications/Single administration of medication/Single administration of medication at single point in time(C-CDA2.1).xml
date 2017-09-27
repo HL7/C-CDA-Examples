@@ -19,8 +19,8 @@
                 <tbody>
                     <tr ID="Medication_7">
                         <td ID="MedicationName_7">Aspirin 81mg Oral Tablet</td>
-                        <td ID="MedicationSig_7">take 2 tablets</td>
-                        <td ID="MedicationDosage_7">162 MG</td>
+                        <td>take 2 tablets</td>
+                        <td>162 MG</td>
                         <td>Sep-11-2013</td>
                         <td>Completed</td>
                     </tr>

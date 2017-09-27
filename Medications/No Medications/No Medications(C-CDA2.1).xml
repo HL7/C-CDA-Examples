@@ -9,7 +9,7 @@
         <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
             displayName="HISTORY OF MEDICATION USE"/>
         <title>MEDICATIONS</title>
-        <text>No Medications</text>
+        <text ID="Medication_None">No Medications</text>
         <entry>
             <!-- Act.actionNegationInd -->
             <substanceAdministration moodCode="EVN" classCode="SBADM" negationInd="true">
@@ -17,6 +17,10 @@
                 <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
                 <!-- ** MEDICATION ACTIVITY -->
                 <id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66"/>
+                <text>
+                    <!-- This reference refers to medication information in unstructured portion of section-->
+                    <reference value="#Medication_None"/>
+                </text>
                 <statusCode code="active"/>
                 <!-- Note: An error will be logged on the use of effectiveTime with nullFlavor until validator is updated for C-CDA DSTU Comment 423 -->
                 <effectiveTime nullFlavor="NA"/>

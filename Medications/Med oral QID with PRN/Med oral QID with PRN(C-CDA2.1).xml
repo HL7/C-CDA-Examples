@@ -21,10 +21,10 @@
                         <content ID="MedicationName_0" xmlns="urn:hl7-org:v3">Ibuprofen 600mg Oral Tablet</content>
                     </td>
                     <td>
-                        <content ID="MedicationSig_0" xmlns="urn:hl7-org:v3">take 1 tablet QID PRN</content>
+                        <content>take 1 tablet QID PRN</content>
                     </td>
                     <td>
-                        <content ID="MedicationDosage_0" xmlns="urn:hl7-org:v3">600 MG</content>
+                        <content>600 MG</content>
                     </td>
                     <td>Dec-18-2013 - </td>
                     <td>Active</td>
