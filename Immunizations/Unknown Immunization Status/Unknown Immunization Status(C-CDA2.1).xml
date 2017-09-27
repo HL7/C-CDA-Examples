@@ -10,7 +10,6 @@
             displayName="History of immunizations"/>
         <title>IMMUNIZATIONS</title>
         <text>
-            <content ID="immunSect"/>
             <table border="1" width="100%">
                 <thead>
                     <tr>
