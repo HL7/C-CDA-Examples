@@ -15,14 +15,15 @@
 * N/A
 
 ###Comments
-* This is a reference to a google document summarizing guidance for [effectiveTime use in CDA Documents](https://docs.google.com/document/d/158utf0owdWLGwarP3Zgf6FCSfDMKZwIjUSmFb7_sslc/edit)
+* This is a reference to a google document summarizing guidance for [narrative in CDA Documents](https://docs.google.com/document/d/1r1qBuzPQNkLiNpLkTOIv4RHXQHkyx7_N7_Es3MiHUek/edit)
 
 ###Custodian
 
 * Brett Marquard, brett@riverrockassociates.com (GitHub: brettmarquard)
+* Lisa Nelson
 
 ###Keywords
 
-* nullFlavor, value, low, high, center, width, period, UNK, NI, timezone, offset
+* narrative entry linking, anchors
 
 
