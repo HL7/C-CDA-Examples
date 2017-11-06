@@ -1,0 +1,24 @@
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01" />
+    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social History"/>
+    <title>Social History</title>
+    <text><paragraph ID="SHObservation1">Unknown if patient is pregnant on 4/10/2011.</paragraph></text>
+    <!-- Unknown if patient is pregnant on 4/10/2011 -->
+    <!-- effectiveTime/low and high may be used if a system wanted to communicate a time range of uncertainty -->
+    <entry> 
+        <observation classCode="OBS" moodCode="EVN" nullFlavor="UNK">
+            <templateId root="2.16.840.1.113883.10.20.15.3.8"/>
+            <id extension="123456789" root="2.16.840.1.113883.19"/>
+            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+            <text>
+                <reference value="#SHObservation1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20110410"/>
+            <value xsi:type="CD" code="77386006" 
+                displayName="pregnant" 
+                codeSystem="2.16.840.1.113883.6.96"/>
+        </observation>
+    </entry>			
+</section>
