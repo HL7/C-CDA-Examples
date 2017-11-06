@@ -1,0 +1,143 @@
+    <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.22" assigningAuthorityName="CCDA Encounters Section" extension="2015-08-01" />
+        <templateId root="2.16.840.1.113883.10.20.22.2.22" assigningAuthorityName="CCDA Encounters Section" />
+        <id root="6c628dae-578b-4e3a-b0d9-e82453d29c14" />
+        <code code="46240-8" displayName="History of encounters" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+        <title>Encounters</title>
+        <text>
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <th>Encounter</th>
+                        <th>Provider</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                        <th>Diagnosis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ID="encounterDescriptionID0">
+                        <td ID="encounterTypeDescriptionID0">Wellness Visit</td> 
+                        <td>David E Ford MD</td>
+                        <td>
+                        </td>
+                        <td>09/18/2017</td>
+                        <td><content ID="encounterDiagnosisID0">Jaw Asymmetry Maxillary</content>, <content ID="encounterDiagnosisID1">Anomaly of Dental Arch</content>, <content ID="encounterDiagnosisID2">Malocclusion Mesio-occlusion</content></td>
+                    </tr>
+                </tbody> <!-- Some systems may include the CPT E&M code descriptions in the narrative -->
+            </table>
+        </text>
+        <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.49" assigningAuthorityName="CCDA Encounter Activity" extension="2015-08-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.4.49" assigningAuthorityName="CCDA Encounter Activity" />
+                <id root="2.16.840.1.113883.3.140.1.1918489287.6.10.16" extension="449" assigningAuthorityName="Intergy Encounter ID" />
+                <id root="2.16.840.1.113883.3.140.1.1918489287.6.10.16.1" extension="271818" assigningAuthorityName="Intergy Encounter Number" />
+                <code code="AMB" displayName="ambulatory" codeSystem="2.16.840.1.113883.1.11.13955" codeSystemName="ActEncounterCode">
+                    <originalText>
+                        <reference value="#encounterTypeDescriptionID0"/><!-- This is the text the user saw and was the basis for the AMB coding -->
+                    </originalText>
+                </code>
+                <text>
+                    <reference value="#encounterDescriptionID0" />
+                </text>
+                <effectiveTime>
+                    <low value="20170918093900-0400" />
+                    <high value="20170918095100-0400" /> 
+                </effectiveTime>
+                <!-- Could include optional performer -->
+                <entryRelationship typeCode="COMP"> <!-- Encounter Diagnosis Act -->
+                    <act classCode="ACT" moodCode="EVN">
+                        <templateId root="2.16.840.1.113883.10.20.22.4.80" assigningAuthorityName="CCDA Encounter Diagnosis" extension="2015-08-01" />
+                        <templateId root="2.16.840.1.113883.10.20.22.4.80" assigningAuthorityName="CCDA Encounter Diagnosis" />
+                        <id root="2.16.840.1.113883.3.140.1.1918489287.6.10.7" extension="449" />
+                        <code code="29308-4" displayName="ENCOUNTER DIAGNOSIS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                        <entryRelationship typeCode="SUBJ" inversionInd="false">
+                            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" extension="2015-08-01" />
+                                <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" />
+                                <id root="755efd22-a0d1-4504-9e6f-de4e173f91bc" />
+                                <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                                    <translation code="75326-9" displayName="Problem" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                                </code>
+                                <statusCode code="completed" />
+                                <effectiveTime>
+                                    <low value="20170918093900-0400" />
+                                    <high nullFlavor="NI"/> <!-- Better to omit high if problem is ongoing, but if you always include high use nullFlavor=NI --> 
+                                </effectiveTime>
+                                <value code="235083001" displayName="Asymmetry of maxilla (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD">
+                                    <originalText>
+                                        <reference value="#encounterDiagnosisID0" />
+                                    </originalText>
+                                    <translation code="524.11" displayName="Jaw Asymmetry Maxillary" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" />
+                                    <translation code="M26.11" displayName="Jaw Asymmetry Maxillary" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD10" />
+                                    <translation code="95980" displayName="Jaw Asymmetry Maxillary" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+                                </value>
+                            </observation>
+                        </entryRelationship>
+                        <entryRelationship typeCode="SUBJ" inversionInd="false">
+                            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" extension="2015-08-01" />
+                                <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" />
+                                <id root="c351f35e-ad79-4519-aae2-153526171926" />
+                                <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                                    <translation code="75326-9" displayName="Problem" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                                </code>
+                                <statusCode code="completed" />
+                                <effectiveTime>
+                                    <low value="20170918093900-0400" />
+                                    <high nullFlavor="NI"/> <!-- Better to omit high if problem is ongoing, but if you always include high use nullFlavor=NI -->
+                                </effectiveTime>
+                                <value code="23997001" displayName="Anomaly of dental arch (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD">
+                                    <originalText>
+                                        <reference value="#encounterDiagnosisID1" />
+                                    </originalText>
+                                    <translation code="524.20" displayName="Anomaly of Dental Arch" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" />
+                                    <translation code="312141" displayName="Anomaly of Dental Arch" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+                                </value>
+                            </observation>
+                        </entryRelationship>
+                        <entryRelationship typeCode="SUBJ" inversionInd="false">
+                            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" extension="2015-08-01" />
+                                <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" />
+                                <id root="1dd3d744-6108-4284-823a-138c2568e446" />
+                                <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                                    <translation code="75326-9" displayName="Problem" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                                </code>
+                                <statusCode code="completed" />
+                                <effectiveTime>
+                                    <low value="20170918093900-0400" />
+                                    <high nullFlavor="NI"/> <!-- Better to omit high if problem is ongoing, but if you always include high use nullFlavor=NI -->
+                                </effectiveTime>
+                                <value code="12264001" displayName="Mesio-occlusion of teeth (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD">
+                                    <originalText>
+                                        <reference value="#encounterDiagnosisID2" />
+                                    </originalText>
+                                    <translation code="524.23" displayName="Malocclusion Mesio-occlusion" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" />
+                                    <translation code="M26.213" displayName="Malocclusion Mesio-occlusion" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD10" />
+                                    <translation code="219237" displayName="Malocclusion Mesio-occlusion" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+                                </value>
+                            </observation>
+                        </entryRelationship>
+                    </act>
+                </entryRelationship>
+                <entryRelationship typeCode="REFR" inversionInd="false">
+                    <act classCode="ACT" moodCode="EVN">
+                        <code code="99408" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" displayName="Alcohol and/or substance abuse structured screening and brief intervention services" />
+                    </act>
+                </entryRelationship>
+                <entryRelationship typeCode="REFR" inversionInd="false">
+                    <act classCode="ACT" moodCode="EVN">
+                        <code code="99394" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" displayName="Well Office Visit Established Patient Ages 12-17"/>
+                    </act>
+                </entryRelationship>
+                <entryRelationship typeCode="REFR" inversionInd="false">
+                    <act classCode="ACT" moodCode="EVN">
+                        <code code="99213" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" displayName="Office Visit, Established Patient Level 3"/>
+                    </act>
+                </entryRelationship>
+            </encounter>
+        </entry>
+    </section>
+
