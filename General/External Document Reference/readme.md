@@ -29,3 +29,8 @@ Reference to full CDA sample: PROBLEMS_in_Empty_C-CDA_2.1 (in git repo at same l
 ###Keywords
 * externalDocument, externalObservation, reference
 
+
+
+###Permalink 
+
+* 59ef40cee6e15d000ba47d65
