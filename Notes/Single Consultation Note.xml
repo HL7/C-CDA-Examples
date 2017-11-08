@@ -1,0 +1,54 @@
+<section>
+    <!-- Notes Section -->
+    <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01"/>
+    <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+        displayName="Consultation note"/>
+    <title>Consultation Notes</title>
+    <text>
+        <list>
+            <item ID="ConsultNote1">
+                <paragraph>Dr. Specialist - September 8, 2016</paragraph>
+                <paragraph>Physical examination revealed a well-appearing woman. The vital signs
+                    were normal. The head and neck were unremarkable. The lung fields were clear.
+                    The heart exam was normal. The abdomen was obese with normal bowel sounds. There
+                    was no tenderness, mass, or hepatosplenomegaly. </paragraph>
+                <paragraph>Endoscopic evaluation revealed a normal colonoscopy. Biopsies taken
+                    throughout the colon were essentially unremarkable. Stool tests for pathogenic
+                    organisms were negative. Of note, on the upper endoscopy examination, no
+                    significant abnormalities were seen; however, upon biopsy, features of celiac
+                    disease were noted.</paragraph>
+            </item>
+        </list>
+    </text>
+    <!-- Note Activity entry -->
+    <entry>
+        <act classCode="ACT" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01"/>
+            <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                displayName="Note">
+                <!-- Code must match or be equivalent to section code -->
+                <translation code="11488-4" codeSystem="2.16.840.1.113883.6.1"
+                    codeSystemName="LOINC" displayName="Consultation note"/>
+            </code>
+            <text>
+                <reference value="#ConsultNote1"/>
+            </text>
+            <statusCode code="completed"/>
+            <!-- Clinically-relevant time of the note -->
+            <effectiveTime value="20160908"/>
+            <!-- Author Participation -->
+            <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <!-- Time note was actually written -->
+                <time value="20160908083215-0500"/>
+                <assignedAuthor>
+                    <!-- Full information elsewhere in the document . -->
+                    <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
+                    <assignedPerson>
+                        <name>Dr. Henry LevinPhysician</name>
+                    </assignedPerson>
+                </assignedAuthor>
+            </author>
+        </act>
+    </entry>
+</section>
