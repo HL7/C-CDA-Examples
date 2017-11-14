@@ -37,3 +37,8 @@
 ###Keywords
 
 * Encounter, E&M, CPT codes
+
+
+###Permalink 
+
+* 5a0b3a03f02cc01f665c2003

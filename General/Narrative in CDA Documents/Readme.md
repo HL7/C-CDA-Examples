@@ -27,3 +27,8 @@
 * narrative entry linking, anchors
 
 
+
+
+###Permalink 
+
+* 5a0b3a01f02cc01f665c2001
