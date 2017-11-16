@@ -2,9 +2,10 @@
     <!-- Notes Section -->
     <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01"/>
     <!-- This Notes Section is not intended to replace a C-CDA Consultation Note Document -->
-    <!-- If your system captures Consultatin Note information in Discrete sections it's not recommended to lump all the text together here. -->
+    <!-- If your system captures Consultation Note information in Discrete sections it's not recommended to lump all the text together here. -->
     <!-- This Notes Section could be included in a Consultation Note Document with other discrete sections (Results, Vitals etc.)-->
-    <!-- This Notes Section is most appropriate for an encounter specific document; For systems still dumping everything in CCD, this Notes Section could included -->
+    <!-- This Notes Section is most appropriate for an encounter specific document -->
+    <!-- If this Notes section were included in a CCD, each Note Activity entry should be linked to an appropriate Encounter entry in the Encounters section -->
     <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
         displayName="Consultation note"/>
     <title>Consultation Notes</title>
@@ -65,10 +66,13 @@
                 <!-- Time note was actually written -->
                 <time value="20160908083215-0500"/>
                 <assignedAuthor>
-                    <!-- Full information elsewhere in the document . -->
+                    <!-- Full author information is elsewhere in the document . -->
                     <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
                     <assignedPerson>
-                        <name>Dr. Henry LevinPhysician</name>
+                        <name>
+                            <prefix>Dr.</prefix>
+                            <family>Specialist</family>
+                        </name>
                     </assignedPerson>
                 </assignedAuthor>
             </author>
