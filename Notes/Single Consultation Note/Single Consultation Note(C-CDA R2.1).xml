@@ -1,0 +1,81 @@
+<section>
+    <!-- Notes Section -->
+    <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01"/>
+    <!-- This Notes Section is not intended to replace a C-CDA Consultation Note Document -->
+    <!-- If your system captures Consultation Note information in Discrete sections it's not recommended to lump all the text together here. -->
+    <!-- This Notes Section could be included in a Consultation Note Document with other discrete sections (Results, Vitals etc.)-->
+    <!-- This Notes Section is most appropriate for an encounter specific document -->
+    <!-- If this Notes section were included in a CCD, each Note Activity entry should be linked to an appropriate Encounter entry in the Encounters section -->
+    <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+        displayName="Consultation note"/>
+    <title>Consultation Notes</title>
+    <text>
+        <list>
+            <item ID="ConsultNote1">
+                <paragraph>Dr. Specialist - September 8, 2016</paragraph>
+                <paragraph> Dear Dr. Henry Leven: Thank you for referring Ms. Everywoman for evaluation. As
+                    you know, she is a 40-year-old woman who has had chronic gastrointestinal
+                    symptoms. Approximately 18 years ago, she was hospitalized with a bleeding
+                    ulcer. She had a CT scan of the abdomen, which revealed findings consistent with
+                    focal nodular hyperplasia (FNH). She has had epigastric abdominal pain as well
+                    as a significant change in her bowel movements from baseline constipation to
+                    frequent diarrhea. The past medical history is otherwise negative. She takes no
+                    prescription medications. The remainder of the history is not contributory. </paragraph>
+                <paragraph>Physical examination revealed a well-appearing woman. The vital signs
+                    were normal. The head and neck were unremarkable. The lung fields were clear.
+                    The heart exam was normal. The abdomen was obese with normal bowel sounds. There
+                    was no tenderness, mass, or hepatosplenomegaly. </paragraph>
+                <paragraph>Endoscopic evaluation revealed a normal colonoscopy. Biopsies taken
+                    throughout the colon were essentially unremarkable. Stool tests for pathogenic
+                    organisms were negative. Of note, on the upper endoscopy examination, no
+                    significant abnormalities were seen; however, upon biopsy, features of celiac
+                    disease were noted.</paragraph>
+                <paragraph> In summary, this 40-year-old woman has evidence of celiac disease. We
+                    discussed the diagnosis in detail in the office. She was advised to undertake a
+                    lifelong gluten-free diet. Followup laboratories in my office were notable for a
+                    low serum iron with a low-normal ferritin. The bone density was normal. Repeat
+                    triple-phase CT scan of the liver revealed no change in the right hepatic lobe
+                    lesion, which is consistent with FNH. I advised periodic reevaluation of the
+                    liver with imaging, as well as followup for any potential development of
+                    nutritional deficiencies. She should take an iron supplement and continue on a
+                    lifelong gluten-free diet. </paragraph>
+                <paragraph>Thank you for the courtesy of this referral. I would be pleased to see
+                    Ms. Everywoman in followup.</paragraph>
+            </item>
+        </list>
+    </text>
+    <!-- Note Activity entry -->
+    <entry>
+        <act classCode="ACT" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01"/>
+            <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                displayName="Note">
+                <!-- Code must match or be equivalent to section code -->
+                <translation code="11488-4" codeSystem="2.16.840.1.113883.6.1"
+                    codeSystemName="LOINC" displayName="Consultation note"/>
+            </code>
+            <text>
+                <reference value="#ConsultNote1"/>
+            </text>
+            <statusCode code="completed"/>
+            <!-- Clinically-relevant time of the note -->
+            <effectiveTime value="20160908"/>
+            <!-- Author Participation -->
+            <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <!-- Time note was actually written -->
+                <time value="20160908083215-0500"/>
+                <assignedAuthor>
+                    <!-- Full author information is elsewhere in the document . -->
+                    <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
+                    <assignedPerson>
+                        <name>
+                            <prefix>Dr.</prefix>
+                            <family>Specialist</family>
+                        </name>
+                    </assignedPerson>
+                </assignedAuthor>
+            </author>
+        </act>
+    </entry>
+</section>
