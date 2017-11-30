@@ -1,6 +1,7 @@
 <!-- ************************* ALLERGY LIST ****************************** -->
 <component>
     <!-- nullFlavor of NI indicates No Information.-->
+    <!-- This is NOT how a system records No Known Allergies -->
     <!-- SITE and NIST TTT Validators has been updated to check for sections with nullFlavor -->
     <section nullFlavor="NI">
         <!-- conforms to Allergies section with entries optional -->
@@ -14,4 +15,4 @@
         <title>ALLERGIES</title>
         <text>No Information</text>
     </section>
-</component>
+</component>    
