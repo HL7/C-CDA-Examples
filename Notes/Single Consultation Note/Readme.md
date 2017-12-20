@@ -1,8 +1,8 @@
 ##Approval Status 
 
-* Approval Status: Pending
+* Approval Status: Approved
 * Example Task Force: 11/16/2017
-* SDWG: 
+* SDWG: 11/30/2017
 
 ###C-CDA 2.1 Example: 
 
