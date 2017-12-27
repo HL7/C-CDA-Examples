@@ -39,3 +39,7 @@
 ###Permalink 
 
 * b45996a0828df13d805e978e6a57f4d509354641
+
+###Links 
+
+* [Outpatient Encounter with Diagnoses(C-CDA R2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Encounters/Outpatient%20Encounter%20with%20Diagnoses/Outpatient%20Encounter%20with%20Diagnoses%28C-CDA%20R2.1%29.xml)

@@ -38,3 +38,7 @@
 ###Permalink 
 
 * 6fb118749dc61a404c472bc9680c7c595fd5da7c
+
+###Links 
+
+* [Procedures Section Act(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Procedures/Procedures%20Section%20Act%20Entry/Procedures%20Section%20Act%28C-CDA2.1%29.xml)

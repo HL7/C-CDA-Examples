@@ -40,3 +40,7 @@
 ###Permalink 
 
 * 57b4a46c570caf4e2f83342b32b64bc1725f0834
+
+###Links 
+
+* [Health Concerns Link to Problems Section with linkHTML(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Health%20Concerns/Health%20Concerns%20Link%20to%20Problems%20Section%20with%20linkHTML/Health%20Concerns%20Link%20to%20Problems%20Section%20with%20linkHTML%28C-CDA2.1%29.xml)

@@ -33,3 +33,7 @@
 ###Permalink 
 
 * d7aa84589c1f09e212fdc9b2c850c29f930a0209
+
+###Links 
+
+* [Care Team Narrative Only (C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Care%20Team%20-%20Provisional/Care%20Team%20Narrative%20Only/Care%20Team%20Narrative%20Only%20%28C-CDAR2.1%29.xml)

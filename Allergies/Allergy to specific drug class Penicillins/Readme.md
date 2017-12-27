@@ -39,3 +39,7 @@
 ###Permalink 
 
 * 9ed071312a5ab1b896dbbe1bca19c72f921a1616
+
+###Links 
+
+* [Allergy to specific drug class Penicillins(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/Allergy%20to%20specific%20drug%20class%20Penicillins/Allergy%20to%20specific%20drug%20class%20Penicillins%28C-CDA2.1%29.xml)

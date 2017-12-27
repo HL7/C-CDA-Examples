@@ -37,3 +37,7 @@
 ###Permalink 
 
 * 7e7909bf02ee2ab3b327d7442eec96cc5f18141f
+
+###Links 
+
+* [Procedures Section Observation(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Procedures/Procedures%20Section%20Observation%20Entry/Procedures%20Section%20Observation%28C-CDA2.1%29.xml)

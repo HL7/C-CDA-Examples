@@ -36,3 +36,7 @@
 ###Permalink 
 
 * dc32be311928724a5e68411d70bd9d9326e3295e
+
+###Links 
+
+* [No Planned Tests(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Plan%20of%20Treatment/No%20Planned%20Tests/No%20Planned%20Tests%28C-CDAR2.1%29.xml)

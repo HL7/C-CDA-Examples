@@ -34,3 +34,8 @@ Reference to full CDA sample: PROBLEMS_in_Empty_C-CDA_2.1 (in git repo at same l
 ###Permalink 
 
 * 59ef40cee6e15d000ba47d65
+
+###Links 
+
+* [PROBLEMS_in_Empty_C-CDA_2.1 (C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/General/External%20Document%20Reference/PROBLEMS_in_Empty_C-CDA_2.1%20%28C-CDAR2.1%29.xml)
+* [External Document Reference QRDA Template (C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/General/External%20Document%20Reference/External%20Document%20Reference%20QRDA%20Template%20%28C-CDAR2.1%29.xml)

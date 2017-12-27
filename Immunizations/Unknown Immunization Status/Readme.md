@@ -37,3 +37,7 @@
 ###Permalink 
 
 * e2f451150582d66dc3057170ff4f5ceb164098eb
+
+###Links 
+
+* [Unknown Immunization Status(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Immunizations/Unknown%20Immunization%20Status/Unknown%20Immunization%20Status%28C-CDA2.1%29.xml)

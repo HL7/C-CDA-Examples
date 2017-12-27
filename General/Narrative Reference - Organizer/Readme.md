@@ -29,3 +29,7 @@
 ###Permalink 
 
 * 0a8f0ac3890c21130eb539e0b256d6d505c0a17e
+
+###Links 
+
+* [Organizer text and originalText references (C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/General/Narrative%20Reference%20-%20Organizer/Organizer%20text%20and%20originalText%20references%20%28C-CDAR2.1%29.xml)

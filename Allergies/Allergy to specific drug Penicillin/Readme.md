@@ -43,3 +43,7 @@
 ###Permalink 
 
 * 46224f150dee048bc8f907116d285b332739d3a0
+
+###Links 
+
+* [Allergy to specific drug Penicillin(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/Allergy%20to%20specific%20drug%20Penicillin/Allergy%20to%20specific%20drug%20Penicillin%28C-CDA2.1%29.xml)

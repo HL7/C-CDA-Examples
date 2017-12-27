@@ -37,3 +37,7 @@
 ###Permalink 
 
 * b6f23e38249108eb5bc47905c949e9bb59fc33b4
+
+###Links 
+
+* [Active Problem(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Problems/Active%20Problem/Active%20Problem%28C-CDA2.1%29.xml)

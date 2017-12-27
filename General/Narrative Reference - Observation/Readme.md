@@ -27,3 +27,7 @@
 ###Permalink 
 
 * 44d5190e0b8acb77c11e2ebd31450dcdac872c65
+
+###Links 
+
+* [Observation text and originalText references (C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/General/Narrative%20Reference%20-%20Observation/Observation%20text%20and%20originalText%20references%20%28C-CDAR2.1%29.xml)

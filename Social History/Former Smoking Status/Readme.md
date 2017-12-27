@@ -38,3 +38,7 @@
 ###Permalink 
 
 * 498ea0b3bacdcc30827c4b7bb47b1a1304c52f46
+
+###Links 
+
+* [Former Smoking Status(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Social%20History/Former%20Smoking%20Status/Former%20Smoking%20Status%28C-CDA2.1%29.xml)

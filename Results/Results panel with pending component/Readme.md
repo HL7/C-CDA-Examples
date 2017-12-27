@@ -36,3 +36,7 @@
 ###Permalink 
 
 * 1a8f194b09ab0b7255ce2d138dc1a95227b6bb30
+
+###Links 
+
+* [Results panel with pending component(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Results%20panel%20with%20pending%20component/Results%20panel%20with%20pending%20component%28C-CDA2.1%29.xml)

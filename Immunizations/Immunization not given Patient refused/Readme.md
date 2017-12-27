@@ -37,3 +37,7 @@
 ###Permalink 
 
 * 8afc26db2966f01c1c065075e44031d29a865414
+
+###Links 
+
+* [Immunization not given Patient refused(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Immunizations/Immunization%20not%20given%20Patient%20refused/Immunization%20not%20given%20Patient%20refused%28C-CDA2.1%29.xml)

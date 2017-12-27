@@ -44,3 +44,7 @@
 ###Permalink 
 
 * 93c5eb52d4127fca75f4f29066b0e5e7eba9ca01
+
+###Links 
+
+* [Antibiotics with varied dosing(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medications/Anitbiotics%20with%20varied%20dosing/Antibiotics%20with%20varied%20dosing%28C-CDA2.1%29.xml)

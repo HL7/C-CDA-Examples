@@ -34,3 +34,7 @@
 ###Permalink 
 
 * f2debf5f44979854a710367c7b2c9c9f2911f4ea
+
+###Links 
+
+* [Family History generic(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Family%20History/Family%20History%20Generic/Family%20History%20generic%28C-CDA2.1%29.xml)

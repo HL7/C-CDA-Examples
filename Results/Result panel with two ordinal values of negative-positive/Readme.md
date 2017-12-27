@@ -39,3 +39,7 @@
 ###Permalink 
 
 * f7deea8bd578955d2dd64a3cb814f215f93b8e47
+
+###Links 
+
+* [Result panel with two ordinal values of negative-positive(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Result%20panel%20with%20two%20ordinal%20values%20of%20negative-positive/Result%20panel%20with%20two%20ordinal%20values%20of%20negative-positive%28C-CDA2.1%29.xml)

@@ -37,3 +37,8 @@
 ###Permalink 
 
 * 2c61153be9d4530a94ec7bad0390ab6bbe48d3db
+
+
+###Links 
+
+* [Functional Impairment Dependent on Walking Stick (C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Functional%20Status/Functional%20Impairment/Functional%20Impairment%20Dependent%20on%20Walking%20Stick%20%28C-CDAR2.1%29.xml)

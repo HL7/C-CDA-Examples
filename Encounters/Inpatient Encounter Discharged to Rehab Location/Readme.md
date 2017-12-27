@@ -38,3 +38,7 @@
 ###Permalink 
 
 * 4e2426c81bb6d72e62220be171df968dbe7efca5
+
+###Links 
+
+* [Inpatient_Encounter_Discharged_to_Rehab_Location(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Encounters/Inpatient%20Encounter%20Discharged%20to%20Rehab%20Location/Inpatient_Encounter_Discharged_to_Rehab_Location%28C-CDA2.1%29.xml)

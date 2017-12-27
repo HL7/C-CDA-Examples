@@ -35,3 +35,7 @@
 ###Permalink 
 
 * 5a13078d7c7ade0009585815
+
+###Links 
+
+* [Single Consultation Note(C-CDA R2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Notes/Single%20Consultation%20Note/Single%20Consultation%20Note%28C-CDA%20R2.1%29.xml)

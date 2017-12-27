@@ -35,3 +35,7 @@
 ###Permalink 
 
 * 8a7c67dd2918d6a9e8ddd04e4522bf0c857f162b
+
+###Links 
+
+* [Problem TargetSiteCode Qualifier(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Problems/Problem%20TargetSiteCode%20Qualifier/Problem%20TargetSiteCode%20Qualifier%28C-CDAR2.1%29.xml)

@@ -41,3 +41,7 @@
 ###Permalink 
 
 * 4f3c542cfceda966aee61e29528f895cb8024602
+
+###Links 
+
+* [Med every 4-6 hours(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medications/Med%20every%204-6%20hours/Med%20every%204-6%20hours%28C-CDA2.1%29.xml)

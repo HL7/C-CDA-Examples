@@ -28,3 +28,7 @@
 ###Permalink 
 
 * 74b808147151e634cbe09eaee3dd9f6f5d786317
+
+###Links 
+
+* [CCD Parent Document Replace (C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/General/Parent%20Document%20Replace%20Relationship/CCD%20Parent%20Document%20Replace%20%28C-CDAR2.1%29.xml)

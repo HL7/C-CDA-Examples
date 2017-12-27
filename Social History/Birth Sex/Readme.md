@@ -35,3 +35,7 @@
 ###Permalink 
 
 * 3b30a01004eccd6664935ff886a8c88830389324
+
+###Links 
+
+* [Birth Sex(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Social%20History/Birth%20Sex/Birth%20Sex%28C-CDA2.1%29.xml)

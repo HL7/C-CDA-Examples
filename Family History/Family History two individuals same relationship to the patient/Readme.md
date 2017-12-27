@@ -33,3 +33,7 @@
 ###Permalink 
 
 * 2108b07b1bc891832ce374f956a226422636ee0d
+
+###Links 
+
+* [Family History two individuals same relationship to the patient(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Family%20History/Family%20History%20two%20individuals%20same%20relationship%20to%20the%20patient/Family%20History%20two%20individuals%20same%20relationship%20to%20the%20patient%28C-CDA2.1%29.xml)

@@ -38,3 +38,7 @@
 ###Permalink 
 
 * 5a0b39fff02cc01f665c1fff
+
+###Links 
+
+* [Not Pregnant (C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Social%20History/Not%20Pregnant/Not%20Pregnant%20%28C-CDAR2.1%29.xml)

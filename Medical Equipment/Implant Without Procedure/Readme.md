@@ -37,3 +37,7 @@
 ###Permalink 
 
 * bacadc7c7194815ce4fcd741108f96a96a3a97a1
+
+###Links 
+
+* [Implant Without Procedure(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medical%20Equipment/Implant%20Without%20Procedure/Implant%20Without%20Procedure%28C-CDA2.1%29.xml)

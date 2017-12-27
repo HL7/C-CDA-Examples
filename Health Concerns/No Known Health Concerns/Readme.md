@@ -31,3 +31,7 @@
 ###Permalink 
 
 * eadf624ca7fa2754a77d8023f26d0576ba70041f
+
+###Links 
+
+* [No Known Health Concerns(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Health%20Concerns/No%20Known%20Health%20Concerns/No%20Known%20Health%20Concerns%28C-CDA2.1%29.xml)

@@ -57,3 +57,7 @@
 ###Permalink 
 
 * 74b81ace7fa73c1baf08c7f372a88678012d4ae0
+
+###Links 
+
+* [Result with lab location(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Result%20with%20lab%20location/Result%20with%20lab%20location%28C-CDAR2.1%29.xml)

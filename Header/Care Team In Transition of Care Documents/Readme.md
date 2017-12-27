@@ -31,3 +31,7 @@
 ###Permalink 
 
 * 4e1047540ebbd74205b20a81bed34143f4d4b3fa
+
+###Links 
+
+* [Care Team In Transition of Care Documents(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Header/Care%20Team%20In%20Transition%20of%20Care%20Documents/Care%20Team%20In%20Transition%20of%20Care%20Documents%28C-CDA2.1%29.xml)

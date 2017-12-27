@@ -43,3 +43,7 @@
 ###Permalink 
 
 * 0887da225cc90d3c781ca1b3fad76b2a6c49eaea
+
+###Links 
+
+* [Allergy to specific substance latex(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/Allergy%20to%20latex/Allergy%20to%20specific%20substance%20latex%28C-CDA2.1%29.xml)

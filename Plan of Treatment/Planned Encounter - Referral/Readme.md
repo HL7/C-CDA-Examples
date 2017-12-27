@@ -42,3 +42,7 @@
 ###Permalink 
 
 * f3cf8f6cc4fdc4f59d62dc765d2d13fa490f1b0c
+
+###Links 
+
+* [Planned Encounter - Reason for Referral(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Plan%20of%20Treatment/Planned%20Encounter%20-%20Referral/Planned%20Encounter%20-%20Reason%20for%20Referral%28C-CDAR2.1%29.xml)

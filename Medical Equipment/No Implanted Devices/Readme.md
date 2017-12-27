@@ -37,3 +37,7 @@
 ###Permalink 
 
 * 258fce77114e797899a59b42c56460c13a3c9a7e
+
+###Links 
+
+* [No Implanted Devices(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medical%20Equipment/No%20Implanted%20Devices/No%20Implanted%20Devices%28C-CDA2.1%29.xml)

@@ -42,3 +42,7 @@
 ###Permalink 
 
 * de1f429a35879e80f3df21b5fb1522809fcdb736
+
+###Links 
+
+* [Patient Demographic Information(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Header/Patient%20Demographic%20Information/Patient%20Demographic%20Information%28C-CDA2.1%29.xml)

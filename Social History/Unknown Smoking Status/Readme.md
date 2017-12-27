@@ -37,3 +37,7 @@
 ###Permalink 
 
 * c9c2657d9d9de7824b3afdc51cc442a8b899aea5
+
+###Links 
+
+* [Unknown Smoking Status(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Social%20History/Unknown%20Smoking%20Status/Unknown%20Smoking%20Status%28C-CDA2.1%29.xml)

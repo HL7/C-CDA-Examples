@@ -34,3 +34,7 @@
 ###Permalink 
 
 * 75fa257530a0a4f050c2f7267342521e66473187
+
+###Links 
+
+* [Normal Family History Father deceased Mother alive(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Family%20History/Normal%20Family%20History%20Father%20deceased-Mother%20alive/Normal%20Family%20History%20Father%20deceased%20Mother%20alive%28C-CDA2.1%29.xml)

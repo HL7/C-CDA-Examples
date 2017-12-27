@@ -40,3 +40,7 @@
 ###Permalink 
 
 * c1b6f960a26505ba83d7acb3ad7efc4d2ad10e4f
+
+###Links 
+
+* [Patient Does Not Have Diabetes(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Problems/Patient%20Does%20Not%20Have%20Diabetes/Patient%20Does%20Not%20Have%20Diabetes%28C-CDA2.1%29.xml)

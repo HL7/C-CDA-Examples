@@ -44,3 +44,7 @@
 ###Permalink 
 
 * 37f3de0affcd46df777333782c8f192f575248ca
+
+###Links 
+
+* [Allergy to specific drug Epinephrine(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/Allergy%20to%20specific%20drug%20Epinephrine/Allergy%20to%20specific%20drug%20Epinephrine%28C-CDA2.1%29.xml)
