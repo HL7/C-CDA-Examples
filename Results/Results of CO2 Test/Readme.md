@@ -35,7 +35,7 @@
 
 ###Custodian
 
-* Benjamin Flessner, benjamin@epic.com (GitHub:benjaminflessner)
+* Benjamin Flessner (GitHub:benjaminflessner)
 
 ###Keywords
 
