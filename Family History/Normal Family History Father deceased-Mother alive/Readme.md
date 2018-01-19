@@ -26,7 +26,7 @@
 * Example shows multiple observations for one family member, identifying the cause of death, and a family member with no known problems.
 ###Custodian
 
-*  Benjamin Flessner, benjamin@epic.com (GitHub: benjaminflessner)
+*  Benjamin Flessner (GitHub: benjaminflessner)
 ###Keywords
 
 * Family History

@@ -26,7 +26,7 @@
 * Example shows generic "family history of x" and "no family history of x" with commentary suggesting better options.
 ###Custodian
 
-* Benjamin Flessner, benjamin@epic.com (GitHub: benjaminflessner)
+* Benjamin Flessner (GitHub: benjaminflessner)
 ###Keywords
 
 * Family History

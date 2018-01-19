@@ -27,7 +27,7 @@
 * This is an example of a value from a lab with a discrete unit, but whose value is not a number, so the PQ datatype, the only type with a unit attribute, cannot be used.
 ###Custodian
 
-* Benjamin Flessner, benjamin@epic.com (GitHub:benjaminflessner)
+* Benjamin Flessner (GitHub:benjaminflessner)
 ###Keywords
 
 * results

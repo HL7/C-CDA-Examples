@@ -25,7 +25,7 @@
 * Example shows two brothers with multiple conditions. Though they have the same relationship to the patient, they can be identified by their separation into two family history organizers as well as by their subject ID's.
 ###Custodian
 
-* Benjamin Flessner, benjamin@epic.com (GitHub: benjaminflessner)
+* Benjamin Flessner (GitHub: benjaminflessner)
 ###Keywords
 
 * Family History
