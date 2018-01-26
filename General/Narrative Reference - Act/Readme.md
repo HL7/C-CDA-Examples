@@ -28,7 +28,7 @@
 
 ###Permalink 
 
-* 595166aad2b38b3ad3157d66
+* [http://cdasearch.hl7.org/examples/view/595166aad2b38b3ad3157d66](http://cdasearch.hl7.org/examples/view/595166aad2b38b3ad3157d66)
 
 ###Links 
 

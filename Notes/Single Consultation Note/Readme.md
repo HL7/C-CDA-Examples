@@ -34,7 +34,7 @@
 
 ###Permalink 
 
-* 5a13078d7c7ade0009585815
+* [http://cdasearch.hl7.org/examples/view/5a13078d7c7ade0009585815](http://cdasearch.hl7.org/examples/view/5a13078d7c7ade0009585815)
 
 ###Links 
 

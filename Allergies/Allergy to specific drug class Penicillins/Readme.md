@@ -38,7 +38,7 @@
 
 ###Permalink 
 
-* 9ed071312a5ab1b896dbbe1bca19c72f921a1616
+* [http://cdasearch.hl7.org/examples/view/9ed071312a5ab1b896dbbe1bca19c72f921a1616](http://cdasearch.hl7.org/examples/view/9ed071312a5ab1b896dbbe1bca19c72f921a1616)
 
 ###Links 
 

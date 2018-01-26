@@ -33,7 +33,7 @@ Reference to full CDA sample: PROBLEMS_in_Empty_C-CDA_2.1 (in git repo at same l
 
 ###Permalink 
 
-* 59ef40cee6e15d000ba47d65
+* [http://cdasearch.hl7.org/examples/view/59ef40cee6e15d000ba47d65](http://cdasearch.hl7.org/examples/view/59ef40cee6e15d000ba47d65)
 
 ###Links 
 

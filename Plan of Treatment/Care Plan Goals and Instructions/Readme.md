@@ -40,7 +40,7 @@
 
 ###Permalink 
 
-* dcff4e468368d5a82b7c3acef565de51b39e0544
+* [http://cdasearch.hl7.org/examples/view/dcff4e468368d5a82b7c3acef565de51b39e0544](http://cdasearch.hl7.org/examples/view/dcff4e468368d5a82b7c3acef565de51b39e0544)
 
 ###Links 
 

@@ -32,11 +32,7 @@
 
 ###Permalink 
 
-
-
-###Permalink 
-
-* 59ef40cee6e15d000ba47d66
+* [http://cdasearch.hl7.org/examples/view/59ef40cee6e15d000ba47d66](http://cdasearch.hl7.org/examples/view/59ef40cee6e15d000ba47d66)
 
 ###Links 
 

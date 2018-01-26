@@ -33,7 +33,7 @@
 
 ###Permalink 
 
-* 93ef77b9d74d9d5213bea81f320de15b8b279d8b
+* [http://cdasearch.hl7.org/examples/view/93ef77b9d74d9d5213bea81f320de15b8b279d8b](http://cdasearch.hl7.org/examples/view/93ef77b9d74d9d5213bea81f320de15b8b279d8b)
 
 ###Links 
 

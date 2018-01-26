@@ -56,7 +56,7 @@
 
 ###Permalink 
 
-* 74b81ace7fa73c1baf08c7f372a88678012d4ae0
+* [http://cdasearch.hl7.org/examples/view/74b81ace7fa73c1baf08c7f372a88678012d4ae0](http://cdasearch.hl7.org/examples/view/74b81ace7fa73c1baf08c7f372a88678012d4ae0)
 
 ###Links 
 
