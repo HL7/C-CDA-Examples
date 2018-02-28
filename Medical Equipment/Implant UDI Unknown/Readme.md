@@ -32,8 +32,8 @@
 
 ###Permalink 
 
+* [http://cdasearch.hl7.org/examples/view/59ef40cee6e15d000ba47d66](http://cdasearch.hl7.org/examples/view/59ef40cee6e15d000ba47d66)
 
+###Links 
 
-###Permalink 
-
-* 59ef40cee6e15d000ba47d66
+* [Implant UDI Unknown (C-CDA R2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medical%20Equipment/Implant%20UDI%20Unknown/Implant%20UDI%20Unknown%20%28C-CDA%20R2.1%29.xml)

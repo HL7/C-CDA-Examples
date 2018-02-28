@@ -37,4 +37,8 @@
 
 ###Permalink 
 
-* c1f226a15c2024fc191b66ad51c0e3b52dc67885
+* [http://cdasearch.hl7.org/examples/view/c1f226a15c2024fc191b66ad51c0e3b52dc67885](http://cdasearch.hl7.org/examples/view/c1f226a15c2024fc191b66ad51c0e3b52dc67885)
+
+###Links 
+
+* [Results with translation unit(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Results%20with%20translation%20unit/Results%20with%20translation%20unit%28C-CDA2.1%29.xml)

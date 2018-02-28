@@ -38,4 +38,8 @@
 
 ###Permalink 
 
-* 713669406c546a843ed2b78cfd99080f87834191
+* [http://cdasearch.hl7.org/examples/view/713669406c546a843ed2b78cfd99080f87834191](http://cdasearch.hl7.org/examples/view/713669406c546a843ed2b78cfd99080f87834191)
+
+###Links 
+
+* [Panel of Vital Signs in Metric Units(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Vital%20Signs/Panel%20of%20Vital%20Signs%20in%20Metric%20Units/Panel%20of%20Vital%20Signs%20in%20Metric%20Units%28C-CDA2.1%29.xml)

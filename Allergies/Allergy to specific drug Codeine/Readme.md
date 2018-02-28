@@ -39,4 +39,8 @@
 
 ###Permalink 
 
-* a27d1dc926d1a104a321c883d845af26583d06a9
+* [http://cdasearch.hl7.org/examples/view/a27d1dc926d1a104a321c883d845af26583d06a9](http://cdasearch.hl7.org/examples/view/a27d1dc926d1a104a321c883d845af26583d06a9)
+
+###Links 
+
+* [Allergy to specific drug Codeine(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/Allergy%20to%20specific%20drug%20Codeine/Allergy%20to%20specific%20drug%20Codeine%28C-CDA2.1%29.xml)

@@ -42,4 +42,8 @@
 
 ###Permalink 
 
-* 9731b470c5291fabfafb97268bdc0820f0058bc9
+* [http://cdasearch.hl7.org/examples/view/9731b470c5291fabfafb97268bdc0820f0058bc9](http://cdasearch.hl7.org/examples/view/9731b470c5291fabfafb97268bdc0820f0058bc9)
+
+###Links 
+
+* [Allergy to food egg(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/Allergy%20to%20food%20egg/Allergy%20to%20food%20egg%28C-CDA2.1%29.xml)

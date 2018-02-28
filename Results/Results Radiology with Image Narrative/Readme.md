@@ -40,4 +40,8 @@
 
 ###Permalink 
 
-* 26323b29d7ae6e03727e442b0884aff337f8627a
+* [http://cdasearch.hl7.org/examples/view/26323b29d7ae6e03727e442b0884aff337f8627a](http://cdasearch.hl7.org/examples/view/26323b29d7ae6e03727e442b0884aff337f8627a)
+
+###Links 
+
+* [Chest X ray with Narrative Report(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Results%20Radiology%20with%20Image%20Narrative/Chest%20X%20ray%20with%20Narrative%20Report%28C-CDA2.1%29.xml)

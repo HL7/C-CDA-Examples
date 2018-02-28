@@ -37,4 +37,9 @@
 
 ###Permalink 
 
-* 4774a74b86f9cde7943fc987ffd1f6121f8ca578
+* [http://cdasearch.hl7.org/examples/view/4774a74b86f9cde7943fc987ffd1f6121f8ca578](http://cdasearch.hl7.org/examples/view/4774a74b86f9cde7943fc987ffd1f6121f8ca578)
+
+
+###Links 
+
+* [No Cognitive Impairment(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Mental%20Status/No%20Cognitive%20Impairment/No%20Cognitive%20Impairment%28C-CDAR2.1%29.xml)

@@ -40,4 +40,8 @@
 
 ###Permalink 
 
-* 6e922ff540fb0736928ffcc58b43741de70e785e
+* [http://cdasearch.hl7.org/examples/view/6e922ff540fb0736928ffcc58b43741de70e785e](http://cdasearch.hl7.org/examples/view/6e922ff540fb0736928ffcc58b43741de70e785e)
+
+###Links 
+
+* [Results with less than specific value(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Results%20with%20less%20than%20specific%20value/Results%20with%20less%20than%20specific%20value%28C-CDA2.1%29.xml)

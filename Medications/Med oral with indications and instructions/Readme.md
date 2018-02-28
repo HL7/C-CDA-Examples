@@ -36,4 +36,8 @@
 
 ###Permalink 
 
-* df6a37361daf6195d0dd9844032445e4c442bbc8
+* [http://cdasearch.hl7.org/examples/view/df6a37361daf6195d0dd9844032445e4c442bbc8](http://cdasearch.hl7.org/examples/view/df6a37361daf6195d0dd9844032445e4c442bbc8)
+
+###Links 
+
+* [Med oral with indications and instructions(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medications/Med%20oral%20with%20indications%20and%20instructions/Med%20oral%20with%20indications%20and%20instructions%28C-CDA2.1%29.xml)

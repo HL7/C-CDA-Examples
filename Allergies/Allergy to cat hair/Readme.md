@@ -38,6 +38,11 @@
 
 * substance, allergies, allergy
 
-###Permalink
+###Permalink 
 
-*ad811b5c30103652f64000ae9a9d7092279d22b3
+* [http://cdasearch.hl7.org/examples/view/*ad811b5c30103652f64000ae9a9d7092279d22b3](http://cdasearch.hl7.org/examples/view/*ad811b5c30103652f64000ae9a9d7092279d22b3)
+
+
+###Links 
+
+* [Allergy to specific substance cat hair(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/Allergy%20to%20cat%20hair/Allergy%20to%20specific%20substance%20cat%20hair%28C-CDA2.1%29.xml)

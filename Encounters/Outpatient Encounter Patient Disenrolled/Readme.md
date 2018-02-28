@@ -37,4 +37,8 @@
 
 ###Permalink 
 
-* 0358fc1a4bbe08d617113988efb1bfc873f8f1aa
+* [http://cdasearch.hl7.org/examples/view/0358fc1a4bbe08d617113988efb1bfc873f8f1aa](http://cdasearch.hl7.org/examples/view/0358fc1a4bbe08d617113988efb1bfc873f8f1aa)
+
+###Links 
+
+* [Outpatient Encounter Patient Disenrolled(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Encounters/Outpatient%20Encounter%20Patient%20Disenrolled/Outpatient%20Encounter%20Patient%20Disenrolled%28C-CDA2.1%29.xml)

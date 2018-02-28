@@ -31,4 +31,8 @@
 
 ###Permalink 
 
-* 595166aad2b38b3ad3157d67
+* [http://cdasearch.hl7.org/examples/view/595166aad2b38b3ad3157d67](http://cdasearch.hl7.org/examples/view/595166aad2b38b3ad3157d67)
+
+###Links 
+
+* [Supply text and originalText references (C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/General/Narrative%20Reference%20-%20Supply/Supply%20text%20and%20originalText%20references%20%28C-CDAR2.1%29.xml)

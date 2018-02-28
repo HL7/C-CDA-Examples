@@ -37,4 +37,8 @@
 
 ###Permalink 
 
-* 3c38951895eee8513fb9eb60c7b5dae8060da1d5
+* [http://cdasearch.hl7.org/examples/view/3c38951895eee8513fb9eb60c7b5dae8060da1d5](http://cdasearch.hl7.org/examples/view/3c38951895eee8513fb9eb60c7b5dae8060da1d5)
+
+###Links 
+
+* [Influenza Vaccination(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Immunizations/Influenza%20Vaccination/Influenza%20Vaccination%28C-CDA2.1%29.xml)

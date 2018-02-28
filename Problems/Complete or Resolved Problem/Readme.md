@@ -39,4 +39,8 @@
 
 ###Permalink 
 
-* 614165f2d0c6ab2bf2bced565f41b5762ecfff44
+* [http://cdasearch.hl7.org/examples/view/614165f2d0c6ab2bf2bced565f41b5762ecfff44](http://cdasearch.hl7.org/examples/view/614165f2d0c6ab2bf2bced565f41b5762ecfff44)
+
+###Links 
+
+* [Resolved Problem(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Problems/Complete%20or%20Resolved%20Problem/Resolved%20Problem%28C-CDA2.1%29.xml)

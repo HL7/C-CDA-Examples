@@ -33,4 +33,8 @@
 
 ###Permalink 
 
-* 99eff7589dbf2ee7591c8604fdaa68344635e7e4
+* [http://cdasearch.hl7.org/examples/view/99eff7589dbf2ee7591c8604fdaa68344635e7e4](http://cdasearch.hl7.org/examples/view/99eff7589dbf2ee7591c8604fdaa68344635e7e4)
+
+###Links 
+
+* [Planned EKG(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Plan%20of%20Treatment/Planned%20EKG/Planned%20EKG%28C-CDAR2.1%29.xml)

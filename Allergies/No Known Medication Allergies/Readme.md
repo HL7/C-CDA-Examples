@@ -37,4 +37,8 @@
 
 ###Permalink 
 
-* ac120035c26ed3fb208bb446c782dc8bc783ab44
+* [http://cdasearch.hl7.org/examples/view/ac120035c26ed3fb208bb446c782dc8bc783ab44](http://cdasearch.hl7.org/examples/view/ac120035c26ed3fb208bb446c782dc8bc783ab44)
+
+###Links 
+
+* [No Known Medication Allergies(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/No%20Known%20Medication%20Allergies/No%20Known%20Medication%20Allergies%28C-CDA2.1%29.xml)

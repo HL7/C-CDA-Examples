@@ -30,4 +30,8 @@
 
 ###Permalink 
 
-* 4a9475e3e90806627d1c84763ef785b94eca9fd8
+* [http://cdasearch.hl7.org/examples/view/4a9475e3e90806627d1c84763ef785b94eca9fd8](http://cdasearch.hl7.org/examples/view/4a9475e3e90806627d1c84763ef785b94eca9fd8)
+
+###Links 
+
+* [No Medications(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medications/No%20Medications/No%20Medications%28C-CDA2.1%29.xml)

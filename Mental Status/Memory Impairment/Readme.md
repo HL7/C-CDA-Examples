@@ -36,4 +36,9 @@
 
 ###Permalink 
 
-* d89e8ad8f365fa28c81fea3ff4287fca343a1293
+* [http://cdasearch.hl7.org/examples/view/d89e8ad8f365fa28c81fea3ff4287fca343a1293](http://cdasearch.hl7.org/examples/view/d89e8ad8f365fa28c81fea3ff4287fca343a1293)
+
+
+###Links 
+
+* [Memory Impairment(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Mental%20Status/Memory%20Impairment/Memory%20Impairment%28C-CDAR2.1%29.xml)

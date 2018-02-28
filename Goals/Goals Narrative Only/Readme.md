@@ -34,4 +34,8 @@
 
 ###Permalink 
 
-* dd3cf25f7cb99b24354039d7a7fea3fec23621fb
+* [http://cdasearch.hl7.org/examples/view/dd3cf25f7cb99b24354039d7a7fea3fec23621fb](http://cdasearch.hl7.org/examples/view/dd3cf25f7cb99b24354039d7a7fea3fec23621fb)
+
+###Links 
+
+* [Goals Narrative Only(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Goals/Goals%20Narrative%20Only/Goals%20Narrative%20Only%28C-CDA2.1%29.xml)

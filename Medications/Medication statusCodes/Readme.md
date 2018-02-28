@@ -29,4 +29,4 @@
 
 ###Permalink 
 
-* 4280301bd364949698a3d784af74885f85e67886
+* [http://cdasearch.hl7.org/examples/view/4280301bd364949698a3d784af74885f85e67886](http://cdasearch.hl7.org/examples/view/4280301bd364949698a3d784af74885f85e67886)

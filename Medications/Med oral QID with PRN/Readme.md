@@ -33,4 +33,8 @@
 
 ###Permalink 
 
-* 26db7c4228f4f13bcaefbe776df4e3eac58e31b7
+* [http://cdasearch.hl7.org/examples/view/26db7c4228f4f13bcaefbe776df4e3eac58e31b7](http://cdasearch.hl7.org/examples/view/26db7c4228f4f13bcaefbe776df4e3eac58e31b7)
+
+###Links 
+
+* [Med oral QID with PRN(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medications/Med%20oral%20QID%20with%20PRN/Med%20oral%20QID%20with%20PRN%28C-CDA2.1%29.xml)

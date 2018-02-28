@@ -28,4 +28,8 @@
 
 ###Permalink 
 
-* 59ef40cee6e15d000ba47d67
+* [http://cdasearch.hl7.org/examples/view/59ef40cee6e15d000ba47d67](http://cdasearch.hl7.org/examples/view/59ef40cee6e15d000ba47d67)
+
+###Links 
+
+* [Multiple Patient Identifiers (C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Header/Multiple%20Patient%20Identifiers/Multiple%20Patient%20Identifiers%20%28C-CDAR2.1%29.xml)

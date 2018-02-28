@@ -37,4 +37,8 @@
 
 ###Permalink 
 
-* 5acc416e7ad6fae1546c561cfc216eae8fb655de
+* [http://cdasearch.hl7.org/examples/view/5acc416e7ad6fae1546c561cfc216eae8fb655de](http://cdasearch.hl7.org/examples/view/5acc416e7ad6fae1546c561cfc216eae8fb655de)
+
+###Links 
+
+* [Result with greater than a specified value(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Result%20with%20greater%20than%20a%20specified%20value/Result%20with%20greater%20than%20a%20specified%20value%28C-CDA2.1%29.xml)

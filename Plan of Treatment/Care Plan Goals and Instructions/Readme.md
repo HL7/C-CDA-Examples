@@ -40,4 +40,8 @@
 
 ###Permalink 
 
-* dcff4e468368d5a82b7c3acef565de51b39e0544
+* [http://cdasearch.hl7.org/examples/view/dcff4e468368d5a82b7c3acef565de51b39e0544](http://cdasearch.hl7.org/examples/view/dcff4e468368d5a82b7c3acef565de51b39e0544)
+
+###Links 
+
+* [Care Plan Goals and Instructions(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Plan%20of%20Treatment/Care%20Plan%20Goals%20and%20Instructions/Care%20Plan%20Goals%20and%20Instructions%28C-CDAR2.1%29.xml)

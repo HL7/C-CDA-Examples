@@ -26,11 +26,15 @@
 * Example shows generic "family history of x" and "no family history of x" with commentary suggesting better options.
 ###Custodian
 
-* Benjamin Flessner, benjamin@epic.com (GitHub: benjaminflessner)
+* Benjamin Flessner (GitHub: benjaminflessner)
 ###Keywords
 
 * Family History
 
 ###Permalink 
 
-* f2debf5f44979854a710367c7b2c9c9f2911f4ea
+* [http://cdasearch.hl7.org/examples/view/f2debf5f44979854a710367c7b2c9c9f2911f4ea](http://cdasearch.hl7.org/examples/view/f2debf5f44979854a710367c7b2c9c9f2911f4ea)
+
+###Links 
+
+* [Family History generic(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Family%20History/Family%20History%20Generic/Family%20History%20generic%28C-CDA2.1%29.xml)

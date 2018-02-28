@@ -37,4 +37,9 @@
 
 ###Permalink 
 
-* bb8003ab201395f3041d745a58490291bb3c2057
+* [http://cdasearch.hl7.org/examples/view/bb8003ab201395f3041d745a58490291bb3c2057](http://cdasearch.hl7.org/examples/view/bb8003ab201395f3041d745a58490291bb3c2057)
+
+
+###Links 
+
+* [No Functional Impairment (C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Functional%20Status/No%20Functional%20Impairment/No%20Functional%20Impairment%20%28C-CDAR2.1%29.xml)

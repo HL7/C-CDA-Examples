@@ -37,4 +37,8 @@
 
 ###Permalink 
 
-* 7353a215efda8dfe3fbacb19abbb90756ce14bab
+* [http://cdasearch.hl7.org/examples/view/7353a215efda8dfe3fbacb19abbb90756ce14bab](http://cdasearch.hl7.org/examples/view/7353a215efda8dfe3fbacb19abbb90756ce14bab)
+
+###Links 
+
+* [No Known Problems(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Problems/No%20Known%20Problems/No%20Known%20Problems%28C-CDA2.1%29.xml)

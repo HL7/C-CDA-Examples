@@ -27,4 +27,8 @@
 
 ###Permalink 
 
-* d1ffa6a994d551b91ad0532807777fd735a158de
+* [http://cdasearch.hl7.org/examples/view/d1ffa6a994d551b91ad0532807777fd735a158de](http://cdasearch.hl7.org/examples/view/d1ffa6a994d551b91ad0532807777fd735a158de)
+
+###Links 
+
+* [Encounter text and originalText references (C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/General/Narrative%20Reference%20-%20Encounter/Encounter%20text%20and%20originalText%20references%20%28C-CDAR2.1%29.xml)

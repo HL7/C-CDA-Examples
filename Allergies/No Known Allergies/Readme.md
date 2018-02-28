@@ -36,4 +36,8 @@
 
 ###Permalink 
 
-* 0ff4ddb1f9ccae6fd6aa9b5db98ae4d9f22290af
+* [http://cdasearch.hl7.org/examples/view/0ff4ddb1f9ccae6fd6aa9b5db98ae4d9f22290af](http://cdasearch.hl7.org/examples/view/0ff4ddb1f9ccae6fd6aa9b5db98ae4d9f22290af)
+
+###Links 
+
+* [No Known Allergies with Author Timestamp(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/No%20Known%20Allergies/No%20Known%20Allergies%20with%20Author%20Timestamp%28C-CDA2.1%29.xml)

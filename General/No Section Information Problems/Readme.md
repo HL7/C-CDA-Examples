@@ -39,4 +39,8 @@
 
 ###Permalink 
 
-* 4625469228fa0758500a4a62afb17f585412e50b
+* [http://cdasearch.hl7.org/examples/view/4625469228fa0758500a4a62afb17f585412e50b](http://cdasearch.hl7.org/examples/view/4625469228fa0758500a4a62afb17f585412e50b)
+
+###Links 
+
+* [No Information Problems(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/General/No%20Section%20Information%20Problems/No%20Information%20Problems%28C-CDA2.1%29.xml)

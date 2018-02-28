@@ -37,4 +37,8 @@
 
 ###Permalink 
 
-* 78c4d5227e592dbb19f1950a84f22bb53f56ae41
+* [http://cdasearch.hl7.org/examples/view/78c4d5227e592dbb19f1950a84f22bb53f56ae41](http://cdasearch.hl7.org/examples/view/78c4d5227e592dbb19f1950a84f22bb53f56ae41)
+
+###Links 
+
+* [Never Smoking Status(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Social%20History/Never%20Smoking%20Status/Never%20Smoking%20Status%28C-CDA2.1%29.xml)

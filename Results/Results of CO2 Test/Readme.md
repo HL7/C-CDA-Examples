@@ -35,7 +35,7 @@
 
 ###Custodian
 
-* Benjamin Flessner, benjamin@epic.com (GitHub:benjaminflessner)
+* Benjamin Flessner (GitHub:benjaminflessner)
 
 ###Keywords
 
@@ -43,4 +43,8 @@
 
 ###Permalink 
 
-* 72810ec4a92e1b63fc21c97b7e6e7c9aeb5a839a
+* [http://cdasearch.hl7.org/examples/view/72810ec4a92e1b63fc21c97b7e6e7c9aeb5a839a](http://cdasearch.hl7.org/examples/view/72810ec4a92e1b63fc21c97b7e6e7c9aeb5a839a)
+
+###Links 
+
+* [Results of CO2 Test Normal(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Results%20of%20CO2%20Test/Results%20of%20CO2%20Test%20Normal%28C-CDA2.1%29.xml)

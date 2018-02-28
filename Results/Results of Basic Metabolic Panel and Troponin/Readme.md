@@ -43,4 +43,8 @@
 
 ###Permalink 
 
-* ebbb7ccc5838f10077b2252813dc8cf1a42ba372
+* [http://cdasearch.hl7.org/examples/view/ebbb7ccc5838f10077b2252813dc8cf1a42ba372](http://cdasearch.hl7.org/examples/view/ebbb7ccc5838f10077b2252813dc8cf1a42ba372)
+
+###Links 
+
+* [Basic Metabolic Panel with Troponin(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Results%20of%20Basic%20Metabolic%20Panel%20and%20Troponin/Basic%20Metabolic%20Panel%20with%20Troponin%28C-CDA2.1%29.xml)
