@@ -1,0 +1,108 @@
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+    <!-- Medication Section (entries required) -->
+    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication Use"/>
+    <title>MEDICATIONS</title>
+    <text>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Medication</th>
+                    <th>Instructions</th>
+                    <th>Dosage</th>
+                    <th>Effective Date(s)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ID="Medication_1">
+                    <td>
+                        <content ID="MedicationName_1">4 ML bevacizumab 25 MG/ML Injection</content>
+                    </td>
+                    <td/>
+                    <td>
+                        <content>5 mg/kg</content>
+                    </td>
+                    <td>2018-02-15</td>  <!-- one time administration on Day 1 -->
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="INT">
+            <!-- ** Medication Activity (V2) ** -->
+            <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+            <id root="6c844c75-aa34-411c-b7bd-5e4a9f206e29"/>
+            <text>
+                <!-- This reference refers to medication information in unstructured portion of section-->
+                <reference value="#Medication_1"/>
+            </text>
+            <statusCode code="active" />  <!-- the medication order is currently active -->
+            <!-- for this regimen, bevacizumab will only be administered once, on Day 1, 
+		as an example scheduled for a future date relative to the date of the encounter.  -->
+            <effectiveTime value = "20180215" />
+            <routeCode code="C38276"
+                codeSystem="2.16.840.1.113883.3.26.1.1"
+                codeSystemName="NCI Thesaurus"
+                displayName="INTRAVENOUS"/>
+            <!-- an absolute dose quantity is unknown at the time the order is placed because 
+                 the drug is prepared based on the weight at the time of administration. -->
+            <!-- unit of measure taken from UCUM: http://download.hl7.de/documents/ucum/ucumdata.html -->
+            <doseQuantity value="5" unit="mg/kg" />
+            <consumable>
+                <manufacturedProduct classCode="MANU">
+                    <!-- ** Medication information ** -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                    <id root="2a620155-9d11-439e-92b3-5d9815ff3cc2"/>
+                    <manufacturedMaterial>
+                        <code code="1657066"
+                            displayName="4 ML bevacizumab 25 MG/ML Injection"
+                            codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                            <originalText>
+                                <reference value="#MedicationName_1"/>
+                            </originalText>
+                        </code>
+                    </manufacturedMaterial>
+                </manufacturedProduct>
+            </consumable>
+            <participant typeCode="CSM">
+                <participantRole classCode="MANU">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
+                    <code code="412307009" displayName="drug vehicle"
+                        codeSystem="2.16.840.1.113883.6.96"/>
+                    <playingEntity classCode="MMAT">
+                        <!-- bevacizumab is prepared with a compatible solution for continuous infusion. 
+	                         In this example, we use normal saline for preparation. 
+	                    -->
+                        <code code="1807639" displayName="1000 ML Sodium Chloride 9 MG/ML Injection"
+                            codeSystem="2.16.840.1.113883.6.88"
+                            codeSystemName="RxNorm"/>
+                        <name>Sodium Chloride 0.9%</name>
+                    </playingEntity>
+                </participantRole>
+            </participant> 
+            <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                    <!-- ** Indication ** -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.19"
+                        extension="2014-06-09"/>
+                    <!-- This ID may link to the problem ID entry in the problem list, if it already exists. -->
+                    <id root="e63166c7-6482-4a44-83a1-37ccdbdd532b"/>
+                    <code code="75321-0"
+                        codeSystem="2.16.840.1.113883.6.1"
+                        codeSystemName="LOINC"
+                        displayName="Clinical finding"/>
+                    <statusCode code="completed"/>
+                    <value xsi:type="CD"
+                        code="363406005"
+                        displayName="Malignant neoplasm of colon"
+                        codeSystem="2.16.840.1.113883.6.96"/>
+                </observation>
+            </entryRelationship>
+        </substanceAdministration>
+    </entry>
+</section>
