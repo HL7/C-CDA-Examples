@@ -22,7 +22,7 @@
 
 ### Comments
 
-* This example illustrates an example of a medication order with the following characteristics:
+This example illustrates an example of a medication order with the following characteristics:
 
 * an IV drug with a relative dose quantity that is based on weight, 
 
