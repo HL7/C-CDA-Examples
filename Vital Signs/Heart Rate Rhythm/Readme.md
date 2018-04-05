@@ -35,4 +35,7 @@
 
 * Vital Signs
 
+
 ### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5ac26c110e797a000bb5d3bf](http://cdasearch.hl7.org/examples/view/5ac26c110e797a000bb5d3bf)
