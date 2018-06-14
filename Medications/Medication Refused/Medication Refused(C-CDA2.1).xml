@@ -1,0 +1,116 @@
+<!-- This is an example of a medication being refused by a patient --> 
+<!-- This example illustrates hhow such documentation may represent an exclusion criterion for a quality measure -->
+<!-- This example uses a QRDA tempalte to document reason with a coded concept --> 
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+    <!-- Medication Section (entries required) -->
+    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication Use"/>
+    <title>MEDICATIONS</title>
+    <text>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Medication</th>
+                    <th>Dosage</th>
+                    <th>Effective Dates (start - stop)</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ID="Medication_0">
+                    <td>
+                        Patient refused: 
+                        <content ID="MedicationName_0" xmlns="urn:hl7-org:v3">Lisinopril 10mg Oral Tablet</content>
+                    </td>
+                    <td>NA</td>
+                    <td>March 15, 2018</td>
+                    <td ID="Medication_0_comment">Patient refused</td>
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    <entry typeCode="DRIV">
+        <!-- Since the negation has occurred, the moodCode is set to "EVN" with negationInd to "true" -->
+        <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="true">
+            <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+            <id root="47d3e719-f688-459d-bcdc-47c6de0767b9"/>
+            <text>
+                <!-- This reference refers to medication information in unstructured portion of section-->
+                <reference value="#Medication_0"/>
+            </text>
+            <statusCode code="completed"/>
+            <!-- This effectiveTime is a point in time -->
+            <effectiveTime value="20180315112305-0500"/>
+            <routeCode nullFlavor="NA"/>
+            <doseQuantity nullFlavor="NA"/>
+            <consumable>
+                <manufacturedProduct classCode="MANU">
+                    <!-- ** Medication information ** -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                    <id root="2a620155-9d11-439e-92b3-5d9815ff4eb8"/>
+                    <manufacturedMaterial>
+                        <!-- Medications should be specified at a level corresponding to prescription when possible, such as 600mg oral tablet (non-branded)-->
+                        <code code="314076" displayName="Lisninopril 10mg Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                            <originalText>
+                                <reference value="#MedicationName_0"/>
+                            </originalText>
+                        </code>
+                    </manufacturedMaterial>
+                </manufacturedProduct>
+            </consumable>
+            <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <!-- Time the author noted that patient is on no medications -->
+                <time value="20180315112305-0500"/>
+                <assignedAuthor>
+                    <id extension="66666" root="2.16.840.1.113883.4.6"/>
+                    <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
+                        codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+                    <addr>
+                        <streetAddressLine>6666 StreetName St.</streetAddressLine>
+                        <city>Silver Spring</city>
+                        <state>MD</state>
+                        <postalCode>20901</postalCode>
+                        <country>US</country>
+                    </addr>
+                    <telecom value="tel:+1(301)666-6666" use="WP"/>
+                    <assignedPerson>
+                        <name>
+                            <given>Heartly</given>
+                            <family>Sixer</family>
+                            <suffix>MD</suffix>
+                        </name>
+                    </assignedPerson>
+                </assignedAuthor>
+            </author>
+            <!-- Comment activity --> 
+            <entryRelationship>
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.64"/>
+                    <code code="48767-8" displayName="Annotation Comment" codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1"/>
+                    <text>
+                        <reference value="#Medication_0_comment"/>
+                    </text>
+                </act>
+            </entryRelationship>
+            <!-- This is the QRDA template --> 
+            <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                    <!-- Reason (V2) -->
+                    <templateId root="2.16.840.1.113883.10.20.24.3.88" extension="2014-12-01" />
+                    <id root="5750a5bb-6a01-4b99-9b1c-cda56b1dce0c" />
+                    <code code="77301-0" codeSystem="2.16.840.1.113883.6.1" displayName="Reason care action performed or not" codeSystemName="LOINC" />
+                    <statusCode code="completed" />
+                    <effectiveTime>
+                        <low value="20180315112305-0500"/>
+                    </effectiveTime>
+                    <!-- sdtc:valueset extension is required in many QRDA templates. It's allowed in C-CDA. -->
+                    <value xsi:type="CD" code="105480006" codeSystem="2.16.840.1.113883.6.96"  codeSystemName="SNOMED CT" displayName="Refusal of treatment by patient" sdtc:valueSet="2.16.840.1.113883.3.526.3.1008" />
+                </observation>
+            </entryRelationship>
+        </substanceAdministration>
+    </entry>
+</section>
