@@ -17,7 +17,7 @@
 
 ###Validation location
 
-* [SITE](https://sitenv.org/c-cda-validator)
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
 
 
 * Other required elements are omitted so several errors will be present if inserted without adding other information (e.g. telecom, address)

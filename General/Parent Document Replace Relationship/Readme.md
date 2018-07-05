@@ -12,7 +12,7 @@
 
 ###Validation location
 
-* [SITE](https://sitenv.org/c-cda-validator) on 5/4/2017
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator) on 5/4/2017
 
 ###Comments
 * This is an example of how a continuity of care document (or other document) may reference parent documents. This one replaces a previous document. 

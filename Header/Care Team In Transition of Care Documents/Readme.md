@@ -12,7 +12,7 @@
 * Empty CCD
 
 ###Validation location
-* [SITE](https://sitenv.org/c-cda-validator)
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
 
 ###Comments
 * This is an example of how to include Care Team information for 170.315_b1 Ambulatory test data
