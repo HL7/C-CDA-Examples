@@ -5,7 +5,7 @@
 * SDWG: 10/15/2015
 * SDWG C-CDA R2.1 Upgrade: 2/2/2017
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 * 1.3.6.1.4.1.19376.1.5.3.1.3.1
 * 2.16.840.1.113883.10.20.22.2.10
 * 2.16.840.1.113883.10.20.22.2.10:2014-06-09
@@ -39,19 +39,10 @@
 * Planned Encounter, Reason for Referral
 
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/f3cf8f6cc4fdc4f59d62dc765d2d13fa490f1b0c](http://cdasearch.hl7.org/examples/view/f3cf8f6cc4fdc4f59d62dc765d2d13fa490f1b0c)
 
-###Links 
+###Links
 
 * [Planned Encounter - Reason for Referral(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Plan%20of%20Treatment/Planned%20Encounter%20-%20Referral/Planned%20Encounter%20-%20Reason%20for%20Referral%28C-CDAR2.1%29.xml)
-
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941ae8](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941ae8)
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64716dd2b38b897b941b50](http://cdasearch.hl7.org/examples/view/5b64716dd2b38b897b941b50)

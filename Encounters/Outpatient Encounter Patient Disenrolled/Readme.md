@@ -4,7 +4,7 @@
 * Example Task Force: 11/17/2016
 * SDWG: 2/2/2016
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * 2.16.840.1.113883.10.20.22.2.22.1:2015-08-01
 * 2.16.840.1.113883.10.20.22.4.49:2015-08-01
@@ -35,19 +35,10 @@
 * Outpatient discharge disposition, local code, nullFlavor
 
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/0358fc1a4bbe08d617113988efb1bfc873f8f1aa](http://cdasearch.hl7.org/examples/view/0358fc1a4bbe08d617113988efb1bfc873f8f1aa)
 
-###Links 
+###Links
 
 * [Outpatient Encounter Patient Disenrolled(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Encounters/Outpatient%20Encounter%20Patient%20Disenrolled/Outpatient%20Encounter%20Patient%20Disenrolled%28C-CDA2.1%29.xml)
-
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b03](http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b03)
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64716ed2b38b897b941b6b](http://cdasearch.hl7.org/examples/view/5b64716ed2b38b897b941b6b)

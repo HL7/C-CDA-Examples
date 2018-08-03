@@ -4,7 +4,7 @@
 * Example Task Force: 2/16/2017
 * SDWG: 5/18/2017
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * Medications Section: 2.16.840.1.113883.10.20.22.2.1.1:2014-06-09
 * Medication Activity: 2.16.840.1.113883.10.20.22.4.16:2014-06-09
@@ -30,19 +30,10 @@
 
 * medication, event timing, HS, bedtime
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/4214145b869b697ff55e6ae4d55585c338db1c8d](http://cdasearch.hl7.org/examples/view/4214145b869b697ff55e6ae4d55585c338db1c8d)
 
-###Links 
+###Links
 
 * [Med at bedtime(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medications/Med%20at%20bedtime/Med%20at%20bedtime%28C-CDAR2.1%29.xml)
-
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941acf](http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941acf)
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64716cd2b38b897b941b37](http://cdasearch.hl7.org/examples/view/5b64716cd2b38b897b941b37)

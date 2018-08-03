@@ -4,7 +4,7 @@
 * Example Task Force: 6/14/2018
 * SDWG: 7/12/2018
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * 2.16.840.1.113883.10.20.22.2.7.1
 * 2.16.840.1.113883.10.20.22.2.7.1:2014-06-09
@@ -22,7 +22,7 @@
 
 ###Comments
 
-* This is an example of how to associate a Procedure Note with a Procedure in the Procedure section. 
+* This is an example of how to associate a Procedure Note with a Procedure in the Procedure section.
 
 ###Custodian
 
@@ -31,15 +31,3 @@
 ###Keywords
 
 * Note, Note Activity, Notes, Procedure
-
-
-
-
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941afa](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941afa)
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64716ed2b38b897b941b62](http://cdasearch.hl7.org/examples/view/5b64716ed2b38b897b941b62)

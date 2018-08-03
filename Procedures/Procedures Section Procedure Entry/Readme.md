@@ -6,7 +6,7 @@
 
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * 2.16.840.1.113883.10.20.22.2.7.1:2014-06-09
 * 2.16.840.1.113883.10.20.22.4.14:2014-06-09
@@ -35,19 +35,10 @@
 * problems
 
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/ff75bad48169a734962b34e6239fa12fa94cb554](http://cdasearch.hl7.org/examples/view/ff75bad48169a734962b34e6239fa12fa94cb554)
 
-###Links 
+###Links
 
 * [Procedures Section Procedure(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Procedures/Procedures%20Section%20Procedure%20Entry/Procedures%20Section%20Procedure%28C-CDA2.1%29.xml)
-
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64712bd2b38b897b941ab1](http://cdasearch.hl7.org/examples/view/5b64712bd2b38b897b941ab1)
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b647167d2b38b897b941b19](http://cdasearch.hl7.org/examples/view/5b647167d2b38b897b941b19)

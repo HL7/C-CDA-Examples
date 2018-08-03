@@ -5,8 +5,8 @@
 * SDWG: 10/15/2015
 * SDWG C-CDA R2.1 Upgrade: 2/2/2017
 
-###C-CDA 2.1 Example: 
- 
+###C-CDA 2.1 Example:
+
 
 * recordTarget
 
@@ -39,19 +39,10 @@
 
 * Demographics, Name, Address, Telecom, Phone, Email, Race, Ethnicity, Religious Affiliation, Marital Status, Language
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/de1f429a35879e80f3df21b5fb1522809fcdb736](http://cdasearch.hl7.org/examples/view/de1f429a35879e80f3df21b5fb1522809fcdb736)
 
-###Links 
+###Links
 
 * [Patient Demographic Information(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Header/Patient%20Demographic%20Information/Patient%20Demographic%20Information%28C-CDA2.1%29.xml)
-
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b647162d2b38b897b941b17](http://cdasearch.hl7.org/examples/view/5b647162d2b38b897b941b17)
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64716fd2b38b897b941b7f](http://cdasearch.hl7.org/examples/view/5b64716fd2b38b897b941b7f)

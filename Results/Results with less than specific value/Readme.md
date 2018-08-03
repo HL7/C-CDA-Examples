@@ -6,7 +6,7 @@
 * SDWG approved minor edits: 11/12/2015
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 
 * 2.16.840.1.113883.10.20.22.2.3.1:2015-08-01
@@ -38,19 +38,10 @@
 
 * Results
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/6e922ff540fb0736928ffcc58b43741de70e785e](http://cdasearch.hl7.org/examples/view/6e922ff540fb0736928ffcc58b43741de70e785e)
 
-###Links 
+###Links
 
 * [Results with less than specific value(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Results%20with%20less%20than%20specific%20value/Results%20with%20less%20than%20specific%20value%28C-CDA2.1%29.xml)
-
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941af0](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941af0)
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64716dd2b38b897b941b58](http://cdasearch.hl7.org/examples/view/5b64716dd2b38b897b941b58)

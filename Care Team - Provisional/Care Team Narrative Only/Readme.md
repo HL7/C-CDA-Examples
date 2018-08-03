@@ -4,7 +4,7 @@
 * Example Task Force: 4/27/2017
 * SDWG: 5/18/2017
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 * No templates - not balloted within HL7
 
 ###Reference to full CDA sample:
@@ -30,19 +30,10 @@
 * Provisional, CareTeam, Care Team
 
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/d7aa84589c1f09e212fdc9b2c850c29f930a0209](http://cdasearch.hl7.org/examples/view/d7aa84589c1f09e212fdc9b2c850c29f930a0209)
 
-###Links 
+###Links
 
 * [Care Team Narrative Only (C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Care%20Team%20-%20Provisional/Care%20Team%20Narrative%20Only/Care%20Team%20Narrative%20Only%20%28C-CDAR2.1%29.xml)
-
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941ae7](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941ae7)
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64716dd2b38b897b941b4f](http://cdasearch.hl7.org/examples/view/5b64716dd2b38b897b941b4f)

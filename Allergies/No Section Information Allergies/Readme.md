@@ -6,7 +6,7 @@
 
 
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * 2.16.840.1.113883.10.20.22.2.6
 * 2.16.840.1.113883.10.20.22.2.6:2015-08-01
@@ -41,19 +41,10 @@
 
 
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/5a2edaaa31651e000b55a514](http://cdasearch.hl7.org/examples/view/5a2edaaa31651e000b55a514)
 
-###Links 
+###Links
 
 * [No Information Allergies(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/No%20Section%20Information%20Allergies/No%20Information%20Allergies%28C-CDA2.1%29.xml)
-
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b0c](http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b0c)
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64716ed2b38b897b941b74](http://cdasearch.hl7.org/examples/view/5b64716ed2b38b897b941b74)

@@ -4,7 +4,7 @@
 * Example Task Force: 10/19/2017
 * SDWG: 11/30/2017
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * N/A
 
@@ -28,14 +28,6 @@
 
 
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/5a0b3a01f02cc01f665c2002](http://cdasearch.hl7.org/examples/view/5a0b3a01f02cc01f665c2002)
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941ad6](http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941ad6)
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64716cd2b38b897b941b3e](http://cdasearch.hl7.org/examples/view/5b64716cd2b38b897b941b3e)

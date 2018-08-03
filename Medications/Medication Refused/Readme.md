@@ -2,7 +2,7 @@
 
 * Approval Status: Pending
 * Example Task Force: 5/3/2018
-* SDWG: 
+* SDWG:
 
 ##Templates
 
@@ -10,7 +10,7 @@
 * Medication Activity: 2.16.840.1.113883.10.20.22.4.16:2014-06-09
 * Medication Information: 2.16.840.1.113883.10.20.22.4.23:2014-06-09
 
-##Validation location: 
+##Validation location:
 
 TBD
 
@@ -27,11 +27,3 @@ Reference to full CDA sample: TBD
 ##Keywords
 
 * medication, negation
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64715ed2b38b897b941acc](http://cdasearch.hl7.org/examples/view/5b64715ed2b38b897b941acc)
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64716bd2b38b897b941b34](http://cdasearch.hl7.org/examples/view/5b64716bd2b38b897b941b34)

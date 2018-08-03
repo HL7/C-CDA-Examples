@@ -5,7 +5,7 @@
 * SDWG: 4/24/2014
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * 2.16.840.1.113883.10.20.22.2.6.1:2015-08-01
 * Allergy Concern Act 2.16.840.1.113883.10.20.22.4.30:2015-08-01
@@ -36,19 +36,10 @@
 * substance, allergies, allergy
 
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/9ed071312a5ab1b896dbbe1bca19c72f921a1616](http://cdasearch.hl7.org/examples/view/9ed071312a5ab1b896dbbe1bca19c72f921a1616)
 
-###Links 
+###Links
 
 * [Allergy to specific drug class Penicillins(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/Allergy%20to%20specific%20drug%20class%20Penicillins/Allergy%20to%20specific%20drug%20class%20Penicillins%28C-CDA2.1%29.xml)
-
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b0e](http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b0e)
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64716ed2b38b897b941b76](http://cdasearch.hl7.org/examples/view/5b64716ed2b38b897b941b76)

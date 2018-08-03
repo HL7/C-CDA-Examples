@@ -1,4 +1,4 @@
-##Approval Status 
+##Approval Status
 
 * Approval Status: Approved
 * Example Task Force: 1/30/2014
@@ -6,8 +6,8 @@
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
 
-###C-CDA 2.1 Example: 
-: 
+###C-CDA 2.1 Example:
+:
 
 * 2.16.840.1.113883.10.20.22.2.5.1:2015-08-01
 
@@ -37,19 +37,10 @@
 * null section, no information section
 
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/4625469228fa0758500a4a62afb17f585412e50b](http://cdasearch.hl7.org/examples/view/4625469228fa0758500a4a62afb17f585412e50b)
 
-###Links 
+###Links
 
 * [No Information Problems(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/General/No%20Section%20Information%20Problems/No%20Information%20Problems%28C-CDA2.1%29.xml)
-
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941ad9](http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941ad9)
-
-### Permalink 
-
-* [http://cdasearch.hl7.org/examples/view/5b64716cd2b38b897b941b41](http://cdasearch.hl7.org/examples/view/5b64716cd2b38b897b941b41)
