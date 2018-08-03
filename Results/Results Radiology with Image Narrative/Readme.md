@@ -45,3 +45,8 @@
 ###Links 
 
 * [Chest X ray with Narrative Report(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Results%20Radiology%20with%20Image%20Narrative/Chest%20X%20ray%20with%20Narrative%20Report%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941af1](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941af1)

@@ -44,3 +44,8 @@
 ###Links 
 
 * [Health Concerns Link to Problems Section with linkHTML(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Health%20Concerns/Health%20Concerns%20Link%20to%20Problems%20Section%20with%20linkHTML/Health%20Concerns%20Link%20to%20Problems%20Section%20with%20linkHTML%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941abf](http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941abf)

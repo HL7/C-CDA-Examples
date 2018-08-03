@@ -30,3 +30,7 @@
 ###Permalink 
 
 * [http://cdasearch.hl7.org/examples/view/9588687865c0f945a326364a9449321690c7a7ef](http://cdasearch.hl7.org/examples/view/9588687865c0f945a326364a9449321690c7a7ef)
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64712dd2b38b897b941aca](http://cdasearch.hl7.org/examples/view/5b64712dd2b38b897b941aca)

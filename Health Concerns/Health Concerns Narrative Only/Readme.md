@@ -38,3 +38,8 @@
 ###Links 
 
 * [Health Concerns Narrative Only(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Health%20Concerns/Health%20Concerns%20Narrative%20Only/Health%20Concerns%20Narrative%20Only%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ac0](http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ac0)

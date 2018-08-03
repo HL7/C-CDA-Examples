@@ -38,3 +38,8 @@
 ###Links 
 
 * [Multiple Implants (C-CDA R2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medical%20Equipment/Multiple%20Implants/Multiple%20Implants%20%28C-CDA%20R2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ac1](http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ac1)

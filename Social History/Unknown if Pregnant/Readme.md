@@ -41,3 +41,8 @@
 ###Links 
 
 * [Unknown if Pregnant.xml](https://github.com/HL7/C-CDA-Examples/tree/master/Social%20History/Unknown%20if%20Pregnant/Unknown%20if%20Pregnant.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ab9](http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ab9)

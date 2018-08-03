@@ -42,3 +42,8 @@
 ###Links 
 
 * [Panel of Vital Signs in Mixed Metric-Imperial Units(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Vital%20Signs/Panel%20of%20Vital%20Signs%20in%20Mixed%20Metric-Imperial%20Units/Panel%20of%20Vital%20Signs%20in%20Mixed%20Metric-Imperial%20Units%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b11](http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b11)

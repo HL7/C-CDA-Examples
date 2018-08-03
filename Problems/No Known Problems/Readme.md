@@ -42,3 +42,8 @@
 ###Links 
 
 * [No Known Problems(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Problems/No%20Known%20Problems/No%20Known%20Problems%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941ae4](http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941ae4)

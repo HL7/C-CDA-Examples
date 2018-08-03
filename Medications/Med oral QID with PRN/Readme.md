@@ -38,3 +38,8 @@
 ###Links 
 
 * [Med oral QID with PRN(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medications/Med%20oral%20QID%20with%20PRN/Med%20oral%20QID%20with%20PRN%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64712dd2b38b897b941ac9](http://cdasearch.hl7.org/examples/view/5b64712dd2b38b897b941ac9)

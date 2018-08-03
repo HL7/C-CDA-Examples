@@ -44,3 +44,8 @@
 ###Links 
 
 * [Hospital Discharge Encounter with Billable Diagnoses(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Encounters/Hospital%20Discharge%20Encounter%20with%20Billable%20Diagnoses/Hospital%20Discharge%20Encounter%20with%20Billable%20Diagnoses%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941aff](http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941aff)

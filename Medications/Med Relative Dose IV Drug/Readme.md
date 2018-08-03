@@ -50,3 +50,7 @@ Additional Notes and Assumptions:
 ### Permalink 
 
 * [http://cdasearch.hl7.org/examples/view/5ac26c0e0e797a000bb5d3be](http://cdasearch.hl7.org/examples/view/5ac26c0e0e797a000bb5d3be)
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ac5](http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ac5)

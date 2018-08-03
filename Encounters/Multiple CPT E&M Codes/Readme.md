@@ -46,3 +46,8 @@
 ###Links 
 
 * [Multiple CPT E&M Codes Single Encounter(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Encounters/Multiple%20CPT%20E%26M%20Codes/Multiple%20CPT%20E%26M%20Codes%20Single%20Encounter%28C-CDAR2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b00](http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b00)

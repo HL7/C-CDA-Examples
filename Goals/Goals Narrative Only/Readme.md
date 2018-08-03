@@ -39,3 +39,8 @@
 ###Links 
 
 * [Goals Narrative Only(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Goals/Goals%20Narrative%20Only/Goals%20Narrative%20Only%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941ad1](http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941ad1)

@@ -38,3 +38,8 @@
 ###Links 
 
 * [Planned EKG(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Plan%20of%20Treatment/Planned%20EKG/Planned%20EKG%28C-CDAR2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941ae9](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941ae9)

@@ -35,3 +35,8 @@
 ###Links 
 
 * [No Known Health Concerns(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Health%20Concerns/No%20Known%20Health%20Concerns/No%20Known%20Health%20Concerns%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941abd](http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941abd)

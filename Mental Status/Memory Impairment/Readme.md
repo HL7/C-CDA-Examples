@@ -42,3 +42,8 @@
 ###Links 
 
 * [Memory Impairment(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Mental%20Status/Memory%20Impairment/Memory%20Impairment%28C-CDAR2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941ade](http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941ade)

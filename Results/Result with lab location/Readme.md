@@ -61,3 +61,8 @@
 ###Links 
 
 * [Result with lab location(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Result%20with%20lab%20location/Result%20with%20lab%20location%28C-CDAR2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941af5](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941af5)

@@ -42,3 +42,8 @@
 ###Links 
 
 * [Not Pregnant (C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Social%20History/Not%20Pregnant/Not%20Pregnant%20%28C-CDAR2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64712bd2b38b897b941ab3](http://cdasearch.hl7.org/examples/view/5b64712bd2b38b897b941ab3)

@@ -37,3 +37,8 @@
 ###Links 
 
 * [Implant UDI Unknown (C-CDA R2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medical%20Equipment/Implant%20UDI%20Unknown/Implant%20UDI%20Unknown%20%28C-CDA%20R2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ac4](http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ac4)

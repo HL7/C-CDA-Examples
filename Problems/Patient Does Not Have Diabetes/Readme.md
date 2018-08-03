@@ -44,3 +44,8 @@
 ###Links 
 
 * [Patient Does Not Have Diabetes(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Problems/Patient%20Does%20Not%20Have%20Diabetes/Patient%20Does%20Not%20Have%20Diabetes%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941ae6](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941ae6)

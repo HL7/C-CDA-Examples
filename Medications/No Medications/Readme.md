@@ -35,3 +35,8 @@
 ###Links 
 
 * [No Medications(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medications/No%20Medications/No%20Medications%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64712dd2b38b897b941ac8](http://cdasearch.hl7.org/examples/view/5b64712dd2b38b897b941ac8)

@@ -33,3 +33,8 @@
 
 
 
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941afb](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941afb)

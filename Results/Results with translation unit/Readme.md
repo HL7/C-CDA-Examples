@@ -42,3 +42,8 @@
 ###Links 
 
 * [Results with translation unit(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Results%20with%20translation%20unit/Results%20with%20translation%20unit%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941aef](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941aef)

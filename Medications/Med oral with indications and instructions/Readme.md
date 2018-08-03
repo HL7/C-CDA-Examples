@@ -41,3 +41,8 @@
 ###Links 
 
 * [Med oral with indications and instructions(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medications/Med%20oral%20with%20indications%20and%20instructions/Med%20oral%20with%20indications%20and%20instructions%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ac6](http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ac6)

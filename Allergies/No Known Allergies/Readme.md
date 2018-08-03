@@ -41,3 +41,8 @@
 ###Links 
 
 * [No Known Allergies with Author Timestamp(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/No%20Known%20Allergies/No%20Known%20Allergies%20with%20Author%20Timestamp%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b05](http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b05)

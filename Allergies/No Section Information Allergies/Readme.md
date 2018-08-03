@@ -48,3 +48,8 @@
 ###Links 
 
 * [No Information Allergies(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/No%20Section%20Information%20Allergies/No%20Information%20Allergies%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b0c](http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b0c)

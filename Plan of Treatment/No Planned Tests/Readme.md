@@ -40,3 +40,8 @@
 ###Links 
 
 * [No Planned Tests(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Plan%20of%20Treatment/No%20Planned%20Tests/No%20Planned%20Tests%28C-CDAR2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941aea](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941aea)

@@ -48,3 +48,8 @@
 ###Links 
 
 * [Results of CO2 Test Normal(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Results%20of%20CO2%20Test/Results%20of%20CO2%20Test%20Normal%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941af2](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941af2)

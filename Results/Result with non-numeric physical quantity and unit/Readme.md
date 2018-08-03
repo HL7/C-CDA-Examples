@@ -39,3 +39,8 @@
 ###Links 
 
 * [Result with non-numeric physical quantity and unit(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Result%20with%20non-numeric%20physical%20quantity%20and%20unit/Result%20with%20non-numeric%20physical%20quantity%20and%20unit%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941aee](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941aee)

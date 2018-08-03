@@ -45,3 +45,8 @@
 ###Links 
 
 * [Single administration of medication at single point in time(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medications/Single%20administration%20of%20medication/Single%20administration%20of%20medication%20at%20single%20point%20in%20time%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64715ed2b38b897b941ace](http://cdasearch.hl7.org/examples/view/5b64715ed2b38b897b941ace)

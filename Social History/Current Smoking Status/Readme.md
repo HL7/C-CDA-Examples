@@ -43,3 +43,8 @@
 ###Links 
 
 * [Current Smoking Status(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Social%20History/Current%20Smoking%20Status/Current%20Smoking%20Status%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ab7](http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ab7)

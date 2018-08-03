@@ -40,3 +40,8 @@
 ###Links 
 
 * [Results panel with pending component(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Results%20panel%20with%20pending%20component/Results%20panel%20with%20pending%20component%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941af7](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941af7)

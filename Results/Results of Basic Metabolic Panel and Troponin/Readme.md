@@ -48,3 +48,8 @@
 ###Links 
 
 * [Basic Metabolic Panel with Troponin(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Results%20of%20Basic%20Metabolic%20Panel%20and%20Troponin/Basic%20Metabolic%20Panel%20with%20Troponin%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941af8](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941af8)

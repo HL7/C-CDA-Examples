@@ -42,3 +42,8 @@
 ###Links 
 
 * [Procedures Section Procedure(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Procedures/Procedures%20Section%20Procedure%20Entry/Procedures%20Section%20Procedure%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64712bd2b38b897b941ab1](http://cdasearch.hl7.org/examples/view/5b64712bd2b38b897b941ab1)

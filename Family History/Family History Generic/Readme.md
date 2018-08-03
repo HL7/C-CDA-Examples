@@ -38,3 +38,8 @@
 ###Links 
 
 * [Family History generic(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Family%20History/Family%20History%20Generic/Family%20History%20generic%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941aba](http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941aba)

@@ -31,3 +31,8 @@
 ###Links 
 
 * [Observation text and originalText references (C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/General/Narrative%20Reference%20-%20Observation/Observation%20text%20and%20originalText%20references%20%28C-CDAR2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941add](http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941add)

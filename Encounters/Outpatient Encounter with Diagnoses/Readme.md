@@ -43,3 +43,8 @@
 ###Links 
 
 * [Outpatient Encounter with Diagnoses(C-CDA R2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Encounters/Outpatient%20Encounter%20with%20Diagnoses/Outpatient%20Encounter%20with%20Diagnoses%28C-CDA%20R2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b01](http://cdasearch.hl7.org/examples/view/5b647161d2b38b897b941b01)

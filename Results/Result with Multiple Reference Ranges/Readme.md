@@ -44,3 +44,8 @@ THIS ALL NEEDS TO BE UPDATED!
 ###Links 
 
 * [Result with an unstructured string as value urine color (C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Result%20with%20an%20unstructured%20string%20as%20value%20%28urine%20color%29/Result%20with%20an%20unstructured%20string%20as%20value%20urine%20color%20%28C-CDA2.1%29.xml)
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941aec](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941aec)
