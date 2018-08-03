@@ -48,3 +48,7 @@
 ### Permalink 
 
 * [http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ab7](http://cdasearch.hl7.org/examples/view/5b64712cd2b38b897b941ab7)
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b647167d2b38b897b941b1f](http://cdasearch.hl7.org/examples/view/5b647167d2b38b897b941b1f)

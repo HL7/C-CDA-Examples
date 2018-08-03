@@ -39,3 +39,7 @@
 ### Permalink 
 
 * [http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941afa](http://cdasearch.hl7.org/examples/view/5b647160d2b38b897b941afa)
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64716ed2b38b897b941b62](http://cdasearch.hl7.org/examples/view/5b64716ed2b38b897b941b62)

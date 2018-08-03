@@ -44,3 +44,7 @@ Reference to full CDA sample: PROBLEMS_in_Empty_C-CDA_2.1 (in git repo at same l
 ### Permalink 
 
 * [http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941ad8](http://cdasearch.hl7.org/examples/view/5b64715fd2b38b897b941ad8)
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64716cd2b38b897b941b40](http://cdasearch.hl7.org/examples/view/5b64716cd2b38b897b941b40)

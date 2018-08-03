@@ -31,3 +31,7 @@ Reference to full CDA sample: TBD
 ### Permalink 
 
 * [http://cdasearch.hl7.org/examples/view/5b64715ed2b38b897b941acc](http://cdasearch.hl7.org/examples/view/5b64715ed2b38b897b941acc)
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/5b64716bd2b38b897b941b34](http://cdasearch.hl7.org/examples/view/5b64716bd2b38b897b941b34)
