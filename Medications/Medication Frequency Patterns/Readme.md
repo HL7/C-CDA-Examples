@@ -1,12 +1,12 @@
 ##Approval Status 
 
 * Approval Status: Approved
-* Example Task Force: 
+* Example Task Force:
 * SDWG: 9/17/2014
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * N/A
 
@@ -27,6 +27,6 @@
 * medication frequencies, bid, two times daily, q12h, every 12 hours, tid, three times daily, q8h, every 8 hours, qid, four times daily, q6h, every 6 hours, qd, daily, q24h, every 24 hours, qod, every other day, qm, Once a month, Every other week, 1 hour after meal, before dinner, before lunch (from lat. ante cibus diurnus)
 
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/9588687865c0f945a326364a9449321690c7a7ef](http://cdasearch.hl7.org/examples/view/9588687865c0f945a326364a9449321690c7a7ef)

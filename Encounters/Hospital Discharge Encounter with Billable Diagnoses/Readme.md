@@ -6,7 +6,7 @@
 
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * 2.16.840.1.113883.10.20.22.2.22.1:2015-08-01
 * 2.16.840.1.113883.10.20.22.4.49:2015-08-01
@@ -37,10 +37,10 @@
 
 * Hospital Encounter, Discharge Diagnoses, participant, performer
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/3234327a1a0d4fe4909634591cdfc12b46f0f95d](http://cdasearch.hl7.org/examples/view/3234327a1a0d4fe4909634591cdfc12b46f0f95d)
 
-###Links 
+###Links
 
 * [Hospital Discharge Encounter with Billable Diagnoses(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Encounters/Hospital%20Discharge%20Encounter%20with%20Billable%20Diagnoses/Hospital%20Discharge%20Encounter%20with%20Billable%20Diagnoses%28C-CDA2.1%29.xml)

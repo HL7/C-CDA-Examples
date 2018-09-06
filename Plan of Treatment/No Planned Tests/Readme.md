@@ -5,7 +5,7 @@
 * SDWG: 4/16/2015
 * SDWG C-CDA R2.1 Upgrade: 2/2/2017
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 * 2.16.840.1.113883.10.20.22.2.10
 * 2.16.840.1.113883.10.20.22.2.10:2014-06-09
 * 2.16.840.1.113883.10.20.22.4.44
@@ -33,10 +33,10 @@
 * no planned tests, no planned treatment
 
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/dc32be311928724a5e68411d70bd9d9326e3295e](http://cdasearch.hl7.org/examples/view/dc32be311928724a5e68411d70bd9d9326e3295e)
 
-###Links 
+###Links
 
 * [No Planned Tests(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Plan%20of%20Treatment/No%20Planned%20Tests/No%20Planned%20Tests%28C-CDAR2.1%29.xml)

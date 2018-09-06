@@ -4,7 +4,7 @@
 * Example Task Force: Approved 7/26/2018
 * SDWG: Pending
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * Unstructured Document (V3) 2.16.840.1.113883.10.20.22.1.10:2015-08-01 (open)
 
@@ -27,11 +27,9 @@
 
 ###Custodian
 
-* Lisa Nelson lnelson@max.md 
+* Lisa Nelson lnelson@max.md
 
 
 ###Keywords
 
 * C-CDA Unstructured Document, PACP, Embedded Document
-
-

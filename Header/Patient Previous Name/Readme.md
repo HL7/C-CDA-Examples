@@ -5,8 +5,8 @@
 * SDWG: 7/7/2016
 * SDWG C-CDA R2.1 Upgrade: 2/2/2017
 
-###C-CDA 2.1 Example: 
- 
+###C-CDA 2.1 Example:
+
 
 * recordTarget
 
@@ -24,7 +24,7 @@
 
 ###Comments
 
-* This example illustrates how to structure Patient's previous name. 
+* This example illustrates how to structure Patient's previous name.
 
 ###Certification
 * ONC
@@ -37,10 +37,10 @@
 
 * Demographics, Name, Prior Name, Previous Name, Birth Name
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/951b8a84a17516ca8ac07401ef0132dbc8b9d003](http://cdasearch.hl7.org/examples/view/951b8a84a17516ca8ac07401ef0132dbc8b9d003)
 
-###Links 
+###Links
 
 * [Patient Previous Name(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Header/Patient%20Previous%20Name/Patient%20Previous%20Name%28C-CDA2.1%29.xml)

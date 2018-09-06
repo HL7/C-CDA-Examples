@@ -6,7 +6,7 @@
 
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 
 * 2.16.840.1.113883.10.20.22.2.4.1:2015-08-01
@@ -36,10 +36,10 @@
 
 * Vital Signs
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/713669406c546a843ed2b78cfd99080f87834191](http://cdasearch.hl7.org/examples/view/713669406c546a843ed2b78cfd99080f87834191)
 
-###Links 
+###Links
 
 * [Panel of Vital Signs in Metric Units(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Vital%20Signs/Panel%20of%20Vital%20Signs%20in%20Metric%20Units/Panel%20of%20Vital%20Signs%20in%20Metric%20Units%28C-CDA2.1%29.xml)

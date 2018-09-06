@@ -6,7 +6,7 @@
 
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 
 * Social History Section 2.16.840.1.113883.10.20.22.2.17:2015-08-01
@@ -35,10 +35,10 @@
 
 * Social History, Smoking
 
-###Permalink 
+###Permalink
 
 * [http://cdasearch.hl7.org/examples/view/498ea0b3bacdcc30827c4b7bb47b1a1304c52f46](http://cdasearch.hl7.org/examples/view/498ea0b3bacdcc30827c4b7bb47b1a1304c52f46)
 
-###Links 
+###Links
 
 * [Former Smoking Status(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Social%20History/Former%20Smoking%20Status/Former%20Smoking%20Status%28C-CDA2.1%29.xml)

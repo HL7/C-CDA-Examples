@@ -2,9 +2,9 @@
 
 * Approval Status: Pending
 * Example Task Force: 4/5/2018
-* SDWG: 
+* SDWG:
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * Allergies and Intolerances Section 2.16.840.1.113883.10.20.22.2.6.1:2015-08-01
 * Allergy Concern Act 2.16.840.1.113883.10.20.22.4.30:2015-08-01
@@ -30,4 +30,3 @@
 ###Keywords
 
 * substance, allergies, allergy
-
