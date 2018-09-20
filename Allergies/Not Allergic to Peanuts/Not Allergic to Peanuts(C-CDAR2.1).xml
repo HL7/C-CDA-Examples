@@ -1,0 +1,86 @@
+<!-- ***************** ALLERGIES *************** -->
+    <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+        <!-- Allergies (entries required) section template -->
+        <code code="48765-2" codeSystem="2.16.840.1.113883.6.1"/>
+        <title>Allergies, Adverse Reactions and Alerts</title>
+        <text><content ID="allergyobs1">Not Allergic to Peanuts</content></text>
+        <!-- Could include two tables with one recording active allergies and another with Not Allergic - Need to clearly denote-->
+        <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+                <!-- ** Allergy problem act ** -->
+                <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+                <templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01"/>
+                <id root="91a4e6a1-e192-438c-a85d-abb210af6d25"/>
+                <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                <statusCode code="active"/>
+                <!-- This is the time stamp for when the non-allergy was first documented as a concern-->
+                <effectiveTime>
+                    <low value="20140104123506-0500"/>
+                </effectiveTime>
+                <author>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                    <time value="20140104"/>
+                    <assignedAuthor>
+                        <id extension="99999999" root="2.16.840.1.113883.4.6"/>
+                        <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine" />
+                        <telecom use="WP" value="tel:555-555-1002"/>
+                        <assignedPerson>
+                            <name>
+                                <given>Henry</given>
+                                <family>Seven</family>
+                            </name>
+                        </assignedPerson>
+                    </assignedAuthor>
+                </author>
+                <entryRelationship typeCode="SUBJ">
+                    <!-- negationInd is used here as valueNegationInd - the substance allergy-->
+                    <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                        <!-- allergy observation template -->
+                        <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                        <templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09"/>
+                        <id root="55ac1612-2d3f-4084-b687-0997446cabad"/>
+                        <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                        <text>
+                            <reference value="#allergyobs1"/>
+                        </text>
+                        <statusCode code="completed"/>
+                        <!-- This is the time stamp for when patient believes they were tested. -->
+                        <!-- Just the year is shown since a specific month and date was not reported -->
+                        <effectiveTime>
+                            <low value="2006"/>
+                        </effectiveTime>
+                        <!-- This specifies that the allergy is to a substance -->
+                        <!-- Considered 'Allergy to peanuts' above but decided to use substance since this is what systems will expect -->     
+                        <value xsi:type="CD" code="414285001" displayName="food allergy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                        <author>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                            <time value="20140104"/>
+                            <assignedAuthor>
+                                <id extension="99999999214" root="2.16.840.1.113883.4.6"/>
+                                <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine" />
+                                <telecom use="WP" value="tel:555-555-1002"/>
+                                <assignedPerson>
+                                    <name>
+                                        <given>Henry</given>
+                                        <family>Seven</family>
+                                    </name>
+                                </assignedPerson>
+                            </assignedAuthor>
+                        </author>
+                        <participant typeCode="CSM">
+                            <participantRole classCode="MANU">
+                                <playingEntity classCode="MMAT">
+                                    <!-- SNOMED is used to report specific susbtance -->
+                                    <!-- Considered 'Allergy to peanuts' above but decided to use substance since this is what systems will expect -->                                
+                                    <code code="762952008" displayName="Peanuts" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                                </playingEntity>
+                            </participantRole>
+                        </participant>
+                    </observation>
+                </entryRelationship>
+            </act>
+        </entry>
+    </section>
+    

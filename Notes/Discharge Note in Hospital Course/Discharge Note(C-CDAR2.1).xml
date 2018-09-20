@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section>
+    <!-- Note is in an appropriate section -->
+    <!-- C-CDA Hospital Course Section -->    
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.5"/>
+    <code code="8648-8" displayName="HOSPITAL COURSE"
+        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    <title>Hospital Course</title>
+    <text>
+        <list styleCode="TOC">
+            <item ID="DischargeNote">
+                <caption>Dr. Physician - 09/13/2016 2:46 PM EDT</caption>
+                <paragraph>The patient was admitted and started on Lovenox and 
+                    nitroglycerin paste...     
+                </paragraph>
+            </item>
+        </list>
+    </text>
+    <entry>
+        <!-- Note Activity Entry -->
+        <act classCode="ACT" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.202" 
+                extension="2016-11-01"/>
+            <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" 
+                displayName="Note">
+                <translation code="8648-8" codeSystem="2.16.840.1.113883.6.1" 
+                    displayName="Discharge Summary" />
+            </code>
+            <text><reference value="#DischargeNote" /></text>
+            <statusCode code="completed"/>
+            <!-- Clinically-relevant time of the note -->
+            <effectiveTime value="201609131446-0500"/>
+            <!-- Author Participation -->
+            <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <!-- Time note was actually written -->
+                <time value="201609131446-0500"/>
+                <assignedAuthor>
+                    <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
+                    <name>Dr. Physician</name>
+                </assignedAuthor>
+            </author>
+            <!-- Reference to encounter -->
+            <!-- When a Note is in an Encounter Specific Document this may not be needed -->
+            <entryRelationship typeCode="COMP" inversionInd="true">
+                <encounter>
+                    <!-- Encounter ID matches an encounter in the Encounters Section or encompassingEncounter -->
+                    <id root="1.2.3.4.5.6"/>
+                </encounter>
+            </entryRelationship>
+        </act>
+    </entry>
+</section>
+

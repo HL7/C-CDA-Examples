@@ -6,7 +6,7 @@
 * SDWG: Withdrawn from consideration since not clinically relevant.
 
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * 2.16.840.1.113883.10.20.22.2.6.1:2015-08-01
 
@@ -22,7 +22,7 @@
 
 ###Validation location
 
-* [SITE](https://sitenv.org/c-cda-validator)
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
 
 
 ###Comments
@@ -40,9 +40,9 @@
 
 ###Permalink
 
-*ad811b5c30103652f64000ae9a9d7092279d22b3
+* [http://cdasearch.hl7.org/examples/view/*ad811b5c30103652f64000ae9a9d7092279d22b3](http://cdasearch.hl7.org/examples/view/*ad811b5c30103652f64000ae9a9d7092279d22b3)
 
 
-###Links 
+###Links
 
 * [Allergy to specific substance cat hair(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/Allergy%20to%20cat%20hair/Allergy%20to%20specific%20substance%20cat%20hair%28C-CDA2.1%29.xml)

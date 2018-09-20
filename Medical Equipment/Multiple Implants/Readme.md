@@ -4,7 +4,7 @@
 * Example Task Force: 7/4/2016
 * SDWG: 5/18/2017
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 * 2.16.840.1.113883.10.20.22.2.23
 * 2.16.840.1.113883.10.20.22.2.23:2014-06-09
 
@@ -13,7 +13,7 @@
 
 ###Validation location
 
-* [SITE](https://sitenv.org/c-cda-validator)
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
 
 ###Comments
 
@@ -31,10 +31,10 @@
 * multiple implants
 
 
-###Permalink 
+###Permalink
 
-* 93ef77b9d74d9d5213bea81f320de15b8b279d8b
+* [http://cdasearch.hl7.org/examples/view/93ef77b9d74d9d5213bea81f320de15b8b279d8b](http://cdasearch.hl7.org/examples/view/93ef77b9d74d9d5213bea81f320de15b8b279d8b)
 
-###Links 
+###Links
 
 * [Multiple Implants (C-CDA R2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Medical%20Equipment/Multiple%20Implants/Multiple%20Implants%20%28C-CDA%20R2.1%29.xml)
