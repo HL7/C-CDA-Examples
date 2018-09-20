@@ -5,7 +5,7 @@
 * SDWG approved: 3/31/2016
 * SDWG C-CDA R2.1 Upgrade: 2/2/2017
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 
 * 2.16.840.1.113883.10.20.22.2.3.1
@@ -22,7 +22,7 @@
 
 ###Validation location
 
-* [SITE](https://sitenv.org/c-cda-validator)
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
 
 
 
@@ -41,10 +41,10 @@
 
 * Metabolic, Panel
 
-###Permalink 
+###Permalink
 
-* ebbb7ccc5838f10077b2252813dc8cf1a42ba372
+* [http://cdasearch.hl7.org/examples/view/ebbb7ccc5838f10077b2252813dc8cf1a42ba372](http://cdasearch.hl7.org/examples/view/ebbb7ccc5838f10077b2252813dc8cf1a42ba372)
 
-###Links 
+###Links
 
 * [Basic Metabolic Panel with Troponin(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Results%20of%20Basic%20Metabolic%20Panel%20and%20Troponin/Basic%20Metabolic%20Panel%20with%20Troponin%28C-CDA2.1%29.xml)

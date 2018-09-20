@@ -6,7 +6,7 @@
 
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * 2.16.840.1.113883.10.20.22.2.3.1:2015-08-01
 * 2.16.840.1.113883.10.20.22.4.1:2015-08-01
@@ -19,7 +19,7 @@
 
 ###Validation location
 
-* [SITE](https://sitenv.org/c-cda-validator)
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
 
 
 ###Comments
@@ -35,10 +35,10 @@
 
 * Results
 
-###Permalink 
+###Permalink
 
-* 5acc416e7ad6fae1546c561cfc216eae8fb655de
+* [http://cdasearch.hl7.org/examples/view/5acc416e7ad6fae1546c561cfc216eae8fb655de](http://cdasearch.hl7.org/examples/view/5acc416e7ad6fae1546c561cfc216eae8fb655de)
 
-###Links 
+###Links
 
 * [Result with greater than a specified value(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Result%20with%20greater%20than%20a%20specified%20value/Result%20with%20greater%20than%20a%20specified%20value%28C-CDA2.1%29.xml)

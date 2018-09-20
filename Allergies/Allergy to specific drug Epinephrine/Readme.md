@@ -4,10 +4,10 @@
 * Example Task Force: 4/17/2014
 * SDWG: Withdrawn from consideration since not clinically relevant.
 
-  
 
-###C-CDA 2.1 Example: 
- 
+
+###C-CDA 2.1 Example:
+
 
 * 2.16.840.1.113883.10.20.22.2.6.1:2015-08-01
 
@@ -23,7 +23,7 @@
 
 ###Validation location
 
-* [SITE](https://sitenv.org/c-cda-validator)
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
 
 
 ###Comments
@@ -41,10 +41,10 @@
 * substance, allergies, allergy
 
 
-###Permalink 
+###Permalink
 
-* 37f3de0affcd46df777333782c8f192f575248ca
+* [http://cdasearch.hl7.org/examples/view/37f3de0affcd46df777333782c8f192f575248ca](http://cdasearch.hl7.org/examples/view/37f3de0affcd46df777333782c8f192f575248ca)
 
-###Links 
+###Links
 
 * [Allergy to specific drug Epinephrine(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/Allergy%20to%20specific%20drug%20Epinephrine/Allergy%20to%20specific%20drug%20Epinephrine%28C-CDA2.1%29.xml)

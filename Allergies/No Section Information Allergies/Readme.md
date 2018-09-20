@@ -1,12 +1,12 @@
 ##Approval Status 
 
-* Approval Status: Pending
+* Approval Status: Approved
 * Example Task Force: 11/30/2017
-* SDWG: 
+* SDWG: 7/12/2018
 
 
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * 2.16.840.1.113883.10.20.22.2.6
 * 2.16.840.1.113883.10.20.22.2.6:2015-08-01
@@ -19,7 +19,7 @@
 
 ###Validation location
 
-* [SITE](https://sitenv.org/c-cda-validator)
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
 
 
 ###Comments
@@ -41,10 +41,10 @@
 
 
 
-###Permalink 
+###Permalink
 
-* 5a2edaaa31651e000b55a514
+* [http://cdasearch.hl7.org/examples/view/5a2edaaa31651e000b55a514](http://cdasearch.hl7.org/examples/view/5a2edaaa31651e000b55a514)
 
-###Links 
+###Links
 
 * [No Information Allergies(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/No%20Section%20Information%20Allergies/No%20Information%20Allergies%28C-CDA2.1%29.xml)

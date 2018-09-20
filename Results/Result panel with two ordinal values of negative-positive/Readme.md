@@ -6,7 +6,7 @@
 
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 
 * 2.16.840.1.113883.10.20.22.2.3.1:2015-08-01
@@ -20,7 +20,7 @@
 
 ###Validation location
 
-* [SITE](https://sitenv.org/c-cda-validator)
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
 
 
 ###Comments
@@ -36,10 +36,10 @@
 
 * Results
 
-###Permalink 
+###Permalink
 
-* f7deea8bd578955d2dd64a3cb814f215f93b8e47
+* [http://cdasearch.hl7.org/examples/view/f7deea8bd578955d2dd64a3cb814f215f93b8e47](http://cdasearch.hl7.org/examples/view/f7deea8bd578955d2dd64a3cb814f215f93b8e47)
 
-###Links 
+###Links
 
 * [Result panel with two ordinal values of negative-positive(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Result%20panel%20with%20two%20ordinal%20values%20of%20negative-positive/Result%20panel%20with%20two%20ordinal%20values%20of%20negative-positive%28C-CDA2.1%29.xml)
