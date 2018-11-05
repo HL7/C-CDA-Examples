@@ -651,14 +651,14 @@ ASSESSMENT
 			</component>
 			<!-- ************************************
 
-CHIEF COMPLAINT / REASON FOR VISIT
+CHIEF COMPLAINT
 
 ************************************ -->
 			<component>
 				<section>
-					<templateId root="2.16.840.1.113883.10.20.22.2.13"/>
-					<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="46239-0" displayName="REASON FOR VISIT + CHIEF COMPLAINT"/>
-					<title>REASON FOR VISIT/CHIEF COMPLAINT</title>
+					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1"/>
+					<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="10154-3" displayName="CHIEF COMPLAINT"/>
+					<title>CHIEF COMPLAINT</title>
 					<text>
 						<paragraph>Dark stools.</paragraph>
 					</text>
