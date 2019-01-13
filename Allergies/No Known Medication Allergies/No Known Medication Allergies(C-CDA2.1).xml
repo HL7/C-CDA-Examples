@@ -51,7 +51,9 @@
                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
                     <statusCode code="completed"/>
                     <!-- N/A - author/time records when this assertion was made -->
-                    <effectiveTime nullFlavor="NA"/>
+                    <effectiveTime>
+                        <low nullFlavor="NA" />
+                    </effectiveTime>
                     <value xsi:type="CD" code="416098002" displayName="Drug allergy (disorder)"
                         codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                     <author>
@@ -82,4 +84,3 @@
         </act>
     </entry>
 </section>
-

@@ -1,7 +1,7 @@
 ##Approval Status 
 
 * Approval Status: Approved
-* SDWG Reviewed: 12/15/2013
+* Example Task Force: 12/15/2013
 * SDWG approved: 4/16/2015
 * SDWG approved minor edits: 11/12/2015
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
