@@ -52,6 +52,9 @@
 					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
 						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
 					</code>
+					<text>
+						<reference value="#FamHist1prob1" />
+					</text>
 					<statusCode code="completed"/>
 					<!-- Since we do not know when the brother was diagnosed with High Blood pressure, the effective time is UNKown -->
 					<effectiveTime nullFlavor="UNK" />
@@ -73,6 +76,9 @@
 					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
 						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
 					</code>
+					<text>
+						<reference value="#FamHist1prob2" />
+					</text>
 					<statusCode code="completed"/>
 					<!-- Since we do not know when the brother was diagnosed with Diabetes, the effective time is UNKown -->
 					<effectiveTime nullFlavor="UNK" />
