@@ -65,7 +65,6 @@
 					<value xsi:type="ED">
 						<reference value="#Result1OriginalText" />
 					</value>
-					<interpretationCode nullFlavor="NI"/>
 					<author>
 						<!-- This is the timestamp of when the author (i.e. the radiologist) interepreted the chest x-ray-->
 						<time value="20150225103206-0500"/>
