@@ -108,7 +108,7 @@
 							<id root="0506c036-adfb-4e6e-b9e1-eea76177ead5"/>
 							<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
 							<text>
-								<reference value="#allergy2reaction"/>
+								<reference value="#allergy4reaction"/>
 							</text>
 							<statusCode code="completed"/>
 							<effectiveTime>
@@ -125,7 +125,7 @@
  extension="2014-06-09"/>
 									<code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
 									<text>
-										<reference value="#allergy2reactionseverity"/>
+										<reference value="#allergy4reactionseverity"/>
 									</text>
 									<statusCode code="completed"/>
 									<value xsi:type="CD" code="24484000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Severe"/>
