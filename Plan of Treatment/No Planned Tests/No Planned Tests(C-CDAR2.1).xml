@@ -45,6 +45,9 @@
                     <reference value="#PlannedTestDesc1"/>
                 </originalText>
             </code>
+            <text>
+                <value reference="#PlannedTestDesc1">
+            </text>
             <statusCode code="active"/>
             <!-- nullFlavor of NA used since no time is applicable in this context.-->
             <effectiveTime nullFlavor="NA"/>
