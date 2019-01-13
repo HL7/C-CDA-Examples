@@ -41,7 +41,7 @@
 				<reference value="#Procedure3" />
 			</text>
 			<statusCode code="completed"/>
-			<effectiveTime value="20140329104513+0500"/>
+			<effectiveTime value="20140329104513-0500"/>
 		</act>
 	</entry>
 </section>

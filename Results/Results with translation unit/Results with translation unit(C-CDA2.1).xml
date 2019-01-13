@@ -37,8 +37,8 @@
 				codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 			<statusCode code="completed"/>
 			<effectiveTime>
-				<low value="201310200908+0500"/>
-				<high value="201310200908+0500"/>
+				<low value="201310200908-0500"/>
+				<high value="201310200908-0500"/>
 			</effectiveTime>
 			<component>
 				<observation classCode="OBS" moodCode="EVN">
@@ -52,8 +52,8 @@
 					</text>
 					<statusCode code="completed"/>
 					<effectiveTime>
-						<low value="201310200908+0500"/>
-						<high value="201310200908+0500"/>
+						<low value="201310200908-0500"/>
+						<high value="201310200908-0500"/>
 					</effectiveTime>
 					<!-- Representing a result which has been translated from a non-UCUM code (e.g. result reported from external lab)-->
 					<value xsi:type="PQ" value="152" unit="10*3/uL"/>

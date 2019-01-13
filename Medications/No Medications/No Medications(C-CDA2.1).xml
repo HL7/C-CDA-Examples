@@ -39,7 +39,7 @@
                 <author>
                     <!-- Time the author noted that patient is on no medications -->
                     <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-                    <time value="20130607160506+0500"/>
+                    <time value="20130607160506-0500"/>
                     <assignedAuthor>
                         <id extension="66666" root="2.16.840.1.113883.4.6"/>
                         <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"

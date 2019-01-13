@@ -23,7 +23,7 @@
 			<id extension="123456789" root="2.16.840.1.113883.19" />
 			<code code="72166-2" codeSystem="2.16.840.1.113883.6.1" displayName="Tobacco smoking status NHIS"/>
 			<statusCode code="completed"/>
-			<effectiveTime value="201406061032+0500"/>
+			<effectiveTime value="201406061032-0500"/>
 				<!--Note: This template represents a “snapshot in time” observation, simply reflecting what the patient’s 
 					current smoking status is at the time of the observation. As a result, the effectiveTime is constrained 
 					to just a time stamp, and will approximately correspond with the author/time. -->
@@ -31,7 +31,7 @@
 			<value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="266927001" displayName="Unknown if ever smoked"/>
 			<author>
 				<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-				<time value="201406061032+0500"/>
+				<time value="201406061032-0500"/>
 				<assignedAuthor>
 					<id root="2.16.840.1.113883.4.6" extension="99999999"/>
 					<!-- Root means NPI number. -->

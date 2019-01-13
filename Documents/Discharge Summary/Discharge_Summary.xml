@@ -26,7 +26,7 @@
 	<id extension="TT988" root="2.16.840.1.113883.19.5.99999.1"/>
 	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18842-5" displayName="Discharge summarization note"/>
 	<title>Community Health and Hospitals: Discharge Summary</title>
-	<effectiveTime value="201409171904+0500"/>
+	<effectiveTime value="201409171904-0500"/>
 	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
 	<languageCode code="en-US"/>
 	<setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
@@ -111,7 +111,7 @@
 		</patientRole>
 	</recordTarget>
 	<author>
-		<time value="201409171904+0500"/>
+		<time value="201409171904-0500"/>
 		<assignedAuthor>
 			<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 			<code code="200000000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians"/>
@@ -132,7 +132,7 @@
 		</assignedAuthor>
 	</author>
 	<author>
-		<time value="201409171904+0500"/>
+		<time value="201409171904-0500"/>
 		<assignedAuthor>
 			<id nullFlavor="NI"/>
 			<addr>
@@ -242,7 +242,7 @@
 		</intendedRecipient>
 	</informationRecipient>
 	<legalAuthenticator>
-		<time value="201409171904+0500"/>
+		<time value="201409171904-0500"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="999999999" root="2.16.840.1.113883.4.6"/>
@@ -263,7 +263,7 @@
 		</assignedEntity>
 	</legalAuthenticator>
 	<authenticator>
-		<time value="201409171904+0500"/>
+		<time value="201409171904-0500"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="999999999" root="2.16.840.1.113883.4.6"/>
@@ -311,16 +311,16 @@
 		<serviceEvent classCode="PCPR">
 			<code code="6025007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Laparoscopic appendectomy"/>
 			<effectiveTime>
-				<low value="201409091904+0500"/>
-				<high value="201409161904+0500"/>
+				<low value="201409091904-0500"/>
+				<high value="201409161904-0500"/>
 			</effectiveTime>
 			<performer typeCode="PRF">
 				<functionCode code="PP" displayName="Primary Care Provider" codeSystem="2.16.840.1.113883.12.443" codeSystemName="Provider Role">
 					<originalText>Primary Care Provider</originalText>
 				</functionCode>
 				<time>
-					<low value="201409091904+0500"/>
-					<high value="201409161904+0500"/>
+					<low value="201409091904-0500"/>
+					<high value="201409161904-0500"/>
 				</time>
 				<assignedEntity>
 					<id extension="PseudoMD-1" root="2.16.840.1.113883.4.6"/>
@@ -359,8 +359,8 @@
 					<originalText>Primary Care Provider</originalText>
 				</functionCode>
 				<time>
-					<low value="201409091904+0500"/>
-					<high value="201409161904+0500"/>
+					<low value="201409091904-0500"/>
+					<high value="201409161904-0500"/>
 				</time>
 				<assignedEntity>
 					<id extension="PseudoMD-3" root="2.16.840.1.113883.4.6"/>
@@ -404,9 +404,9 @@
       -->
 			<effectiveTime>
 				<!-- This is the admission date of the hospitalization -->
-				<low value="201409091904+0500"/>
+				<low value="201409091904-0500"/>
 				<!-- This is the discharge date of the hospitalization -->
-				<high value="201409161904+0500"/>
+				<high value="201409161904-0500"/>
 			</effectiveTime>
 			<dischargeDispositionCode code="01" codeSystem="2.16.840.1.113883.12.112" displayName="Routine Discharge" codeSystemName="HL7 Discharge Disposition"/>
 			<location>
@@ -436,7 +436,7 @@
 							<code code="46241-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital Admission Diagnosis"/>
 							<statusCode code="active"/>
 							<effectiveTime>
-								<low value="201409091904+0500"/>
+								<low value="201409091904-0500"/>
 							</effectiveTime>
 							<entryRelationship typeCode="SUBJ" inversionInd="false">
 								<observation classCode="OBS" moodCode="EVN">
@@ -518,7 +518,7 @@
 							<code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
 							<statusCode code="active"/>
 							<effectiveTime>
-								<low value="201403031114+0500"/>
+								<low value="201403031114-0500"/>
 							</effectiveTime>
 							<entryRelationship typeCode="SUBJ">
 								<observation classCode="OBS" moodCode="EVN">
@@ -585,7 +585,7 @@
 							<code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
 							<statusCode code="active"/>
 							<effectiveTime>
-								<low value="201403031114+0500"/>
+								<low value="201403031114-0500"/>
 							</effectiveTime>
 							<entryRelationship typeCode="SUBJ">
 								<observation classCode="OBS" moodCode="EVN">
@@ -653,7 +653,7 @@
 							<statusCode code="active"/>
 							<!-- This is the time stamp for when the allergy was first documented as a concern-->
 							<effectiveTime>
-								<low value="20140909123506+0500"/>
+								<low value="20140909123506-0500"/>
 							</effectiveTime>
 							<entryRelationship typeCode="SUBJ">
 								<observation classCode="OBS" moodCode="EVN">
@@ -750,7 +750,7 @@
 							<code code="11535-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOSPITAL DISCHARGE DIAGNOSIS"/>
 							<statusCode code="active"/>
 							<effectiveTime>
-								<low value="201409181904+0500"/>
+								<low value="201409181904-0500"/>
 							</effectiveTime>
 							<entryRelationship typeCode="SUBJ" inversionInd="false">
 								<observation classCode="OBS" moodCode="EVN">
@@ -825,7 +825,7 @@
 									<statusCode code="active"/>
 									<!-- This first effectiveTime shows that medication is intended to start-->
 									<effectiveTime xsi:type="IVL_TS">
-										<low value="201409161300+0500"/>
+										<low value="201409161300-0500"/>
 										<high nullFlavor="NI"/>
 									</effectiveTime>
 									<!-- This second effectiveTime represents QID from medication sig. -->
@@ -1348,7 +1348,7 @@
 							<statusCode code="active"/>
 							<effectiveTime>
 								<!-- This equates to the time the concern was authored in the patient's chart. This may frequently be an EHR timestamp-->
-								<low value="20140909124536+0500"/>
+								<low value="20140909124536-0500"/>
 							</effectiveTime>
 							<entryRelationship typeCode="SUBJ">
 								<observation classCode="OBS" moodCode="EVN">
@@ -1379,7 +1379,7 @@
 							<statusCode code="active"/>
 							<effectiveTime>
 								<!-- This equates to the time the concern was authored in the patient's chart. This may frequently be an EHR timestamp-->
-								<low value="20140909124536+0500"/>
+								<low value="20140909124536-0500"/>
 							</effectiveTime>
 							<entryRelationship typeCode="SUBJ">
 								<observation classCode="OBS" moodCode="EVN">
@@ -1445,8 +1445,8 @@
 							<statusCode code="completed"/>
 							<!-- Effective times can be either a value or interval. For procedures with start and stop times, an interval would be more appropriate -->
 							<effectiveTime xsi:type="IVL_TS">
-								<low value="20140910092205+0500"/>
-								<high value="20140910111514+0500"/>
+								<low value="20140910092205-0500"/>
+								<high value="20140910111514-0500"/>
 							</effectiveTime>
 							<!-- methodCode indicates how the procedure was performed. It cannot conflict with the code used for procedure-->
 							<methodCode code="51316009" codeSystem="2.16.840.1.113883.6.96" displayName="Laparoscopic procedure" codeSystemName="SNOMED-CT"/>
@@ -1491,10 +1491,10 @@
 							<id root="68eac164-c13e-498c-abe3-e87735ef5f1d"/>
 							<code code="72166-2" codeSystem="2.16.840.1.113883.6.1"/>
 							<statusCode code="completed"/>
-							<effectiveTime value="201409101254+0500"/>
+							<effectiveTime value="201409101254-0500"/>
 							<value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="266919005" displayName="Never Smoker"/>
 							<author>
-								<time value="201409101254+0500"/>
+								<time value="201409101254-0500"/>
 								<assignedAuthor>
 									<id root="2.16.840.1.113883.4.6" extension="99999999"/>
 									<!-- Root means NPI number. -->
@@ -1555,7 +1555,7 @@
 							<id root="c6f88320-67ad-11db-bd13-0800200c9a66"/>
 							<code code="74728-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="SNOMED -CT" displayName="Vital signs"/>
 							<statusCode code="completed"/>
-							<effectiveTime value="201409160845+0500"/>
+							<effectiveTime value="201409160845-0500"/>
 							<component>
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
@@ -1566,7 +1566,7 @@
 										<reference value="#vit1"/>
 									</text>
 									<statusCode code="completed"/>
-									<effectiveTime value="201409160845+0500"/>
+									<effectiveTime value="201409160845-0500"/>
 									<value xsi:type="PQ" value="177" unit="cm"/>
 									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
 								</observation>
@@ -1581,7 +1581,7 @@
 										<reference value="#vit4"/>
 									</text>
 									<statusCode code="completed"/>
-									<effectiveTime value="201409160845+0500"/>
+									<effectiveTime value="201409160845-0500"/>
 									<value xsi:type="PQ" value="86" unit="kg"/>
 									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
 								</observation>
@@ -1596,7 +1596,7 @@
 										<reference value="#vit4"/>
 									</text>
 									<statusCode code="completed"/>
-									<effectiveTime value="201409160845+0500"/>
+									<effectiveTime value="201409160845-0500"/>
 									<value xsi:type="PQ" value="80" unit="mm[Hg]"/>
 									<interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83"/>
 								</observation>
@@ -1611,7 +1611,7 @@
 										<reference value="#vit5"/>
 									</text>
 									<statusCode code="completed"/>
-									<effectiveTime value="201409160845+0500"/>
+									<effectiveTime value="201409160845-0500"/>
 									<value xsi:type="PQ" value="55" unit="mm[Hg]"/>
 									<interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83"/>
 								</observation>

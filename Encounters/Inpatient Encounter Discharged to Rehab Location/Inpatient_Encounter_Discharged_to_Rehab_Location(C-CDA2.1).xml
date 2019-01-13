@@ -48,7 +48,7 @@
                 <text>
                     <reference value="#Encounter1"/>
                 </text>
-                <effectiveTime value="201209271300+0500"/>
+                <effectiveTime value="201209271300-0500"/>
                 <!-- This shows use of the discharge disposition extension AND shows using both the suggested encoding from C-CDA R2.1 and local Good Health Hospital codes. -->
                 <sdtc:dischargeDispositionCode code="04" codeSystem="2.16.840.1.113883.12.112"  codeSystemName="HL7 Discharge Disposition" displayName="Discharged/transferred to an intermediate-care facility (ICF)" >
                     <originalText>
@@ -115,7 +115,7 @@
                         </code>
                         <statusCode code="completed"/>
                         <effectiveTime>
-                            <low value="201209251130+0500"/>
+                            <low value="201209251130-0500"/>
                         </effectiveTime>
                         <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96"/>
                     </observation>

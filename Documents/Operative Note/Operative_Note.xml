@@ -114,7 +114,7 @@
 		</patientRole>
 	</recordTarget>
 	<author>
-		<time value="20050329224411+0500"/>
+		<time value="20050329224411-0500"/>
 		<assignedAuthor>
 			<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 			<code code="200000000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians"/>
@@ -214,7 +214,7 @@
 		</intendedRecipient>
 	</informationRecipient>
 	<legalAuthenticator>
-		<time value="20090227130000+0500"/>
+		<time value="20090227130000-0500"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="999999999" root="2.16.840.1.113883.4.6"/>
@@ -235,7 +235,7 @@
 		</assignedEntity>
 	</legalAuthenticator>
 	<authenticator>
-		<time value="20090227130000+0500"/>
+		<time value="20090227130000-0500"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="999999999" root="2.16.840.1.113883.4.6"/>
@@ -696,7 +696,7 @@ PROCEDURE FINDINGS
 							<value xsi:type="CD" code="103679000" codeSystem="2.16.840.1.113883.6.96" displayName="Sessile Polyp"/>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-								<time value="20050329224411+0500"/>
+								<time value="20050329224411-0500"/>
 								<assignedAuthor>
 									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 								</assignedAuthor>
@@ -719,7 +719,7 @@ PROCEDURE FINDINGS
 							<value xsi:type="CD" code="429430001" codeSystem="2.16.840.1.113883.6.96" displayName="diverticulosis of sigmoid"/>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-								<time value="20050329224411+0500"/>
+								<time value="20050329224411-0500"/>
 								<assignedAuthor>
 									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 								</assignedAuthor>
@@ -742,7 +742,7 @@ PROCEDURE FINDINGS
 							<value xsi:type="CD" code="90458007" codeSystem="2.16.840.1.113883.6.96" displayName="internal hemorrhoids"/>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-								<time value="20050329224411+0500"/>
+								<time value="20050329224411-0500"/>
 								<assignedAuthor>
 									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 								</assignedAuthor>

@@ -924,7 +924,7 @@
                 <translation code="AMB" codeSystem="2.16.840.1.113883.5.4" displayName="Ambulatory"
                   codeSystemName="HL7 ActEncounterCode" />
               </code>
-              <effectiveTime value="201209271300+0500" />
+              <effectiveTime value="201209271300-0500" />
               <performer>
                 <assignedEntity>
                   <!-- Provider NPI "333444555" -->
@@ -960,7 +960,7 @@
                     displayName="Clinical finding" />
                   <statusCode code="completed" />
                   <effectiveTime>
-                    <low value="201209251130+0500" />
+                    <low value="201209251130-0500" />
                   </effectiveTime>
                   <value xsi:type="CD" code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96" />
                 </observation>

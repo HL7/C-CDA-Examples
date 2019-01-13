@@ -37,8 +37,8 @@
 				codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 			<statusCode code="completed"/>
 			<effectiveTime>
-				<low value="2014030200908+0500"/>
-				<high value="2014030200908+0500"/>
+				<low value="2014030200908-0500"/>
+				<high value="2014030200908-0500"/>
 			</effectiveTime>
 			<component>
 				<observation classCode="OBS" moodCode="EVN">
@@ -51,7 +51,7 @@
 						<reference value="#SomeReferenceGoesHere4"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="201403020908+0500"/>
+					<effectiveTime value="201403020908-0500"/>
 					<!-- Representing a result higher than the measurement range of an instrument. -->
 					<!-- Example is that a point-of-care glucose meter may return >500 for very high glucose values-->
 					<value xsi:type="IVL_PQ">

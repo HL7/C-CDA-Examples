@@ -111,7 +111,7 @@
 		</patientRole>
 	</recordTarget>
 	<author>
-		<time value="20050329224411+0500"/>
+		<time value="20050329224411-0500"/>
 		<assignedAuthor>
 			<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 			<code code="200000000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians"/>
@@ -211,7 +211,7 @@
 		</intendedRecipient>
 	</informationRecipient>
 	<legalAuthenticator>
-		<time value="20090227130000+0500"/>
+		<time value="20090227130000-0500"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="999999999" root="2.16.840.1.113883.4.6"/>
@@ -232,7 +232,7 @@
 		</assignedEntity>
 	</legalAuthenticator>
 	<authenticator>
-		<time value="20090227130000+0500"/>
+		<time value="20090227130000-0500"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="999999999" root="2.16.840.1.113883.4.6"/>
@@ -364,8 +364,8 @@
 			<id extension="9937012" root="2.16.840.1.113883.19"/>
 			<code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" code="99213" displayName="Evaluation and Management"/>
 			<effectiveTime>
-				<low value="20090227130000+0500"/>
-				<high value="20090227130000+0500"/>
+				<low value="20090227130000-0500"/>
+				<high value="20090227130000-0500"/>
 			</effectiveTime>
 			<location>
 				<healthCareFacility>
@@ -432,7 +432,7 @@
 							</effectiveTime>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-								<time value="20050329224411+0500"/>
+								<time value="20050329224411-0500"/>
 								<assignedAuthor>
 									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 								</assignedAuthor>
@@ -485,7 +485,7 @@
 							</effectiveTime>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-								<time value="20050329224411+0500"/>
+								<time value="20050329224411-0500"/>
 								<assignedAuthor>
 									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 								</assignedAuthor>
@@ -518,7 +518,7 @@
 							<code code="10219-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Preoperative Diagnosis"/>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-								<time value="20050329224411+0500"/>
+								<time value="20050329224411-0500"/>
 								<assignedAuthor>
 									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 								</assignedAuthor>
@@ -539,7 +539,7 @@
 									<value xsi:type="CD" code="74400008" codeSystem="2.16.840.1.113883.6.96" displayName="Appendicitis"/>
 									<author>
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-										<time value="20050329224411+0500"/>
+										<time value="20050329224411-0500"/>
 										<assignedAuthor>
 											<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 										</assignedAuthor>
@@ -600,7 +600,7 @@
 							</consumable>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-								<time value="20050329224411+0500"/>
+								<time value="20050329224411-0500"/>
 								<assignedAuthor>
 									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 								</assignedAuthor>
@@ -643,7 +643,7 @@
 							<value xsi:type="CD" code="103679000" codeSystem="2.16.840.1.113883.6.96" displayName="Sessile Polyp"/>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-								<time value="20050329224411+0500"/>
+								<time value="20050329224411-0500"/>
 								<assignedAuthor>
 									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 								</assignedAuthor>
@@ -666,7 +666,7 @@
 							<value xsi:type="CD" code="429430001" codeSystem="2.16.840.1.113883.6.96" displayName="diverticulosis of sigmoid"/>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-								<time value="20050329224411+0500"/>
+								<time value="20050329224411-0500"/>
 								<assignedAuthor>
 									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 								</assignedAuthor>
@@ -689,7 +689,7 @@
 							<value xsi:type="CD" code="90458007" codeSystem="2.16.840.1.113883.6.96" displayName="internal hemorrhoids"/>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-								<time value="20050329224411+0500"/>
+								<time value="20050329224411-0500"/>
 								<assignedAuthor>
 									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 								</assignedAuthor>
@@ -748,7 +748,7 @@
 							<value xsi:type="CD" code="390798007" codeSystem="2.16.840.1.113883.6.96" displayName="asthma finding"/>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-								<time value="20050329224411+0500"/>
+								<time value="20050329224411-0500"/>
 								<assignedAuthor>
 									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 								</assignedAuthor>
@@ -800,7 +800,7 @@
 									<value xsi:type="CD" code="103679000" codeSystem="2.16.840.1.113883.6.96" displayName="Sessile Polyp"/>
 									<author>
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-										<time value="20050329224411+0500"/>
+										<time value="20050329224411-0500"/>
 										<assignedAuthor>
 											<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 										</assignedAuthor>
@@ -823,7 +823,7 @@
 									<value xsi:type="CD" code="429430001" codeSystem="2.16.840.1.113883.6.96" displayName="diverticulosis of sigmoid"/>
 									<author>
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-										<time value="20050329224411+0500"/>
+										<time value="20050329224411-0500"/>
 										<assignedAuthor>
 											<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 										</assignedAuthor>
@@ -846,7 +846,7 @@
 									<value xsi:type="CD" code="90458007" codeSystem="2.16.840.1.113883.6.96" displayName="internal hemorrhoids"/>
 									<author>
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-										<time value="20050329224411+0500"/>
+										<time value="20050329224411-0500"/>
 										<assignedAuthor>
 											<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 										</assignedAuthor>

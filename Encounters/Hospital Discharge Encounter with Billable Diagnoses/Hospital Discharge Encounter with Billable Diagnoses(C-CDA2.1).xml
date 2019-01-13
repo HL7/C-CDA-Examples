@@ -54,8 +54,8 @@
 			</text>
 			<!-- for a hospitalization, the low and high effectiveTimes would logically be admission and discharge date/time. --> 
 			<effectiveTime xsi:type="IVL_TS">
-				<low value ="201410281222+0500" />
-				<high value="201410311504+0500" /> 
+				<low value ="201410281222-0500" />
+				<high value="201410311504-0500" /> 
 			</effectiveTime>
 			<!-- Note that sdtc extension is used to document dischargeDisposition in encounters -->
 			<sdtc:dischargeDispositionCode code="04" displayName="Discharged/Transferred to a Facility that Provides Custodial or Supportive Care" 
@@ -63,8 +63,8 @@
 			</sdtc:dischargeDispositionCode>
 			<performer typeCode="PRF">
 				<time>
-					<low value="201410281222+0500" />
-					<high value="201410311504+0500" />
+					<low value="201410281222-0500" />
+					<high value="201410311504-0500" />
 				</time>
 				<assignedEntity classCode="ASSIGNED">
 					<id root="2.16.840.1.113883.4.6" extension="12345679"/>
@@ -113,7 +113,7 @@
 					<statusCode code="active"/>
 					<!-- This represents the time that the concern was authored. Since this is a hospital discharge diagnosis, this is when it was coded-->
 					<effectiveTime xsi:type="IVL_TS">
-						<low value="20141102145806+0500" />
+						<low value="20141102145806-0500" />
 					</effectiveTime>
 					<entryRelationship typeCode="SUBJ" inversionInd="false">
 						<!-- Problem Observation -->
@@ -174,7 +174,7 @@
 					<statusCode code="active"/>
 					<!-- This represents the time that the concern was authored. Since this is a hospital discharge diagnosis, this is when it was coded-->
 					<effectiveTime xsi:type="IVL_TS">
-						<low value="20141102145806+0500" />
+						<low value="20141102145806-0500" />
 					</effectiveTime>
 					<entryRelationship typeCode="SUBJ" inversionInd="false">
 						<!-- Problem Observation -->

@@ -47,8 +47,8 @@
 				codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 			<statusCode code="completed"/>
 			<effectiveTime>
-				<low value="201310221426+0500"/>
-				<high value="201310221426+0500"/>
+				<low value="201310221426-0500"/>
+				<high value="201310221426-0500"/>
 			</effectiveTime>
 			<component>
 				<observation classCode="OBS" moodCode="EVN">
@@ -62,7 +62,7 @@
 						<reference value="#LabResult3"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="201310221426+0500"/>
+					<effectiveTime value="201310221426-0500"/>
 					<!-- Representing a result of an ordinal test (See LOINC axes) as negative in SNOMED-->
 					<value xsi:type="CO" code="260385009" codeSystemName="SNOMED-CT"
 						displayName="Negative" codeSystem="2.16.840.1.113883.6.96"/>
@@ -90,7 +90,7 @@
 						<reference value="#LabResult4"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="201310221426+0500"/>
+					<effectiveTime value="201310221426-0500"/>
 					<!-- Representing a result of an ordinal test (See LOINC axes) as positive in SNOMED-->
 					<value xsi:type="CO" code="10828004" codeSystemName="SNOMED-CT"
 						displayName="Positive" codeSystem="2.16.840.1.113883.6.96"/>

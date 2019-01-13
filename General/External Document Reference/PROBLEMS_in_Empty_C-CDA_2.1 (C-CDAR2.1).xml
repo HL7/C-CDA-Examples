@@ -591,7 +591,7 @@
 							<statusCode code="active" />
 							<effectiveTime>
 								<!-- This represents the time that the clinician began tracking the concern. This may frequently be an EHR timestamp-->
-								<low value="20140403124536+0500" />
+								<low value="20140403124536-0500" />
 							</effectiveTime>
 							<entryRelationship typeCode="SUBJ">
 								<observation classCode="OBS" moodCode="EVN">
@@ -637,7 +637,7 @@
 							<code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
 							<statusCode code="active"/>
 							<effectiveTime>
-								<low value="20140302124536+0500"/>
+								<low value="20140302124536-0500"/>
 							</effectiveTime>
 							<entryRelationship typeCode="SUBJ">
 								<observation classCode="OBS" moodCode="EVN">

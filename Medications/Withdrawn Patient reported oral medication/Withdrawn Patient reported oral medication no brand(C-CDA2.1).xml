@@ -48,7 +48,7 @@
             <effectiveTime xsi:type="IVL_TS">
                 <low value="20140409"/>
                 <!-- The timing of last second of the day indicates the drug was taken on this day.-->
-                <high value="20140510235959+0500"/>
+                <high value="20140510235959-0500"/>
             </effectiveTime>
             <!-- The second effectiveTime specifies dose frequency, which can be either a period (PIVL_TS) or event (EIVL_TS). -->
             <!-- InstituionSpecified = "false" is implied in ths omission of this attribute and means that it must be administered exactly once per day-->

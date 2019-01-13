@@ -40,7 +40,7 @@
 			<!-- This is the time stamp for when the allergy was first documented as a concern-->
 			<!-- If the statusCode="completed", the effective time shall contain a high value. -->
 			<effectiveTime>
-				<low value="20140104123506+0500"/>
+				<low value="20140104123506-0500"/>
 			</effectiveTime>
 			<author>
 				<templateId root="2.16.840.1.113883.10.20.22.4.119"/>

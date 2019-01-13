@@ -50,7 +50,7 @@
 					codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 			</code>
 			<statusCode code="completed"/>
-			<effectiveTime value="20140520193605+0500"/>
+			<effectiveTime value="20140520193605-0500"/>
 			<!-- Each vital sign should be its own component. Note that systolic and diastolic BP must be separate components-->
 			<component>
 				<observation classCode="OBS" moodCode="EVN">
@@ -64,7 +64,7 @@
 						<reference value="#SystolicBP_1"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<!-- Example of Value with UCUM unit. Note that metric units used in this example-->
 					<value xsi:type="PQ" value="120" unit="mm[Hg]"/>
 					<!-- Additional information of interpretation and/or reference range may be included but are optional-->
@@ -81,7 +81,7 @@
 						<reference value="#DiastolicBP_1"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<value xsi:type="PQ" value="80" unit="mm[Hg]"/>
 				</observation>
 			</component>
@@ -96,7 +96,7 @@
 						<reference value="#Pulse_1"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<value xsi:type="PQ" value="80" unit="/min"/>
 				</observation>
 			</component>
@@ -111,7 +111,7 @@
 						<reference value="#Temp_1"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<value xsi:type="PQ" value="37.2" unit="Cel"/>
 				</observation>
 			</component>
@@ -126,7 +126,7 @@
 						<reference value="#RespRate_1"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<value xsi:type="PQ" value="18" unit="/min"/>
 				</observation>
 			</component>
@@ -141,7 +141,7 @@
 						<reference value="#Height_1"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<value xsi:type="PQ" value="170.2" unit="cm"/>
 				</observation>
 			</component>
@@ -156,7 +156,7 @@
 						<reference value="#Weight_1"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<value xsi:type="PQ" value="108.863" unit="kg"/>
 				</observation>
 			</component>
@@ -171,7 +171,7 @@
 						<reference value="#BMI_1"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<value xsi:type="PQ" value="37.58" unit="kg/m2"/>
 				</observation>
 			</component>
@@ -186,7 +186,7 @@
 						<reference value="#SPO2_1"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<value xsi:type="PQ" value="98" unit="%"/>
 				</observation>
 			</component>

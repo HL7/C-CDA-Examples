@@ -26,7 +26,7 @@
 	<id root="2.16.840.1.113883.19.4.27" extension="20060828170821659"/>
 	<code code="18748-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic Imaging Report"/>
 	<title>Chest X-Ray, PA and LAT View</title>
-	<effectiveTime value="20050329171504+0500"/>
+	<effectiveTime value="20050329171504-0500"/>
 	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
 	<languageCode code="en-US"/>
 	<setId extension="111199021" root="2.16.840.1.113883.19"/>
@@ -102,7 +102,7 @@
 		</patientRole>
 	</recordTarget>
 	<author>
-		<time value="20050329224411+0500"/>
+		<time value="20050329224411-0500"/>
 		<assignedAuthor>
 			<id extension="KP00017" root="2.16.840.1.113883.4.6"/>
 			<code code="200000000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians"/>
@@ -171,7 +171,7 @@
 		</intendedRecipient>
 	</informationRecipient>
 	<legalAuthenticator>
-		<time value="20050329224411+0500"/>
+		<time value="20050329224411-0500"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="KP00017" root="2.16.840.1.113883.19.5"/>
@@ -192,7 +192,7 @@
 		</assignedEntity>
 	</legalAuthenticator>
 	<authenticator>
-		<time value="20050329224411+0500"/>
+		<time value="20050329224411-0500"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="KP00017" root="2.16.840.1.113883.19.5"/>

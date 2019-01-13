@@ -23,7 +23,7 @@
                 <statusCode code="active"/>
                 <!-- The effective time is the date that the Health Concern started being followed - 
                     this does not necessarily correlate to the onset date of the contained health issues-->
-                <effectiveTime value="20151115123506+0500"/>
+                <effectiveTime value="20151115123506-0500"/>
                 <!-- Time at which THIS “concern” began being tracked.-->
                 <!-- Optional Author Element-->
                 <!-- This is different then No Known Problems in that we aren't requiring declaration that no concerns

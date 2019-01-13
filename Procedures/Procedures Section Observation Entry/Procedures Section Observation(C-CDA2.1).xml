@@ -40,7 +40,7 @@
 				<reference value="#Procedure2" />
 			</text>
 			<statusCode code="completed"/>
-			<effectiveTime value="20140329091522+0500" />
+			<effectiveTime value="20140329091522-0500" />
 			<!-- When choosing an observation, value records relevant findings-->
 			<value xsi:type="CD" code="251135002" codeSystem="2.16.840.1.113883.6.96" displayName="Borderline normal ECG" codeSystemName="SNOMED-CT" />
 		</observation>

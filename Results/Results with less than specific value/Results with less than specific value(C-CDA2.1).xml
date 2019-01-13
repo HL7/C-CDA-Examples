@@ -39,8 +39,8 @@
 				codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 			<statusCode code="completed"/>
 			<effectiveTime>
-				<low value="201310200908+0500"/>
-				<high value="201310200908+0500"/>
+				<low value="201310200908-0500"/>
+				<high value="201310200908-0500"/>
 			</effectiveTime>
 			<component>
 				<observation classCode="OBS" moodCode="EVN">
@@ -53,7 +53,7 @@
 						<reference value="#SomeReferenceGoesHere2"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="201310200908+0500"/>
+					<effectiveTime value="201310200908-0500"/>
 					<!-- Representing a result of less than with type of interval -->
 					<value xsi:type="IVL_PQ">
 						<!-- The lower bound for most physical measures of less than will be zero-->
