@@ -68,8 +68,8 @@
                     <id root="4d3ac7ac-0c32-8712-b3fe-c2b268808259"/>
                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
                     <text>
-                    <reference value="allergy1"/>
-                    </text
+                        <reference value="allergy1"/>
+                    </text>
                     <statusCode code="completed"/>
                     <!-- This is the time stamp for the biological onset of the allergy. -->
                     <!-- Just the year is shown since a specific month and date was not reported -->
