@@ -83,7 +83,7 @@
 						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
 					</code>
 					<text>
-						<reference value="#FH1prob1">
+						<reference value="#FH1prob1" />
 					</text>
 					<statusCode code="completed"/>
 					<!-- Date of the stroke -->
@@ -135,7 +135,7 @@
 						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
 					</code>
 					<text>
-						<reference value="#FH1prob2">
+						<reference value="#FH1prob2" />
 					</text>
 					<statusCode code="completed"/>
 					<!-- Date of blood pressure (unknown) -->
