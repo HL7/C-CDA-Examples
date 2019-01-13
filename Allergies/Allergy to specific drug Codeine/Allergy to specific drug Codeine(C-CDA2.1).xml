@@ -11,17 +11,17 @@
 				<table>
 					<thead>
 						<tr>
-							<th ID="AllergyIntolerance_1.1Label">Allergy or Intolerance</th>
+							<th>Allergy or Intolerance</th>
 							<th ID="AllergyIntolerance_1.1Data">Data</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<th ID="AllergyType_1.1L">Type:</th>
+							<th>Type:</th>
 							<td ID="AllergyType_1.1D">Drug intolerance (disorder)</td>
 						</tr>
 						<tr>
-							<th ID="AllergyAgent_1.1L">Agent:</th>
+							<th>Agent:</th>
 							<td ID="AllergyAgent_1.1D">Codeine</td>
 						</tr>
 						<tr>
@@ -33,7 +33,7 @@
 							<td/>
 						</tr>
 						<tr>
-							<th ID="Reactions_1.1Label">Reactions:</th>
+							<th>Reactions:</th>
 							<td>
 								<list>
 									<item>
@@ -42,8 +42,8 @@
 												<tr>
 												<th>Start Date</th>
 												<th>End Date</th>
-												<th ID="REACT_1.1.0L">Reaction</th>
-												<th ID="SEV_1.1.0L">Severity</th>
+												<th>Reaction</th>
+												<th>Severity</th>
 												</tr>
 											</thead>
 											<tbody>
@@ -77,11 +77,7 @@
 			<templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01"/>
 			<id root="4a2ac5fc-0c85-4223-baee-c2e254803974"/>
 			<code code="CONC" codeSystem="2.16.840.1.113883.5.6"
-				displayName="Allergies, adverse reactions, alerts" codeSystemName="LOINC">
-				<originalText>
-					<reference value="#AllergyIntoleranceObservation_1.1"/>
-				</originalText>
-			</code>
+				displayName="Allergies, adverse reactions, alerts" codeSystemName="LOINC" />
 			<text>
 				<reference value="#AllergyIntoleranceObservation_1.1"/>
 			</text>

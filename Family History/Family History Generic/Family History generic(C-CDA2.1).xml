@@ -21,8 +21,8 @@
 			section in the absence of any known discrete family relationships.
 		-->
 		
-		<paragraph>Patient has a family history of <content ID="FHGeneric1prob">heart disease</content>.</paragraph>
-		<paragraph>Patient has no known family history of <content ID="FHGeneric2prob">asthma</content>.</paragraph>
+		<paragraph ID="FH1">Patient has a family history of <content ID="FHGeneric1prob">heart disease</content>.</paragraph>
+		<paragraph ID="FH2">Patient has no known family history of <content ID="FHGeneric2prob">asthma</content>.</paragraph>
 	</text>
 	<!-- Generic family member's history -->
 	<entry>
@@ -49,6 +49,9 @@
 					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
 						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
 					</code>
+					<text>
+						<reference value="#FH1" />
+					</text>
 					<statusCode code="completed"/>
 					<!-- Since no date is given, effectiveTime is UNKnown -->
 					<effectiveTime nullFlavor="UNK" />
@@ -75,6 +78,9 @@
 					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
 						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
 					</code>
+					<text>
+						<reference value="#FH2" />
+					</text>
 					<statusCode code="completed"/>
 					<!-- Since no date is given, effectiveTime is UNKnown -->
 					<effectiveTime nullFlavor="UNK" />
