@@ -40,7 +40,7 @@
             <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
             <text>
 			  <reference value="allergy1"/>
-			</text
+			</text>
             <statusCode code="active"/>
             <!-- This is the time stamp for when the allergy was first documented as a concern-->
             <effectiveTime value="20180401103001-0500"/> <!-- Apr 1, 2018 at 10:30a ET -->

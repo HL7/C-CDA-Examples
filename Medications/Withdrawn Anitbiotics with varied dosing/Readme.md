@@ -2,7 +2,7 @@
 
 * Approval Status: Withdrawn
 * Example Task Force: 3/6/2014
-* SDWG: 4/10/2014
+* SDWG: Withdarawn with preference for text - see comments 
 
 ###C-CDA 2.1 Example:
 
@@ -25,15 +25,15 @@
 
 ###Comments
 
+* some [background](http://wiki.hl7.org/images/e/ee/2014-05-22_Critique_of_HL7_CDA_structured_tapering_dose_Azithromycin_example_w_Figures.docx) on the dissent for encoding this medication
 * This is an example of a medication with dosing that varies over time.
 * This is an example of a common pattern for antibiotic administration which is complex (double dose on day 1, commonly known as Z-PAK).
 * SDWG reviewed this example with the Pharmacy working group in February 2014. This dosing regimen may be characterized as a loading dose, but a similar approach could be used for a tapered dose as well. At the May 2014 Working Group the committee discussed whether this example would be better with just a free text sig which now exists as a new template in C-CDA R2.1
-* **Debate Continues** some [background](http://wiki.hl7.org/images/e/ee/2014-05-22_Critique_of_HL7_CDA_structured_tapering_dose_Azithromycin_example_w_Figures.docx) on the dissent for encoding this medication
+
 
 ###Custodian
 
 * John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
-
 
 
 ###Keywords
