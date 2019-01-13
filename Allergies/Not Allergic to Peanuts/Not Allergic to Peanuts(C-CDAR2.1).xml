@@ -45,6 +45,9 @@
                         <templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09"/>
                         <id root="55ac1612-2d3f-4084-b687-0997446cabad"/>
                         <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                        <text>
+                            <reference value="#allergyobs1"/>
+                        </text>
                         <statusCode code="completed"/>
                         <!-- This is the time stamp for when patient believes they were tested. -->
                         <!-- Just the year is shown since a specific month and date was not reported -->
