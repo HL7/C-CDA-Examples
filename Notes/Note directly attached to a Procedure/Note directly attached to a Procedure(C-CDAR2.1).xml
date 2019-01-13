@@ -34,6 +34,7 @@
         <!-- Procedures should be used for care that directly changes the patient's physical state.-->
         <procedure moodCode="EVN" classCode="PROC">
             <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
             <id root="64af26d5-88ef-4169-ba16-c6ef16a1824f"/>
             <code code="6025007" displayName="Laparoscopic appendectomy"
                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
