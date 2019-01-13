@@ -211,7 +211,7 @@
 		</intendedRecipient>
 	</informationRecipient>
 	<legalAuthenticator>
-		<time value="20090227130000-0500"/>
+		<time value="200902271300-0500"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="999999999" root="2.16.840.1.113883.4.6"/>
@@ -232,7 +232,7 @@
 		</assignedEntity>
 	</legalAuthenticator>
 	<authenticator>
-		<time value="20090227130000-0500"/>
+		<time value="200902271300-0500"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="999999999" root="2.16.840.1.113883.4.6"/>
@@ -364,8 +364,8 @@
 			<id extension="9937012" root="2.16.840.1.113883.19"/>
 			<code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" code="99213" displayName="Evaluation and Management"/>
 			<effectiveTime>
-				<low value="20090227130000-0500"/>
-				<high value="20090227130000-0500"/>
+				<low value="200902271300-0500"/>
+				<high value="200902271300-0500"/>
 			</effectiveTime>
 			<location>
 				<healthCareFacility>

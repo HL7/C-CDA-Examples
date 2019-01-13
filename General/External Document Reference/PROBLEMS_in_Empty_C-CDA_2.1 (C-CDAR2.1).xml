@@ -30,7 +30,7 @@
 	<!-- Title of this document -->
 	<title>170.315_b1_toc_gold_sample2 test data</title>
 
-	<effectiveTime value="20150722180000-0500" />
+	<effectiveTime value="201507221800-0500" />
 
 	<confidentialityCode code="N" displayName="normal" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality"/>
 	<languageCode code="en-US"/>
@@ -298,7 +298,7 @@
 			<code code="423123007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"
 				displayName="Burn by Fire"/>
 			<effectiveTime>
-				<low value="20150722180000-0500"/>
+				<low value="201507221800-0500"/>
 				<high value="20150722230000-5000"/>
 			</effectiveTime>
 			<!-- since there are two Care Team members we need two performer elements. -db -->
@@ -377,7 +377,7 @@
 			<id extension="9937012" root="2.16.840.1.113883.19"/>
 			<effectiveTime>
 				<!-- represents length of time spent in hospital -db -->
-				<low value="20150722180000-0500"/>
+				<low value="201507221800-0500"/>
 				<high value="20150722230000-5000"/>
 			</effectiveTime>			
 		</encompassingEncounter>

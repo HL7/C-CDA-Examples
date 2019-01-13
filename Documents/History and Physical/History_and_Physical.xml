@@ -217,7 +217,7 @@
 		</intendedRecipient>
 	</informationRecipient>
 	<legalAuthenticator>
-		<time value="20090227130000-0500"/>
+		<time value="200902271300-0500"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="999999999" root="2.16.840.1.113883.4.6"/>
@@ -238,7 +238,7 @@
 		</assignedEntity>
 	</legalAuthenticator>
 	<authenticator>
-		<time value="20090227130000-0500"/>
+		<time value="200902271300-0500"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="999999999" root="2.16.840.1.113883.4.6"/>
@@ -292,8 +292,8 @@
 			<id extension="9937012" root="2.16.840.1.113883.19"/>
 			<code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" code="99213" displayName="Evaluation and Management"/>
 			<effectiveTime>
-				<low value="20090227130000-0500"/>
-				<high value="20090227130000-0500"/>
+				<low value="200902271300-0500"/>
+				<high value="200902271300-0500"/>
 			</effectiveTime>
 			<location>
 				<healthCareFacility>
@@ -372,7 +372,7 @@ Allergies, Adverse Reactions, Alerts
 							<statusCode code="active"/>
 							<effectiveTime value="20070501">
 								<low value="20070501"/>
-								<high value="20090227130000-0500"/>
+								<high value="200902271300-0500"/>
 							</effectiveTime>
 							<entryRelationship typeCode="SUBJ">
 								<observation classCode="OBS" moodCode="EVN">
@@ -442,7 +442,7 @@ Allergies, Adverse Reactions, Alerts
 							<statusCode code="active"/>
 							<effectiveTime value="20060501">
 								<low value="20060501"/>
-								<high value="20090227130000-0500"/>
+								<high value="200902271300-0500"/>
 							</effectiveTime>
 							<entryRelationship typeCode="SUBJ">
 								<observation classCode="OBS" moodCode="EVN">
@@ -512,7 +512,7 @@ Allergies, Adverse Reactions, Alerts
 							<statusCode code="active"/>
 							<effectiveTime value="20080501">
 								<low value="20080501"/>
-								<high value="20090227130000-0500"/>
+								<high value="200902271300-0500"/>
 							</effectiveTime>
 							<entryRelationship typeCode="SUBJ">
 								<observation classCode="OBS" moodCode="EVN">
@@ -1910,7 +1910,7 @@ SOCIAL HISTORY
 									<td>
 										<content ID="soc1"/>Tobacco smoking status</td>
 									<td>Former smoke</td>
-									<td>20050501 to 20090227130000-0500</td>
+									<td>20050501 to 200902271300-0500</td>
 								</tr>
 								<tr>
 									<td>
@@ -1936,7 +1936,7 @@ SOCIAL HISTORY
 							<statusCode code="completed"/>
 							<effectiveTime>
 								<low value="20050501"/>
-								<high value="20090227130000-0500"/>
+								<high value="200902271300-0500"/>
 							</effectiveTime>
 							<value xsi:type="CD" code="8517006" displayName="Former smoker" codeSystem="2.16.840.1.113883.6.96"/>
 						</observation>
