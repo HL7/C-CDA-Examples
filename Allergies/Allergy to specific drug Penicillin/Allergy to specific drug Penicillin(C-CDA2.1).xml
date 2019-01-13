@@ -115,7 +115,7 @@
 							<statusCode code="completed"/>
 							<effectiveTime>
 								<low value="2006"/>
-								<high nullFlavor="NA"/>
+								<high nullFlavor="UNK"/>
 							</effectiveTime>
 							<value xsi:type="CD" code="39579001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Anaphylaxis"/>
 							<!-- The Severity observation is no longer recommended, use criticality observation in future exchanges -->

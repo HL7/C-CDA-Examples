@@ -559,7 +559,7 @@
                   <statusCode code="completed" />
                   <effectiveTime>
                     <low value="20110219" />
-                    <high nullFlavor="NA" />
+                    <high nullFlavor="NI"/>
                   </effectiveTime>
                   <value xsi:type="CD" code="304253006" displayName="Do not resuscitate"
                     codeSystem="2.16.840.1.113883.6.96" />

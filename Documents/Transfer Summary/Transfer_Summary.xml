@@ -3705,7 +3705,7 @@ PROBLEM SECTION v2
                     <!-- Based on patient symptoms, presumed onset is July 3, 2013 -->
                     <low value="20130703" />
                     <!-- The high value reflects when the problem was known to be resolved -->
-                    <high nullFlavor="NA" />
+                    <high nullFlavor="UNK"/>
                   </effectiveTime>
                   <value xsi:type="CD" code="93870000" codeSystem="2.16.840.1.113883.6.96"
                     displayName="malignant neoplasm of liver (disorder)" />
