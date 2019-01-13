@@ -39,7 +39,7 @@
 			<statusCode code="active"/>
 			<!-- This is the time stamp for when the allergy was first documented as a concern-->
 			<effectiveTime>
-				<low value="20140104123506+0500"/>
+				<low value="20140104123506-0500"/>
 			</effectiveTime>
 			<author>
 				<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
@@ -116,7 +116,6 @@
 							<statusCode code="completed"/>
 							<effectiveTime>
 								<low value="20140103"/>
-								<high nullFlavor="NA"/>
 							</effectiveTime>
 							<value xsi:type="CD" code="39579001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Anaphylaxis"/>
                         	<!-- The Severity observation is no longer recommended, use criticality observation in future exchanges -->							
