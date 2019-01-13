@@ -85,8 +85,6 @@
 			<!-- This is the time stamp for when the allergy was first documented as a concern-->
 			<effectiveTime>
 				<low value="20140103"/>
-				<!--show time when this author's concern about the allergy became active. -->
-				<high nullFlavor="NA"/>
 			</effectiveTime>
 			<author>
 				<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
