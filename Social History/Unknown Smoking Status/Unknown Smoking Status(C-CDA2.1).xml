@@ -6,7 +6,7 @@
 	<text>
 		<list>
 			<caption>Smoking Status</caption>
-			<item>
+			<item ID="SmokingStatus">
 				<content>Unknown if ever smoked</content>
 				<content>Started: </content>
 				<content>Stopped:</content>
@@ -22,6 +22,9 @@
 			<templateId root="2.16.840.1.113883.10.20.22.4.78" extension="2014-06-09"/>
 			<id extension="123456789" root="2.16.840.1.113883.19" />
 			<code code="72166-2" codeSystem="2.16.840.1.113883.6.1" displayName="Tobacco smoking status NHIS"/>
+			<text>
+				<reference value="#SmokingStatus" />
+			</text>
 			<statusCode code="completed"/>
 			<effectiveTime value="201406061032+0500"/>
 				<!--Note: This template represents a “snapshot in time” observation, simply reflecting what the patient’s 

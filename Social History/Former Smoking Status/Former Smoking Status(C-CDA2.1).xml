@@ -6,7 +6,7 @@
 	<text>
 		<list>
 			<caption>Smoking Status</caption>
-			<item>
+			<item ID="SmokingStatus">
 				<content>Former Smoker</content>
 				<content>Started: 1994</content>
 				<content>Stopped: March 2011</content>
@@ -21,6 +21,9 @@
 			<templateId root="2.16.840.1.113883.10.20.22.4.78"  extension="2014-06-09"/>
 			<id extension="123456789" root="2.16.840.1.113883.19" />
 			<code code="72166-2" codeSystem="2.16.840.1.113883.6.1" displayName="Tobacco smoking status NHIS"/>
+			<text>
+				<reference value="#SmokingStatus" />
+			</text>
 			<statusCode code="completed"/>
 			<effectiveTime value="201406061032+0500"/>
 					<!--Note: This template represents a “snapshot in time” observation, simply reflecting what the patient’s 
@@ -55,6 +58,9 @@
 			<templateId root="2.16.840.1.113883.10.20.22.4.85" extension="2014-06-09" />
 			<id root="45efb604-7049-4a2e-ad33-d38556c9636c" />
 			<code code="11367-0" codeSystem="2.16.840.1.113883.6.1" displayName="History of tobacco use" />
+			<text>
+				<reference value="#SmokingStatus" />
+			</text>
 			<statusCode code="completed" />
 			<effectiveTime>
 				<!-- The low value reflects the start date of the observation/value (moderate smoker) -->
