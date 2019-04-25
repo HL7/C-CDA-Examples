@@ -2,7 +2,7 @@
 
 * Approval Status: Withdrawn
 * Example Task Force: Approved 4/10/2014
-* SDWG: Withdrawn from consideration since not clinically relevant.
+* SDWG: Withdrawn from consideration since not clinically relevant. The allergy section is used to record drugs, materials or dietary substances that a patient may be exposed to during their course of care.  Allergies to cats, dogs, etc do not occur in that situation.  The cat allergy should be recorded in the Problem section
 
 
 ###C-CDA 2.1 Example:

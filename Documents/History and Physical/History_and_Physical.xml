@@ -1299,7 +1299,7 @@ PLAN OF CARE
 							<!--   Plan of Care Activity Observation template   -->
 							<id root="9a6d1bac-17d3-4195-89a4-1121bc809b4a"/>
 							<code code="28023-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Colonoscopy Study observation"/>
-							<statusCode code="new"/>
+							<statusCode code="active"/>
 							<effectiveTime>
 								<center value="20120512"/>
 							</effectiveTime>
@@ -1934,10 +1934,7 @@ SOCIAL HISTORY
 							<id extension="123456789" root="2.16.840.1.113883.19"/>
 							<code code="72166-2" codeSystem="2.16.840.1.113883.6.1" displayName="Tobacco smoking status NHIS"/>
 							<statusCode code="completed"/>
-							<effectiveTime>
-								<low value="20050501"/>
-								<high value="200902271300-0500"/>
-							</effectiveTime>
+							<effectiveTime value="20120910" />
 							<value xsi:type="CD" code="8517006" displayName="Former smoker" codeSystem="2.16.840.1.113883.6.96"/>
 						</observation>
 					</entry>

@@ -1,0 +1,86 @@
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+	<code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+		displayName="HISTORY OF PROCEDURES"/>
+	<title>Procedures</title>
+	<text>
+		<table>
+			<thead>
+				<tr>
+					<th>Procedure</th>
+					<th>Date and Time (Range)</th>
+					<th>Comment</th>
+					<th>Reason</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ID="Procedure1">
+					<td ID="ProcedureDesc1">Laparoscopic appendectomy</td>
+					<td>03 Feb 2014 09:22am </td>
+					<td ID="Procedure_0_comment">Not Done</td>
+					<td ID="Procedure_0_reason">Patient refused</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry typeCode="DRIV">
+		<!-- Procedures should be used for care that directly changes the patient's physical state.-->
+		<!-- negationInd=true indicates the procedure didn't happen -->
+		<procedure moodCode="EVN" classCode="PROC" negationInd="true">
+			<templateId root="2.16.840.1.113883.10.20.22.4.14" />
+			<templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+			<id root="bd4ef764-d7f8-4484-8f65-a776e30816d5"/>
+			<code code="6025007" displayName="Laparoscopic appendectomy"
+				codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+				<originalText>
+					<reference value="#ProcedureDesc1"/>
+				</originalText>
+				<translation codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT" code="44970"
+					displayName="Laparoscopic Appendectomy"/>
+				<translation codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD-10-PCS"
+					code="0DTJ4ZZ"
+					displayName="Resection of Appendix, Percutaneous Endoscopic Approach"/>
+				<translation codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD-9-CM"
+					code="47.01" displayName="Laparoscopic appendectomy"/>
+			</code>
+			<text>
+				<reference value="#Procedure1"/>
+			</text>
+			<!-- statusCode is completed because the procedure is complete, even though NOT done -->
+			<!-- Systems may include statuCode in the narrative (section.text) - if they do it's 
+				important to make clear procedure was NOT done -->
+			<statusCode code="completed"/>
+			<!-- Effective times can be either a value or interval. For procedures with start and stop times, an interval would be more appropriate -->
+			<effectiveTime value="20140203092205-0500"/>
+			<!-- Comment activity --> 
+			<entryRelationship typeCode="REFR">
+				<act classCode="ACT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.64"/>
+					<code code="48767-8" displayName="Annotation Comment" codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1"/>
+					<text>
+						<reference value="#Procedure_0_comment"/>
+					</text>
+				</act>
+			</entryRelationship>
+			<!-- This is the QRDA template --> 
+			<entryRelationship typeCode="REFR">
+				<observation classCode="OBS" moodCode="EVN">
+					<!-- Reason (V2) -->
+					<templateId root="2.16.840.1.113883.10.20.24.3.88" extension="2014-12-01" />
+					<id root="5750a5bb-6a01-4b99-9b1c-cda56b1dce0c" />
+					<code code="77301-0" codeSystem="2.16.840.1.113883.6.1" displayName="Reason care action performed or not" codeSystemName="LOINC" />
+					<statusCode code="completed" />
+					<text>
+						<reference value="#Procedure_0_reason"/>
+					</text>
+					<effectiveTime>
+						<low value="20140203092205-0500"/>
+					</effectiveTime>
+					<!-- sdtc:valueset extension is required in many QRDA templates. It's allowed in C-CDA. -->
+					<value xsi:type="CD" code="105480006" codeSystem="2.16.840.1.113883.6.96"  codeSystemName="SNOMED CT" displayName="Refusal of treatment by patient" sdtc:valueSet="2.16.840.1.113883.3.526.3.1008" />
+				</observation>
+			</entryRelationship>
+		</procedure>
+	</entry>
+</section>

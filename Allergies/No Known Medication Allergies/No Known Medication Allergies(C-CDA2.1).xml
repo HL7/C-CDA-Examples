@@ -15,7 +15,7 @@
             <!-- SDWG supports 48765-2 or CONC in the code element -->
             <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
             <text>
-                <reference value="#allergiesNoKnown">
+                <reference value="#allergiesNoKnown" />
             </text>
             <statusCode code="active"/>
             <!--currently tracked concerns are active concerns-->
@@ -50,7 +50,7 @@
                     <id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
                     <text>
-                        <reference value="#allergiesNoKnown">
+                        <reference value="#allergiesNoKnown" />
                     </text>
                     <statusCode code="completed"/>
                     <!-- N/A - author/time records when this assertion was made -->
