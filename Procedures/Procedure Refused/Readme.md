@@ -1,8 +1,8 @@
 ##Approval Status
 
-* Approval Status: Pending
+* Approval Status: Approved
 * Example Task Force: 12/8/2019
-* SDWG:
+* SDWG: 6/27/2019
 
 ##Templates
 
