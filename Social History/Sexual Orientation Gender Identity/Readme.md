@@ -22,4 +22,4 @@
 * Jones, Emma <Emma.Jones@allscripts.com>, placed on github by jdamore@diameterhealth.com (GitHub: jddamore)
 
 ### Keywords: 
-* Secual orientation, gender identity
+* Sexual orientation, gender identity
