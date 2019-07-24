@@ -27,3 +27,8 @@ Reference to full CDA sample: TBD
 ##Keywords
 
 * medication, negation
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/7057bf1a-48d4-4038-84e6-ea549e27f4d5](http://cdasearch.hl7.org/examples/view/7057bf1a-48d4-4038-84e6-ea549e27f4d5)
