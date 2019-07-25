@@ -33,3 +33,8 @@
 ###Keywords
 
 * C-CDA Unstructured Document, PACP, Embedded Document
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/fae23eaa-cea8-447b-8d61-4eb6324b73af](http://cdasearch.hl7.org/examples/view/fae23eaa-cea8-447b-8d61-4eb6324b73af)
