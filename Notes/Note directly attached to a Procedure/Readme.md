@@ -31,3 +31,8 @@
 ###Keywords
 
 * Note, Note Activity, Notes, Procedure
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/b7e9d9e1-0a96-481a-b8e6-0699aca11af0](http://cdasearch.hl7.org/examples/view/b7e9d9e1-0a96-481a-b8e6-0699aca11af0)
