@@ -30,3 +30,8 @@
 ###Keywords
 
 * Note, Note Activity, Notes
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/2a8cb433-9f03-4db4-a469-132782b37d81](http://cdasearch.hl7.org/examples/view/2a8cb433-9f03-4db4-a469-132782b37d81)
