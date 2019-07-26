@@ -47,3 +47,8 @@
 
 * 
 Demographics
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/c810a092-1ee2-4549-b9b4-37b4710d6d85](http://cdasearch.hl7.org/examples/view/c810a092-1ee2-4549-b9b4-37b4710d6d85)
