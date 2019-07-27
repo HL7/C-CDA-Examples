@@ -34,3 +34,8 @@
 ###Keywords
 
 * medications
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/28ad875d-6dc1-4fb1-a4de-5639a7fb2842](http://cdasearch.hl7.org/examples/view/28ad875d-6dc1-4fb1-a4de-5639a7fb2842)
