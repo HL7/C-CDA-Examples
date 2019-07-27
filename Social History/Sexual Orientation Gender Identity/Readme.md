@@ -23,3 +23,8 @@
 
 ### Keywords: 
 * Sexual orientation, gender identity
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/d1e46c10-6d29-42ca-ab5b-dc92eda328d8](http://cdasearch.hl7.org/examples/view/d1e46c10-6d29-42ca-ab5b-dc92eda328d8)
