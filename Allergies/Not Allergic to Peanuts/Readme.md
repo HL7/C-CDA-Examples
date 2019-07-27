@@ -30,3 +30,8 @@
 ###Keywords
 
 * substance, allergies, allergy
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/1f514a48-b807-4d32-a486-eb79730021be](http://cdasearch.hl7.org/examples/view/1f514a48-b807-4d32-a486-eb79730021be)
