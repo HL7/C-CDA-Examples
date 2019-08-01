@@ -29,3 +29,8 @@
 ###Keywords
 
 * C-CDA Unstructured Document, Embedded Document
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/69979a58-d608-4365-9064-5c7b32a248c1](http://cdasearch.hl7.org/examples/view/69979a58-d608-4365-9064-5c7b32a248c1)

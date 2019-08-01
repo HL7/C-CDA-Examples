@@ -23,3 +23,8 @@
 
 ### Keywords: 
 * PHQ-9, mental status, assessment scale
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/302a998a-6d91-4f6e-8354-13c7777bdf4b](http://cdasearch.hl7.org/examples/view/302a998a-6d91-4f6e-8354-13c7777bdf4b)

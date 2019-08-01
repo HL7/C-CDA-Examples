@@ -30,3 +30,8 @@
 
 * free text SIG
 
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/11bc1ece-94a9-44a4-b361-c7aad19af1f8](http://cdasearch.hl7.org/examples/view/11bc1ece-94a9-44a4-b361-c7aad19af1f8)

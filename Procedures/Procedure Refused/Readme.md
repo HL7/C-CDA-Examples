@@ -27,3 +27,8 @@ Reference to full CDA sample: N/A
 ##Keywords
 
 * procedure, negation
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/a60f4f25-c82c-4306-88ae-e0760e7315fc](http://cdasearch.hl7.org/examples/view/a60f4f25-c82c-4306-88ae-e0760e7315fc)

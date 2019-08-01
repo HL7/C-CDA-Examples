@@ -33,3 +33,8 @@
 ###Keywords
 
 * deceasedInd,deceasedTime
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/4f17c14a-a779-49aa-9b3d-b8f836ea8958](http://cdasearch.hl7.org/examples/view/4f17c14a-a779-49aa-9b3d-b8f836ea8958)
