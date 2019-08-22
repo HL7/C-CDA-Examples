@@ -21,12 +21,11 @@
 
 ###Comments
 
-* The Organizer associates a set of observations for the entry. The 
-* effectiveTime represents the time interval or point 
-* in time in which the specimen was collected. The 
-* time value under the organizer signifies at what point in time the data
-* was recorded by the author.It Represents the
-* biologically relevant time of the measurement within the entry.
+* This example shows where to record the specimen collection time. 
+* In a Result Organizer entry, the organizer contains the set of observations for a single test, test panel, or testing activity. The effectiveTime within the organizer 
+reflects the range of time covered by the collection of observations in the entry. The effectiveTime represents the time interval encompassed by the component observations.
+* The organizer/author/time asserts the point in time when the test/panel/testing activity information was documented in the patient's chart.
+* The effectiveTime of a component observation represents the biologically relevant time of that measurement. Therefore it tells when the specimen for that meausurement was collected.
 
 ###Certification
 * ONC
