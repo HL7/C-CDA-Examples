@@ -1,0 +1,30 @@
+<recordTarget>
+    <!-- Note: several other data elements (telecom, address, etc.) are required to meet C-CDA R2.1 requirements -->
+    <patientRole>
+        <id nullFlavor="NI" />
+        <patient>
+            <!-- Don't do this; "Robin Taylor Dr." isn't a logical display order -->
+            <name>
+                <given>Robin</given>
+                <family>Taylor</family>
+                <prefix qualifier="AC TITLE">Dr. </prefix>
+            </name>
+            <!-- Don't do this; "Taylor Robin" is confusing (is Taylor the given name?) -->
+            <name>
+                <family>Taylor</family>
+                <given>Robin</given>
+            </name>
+            <!-- This is okay; "Taylor, Robin" implies Lastname, Firstname ordering in the US -->
+            <name>
+                <family>Taylor</family>
+                <delimiter>, </delimiter>
+                <given>Robin</given>
+            </name>
+            <!-- This is okay; "Robin Taylor" is a logical display order -->
+            <name>
+                <given>Robin</given>
+                <family>Taylor</family>
+            </name>
+        </patient>
+    </patientRole>
+</recordTarget>
