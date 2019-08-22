@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="translations">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="languageList">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="language" maxOccurs="unbounded">
+                                <xs:complexType mixed="true">
+                                    <xs:sequence/>
+                                    <xs:attribute name="description" type="xs:string" use="required"/>
+                                    <xs:attribute name="lang" type="LanguageCodeSimple" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="translation" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="comment" type="xs:string"/>
+                            <xs:element name="value" maxOccurs="unbounded">
+                                <xs:complexType mixed="true">
+                                    <xs:sequence/>
+                                    <xs:attribute name="lang" type="LanguageCodeSimple" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="key" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:unique name="uniqueKey">
+            <xs:selector xpath="translation"/>
+            <xs:field xpath="@key"/>
+        </xs:unique>
+    </xs:element>
+    <xs:simpleType name="LanguageCodeSimple">
+        <xs:annotation>
+            <xs:documentation xml:lang="en-US">Allows both a choice out of the list of selected languages or a language patterend ll-cc</xs:documentation>
+        </xs:annotation>
+        <xs:union memberTypes="LanguageCodeEnum LanguageCodePatternSimple"/>
+    </xs:simpleType>
+    <xs:simpleType name="LanguageCodeEnum">
+        <xs:annotation>
+            <xs:documentation xml:lang="en-US">A list of some selected languages</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:language">
+            <xs:enumeration value="en-us">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en-US">English in the USA</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="en-gb">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en-US">English in the UK</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="de-de">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en-US">German in Germany</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="de-ch">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en-US">German in Switserland</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="de-it">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en-US">German in Italy</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="es-es">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en-US">Spanish in Spain</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fr-be">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en-US">French in Belgium</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fr-ch">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en-US">French in Switzerland</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fr-fr">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en-US">French in France</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="it-it">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en-US">Italian in Italy</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="it-ch">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en-US">Italian in Switzerland</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="nl-be">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en-US">Dutch in Belgium</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="nl-nl">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en-US">Dutch in the Netherlands</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pt-br">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en-US">Portuguese in Brazil</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="LanguageCodePatternSimple">
+        <xs:annotation>
+            <xs:documentation xml:lang="en-US">A pattern for languages ll(-cc), so where country/region is optional</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:language">
+            <xs:pattern value="[a-z]+(-[a-z]+)?">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en-US">other</xs:documentation>
+                </xs:annotation>
+            </xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
