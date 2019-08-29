@@ -1,8 +1,10 @@
 ## Approval Status
 
-Approval Status: Approved
+Approval Status: Pending
 
 Example Task Force: 8/29/2019
+
+SDWG:
 
 ### C-CDA 2.1 Example:
 
@@ -24,9 +26,7 @@ Matt Szczepankiewicz mszczepa@epic.com (GitHub: mjszczep)
 ### Keywords
 
 Demographics, Name, Formatting
-### Permalink
 
-[TBD]
 ### Links
 
 Person Name Formatting (C-CDA R2.1).xml
