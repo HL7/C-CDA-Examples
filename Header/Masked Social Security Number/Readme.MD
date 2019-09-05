@@ -1,7 +1,7 @@
 ## Approval Status 
 
-* Approval Status: Proposed
-* Example Task Force:
+* Approval Status: Pending
+* Example Task Force: 9/5/2019
 * SDWG:
 
 
