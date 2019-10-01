@@ -1,8 +1,8 @@
 ##Approval Status 
 
-* Approval Status: Pending
+* Approval Status: Approved
 * Example Task Force: 7/11/2019
-* SDWG: 
+* SDWG: 7/25/2019
 
 ###C-CDA 2.1 Example:
 * Social History Section 2.16.840.1.113883.10.20.22.2.17:2015-08-01
