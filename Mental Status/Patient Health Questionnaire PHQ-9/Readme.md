@@ -1,8 +1,8 @@
 ##Approval Status 
 
-* Approval Status: Pending
+* Approval Status: Approved
 * Example Task Force: 7/11/2019
-* SDWG: 
+* SDWG: 7/25/2019
 
 ###C-CDA 2.1 Example:
 * Mental Status Section 2.16.840.1.113883.10.20.22.2.56:2015-08-01
@@ -23,3 +23,8 @@
 
 ### Keywords: 
 * PHQ-9, mental status, assessment scale
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/302a998a-6d91-4f6e-8354-13c7777bdf4b](http://cdasearch.hl7.org/examples/view/302a998a-6d91-4f6e-8354-13c7777bdf4b)

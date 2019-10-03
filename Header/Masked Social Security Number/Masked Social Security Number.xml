@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recordTarget>
+    <patientRole>
+        <!-- Example Social Security Number using the root for the Social Security Administion assigningAuthority. -->
+        <id assigningAuthorityName="US Social Security Administration" 
+            root="2.16.840.1.113883.4.1" extension="414122222"/>
+        <!-- SSN provided, but masked to include only the last 4 characters. -->
+        <!-- Note: both examples are shows for comparison. It would not make sense to use both of these options in a real C-CDA Document. -->
+        <!-- When recording SSN in the extension dashes (-) are permitted but not required" -->
+        <!-- Receiving systems may decide whether to store the last 4 or discard -->
+        <!-- an id with a nullFlavor SHALL NOT be used for matching or indexing -->
+        <id assigningAuthorityName="US Social Security Administration"         
+            root="2.16.840.1.113883.4.1" extension="***-**-2222" nullFlavor="MSK"/>
+        <addr use="HP">
+            <!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
+            <streetAddressLine>1357 Amber Dr</streetAddressLine>
+            <city>Beaverton</city>
+            <state>OR</state>
+            <postalCode>97006</postalCode>
+            <country>US</country>
+            <!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
+        </addr>
+        <telecom value="tel:+1(555)-777-1234" use="MC"/>
+        <telecom value="tel:+1(555)-723-1544" use="HP"/>
+        <!-- HP is "primary home" from HL7 AddressUse 2.16.840.1.113883.5.1119 -->
+        <patient>
+            <name use="L">
+                <given>Richard</given>
+                <family>Maur</family>
+                <suffix>jr</suffix>
+            </name>
+            <administrativeGenderCode code="M" displayName="Male" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender"/>
+            <!-- Date of birth need only be precise to the day -->
+            <birthTime value="19800801"/>
+            <maritalStatusCode nullFlavor="NI"/>
+            <religiousAffiliationCode code="1013" displayName="Christian (non-Catholic, non-specific)" codeSystem="2.16.840.1.113883.5.1076" codeSystemName="HL7 Religious Affiliation"/>
+            <raceCode nullFlavor="UNK"/>
+            <sdtc:raceCode nullFlavor="UNK"/>
+            <ethnicGroupCode nullFlavor="UNK"/>
+            <languageCommunication>
+                <languageCode code="en"/>
+                <modeCode code="ESP" displayName="Expressed spoken"
+                    codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
+                <preferenceInd value="true"/>
+            </languageCommunication>
+        </patient>
+        <providerOrganization>
+            <id extension="99999999" root="2.16.840.1.113883.4.6"/>
+            <name>Community Health and Hospitals</name>
+            <telecom use="WP" value="tel:+1(555)-555-5000"/>
+            <addr>
+                <streetAddressLine>1002 Healthcare Dr</streetAddressLine>
+                <city>Portland</city>
+                <state>OR</state>
+                <postalCode>97266</postalCode>
+                <country>US</country>
+            </addr>
+        </providerOrganization>
+    </patientRole>
+</recordTarget>

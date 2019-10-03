@@ -1,8 +1,8 @@
 ##Approval Status 
 
-* Approval Status: Pending
+* Approval Status: Approved
 * Example Task Force: 7/11/2019
-* SDWG: 
+* SDWG: 7/25/2019
 
 ###C-CDA 2.1 Example:
 * Social History Section 2.16.840.1.113883.10.20.22.2.17:2015-08-01
@@ -23,3 +23,8 @@
 
 ### Keywords: 
 * Sexual orientation, gender identity
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/d1e46c10-6d29-42ca-ab5b-dc92eda328d8](http://cdasearch.hl7.org/examples/view/d1e46c10-6d29-42ca-ab5b-dc92eda328d8)

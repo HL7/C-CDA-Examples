@@ -29,3 +29,8 @@
 ###Keywords
 
 * C-CDA Unstructured Document, Reference Document
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/8d4c1947-a223-4ab9-baa9-619a14edcc55](http://cdasearch.hl7.org/examples/view/8d4c1947-a223-4ab9-baa9-619a14edcc55)

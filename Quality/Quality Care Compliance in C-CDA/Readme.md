@@ -26,3 +26,8 @@ Reviewed in December 2017 with Examples TF, Reviewed 1/19/2018 with CQI. Reviewe
 ###Keywords: 
 * QRDA1, eCQM, quality, care gap
 
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/6882923e-b7d2-4e3f-9e3a-cadb8f3ec61b](http://cdasearch.hl7.org/examples/view/6882923e-b7d2-4e3f-9e3a-cadb8f3ec61b)

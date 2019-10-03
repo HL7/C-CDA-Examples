@@ -39,3 +39,8 @@ Additional Notes and Assumptions:
 ###Keywords
 
 * substance, allergies, allergy
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/f6fc3878-21bf-4725-9ae5-692e54e5ce12](http://cdasearch.hl7.org/examples/view/f6fc3878-21bf-4725-9ae5-692e54e5ce12)
