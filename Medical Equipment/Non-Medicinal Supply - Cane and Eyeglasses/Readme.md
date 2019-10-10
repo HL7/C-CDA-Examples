@@ -1,8 +1,8 @@
 ##Approval Status
 
-* Approval Status: Pending
+* Approval Status: Approved
 * Example Task Force: 10/3/2019
-* SDWG:
+* SDWG: 10/10/2019
 
 ###C-CDA 2.1 Example:
 * Non-Medicinal Supply Activity (V2): 2.16.840.1.113883.10.20.22.4.50:2014-06-09
