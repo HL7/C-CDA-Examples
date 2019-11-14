@@ -14,9 +14,6 @@
                 <given qualifier="CL">Dee</given>
                 <family>Jones</family>
             </name>
-            <!-- At least one US Realm Patient Name (with given, family, etc) is required,
-                 but other aliases may also be sent as free text if necessary. -->
-            <name>Deirdre Batcher</name>
         </patient>
     </patientRole>
 </recordTarget>
