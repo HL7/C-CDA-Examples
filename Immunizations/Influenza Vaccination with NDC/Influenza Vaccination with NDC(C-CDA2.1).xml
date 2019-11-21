@@ -53,10 +53,8 @@
                                 <originalText>
                                     <reference value="#ImmunizationProduct_100"/>
                                 </originalText>
-                                <translation>
-                                    <code code="49281-0394-15" codeSystem="2.16.840.1.113883.6.69"
-                                        displayName="FLUZONE" codeSystemName="NDC"/>                                    
-                                </translation>
+                                <translation code="49281-0394-15" codeSystem="2.16.840.1.113883.6.69"
+												displayName="FLUZONE" codeSystemName="NDC"/>
                             </code>                                           
                             <lotNumberText>1</lotNumberText>
                         </manufacturedMaterial>
