@@ -30,3 +30,8 @@ Demographics, Name, Aliases, Callme
 ### Links
 
 Patient Aliases (C-CDA R2.1).xml
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/86d35d76-04af-463a-9968-df10e3d74a74](http://cdasearch.hl7.org/examples/view/86d35d76-04af-463a-9968-df10e3d74a74)
