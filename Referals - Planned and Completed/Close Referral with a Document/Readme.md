@@ -25,3 +25,7 @@ John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
 ## Keywords
 
 Closing Loop, externalAct, Interventions, inFulfillmentOf
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/af3a01e2-21a1-42e7-af70-72c30a4170a1](http://cdasearch.hl7.org/examples/view/af3a01e2-21a1-42e7-af70-72c30a4170a1)
