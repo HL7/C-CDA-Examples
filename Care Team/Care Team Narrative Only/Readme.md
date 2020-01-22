@@ -1,8 +1,9 @@
 ##Approval Status 
 
 * Approval Status: Approved
-* Example Task Force: 4/27/2017
-* SDWG: 5/18/2017
+* Example Task Force: (previously approved provisional 4/27/2017) 
+* SDWG: (previously approved provisional 5/18/2017)
+
 
 ###C-CDA 2.1 Example:
 * No templates - not balloted within HL7
@@ -27,7 +28,7 @@
 
 ###Keywords
 
-* Provisional, CareTeam, Care Team
+* CareTeam, Care Team
 
 
 ###Permalink
