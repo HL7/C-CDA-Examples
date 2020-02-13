@@ -1,8 +1,8 @@
 ##Approval Status 
 
 * Approval Status: Approved
-* Example Task Force: 11/21/2013 and 3/5/2015
-* SDWG: 3/12/2015
+* Example Task Force: 11/21/2013 and 3/5/2015 and 2/13/2020
+* SDWG: 3/12/2015 - NEED NEW SDWG Endorsement
 
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
@@ -26,6 +26,9 @@
 ###Comments
 
 * This is an example of how to encode positive and negative, which are common data types returned form lab equipment. While some technologies may represent this as a type of ST (string), it is logical and easily possible to encode this information using SNOMED-CT. This would allow structured examination of this information downstream as well as comparison to a structured reference range, as shown in the example.
+* Previously the examples task force approved this sample with the data type Coded Ordinal (CO) with the example name: Result panel with two ordinal values of negative-positive. The examples task force received feedback during implementation that CO is not commonly used, and CD is preferred. Updated the sample name to Result panel with coded values of negative-positive
+
+
 ###Custodian
 
 * John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
