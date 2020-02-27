@@ -25,7 +25,7 @@
 
 ###Custodian
 
-* Brett Marquard brett@waveoneassociates.com (GitHub: brettmarquarde)
+* Brett Marquard brett@waveoneassociates.com (GitHub: brettmarquard)
 
 ###Keywords
 

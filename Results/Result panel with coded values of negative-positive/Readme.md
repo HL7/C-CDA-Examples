@@ -2,7 +2,7 @@
 
 * Approval Status: Approved
 * Example Task Force: 11/21/2013 and 3/5/2015 and 2/13/2020
-* SDWG: 3/12/2015 - NEED NEW SDWG Endorsement
+* SDWG: 3/12/2015. 2/27/2020
 
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
@@ -32,6 +32,7 @@
 ###Custodian
 
 * John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
+* Brett Marquard brett@waveoneassociates.com (GitHub: brettmarquard)
 
 
 
@@ -39,10 +40,3 @@
 
 * Results
 
-###Permalink
-
-* [http://cdasearch.hl7.org/examples/view/f7deea8bd578955d2dd64a3cb814f215f93b8e47](http://cdasearch.hl7.org/examples/view/f7deea8bd578955d2dd64a3cb814f215f93b8e47)
-
-###Links
-
-* [Result panel with two ordinal values of negative-positive(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Result%20panel%20with%20two%20ordinal%20values%20of%20negative-positive/Result%20panel%20with%20two%20ordinal%20values%20of%20negative-positive%28C-CDA2.1%29.xml)
