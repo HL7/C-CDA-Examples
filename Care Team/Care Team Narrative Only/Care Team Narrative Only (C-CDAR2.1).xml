@@ -1,4 +1,5 @@
 <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.500" extension="2019-07-01"/>
     <code code="85847-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
         displayName="Patient Care team information"/>
     <!-- Other possible types of Care Teams include:
