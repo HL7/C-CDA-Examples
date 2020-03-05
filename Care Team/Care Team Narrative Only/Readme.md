@@ -1,12 +1,12 @@
 ##Approval Status 
 
-* Approval Status: Approved
-* Example Task Force: (previously approved provisional 4/27/2017) 
-* SDWG: (previously approved provisional 5/18/2017)
+* Approval Status: Pending
+* Example Task Force: 3/05/2020  (previously approved provisional 4/27/2017) 
+* SDWG: XX (previously approved provisional 5/18/2017)
 
 
 ###C-CDA 2.1 Example:
-* No templates - not balloted within HL7
+* 2.16.840.1.113883.10.20.22.2.500:2019-07-01
 
 ###Reference to full CDA sample:
 * Empty CCD
@@ -17,7 +17,7 @@
 
 ###Comments
 
-* This is an example of how to send a Care Team with narrative only
+* This is an example of how to send a Care Team with narrative only. Updated 3/5/2020 with proper templateId.
 
 ###Custodian
 
