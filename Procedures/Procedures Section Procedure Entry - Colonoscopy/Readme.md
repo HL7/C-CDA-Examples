@@ -32,3 +32,8 @@
 * procedure
 
 
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/b1784b68-4372-4511-adea-eb6f8790df9e](http://cdasearch.hl7.org/examples/view/b1784b68-4372-4511-adea-eb6f8790df9e)
