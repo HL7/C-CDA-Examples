@@ -23,14 +23,15 @@
 		</table>
 	</text>
 	<entry typeCode="DRIV">
-		<!-- Procedures should be used for care that directly changes the patient's physical state. Colonoscopy with/without Biopsy -->
-		<!-- The Procedures section records the Procedure is complete.-->
-		<!-- Biopsies/test/results from the Procedure are expected in the results section-->
+		<!-- Procedures should be used for care that directly changes the patient's physical state. -->
+                <!-- Colonoscopy with/without Biopsy is appropriate here -->
+		<!-- The Procedures section records all completed Procedures -->
+		<!-- Biopsies/test/results from the Procedure are expected in the results section -->
 		<procedure moodCode="EVN" classCode="PROC">
 			<templateId root="2.16.840.1.113883.10.20.22.4.14" />
 			<templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
 			<id root="56a76ee2-c5a9-4c69-be93-0461bd98691c"/>
-			<code code="73761001" displayName="Colonoscopy"
+			<code code="25732003" displayName="Colonoscopy and biopsy of colon"
 				codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
 				<originalText>
 					<reference value="#ProcedureDesc1"/>
