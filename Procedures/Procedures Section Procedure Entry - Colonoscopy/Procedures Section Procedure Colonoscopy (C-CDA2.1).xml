@@ -31,7 +31,7 @@
 			<templateId root="2.16.840.1.113883.10.20.22.4.14" />
 			<templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
 			<id root="56a76ee2-c5a9-4c69-be93-0461bd98691c"/>
-			<code code="25732003" displayName="Colonoscopy and biopsy of colon"
+			<code code="25732003" displayName="Fiberoptic colonoscopy with biopsy"
 				codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
 				<originalText>
 					<reference value="#ProcedureDesc1"/>
