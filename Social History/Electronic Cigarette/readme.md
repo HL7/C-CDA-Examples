@@ -22,3 +22,7 @@
 
 ### Keywords: 
 * eCigs, electronic cigarettes, nicotine
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/6b53c8dd-c353-457b-97b1-349e2238e875](http://cdasearch.hl7.org/examples/view/6b53c8dd-c353-457b-97b1-349e2238e875)
