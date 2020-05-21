@@ -22,3 +22,7 @@
 
 ### Keywords: 
 * COVID, coronavirus, result, positive, negative
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/8ec9a797-c4d4-4204-9636-49166b8927df](http://cdasearch.hl7.org/examples/view/8ec9a797-c4d4-4204-9636-49166b8927df)
