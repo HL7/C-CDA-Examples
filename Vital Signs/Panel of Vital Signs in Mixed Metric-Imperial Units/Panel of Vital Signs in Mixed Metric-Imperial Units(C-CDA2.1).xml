@@ -152,7 +152,7 @@
 					<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
 					<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 					<id root="1c1f89f1-8e93-4a46-b37f-9434f99727b8"/>
-					<code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+					<code code="29463-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
 						displayName="WEIGHT"/>
 					<text>
 						<reference value="#Weight_2"/>
