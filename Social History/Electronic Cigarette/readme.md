@@ -1,7 +1,7 @@
 ## Approval Status
-* Approval Status: Pending
+* Approval Status: Approved
 * Examples Task Force: 12/19/2019
-* Structured Documents: Pending
+* Structured Documents: 5/28/2020
 
 ### Template Examples (for inclusion in C-CDA): 
 * Social History Section 2.16.840.1.113883.10.20.22.2.17:2015-08-01 
