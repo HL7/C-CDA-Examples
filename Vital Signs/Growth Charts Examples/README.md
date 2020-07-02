@@ -22,7 +22,7 @@
 
 ### Comments
 * This example illustrates three vital sign observations with LOINC codes and reference growth chart names for BMI percentile, weight-for-length percentile, and head circumference percentile. or example, this illustrates how to send that a child's BMI percentile is 45 %, and that the CDC (Boys 2-20 years) growth chart was used to determine the value.
-* [Pediatric Vital Signs](https://docs.google.com/presentation/d/1R0QQyQZ1_vnmABAQZJd9IJUIYTw8iUXddglNOTdcHug/edit#slide=id.p) chart to help developers include the appropriate reference range.
+* [Pediatric Vital Signs](https://docs.google.com/presentation/d/1R0QQyQZ1_vnmABAQZJd9IJUIYTw8iUXddglNOTdcHug/edit?usp=sharing) chart to help developers include the appropriate reference range.
 
 ### Custodian
 * Rachel Johnson (rjohnson@epic.com)
