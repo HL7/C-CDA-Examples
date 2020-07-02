@@ -7,11 +7,9 @@
 
 ### C-CDA 2.1 Example Templates
 
-* "2.16.840.1.113883.10.20.22.2.4.1" - Vital Sign Section
-
-* "2.16.840.1.113883.10.20.22.4.26" - Vital Sign Organizer
-
-* "2.16.840.1.113883.10.20.22.4.27" - Vital Sign Observation
+* 2.16.840.1.113883.10.20.22.2.4.1 - Vital Sign Section
+* 2.16.840.1.113883.10.20.22.4.26 - Vital Sign Organizer
+* 2.16.840.1.113883.10.20.22.4.27 - Vital Sign Observation
 
 ### Reference to Full Document Example: 
 
@@ -27,6 +25,3 @@
 
 ### Keyword
 * Vital,Sign,Growth,Chart
-
-### Permalink
-* TBD
