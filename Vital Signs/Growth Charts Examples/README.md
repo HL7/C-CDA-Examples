@@ -25,3 +25,8 @@
 
 ### Keyword
 * Vital,Sign,Growth,Chart
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/e848bcb8-bdf2-4a9d-8d13-96bc5d80296b](http://cdasearch.hl7.org/examples/view/e848bcb8-bdf2-4a9d-8d13-96bc5d80296b)
