@@ -1,5 +1,3 @@
-# USCDI-Growth-Chart-C-CDA-Example
-
 ## Approval Status
 
 * Status: Pending
