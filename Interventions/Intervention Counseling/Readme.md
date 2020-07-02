@@ -36,3 +36,8 @@
 
 * procedure activity act, intervention
 
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/05236a45-68cc-42d1-bd49-5ba00cdd9373](http://cdasearch.hl7.org/examples/view/05236a45-68cc-42d1-bd49-5ba00cdd9373)
