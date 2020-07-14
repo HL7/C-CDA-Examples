@@ -28,3 +28,8 @@
 ###Keywords
 
 * C-CDA Care Plan
+
+
+### Permalink 
+
+* [http://cdasearch.hl7.org/examples/view/d0a295b5-479d-4ce0-a850-d9d19e8e7d07](http://cdasearch.hl7.org/examples/view/d0a295b5-479d-4ce0-a850-d9d19e8e7d07)
