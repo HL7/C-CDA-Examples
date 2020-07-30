@@ -1,8 +1,8 @@
 ## Approval Status
 
-* Status: Pending
-* Task Force Approval Date: 6/25/2020
-* SDWG Approval Date: MM/DD/YYYY
+* Approval Status: Approved
+* Example Task Force: 6/25/2020
+* SDWG: 7/9/2020
 
 
 ### C-CDA 2.1 Example Templates
@@ -11,7 +11,8 @@
 * 2.16.840.1.113883.10.20.22.4.26 - Vital Sign Organizer
 * 2.16.840.1.113883.10.20.22.4.27 - Vital Sign Observation
 
-### Reference to Full Document Example: 
+### Reference to full CDA sample:
+* Problems in empty CCD
 
 ### Reference to Online Validator Used
 * https://sitenv.org/sandbox-ccda/ccda-validator
