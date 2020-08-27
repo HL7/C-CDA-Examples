@@ -1,0 +1,243 @@
+<component>
+  <structuredBody>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.23" extension="2014-06-09"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.23"/>
+        <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+        <title>Medical Equipment</title>
+        <text>
+          <table>
+            <colgroup>
+              <col width="40%"/>
+              <col width="20%"/>
+              <col width="40%"/>
+            </colgroup>
+            <tbody styleCode="xRowGroup" ID="_9d1b9efd-baff-45b2-8033-cdf2fc02c35f">
+              <tr ID="_8d8065c7-e42f-4b85-961d-c87947fc1b7d">
+                <!-- Example Task Force members stated they DO NOT include a procedure unknown row -->
+                <!-- Example Task Force added to be faithful to CDA rules to have Narrative match Entries -->
+                <!-- Example Task Force will submit a comment to Structured Documents to NOT require a Procedure Activity Procedure for Implanted Medical Equipment -->
+                <td>
+                  <content styleCode="xContentWrapping">Procedure Unknown</content>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <content styleCode="xContentWrapping" ID="_d92f7e16-385c-4079-b9c8-adfb2525ef6c">Breast Implant</content>
+                </td>
+                <td>
+                  <content styleCode="xLabel xSecondary">Date: </content>
+                  <content styleCode="xSecondary ">14-Jul-2020</content>
+                  <br/>
+                </td>
+                <td/>
+              </tr>
+              <tr ID="_2350e0a1-5ffb-4b6d-ba9f-be489d9dfc2f">
+                <td>
+                  <content styleCode="xIndent"> •</content>
+                  <content styleCode="xContentWrapping">
+                    <content>#BrandName_1</content>
+                    <br/>
+                    <content>#CompanyName_1</content>
+                    <br/>
+                    <content>(GSI) 1.3.160 00999998998989</content>
+                    <br/>
+                    <content styleCode="xLabel">Serial: </content>
+                    <content>#SerialNumber_1</content>
+                    <br/>
+                  </content>
+                </td>
+                <td>
+                  <content styleCode="xLabel">Expires: </content>
+                  <content>15-Oct-2022</content>
+                  <br/>
+                  <content styleCode="xLabel">Mfd: </content>
+                  <content>15-Oct-2018</content>
+                  <br/>
+                  <content styleCode="xLabel">Model: </content>
+                  <content>#ModelNumber_1</content>
+                  <br/>
+                  <content styleCode="xLabel">Lot: </content>
+                  <content>#LotOrBatchNumber_1</content>
+                  <br/>
+                </td>
+                <td>
+                  <content styleCode="xLabel">Overall Status: </content>
+                  <content>Breast Implant (L)</content>
+                  <br/>
+                  <content styleCode="xLabel">Implant Status: </content>
+                  <content>#ImplantableDeviceStatus_1</content>
+                  <br/>
+                  <content styleCode="xLabel">MRI: </content>
+                  <content styleCode="xAlert">Labeling does not contain MRI Safety Information</content>
+                  <br/>
+                  <content styleCode="xLabel">Latex: </content>
+                  <content>Not Made with Natural Rubber Latex</content>
+                  <br/>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </text>
+        <entry>
+          <procedure classCode="PROC" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+            <id root="1.2.840.114350.1.13.5552.1.7.2.737780" extension="6239942"/>
+            <!-- Historical Procedure and Patient/Provider is unsure of the Procedure done -->
+            <code nullFlavor="UNK">
+              <originalText>
+                <reference value="#_8d8065c7-e42f-4b85-961d-c87947fc1b7d"/>
+              </originalText>
+            </code>
+            <text>
+              <reference value="#_9d1b9efd-baff-45b2-8033-cdf2fc02c35f"/>
+            </text>
+            <!-- Procedure is completed, even though the implant is still active -->
+            <statusCode code="completed"/>
+            <!--time stamp as a point in time-->
+            <effectiveTime value="20200714"/> 
+            <!--Product Instance Template-->
+            <participant typeCode="DEV">
+              <participantRole classCode="MANU">
+                <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+                <id root="2.16.840.1.113883.3.3719" extension="(01)00848486001048(11)160542(10)ABC999" assigningAuthorityName="FDA"/>
+                <playingDevice>
+                  <code code="2282003" codeSystem="2.16.840.1.113883.6.96" displayName="Breast Implant" codeSystemName="SNOMED CT">
+                    <!-- Add original text with device type to playingDevice.code-->
+                    <originalText>
+                      <reference value="#_d92f7e16-385c-4079-b9c8-adfb2525ef6c"/>
+                    </originalText>
+                  </code>
+                </playingDevice>									
+                <!-- From Product Instance template: The scopingEntity/id should correspond to FDA or the appropriate issuing agency. -->
+                <scopingEntity>
+                  <id root="2.16.840.1.113883.3.3719"/>
+                </scopingEntity>
+              </participantRole>
+            </participant>
+            <entryRelationship typeCode="COMP">
+              <!-- UDI Organizer -->
+              <organizer classCode="CLUSTER" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.311" extension="2019-06-21"/>
+                <id root="2.16.840.1.113883.3.3719" extension="(01)00848486001048(11)160542(10)ABC999" assigningAuthorityName="FDA"/>
+                <code code="74711-3" codeSystem="2.16.840.1.113883.6.1"/>
+                <sdtc:text>
+                  <reference value="#_2350e0a1-5ffb-4b6d-ba9f-be489d9dfc2f"/>
+                </sdtc:text>
+                <statusCode code="completed"/>
+                <!-- Device Identifier -->
+                <component>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.304" extension="2019-06-21"/>
+                    <code code="C101722" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                    <value xsi:type="II" root="1.3.160" extension="00999998998989" assigningAuthorityName="GSI" displayable="true"/>
+                  </observation>
+                </component>
+                <!-- Lot or Batch Number -->
+                <component>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.315" extension="2019-06-21"/>
+                    <code code="C101672" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                    <value xsi:type="ST">#LotOrBatchNumber_1</value>
+                  </observation>
+                </component>
+                <!-- Serial Number -->
+                <component>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.319" extension="2019-06-21"/>
+                    <code code="C101671" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                    <value xsi:type="ST">#SerialNumber_1</value>
+                  </observation>
+                </component>
+                <!-- Manufacturing Date -->
+                <component>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.316" extension="2019-06-21"/>
+                    <code code="C101669" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                    <value xsi:type="TS" value="20181015"/>
+                  </observation>
+                </component>
+                <!-- Expiration Date -->
+                <component>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.309" extension="2019-06-21"/>
+                    <code code="C101670" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                    <value xsi:type="TS" value="20221015"/>
+                  </observation>
+                </component>
+                <!-- Distinct Identification -->
+                <component>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.308" extension="2019-06-21"/>
+                    <code code="C113843" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                    <value xsi:type="ST">#DistinctIdentificationCode_1</value>
+                  </observation>
+                </component>
+                <!-- Brand Name -->
+                <component>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.301" extension="2019-06-21"/>
+                    <code code="C71898" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                    <value xsi:type="ST">#BrandName_1</value>
+                  </observation>
+                </component>
+                <!-- Model Number -->
+                <component>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.317" extension="2019-06-21"/>
+                    <code code="C99285" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                    <value xsi:type="ST">#ModelNumber_1</value>
+                  </observation>
+                </component>
+                <!-- Company Name -->
+                <component>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.303" extension="2019-06-21"/>
+                    <code code="C54131" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                    <value xsi:type="ST">#CompanyName_1</value>
+                  </observation>
+                </component>
+                <!-- Catalog Number -->
+                <component>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.302" extension="2019-06-21"/>
+                    <code code="C99286" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                    <value xsi:type="ST">#CatalogNumber_1</value>
+                  </observation>
+                </component>
+                <!-- Latex Safety -->
+                <component>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.314" extension="2019-06-21"/>
+                    <code code="C160938" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                    <value xsi:type="CD" code="C106038" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Not Made with Natural Rubber Latex" codeSystemName="NCI Thesaurus"/>
+                  </observation>
+                </component>
+                <!-- MRI Safety Status -->
+                <component>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.318" extension="2019-06-21"/>
+                    <code code="C106044" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                    <value xsi:type="CD" code="C113844" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Labeling does not contain MRI Safety Information" codeSystemName="NCI Thesaurus"/>
+                  </observation>
+                </component>
+                <!-- Device Status Implanted -->
+                <component>
+                  <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.305" extension="2019-06-04"/>
+                    <code code="C160939" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                    <value xsi:type="CD" code="C160942" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Reduced Function" codeSystemName="NCI Thesaurus">
+                      <originalText>#ImplantableDeviceStatus_1</originalText>
+                    </value>
+                  </observation>
+                </component>
+              </organizer>
+            </entryRelationship>
+          </procedure>
+        </entry>
+      </section>
+    </component>
+  </structuredBody>
+</component>
