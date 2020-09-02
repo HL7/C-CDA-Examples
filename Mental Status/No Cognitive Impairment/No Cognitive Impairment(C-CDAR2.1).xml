@@ -50,7 +50,7 @@
             </text>
             <statusCode code="completed"/>
             <effectiveTime>
-                <low value="20120815173215+0500"/>
+                <low value="20120815173215-0500"/>
             </effectiveTime>
             <value xsi:type="CD" code="66557003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="No Impairment">
                 <originalText>

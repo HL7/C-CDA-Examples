@@ -47,8 +47,8 @@
 				codeSystemName="LOINC"/>
 			<statusCode code="completed"/>
 			<effectiveTime>
-				<low value="201310200908+0500"/>
-				<high value="201310200908+0500"/>
+				<low value="201310200908-0500"/>
+				<high value="201310200908-0500"/>
 			</effectiveTime>
 			<!-- This component just here to show a typical PQ result, as well as the basis for an atypical LDL result -->
 			<component>
@@ -62,7 +62,7 @@
 						<reference value="#result1"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="201310200908+0500"/>
+					<effectiveTime value="201310200908-0500"/>
 					<value xsi:type="PQ" value="450" unit="mg/dL"/>
 					<!-- optional interpretationCode/referenceRange snipped for brevity -->
 				</observation>
@@ -78,7 +78,7 @@
 						<reference value="#result2"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="201310200908+0500"/>
+					<effectiveTime value="201310200908-0500"/>
 					<!-- When non-numeric, value is a string and does not contain the units.
                          If coming from a v2 message, this contains only the value from OBX-5 -->
 					<value xsi:type="ST">Unable to calculate</value>

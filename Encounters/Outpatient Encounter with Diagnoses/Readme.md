@@ -4,7 +4,7 @@
 * SDWG: 5/28/2015
 * SDWG C-CDA R2.1 Upgrade: 2/2/2017
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 * 2.16.840.1.113883.10.20.22.2.22.1:2015-08-01
 * 2.16.840.1.113883.10.20.22.4.49:2015-08-01
 * 2.16.840.1.113883.10.20.22.4.32
@@ -17,7 +17,7 @@
 
 ###Validation location
 
-* [SITE](https://sitenv.org/c-cda-validator)
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
 
 
 ###Comments
@@ -36,6 +36,10 @@
 * Outpatient Visit, Encounter Diagnoses, performer, visit location
 
 
-###Permalink 
+###Permalink
 
-* b45996a0828df13d805e978e6a57f4d509354641
+* [http://cdasearch.hl7.org/examples/view/b45996a0828df13d805e978e6a57f4d509354641](http://cdasearch.hl7.org/examples/view/b45996a0828df13d805e978e6a57f4d509354641)
+
+###Links
+
+* [Outpatient Encounter with Diagnoses(C-CDA R2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Encounters/Outpatient%20Encounter%20with%20Diagnoses/Outpatient%20Encounter%20with%20Diagnoses%28C-CDA%20R2.1%29.xml)

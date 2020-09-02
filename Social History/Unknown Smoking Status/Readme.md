@@ -6,7 +6,7 @@
 
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * 2.16.840.1.113883.10.20.22.2.17:2015-08-01
 * 2.16.840.1.113883.10.20.22.4.78:2014-06-09
@@ -18,7 +18,7 @@
 
 ###Validation location
 
-* [SITE](https://sitenv.org/c-cda-validator)
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
 
 
 ###Comments
@@ -34,6 +34,10 @@
 
 * Social History, Smoking
 
-###Permalink 
+###Permalink
 
-* c9c2657d9d9de7824b3afdc51cc442a8b899aea5
+* [http://cdasearch.hl7.org/examples/view/c9c2657d9d9de7824b3afdc51cc442a8b899aea5](http://cdasearch.hl7.org/examples/view/c9c2657d9d9de7824b3afdc51cc442a8b899aea5)
+
+###Links
+
+* [Unknown Smoking Status(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Social%20History/Unknown%20Smoking%20Status/Unknown%20Smoking%20Status%28C-CDA2.1%29.xml)

@@ -6,7 +6,7 @@
 
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 
 * Family History Organizer (2.16.840.1.113883.10.20.22.4.45 2015-08-01)
@@ -18,7 +18,7 @@
 
 ###Validation location
 
-* [SITE](https://sitenv.org/c-cda-validator)
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
 
 
 ###Comments
@@ -26,11 +26,15 @@
 * Example shows generic "family history of x" and "no family history of x" with commentary suggesting better options.
 ###Custodian
 
-* Benjamin Flessner, benjamin@epic.com (GitHub: benjaminflessner)
+* Benjamin Flessner (GitHub: benjaminflessner)
 ###Keywords
 
 * Family History
 
-###Permalink 
+###Permalink
 
-* f2debf5f44979854a710367c7b2c9c9f2911f4ea
+* [http://cdasearch.hl7.org/examples/view/f2debf5f44979854a710367c7b2c9c9f2911f4ea](http://cdasearch.hl7.org/examples/view/f2debf5f44979854a710367c7b2c9c9f2911f4ea)
+
+###Links
+
+* [Family History generic(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Family%20History/Family%20History%20Generic/Family%20History%20generic%28C-CDA2.1%29.xml)

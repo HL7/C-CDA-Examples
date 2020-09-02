@@ -1,0 +1,43 @@
+<recordTarget>
+    <!-- Examples of how systems send names and logical display order -->
+    <!-- Note: This snippet omits other data elements required to meet C-CDA R2.1 requirements (telecom, address, etc.) -->
+    <patientRole>
+        <id nullFlavor="NI" />
+        <patient>
+            <!-- This is okay; "Robin Taylor" is a logical display order -->
+            <name>
+                <given>Robin</given>
+                <family>Taylor</family>
+            </name>
+            <!-- This is okay; "Taylor, Robin" implies Lastname, Firstname ordering in the US -->
+            <name>
+                <family>Taylor</family>
+                <delimiter>, </delimiter>
+                <given>Robin</given>
+            </name>
+            <!-- This is okay; "Dr. Robin Taylor" is a logical display order -->
+            <name>
+                <prefix qualifier="AC TITLE">Dr. </prefix><!-- Space in element is intentional (see CDA R2.0 Section 2.23.4) -->
+                <given>Robin</given>
+                <family>Taylor</family>
+            </name>
+            <!-- This is okay; "Robin Taylor MD" is a logical display order -->
+            <name>
+                <given>Robin</given>
+                <family>Taylor</family>
+                <suffix qualifier="AC TITLE"> MD</suffix><!-- Space in element is intentional (see CDA R2.0 Section 2.23.4) -->
+            </name>
+            <!-- Don't do this; "Robin Taylor Dr." isn't a logical display order -->
+            <name>
+                <given>Robin</given>
+                <family>Taylor</family>
+                <prefix qualifier="AC TITLE">Dr. </prefix><!-- Space in element is intentional -->
+            </name>            
+            <!-- Don't do this; "Taylor Robin" is confusing (is Taylor the given name?) -->
+            <name>
+                <family>Taylor</family>
+                <given>Robin</given>
+            </name>
+        </patient>
+    </patientRole>
+</recordTarget>

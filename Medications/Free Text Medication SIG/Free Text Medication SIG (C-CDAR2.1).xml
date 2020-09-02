@@ -1,0 +1,69 @@
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+    <!-- Medication Section (entries required) -->
+    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication Use"/>
+    <title>MEDICATIONS</title>
+    <text>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Medication</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ID="Medication_1">
+                     <td><!-- This shouldn't be used if a medication substance can be coded -->
+                        <content ID="MedicationSIG">Experimental '150 cure-all drug', take one tab by mouth every morning</content>
+                    </td>
+                    <td>Jan 10 2018</td>
+                    <td>Active</td> 
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+            <id root="1310a2d3-f888-4722-b4c4-a3c5911ac7f9"/>
+            <text>
+                <!-- This reference refers to medication information in unstructured portion of section-->
+                <reference value="#Medication_1"/>
+            </text>
+            <statusCode code="active"/>
+            <!-- This first effectiveTime shows that medication was added on January 10, 2018 (not known to have stopped)-->
+            <effectiveTime xsi:type="IVL_TS">
+                <low value="20180110"/>
+                <high nullFlavor="NI"/>
+            </effectiveTime>
+           <doseQuantity nullFlavor="UNK"/>
+            <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                    <!-- ** Medication information ** -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                    <manufacturedMaterial>
+                        <!-- Medications should be specified at a level corresponding to prescription when possible - coded information isn't available -->
+                        <code nullFlavor="UNK"/>                      
+                    </manufacturedMaterial>
+                </manufacturedProduct>
+            </consumable>
+            <entryRelationship typeCode="COMP">
+                <substanceAdministration classCode="SBADM" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.147"/>
+                    <code code="76662-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medication Instructions"/>
+                    <text>
+                        <!-- Reference into the section.text to a tag that ONLY contains free text SIG -->
+                        <reference value="#MedicationSIG"/>
+                    </text>
+                    <consumable>
+                        <manufacturedProduct>
+                            <manufacturedLabeledDrug nullFlavor="NA"/>
+                        </manufacturedProduct>
+                    </consumable>
+                </substanceAdministration>
+            </entryRelationship>
+        </substanceAdministration>
+    </entry>
+</section>
+

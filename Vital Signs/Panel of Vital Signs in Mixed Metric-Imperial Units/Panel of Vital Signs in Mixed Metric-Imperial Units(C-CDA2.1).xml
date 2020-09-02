@@ -50,7 +50,7 @@
 					codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 			</code>
 			<statusCode code="completed"/>
-			<effectiveTime value="20140520193605+0500"/>
+			<effectiveTime value="20140520193605-0500"/>
 			<!-- Each vital sign should be its own component. Note that systolic and diastolic BP must be separate components-->
 			<component>
 				<observation classCode="OBS" moodCode="EVN">
@@ -64,7 +64,7 @@
 						<reference value="#SystolicBP_2"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<!-- Example of Value with UCUM unit. Note that mixed metric and imperial units used in this example-->
 					<value xsi:type="PQ" value="120" unit="mm[Hg]"/>
 					<!-- Additional information of interpretation and/or reference range may be included but are optional-->
@@ -81,7 +81,7 @@
 						<reference value="#DiastolicBP_2"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<value xsi:type="PQ" value="80" unit="mm[Hg]"/>
 				</observation>
 			</component>
@@ -96,7 +96,7 @@
 						<reference value="#Pulse_2"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<value xsi:type="PQ" value="80" unit="/min"/>
 				</observation>
 			</component>
@@ -111,7 +111,7 @@
 						<reference value="#Temp_2"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<!-- Note the UCUM conformant way to specify degrees Farenheit-->
 					<value xsi:type="PQ" value="99.0" unit="[degF]"/>
 				</observation>
@@ -127,7 +127,7 @@
 						<reference value="#RespRate_2"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<value xsi:type="PQ" value="18" unit="/min"/>
 				</observation>
 			</component>
@@ -142,7 +142,7 @@
 						<reference value="#Height_2"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<!-- Note the UCUM conformant way to specify inches-->
 					<value xsi:type="PQ" value="67" unit="[in_us]"/>
 				</observation>
@@ -152,13 +152,13 @@
 					<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
 					<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 					<id root="1c1f89f1-8e93-4a46-b37f-9434f99727b8"/>
-					<code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+					<code code="29463-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
 						displayName="WEIGHT"/>
 					<text>
 						<reference value="#Weight_2"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<!-- Note the UCUM conformant way to specify pounds-->
 					<value xsi:type="PQ" value="239.9" unit="[lb_av]"/>
 				</observation>
@@ -174,7 +174,7 @@
 						<reference value="#BMI_2"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<value xsi:type="PQ" value="37.58" unit="kg/m2"/>
 				</observation>
 			</component>
@@ -189,7 +189,7 @@
 						<reference value="#SPO2_2"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20140520193605+0500"/>
+					<effectiveTime value="20140520193605-0500"/>
 					<value xsi:type="PQ" value="98" unit="%"/>
 					</observation>
 			</component>

@@ -21,7 +21,7 @@
 	<code code="34133-9" displayName="Summarization of Episode Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 	<!-- Title of this document -->
 	<title>CCD Demonstrating Replacement of Prior CCD</title>
-	<effectiveTime value="20150722180000-0500" />
+	<effectiveTime value="201507221800-0500" />
 	<confidentialityCode code="N" displayName="normal" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality"/>
 	<languageCode code="en-US"/>
 	<setId root="004bb033-b948-4f4c-b5bf-a8dbd7d8dd40"/>

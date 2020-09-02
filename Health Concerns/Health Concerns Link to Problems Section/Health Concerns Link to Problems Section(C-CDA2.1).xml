@@ -51,8 +51,10 @@
                         <effectiveTime>
                             <low value="20140302"/>
                         </effectiveTime>
-                        <value xsi:type="ED">
-                            <reference value="#Concern1Issue1" />
+                        <value xsi:type="CD" nullFlavor="OTH">
+			<originalText>
+				<reference value="#Concern1Issue1" />
+			</originalText>
                         </value>						
                     </observation>
                 </entryRelationship>
@@ -111,7 +113,7 @@
                 <statusCode code="active" />
                 <effectiveTime>
                     <!-- This equates to the time the concern was authored in the patient's chart. This may frequently be an EHR timestamp-->
-                    <low value="20140302124536+0500" />
+                    <low value="20140302124536-0500" />
                 </effectiveTime>
                 <entryRelationship typeCode="SUBJ">
                     <observation classCode="OBS" moodCode="EVN">

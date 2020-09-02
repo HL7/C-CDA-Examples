@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+    <!-- Allergies (entries required) section template -->
+    <code code="48765-2" codeSystem="2.16.840.1.113883.6.1"/>
+    <title>Allergies, Adverse Reactions and Alerts</title>
+    <text>
+        <table>
+            <thead>
+                <tr>
+                    <th>Allergen</th>
+                    <th>Reaction</th>
+                    <th>Reaction Severity</th>
+                    <th>Documentation Date</th>
+                    <th>Onset Date</th> <!-- Date from observation/effectiveTime-->
+                </tr>
+            </thead>
+            <tbody>
+                <tr ID="allergy1">
+                    <td ID="allergy1allergen">talazoparib</td>
+                    <td>
+                        <content ID="allergy1reaction">Dyspnea</content>
+                    </td>
+                    <td>
+                        <content ID="allergy1reactionseverity">Moderate</content>
+                    </td>
+                    <td>April 1 2018</td>
+                    <td>April 1 2018</td>
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    <entry typeCode="DRIV">
+        <act classCode="ACT" moodCode="EVN">
+            <!-- ** Allergy problem act ** -->
+            <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01"/>
+            <id root="4a2ac5fc-0c85-4223-baee-c2e254803974"/>
+            <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+            <text>
+			  <reference value="#allergy1"/>
+			</text>
+            <statusCode code="active"/>
+            <!-- This is the time stamp for when the allergy was first documented as a concern-->
+            <effectiveTime value="20180401103001-0500"/> <!-- Apr 1, 2018 at 10:30a ET -->
+            <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <time value="20180401"/>
+                <assignedAuthor>
+                    <id extension="12345" root="2.16.840.1.113883.4.6"/>
+                    <code code="207RX0202X" codeSystem="2.16.840.1.113883.6.101"
+                        codeSystemName="Health Care Provider Taxonomy" displayName="Medical Oncology"/>
+                    <telecom use="WP" value="tel:555-555-1234"/>
+                    <assignedPerson>
+                        <name>
+                            <given>Adam</given>
+                            <family>Anydoc</family>
+                        </name>
+                    </assignedPerson>
+                </assignedAuthor>
+            </author>
+            <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                    <!-- allergy observation template -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09"/>
+                    <id root="4d3ac7ac-0c32-8712-b3fe-c2b268808259"/>
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                    <text>
+                        <reference value="#allergy1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <!-- This is the time stamp for the biological onset of the allergy. -->
+                    <!-- Just the year is shown since a specific month and date was not reported -->
+                    <effectiveTime>
+                        <low value="20180401"/>
+                        <high value="20180401"/>
+                    </effectiveTime>
+                    <!-- This specifies that the allergy is to a medication in contrast to other allergies (substance) -->
+                    <value xsi:type="CD" code="59037007" displayName="Drug intolerance (disorder)"
+                        codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                    <author>
+                        <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                        <time value="20180401"/>
+                        <assignedAuthor>
+                            <id extension="99999999" root="2.16.840.1.113883.4.6"/>
+                            <code code="207RX0202X" codeSystem="2.16.840.1.113883.6.101"
+                                codeSystemName="Health Care Provider Taxonomy"
+                                displayName="Medical Oncology"/>
+                            <telecom use="WP" value="tel:555-555-1234"/>
+                            <assignedPerson>
+                                <name>
+                                    <given>Adam</given>
+                                    <family>Anydoc</family>
+                                </name>
+                            </assignedPerson>
+                        </assignedAuthor>
+                    </author>
+                    <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                            <playingEntity classCode="MMAT">
+                                <!-- This drug is a clinical trial drug not approved by FDA so there is no RxNorm code -->
+                                <!-- For non-drug substances that don't have a concept you may omit codeSystem -->
+                                <!-- Use OTH and originalText -->
+                                <code nullFlavor="OTH" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"> 
+                                    <originalText>
+                                        <reference value="#allergy1allergen"/>
+                                    </originalText>
+                                    <!-- Include clinical trial code or local code and codeSystem in translation-->
+                                   <translation code="C95733" displayName="talazoparib" 
+                                                codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI"/>
+                                </code>
+                            </playingEntity>
+                        </participantRole>
+                    </participant>
+                    <!-- Only one reaction recorded here, although multiple reactions may be recorded to the same substance ([0..*] -->
+                    <entryRelationship typeCode="MFST" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <!-- Reaction Observation template -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.9" extension="2014-06-09"/>
+                            <id root="fea0b775-f3fe-4e0a-9c4f-4a5c235c2af0"/>
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                            
+                            <statusCode code="completed"/>
+                            <effectiveTime value = "20180401"/>
+                            <value xsi:type="CD" code="267036007" codeSystem="2.16.840.1.113883.6.96"
+                                codeSystemName="SNOMED CT" displayName="Dyspnea">
+                                <originalText>
+                                    <reference value="#allergy1reaction"/>
+                                </originalText>
+                            </value>
+                            <entryRelationship typeCode="SUBJ" inversionInd="true">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- Severity Observation template -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.8" extension="2014-06-09"/>
+                                    <code code="SEV" codeSystem="2.16.840.1.113883.5.4"
+                                        codeSystemName="ActCode"/>
+                                    <text>
+                                        <reference value="#allergy1reactionseverity"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <value xsi:type="CD" code="6736007" codeSystem="2.16.840.1.113883.6.96"
+                                        codeSystemName="SNOMED CT" displayName="Moderate"/>
+                                </observation>
+                            </entryRelationship>
+                        </observation>
+                    </entryRelationship>
+                   </observation>
+            </entryRelationship>
+        </act>
+    </entry>
+</section>

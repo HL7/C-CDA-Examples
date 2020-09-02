@@ -1,0 +1,110 @@
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.4.50" extension="2014-06-09"/>
+	<code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medical Equipment"/>
+	<title>Medical Equipment</title>
+	<text>
+		<table>
+			<colgroup>
+				<col width="25%"/>
+				<col width="25%"/>
+				<col width="25%"/>
+				<col width="25%"/>
+			</colgroup>
+			<thead>
+				<tr>
+					<th>Medical Equipment</th>
+					<th>Device Identifier (if applicable)</th>
+					<th>Model / Serial / Lot (if applicable)</th>
+					<th>Date</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ID="equipment1">
+					<td><content ID="equipment1item" styleCode="header">Eye Glasses</content></td>
+					<td>n/a</td>
+					<td>n/a</td>
+					<td>(01/13/2000 -  )</td>
+				</tr>
+				<tr ID="equipment2">
+					<td><content ID="equipment2item" styleCode="header">Cane</content></td>
+					<td>n/a</td>
+					<td>n/a</td>
+					<td>(04/13/2016 -  )</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry>
+		<supply classCode="SPLY" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.50"/>
+			<templateId root="2.16.840.1.113883.10.20.22.4.50" extension="2014-06-09"/>
+			<id extension="2744999" root="1.2.840.999.1.13.5552.1.7.2.99999"/>
+			<text>
+				<reference value="#equipment1"></reference>
+			</text>
+			<statusCode code="active"/>
+			<!-- low represents when person first received supply -->
+			<effectiveTime xsi:type="IVL_TS">
+				<low value="20000113"/>
+				<high nullFlavor="NI"/> <!-- patient use of supply is ongoing -->
+			</effectiveTime>
+			<!--<quantity value="1" /> -->
+			<participant typeCode="PRD">
+				<participantRole classCode="MANU">
+					<templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+					<!-- id of supply is unknown; An FDA identifier is not required since this is a non-implantable device  -->
+					<id root="1.2.840.999.1.13.5552.1.7.2.999991" nullFlavor="UNK"/> 
+					<playingDevice>
+						<code code="50121007" codeSystem="2.16.840.1.113883.6.96" displayName="Eyeglasses">
+							<originalText>
+								<reference value="#equipment1item"/>
+							</originalText>
+						</code>
+					</playingDevice>
+					<!-- Required by Product Instance Template -->
+					<scopingEntity>
+						<id nullFlavor="NA"/>
+					</scopingEntity>
+				</participantRole>
+			</participant>
+		</supply>
+	</entry>
+	<entry>
+		<supply classCode="SPLY" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.50"/>
+			<templateId root="2.16.840.1.113883.10.20.22.4.50" extension="2014-06-09"/>
+			<id extension="2744999" root="1.2.840.999.1.13.5552.1.7.2.99999"/>
+			<!-- Template does not require a code, but best practice is to include a meaningful code for the type of entry. -->
+			<code code="425399007" codeSystem="2.16.840.1.113883.6.96" 
+				codeSystemName="SNOMEDCT" displayName="Durable medical equipment (physical object)">
+			</code>
+			<text>
+				<reference value="#equipment2"></reference>
+			</text>
+			<statusCode code="active"/>
+			<!-- low represents when person first received supply -->
+			<effectiveTime xsi:type="IVL_TS">
+				<low value="20160413"/>
+				<high nullFlavor="NI"/> <!-- patient use of supply is ongoing -->
+			</effectiveTime>
+			<participant typeCode="PRD">
+				<participantRole classCode="MANU">
+					<templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+					<!-- id of supply is unknown; An FDA identifier is not required since this is a non-implantable device  -->
+					<id root="1.2.840.999.1.13.5552.1.7.2.999991" nullFlavor="UNK"/>
+					<playingDevice>
+						<code code="87405001" codeSystem="2.16.840.1.113883.6.96" displayName="Cane">
+							<originalText>
+								<reference value="#equipment2item"/>
+							</originalText>
+						</code>
+					</playingDevice>
+					<!-- Required by Product Instance Template -->
+					<scopingEntity>
+						<id  nullFlavor="NA"/>
+					</scopingEntity>
+				</participantRole>
+			</participant>
+		</supply>
+	</entry>
+</section>

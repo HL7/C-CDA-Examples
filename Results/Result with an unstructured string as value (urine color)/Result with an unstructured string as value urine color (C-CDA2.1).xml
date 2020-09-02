@@ -41,8 +41,8 @@
 				codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 			<statusCode code="completed"/>
 			<effectiveTime>
-				<low value="201310230910+0500"/>
-				<high value="201310230910+0500"/>
+				<low value="201310230910-0500"/>
+				<high value="201310230910-0500"/>
 			</effectiveTime>
 			<component>
 				<observation classCode="OBS" moodCode="EVN">
@@ -55,7 +55,7 @@
 						<reference value="#Result1"/>
 					</text>
 					<statusCode code="completed"/>
-					<effectiveTime value="20131023090823+0500"/>
+					<effectiveTime value="20131023090823-0500"/>
 					<!-- Representing a result returned as unstructured string-->
 					<!-- There may be a code for this and other colors, but this would be practice when the code is not provided or unkonwn-->
 					<value xsi:type="ST">Amber</value>

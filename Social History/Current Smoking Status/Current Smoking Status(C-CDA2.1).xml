@@ -6,7 +6,7 @@
 	<text>
 		<list>
 			<caption>Smoking Status</caption>
-			<item>
+			<item ID="SmokingStatus">
 				<content>Status: Current every day smoker</content>
 				<content ID="SmokingDetail1">Detail: Moderate smoker (10-19 cigs/day)</content>
 				<content>Started: 1992</content>
@@ -22,15 +22,18 @@
 			<templateId root="2.16.840.1.113883.10.20.22.4.78"  extension="2014-06-09"/>
 			<id extension="123456789" root="2.16.840.1.113883.19" />
 			<code code="72166-2" codeSystem="2.16.840.1.113883.6.1" displayName="Tobacco smoking status NHIS"/>
+			<text>
+				<reference value="#SmokingStatus" />
+			</text>
 			<statusCode code="completed"/>
-			<effectiveTime value="201406061032+0500"/>
+			<effectiveTime value="201406061032-0500"/>
 			<!--Note: This template represents a “snapshot in time” observation, simply reflecting what the patient’s 
 					current smoking status is at the time of the observation. As a result, the effectiveTime is constrained 
 					to just a time stamp, and will approximately correspond with the author/time. -->			
 			<value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="449868002" displayName="Current every day smoker"/>
 			<author>
 				<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-				<time value="201406061032+0500"/>
+				<time value="201406061032-0500"/>
 				<assignedAuthor>
 					<id root="2.16.840.1.113883.4.6" extension="99999999"/>
 					<!-- Root means NPI number. -->
@@ -55,6 +58,9 @@
 			<templateId root="2.16.840.1.113883.10.20.22.4.85" extension="2014-06-09" />
 			<id root="45efb604-7049-4a2e-ad33-d38556c9636c" />
 			<code code="11367-0" codeSystem="2.16.840.1.113883.6.1" displayName="History of tobacco use" />
+			<text>
+				<reference value="#SmokingStatus" />
+			</text>
 			<statusCode code="completed" />
 			<effectiveTime>
 				<!-- To record a current smoker, the effectiveTime/low will define the time the patient started 
@@ -64,7 +70,7 @@
 			<value xsi:type="CD" code="160604004" displayName="Moderate cigarette smoker, 10-19/day" codeSystem="2.16.840.1.113883.6.96" />
 			<author>
 				<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-				<time value="201406061032+0500"/>
+				<time value="201406061032-0500"/>
 				<assignedAuthor>
 					<id root="2.16.840.1.113883.4.6" extension="99999999"/>
 					<!-- Root means NPI number. -->

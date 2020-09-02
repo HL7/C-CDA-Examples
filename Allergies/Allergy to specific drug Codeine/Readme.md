@@ -7,7 +7,7 @@
 
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * 2.16.840.1.113883.10.20.22.2.6.1:2015-08-01
 
@@ -23,7 +23,7 @@
 
 ###Validation location
 
-* [SITE](https://sitenv.org/c-cda-validator)
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
 
 
 ###Comments
@@ -37,6 +37,10 @@
 * substance, allergies, allergy
 
 
-###Permalink 
+###Permalink
 
-* a27d1dc926d1a104a321c883d845af26583d06a9
+* [http://cdasearch.hl7.org/examples/view/a27d1dc926d1a104a321c883d845af26583d06a9](http://cdasearch.hl7.org/examples/view/a27d1dc926d1a104a321c883d845af26583d06a9)
+
+###Links
+
+* [Allergy to specific drug Codeine(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Allergies/Allergy%20to%20specific%20drug%20Codeine/Allergy%20to%20specific%20drug%20Codeine%28C-CDA2.1%29.xml)

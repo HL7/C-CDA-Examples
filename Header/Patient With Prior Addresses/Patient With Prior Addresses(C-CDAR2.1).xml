@@ -1,0 +1,70 @@
+<!-- recordTarget example from C-CDA-Examples/Header/Patient Demographic Information 
+    added multiple home addresses
+-->
+<recordTarget>
+    <patientRole>
+        <id root="2.16.840.1.113883.3.6132" extension="345678912-0154"/>
+        <!-- HP is "primary home" from valueSet 2.16.840.1.113883.1.11.10637 
+             and in this instance represents patient's current address -->
+        <addr use="HP">
+            <streetAddressLine>152 Creek Lane</streetAddressLine>
+            <city>Shelburne</city>
+            <state>VT</state>
+            <postalCode>05455</postalCode>
+            <country>US</country>
+            <useablePeriod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_TS">
+                <low value="20110822"/>
+            </useablePeriod>
+            <!-- It is permissible to omit a low element to indicate current residence -->
+            <!-- It is permissible to omit a high element or use nullFlavor='NA' -->
+        </addr>
+        <addr use="H">
+            <streetAddressLine>191 S OAK AVE</streetAddressLine>
+            <city>BURLINGTON</city>
+            <state>VT</state>
+            <postalCode>05422</postalCode>
+            <country>US</country>
+            <useablePeriod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_TS">
+                <low value="20110131"/>
+                <high value="20110821"/>
+            </useablePeriod>
+        </addr>
+        <addr use="H">
+            <streetAddressLine>1141 W MAIN AVE</streetAddressLine>
+            <city>CHICAGO</city>
+            <state>IL</state>
+            <postalCode>60613</postalCode>
+            <country>US</country>
+            <useablePeriod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_TS">
+                <low value="20070513"/>
+                <high value="20110130"/>
+            </useablePeriod>
+        </addr>
+        <telecom value="tel:+1(565)867-5309" use="MC"/>
+        <telecom value="mailto://adam@diameterhealth.com" use="WP"/>
+        <patient>
+            <name use="L">
+                <given>Adam</given>
+                <family>Everyman</family>
+            </name>
+            <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Male" codeSystemName="AdministrativeGender"/>
+            <birthTime value="19621022"/>
+            <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus"/>
+            <religiousAffiliationCode code="1013" displayName="Christian (non-Catholic, non-specific)" codeSystem="2.16.840.1.113883.5.1076" codeSystemName="HL7 Religious Affiliation"/>
+            <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="OMB Standards for Race and Ethnicity"/>
+            <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="OMB Standards for Race and Ethnicity"/>
+            <languageCommunication>
+                <languageCode code="eng"/>
+                <modeCode code="ESP" displayName="Expressed spoken" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
+                <proficiencyLevelCode code="E" displayName="Excellent" codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency"/>
+                <preferenceInd value="true"/>
+            </languageCommunication>
+            <languageCommunication>
+                <languageCode code="ita"/>
+                <modeCode code="ESP" displayName="Expressed spoken" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
+                <proficiencyLevelCode code="G" displayName="Good" codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency"/>
+                <preferenceInd value="false"/>
+            </languageCommunication>
+        </patient>
+    </patientRole>
+</recordTarget>

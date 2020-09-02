@@ -1,0 +1,113 @@
+<!-- 
+    the following example to represent a medication order for 6mg (2 milliliter of the antitussive, noscapine 3 mg/mL) 
+    oral liquid every 4 to 6 hours prn for cough for 10 days.
+-->
+
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+    <!-- Medication Section (entries required) -->
+    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication Use"/>
+    <title>MEDICATIONS</title>
+    <text>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Medication</th>
+                    <th>Instructions</th>
+                    <th>Dosage</th>
+                    <th>Effective Dates (start - stop)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ID="Medication_1">
+                    <td>
+                        <content ID="MedicationName_1" xmlns="urn:hl7-org:v3">Noscapine 3 MG/ML Oral Solution</content>
+                    </td>
+                    <td>
+                        <content>every 4 to 6 hours prn for cough</content>
+                    </td>
+                    <td>
+                        <content>6 mg (2 mL)</content>
+                    </td>
+                    <td>12/21/17 - 12/31/17</td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="INT">  <!-- the medication is intended to be taken -->
+            <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+            <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+            <id root="7482acd4-693c-4539-b0db-f21c2bf477c0" extension="1015" />
+            <text>
+                <!-- This reference refers to medication information in unstructured portion of section-->
+                <reference value="#Medication_1"/>
+            </text>
+            <statusCode code="active" />  <!-- the medication order is currently active -->
+            <effectiveTime xsi:type="IVL_TS">
+                <low value="20171221"/>
+                <high value="20171231"/>  <!-- take this medication for 10 days -->
+            </effectiveTime>
+            <!-- This second effectiveTime represents QID from medication sig. -->
+            <!-- InstitutionSpecified = "true" means that it can be given 4 times per day but need not be exactly timed to every 6 hours-->
+            <!-- InstitutionSpecified = "false" would mean that timing needs to be administered exactly as structured-->
+            <!-- Operator "A" means that this timing information is in addition to previous effectiveTime information provided-->
+            <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period xsi:type="IVL_PQ">
+                    <low value="4" unit="h"/>
+                    <high value="6" unit="h"/>
+                </period>
+            </effectiveTime>
+            <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="ORAL"/>
+            <doseQuantity value="2" unit="mL" />
+            <consumable>
+                <manufacturedProduct classCode="MANU">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                    <id root="7482acd4-693c-4539-b0db-f21c2bf477c0" extension="1015" />
+                    <manufacturedMaterial>
+                        <code code="102494" codeSystem="2.16.840.1.113883.6.88" displayName="Noscapine 3 MG/ML Oral Solution" />
+                    </manufacturedMaterial>
+                </manufacturedProduct>
+            </consumable>
+            <author>
+                <!-- Time the author noted that patient is on medication -->
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <time value="201712210930-0500"/>
+                <assignedAuthor>
+                    <id extension="54321" root="2.16.840.1.113883.4.6"/>
+                    <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101"
+                        codeSystemName="NUCC" displayName="Family Medicine"/>
+                    <addr>
+                        <streetAddressLine>9987 ProviderPractice St.</streetAddressLine>
+                        <city>Anytown</city>
+                        <state>NY</state>
+                        <postalCode>99999</postalCode>
+                        <country>US</country>
+                    </addr>
+                    <telecom value="tel:+1(212)123-4567" use="WP"/>
+                    <assignedPerson>
+                        <name>
+                            <given>Vincent</given>
+                            <family>Boombatz</family>
+                            <suffix>MD</suffix>
+                        </name>
+                    </assignedPerson>
+                </assignedAuthor>
+            </author>
+            <precondition typeCode="PRCN">
+                <criterion>
+                    <!-- ** Precondition for substance administration ** -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.25"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.25" extension="2014-06-09"/>
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                    <!-- pre-condition PRN for cough specified for this medication. -->
+                    <value xsi:type="CD" code="49727002" codeSystem="2.16.840.1.113883.6.96" displayName="cough" />
+                </criterion>
+            </precondition>
+        </substanceAdministration>        
+    </entry>
+</section>

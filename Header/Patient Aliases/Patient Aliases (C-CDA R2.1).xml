@@ -1,0 +1,19 @@
+<recordTarget>
+    <!-- Best practices for sending one or more patient aliases -->
+    <!-- Note: This snippet omits other data elements required to meet C-CDA R2.1 requirements (telecom, address, etc.) -->
+    <patientRole>
+        <id nullFlavor="NI" />
+        <patient>
+            <!-- SHALL contain at least one [1..*] US Realm Patient Name (CONF:1198-5284) -->
+            <name use="L">
+                <given>Deirdre</given>
+                <family>Jones</family>
+            </name>
+            <!-- Recommended way to send patient aliases; note @use='P' (pseudonym) and given/@qualifier='CL' (callme) -->
+            <name use="P">
+                <given qualifier="CL">Dee</given>
+                <family>Jones</family>
+            </name>
+        </patient>
+    </patientRole>
+</recordTarget>

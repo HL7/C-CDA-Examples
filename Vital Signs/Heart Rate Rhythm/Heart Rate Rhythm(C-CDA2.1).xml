@@ -1,0 +1,80 @@
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.4.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01"/>
+	<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+		displayName="Vital Signs"/>
+	<title>Vital Signs (Last Filed)</title>
+	<text>
+		<table>
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>Pulse</th>
+					<th>Heart Rhythm</th>
+					<!-- other vitals signs could exist here-->
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>05/20/2014 7:36pm</td>
+					<td ID="Pulse_1">80 /min</td>
+					<td ID="Pulsequalifier_1">Heart irregularly irregular</td>
+					<!-- other vitals sign values could exist here-->
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry typeCode="DRIV">
+		<!-- When a set of vital signs are recorded together, include them in single clustered organizer-->
+		<organizer classCode="CLUSTER" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+			<templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+			<id extension="21688133041015158234"
+				root="2.16.840.1.113883.3.42.126.100001.19"/>
+			<code code="46680005" displayName="Vital Signs" codeSystem="2.16.840.1.113883.6.96"
+				codeSystemName="SNOMED CT">
+				<translation code="74728-7"
+					displayName="Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel "
+					codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+			</code>
+			<statusCode code="completed"/>
+			<effectiveTime value="20140520193605-0600"/>
+			<!-- Each vital sign should be its own component. -->
+			<component>
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+					<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+					<id extension="216881330410151584"
+						root="2.16.840.1.113883.3.42.126.100001.19"/>
+					<code code="8867-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+						displayName="HEART RATE"/>
+					<text>
+						<reference value="#Pulse_1"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20140520193605-0600"/>
+					<value xsi:type="PQ" value="80" unit="/min"/>
+				</observation>
+			</component>
+			<component>
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+					<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+					<id extension="216881330410151"
+						root="2.16.840.1.113883.3.42.126.100001.19"/>
+					<code xsi:type="CE" codeSystem="2.16.840.1.113883.6.1"
+						codeSystemName="LOINC"
+						code="8884-9" displayName="Heart rate rhythm"/>
+					<text>
+						<reference value="#Pulsequalifier_1"/>
+					</text>
+					<statusCode code="completed" />
+					<effectiveTime value="20140520193605-0600" />
+					<value xsi:type="CE" codeSystem="2.16.840.1.113883.6.96"
+						codeSystemName="SNOMED CT" code="248651005"
+						displayName="Heart irregularly irregular (finding)"/>
+				</observation>
+			</component>
+		</organizer>
+	</entry>
+</section>

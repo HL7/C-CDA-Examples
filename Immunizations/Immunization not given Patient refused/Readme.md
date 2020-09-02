@@ -6,7 +6,7 @@
 
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 * 2.16.840.1.113883.10.20.22.2.2:2015-08-01
 
@@ -21,7 +21,7 @@
 
 ###Validation location
 
-* [SITE](https://sitenv.org/c-cda-validator)
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
 
 
 ###Comments
@@ -32,8 +32,12 @@
 *  Brett Marquard, brett@riverrockassociates.com (GitHub: brettmarquard)
 ###Keywords
 
-* substance, immunzation 
+* substance, immunzation
 
-###Permalink 
+###Permalink
 
-* 8afc26db2966f01c1c065075e44031d29a865414
+* [http://cdasearch.hl7.org/examples/view/8afc26db2966f01c1c065075e44031d29a865414](http://cdasearch.hl7.org/examples/view/8afc26db2966f01c1c065075e44031d29a865414)
+
+###Links
+
+* [Immunization not given Patient refused(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Immunizations/Immunization%20not%20given%20Patient%20refused/Immunization%20not%20given%20Patient%20refused%28C-CDA2.1%29.xml)

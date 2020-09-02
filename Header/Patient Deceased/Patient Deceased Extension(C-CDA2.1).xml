@@ -1,0 +1,41 @@
+<recordTarget>
+    <patientRole>
+        <!-- The @root OID below (which is fictional) would be specific to an institution's record identifier system. -->  
+        <id root="2.16.840.1.113883.3.6132" extension="345678912-0154"/>
+        <!-- HP is "primary home" from valueSet 2.16.840.1.113883.1.11.10637 -->
+        <addr use="HP">
+            <streetAddressLine>1437 Jennyhill Ln.</streetAddressLine>
+            <city>Hollywood</city>
+            <postalCode>90068</postalCode>
+            <state>CA</state>
+            <country>US</country>
+        </addr>
+        <!-- While this may be included, you may choose to exclude contact information on deceased patients -->
+        <telecom nullFlavor="NA" />
+        <patient>
+            <name use="L">
+                <given>Adam</given>
+                <family>Deadman</family>
+            </name>
+            <!-- Sex at birth and gender identity may be specified in social history -->
+            <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Male" codeSystemName="AdministrativeGender"/>
+            <birthTime value="19521022"/>
+            <!-- A full CDA example may include the Deceased Observation to indicate cause of death -->
+            <!-- A Deceased Observation may be present in any section -- Problem List is a suitable location -->
+            <sdtc:deceasedInd value="true" />
+            <sdtc:deceasedTime value="20180315" />
+            <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus"/>
+            <religiousAffiliationCode code="1013" displayName="Christian (non-Catholic, non-specific)" codeSystem="2.16.840.1.113883.5.1076" codeSystemName="HL7 Religious Affiliation"/>
+            <!-- CDC Race and Ethnicity code set contains the five minimum race and ethnicity categories defined by OMB Standards -->
+            <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="OMB Standards for Race and Ethnicity"/>
+            <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="OMB Standards for Race and Ethnicity"/>
+            <languageCommunication>
+                <languageCode code="en-US"/>
+                <!-- "eng" is ISO 639-2 alpha-3 code for "English" -->
+                <modeCode code="ESP" displayName="Expressed spoken" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
+                <proficiencyLevelCode code="E" displayName="Excellent" codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency"/>
+                <preferenceInd value="true"/>
+            </languageCommunication>
+        </patient>
+    </patientRole>
+</recordTarget>

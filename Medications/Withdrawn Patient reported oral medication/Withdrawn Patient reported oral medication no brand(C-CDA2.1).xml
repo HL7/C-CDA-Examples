@@ -1,0 +1,128 @@
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+    <!-- Medication Section (entries required) -->
+    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication Use"/>
+    <title>MEDICATIONS</title>
+    <text>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Medication</th>
+                    <th>Instructions</th>
+                    <th>Dosage</th>
+                    <th>Effective Dates (start - stop)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ID="Medication_8">
+                    <td>
+                        <content ID="MedicationName_8" xmlns="urn:hl7-org:v3">ECHINACEA ANGUSTIFOLIA Extract</content>
+                    </td>
+                    <td>
+                        <content>Patient reports taking once daily</content>
+                    </td>
+                    <td>
+                        <content>unknown</content>
+                    </td>
+                    <td>Apr-09-2014 - </td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="EVN">
+            <!-- This medication use case is a medication that the patient reports taking. If it has been already administered use moodCode = "EVN". -->
+            <!-- If it is intended use "INT" or if ordered drug then use moodCode = "RQO" - Dependencies exist between moodCode, statusCode and effectiveTime  -->
+            <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+            <id root="2d359e3f-f2cb-437d-b004-9324d077be4e"/>
+            <text>
+                <!-- This reference refers to medication information in unstructured portion of section-->
+                <reference value="#Medication_8"/>
+            </text>
+            <statusCode code="completed"/>
+            <!-- This first effectiveTime shows that medication was added on April 9, 2014 which patient stopped taking on May 10-->
+            <effectiveTime xsi:type="IVL_TS">
+                <low value="20140409"/>
+                <!-- The timing of last second of the day indicates the drug was taken on this day.-->
+                <high value="20140510235959-0500"/>
+            </effectiveTime>
+            <!-- The second effectiveTime specifies dose frequency, which can be either a period (PIVL_TS) or event (EIVL_TS). -->
+            <!-- InstituionSpecified = "false" is implied in ths omission of this attribute and means that it must be administered exactly once per day-->
+            <!-- InstituionSpecified = "true" which is not default would mean that receiving institution has flexibility in dosing schedule-->
+            <!-- Operator "A" means that this timing information is in addition to previous effectiveTime information provided-->
+            <!-- The patient reports taking the medication once per day -->
+            <effectiveTime xsi:type="PIVL_TS" operator="A">
+                <period value="1" unit="d" />
+            </effectiveTime>
+            <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+            <!-- The patient could not recall any specific dosage of this medication-->
+            <!-- The nullFlavor of UNK is used since there is a dosage but it is unknown by C-CDA document author-->
+            <doseQuantity nullFlavor="UNK"/>
+            <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                    <!-- ** Medication information ** -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                    <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <!-- Medications should be specified at a level corresponding to prescription when possible -->
+                        <!-- Since this is an over-the-counter supplement and the patient could not describe brand or dose, ingredient is shown-->
+                        <code code="236121" codeSystem="2.16.840.1.113883.6.88" displayName="ECHINACEA ANGUSTIFOLIA Extract" codeSystemName="RxNorm">
+                            <originalText>
+                                <reference value="#MedicationName_8"/>
+                            </originalText>
+                        </code>
+                    </manufacturedMaterial>
+                </manufacturedProduct>
+            </consumable>
+            <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                <!-- Time the author noted that patient is on no medications -->
+                <time value="20140409"/>
+                <assignedAuthor>
+                    <id extension="66666" root="2.16.840.1.113883.4.6"/>
+                    <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
+                        codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+                    <addr>
+                        <streetAddressLine>6666 StreetName St.</streetAddressLine>
+                        <city>Silver Spring</city>
+                        <state>MD</state>
+                        <postalCode>20901</postalCode>
+                        <country>US</country>
+                    </addr>
+                    <telecom value="tel:+1(301)666-6666" use="WP"/>
+                    <assignedPerson>
+                        <name>
+                            <given>Heartly</given>
+                            <family>Sixer</family>
+                            <suffix>MD</suffix>
+                        </name>
+                    </assignedPerson>
+                </assignedAuthor>
+            </author>
+            <informant>
+                <assignedEntity>
+                    <!-- This is a fictional OID and identifier for the patient. This should be adapted to local implementation -->
+                    <id root="2.16.840.1.113883.3.3208.101.2" extension="20130607100800-Patient1"/>
+                    <addr use="HP">
+                        <streetAddressLine>1111 StreetName St.</streetAddressLine>
+                        <city>Silver Spring</city>
+                        <state>MD</state>
+                        <postalCode>20901</postalCode>
+                        <country>US</country>
+                    </addr>
+                    <telecom value="tel:+1(301)111-1111" use="HP"/>
+                    <assignedPerson>
+                        <name>
+                            <given>Patient</given>
+                            <family>One</family>
+                        </name>
+                    </assignedPerson>
+                </assignedEntity>
+            </informant>
+        </substanceAdministration>
+    </entry>
+</section>

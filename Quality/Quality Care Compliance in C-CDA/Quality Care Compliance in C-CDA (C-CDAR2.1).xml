@@ -1,0 +1,372 @@
+<!-- This is an example of how to include quality measure information (i.e. reported outcome) on an individual patient's C-CDA document -->
+<!-- This uses templates from the QRDA1, which is not part of C-CDA, but is CDA conformant and a US national standard for reporting quality measures -->
+<!-- This uses the "Measure Section" section where the measure logic (i.e. denominators, numerators) is imparted using negationInd of measure component observations -->
+<!-- This example complies with QRDA1 measure section but may not suitable for formal quality reporting. Refer to QRDA1 and QRDA3 implementation guidance for more details -->
+<!-- Per discussion with clinical quality improvement CQI workgroup, this aligns with how the Joint Commission encourage patient level reporting in QRDA1 documents.-->
+<!-- For the measures shown in this section, the clinical data that support quality calculation could be included in other sections (e.g. problems, procedures, results, vital signs, etc.) --> 
+<!-- Thank you to Yan Heras and Gay Dolin + other members in CQI workgroup for consultation and feedback regarding the sample --> 
+<section>
+    <!-- Templates use QRDA1 1.1 (current reporting standard as of 2018)-->
+    <!-- This is the templateId for Measure Section -->
+    <templateId root="2.16.840.1.113883.10.20.24.2.2"/>
+    <!-- This is the templateId for Measure Section QDM -->
+    <templateId root="2.16.840.1.113883.10.20.24.2.3"/>
+    <code code="55186-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+        displayName="Measure Document"/>
+    <title>Measure Section</title>
+    <text>
+        <table border="1" width="100%">
+            <colgroup>
+                <col width="25%"/>
+                <col width="15%"/>
+                <col width="15%"/>
+                <col width="15%"/>
+                <col width="15%"/>
+                <col width="15%"/>
+            </colgroup>
+            <thead>
+                <tr>
+                    <!-- Note that this table is an illustrative format that could be used to show human readable measure, but others are possible -->
+                    <!-- Each of the fields in this table will be represented in machine readable as well as human readable -->
+                    <!-- For each of the measures we provide a descriptive name and an identifier -->
+                    <!-- The machine-readable entries will have the unique GUID reference to this measure, if available -->
+                    <!-- An alternative option would be to include additional description of measure logic or a link in the human-readable -->
+                    <!-- This aligns with what may be typically included from QRDA1 document -->
+                    <th>Measure</th>
+                    <th>Compliance Period</th>
+                    <th>Denominator</th>
+                    <th>Numerator</th>
+                    <th>Exclusion</th>
+                    <th>Outcome</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Diabetes Hemoglobin A1c Poor Control (CMS 122v5)</td>
+                    <td>Jan 1 2017 - Dec 31 2017</td>
+                    <td>yes</td>
+                    <td>no</td>
+                    <td>no</td>
+                    <!-- Compliance here is based on  the measure "Improvement Notation" from the Measure Definition-->
+                    <!-- Since lower = better for CMS 122v5, a false numerator means complaince-->
+                    <td>Compliant</td>
+                </tr>
+                <tr>
+                    <td>Colorectal Cancer Screening (CMS 130v5)</td>
+                    <td>Jan 1 2017 - Dec 31 2017</td>
+                    <td>yes</td>
+                    <td>no</td>
+                    <td>no</td>
+                    <!-- Compliance here is based on  the measure "Improvement Notation" from the Measure Definition-->
+                    <!-- Since higher = better for CMS 130v5, a false numerator means non-complaince-->
+                    <td>Non-Compliant</td>
+                </tr>
+                <tr>
+                    <td>Pneumococcal Vaccination Status for Older Adults (CMS 127v5)</td>
+                    <td>Jan 1 2017 - Dec 31 2017</td>
+                    <td>no</td>
+                    <td>no</td>
+                    <td>no</td>
+                    <!-- Since this patient was not in initial population of measure, we show as not eligible-->
+                    <td>Not Eligible</td>
+                </tr>
+                <tr>
+                    <td>Controlling High Blood Pressure (CMS 165v5)</td>
+                    <td>Jan 1 2017 - Dec 31 2017</td>
+                    <td>yes</td>
+                    <td>excl</td>
+                    <td>yes</td>
+                    <!-- Patient excluded due to a condition (e.g. Stage 5 CKD) -->
+                    <td>Excluded</td>
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    <!-- In a pilot with 8 different sites, the real-value was in providing human readable content in a timely manner -->
+    <!-- This proposed entry aligns with QRDA standards but is unlikely to be imported in near-term -->
+    <entry>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.24.3.98"/>
+            <templateId root="2.16.840.1.113883.10.20.24.3.97"/>
+            <id root="d7345481-b3b5-41e0-a8ae-03dabcd4a0cc"/>
+            <!-- A code element could be added to make organizer type more specific, although was not in the original QRDA1 template -->
+            <statusCode code="completed"/>
+            <!-- This reference contains the version specific identifier of the measure-->
+            <reference typeCode="REFR">
+                <externalDocument classCode="DOC" moodCode="EVN">
+                    <!-- This includes an uuid identifier of the measure logic, For this example, -->
+                    <!-- see https://ecqi.healthit.gov/system/files/ecqm/measures/CMS122v5_SimpleXML_2.xml -->
+                    <!-- If no GUID available, the measure would at least be described using the text field -->
+                    <id root="2.16.840.1.113883.4.738"
+                        extension="40280381-51f0-825b-0152-229afff616ee"/>
+                    <code code="57024-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="Health Quality Measure Document"/>
+                    <text>Diabetes: Hemoglobin A1c Poor Control</text>
+                    <versionNumber value="5"/>
+                </externalDocument>
+            </reference>
+            <!-- To specify the time period, a component has been added with the appropriate QRDA1 template (Reporting Parameters Act) -->
+            <component>
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.17.3.8"/>
+                    <id root="55a43e20-6463-46eb-81c3-9a3a1ad41225"/>
+                    <code code="252116004" codeSystem="2.16.840.1.113883.6.96"
+                        displayName="Observation Parameters"/>
+                    <effectiveTime>
+                        <!-- The beginning of the reporting period. -->
+                        <low value="20170101000000-0500"/>
+                        <!-- The ending of the reporting period. -->
+                        <high value="20171231235959-0500"/>
+                    </effectiveTime>
+                </act>
+            </component>
+            <component>
+                <!-- Set negationInd="false" to assert that the criteria are met by the included data. 
+				Set negationInd="true" to assert that the criteria are NOT met by the included data. 
+				Since this patient is in the denominator, negationInd is set to false -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ActCode" displayName="Assertion"/>
+                    <value xsi:type="CD" code="DENOM" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ObservationValue" displayName="denominator"/>
+                    <reference typeCode="REFR">
+                        <externalObservation classCode="OBS" moodCode="EVN">
+                            <!-- This includes an version specific uuid identifier of the specific measure component, (denominator in this example) -->
+                            <!-- For example, see https://ecqi.healthit.gov/system/files/2017_CMS_QRDA_III_Eligible_Clinicians_and_EP_IG_final_0703_508.pdf -->
+                            <id root="D346DA74-F16E-4159-BEDF-331BA28837FB"/>
+                        </externalObservation>
+                    </reference>
+                </observation>
+            </component>
+            <component>
+                <!-- Since this patient is NOT in the numerator, negationInd is set to true -->
+                <!-- Note that this measure has inverted numerator logic (i.e. numerator events are non-compliant)-->
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ActCode" displayName="Assertion"/>
+                    <value xsi:type="CD" code="NUMER" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ObservationValue" displayName="numerator"/>
+                    <reference typeCode="REFR">
+                        <externalObservation classCode="OBS" moodCode="EVN">
+                            <id root="6D01A564-58CC-4CF5-929F-B83583701BFE"/>
+                        </externalObservation>
+                    </reference>
+                </observation>
+            </component>
+            <!-- no denominator exclusion criteria available for this measure so omitted -->
+        </organizer>
+    </entry>
+    <entry>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.24.3.98"/>
+            <templateId root="2.16.840.1.113883.10.20.24.3.97"/>
+            <id root="32f4ad75-9e16-43f8-83f3-a1d906a147ab"/>
+            <statusCode code="completed"/>
+            <reference typeCode="REFR">
+                <externalDocument classCode="DOC" moodCode="EVN">
+                    <id root="2.16.840.1.113883.4.738"
+                        extension="40280381-51f0-825b-0152-22a1e7e81737"/>
+                    <code code="57024-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="Health Quality Measure Document"/>
+                    <text>Colorectal Cancer Screening</text>
+                    <versionNumber value="5"/>
+                </externalDocument>
+            </reference>
+            <!-- To specify the time period, a component has been added with the appropriate QRDA1 template (Reporting Parameters Act) -->
+            <component>
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.17.3.8"/>
+                    <id root="55a43e20-6463-46eb-81c3-9a3a1ad41225"/>
+                    <code code="252116004" codeSystem="2.16.840.1.113883.6.96"
+                        displayName="Observation Parameters"/>
+                    <effectiveTime>
+                        <!-- The beginning of the reporting period. -->
+                        <low value="20170101000000-0500"/>
+                        <!-- The ending of the reporting period. -->
+                        <high value="20171231235959-0500"/>
+                    </effectiveTime>
+                </act>
+            </component>
+            <component>
+                <!-- Since this patient is in the denominator, negationInd is set to false -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ActCode" displayName="Assertion"/>
+                    <value xsi:type="CD" code="DENOM" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ObservationValue" displayName="denominator"/>
+                    <reference typeCode="REFR">
+                        <externalObservation classCode="OBS" moodCode="EVN">
+                            <id root="589C2FD6-6AA9-4AF8-9E1C-973170361917"/>
+                        </externalObservation>
+                    </reference>
+                </observation>
+            </component>
+            <component>
+                <!-- Since this patient is NOT in the numerator, negationInd is set to true -->
+                <!-- Note that this measure has typical numerator logic (i.e. numerator events are compliant)-->
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ActCode" displayName="Assertion"/>
+                    <value xsi:type="CD" code="NUMER" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ObservationValue" displayName="numerator"/>
+                    <reference typeCode="REFR">
+                        <externalObservation classCode="OBS" moodCode="EVN">
+                            <id root="52ADE511-39D4-4CBC-84B6-A82059741359"/>
+                        </externalObservation>
+                    </reference>
+                </observation>
+            </component>
+            <component>
+                <!-- Since this patient is NOT excluded, negationInd is set to true -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ActCode" displayName="Assertion"/>
+                    <value xsi:type="CD" code="DENEX" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ObservationValue" displayName="denominator exclusions"/>
+                    <reference typeCode="REFR">
+                        <externalObservation classCode="OBS" moodCode="EVN">
+                            <id root="93AA9C96-E1FE-435B-BA0B-FAF0C5592275"/>
+                        </externalObservation>
+                    </reference>
+                </observation>
+            </component>
+        </organizer>
+    </entry>
+    <entry>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.24.3.98"/>
+            <templateId root="2.16.840.1.113883.10.20.24.3.97"/>
+            <id root="f243a0e3-0590-4e86-85b7-2b49e86eb7c5"/>
+            <statusCode code="completed"/>
+            <reference typeCode="REFR">
+                <externalDocument classCode="DOC" moodCode="EVN">
+                    <id root="2.16.840.1.113883.4.738"
+                        extension="40280381-52fc-3a32-0153-1a646a2a0bfa"/>
+                    <code code="57024-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="Health Quality Measure Document"/>
+                    <text>Pneumonia Vaccination Status for Older Adults</text>
+                    <versionNumber value="5"/>
+                </externalDocument>
+            </reference>
+            <!-- To specify the time period, a component has been added with the appropriate QRDA1 template (Reporting Parameters Act) -->
+            <component>
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.17.3.8"/>
+                    <id root="55a43e20-6463-46eb-81c3-9a3a1ad41225"/>
+                    <code code="252116004" codeSystem="2.16.840.1.113883.6.96"
+                        displayName="Observation Parameters"/>
+                    <effectiveTime>
+                        <!-- The beginning of the reporting period. -->
+                        <low value="20170101000000-0500"/>
+                        <!-- The ending of the reporting period. -->
+                        <high value="20171231235959-0500"/>
+                    </effectiveTime>
+                </act>
+            </component>
+            <component>
+                <!-- Since this patient is NOT in the denominator, negationInd is set to true -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ActCode" displayName="Assertion"/>
+                    <value xsi:type="CD" code="DENOM" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ObservationValue" displayName="denominator"/>
+                    <reference typeCode="REFR">
+                        <externalObservation classCode="OBS" moodCode="EVN">
+                            <id root="B57EA797-15A1-4C60-B34C-BAE292FE3B76"/>
+                        </externalObservation>
+                    </reference>
+                </observation>
+            </component>
+            <component>
+                <!-- Since this patient is NOT in the numerator, negationInd is set to true -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ActCode" displayName="Assertion"/>
+                    <value xsi:type="CD" code="NUMER" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ObservationValue" displayName="numerator"/>
+                    <reference typeCode="REFR">
+                        <externalObservation classCode="OBS" moodCode="EVN">
+                            <id root="CBD0926D-6088-44EE-883C-0A0F9E77E2A1"/>
+                        </externalObservation>
+                    </reference>
+                </observation>
+            </component>
+            <!-- no denominator exclusion criteria available for this measure so omitted -->
+        </organizer>
+    </entry>
+    <entry>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.24.3.98"/>
+            <templateId root="2.16.840.1.113883.10.20.24.3.97"/>
+            <id root="ee940592-38b1-44fe-a74b-83e1a479d651"/>
+            <statusCode code="completed"/>
+            <reference typeCode="REFR">
+                <externalDocument classCode="DOC" moodCode="EVN">
+                    <id root="2.16.840.1.113883.4.738"
+                        extension="40280381-51f0-825b-0152-22b98cff181a"/>
+                    <code code="57024-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="Health Quality Measure Document"/>
+                    <text>Controlling High Blood Pressure</text>
+                    <versionNumber value="5"/>
+                </externalDocument>
+            </reference>
+            <!-- To specify the time period, a component has been added with the appropriate QRDA1 template (Reporting Parameters Act) -->
+            <component>
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.17.3.8"/>
+                    <id root="55a43e20-6463-46eb-81c3-9a3a1ad41225"/>
+                    <code code="252116004" codeSystem="2.16.840.1.113883.6.96"
+                        displayName="Observation Parameters"/>
+                    <effectiveTime>
+                        <!-- The beginning of the reporting period. -->
+                        <low value="20170101000000-0500"/>
+                        <!-- The ending of the reporting period. -->
+                        <high value="20171231235959-0500"/>
+                    </effectiveTime>
+                </act>
+            </component>
+            <component>
+                <!-- Since this patient is in the denominator, negationInd is set to false -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ActCode" displayName="Assertion"/>
+                    <value xsi:type="CD" code="DENOM" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ObservationValue" displayName="denominator"/>
+                    <reference typeCode="REFR">
+                        <externalObservation classCode="OBS" moodCode="EVN">
+                            <id root="E62FEBA3-0F98-460D-93CD-44314D7203A8"/>
+                        </externalObservation>
+                    </reference>
+                </observation>
+            </component>
+            <component>
+                <!-- Since this patient is excluded, they are NOT in numerator, negationInd is set to true-->
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ActCode" displayName="Assertion"/>
+                    <value xsi:type="CD" code="NUMER" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ObservationValue" displayName="numerator"/>
+                    <reference typeCode="REFR">
+                        <externalObservation classCode="OBS" moodCode="EVN">
+                            <id root="F9FEBF42-4B21-47A9-B03E-D2DA5CF8492B"/>
+                        </externalObservation>
+                    </reference>
+                </observation>
+            </component>
+            <component>
+                <!-- Since this patient is  excluded, negationInd is set to false -->
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ActCode" displayName="Assertion"/>
+                    <value xsi:type="CD" code="DENEX" codeSystem="2.16.840.1.113883.5.4"
+                        codeSystemName="ObservationValue" displayName="denominator exclusions"/>
+                    <reference typeCode="REFR">
+                        <externalObservation classCode="OBS" moodCode="EVN">
+                            <id root="55A6D5F3-2029-4896-B850-4C7894161D7D"/>
+                        </externalObservation>
+                    </reference>
+                </observation>
+            </component>
+        </organizer>
+    </entry>
+</section>

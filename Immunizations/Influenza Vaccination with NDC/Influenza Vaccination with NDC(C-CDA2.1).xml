@@ -1,0 +1,112 @@
+<component>
+    <section>
+        <!-- conforms to Immunizations section with entries optional -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.2"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.2" extension="2015-08-01"/>
+        <!-- Immunizations section with entries required -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.2.1"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.2.1" extension="2015-08-01"/>
+        <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+            displayName="History of immunizations"/>
+        <title>IMMUNIZATIONS</title>
+        <text>
+            <content ID="immunSect"/>
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Vaccine</th>
+                        <th>Lot Number</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ID="immun1">
+                        <td ID="ImmunizationProduct_100">Influenza, seasonal, injectable</td>
+                        <td>1</td>
+                        <td>8/15/2010</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </text>
+        <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                <!-- ** Immunization activity ** -->
+                <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+                <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01"/>
+                <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
+                <text>
+                    <reference value="#immun1"/>
+                </text>
+                <!-- Indicates the status of the substanceAdministartion -->
+                <statusCode code="completed"/>
+                <effectiveTime value="20100815"/>
+                <consumable>
+                    <manufacturedProduct classCode="MANU">
+                        <!-- ** Immunization medication information ** -->
+                        <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                        <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
+                        <manufacturedMaterial>
+                            <code code="141" codeSystem="2.16.840.1.113883.12.292"
+                                displayName="Influenza virus vaccine" codeSystemName="CVX">
+                                <originalText>
+                                    <reference value="#ImmunizationProduct_100"/>
+                                </originalText>
+                                <translation code="49281-0394-15" codeSystem="2.16.840.1.113883.6.69"
+												displayName="FLUZONE" codeSystemName="NDC"/>
+                            </code>                                           
+                            <lotNumberText>1</lotNumberText>
+                        </manufacturedMaterial>
+                    <!-- Optional manufacturerOrganization
+                    <manufacturerOrganization>
+                        <name>Health LS - Immuno Inc.</name>
+                    </manufacturerOrganization> -->
+                    </manufacturedProduct>  
+                </consumable>
+                  <!-- Optional Performer -->
+            <performer>
+                <assignedEntity>
+                    <id root="2.16.840.1.113883.19.5.9999.456" extension="2981824"/>
+                    <addr>
+                        <streetAddressLine>1021 Health Drive</streetAddressLine>
+                        <city>Ann Arbor</city>
+                        <state>MI</state>
+                        <postalCode>99099</postalCode>
+                        <country>US</country>
+                    </addr>
+                    <telecom nullFlavor="UNK"/>
+                    <assignedPerson>
+                        <name>
+                            <given>Amanda</given>
+                            <family>Assigned</family>
+                        </name>
+                    </assignedPerson>
+                    <representedOrganization>
+                        <id root="2.16.840.1.113883.19.5.9999.1394"/>
+                        <name>Good Health Clinic</name>
+                        <telecom nullFlavor="UNK"/>
+                        <addr nullFlavor="UNK"/>
+                    </representedOrganization>
+                </assignedEntity>
+            </performer> 
+              <!-- Optional Author -->
+                <author>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                    <time value="20100815"/>
+                    <assignedAuthor>
+                        <id extension="99999999" root="2.16.840.1.113883.4.6"/>
+                        <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine" />
+                        <telecom use="WP" value="tel:555-555-1002"/>
+                        <assignedPerson>
+                            <name>
+                                <given>Henry</given>
+                                <family>Seven</family>
+                            </name>
+                        </assignedPerson>
+                    </assignedAuthor>
+                </author>
+            </substanceAdministration>
+        </entry>
+    </section>
+</component>

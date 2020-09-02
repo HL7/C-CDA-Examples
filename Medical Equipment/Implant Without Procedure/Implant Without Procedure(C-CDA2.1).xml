@@ -108,6 +108,7 @@
                 <participant typeCode="DEV">
                     <participantRole classCode="MANU">
                         <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+                        <!-- Including assigningAuthorityName is a best practice but not required --> 
                         <id assigningAuthorityName="FDA" extension="(01)00848486001032(11)160330(10)ABC124" root="2.16.840.1.113883.3.3719"/>
                         <playingDevice>
                             <code nullFlavor="UNK">

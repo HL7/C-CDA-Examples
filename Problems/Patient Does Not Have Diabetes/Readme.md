@@ -6,7 +6,7 @@
 
 * SDWG C-CDA R2.1 Upgrade: 2/2/2017
 
-###C-CDA 2.1 Example: 
+###C-CDA 2.1 Example:
 
 
 * 2.16.840.1.113883.10.20.22.2.5.1:2015-08-01
@@ -21,7 +21,7 @@
 
 ###Validation location
 
-* [SITE](https://sitenv.org/c-cda-validator)
+* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
 
 
 
@@ -37,6 +37,10 @@
 
 * negation
 
-###Permalink 
+###Permalink
 
-* c1b6f960a26505ba83d7acb3ad7efc4d2ad10e4f
+* [http://cdasearch.hl7.org/examples/view/c1b6f960a26505ba83d7acb3ad7efc4d2ad10e4f](http://cdasearch.hl7.org/examples/view/c1b6f960a26505ba83d7acb3ad7efc4d2ad10e4f)
+
+###Links
+
+* [Patient Does Not Have Diabetes(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Problems/Patient%20Does%20Not%20Have%20Diabetes/Patient%20Does%20Not%20Have%20Diabetes%28C-CDA2.1%29.xml)

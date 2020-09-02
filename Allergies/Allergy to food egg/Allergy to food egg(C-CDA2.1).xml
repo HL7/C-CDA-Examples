@@ -33,6 +33,9 @@
 			<templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01"/>
 			<id root="0fffb34f-c1e0-47c2-92af-c414a3ff21ec"/>
 			<code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+			<text>
+				<reference value="#allergy5" />
+			</text>
 			<statusCode code="active"/>
 			<!-- This is the time stamp for when the allergy was first documented as a concern-->
 			<effectiveTime>
@@ -60,6 +63,9 @@
 					<templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09"/>
 					<id root="0fffb34f-c1e0-47c2-92af-c414a3ff21ec"/>
 					<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+					<text>
+						<reference value="#allergy5" />
+					</text>
 					<statusCode code="completed"/>
 					<!-- This is the time stamp for the biological onset of the allergy. -->
 					<!-- Just the year is shown since a specific month and date was not reported -->
@@ -123,7 +129,7 @@
 							<statusCode code="completed"/>
 							<effectiveTime>
 								<low value="1998"/>
-								<high nullFlavor="NA"/>
+								<high nullFlavor="UNK"/>
 							</effectiveTime>
 							<value xsi:type="CD" code="247472004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Hives"/>
 							<entryRelationship typeCode="SUBJ" inversionInd="true">

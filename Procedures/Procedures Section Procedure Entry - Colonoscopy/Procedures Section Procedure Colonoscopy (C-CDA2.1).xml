@@ -1,0 +1,53 @@
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+	<code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+		displayName="HISTORY OF PROCEDURES"/>
+	<title>Procedures</title>
+	<text>
+		<table>
+			<thead>
+				<tr>
+					<th>Description</th>
+					<th>Date and Time (Range)</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ID="Procedure1">
+					<td ID="ProcedureDesc1">Colonoscopy, flexible; with biopsy, single or multiple</td>
+					<td>(03 May 2019 09:22am- 03 May 2019 11:15am)</td>
+					<td>Completed</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry typeCode="DRIV">
+		<!-- Procedures should be used for care that directly changes the patient's physical state. -->
+                <!-- Colonoscopy with/without Biopsy is appropriate here -->
+		<!-- The Procedures section records all completed Procedures -->
+		<!-- Biopsies/test/results from the Procedure are expected in the results section -->
+		<procedure moodCode="EVN" classCode="PROC">
+			<templateId root="2.16.840.1.113883.10.20.22.4.14" />
+			<templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+			<id root="56a76ee2-c5a9-4c69-be93-0461bd98691c"/>
+			<code code="25732003" displayName="Fiberoptic colonoscopy with biopsy"
+				codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+				<originalText>
+					<reference value="#ProcedureDesc1"/>
+				</originalText>
+				<translation codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT" code="45380"
+					displayName="Colonoscopy, flexible; with biopsy, single or multiple"/>
+			</code>
+			<text>
+				<reference value="#Procedure1"/>
+			</text>
+			<statusCode code="completed"/>
+			<!-- Effective times can be either a value or interval. For procedures with start and stop times, an interval would be more appropriate -->
+			<effectiveTime xsi:type="IVL_TS">
+				<low value="20190503092205-0700"/>
+				<high value="20190503111514-0700"/>
+			</effectiveTime>
+		</procedure>
+	</entry>
+</section>
