@@ -1,0 +1,1 @@
+##Multiple Clinical Note Section Examples from C-CDA
