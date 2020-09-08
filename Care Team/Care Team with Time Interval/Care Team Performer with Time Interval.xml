@@ -1,9 +1,9 @@
-<performer typeCode="PRF">
-    <time  xsi:type="IVL_TS">
+<performer typeCode="PRF">   
+    <functionCode nullFlavor="UNK" />
+	 <time  xsi:type="IVL_TS">
         <low value="201506221000" />
         <high value="201506221030" />
     </time>
-    <functionCode nullFlavor="UNK" />
     <assignedEntity>
         <id extension="c3bf11d8-205e-4a6f-9b4c-55b001469bf5" root="2.16.840.1.113883.4.6" />
         <code nullFlavor="UNK" />
