@@ -52,9 +52,13 @@
                         <reference value="#allergiesNoKnown"/>
                     </text>
                     <statusCode code="completed"/>
-                    <!-- N/A - author/time records when this assertion was made -->
+					
+                    <!-- The time when this was biologically relevant ie True for the patient. -->
+                    <!-- As a minimum time interval over which this is true, populate the effectiveTime/low with the current time. -->
+                    <!-- It would be equally valid to have a longer range of time over which this statement was represented as being true. -->
+                    <!-- As a maximum, you would never indicate an effectiveTime/high that was greater than the current point in time. -->
                     <effectiveTime>
-                        <low nullFlavor="NA"/>
+                        <low value="20100103"/>
                     </effectiveTime>
                     <value xsi:type="CD" code="419199007"
                         displayName="Allergy to substance (disorder)"
