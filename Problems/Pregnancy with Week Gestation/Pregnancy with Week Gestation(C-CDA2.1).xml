@@ -1,0 +1,112 @@
+<section>
+	<!-- This is an example of patient pregancy documented in problem list -->
+	<!-- This information may also be recorded in other sections (e.g. Social History or Pregancy Section) -->
+  <!-- This is meant to represent high level information related to a pregnancy, not detailed OB/GYN information -->
+	<!-- Other sections may include much more detail, such as dates of prior births, fetal plurality, etc. -->
+	<!-- For pregnancy section, refer to IG related to Pregancy Status http://www.hl7.org/implement/standards/product_brief.cfm?product_id=494 -->
+	<templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+	<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" displayName="Problem List"/>
+	<title>Problem List</title>
+	<text>
+		<table>
+			<thead>
+				<tr>
+					<th>Description</th>
+					<th>Dates</th>
+					<th>Status</th>
+					<th>Additional Detail</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ID="Problem1">
+					<td ID="ProblemDescription1">Pregnancy</td>
+					<td>
+						<content>Estimated Conception: Jan 3 2020</content>
+					</td>
+					<td>Active</td>
+					<td>Estimated Due Date: Sep 19 2020</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry>
+		<act classCode="ACT" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+			<templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+			<id root="102ca2e9-884c-4523-a2b4-1b6c3469c397"/>
+			<code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+			<statusCode code="active"/>
+			<effectiveTime>
+				<!-- This equates to the date of when first documented (not date of conception) -->
+				<low value="20200310"/>
+			</effectiveTime>
+			<entryRelationship typeCode="SUBJ">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+					<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+					<id extension="10241104348" root="1.3.6.1.4.1.22812.4.111.0.4.1.2.1"/>
+					<!-- Note a problem cannot be compliant to pregnancy observation template since code@code different SHALL -->
+					<code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+						<translation code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+					</code>
+					<text>
+						<reference value="#Problem1"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime>
+						<!-- This represents the date of biological onset, which for pregnancy would be estimated conception date -->
+						<low value="20200103"/>
+					</effectiveTime>
+					<!-- This is a SNOMED code as the primary vocabulary for problem lists-->
+					<!-- This SNOMED aligns with pregancy observation value set: 2.16.840.1.113762.1.4.1099.24 -->
+					<value xsi:type="CD" code="77386006" displayName="pregnant" codeSystem="2.16.840.1.113883.6.96">
+						<originalText>
+							<reference value="#problem00001"/>
+						</originalText>
+						<!-- These translation codes provide additional specificity, may be useful in tracking time and billing -->
+						<translation code="38039008" displayName="Gestation period, 10 weeks" codeSystem="2.16.840.1.113883.6.96"/>
+						<translation code="Z3A.10" displayName="10 weeks gestation of pregnancy" codeSystem="2.16.840.1.113883.6.90"/>
+					</value>
+					<author>
+						<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+						<!-- This equates to the date when last updated by the author-->
+						<time value="201903101256-0500"/>
+						<assignedAuthor>
+							<id extension="66666" root="2.16.840.1.113883.4.6"/>
+							<code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+							<addr>
+								<streetAddressLine>6666 StreetName St.</streetAddressLine>
+								<city>Silver Spring</city>
+								<state>MD</state>
+								<postalCode>20901</postalCode>
+								<country>US</country>
+							</addr>
+							<telecom value="tel:+1(301)666-6666" use="WP"/>
+							<assignedPerson>
+								<name>
+									<given>Heartly</given>
+									<family>Sixer</family>
+									<suffix>MD</suffix>
+								</name>
+							</assignedPerson>
+						</assignedAuthor>
+					</author>
+					<!-- This is not required but the estimated time of delivery can be shared through structured entryRelationship-->
+					<entryRelationship typeCode="REFR">
+						<observation classCode="OBS" moodCode="EVN">
+							<!-- Template for Estimated Date of Delivery -->
+							<templateId root="2.16.840.1.113883.10.20.15.3.1"/>
+							<code code="11778-8" codeSystem="2.16.840.1.113883.6.1" displayName="Estimated date of delivery"/>
+							<text>
+								<reference value="#Problem1Detail"/>
+							</text>
+							<statusCode code="completed"/>
+							<value xsi:type="TS" value="20200919"/>
+						</observation>
+					</entryRelationship>
+				</observation>
+			</entryRelationship>
+		</act>
+	</entry>
+</section>
