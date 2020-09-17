@@ -1,7 +1,9 @@
 ## Approval Status
 
 Approval Status: Pending
+
 Example Task Force: 9/17/2020
+
 SDWG: 
 
 ## Templates
