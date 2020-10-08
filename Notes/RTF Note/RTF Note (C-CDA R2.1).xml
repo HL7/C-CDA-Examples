@@ -5,7 +5,7 @@
     <title>Nursing Notes</title>
     <text>
         <list>
-            <item ID="note1">
+            <item ID="note1"> <!-- This is the Plain Text representation of the RTF -->
                 <caption>Nursing Note written by Nick Nurse</caption>
                 <paragraph>Completed rounds; no incident</paragraph>
             </item>
