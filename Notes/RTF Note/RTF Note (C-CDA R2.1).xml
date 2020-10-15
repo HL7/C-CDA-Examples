@@ -1,0 +1,29 @@
+<section>
+    <!-- Notes Section -->
+    <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01"/>
+    <code code="34746-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Nurse Note"/>
+    <title>Nursing Notes</title>
+    <text>
+        <list>
+            <item ID="note1"> <!-- This is the Plain Text representation of the RTF, it must FULLY preserve the meaning of the embedded RTF -->
+                <caption>Nursing Note written by Nick Nurse</caption>
+                <paragraph>Completed rounds; no incident</paragraph>
+            </item>
+        </list>
+    </text>
+    <!-- When converting RTF to Plain Text, it's important to preserve the meaning in RTF. For example, strikethrough and other formatting which change the meaning SHALL be considered -->
+    <!-- Systems that render RTF should use caution since malicious content may be embedded in RTF-->
+    <!-- Note Activity (extra markup removed to focus on <text>) -->
+    <entry typeCode="DRIV">
+        <act classCode="ACT" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01"/>
+            <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName=”Note”>
+                <translation code="34746-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Nurse Note" />
+            </code>
+
+            <text mediaType="text/rtf" representation="B64">e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdFxkZWZsYW5nMTAzM3tcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgQ2FsaWJyaTt9fQ0Ke1wqXGdlbmVyYXRvciBSaWNoZWQyMCA2LjMuOTYwMH1cdmlld2tpbmQ0XHVjMSANClxwYXJkXHNhMjAwXHNsMjc2XHNsbXVsdDFcZjBcZnMyMlxsYW5nOSBDb21wbGV0ZWQgcm91bmRzOyBubyBpbmNpZGVudFxwYXINCn0NCiA=
+                <reference value="#note1"/>
+            </text>
+            <!--...-->
+        </act>
+    </entry>
