@@ -22,10 +22,42 @@
                     Direct Trust's Patient/Consumer addresses "DT.org PATIENT" -->
             <id root="1.3.6.1.4.1.41179.2.4" extension="lisarnelson@direct.myphd.us" 
                 assigningAutorityName="DT.org PATIENT"/>
+            <sdtc:identifiedBy typeCode="REL">
+                <sdtc:alternateIdentification classCode="IDENT">
+                    <sdtc:id root="1.3.6.1.4.1.41179.2.4" extension="lisarnelson@direct.myphd.us" />
+                    <sdtc:code><originalText>DirectTrust Consumer Identity</originalText></sdtc:code>
+                </sdtc:alternateIdentification>
+            </sdtc:identifiedBy>
+            <!-- Available alternate identifications for Direct Trust identities includ the following:
+            <sdtc:identifiedBy typeCode="REL">
+                <sdtc:alternateIdentification classCode="IDENT">
+                    <sdtc:id root="1.3.6.1.4.1.41179.2.3" extension="lisarnelson@direct.myphd.us" />
+                    <sdtc:code><originalText>DirectTrust Practitioner Identity</originalText></sdtc:code>
+                </sdtc:alternateIdentification>
+            </sdtc:identifiedBy>
+            <sdtc:identifiedBy typeCode="REL">
+                <sdtc:alternateIdentification classCode="IDENT">
+                    <sdtc:id root="1.3.6.1.4.1.41179.2.2" extension="lisarnelson@direct.myphd.us" />
+                    <sdtc:code><originalText>DirectTrust Business Associate Identity</originalText></sdtc:code>
+                </sdtc:alternateIdentification>
+            </sdtc:identifiedBy>
+            <sdtc:identifiedBy typeCode="REL">
+                <sdtc:alternateIdentification classCode="IDENT">
+                    <sdtc:id root="1.3.6.1.4.1.41179.2.1" extension="lisarnelson@direct.myphd.us" />
+                    <sdtc:code><originalText>DirectTrust Covered Entity Identity</originalText></sdtc:code>
+                </sdtc:alternateIdentification>
+            </sdtc:identifiedBy>
+            -->
             <!-- More ids may be used. -->
             <!-- Here is the patient's MRN at RVHS  -->
             <id root="2.16.840.1.113883.1.111.12345" extension="12345-0828"
-                assigningAuthorityName="River Valley Health Services local patient Medical Record Number" />
+                assigningAuthorityName="River Valley Health Services" />
+            <sdtc:identifiedBy typeCode="REL">
+                <sdtc:alternateIdentification classCode="IDENT">
+                    <sdtc:id root="2.16.840.1.113883.1.111.12345" extension="12345-0828" />
+                    <sdtc:code><originalText>Medical Record Number</originalText></sdtc:code>
+                </sdtc:alternateIdentification>
+            </sdtc:identifiedBy>
             <addr>
                 <streetAddressLine>1 Happy Valley Road</streetAddressLine>
                 <city>Westerly</city>
