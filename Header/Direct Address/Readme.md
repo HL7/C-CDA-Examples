@@ -1,8 +1,8 @@
 ## Approval Status
 
-* Approval Status: Approved
-* Example Task Force: 11/2/2017
-* SDWG: 11/30/2017
+* Approval Status: Updated
+* Example Task Force: 11/2/2017, 12/3/2020
+* SDWG: 11/30/2017, needs re-approval
 
 ###C-CDA 2.1 Example:
 * 2.16.840.1.113883.10.20.22.1.1:2015-08-01
@@ -15,13 +15,14 @@
 * https://sitenv.org/sandbox-ccda/ccda-validator
 
 ### Comments
-* This demonstrates a patient with a Patient DirectTrust Address and a Provider Organization with a Covered Entity DirectTrust Address.
-
+* This example demonstrates a patient with a Patient DirectTrust Address and a Provider Organization with a Covered Entity DirectTrust Address.
+* It also demonstrates use of the sdtc:identifiedBy extention.
+*  
 ### Custodian
 * Lisa Nelson
 
 ### Keywords
-* recordTarget, patient, provider organization, identifiers
+* recordTarget, patient, provider organization, identifiers, sdtd:identifiedBy
 
 
 
