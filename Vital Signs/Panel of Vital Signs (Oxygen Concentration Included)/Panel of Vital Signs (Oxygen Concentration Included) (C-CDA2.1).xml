@@ -228,6 +228,7 @@
 					<value xsi:type="PQ" unit="%" value="36" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
 				</observation>
 			</component>
+			<!-- Other components like inhaled oxygen flow rate (3151-8) may also be included similarly to the component above... -->
 		</organizer>
 	</entry>
 </section>
