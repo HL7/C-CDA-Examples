@@ -52,10 +52,15 @@
                         <reference value="#allergiesNoKnown"/>
                     </text>
                     <statusCode code="completed"/>
-                    <!-- N/A - author/time records when this assertion was made -->
+
+                    <!-- The time when this was biologically relevant ie True for the patient. -->
+                    <!-- For "no known allergies," this will typically be null unless information
+                         is available about how long the patient has been allergy-free for. -->
+                    <!-- As a maximum, you would never indicate an effectiveTime/high that was greater than the current point in time. -->
                     <effectiveTime>
-                        <low nullFlavor="NA"/>
+                        <low nullFlavor="NI" />
                     </effectiveTime>
+
                     <value xsi:type="CD" code="419199007"
                         displayName="Allergy to substance (disorder)"
                         codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>

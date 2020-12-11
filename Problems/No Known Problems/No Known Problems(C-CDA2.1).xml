@@ -26,7 +26,7 @@
                     whether active or resolved, is of ongoing concern and interest to the provider), the statusCode is “active”. 
                     Only when the underlying condition is no longer of concern is the statusCode set to “completed”. -->
             <effectiveTime>
-                <low value="20130607160506"/>
+                <low value="20130607160506-0400"/>
                 <!-- The effectiveTime reflects the time that the underlying condition was felt to be a concern; 
                         it may or may not correspond to the effectiveTime of the condition (e.g., even five years later, the clinician may remain concerned about a prior heart attack).-->
             </effectiveTime>
@@ -34,7 +34,7 @@
 
             <author>
                 <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-                <time value="20130607160506"/>
+                <time value="20130607160506-0400"/>
                 <assignedAuthor>
                     <id extension="66666" root="2.16.840.1.113883.4.6"/>
                     <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
@@ -74,13 +74,14 @@
                         <reference value="#problems1"/>
                     </text>
                     <statusCode code="completed"/>
-                    <effectiveTime>
-                        <low value="20130607160506"/>
-                    </effectiveTime>
+                    
                     <!-- The time when this was biologically relevant ie True for the patient. -->
-                    <!-- As a minimum time interval over which this is true, populate the effectiveTime/low with the current time. -->
-                    <!-- It would be equally valid to have a longer range of time over which this statement was represented as being true. -->
+                    <!-- For "no known problems," this will typically be null unless information
+                         is available about how long the patient has been problem-free for. -->
                     <!-- As a maximum, you would never indicate an effectiveTime/high that was greater than the current point in time. -->
+                    <effectiveTime>
+                        <low nullFlavor="NI" />
+                    </effectiveTime>
 
                     <!-- This idea assumes that the value element could come from the Problem value set, or-->
                     <!-- when negationInd was true, is could also come from the ProblemType value set (and code would be ASSERTION). -->
