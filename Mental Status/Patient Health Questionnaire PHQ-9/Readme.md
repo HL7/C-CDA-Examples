@@ -1,10 +1,10 @@
-##Approval Status 
+## Approval Status 
 
 * Approval Status: Approved
 * Example Task Force: 7/11/2019
 * SDWG: 7/25/2019
 
-###C-CDA 2.1 Example:
+### C-CDA 2.1 Example:
 * Mental Status Section 2.16.840.1.113883.10.20.22.2.56:2015-08-01
 * Assessment Scale Observation 2.16.840.1.113883.10.20.22.4.69
 * Assessment Scale Supporting Observation 2.16.840.1.113883.10.20.22.4.86

@@ -1,4 +1,4 @@
-##Approval Status 
+## Approval Status 
 
 * Approval Status: Approved
 * Example Task Force:
@@ -6,27 +6,27 @@
 * SDWG C-CDA R2.1 Upgrade: 12/1/2016    
 
 
-###C-CDA 2.1 Example:
+### C-CDA 2.1 Example:
 
 * N/A
 
-###Reference to full CDA sample:
+### Reference to full CDA sample:
 * N/A
 
-###Validation location
+### Validation location
 * N/A
 
-###Comments
+### Comments
 * This is a reference to a google document of [medication statusCodes](https://docs.google.com/spreadsheets/d/1d0RJoyzVQISK4ai3zbjKT6PCuOEQzgWBCqarDHyD-JE/edit). SDWG developed this with the Pharmacy WG.
 
-###Custodian
+### Custodian
 
 * Brett Marquard, brett@riverrockassociates.com (GitHub: brettmarquard)
-###Keywords
+### Keywords
 
 * medication status
 
 
-###Permalink
+### Permalink
 
 * [http://cdasearch.hl7.org/examples/view/4280301bd364949698a3d784af74885f85e67886](http://cdasearch.hl7.org/examples/view/4280301bd364949698a3d784af74885f85e67886)
