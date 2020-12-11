@@ -1,0 +1,69 @@
+<component>
+    <section>
+        <!-- conforms to Immunizations section with entries optional -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.2"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.2" extension="2015-08-01"/>
+        <!-- Immunizations section with entries required -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.2.1"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.2.1" extension="2015-08-01"/>
+        <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+            displayName="History of Immunization Narrative"/>
+        <title>Immunizations</title>
+        <text>
+            <content ID="immun1">No known immunizations</content>
+        </text>
+        <entry>
+            <!-- negationInd=true indicates substance was NOT given-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN"
+                negationInd="true">
+                <!-- ** Immunization activity ** -->
+                <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+                <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01"/>
+                <id root="100f89f3-1d73-4b59-8636-7a84d68e5803"/>
+                <text>
+                    <reference value="#immun1"/>
+                </text>
+                <statusCode code="completed"/>
+                <effectiveTime nullFlavor="NA"/>
+                <consumable>
+                    <manufacturedProduct classCode="MANU">
+                        <!-- ** Immunization medication information ** -->
+                        <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                        <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
+                        <manufacturedMaterial>
+                            <code nullFlavor="OTH" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
+                                <translation code="410942007" codeSystem="2.16.840.1.113883.6.96" 
+                                    codeSystemName="SNOMED CT" displayName="Drug or medicament (substance)" />
+                            </code>
+                        </manufacturedMaterial>
+                    </manufacturedProduct>
+                </consumable>
+				<author>
+                    <!-- Time the author noted no known immunzations -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                    <time value="20130607160506-0500"/>
+                    <assignedAuthor>
+                        <id extension="66666" root="2.16.840.1.113883.4.6"/>
+                        <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
+                            codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+                        <addr>
+                            <streetAddressLine>6666 StreetName St.</streetAddressLine>
+                            <city>Silver Spring</city>
+                            <state>MD</state>
+                            <postalCode>20901</postalCode>
+                            <country>US</country>
+                        </addr>
+                        <telecom value="tel:+1(301)666-6666" use="WP"/>
+                        <assignedPerson>
+                            <name>
+                                <given>Heartly</given>
+                                <family>Sixer</family>
+                                <suffix>MD</suffix>
+                            </name>
+                        </assignedPerson>
+                    </assignedAuthor>
+                </author>
+            </substanceAdministration>
+        </entry>
+    </section>        
+</component>
