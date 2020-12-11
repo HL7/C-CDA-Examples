@@ -10,7 +10,7 @@
             displayName="History of Immunization Narrative"/>
         <title>Immunizations</title>
         <text>
-            <content ID="immun1">No known immunizations</content>
+            <content ID="nof1">No known immunizations</content>
         </text>
         <entry>
             <!-- negationInd=true indicates substance was NOT given-->
@@ -21,15 +21,16 @@
                 <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01"/>
                 <id root="100f89f3-1d73-4b59-8636-7a84d68e5803"/>
                 <text>
-                    <reference value="#immun1"/>
+                    <reference value="#nof1"/>
                 </text>
                 <statusCode code="completed"/>
                 <effectiveTime nullFlavor="NA"/>
                 <consumable>
                     <manufacturedProduct classCode="MANU">
-                        <!-- ** Immunization medication information ** -->
                         <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
                         <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
+			<!-- Generic code for "drug or medicament" + negationInd (not given) =
+                             means "No immunizations given. -->
                         <manufacturedMaterial>
                             <code nullFlavor="OTH" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
                                 <translation code="410942007" codeSystem="2.16.840.1.113883.6.96" 
@@ -38,7 +39,7 @@
                         </manufacturedMaterial>
                     </manufacturedProduct>
                 </consumable>
-				<author>
+                <author>
                     <!-- Time the author noted no known immunzations -->
                     <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
                     <time value="20130607160506-0500"/>
