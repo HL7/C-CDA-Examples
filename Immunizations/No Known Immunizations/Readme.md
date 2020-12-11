@@ -19,7 +19,7 @@
 * This is an example of no immunizations
 
 ### Custodian
-* Matt Szczepankiewicz mszczepa@epic.com (GitHub: mszczepa)
+* Matt Szczepankiewicz mszczepa@epic.com (GitHub: mjszczep)
 
 ### Keywords
 * immunizations
