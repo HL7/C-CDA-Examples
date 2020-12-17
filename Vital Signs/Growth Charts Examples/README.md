@@ -15,7 +15,7 @@
 * Problems in empty CCD
 
 ### Reference to Online Validator Used
-* https://sitenv.org/sandbox-ccda/ccda-validator
+* https://site.healthit.gov/sandbox-ccda/ccda-validator
 
 ### Comments
 * This example illustrates three vital sign observations with LOINC codes and reference growth chart names for BMI percentile, weight-for-length percentile, and head circumference percentile. or example, this illustrates how to send that a child's BMI percentile is 45 %, and that the CDC (Boys 2-20 years) growth chart was used to determine the value.

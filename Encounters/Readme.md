@@ -1,1 +1,1 @@
-##Encounter Section Examples from C-CDA 
+## Encounter Section Examples from C-CDA 

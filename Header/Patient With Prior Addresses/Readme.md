@@ -1,4 +1,4 @@
-##Approval Status
+## Approval Status
 
 
 * Approval Status: Approved
@@ -6,7 +6,7 @@
 
 * SDWG: 10/1/2018
 
-###C-CDA 2.1 Example:
+### C-CDA 2.1 Example:
 
 
 * recordTarget/PatientRole/addr[2]
@@ -15,35 +15,35 @@
 
 
 
-###Reference to full CDA sample:
+### Reference to full CDA sample:
 
 
 * N/A
 
 
 
-###Validation 
+### Validation 
 * location
 
-* https://sitenv.org/sandbox-ccda/ccda-validator
+* https://site.healthit.gov/sandbox-ccda/ccda-validator
 
 
 
-###Comments
+### Comments
 
 
 * This example illustrates how to structure multiple past addresses for a patient
 
 
 
-###Custodian
+### Custodian
 
 
 * Ed Donaldson, donaldson.ed@gmail.com (GitHub: donaldson-ed) 
 
 
 
-###Keywords
+### Keywords
 
 * 
 Demographics

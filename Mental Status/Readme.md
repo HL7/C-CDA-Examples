@@ -1,1 +1,1 @@
-##Mental Status Section Examples from C-CDA 
+## Mental Status Section Examples from C-CDA 

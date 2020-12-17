@@ -1,1 +1,1 @@
-##Functional Status Section Examples from C-CDA 
+## Functional Status Section Examples from C-CDA 
