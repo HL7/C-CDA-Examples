@@ -5,14 +5,16 @@
     <title>Nursing Notes</title>
     <text>
         <list>
-            <item ID="note1"> <!-- This is the Plain Text representation of the RTF, it must FULLY preserve the meaning of the embedded RTF -->
+            <!-- This is the Plain Text representation of the RTF, it must FULLY preserve the meaning of the embedded RTF. -->
+            <!-- Systems receiving a section with RTF SHALL be capable of displaying seciton.text. Systems optionally may process and display RTF -->
+            <item ID="note1"> 
                 <caption>Nursing Note written by Nick Nurse</caption>
                 <paragraph>Completed rounds; no incident</paragraph>
             </item>
         </list>
     </text>
     <!-- When converting RTF to Plain Text, it's important to preserve the meaning in RTF. For example, strikethrough and other formatting which change the meaning SHALL be considered -->
-    <!-- Systems that render RTF should use caution since malicious content may be embedded in RTF-->
+    <!-- Systems that render RTF (OPTIONAL) should use caution since malicious content may be embedded in RTF-->
     <!-- Note Activity (extra markup removed to focus on <text>) -->
     <entry typeCode="DRIV">
         <act classCode="ACT" moodCode="EVN">
