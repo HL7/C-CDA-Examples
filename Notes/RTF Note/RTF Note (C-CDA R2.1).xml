@@ -6,7 +6,7 @@
     <text>
         <list>
             <!-- This is the Plain Text representation of the RTF, it must FULLY preserve the meaning of the embedded RTF. -->
-            <!-- Systems receiving a section with RTF SHALL be capable of displaying seciton.text. Systems optionally may process and display RTF -->
+            <!-- Systems receiving a section with RTF SHALL be capable of displaying the section.text. -->
             <item ID="note1"> 
                 <caption>Nursing Note written by Nick Nurse</caption>
                 <paragraph>Completed rounds; no incident</paragraph>
