@@ -2,7 +2,7 @@
 
 * Approval Status: Approved
 * Example Task Force: 10/8/2020
-* SDWG: TBD
+* SDWG: 12/17/2020
 
 ### C-CDA 2.1 Example:
 
