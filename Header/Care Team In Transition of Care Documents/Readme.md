@@ -1,37 +1,37 @@
-##Approval Status 
+## Approval Status 
 
 * Approval Status: Approved
 * Example Task Force: 12/22/2016
 * SDWG: 2/2/2017
 
-###C-CDA 2.1 Example:
+### C-CDA 2.1 Example:
 * serviceEvent and Performer
 * N/A
 
-###Reference to full CDA sample:
+### Reference to full CDA sample:
 * Empty CCD
 
-###Validation location
-* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
+### Validation location
+* [SITE](https://site.healthit.gov/sandbox-ccda/ccda-validator)
 
-###Comments
+### Comments
 * This is an example of how to include Care Team information for 170.315_b1 Ambulatory test data
 
-###Certification
+### Certification
 * ONC
 
-###Custodian
+### Custodian
 * George Cole
 
-###Keywords
+### Keywords
 * Care Team, transition of care test data
 
 
 
-###Permalink
+### Permalink
 
 * [http://cdasearch.hl7.org/examples/view/4e1047540ebbd74205b20a81bed34143f4d4b3fa](http://cdasearch.hl7.org/examples/view/4e1047540ebbd74205b20a81bed34143f4d4b3fa)
 
-###Links
+### Links
 
 * [Care Team In Transition of Care Documents(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Header/Care%20Team%20In%20Transition%20of%20Care%20Documents/Care%20Team%20In%20Transition%20of%20Care%20Documents%28C-CDA2.1%29.xml)

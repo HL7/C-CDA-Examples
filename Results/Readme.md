@@ -1,1 +1,1 @@
-##Result Section Examples from C-CDA 
+## Result Section Examples from C-CDA 

@@ -52,7 +52,7 @@
                             <code nullFlavor="OTH">
                                 <!-- Optional original text -->
                                 <originalText>Vaccination</originalText>
-                                <translation code="71181003" displayName="vaccine"
+                                <translation code="787859002" displayName="vaccine"
                                     codeSystem="2.16.840.1.113883.6.96"
                                     codeSystemName="SNOMED CT"/>
                             </code>

@@ -1,1 +1,1 @@
-##Medical Equipment Section Examples from C-CDA 
+## Medical Equipment Section Examples from C-CDA 

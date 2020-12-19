@@ -1,4 +1,4 @@
-##Approval Status 
+## Approval Status 
 
 
 * Approval Status: Approved
@@ -9,7 +9,7 @@
 
 
 
-###C-CDA 2.1 Example:
+### C-CDA 2.1 Example:
 
 
 * 2.16.840.1.113883.10.20.22.2.3:2015-08-01
@@ -22,42 +22,42 @@
 
 
 
-###Reference to full CDA sample:
+### Reference to full CDA sample:
 
 * Results in empty CCD
 
 
 
 
-###Validation location
+### Validation location
 
 
-* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
+* [SITE](https://site.healthit.gov/sandbox-ccda/ccda-validator)
 
 
 
 
-###Comments
+### Comments
 
 
 * This is an example of a results panel with Laboratory Location details as required by 2015 Certification Sender test 170.315(e1), in compliance with 42 CFR 493.1291(c)(1) through (7).
 
 
-###Custodian
+### Custodian
 
 
 * George Cole, george.cole@allscripts.com (GitHub: gecole)
 
 
-##Keywords
+## Keywords
 
 
 * Results, 2015 Certification, Lab Reporting Location
 
-###Permalink
+### Permalink
 
 * [http://cdasearch.hl7.org/examples/view/74b81ace7fa73c1baf08c7f372a88678012d4ae0](http://cdasearch.hl7.org/examples/view/74b81ace7fa73c1baf08c7f372a88678012d4ae0)
 
-###Links
+### Links
 
 * [Result with lab location(C-CDAR2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Results/Result%20with%20lab%20location/Result%20with%20lab%20location%28C-CDAR2.1%29.xml)

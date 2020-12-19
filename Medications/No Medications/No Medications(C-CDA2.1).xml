@@ -30,7 +30,7 @@
                         <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
                         <manufacturedMaterial>
                             <code nullFlavor="OTH" codeSystem="2.16.840.1.113883.6.88">
-                                <translation code="410942007" displayName="drug or medication"
+                                <translation code="410942007" displayName="Drug or medicament"
                                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                             </code>
                         </manufacturedMaterial>

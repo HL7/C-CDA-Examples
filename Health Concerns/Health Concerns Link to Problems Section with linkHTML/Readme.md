@@ -1,11 +1,11 @@
-##Approval Status 
+## Approval Status 
 
 * Approval Status: Approved
 * Example Task Force: 12/15/15
 * SDWG: 2/11/2016
 * SDWG C-CDA R2.1 Upgrade: 2/2/2017
 
-###C-CDA 2.1 Example:
+### C-CDA 2.1 Example:
 * 2.16.840.1.113883.10.20.22.2.58:2015-08-01
 * 2.16.840.1.113883.10.20.22.4.132:2015-08-01
 * 2.16.840.1.113883.10.20.22.4.4:2015-08-01
@@ -13,34 +13,34 @@
 * 2.16.840.1.113883.10.20.22.2.5.1:2015-08-01
 * 2.16.840.1.113883.10.20.22.4.3:2015-08-01
 
-###Reference to full CDA sample:
+### Reference to full CDA sample:
 * Empty CCD
 
-###Validation location
+### Validation location
 
-* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
+* [SITE](https://site.healthit.gov/sandbox-ccda/ccda-validator)
 
 
-###Comments
+### Comments
 
 * This is an example of how to link a concern to a problem in the problem list section with linkHTML.
 
-###Custodian
+### Custodian
 
 * Brett Marquard, brett@riverrockassociates.com (GitHub: brettmarquard)
 
-###Certification
+### Certification
 * ONC
 
-###Keywords
+### Keywords
 
 * linkHTML, entry reference
 
 
-###Permalink
+### Permalink
 
 * [http://cdasearch.hl7.org/examples/view/57b4a46c570caf4e2f83342b32b64bc1725f0834](http://cdasearch.hl7.org/examples/view/57b4a46c570caf4e2f83342b32b64bc1725f0834)
 
-###Links
+### Links
 
 * [Health Concerns Link to Problems Section with linkHTML(C-CDA2.1).xml](https://github.com/HL7/C-CDA-Examples/tree/master/Health%20Concerns/Health%20Concerns%20Link%20to%20Problems%20Section%20with%20linkHTML/Health%20Concerns%20Link%20to%20Problems%20Section%20with%20linkHTML%28C-CDA2.1%29.xml)

@@ -15,7 +15,7 @@
 
 ### Validation location
 
-* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
+* [SITE](https://site.healthit.gov/sandbox-ccda/ccda-validator)
 
 
 ### Comments

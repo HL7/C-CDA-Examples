@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='CDA.xsl'?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+	<!-- This is an example of an unstructured document. See component/nonXMLbody -->
+	<realmCode code="US"/>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<templateId root="2.16.840.1.113883.10.20.22.1.1" />
+	<templateId root="2.16.840.1.113883.10.20.22.1.10" />
+	<templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2014-08-01"/>
+	<templateId root="2.16.840.1.113883.10.20.22.1.10" extension="2015-08-01"/>
+	<id extension="X451212" root="2.16.840.1.113883.19.5.999535454.1"/>
+	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34847-4" displayName="Surgery Consult Note"/>
+	<title>Community Health and Hospitals: SURGICAL CONSULT</title>
+	<effectiveTime value="202004201918-0800"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<languageCode code="en-US"/>
+	<setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
+	<versionNumber value="1"/>
+	<recordTarget>
+		<patientRole>
+			<!-- Fake Social Security Number using the actual SSN OID. -->
+			<id extension="111-00-2330" root="2.16.840.1.113883.4.1"/>
+			<addr use="HP">
+				<streetAddressLine>1357 Amber Drive</streetAddressLine>
+				<city>Beaverton</city>
+				<state>OR</state>
+				<postalCode>97867</postalCode>
+				<country>US</country>
+			</addr>
+			<telecom value="tel:(816)276-6909" use="HP"/>
+			<patient>
+				<name use="L">
+					<given>Juan</given>
+					<family>Damore</family>
+				</name>
+				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Male"/>
+				<birthTime value="19530302"/>
+				<maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatusCode"/>
+				<religiousAffiliationCode code="1013" displayName="Christian (non-Catholic, non-specific)" codeSystemName="HL7 Religious Affiliation" codeSystem="2.16.840.1.113883.5.1076"/>
+				<raceCode code="1002-5" displayName="American Indian or Alaska Native" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
+				<ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
+				<languageCommunication>
+					<languageCode code="en"/>
+					<modeCode code="ESP" displayName="Expressed spoken" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
+					<preferenceInd value="true"/>
+				</languageCommunication>
+			</patient>
+			<providerOrganization>
+				<id root="2.16.840.1.113883.19.5.9999.1393"/>
+				<name>Community Health Hospital</name>
+				<telecom use="WP" value="tel: 555-555-5000"/>
+				<addr>
+					<streetAddressLine>1001 Village Avenue</streetAddressLine>
+					<city>Portland</city>
+					<state>OR</state>
+					<postalCode>99123</postalCode>
+					<country>US</country>
+				</addr>
+			</providerOrganization>
+		</patientRole>
+	</recordTarget>
+	<author>
+		<time value="202004201918-0800"/>
+		<assignedAuthor>
+			<id extension="99999999" root="2.16.840.1.113883.4.6"/>
+			<code code="200000000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians"/>
+			<addr>
+				<streetAddressLine>1002 Healthcare Drive </streetAddressLine>
+				<city>Portland</city>
+				<state>OR</state>
+				<postalCode>99123</postalCode>
+				<country>US</country>
+			</addr>
+			<telecom use="WP" value="tel:555-555-1002"/>
+			<assignedPerson>
+				<name>
+					<given>Mostafa</given>
+					<family>Balimood</family>
+				</name>
+			</assignedPerson>
+		</assignedAuthor>
+	</author>
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<id extension="99999999" root="2.16.840.1.113883.4.6"/>
+				<name>Community Health and Hospitals</name>
+				<telecom value="tel: 555-555-1002" use="WP"/>
+				<addr use="WP">
+					<streetAddressLine>1002 Healthcare Drive </streetAddressLine>
+					<city>Portland</city>
+					<state>OR</state>
+					<postalCode>99123</postalCode>
+					<country>US</country>
+				</addr>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<component>
+		<nonXMLBody>
+			<!-- the acceptable mediaType from 2.16.840.1.113883.11.20.7.1 are 
+			application/msword application/pdf text/plain text/rtf 
+			text/html image/gif image/tiff image/jpeg image/png -->
+			<text mediaType="text/plain" representation="B64">TE9DQUwgVElUTEU6IFNVUkdJQ0FMIENPTlNVTFQgICAgICAgICAgICAgICAgICAgICAgICAgCgpESUNUIERBVEU6IEFQUiAyMCwgMjAyMEAxNzowMyAgICAgRU5UUlkgREFURTogQVBSIDIwLCAyMDIwQDE3OjA0OjE2ICAgICAgCkRJQ1RBVEVEIEJZOiBCQUxJTU9PRCwgTU9TVEFGQSAgICBBVFRFTkRJTkc6IEFHVVJULCBUSE9NQVMgSk9TRVBIClVSR0VOQ1k6IHJvdXRpbmUgICAgICAgICAgICAgICAgICBTVEFUVVM6IFNJR05FRCBOT1QgWUVUIENPU0lHTkVEICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICoqKiBOT1QgWUVUIENPU0lHTkVEICoqKiAgICAgICAgICAgICAgICAgICAgICAgICAgIAoKUGF0aWVudApDQzogQ2hyb25pYyBjZXJ2aWNhbCBwYWluLCBzdGFibGUgc3ltcHRvbWF0b2xvZ3kuCgpEWDogQ2VydmljYWwgZGlzYyBkZWdlbmVyYXRpb24sIHVuc3BlY2lmaWVkIGNlcnZpY2FsIHJlZ2lvbiBvZiBjZXJ2aWNhbCBzcGluZSAoTTUwLjMwKSwgbm8gZm9jYWwgbmV1cm9kZWZpY2l0LgoKUExBTjogRi91IHJvdXRpbmUsIHB0IGlzIG5vdCBpbnRlcmVzdGVkIGluIGludmFzaXZlIHByb2NlZHVyZSBvciBzdXJnaWNhbCBpbnRlcnZlbnRpb24gYXQgdGhpcyB0aW1lLgogCkVsZWN0cm9uaWNhbGx5IHNpZ25lZCBieSBNb3N0YWZhIEJBTElNT09EIDA0LzIwLzIwMjAgMTc6MDc=
+			</text>		
+		</nonXMLBody>
+	</component>
+</ClinicalDocument>

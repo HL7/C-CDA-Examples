@@ -1,1 +1,1 @@
-##Care Team Examples from C-CDA Companion Guide
+## Care Team Examples from C-CDA Companion Guide
