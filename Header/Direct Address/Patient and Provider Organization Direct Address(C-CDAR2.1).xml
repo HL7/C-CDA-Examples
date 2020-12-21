@@ -51,12 +51,6 @@
                     <sdtc:code><originalText>DirectTrust Covered Entity Identity</originalText></sdtc:code>
                 </sdtc:alternateIdentification>
             </sdtc:identifiedBy>
-            <sdtc:identifiedBy typeCode="REL">
-                <sdtc:alternateIdentification classCode="IDENT">
-                    <sdtc:id root="1.3.6.1.4.1.41179.2.5" extension="lisarnelson@direct.myphd.us" />
-                    <sdtc:code><originalText>DirectTrust Non Declared Healthcare Entities Identity</originalText></sdtc:code>
-                </sdtc:alternateIdentification>
-            </sdtc:identifiedBy>
             -->
             <sdtc:identifiedBy typeCode="REL">
                 <sdtc:alternateIdentification classCode="IDENT">
