@@ -1,0 +1,7 @@
+<authorization typeCode="AUTH">
+  <consent classCode="CONS" moodCode="EVN">
+    <id root="629deb70-5306-11df-9879-0800200c9a66" />
+    <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="64293-4" displayName="Procedure consent" />
+    <statusCode code="completed" />
+  </consent>
+</authorization>

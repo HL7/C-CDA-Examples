@@ -1,0 +1,16 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.30" extension="2014-06-09" />
+  <code code="59772-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Planned Procedure" />
+  <title>Planned Procedure</title>
+  <text>
+      ...
+   </text>
+  <entry>
+    <procedure moodCode="RQO" classCode="PROC">
+      <templateId root="2.16.840.1.113883.10.20.22.4.41" extension="2014-06-09" />
+      <!-- ** Planned Procedure ** -->
+         ...
+      
+    </procedure>
+  </entry>
+</section>

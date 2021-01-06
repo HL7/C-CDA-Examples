@@ -1,0 +1,122 @@
+<act classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.61" extension="2015-08-01" />
+  <id root="3e676a50-7aac-11db-9fe1-0800200c9a66" />
+  <code code="12" displayName="Medicare Secondary Working Aged Beneficiary or Spouse with Employer Group Health Plan" 
+             codeSystemName="Insurance Type Code (x12N-1336)"
+             codeSystem="2.16.840.1.113883.6.255.1336">
+    <translation code="2" displayName="Medicare" 
+                                    codeSystem="2.16.840.1.113883.3.221.5" codeSystemName="Source of Payment Typology (PHDSC)"></translation>
+  </code>
+  <statusCode code="completed" />
+  <!-- Insurance company information -->
+  <performer typeCode="PRF">
+    <templateId root="2.16.840.1.113883.10.20.22.4.87" />
+    <time>
+      <low nullFlavor="UNK" />
+      <high nullFlavor="UNK" />
+    </time>
+    <assignedEntity>
+      <id root="2.16.840.1.113883.19" />
+      <code code="PAYOR" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleCode" />
+      <addr use="WP">
+        <streetAddressLine>123 Insurance Road</streetAddressLine>
+        <city>Blue Bell</city>
+        <state>MA</state>
+        <postalCode>02368</postalCode>
+        <country>US</country>
+        <!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
+      </addr>
+      <telecom value="tel:+(555)555-1515" use="WP" />
+      <representedOrganization>
+        <name>Good Health Insurance</name>
+        <telecom value="tel:+(555)555-1515" use="WP" />
+        <addr use="WP">
+          <streetAddressLine>123 Insurance Road</streetAddressLine>
+          <city>Blue Bell</city>
+          <state>MA</state>
+          <postalCode>02368</postalCode>
+          <country>US</country>
+        </addr>
+      </representedOrganization>
+    </assignedEntity>
+  </performer>
+  <!-- Guarantor information (the person responsible for the final bill) -->
+  <performer typeCode="PRF">
+    <templateId root="2.16.840.1.113883.10.20.22.4.88" />
+    <time>
+      <low nullFlavor="UNK" />
+      <high nullFlavor="UNK" />
+    </time>
+    <assignedEntity>
+      <id root="329fcdf0-7ab3-11db-9fe1-0800200c9a66" />
+      <code code="GUAR" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" />
+      <addr use="HP">
+        <streetAddressLine>17 Daws Rd.</streetAddressLine>
+        <city>Blue Bell</city>
+        <state>MA</state>
+        <postalCode>02368</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom value="tel:+(781)555-1212" use="HP" />
+      <assignedPerson>
+        <name>
+          <prefix>Mr.</prefix>
+          <given>Adam</given>
+          <given>Frankie</given>
+          <family>Everyman</family>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </performer>
+  <!-- Covered party -->
+  <participant typeCode="COV">
+    <templateId root="2.16.840.1.113883.10.20.22.4.89.2" />
+    <time>
+      <low nullFlavor="UNK" />
+      <high nullFlavor="UNK" />
+    </time>
+    <participantRole classCode="PAT">
+      <!-- Health plan ID for patient. -->
+      <id root="1.1.1.1.1.1.1.1.14" extension="1138345" />
+      <code code="SELF" codeSystem="2.16.840.1.113883.5.111" />
+      <addr use="HP">
+        <streetAddressLine>17 Daws Rd.</streetAddressLine>
+        <city>Blue Bell</city>
+        <state>MA</state>
+        <postalCode>02368</postalCode>
+        <country>US</country>
+      </addr>
+      <playingEntity>
+        <name>
+          <!-- Name is needed if different than name on health plan. -->
+          <prefix>Mr.</prefix>
+          <given>Frank</given>
+          <given>A.</given>
+          <family>Everyman</family>
+        </name>
+      </playingEntity>
+    </participantRole>
+  </participant>
+  <!-- Policy holder -->
+  <participant typeCode="HLD">
+    <templateId root="2.16.840.1.113883.10.20.22.4.90.2" />
+    <participantRole>
+      <id extension="1138345" root="2.16.840.1.113883.19" />
+      <addr use="HP">
+        <streetAddressLine>17 Daws Rd.</streetAddressLine>
+        <city>Blue Bell</city>
+        <state>MA</state>
+        <postalCode>02368</postalCode>
+        <country>US</country>
+      </addr>
+    </participantRole>
+  </participant>
+  <entryRelationship typeCode="REFR">
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.1.19" />
+             . . .
+        
+        
+    </act>
+  </entryRelationship>
+</act>

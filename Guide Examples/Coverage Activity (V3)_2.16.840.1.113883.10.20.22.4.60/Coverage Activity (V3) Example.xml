@@ -1,0 +1,16 @@
+<act classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.60" extension="2015-08-01" />
+  <id root="1fe2cdd0-7aad-11db-9fe1-0800200c9a66" />
+  <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources" />
+  <statusCode code="completed" />
+  <entryRelationship typeCode="COMP">
+    <act classCode="ACT" moodCode="EVN">
+      <sequenceNumber value="2" />
+      <templateId root="2.16.840.1.113883.10.20.22.4.61" extension="2015-08-01" />
+            . . .
+        
+        
+        
+    </act>
+  </entryRelationship>
+</act>

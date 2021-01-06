@@ -1,0 +1,21 @@
+<section>
+  <!--...    -->
+  <text>
+    <list>
+      <item ID="note1">
+        <caption>Nursing Note written by Nick Nurse</caption>
+        <paragraph>Completed rounds; no incident</paragraph>
+      </item>
+    </list>
+  </text>
+  <!-- Note Activity (extra markup removed to focus on <text>) -->
+  <entry>
+    <act>
+      <code>...</code>
+      <text mediaType="text/rtf" representation="B64">e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdFxkZWZsYW5nMTAzM3tcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgQ2FsaWJyaTt9fQ0Ke1wqXGdlbmVyYXRvciBSaWNoZWQyMCA2LjMuOTYwMH1cdmlld2tpbmQ0XHVjMSANClxwYXJkXHNhMjAwXHNsMjc2XHNsbXVsdDFcZjBcZnMyMlxsYW5nOSBDb21wbGV0ZWQgcm91bmRzOyBubyBpbmNpZGVudFxwYXINCn0NCiA=            
+                
+        <reference value="#note1"/>
+      </text>
+      <!--...-->
+    </act>
+  </entry>

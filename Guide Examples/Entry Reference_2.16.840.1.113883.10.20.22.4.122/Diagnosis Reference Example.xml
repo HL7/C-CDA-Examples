@@ -1,0 +1,28 @@
+<!-- Show how an encounter can include a discharge diagnosis which references an 
+       item on the problem list using the Entry Reference template -->
+<!-- Problem Section -->
+<observation>
+  <id root="1234567" />
+  <code code="123" codeSystem="1.2.3" displayName="asthma" />
+</observation>
+<!-- Encounter Section -->
+<encounter>
+  <entryRelationship typeCode="COMP">
+    <act>
+      <code code="145" codeSystem="4.5.6" displayName="discharge diagnosis" />
+      <templateId root="2.16.840.1.113883.10.20.22.4.33" extension="2014-06-09" />
+      <!-- this is for illustrative purposes only. In this particular 
+                  case, the template requires a nested Problem 
+                  Observation (V2). In the Health Concern template, 
+                  we'd need a constraint that says it's allowable to 
+                  include the Entry Reference template. -->
+      <entryRelationship typeCode="SUBJ">
+        <act classCode="ACT" moodCode="XXX">
+          <templateId root="2.16.840.1.113883.10.20.22.4.122" />
+          <id root="1234567" />
+          <code nullFlavor="NP" />
+        </act>
+      </entryRelationship>
+    </act>
+  </entryRelationship>
+</encounter>

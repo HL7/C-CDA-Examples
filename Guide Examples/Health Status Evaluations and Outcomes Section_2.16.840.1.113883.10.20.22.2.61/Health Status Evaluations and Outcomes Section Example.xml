@@ -1,0 +1,36 @@
+<section>
+  <!-- Health Status Evaluations/Outcomes Section  -->
+  <templateId root="2.16.840.1.113883.10.20.22.2.61" />
+  <code code="11383-7" displayName="Patient Problem Outcome" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+  <title>Health Status Evaluations/Outcomes Section</title>
+  <text>
+    <list>
+      <item>
+        <content styleCode="Bold">Pulse oximetry greater than 92% on room air</content>: MET 
+        <list>
+          <item>Evaluates Expected Outcome/Goal: 
+            
+            <content styleCode="Bold">
+              Pulse oximetry greater than 92% on room air
+            </content>
+          </item>
+          <item>Supported by: Pulse oximetry 95% on room air (March 21, 2013 at 15:20)</item>
+        </list>
+      </item>
+    </list>
+  </text>
+  <entry>
+    <!-- Outcome Observation -->
+    <observation classCode="OBS" moodCode="EVN">
+      ...
+    </observation>
+  </entry>
+  <entry>
+    <!-- Outcome Observation -->
+    <observation classCode="OBS" moodCode="EVN">
+      ...
+    </observation>
+  </entry>
+  ...
+
+</section>

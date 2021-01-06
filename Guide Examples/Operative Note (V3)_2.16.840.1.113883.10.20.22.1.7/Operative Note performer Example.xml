@@ -1,0 +1,22 @@
+ 
+<performer typeCode="PPRF">
+  <assignedEntity>
+    <id extension="1" root="2.16.840.1.113883.19" />
+    <code code="2086S0120X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Pediatric Surgeon" />
+    <addr>
+      <streetAddressLine>1013 Healthcare Drive</streetAddressLine>
+      <city>Ann Arbor</city>
+      <state>MI</state>
+      <postalCode>99999</postalCode>
+      <country>US</country>
+    </addr>
+    <telecom value="tel:(555)555-1013" />
+    <assignedPerson>
+      <name>
+        <prefix>Dr.</prefix>
+        <given>Carl</given>
+        <family>Cutter</family>
+      </name>
+    </assignedPerson>
+  </assignedEntity>
+</performer>

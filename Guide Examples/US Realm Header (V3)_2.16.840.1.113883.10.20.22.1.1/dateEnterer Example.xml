@@ -1,0 +1,19 @@
+<dataEnterer>
+  <assignedEntity>
+    <id extension="333777777" root="2.16.840.1.113883.4.6" />
+    <addr>
+      <streetAddressLine>1007 Healthcare Drive</streetAddressLine>
+      <city>Portland</city>
+      <state>OR</state>
+      <postalCode>99123</postalCode>
+      <country>US</country>
+    </addr>
+    <telecom use="WP" value="tel:+1(555)555-1050" />
+    <assignedPerson>
+      <name>
+        <given>Ellen</given>
+        <family>Enter</family>
+      </name>
+    </assignedPerson>
+  </assignedEntity>
+</dataEnterer>

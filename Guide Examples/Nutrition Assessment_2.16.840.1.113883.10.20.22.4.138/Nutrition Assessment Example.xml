@@ -1,0 +1,24 @@
+<entryRelationship typeCode="SUBJ">
+  <observation classCode="OBS" moodCode="EVN">
+    <!-- ** Nutrition Assessment** -->
+    <templateId root="2.16.840.1.113883.10.20.22.4.138" />
+    <id root="ab1791b0-5c71-11db-b0de-0800200c9a66" />
+    <code code="75303-8" 
+              displayName="Nutrition assessment"
+              codeSystem="2.16.840.1.113883.6.1" 
+              codeSystemName="LOINC" />
+    <statusCode code="completed" />
+    <effectiveTime value="20130512" />
+    <value xsi:type="CD" code="437421000124105" 
+              displayName="Decreased sodium diet (regime/therapy)"
+              codeSystem="2.16.840.1.113883.6.96" 
+              codeSystemName="SNOMED CT" />
+    <author typeCode="AUT">
+      <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+      <time value="201300512" />
+        ...
+
+        
+    </author>
+  </observation>
+</entryRelationship>

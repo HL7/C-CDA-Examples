@@ -1,0 +1,50 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.14" extension="2014-06-09" />
+  <!-- Functional Status Section template V2-->
+  <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional Status" />
+  <title>FUNCTIONAL STATUS</title>
+  <text>
+        ...
+    </text>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- Self Care Activities (NEW)-->
+      <templateId root="2.16.840.1.113883.10.20.22.4.128" />
+            ...
+        
+    </observation>
+  </entry>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- Sensory and Speech Status(NEW)-->
+      <templateId root="2.16.840.1.113883.10.20.22.4.127" />
+            ...
+        
+    </observation>
+  </entry>
+  <entry>
+    <organizer classCode="CLUSTER" moodCode="EVN">
+      <!-- Functional Status Organizer V2-->
+      <templateId root="2.16.840.1.113883.10.20.22.4.66" extension="2014-06-09" />
+            ....
+        
+    </organizer>
+  </entry>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- Functional Status  Observation V2-->
+      <templateId root="2.16.840.1.113883.10.20.22.4.67" extension="2014-06-09" />           
+            ...
+        
+    </observation>
+  </entry>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- ** Caregiver characteristics ** -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.72" />
+           
+            ...
+        
+    </observation>
+  </entry>
+</section>

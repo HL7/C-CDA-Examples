@@ -1,0 +1,73 @@
+<supply moodCode="INT" classCode="SPLY">
+  <templateId root="2.16.840.1.113883.10.20.22.4.43" extension="2014-06-09" />
+  <!-- Planned Supply (V2) -->
+  <id root="9a6d1bac-17d3-4195-89c4-1121bc809b5d" />
+  <statusCode code="active" />
+  <!-- The effectiveTime in a planned supply represents 
+    the time that the supply should occur. -->
+  <effectiveTime value="20130615" />
+  <repeatNumber value="1" />
+  <quantity value="3" />
+  <!-- This product represents medication that is ordered, 
+    requested or intended for the patient. -->
+  <product>
+    <manufacturedProduct classCode="MANU">
+      <!-- Medication Information (V2) -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09" />
+      <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8" />
+      <manufacturedMaterial>
+        <code code="573621" codeSystem="2.16.840.1.113883.6.88" displayName="Proventil 0.09 MG/ACTUAT inhalant solution">
+          <originalText>
+            <reference value="#MedSec_1" />
+          </originalText>
+          <translation code="573621" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" />
+        </code>
+      </manufacturedMaterial>
+      <manufacturerOrganization>
+        <name>Medication Factory Inc.</name>
+      </manufacturerOrganization>
+    </manufacturedProduct>
+  </product>
+  <!-- The clinician who is expected to perform the supply 
+    could be identified using supply/performer. -->
+  <performer>
+    ...
+    
+  </performer>
+  <!-- The author in a supply represents the clinician 
+    who is requesting or planning the supply. -->
+  <author typeCode="AUT">
+    ...
+    
+  </author>
+  <entryRelationship typeCode="REFR">
+    <!-- Patient Priority Preference -->
+    ...
+    
+    
+  </entryRelationship>
+  <entryRelationship typeCode="REFR">
+    <!-- Provider Priority Preference -->
+    ...
+    
+    
+  </entryRelationship>
+  <entryRelationship typeCode="RSON">
+    <!-- Indication (V2) -->
+    ...
+    
+    
+  </entryRelationship>
+  <entryRelationship typeCode="SUBJ">
+    <!-- Instruction (V2) -->
+    ...
+    
+    
+  </entryRelationship>
+  <entryRelationship typeCode="COMP">
+    <!-- Planned Coverage -->
+    ...
+    
+    
+  </entryRelationship>
+</supply>

@@ -1,0 +1,19 @@
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.15.3.8"/>
+  <id extension="123456789" root="2.16.840.1.113883.19"/>
+  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="20110410"/>
+  </effectiveTime>
+  <value xsi:type="CD" code="77386006" 
+         displayName="pregnant" 
+         codeSystem="2.16.840.1.113883.6.96"/>
+  <entryRelationship typeCode="REFR">
+    <templateId root="2.16.840.1.113883.10.20.15.3.1"/>
+
+    . . .
+
+  
+  </entryRelationship>
+</observation>

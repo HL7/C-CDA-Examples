@@ -1,0 +1,6 @@
+<inFulfillmentOf>
+  <order>
+    <!-- The root identifies the EMR system at the Good Health Internal Medicine Practice -->
+    <id extension="Ord12345" root="2.16.840.1.113883.4.6.1234567890.4" />
+  </order>
+</inFulfillmentOf>

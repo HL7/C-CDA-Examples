@@ -1,0 +1,19 @@
+<section>
+  <!--**MEDICATION SECTION (coded entries required) ** -->
+  <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09" />
+  <!-- Medications Section (entries optional) -->
+  <templateId root="2.16.840.1.113883.10.20.22.2.1" extension="2014-06-09" />
+  <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF MEDICATION USE" />
+  <title>MEDICATIONS</title>
+  <text>
+        Narrative Text    
+    </text>
+  <entry>
+    <substanceAdministration classCode="SBADM" moodCode="EVN">
+      <!--**MEDICATION ACTIVITY V2 ** -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09" />
+            ....
+        
+    </substanceAdministration>
+  </entry>
+</section>

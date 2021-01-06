@@ -1,0 +1,14 @@
+<entry>
+  <observation classCode="OBS" moodCode="EVN">
+    <!-- Functional Status Observation V2-->
+    <templateId root="2.16.840.1.113883.10.20.22.4.67" extension="2014-06-09" />
+    <id root="ce7cfb78-bd16-467e-8bcf-859a3034108e" />
+    <code code="54522-8" displayName="Functional status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="SNOMED CT" />
+    <text>
+      <reference value="#FUNC1" />
+    </text>
+    <statusCode code="completed" />
+    <effectiveTime value="200130311" />
+    <value xsi:type="CD" code="129035000" displayName="independent with dressing" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+  </observation>
+</entry>

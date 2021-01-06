@@ -1,0 +1,44 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.14" extension="2015-08-01" />
+  <!-- Mental Status Section -->
+  <code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MENTAL STATUS" />
+  <title>MENTAL STATUS</title>
+  <text>
+      ...
+    </text>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- Mental Status Observation template -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.125" extension="2015-08-01" />
+               ...
+        
+        
+        
+        
+        
+    </observation>
+  </entry>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- Mental Status Observation V2 -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2015-08-01" />
+            ...
+          
+        
+        
+        
+    </observation>
+  </entry>
+  <entry>
+    <organizer classCode="CLUSTER" moodCode="EVN">
+      <!-- Mental Status Organizer V2-->
+      <templateId root="2.16.840.1.113883.10.20.22.4.75" extension="2015-08-01" />
+      <id root="a7bc1062-8649-42a0-833d-ekd65bd013c9" />
+             ...
+                
+        
+        
+        
+    </organizer>
+  </entry>
+</section>

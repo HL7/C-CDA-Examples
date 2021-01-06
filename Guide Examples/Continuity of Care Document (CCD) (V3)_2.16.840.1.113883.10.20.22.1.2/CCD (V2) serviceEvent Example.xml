@@ -1,0 +1,18 @@
+<documentationOf>
+  <serviceEvent classCode="PCPR">
+    <!-- The effectiveTime reflects the provision of care summarized in the document. 
+             In this scenario, the provision of care summarized is the lifetime for
+             the patient -->
+    <effectiveTime>
+      <low value="19750501" />
+      <!-- The low value represents when the summarized provision of care began. 
+                 In this scenario, the patient's date of birth -->
+      <high value="20120915" />
+      <!-- The high value represents when the summarized provision of care being 
+                 ended. In this scenario, when chart summary was created -->
+    </effectiveTime>
+    <performer typeCode="PRF">
+           ....
+        </performer>
+  </serviceEvent>
+</documentationOf>

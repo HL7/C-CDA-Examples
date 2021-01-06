@@ -1,0 +1,41 @@
+<component>
+  <section>
+    <!-- Medical equipment section -->
+    <templateId root="2.16.840.1.113883.10.20.22.2.23" extension="2014-06-09" />
+    <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" />
+    <title>MEDICAL EQUIPMENT</title>
+    <text>
+      <content styleCode="Bold">Medical Equipment</content>
+      <list>
+        <item>Implanted Devices: Cardiac Pacemaker July 3, 2013</item>
+        <item>Implanted Devices: Upper GI Prosthesis, January 3, 2013</item>
+        <item>Cane, February 2, 2003</item>
+        <item>Biliary Stent, May 5, 2013</item>
+      </list>
+    </text>
+    <entry>
+      <organizer classCode="CLUSTER" moodCode="EVN">
+        <!-- Medical Equipment Organizer template -->
+        <templateId root="2.16.840.1.113883.10.20.22.4.135" />
+                ...
+            
+      </organizer>
+    </entry>
+    <entry>
+      <supply classCode="SPLY" moodCode="EVN">
+        <!-- Non-medicinal supply activity V2 template ******* -->
+        <templateId root="2.16.840.1.113883.10.20.22.4.50" extension="2014-06-09" />
+                ...
+            
+      </supply>
+    </entry>
+    <entry>
+      <procedure classCode="PROC" moodCode="EVN">
+        <!-- Procedure Activity Procedure V2-->
+        <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09" />
+                ...
+            
+      </procedure>
+    </entry>
+  </section>
+</component>

@@ -1,0 +1,49 @@
+<section>
+  <!-- C-CDA 2.1 Procedures Section, entries optional -->
+  <templateId root="2.16.840.1.113883.10.20.22.2.7"/>
+  <templateId root="2.16.840.1.113883.10.20.22.2.7" extension="2014-06-09"/>
+  <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PROCEDURES"/>
+  <title>Procedures</title>
+  <text>
+    <list>
+      <item ID="ProcedureNote1">
+        <paragraph>Dr. Physician - 03 Feb 2014</paragraph>
+        <paragraph>Free-text note about procedures which have occurred during this visit.</paragraph>
+      </item>
+    </list>
+  </text>
+  <!-- If section were entries required, an additional <entry nullFlavor="NI"> would be required for a Procedure Activity -->
+  <!-- Note Activity entry -->
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01"/>
+      <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName=?ote?
+                
+        <translation code="28570-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure note" />
+      </code>
+      <text>
+        <reference value="#ProcedureNote1" />
+      </text>
+      <statusCode code="completed"/>
+      <!-- Clinically-relevant time of the note -->
+      <effectiveTime value="20140203" />
+      <!-- Author Participation -->
+      <author>
+        <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+        <!-- Time note was actually written -->
+        <time value="20140204083215-0500" />
+        <assignedAuthor>
+          <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c" />
+          <name>Dr. Physician</name>
+        </assignedAuthor>
+      </author>
+      <!-- Reference to encounter -->
+      <entryRelationship typeCode="COMP" inversionInd="true">
+        <encounter>
+          <!-- Encounter ID matches an encounter in the Encounters Section -->
+          <id root="1.2.3.4" />
+        </encounter>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>

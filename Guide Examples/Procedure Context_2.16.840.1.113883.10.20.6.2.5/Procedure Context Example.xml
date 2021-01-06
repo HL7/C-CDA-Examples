@@ -1,0 +1,9 @@
+<act moodCode="EVN" classCode="ACT">
+  <templateId root="2.16.840.1.113883.10.20.6.2.5"/>
+  <code code="70548" 
+          displayName="Magnetic resonance angiography, head; with contrast material(s)"
+          codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/>
+  <!-- Note: This code is slightly different from the code used in the header 
+         documentationOf and overrides it, which is what this entry is for. -->
+  <effectiveTime value="20060823123529+0400"/>
+</act>

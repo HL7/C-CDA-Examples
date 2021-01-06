@@ -1,0 +1,15 @@
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.6.2.14"/>
+  <code code="439984002" codeSystem="2.16.840.1.113883.6.96" 
+        codeSystemName="SNM3" 
+        displayName="Diameter of structure">
+    <originalText>
+      <reference value="#Diam2"/>
+    </originalText>
+  </code>
+  <statusCode code="completed"/>
+  <effectiveTime value="200802260805-0800"/>
+  <value xsi:type="PQ" value="45" unit="mm"
+           codeSystemVersion="1.5"/>
+  <!-- entryRelationships to SOP Instance Observations may go here -->
+</observation>

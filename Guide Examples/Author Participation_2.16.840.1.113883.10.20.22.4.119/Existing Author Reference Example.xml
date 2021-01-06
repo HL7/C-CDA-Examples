@@ -1,0 +1,10 @@
+<author>
+  <time value="201308011235-0800" />
+  <assignedAuthor>
+    <!-- 
+            This id points to a participant already described 
+            elsewhere in the document 
+        -->
+    <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c" />
+  </assignedAuthor>
+</author>

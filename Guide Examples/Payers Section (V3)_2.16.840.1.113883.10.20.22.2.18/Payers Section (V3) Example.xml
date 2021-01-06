@@ -1,0 +1,21 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.18" extension="2015-08-01" />
+  <!--  ******** Payers section template  ******** -->
+  <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payers" />
+  <title>Insurance Providers</title>
+  <text>
+        . . . 
+    </text>
+  <entry typeCode="DRIV">
+    <act classCode="ACT" moodCode="DEF">
+      <templateId root="2.16.840.1.113883.10.20.22.4.60" extension="2015-08-01" />
+      <!--  ****  Coverage entry template  **** -->
+      ...
+    
+        
+        
+        
+        
+    </act>
+  </entry>
+</section>

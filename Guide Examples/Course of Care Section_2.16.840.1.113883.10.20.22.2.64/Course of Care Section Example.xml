@@ -1,0 +1,23 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.64"
+             extension="2014-06-09" />
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+          code="8648-8" displayName="Hospital Course Narrative" />
+  <title>Hospital Course of Care</title>
+  <text>
+    <paragraph>This patient was only recently transferred after a recurrent 
+        GI bleed as described below.</paragraph>
+    <paragraph>He presented to the ER today c/o a dark stool yesterday 
+        but a normal brown stool today. On exam he was hypotensive in the 
+        80s resolved after .... .... .... </paragraph>
+    <paragraph>Lab at discharge: Glucose 112, BUN 16, creatinine 1.1, 
+        electrolytes normal. H. pylori antibody pending. Admission 
+        hematocrit 16%, discharge hematocrit 29%. WBC 7300, platelet 
+        count 256,000. Urinalysis normal. Urine culture: No growth. INR 
+        1.1, PTT 40.</paragraph>
+    <paragraph>He was transfused with 6 units of packed red blood cells 
+        with .... .... ....</paragraph>
+    <paragraph>GI evaluation 12 September: Colonoscopy showed single red 
+       clot in .... .... ....</paragraph>
+  </text>
+</section>

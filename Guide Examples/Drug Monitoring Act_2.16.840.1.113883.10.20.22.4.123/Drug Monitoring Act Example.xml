@@ -1,0 +1,25 @@
+<entryRelationship typeCode="COMP">
+  <!-- **DRUG MONITORING ACT **-->
+  <act classCode="ACT" moodCode="INT">
+    <templateId root="2.16.840.1.113883.10.20.22.4.123" />
+    <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8" />
+    <code code="395170001" displayName="medication monitoring(regime/therapy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" />
+    <statusCode code="completed" />
+    <effectiveTime xsi:type="IVL_TS">
+      <low value="20130615" />
+      <high value="20130715" />
+    </effectiveTime>
+    <participant typeCode="RESP">
+      <participantRole classCode="ASSIGNED">
+        <id root="2a620155-9d11-439e-92b3-5d9815ff4ee5" />
+        <playingEntity classCode="PSN">
+          <name>
+            <given>Listener</given>
+            <family>Larry</family>
+            <prefix>DR</prefix>
+          </name>
+        </playingEntity>
+      </participantRole>
+    </participant>
+  </act>
+</entryRelationship>

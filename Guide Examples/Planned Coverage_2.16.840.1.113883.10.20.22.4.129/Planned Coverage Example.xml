@@ -1,0 +1,17 @@
+<act classCode="ACT" moodCode="INT">
+  <templateId root="2.16.840.1.113883.10.20.22.4.129" />
+  <id root="03f5e10b-7e79-4610-9626-d2984ff10cc1" />
+  <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment Sources" />
+  <statusCode code="active" />
+  <entryRelationship typeCode="COMP">
+    <act classCode="ACT" moodCode="INT">
+      <!-- These act/identifiers are unique identifiers 
+        for the policy or program providing the coverage. -->
+      <id root="4c9a3be1-5f09-46dd-88e7-14c8ec612e4c" />
+      <code code="111" displayName="Medicare HMO"
+                      codeSystemName="Source of Payment Typology (PHDSC)"
+                      codeSystem="2.16.840.1.113883.3.221.5" />
+      <statusCode code="active" />
+    </act>
+  </entryRelationship>
+</act>

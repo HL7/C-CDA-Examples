@@ -1,0 +1,27 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.6.1.2"/>
+  <code code="121070" 	
+          codeSystem="1.2.840.10008.2.16.4" 
+          codeSystemName="DCM" 
+          displayName="Findings"/>
+  <title>Findings</title>
+  <text>
+    <paragraph>
+      <caption>Finding</caption>
+      <content ID="Fndng2">The cardiomediastinum is     . </content>
+    </paragraph>
+    <paragraph>
+      <caption>Diameter</caption>
+      <content ID="Diam2">45mm</content>
+    </paragraph>
+       ...
+    
+    
+  </text>
+  <entry>
+    <templateId root="2.16.840.1.113883.10.20.6.2.12"/>
+       ...
+    
+    
+  </entry>
+</section>

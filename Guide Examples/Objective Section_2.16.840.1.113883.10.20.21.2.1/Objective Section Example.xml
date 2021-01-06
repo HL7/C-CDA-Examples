@@ -1,0 +1,14 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.21.2.1"/>
+  <code	code="61149-1 " codeSystem="2.16.840.1.113883.6.1" 
+      codeSystemName="LOINC" 
+      displayName="OBJECTIVE DATA "/>
+  <title>OBJECTIVE DATA</title>
+  <text>
+    <list listType="ordered">
+      <item>Chest: clear to ausc. No rales, normal breath sounds</item>
+      <item>Heart: RR, PMI in normal location and no heave or evidence of
+              cardiomegaly,normal heart sounds, no murm or gallop</item>
+    </list>
+  </text>
+</section>

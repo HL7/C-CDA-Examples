@@ -1,0 +1,10 @@
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.77"/>
+  <id root="08edb7c0-2111-43f2-a784-9a5fdfaa67f0"/>
+  <code code="420905001" codeSystem="2.16.840.1.113883.6.96"
+        displayName=" Highest Pressure Ulcer Stage"/>
+  <statusCode code="completed"/>
+  <value xsi:type="CD" code="421306004"
+         codeSystem="2.16.840.1.113883.6.96" 
+         displayName="necrotic eschar"/>
+</observation>

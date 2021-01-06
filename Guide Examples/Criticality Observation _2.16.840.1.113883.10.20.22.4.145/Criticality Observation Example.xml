@@ -1,0 +1,12 @@
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.145"/>
+  <code code="82606-5" codeSystem="2.16.840.1.113883.6.1" 
+               displayName="Criticality" />
+  <text>
+    <reference value="#criticality"/>
+  </text>
+  <statusCode code="completed"/>
+  <value xsi:type="CD" code="High" displayName="High Criticality - NEED PROPER 
+               CODE" codeSystem="2.16.840.1.113883.6.96" 
+               codeSystemName="SNOMED CT"/>
+</observation>

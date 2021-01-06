@@ -1,0 +1,11 @@
+<entryRelationship typeCode="COMP">
+  <observation classCode="OBS" moodCode="EVN">
+    <!-- Wound Measurements Observation . -->
+    <templateId root="2.16.840.1.113883.10.20.22.4.133" />
+    <id root="d2b46280-eb34-11e2-91e2-0800200c9a66" />
+    <code code=" 401238003" codeSystem="2.16.840.1.113883.6.96" displayName="Length of Wound" />
+    <statusCode code="completed" />
+    <effectiveTime value="20013103" />
+    <value xsi:type="PQ" value="2" unit="[in_i]" />
+  </observation>
+</entryRelationship>

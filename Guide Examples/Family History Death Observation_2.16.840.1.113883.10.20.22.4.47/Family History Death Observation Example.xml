@@ -1,0 +1,10 @@
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.47"/>
+  <id root="6898fae0-5c8a-11db-b0de-0800200c9a66"/>
+  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+  <statusCode code="completed"/>
+  <value xsi:type="CD" 
+        code="419099009" 
+        codeSystem="2.16.840.1.113883.6.96"
+        displayName="Dead"/>
+</observation>

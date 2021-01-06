@@ -1,0 +1,55 @@
+<substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+  <!-- ** Immunization activity ** -->
+  <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01" />
+  <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92" />
+  <statusCode code="completed" />
+  <effectiveTime value="19981215" />
+  <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular injection" />
+  <doseQuantity value="50" unit="ug" />
+  <consumable>
+    <manufacturedProduct classCode="MANU">
+      <!-- ** Immunization medication information ** -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
+      <manufacturedMaterial>
+        <code code="33" codeSystem="2.16.840.1.113883.6.59" displayName="Pneumococcal polysaccharide vaccine" codeSystemName="CVX">
+          <translation code="854981" displayName="Pneumovax 23 (Pneumococcal vaccine polyvalent) Injectable Solution" codeSystemName="RxNORM" codeSystem="2.16.840.1.113883.6.88" />
+        </code>
+        <lotNumberText>1</lotNumberText>
+      </manufacturedMaterial>
+      <manufacturerOrganization>
+        <name>Health LS - Immuno Inc.</name>
+      </manufacturerOrganization>
+    </manufacturedProduct>
+  </consumable>
+  <performer>
+    <assignedEntity>
+      <id root="2.16.840.1.113883.19.5.9999.456" extension="2981824" />
+      <addr>
+        <streetAddressLine>1007 Health Drive</streetAddressLine>
+        <city>Portland</city>
+        <state>OR</state>
+        <postalCode>99123</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom use="WP" value="tel: +(555)-555-1030" />
+      <assignedPerson>
+        <name>
+          <given>Harold</given>
+          <family>Hippocrates</family>
+        </name>
+      </assignedPerson>
+      <representedOrganization>
+        <id root="2.16.840.1.113883.19.5.9999.1394" />
+        <name>Good Health Clinic</name>
+        <telecom use="WP" value="tel: +(555)-555-1030" />
+        <addr>
+          <streetAddressLine>1007 Health Drive</streetAddressLine>
+          <city>Portland</city>
+          <state>OR</state>
+          <postalCode>99123</postalCode>
+          <country>US</country>
+        </addr>
+      </representedOrganization>
+    </assignedEntity>
+  </performer>
+</substanceAdministration>

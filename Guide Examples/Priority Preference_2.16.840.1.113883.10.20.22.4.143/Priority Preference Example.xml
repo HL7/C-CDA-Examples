@@ -1,0 +1,27 @@
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.143" />
+  <id root="7d66f448-ba82-4291-a9da-9e5db5e58803" />
+  <code code="225773000" 
+        codeSystem="2.16.840.1.113883.6.96" 
+        codeSystemName="SNOMED CT" 
+        displayName="preference" />
+  <value xsi:type="CD" 
+         code="394849002" 
+         codeSystem="2.16.840.1.113883.6.96" 
+         codeSystemName="SNOMED" 
+         displayName="High priority" />
+  <!--
+      Author Participation Template
+      In this case, the author is the same as a participant already described in the header. 
+      However, the author could be a the record target (patient), a different provider - 
+      someone else in the header, or a new provider not elsewhere specified.
+    -->
+  <author>
+    <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+    <time value="20130801" />
+    <assignedAuthor>
+      <!-- This id points back to a participant in the header -->
+      <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c" />
+    </assignedAuthor>
+  </author>
+</observation>

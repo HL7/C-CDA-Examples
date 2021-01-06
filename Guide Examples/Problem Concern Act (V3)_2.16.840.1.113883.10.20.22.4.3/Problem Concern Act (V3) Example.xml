@@ -1,0 +1,58 @@
+<act classCode="ACT" moodCode="EVN">
+  <!-- ** Problem Concern Act (V3) ** -->
+  <templateId root="2.16.840.1.113883.10.20.22.4.3" 
+          extension="2015-08-01" />
+  <id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7" />
+  <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern" />
+  <!-- The statusCode represents the need to continue tracking the problem -->
+  <!-- This is of ongoing concern to the provider -->
+  <statusCode code="active" />
+  <effectiveTime>
+    <!-- The low value represents when the problem was first recorded in the patient's chart -->
+    <!-- Concern was documented on July 6, 2013 -->
+    <low value="201307061145-0800" />
+  </effectiveTime>
+  <author typeCode="AUT">
+    <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+    <!-- Same as Concern effectiveTime/low -->
+    <time value="201307061145-0800" />
+    <assignedAuthor>
+      <id extension="555555555" root="2.16.840.1.113883.4.6" />
+      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+        codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
+    </assignedAuthor>
+  </author>
+  <entryRelationship typeCode="SUBJ">
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- ** Problem Observation (V3) ** -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
+      <id root="ab1791b0-5c71-11db-b0de-0800200c9a66" />
+      <code code="75323-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Condition" />
+      <!-- The statusCode reflects the status of the observation itself -->
+      <statusCode code="completed" />
+      <effectiveTime>
+        <!-- The low value reflects the date of onset -->
+        <!-- Based on patient symptoms, presumed onset is July 3, 2013 -->
+        <low value="20130703" />
+        <!-- The high value reflects when the problem was known to be resolved -->
+        <!-- Based on signs and symptoms, appears to be resolved on Aug 14, 2013 -->
+        <high value="20080814" />
+      </effectiveTime>
+      <value xsi:type="CD" 
+             code="233604007" 
+             codeSystem="2.16.840.1.113883.6.96"  
+             displayName="Pneumonia" />
+      <author typeCode="AUT">
+        <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+        <time value="200808141030-0800" />
+        <assignedAuthor>
+          <id extension="555555555" root="2.16.840.1.113883.4.6" />
+          <code code="207QA0505X" 
+                displayName="Adult Medicine" 
+                codeSystem="2.16.840.1.113883.6.101"
+                codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
+        </assignedAuthor>
+      </author>
+    </observation>
+  </entryRelationship>
+</act>

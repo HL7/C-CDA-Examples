@@ -1,0 +1,23 @@
+<performer typeCode="PRF">
+  <time value="20130715223615-0800" />
+  <assignedEntity>
+    <id extension="5555555555" root="2.16.840.1.113883.4.6" />
+    <code code="59058001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="General Physician" />
+    <addr>
+      <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
+      <city>Portland</city>
+      <state>OR</state>
+      <postalCode>99123</postalCode>
+      <country>US</country>
+    </addr>
+    <telecom use="WP" value="tel:+1(555)-1004" />
+    <assignedPerson>
+      <name>
+        <given>Patricia</given>
+        <given qualifier="CL">Patty</given>
+        <family>Primary</family>
+        <suffix qualifier="AC">M.D.</suffix>
+      </name>
+    </assignedPerson>
+  </assignedEntity>
+</performer>

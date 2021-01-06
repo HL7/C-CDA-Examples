@@ -1,0 +1,16 @@
+<participantRole classCode="SDLOC">
+  <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+  <code code="1160-1" codeSystem="2.16.840.1.113883.6.259"
+          codeSystemName="HealthcareServiceLocation" displayName="Urgent Care Center"/>
+  <addr>
+    <streetAddressLine>17 Daws Rd.</streetAddressLine>
+    <city>Blue Bell</city>
+    <state>MA</state>
+    <postalCode>02368</postalCode>
+    <country>US</country>
+  </addr>
+  <telecom use="WP" value="tel:+1(555)555-5000"/>
+  <playingEntity classCode="PLC">
+    <name>Community Health and Hospitals</name>
+  </playingEntity>
+</participantRole>

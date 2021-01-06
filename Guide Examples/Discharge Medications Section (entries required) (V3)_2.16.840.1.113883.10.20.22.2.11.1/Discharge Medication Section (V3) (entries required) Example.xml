@@ -1,0 +1,29 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.11.1" extension="2015-08-01" />
+  <code code="10183-2" displayName="Hospital Discharge Medications"
+                                codeSystem="2.16.840.1.113883.6.1"
+                                codeSystemName="LOINC">
+    <translation code="75311-1" displayName="Discharge Medications"
+                                    codeSystem="2.16.840.1.113883.6.1"
+                                    codeSystemName="LOINC"></translation>
+  </code>
+  <title>Discharge Medications</title>
+  <text>
+       ...
+    </text>
+  <entry typeCode="DRIV">
+    <act classCode="ACT" moodCode="EVN">
+      <!-- Discharge Medication Entry -->
+            ...
+       
+        
+        
+        
+        
+    </act>
+  </entry>
+    ... 
+
+
+
+</section>

@@ -1,0 +1,16 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.29" extension="2014-06-09" />
+  <code code="59768-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PROCEDURE INDICATIONS" />
+  <title>Procedure Indications</title>
+  <text>The procedure is performed for screening in a low risk individual.
+   </text>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- Indication Entry -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09" />
+         ...
+      
+        
+    </observation>
+  </entry>
+</section>
