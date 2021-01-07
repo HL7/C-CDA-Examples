@@ -1,0 +1,20 @@
+<substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="true">
+  <!-- ** Medication activity ** -->
+  <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09" />
+  <id root="072f00fc-4f9d-4516-8d6f-ed00ed523fe0" />
+  <statusCode code="active" />
+  <effectiveTime xsi:type="IVL_TS">
+    <low value="20110103" />
+  </effectiveTime>
+  <consumable>
+    <manufacturedProduct classCode="MANU">
+      <!-- ** Medication information ** -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09" />
+      <manufacturedMaterial>
+        <code nullFlavor="OTH" codeSystem="2.16.840.1.113883.6.88">
+          <translation code="410942007" displayName="drug or medication" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+        </code>
+      </manufacturedMaterial>
+    </manufacturedProduct>
+  </consumable>
+</substanceAdministration>

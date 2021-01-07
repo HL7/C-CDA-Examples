@@ -1,0 +1,14 @@
+<!--  Section Time Range Observation -->
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.68.99999"/>
+  <code code="X-SECTIONTIMERANGE" codeSystem="2.16.840.1.113883.6.1" 
+                displayName="Section Date and Time Range"/>
+  <text>
+    <reference value="#TS_Narrative1"/>
+  </text>
+  <statusCode code="completed"/>
+  <value xsi:type="IVL_TS">
+    <low value="20120815"/>
+    <high value="20150815"/>
+  </value>
+</observation>

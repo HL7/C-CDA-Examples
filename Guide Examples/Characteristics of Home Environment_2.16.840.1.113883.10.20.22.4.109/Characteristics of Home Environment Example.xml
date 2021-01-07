@@ -1,0 +1,10 @@
+<observation classCode="OBS" moodCode="EVN">
+  <!-- ** Characteristics of Home Environment** -->
+  <templateId root="2.16.840.1.113883.10.20.22.4.109" />
+  <id root="37f76c51-6411-4e1d-8a37-957fd49d2ceg" />
+  <code code="75274-1" codeSystem="2.16.840.1.113883.6.1"
+          displayName="Characteristics of residence" />
+  <statusCode code="completed" />
+  <effectiveTime value="20130312" />
+  <value xsi:type="CD" code="308899009" displayName="unsatisfactory living conditions (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+</observation>

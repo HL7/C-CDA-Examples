@@ -1,0 +1,18 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.20" extension="2015-08-01" />
+  <!-- ** History of Past Illness Section ** -->
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="11348-0" displayName="HISTORY OF PAST ILLNESS" />
+  <title>PAST MEDICAL HISTORY</title>
+  <text>
+    <paragraph>Patient has had .....  </paragraph>
+  </text>
+  <entry>
+    <!-- Sample With Problem Observation. -->
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- Problem Observation -->
+         ...
+      
+        
+    </observation>
+  </entry>
+</section>

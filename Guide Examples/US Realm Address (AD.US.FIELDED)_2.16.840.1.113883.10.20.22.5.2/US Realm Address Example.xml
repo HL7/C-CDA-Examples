@@ -1,0 +1,7 @@
+<addr use="HP">
+  <streetAddressLine>22 Sample Street</streetAddressLine>
+  <city>Beaverton</city>
+  <state>OR</state>
+  <postalCode>97867</postalCode>
+  <country>US</country>
+</addr>

@@ -1,0 +1,60 @@
+<act classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.12" extension="2014-06-09" />
+  <id root="1.2.3.4.5.6.7.8" extension="1234567" />
+  <code code="274025005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Colonic polypectomy">
+    <originalText>
+      <reference value="#Proc1" />
+    </originalText>
+  </code>
+  <statusCode code="completed" />
+  <effectiveTime value="20110203" />
+  <priorityCode code="CR" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority" displayName="Callback results" />
+  <performer>
+    <assignedEntity>
+      <id root="2.16.840.1.113883.19" extension="1234" />
+      <addr>
+        <streetAddressLine>1001 Village Avenue</streetAddressLine>
+        <city>Portland</city>
+        <state>OR</state>
+        <postalCode>99123</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom use="WP" value="tel: +1(555)-555-5000" />
+      <representedOrganization>
+        <id root="2.16.840.1.113883.19.5" />
+        <name>Community Health and Hospitals</name>
+        <telecom use="WP" value="tel:+1(555)-555-5000" />
+        <addr>
+          <streetAddressLine>1001 Village Avenue</streetAddressLine>
+          <city>Portland</city>
+          <state>OR</state>
+          <postalCode>99123</postalCode>
+          <country>US</country>
+        </addr>
+      </representedOrganization>
+    </assignedEntity>
+  </performer>
+  <participant typeCode="LOC">
+    <participantRole classCode="SDLOC">
+      <templateId root="2.16.840.1.113883.10.20.22.4.32" />
+            . . .
+        
+    </participantRole>
+  </participant>
+  <entryRelationship typeCode="RSON">
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09" />
+                . . . 
+
+        
+    </observation>
+  </entryRelationship>
+  <entryRelationship typeCode="SUBJ" inversionInd="true">
+    <act classCode="ACT" moodCode="INT">
+      <templateId root="2.16.840.1.113883.10.20.22.4.20" extension="2014-06-09" />
+                . . .
+
+        
+    </act>
+  </entryRelationship>
+</act>

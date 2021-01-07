@@ -1,0 +1,51 @@
+<!-- 
+  This entry shows an act in intent mood (planned intervention- 
+  meaning this is intended to be done), with the reason "RSN" for the act 
+  being the already defined Goal (pulse ox reading > 92) 
+  The intervention contains relationships to different components of
+  the intervention.
+-->
+<!-- Intervention Act -->
+<act classCode="ACT" moodCode="INT">
+  <templateId root="2.16.840.1.113883.10.20.22.4.131" />
+  <id root="85fa4b62-e3a9-4385-b064-fe04cca35adb" />
+  <code code="code_for_intervention" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Intervention" />
+  <statusCode code="active" />
+  <entryRelationship typeCode="REFR">
+    <!-- The following act is one part of the intervention - 
+               "Elevate head of bed" -->
+    <!-- Procedure Activity Act -->
+    <act classCode="ACT" moodCode="INT">
+      <templateId root="2.16.840.1.113883.10.20.22.4.12" extension="2015-08-01" />
+      <id root="7658963e-54da-496f-bf18-dea1dddaa3b0" />
+      <code code="423171007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Elevate head of bed" />
+      <statusCode code="active" />
+    </act>
+  </entryRelationship>
+  <entryRelationship typeCode="REFR">
+    <!-- The following procedure is one part of the intervention - 
+      "Oxygen administration by nasal cannula" -->
+    <!-- Procedure Activity Procedure -->
+    <procedure classCode="PROC" moodCode="INT">
+      <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09" />
+      <id root="6a560f3d-88fd-4292-9415-f9371adaec46" />
+      <code code="371907003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Oxygen administration by nasal cannula" />
+      <statusCode code="active" />
+    </procedure>
+  </entryRelationship>
+  <!-- This entryRelationship represents the relationship between an 
+    Intervention Act and a Goal Observation (Intervention HAS REASON Goal). 
+    The Entry Reference template is being used here as this Goal is 
+    defined elsewhere in the CDA document -->
+  <entryRelationship typeCode="RSON">
+    <!-- Entry Reference template -->
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.122" />
+      <!-- This id points to an already defined Goal 
+        (pulse ox reading > 92) in the Goals Section -->
+      <id root="3700b3b0-fbed-11e2-b778-0800200c9a66" />
+      <code nullFlavor="NP" />
+      <statusCode code="completed" />
+    </act>
+  </entryRelationship>
+</act>

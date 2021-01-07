@@ -1,0 +1,13 @@
+<act classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.1.19"/>
+  <id root="f4dce790-8328-11db-9fe1-0800200c9a66"/>
+  <code nullFlavor="NA" />
+  <entryRelationship typeCode="SUBJ">
+    <procedure classCode="PROC" moodCode="PRMS">
+      <code code="73761001" 
+                     codeSystem="2.16.840.1.113883.6.96"
+	             codeSystemName="SNOMED CT" 
+                     displayName="Colonoscopy"/>
+    </procedure>
+  </entryRelationship>
+</act>

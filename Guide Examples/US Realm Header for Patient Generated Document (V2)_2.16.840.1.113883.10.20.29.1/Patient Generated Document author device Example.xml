@@ -1,0 +1,28 @@
+<!-- The Author below documents the system used to create the Patient Generated Document.
+		In this scenario the Patient is using a fictitious PHR Service called MyPersonalHealthRecord.com. 
+		It is a service which consumers purchase to receive and create their electronic health records. 
+		It is not a Patient Portal that is tethered to some other EMR or medical insurance records system.
+		The service is developed by a company call ACME PHR Solutions, Inc. -->
+<author>
+  <time value="20121126145000-0500" />
+  <assignedAuthor>
+    <id extension="777.11" root="2.16.840.1.113883.19" />
+    <addr nullFlavor="NA" />
+    <telecom nullFlavor="NA" />
+    <assignedAuthoringDevice>
+      <manufacturerModelName>ACME PHR</manufacturerModelName>
+      <softwareName>MyPHR v1.0</softwareName>
+    </assignedAuthoringDevice>
+    <representedOrganization>
+      <id extension="999" root="1.2.3.4.5.6.7.8.9.12345" />
+      <name>ACME PHR Solutions, Inc.</name>
+      <telecom use="WP" value="tel:123-123-12345" />
+      <addr>
+        <streetAddressLine>4 Future Way</streetAddressLine>
+        <city>Provenance</city>
+        <state>RI</state>
+        <postalCode>02919</postalCode>
+      </addr>
+    </representedOrganization>
+  </assignedAuthor>
+</author>

@@ -1,0 +1,33 @@
+<entry typeCode="DRIV">
+  <substanceAdministration classCode="SBADM" moodCode="EVN">
+    <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09" />
+    <!-- ** MEDICATION ACTIVITY -->
+    <id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66" />
+    <text>
+      <reference value="#Med1" /> 0.09 MG/ACTUAT inhalant solution, 2 puffs QID PRN wheezing 
+        
+        
+    </text>
+    ...
+
+        
+    <!-- Indication snippet inside a Medication Activity -->
+    <entryRelationship typeCode="RSON">
+      <observation classCode="OBS" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09" />
+        <!-- Note that this id equals the problem observation/id -->
+        <id root="db734647-fc99-424c-a864-7e3cda82e703" />
+        <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+        <statusCode code="completed" />
+        <value xsi:type="CD" code="32398004" displayName="Bronchitis" codeSystem="2.16.840.1.113883.6.96" />
+      </observation>
+    </entryRelationship>
+    ...
+    
+  </substanceAdministration>
+</entry>
+<!-- Points to a problem on the problem list -->
+<!-- Problem observation template 
+        <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+        Note that this id equals the Indication observation/id
+       <id root="db734647-fc99-424c-a864-7e3cda82e703"/> -->

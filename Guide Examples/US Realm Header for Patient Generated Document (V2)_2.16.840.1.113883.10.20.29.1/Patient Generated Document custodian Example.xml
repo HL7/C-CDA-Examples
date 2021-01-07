@@ -1,0 +1,17 @@
+<custodian>
+  <assignedCustodian>
+    <representedCustodianOrganization>
+      <!-- id using HL7 example OID. -->
+      <id extension="999.3" root="2.16.840.1.113883.19" />
+      <name>MyPersonalHealthRecord.Com</name>
+      <telecom value="tel:(555)555-1212" use="WP" />
+      <addr use="WP">
+        <streetAddressLine>123 Boylston Street</streetAddressLine>
+        <city>Blue Hill</city>
+        <state>MA</state>
+        <postalCode>02368</postalCode>
+        <country>USA</country>
+      </addr>
+    </representedCustodianOrganization>
+  </assignedCustodian>
+</custodian>

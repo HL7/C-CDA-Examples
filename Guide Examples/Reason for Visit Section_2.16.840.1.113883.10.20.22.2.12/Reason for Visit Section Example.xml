@@ -1,0 +1,11 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.12"/>
+  <code code="29299-5" 
+          codeSystem="2.16.840.1.113883.6.1" 
+          codeSystemName="LOINC" 
+          displayName="REASON FOR VISIT"/>
+  <title>REASON FOR VISIT</title>
+  <text>
+    <paragraph>Dark stools.</paragraph>
+  </text>
+</section>

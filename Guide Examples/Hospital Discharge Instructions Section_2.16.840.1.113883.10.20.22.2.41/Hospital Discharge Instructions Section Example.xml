@@ -1,0 +1,42 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.41"/>
+  <code code="8653-8" codeSystem="2.16.840.1.113883.6.1" 
+        codeSystemName="LOINC" 
+        displayName="HOSPITAL DISCHARGE INSTRUCTIONS"/>
+  <title>HOSPITAL DISCHARGE INSTRUCTIONS</title>
+  <text>
+    <list listType="ordered">
+      <item>Take all of your prescription medication as directed.</item>
+      <item>Make an appointment with your doctor to be seen two weeks from the 
+            date of your procedure.</item>
+      <item>You may feel slightly bloated after the procedure because of air 
+            that was introduced during the examination.</item>
+      <item>Call your physician if you notice:
+                
+        <br/>
+            Bleeding or black stools.
+                
+        <br/>
+            Abdominal pain.
+                
+        <br/>
+            Fever or chills.
+                
+        <br/>
+            Nausea or vomiting.
+                
+        <br/>
+            Any unusual pain or problem.
+                
+        <br/>
+            Pain or redness at the site where the intravenous needle was 
+            placed.
+                
+        <br/>
+      </item>
+      <item>Do not drink alcohol for 24 hours. Alcohol amplifies the effect of 
+            the sedatives given.</item>
+      <item>Do not drive or operate machinery for 24 hours.</item>
+    </list>
+  </text>
+</section>

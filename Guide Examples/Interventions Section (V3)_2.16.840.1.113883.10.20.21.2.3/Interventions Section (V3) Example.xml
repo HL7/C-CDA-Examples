@@ -1,0 +1,9 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.21.2.3" extension="2015-08-01" />
+  <code code="62387-6" displayName="Interventions Provided" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+  <title>Interventions Section</title>
+  <text />
+  <entry>
+    <act />
+  </entry>
+</section>

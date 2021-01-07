@@ -1,0 +1,21 @@
+<!-- Outcome Observation -->
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.144" />
+  <id root="0aaaa123-24e2-46b3-9d49-6b753c712dec" />
+  <code code="44616-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pulse oximetry panel" />
+  <statusCode code="completed" />
+  <effectiveTime value="20130806" />
+  <value xsi:type="PQ" value="95" unit="%" />
+  <author>
+        ...
+    </author>
+  <!-- This Outcome Observation EVALUATES a Goal 
+    (Pulse ox reading of 95 evaluates the goal of Pulse ox reading > 92) -->
+  <entryRelationship typeCode="GEVL">
+        ...
+    </entryRelationship>
+  <!-- This Outcome Observation SUPPORTS the Progress Toward Goal Observation -->
+  <entryRelationship typeCode="SPRT" inversionInd="true">
+        ...
+    </entryRelationship>
+</observation>

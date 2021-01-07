@@ -1,0 +1,51 @@
+<organizer classCode="CLUSTER" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.108" extension="2015-08-01" />
+  <id root="631F0E95-F055-4FA2-AF10-3AE036CAD2EC" extension="10.1.1" />
+  <code code="45473-6" 
+    displayName="advance directive - living will" 
+    codeSystem="2.16.840.1.113883.6.1" 
+    codeSystemName="LOINC">
+    <originalText>
+      <reference value="#ADO1" />
+    </originalText>
+  </code>
+  <statusCode code="completed" />
+  <!-- Author Participation -->
+  <author>
+    <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+    <time value="20130807150000-0500" />
+    <assignedAuthor>
+      <id extension="5555555551" root="2.16.840.1.113883.4.6" />
+      <code code="163W00000X" 
+        displayName="Registered nurse" 
+        codeSystem="2.16.840.1.113883.6.101"
+        codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
+      <assignedPerson>
+        <name>
+          <given>Nurse</given>
+          <family>Nightingale</family>
+          <suffix>RN</suffix>
+        </name>
+      </assignedPerson>
+      <representedOrganization classCode="ORG">
+        <id root="2.16.840.1.113883.19.5" />
+        <name>Good Health Hospital</name>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <component>
+    <!-- Advance Directive Observation (V3)  -->
+    ...
+  
+  </component>
+  <component>
+    <!-- Advance Directive Observation (V3) -->
+    ...
+  
+  </component>
+  <component>
+    <!-- Advance Directive Observation (V3) -->
+    ...
+  
+  </component>
+</organizer>

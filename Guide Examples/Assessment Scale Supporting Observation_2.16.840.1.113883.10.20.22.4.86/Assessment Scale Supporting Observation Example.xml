@@ -1,0 +1,9 @@
+ 
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+  <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
+  <code code="248240001" displayName="motor response"
+          codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"/>
+  <statusCode code="completed"/>
+  <value xsi:type="INT" value="3"/>
+</observation> 

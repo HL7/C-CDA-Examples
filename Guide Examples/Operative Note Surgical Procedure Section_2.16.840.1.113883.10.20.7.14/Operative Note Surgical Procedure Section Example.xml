@@ -1,0 +1,9 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.7.14"/>
+  <code code="10223-6" 
+          codeSystem="2.16.840.1.113883.6.1" 
+          codeSystemName="LOINC" 
+          displayName="OPERATIVE NOTE SURGICAL PROCEDURE"/>
+  <title>Surgical Procedure</title>
+  <text>Laparoscopic Appendectomy</text>
+</section>

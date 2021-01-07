@@ -1,0 +1,6 @@
+<inFulfillmentOf typeCode="FLFS">
+  <order classCode="ACT" moodCode="RQO">
+    <id root="2.16.840.1.113883.6.96" extension="1298989898" />
+    <code code="388975008" displayName="Weight Reduction Consultation" codeSystem="2.16.840.1.113883.6.96" codeSystemName="CPT4" />
+  </order>
+</inFulfillmentOf>

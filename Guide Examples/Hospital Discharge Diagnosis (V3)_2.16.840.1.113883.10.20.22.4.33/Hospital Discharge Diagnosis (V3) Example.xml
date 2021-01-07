@@ -1,0 +1,22 @@
+<act classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.33" extension="2015-08-01"/>
+  <id root="5a784260-6856-4f38-9638-80c751aff2fb" />
+  <code code="11535-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOSPITAL DISCHARGE DIAGNOSIS" />
+  <statusCode code="active" />
+  <effectiveTime>
+    <low value="201209091904-0400" />
+  </effectiveTime>
+  <entryRelationship typeCode="SUBJ" inversionInd="false">
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- Problem observation template -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
+                
+            ...
+            
+        
+        
+        
+        
+    </observation>
+  </entryRelationship>
+</act>

@@ -1,0 +1,11 @@
+<participantRole classCode="MANU">
+  <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
+  <code code="412307009" displayName="drug vehicle"
+	codeSystem="2.16.840.1.113883.6.96"/>
+  <playingEntity classCode="MMAT">
+    <code code="324049" displayName="Aerosol"
+		codeSystem="2.16.840.1.113883.6.88"
+		codeSystemName="RxNorm"/>
+    <name>Aerosol</name>
+  </playingEntity>
+</participantRole>

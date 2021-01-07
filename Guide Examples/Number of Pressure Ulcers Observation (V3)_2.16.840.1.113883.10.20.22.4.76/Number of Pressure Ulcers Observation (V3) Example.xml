@@ -1,0 +1,22 @@
+<entryRelationship typeCode="COMP">
+  <observation classCode="OBS" moodCode="EVN">
+    <!-- Number of Pressure Ulcers -->
+    <templateId root="2.16.840.1.113883.10.20.22.4.76" extension="2015-08-01"/>
+    <id root="08edb7c0-2111-43f2-a784-9a5fdfaa67f0" />
+    <code code="2264892003" displayName="Number of pressure ulcers" 
+                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+      <translation code="75277-4" 
+                                    displayName="Number of pressure ulcers"
+                                    codeSystem="2.16.840.1.113883.6.1"
+                                    codeSystemName="LOINC"></translation>
+    </code>
+    <statusCode code="completed" />
+    <value xsi:type="INT" value="3" />
+    <entryRelationship typeCode="SUBJ">
+      <observation classCode="OBS" moodCode="EVN">
+        <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+        <value xsi:type="CD" code="421927004" codeSystem="2.16.840.1.113883.6.96" displayName="Pressure ulcer stage 3" />
+      </observation>
+    </entryRelationship>
+  </observation>
+</entryRelationship>

@@ -1,0 +1,23 @@
+<informant>
+  <assignedEntity>
+    <id extension="888888888" root="1.1.1.1.1.1.1.3" />
+    <addr>
+      <streetAddressLine>1007 Healthcare Drive</streetAddressLine>
+      <city>Portland</city>
+      <state>OR</state>
+      <postalCode>99123</postalCode>
+      <country>US</country>
+    </addr>
+    <telecom use="WP" value="tel:+1(555)555-1003" />
+    <assignedPerson>
+      <name>
+        <given>Harold</given>
+        <family>Hippocrates</family>
+        <suffix qualifier="AC">M.D.</suffix>
+      </name>
+    </assignedPerson>
+    <representedOrganization>
+      <name>The DoctorsApart Physician Group</name>
+    </representedOrganization>
+  </assignedEntity>
+</informant>

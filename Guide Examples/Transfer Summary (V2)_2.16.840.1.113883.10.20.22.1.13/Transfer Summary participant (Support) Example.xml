@@ -1,0 +1,49 @@
+<participant typeCode="IND">
+  <time xsi:type="IVL_TS">
+    <low value="19590101" />
+    <high value="20111025" />
+  </time>
+  <associatedEntity classCode="ECON">
+    <code code="MTH" codeSystem="2.16.840.1.113883.5.111" />
+    <addr>
+      <streetAddressLine>17 Daws Rd.</streetAddressLine>
+      <city>Ann Arbor</city>
+      <state>MI</state>
+      <postalCode>97857</postalCode>
+      <country>US</country>
+    </addr>
+    <telecom value="tel:(999)555-1212" use="WP" />
+    <associatedPerson>
+      <name>
+        <prefix>Mrs.</prefix>
+        <given>Martha</given>
+        <family>Jones</family>
+      </name>
+    </associatedPerson>
+  </associatedEntity>
+</participant>
+<participant typeCode="IND">
+  <functionCode code="407543004" displayName="Primary Carer" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" />
+  <time xsi:type="IVL_TS">
+    <low value="19590101" />
+    <high value="20111025" />
+  </time>
+  <associatedEntity classCode="CAREGIVER">
+    <code code="MTH" codeSystem="2.16.840.1.113883.5.111" />
+    <addr>
+      <streetAddressLine>17 Daws Rd.</streetAddressLine>
+      <city>Ann Arbor</city>
+      <state>MI</state>
+      <postalCode>97857</postalCode>
+      <country>US</country>
+    </addr>
+    <telecom value="tel:(999)555-1212" use="WP" />
+    <associatedPerson>
+      <name>
+        <prefix>Mrs.</prefix>
+        <given>Martha</given>
+        <family>Jones</family>
+      </name>
+    </associatedPerson>
+  </associatedEntity>
+</participant>

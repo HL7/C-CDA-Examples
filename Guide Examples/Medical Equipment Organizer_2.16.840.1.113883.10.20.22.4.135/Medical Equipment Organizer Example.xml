@@ -1,0 +1,29 @@
+<organizer classCode="CLUSTER" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.135" />
+  <!-- Medical Equipment Organizer template -->
+  <id root="3e414708-0e61-4d48-8863-484a2d473a02" />
+  <code code="337588003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Incontinence appliances">
+    <originalText>Incontinence appliances</originalText>
+  </code>
+  <statusCode code="completed" />
+  <effectiveTime xsi:type="IVL_TS">
+    <low value="20070103" />
+    <high nullFlavor="UNK" />
+  </effectiveTime>
+  <component>
+    <supply classCode="SPLY" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.50" extension="2014-06-09" />
+      <!-- Non-medicinal supply activity V2 template ******* -->
+            ...
+        
+    </supply>
+  </component>
+  <component>
+    <supply classCode="SPLY" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.50" extension="2014-06-09" />
+      <!-- Non-medicinal supply activity V2 template ******* -->
+           ...
+        
+    </supply>
+  </component>
+</organizer>

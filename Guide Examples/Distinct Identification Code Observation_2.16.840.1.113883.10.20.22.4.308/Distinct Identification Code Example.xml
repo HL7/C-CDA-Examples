@@ -1,0 +1,8 @@
+<observation classCode="OBS" moodCode="EVN">
+	<templateId root="2.16.840.1.113883.10.20.22.4.308" extension="2019-06-21"/>
+	<code code="C113843" displayName="Distinct Identification Code"
+ codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+	<value xsi:type="ED">
+		<reference value="#DistinctIdentificationCode_1"/>
+	</value>
+</observation>

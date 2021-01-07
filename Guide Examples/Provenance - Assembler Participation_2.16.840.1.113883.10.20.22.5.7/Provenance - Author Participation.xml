@@ -1,0 +1,21 @@
+<participant typeCode="DEV">
+  <templateId root="2.16.840.1.113883.10.20.22.5.7" extension="2020-05-19" />
+  <functionCode code="assembler" codeSystem="2.16.840.1.113883.4.642.4.1131" 
+                codeSystemName="ProvenanceParticipantType"/>
+  <time value="20191206011130-0400" />
+  <associatedEntity classCode="OWN">
+    <scopingOrganization>
+      <!-- Represents the Assembler Organization -->
+      <id root="2.16.840.1.113883.19.5" extension="4"/>
+      <name use="L">Good Health HIE</name>
+      <telecom value="tel:+1(202)776-7700" use="WP" />
+      <addr use="WP">
+        <streetAddressLine partType="SAL">555 Badger Way</streetAddressLine>
+        <city partType="CTY">Amherst</city>
+        <state partType="STA">WI</state>
+        <postalCode partType="ZIP">01002</postalCode>
+        <country partType="CNT">US</country>
+      </addr>
+    </scopingOrganization>
+  </associatedEntity>
+</participant>

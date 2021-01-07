@@ -1,0 +1,12 @@
+<documentationOf>
+  <serviceEvent classCode="PROC">
+    <code code="118155006" codeSystem="2.16.840.1.113883.6.96" 
+             codeSystemName="SNOMED CT" displayName="Gastrointestinal tract endoscopy" />
+    <effectiveTime>
+      <low value="201003292240" />
+      <width value="15" unit="m" />
+    </effectiveTime> 
+       ...
+    
+  </serviceEvent>
+</documentationOf>

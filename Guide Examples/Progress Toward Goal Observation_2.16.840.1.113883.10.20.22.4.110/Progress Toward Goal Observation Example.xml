@@ -1,0 +1,6 @@
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.110" />
+  <id root="2afcf057-aae4-47cf-bfee-b7498e300424" />
+  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+  <value xsi:type="CD" code="390802008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Goal achieved" />
+</observation>

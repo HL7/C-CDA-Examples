@@ -1,0 +1,26 @@
+<section>
+  <!-- [C-CDA R2.1] Problem Section (entries optional) -->
+  <templateId root="2.16.840.1.113883.10.20.22.2.5" extension="2015-08-01" />
+  <!-- [C-CDA R2.1] Problem Section (entries required) -->
+  <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01" />
+  <code code="11450-4" 
+        codeSystem="2.16.840.1.113883.6.1" 
+        codeSystemName="LOINC" 
+        displayName="PROBLEM LIST" />
+  <title>PROBLEMS</title>
+  <text>
+    <list listType="ordered">
+      <item>Pneumonia: Resolved in March 1998</item>
+      <item>...</item>
+    </list>
+  </text>
+  <entry typeCode="DRIV">
+    <act classCode="ACT" moodCode="EVN">
+      <!-- [C-CDA R2.1] Problem Concern Act (V3) -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01" />
+      ...
+      
+    
+    </act>
+  </entry>
+</section>

@@ -1,0 +1,7 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.40"/>
+  <code code="59771-6" codeSystem="2.16.840.1.113883.6.1" 
+      codeSystemName="LOINC" displayName="PROCEDURE IMPLANTS"/>
+  <title>Procedure Implants</title>
+  <text>No implants were placed.</text>
+</section>

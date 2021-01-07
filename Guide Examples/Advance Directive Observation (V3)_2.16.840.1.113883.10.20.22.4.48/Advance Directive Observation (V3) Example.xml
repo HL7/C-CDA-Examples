@@ -1,0 +1,98 @@
+<entry>
+  <observation classCode="OBS" moodCode="EVN">
+    <!-- ** Advance Directive Observation** -->
+    <templateId root="2.16.840.1.113883.10.20.22.4.48" 
+        extension="2015-08-01" />
+    <id root="9b54c3c9-1673-49c7-aef9-b037ed72ed27" />
+    <code code="304251008" displayName="Resuscitation" 
+                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+      <translation code="75320-2" 
+                                    displayName="Advance Directive"
+                                    codeSystem="2.16.840.1.113883.6.1"
+                                    codeSystemName="LOINC"></translation>
+    </code>
+    <statusCode code="completed" />
+    <effectiveTime>
+      <low value="20110213" />
+      <high nullFlavor="NA" />
+    </effectiveTime>
+    <value xsi:type="CD" 
+          code="304253006" 
+          codeSystem="2.16.840.1.113883.6.96" 
+          codeSystemName="SNOMED-CT" 
+          displayName="Not for resuscitation">
+      <originalText>Do not resuscitate</originalText>
+    </value>
+    <author>
+      <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+      <time value="201308011235-0800" />
+      <assignedAuthor>
+        <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c" />
+        <code code="163W00000X" 
+            displayName="Registered nurse" 
+            codeSystem="2.16.840.1.113883.6.101" 
+            codeSystemName="Health Care Provider Taxonomy (HIPAA)" />
+        <assignedPerson>
+          <name>
+            <given>Nurse</given>
+            <family>Nightingale</family>
+            <suffix>RN</suffix>
+          </name>
+        </assignedPerson>
+        <representedOrganization classCode="ORG">
+          <id root="2.16.840.1.113883.19.5" />
+          <name>Good Health Hospital</name>
+        </representedOrganization>
+      </assignedAuthor>
+    </author>
+    <participant typeCode="VRF">
+      <templateId root="2.16.840.1.113883.10.20.1.58" />
+      <time value="201302013" />
+      <participantRole>
+        <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c" />
+        <code code="163W00000X" 
+             codeSystem="2.16.840.1.113883.6.101" 
+             codeSystemName="Health Care Provider Taxonomy (HIPAA)" 
+             displayName="Registered nurse" />
+        <addr>
+          ...
+        </addr>
+        <telecom value="tel:(995)555-1006" use="WP" />
+        <playingEntity>
+          <code code="63161005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Principal" />
+          <name>
+            <given>Nurse</given>
+            <family>Florence</family>
+            <suffix>RN</suffix>
+          </name>
+        </playingEntity>
+      </participantRole>
+    </participant>
+    <participant typeCode="CST">
+      <participantRole classCode="AGNT">
+        <code code="MTH" codeSystem="2.16.840.1.113883.5.111" displayName="Mother" />
+        <addr>
+          ...
+        </addr>
+        <telecom value="tel:(999)555-1212" use="WP" />
+        <playingEntity>
+          <code code="63161005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Principal" />
+          <name>
+            <prefix>Mrs.</prefix>
+            <given>Martha</given>
+            <family>Jones</family>
+          </name>
+        </playingEntity>
+      </participantRole>
+    </participant>
+    <reference typeCode="REFR">
+      <externalDocument>
+        <id root="b50b7910-7ffb-4f4c-bbe4-177ed68cbbf3" />
+        <text mediaType="application/pdf">
+          <reference value="AdvanceDirective.b50b7910-7ffb-4f4c-bbe4-177ed68cbbf3.pdf" />
+        </text>
+        <versionNumber value="1" />
+      </externalDocument>
+    </reference>
+  </observation>
+</entry>

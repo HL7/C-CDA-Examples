@@ -1,0 +1,43 @@
+<!-- Risk Concern Act -->
+<act classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.136" extension="2015-08-01"/>
+  <id root="cbcbf20a-d011-449f-87d1-a23cc3e5f7cf" />
+  <code code="X-RISK-CONCERN-ACT" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="At risk for" />
+  <!-- This Health Risk has a statusCode of active because it is an active risk -->
+  <statusCode code="active" />
+  <!-- The effective time is the date that the Health Risk started being followed - 
+    this does not necessarily correlate to the onset date of the contained health issues-->
+  <effectiveTime value="20130616" />
+  <!-- Health Risk: Malignant neoplastic disease -->
+  <entryRelationship typeCode="REFR">
+    <!-- Problem Observation -->
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
+      <id root="8dfacd73-1682-4cc4-9351-e54ccea83612" />
+      <code code="80943009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Risk factor" />
+      <statusCode code="completed" />
+      <effectiveTime>
+        <low value="20130613" />
+      </effectiveTime>
+      <value xsi:type="CD" code="409623005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Malignant neoplastic disease" />
+    </observation>
+  </entryRelationship>
+  ...
+  
+    
+    
+    
+  <!-- This entryRelationship represents the relationship 
+         "Health Risk REFERS TO Health Concern"
+    -->
+  <entryRelationship typeCode="REFR">
+    <!-- Entry Reference Concern Act -->
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.122" />
+      <!-- This id points to an already defined Health Concern -->
+      <id root="4eab0e52-dd7d-4285-99eb-72d32ddb195c" />
+      <code nullFlavor="NP" />
+      <statusCode code="completed" />
+    </act>
+  </entryRelationship>
+</act>

@@ -1,0 +1,32 @@
+<encounter classCode="ENC" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01" />
+  <id root="2a620155-9d11-439e-92b3-5d9815ff4de8" />
+  <code code="99213" displayName="Office outpatient visit 15 minutes" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12">
+    <originalText>
+      <reference value="#Encounter1" />
+    </originalText>
+    <translation code="AMB" codeSystem="2.16.840.1.113883.5.4" displayName="Ambulatory" codeSystemName="HL7 ActEncounterCode" />
+  </code>
+  <effectiveTime value="201209271300+0500" />
+  <performer>
+    <assignedEntity>
+        . . .
+        </assignedEntity>
+  </performer>
+  <participant typeCode="LOC">
+    <participantRole classCode="SDLOC">
+      <templateId root="2.16.840.1.113883.10.20.22.4.32" />
+            
+            . . .
+        
+    </participantRole>
+  </participant>
+  <entryRelationship typeCode="RSON">
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09" />
+            
+            . . .
+        
+    </observation>
+  </entryRelationship>
+</encounter>

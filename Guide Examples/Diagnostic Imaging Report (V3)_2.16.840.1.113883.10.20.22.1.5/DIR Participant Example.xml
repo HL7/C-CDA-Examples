@@ -1,0 +1,14 @@
+<participant typeCode="REF">
+  <associatedEntity classCode="PROV">
+    <id nullFlavor="NI" />
+    <addr nullFlavor="NI" />
+    <telecom nullFlavor="NI" />
+    <associatedPerson>
+      <name>
+        <given>Amanda</given>
+        <family>Assigned</family>
+        <suffix>MD</suffix>
+      </name>
+    </associatedPerson>
+  </associatedEntity>
+</participant>

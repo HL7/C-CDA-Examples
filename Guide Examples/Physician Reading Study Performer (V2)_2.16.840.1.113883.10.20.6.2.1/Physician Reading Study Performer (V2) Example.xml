@@ -1,0 +1,16 @@
+<performer typeCode="PRF">
+  <templateId root="2.16.840.1.113883.10.20.6.2.1" extension="2014-06-09" />
+  <assignedEntity>
+    <id extension="111111111" root="2.16.840.1.113883.4.6" />
+    <code code="2085R0202X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Diagnostic Radiology" />
+    <addr nullFlavor="NI" />
+    <telecom nullFlavor="NI" />
+    <assignedPerson>
+      <name>
+        <given>Christine</given>
+        <family>Cure</family>
+        <suffix>MD</suffix>
+      </name>
+    </assignedPerson>
+  </assignedEntity>
+</performer>

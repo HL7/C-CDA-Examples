@@ -1,0 +1,48 @@
+<substanceAdministration classCode="SBADM" moodCode="EVN">
+  <!-- ** Medication Activity (V2) ** -->
+  <templateId root="2.16.840.1.113883.10.20.22.4.16" 
+         extension="2014-06-09"/>
+  <id root="6c844c75-aa34-411c-b7bd-5e4a9f206e29"/>
+  <statusCode code="active"/>
+  <effectiveTime xsi:type="IVL_TS">
+    <low value="20120318"/>
+  </effectiveTime>
+  <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+    <period value="12" unit="h"/>
+  </effectiveTime>
+  <routeCode code="C38288" 
+            codeSystem="2.16.840.1.113883.3.26.1.1" 
+            codeSystemName="NCI Thesaurus" 
+            displayName="ORAL"/>
+  <doseQuantity value="1"/>
+  <consumable>
+    <manufacturedProduct classCode="MANU">
+      <!-- ** Medication information ** -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.23" 
+               extension="2014-06-09"/>
+      <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
+      <manufacturedMaterial>
+        <code code="197380"  
+              displayName="Atenolol 25 MG Oral Tablet" 
+              codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+      </manufacturedMaterial>
+    </manufacturedProduct>
+  </consumable>
+  <entryRelationship typeCode="RSON">
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- ** Indication ** -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.19" 
+             extension="2014-06-09"/>
+      <id root="e63166c7-6482-4a44-83a1-37ccdbde725b"/>
+      <code code="75321-0" 
+            codeSystem="2.16.840.1.113883.6.1" 
+            codeSystemName="LOINC" 
+            displayName="Clinical finding"/>
+      <statusCode code="completed"/>
+      <value xsi:type="CD" 
+             code="38341003" 
+             displayName="Hypertension" 
+             codeSystem="2.16.840.1.113883.6.96"/>
+    </observation>
+  </entryRelationship>
+</substanceAdministration>

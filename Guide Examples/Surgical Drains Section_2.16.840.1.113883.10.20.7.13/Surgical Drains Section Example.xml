@@ -1,0 +1,9 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.7.13"/>
+  <code code="11537-8" 
+          codeSystem="2.16.840.1.113883.6.1" 
+          codeSystemName="LOINC" 
+          displayName="SURGICAL DRAINS"/>
+  <title>Surgical Drains</title>
+  <text>Penrose drain placed</text>
+</section>

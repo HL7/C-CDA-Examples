@@ -1,0 +1,30 @@
+<entry>
+  <encounter moodCode="INT" classCode="ENC">
+    <templateId root="2.16.840.1.113883.10.20.22.4.40" extension="2014-06-09" />
+    <!-- Planned Encounter V2 template -->
+    <id root="9a6d1bac-17d3-4195-89a4-1121bc809b4d" />
+    <code code="185349003" displayName="encounter for check-up (procedure)" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96"></code>
+    <statusCode code="active" />
+    <effectiveTime value="20130615" />
+    <performer>
+      <assignedEntity>
+                ...
+            </assignedEntity>
+    </performer>
+    <entryRelationship typeCode="REFR">
+      <observation classCode="OBS" moodCode="EVN">
+        <!-- Patient Priority Preference-->
+        <templateId root="2.16.840.1.113883.10.20.22.4.142" />
+              ...
+            
+      </observation>
+    </entryRelationship>
+    <entryRelationship typeCode="REFR">
+      <observation classCode="OBS" moodCode="EVN">
+        <!-- Provider Priority Preference-->
+               ...
+            
+      </observation>
+    </entryRelationship>
+  </encounter>
+</entry>

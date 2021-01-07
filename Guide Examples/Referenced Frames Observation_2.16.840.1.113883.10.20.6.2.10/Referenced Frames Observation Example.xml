@@ -1,0 +1,12 @@
+<observation classCode="ROIBND" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.6.2.10"/>
+  <code code="121190" codeSystem="1.2.840.10008.2.16.4" displayName="Referenced Frames"/>
+  <entryRelationship typeCode="COMP">
+    <!-- Boundary Observation -->
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.6.2.11"/>
+      <code code="113036" codeSystem="1.2.840.10008.2.16.4" displayName="Frames for Display"/>
+      <value xsi:type="INT" value="1"/>
+    </observation>
+  </entryRelationship>
+</observation>

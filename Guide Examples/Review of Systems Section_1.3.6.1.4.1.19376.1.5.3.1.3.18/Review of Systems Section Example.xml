@@ -1,0 +1,14 @@
+<section>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.18"/>
+  <code	code="10187-3" codeSystem="2.16.840.1.113883.6.1" 
+         codeSystemName="LOINC" 
+         displayName="REVIEW OF SYSTEMS"/>
+  <title>REVIEW OF SYSTEMS</title>
+  <text>
+    <paragraph>
+         Patient denies recent history of fever or malaise. Positive 
+         For weakness and shortness of breath. One episode of melena. No recent
+        headaches. Positive for osteoarthritis in hips, knees and hands.
+      </paragraph>
+  </text>
+</section>

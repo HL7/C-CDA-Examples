@@ -1,0 +1,14 @@
+<informationRecipient>
+  <intendedRecipient>
+    <informationRecipient>
+      <name>
+        <given>Sara</given>
+        <family>Specialize</family>
+        <suffix qualifier="AC">M.D.</suffix>
+      </name>
+    </informationRecipient>
+    <receivedOrganization>
+      <name>The DoctorsApart Physician Group</name>
+    </receivedOrganization>
+  </intendedRecipient>
+</informationRecipient>

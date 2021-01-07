@@ -1,0 +1,22 @@
+<participant typeCode="IND">
+  <functionCode code="407543004" displayName="Primary Carer" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" />
+  <!-- Caregiver -->
+  <associatedEntity classCode="CAREGIVER">
+    <code code="MTH" codeSystem="2.16.840.1.113883.5.111" />
+    <addr>
+      <streetAddressLine>17 Daws Rd.</streetAddressLine>
+      <city>Ann Arbor</city>
+      <state>MI</state>
+      <postalCode>97857</postalCode>
+      <country>US</country>
+    </addr>
+    <telecom value="tel:(999)555-1212" use="WP" />
+    <associatedPerson>
+      <name>
+        <prefix>Mrs.</prefix>
+        <given>Martha</given>
+        <family>Jones</family>
+      </name>
+    </associatedPerson>
+  </associatedEntity>
+</participant>

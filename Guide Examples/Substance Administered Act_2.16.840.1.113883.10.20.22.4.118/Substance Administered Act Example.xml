@@ -1,0 +1,26 @@
+<substanceAdministration classCode="SBADM" moodCode="EVN">
+    ...
+
+    
+  <consumable>
+               ...
+
+        
+    <code code="43" codeSystem="2.16.840.1.113883.6.59" displayName="Hepatitis B Vaccine" codeSystemName="CVX" />
+  </consumable>
+  <entryRelationship typeCode="COMP">
+    <!-- This entryRelationship sequenceNumber indicates this is #2 in the series -->
+    <sequenceNumber value="2" />
+    <act classCode="ACT" moodCode="EVN">
+      <!-- Substance Administered Act Template -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.118" />
+      <id root="df8908d0-40f2-11e3-aa6e-0800200c9a66" />
+      <code code="416118004" displayName="administration" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" />
+      <statusCode code="completed" />
+      <effectiveTime value="19991101" />
+    </act>
+  </entryRelationship>
+        ...
+
+
+</substanceAdministration>

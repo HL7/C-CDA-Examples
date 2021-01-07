@@ -1,0 +1,23 @@
+<section>
+  <!-- C-CDA Advance Directives Section (required entries)template id -->
+  <templateId root="2.16.840.1.113883.10.20.22.2.21.1" extension="2015-08-01" />
+  <code code="42348-3" codeSystem="2.16.840.1.113883.6.1" />
+  <title>ADVANCE DIRECTIVES</title>
+  <text>
+       Narrative Text
+    </text>
+  <entry typeCode="DRIV">
+    <organizer classCode="CLUSTER" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.108" />
+      <!-- ***Advance Directive Organizer template -->
+      <id root="af6ebdf2-d996-11e2-a5b8-f23c91aec05e" />
+    </organizer>
+  </entry>
+  <entry typeCode="DRIV">
+    <organizer classCode="CLUSTER" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.108" />
+      <!-- ***Advance Directive Organizer template -->
+      <id root="af6ebdf2-d996-11e2-a5b8-f23c91aec05e" />
+    </organizer>
+  </entry>
+</section>
