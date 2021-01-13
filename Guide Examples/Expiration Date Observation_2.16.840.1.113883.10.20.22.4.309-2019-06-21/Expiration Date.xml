@@ -1,0 +1,8 @@
+    
+<observation classCode="OBS" moodCode="EVN">
+  <templateId  root="2.16.840.1.113883.10.20.22.4.309" extension="2019-06-21"/>
+  <code code="C101670" displayName="Expiration Date" 
+           codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+  <value xsi:type="TS" value="20221015"/>
+</observation>
+    
