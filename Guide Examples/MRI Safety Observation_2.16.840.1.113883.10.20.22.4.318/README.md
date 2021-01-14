@@ -6,6 +6,6 @@ These examples were reviewed through the HL7 ballot process. They have not been 
 
 ### Keywords:
 
-Brand Name Example
+MRI Safety Observation
  
-2.16.840.1.113883.10.20.22.4.301
+2.16.840.1.113883.10.20.22.4.318
