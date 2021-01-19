@@ -92,8 +92,8 @@
 					<participant typeCode="CSM">
 						<participantRole classCode="MANU">
 							<playingEntity classCode="MMAT">
-								<!-- NDF-RT is used to report drug class allergies. Note to use RxNorm for specific drugs -->
-								<code code="N0000011281" displayName="penicillins" codeSystem="2.16.840.1.113883.3.26.1.5" codeSystemName="NDF-RT">
+								<!-- SNOMED CT is used to report drug class allergies. Note to use RxNorm for specific drugs -->
+								<code code="764146007" displayName="Penicillin" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
 									<originalText>
 										<reference value="#allergy3allergen"/>
 									</originalText>

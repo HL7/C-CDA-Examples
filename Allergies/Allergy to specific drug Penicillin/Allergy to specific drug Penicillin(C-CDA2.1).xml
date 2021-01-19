@@ -92,7 +92,7 @@
 					<participant typeCode="CSM">
 						<participantRole classCode="MANU">
 							<playingEntity classCode="MMAT">
-								<!-- RxNorm is used to report specific drug allergies. Note to use NDF-RT for drug classes -->
+								<!-- RxNorm is used to report specific drug allergies. Note to use SNOMED CT for drug classes -->
 								<!-- Best practice is to report drug allergies at ingredient level (e.g. penicillin) not at the adminsitration level (e.g. 10mg tablet)-->
 								<code code="7980" displayName="penicillin" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
 									<originalText>

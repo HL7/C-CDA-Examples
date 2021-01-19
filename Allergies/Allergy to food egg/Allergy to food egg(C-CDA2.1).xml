@@ -99,12 +99,12 @@
 													manufactured or not. -->
 								<!-- 
 													... the expectation for use is that the chosen concept identifier for a substance should be appropriately specific and 
-													drawn from the available code systems in the following priority order: NDFRT, then RXNORM, then UNII, then SNOMED CT. 
+													drawn from the available code systems in the following priority order: RXNORM, then SNOMED CT. 
 													This overarching grouping value set is intended to support identification of drug classes, individual medication 
 													ingredients, foods, general substances and environmental entities. Value set intensionally defined as a GROUPING made 
-													up of: Value Set: Medication Drug Class (2.16.840.1.113883.3.88.12.80.18) (NDFRT drug class codes); 
+													up of:
 													Value Set: Clinical Drug Ingredient (2.16.840.1.113762.1.4.1010.7) (RxNORM ingredient codes); 
-													Value Set: Unique Ingredient Identifier - Complete Set (2.16.840.1.113883.3.88.12.80.20) (UNII ingredient codes); 
+													Value Set: Medication drug class for allergen intolerance SCT (2.16.840.1.113762.1.4.1114.14) (SNOMED CT substance codes);	
 													Value Set: Substance Other Than Clinical Drug (2.16.840.1.113762.1.4.1010.9) (SNOMED CT substance codes).
 												
 												-->
