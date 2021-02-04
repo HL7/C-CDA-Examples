@@ -1,0 +1,44 @@
+<performer typeCode="PRF">   
+    <functionCode code="PCP"
+				displayName="Primary Care Provider"
+				codeSystem="2.16.840.1.113883.5.88"
+				codeSystemName="ParticipationFunction">
+	</functionCode>
+	<time xsi:type="IVL_TS">
+        <low value="201506221000" />
+        <high value="201506221030" />
+    </time>
+    <assignedEntity>
+        <id extension="9999999999" root="2.16.840.1.113883.4.6" />
+       <code code="207QA0505X" displayName="Adult Medicine" 
+			 codeSystem="2.16.840.1.113883.5.53" codeSystemName="Health Care Provider Taxonomy" />
+        <addr>
+            <streetAddressLine>2472, Rocky Place</streetAddressLine>
+            <city>Beaverton</city>
+            <state>OR</state>
+            <postalCode>97006</postalCode>
+            <country>US</country>
+        </addr>
+        <telecom use="WP" value="tel:+1(555)555-1002" />
+        <assignedPerson>
+            <name>
+                <prefix>Dr</prefix>
+                <given>Albert</given>
+                <family>Davis</family>
+                <suffix>Dr</suffix>
+            </name>
+        </assignedPerson>
+        <representedOrganization>
+            <id extension="219BX" root="1.1.1.1.1.1.1.1.2" />
+            <name>Neighborhood Physicians Practice</name>
+            <telecom use="WP" value="tel: +(555)-555-5999" />
+            <addr>
+                <streetAddressLine>2472, Rocky place</streetAddressLine>
+                <city>Beaverton</city>
+                <state>OR</state>
+                <postalCode>97006</postalCode>
+                <country>US</country>
+            </addr>
+        </representedOrganization>
+    </assignedEntity>
+</performer>
