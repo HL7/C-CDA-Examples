@@ -1,0 +1,10 @@
+<act classCode="ACT" moodCode="INT">
+  <templateId root="2.16.840.1.113883.10.20.22.4.20" extension="2014-06-09" />
+  <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education" />
+  <text>
+    <reference value="#immunSect" />
+		Possible flu-like symptoms for three days.
+	
+  </text>
+  <statusCode code="completed" />
+</act>

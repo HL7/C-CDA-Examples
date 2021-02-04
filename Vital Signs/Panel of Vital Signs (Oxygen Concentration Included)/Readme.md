@@ -1,8 +1,8 @@
 ## Approval Status 
 
-* Approval Status: Pending
+* Approval Status: Approved
 * Example Task Force: 12/10/2020
-* SDWG: TBD  
+* SDWG: 12/17/2020
 
 
 ### C-CDA 2.1 Example:
@@ -20,7 +20,7 @@
 
 ### Validation location
 
-* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
+* [SITE](https://site.healthit.gov/sandbox-ccda/ccda-validator)
 
 
 ### Comments

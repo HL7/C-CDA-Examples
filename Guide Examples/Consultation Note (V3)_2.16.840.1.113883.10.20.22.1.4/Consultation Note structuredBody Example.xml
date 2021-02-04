@@ -1,0 +1,164 @@
+<component>
+  <structuredBody>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.6.1" 
+                    extension="2015-08-01" />
+        <!-- Allergies section template -->
+        <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" 
+                      displayName="Allergies, adverse reactions, alerts" codeSystemName="LOINC" />
+        <title>Allergies, Adverse Reactions, Alerts</title>
+                ...
+            
+            
+            
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.8" />
+        <!-- Assessment-->
+        <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" 
+                      code="51848-0" displayName="ASSESSMENT" />
+        <title>ASSESSMENT</title>
+                ...
+            
+            
+            
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.4" />
+        <!-- History of Present Illness -->
+        <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" 
+                      code="10164-2" displayName="HISTORY OF PRESENT ILLNESS" />
+        <title>HISTORY OF PRESENT ILLNESS</title>
+                ...
+            
+            
+            
+      </section>
+    </component>
+    <component>
+      <section>
+        <!--MEDICATION SECTION (V2) (coded entries required) -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09" />
+        <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" 
+                      codeSystemName="LOINC" displayName="HISTORY OF MEDICATION USE" />
+        <title>MEDICATIONS</title>
+                ...
+            
+            
+            
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.2.10" extension="2015-08-01" />
+        <!-- Physical Exam (V3) -->
+        <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" 
+                      code="29545-1" displayName="PHYSICAL FINDINGS" />
+        <title>PHYSICAL EXAMINATION</title>
+                ...
+            
+            
+            
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.10" 
+                    extension="2014-06-09"" />
+        <!--  Plan of Treatment Section (V2) template  -->
+        <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" 
+                      codeSystemName="LOINC" displayName="Treatment plan" />
+        <title>PLAN OF CARE</title>
+                ...
+            
+            
+            
+      </section>
+    </component>
+    <component>
+      <section>
+        <!-- Problem Section (entries required) (V3) -->
+        <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01" />
+        <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" 
+                      codeSystemName="LOINC" displayName="PROBLEM LIST" />
+        <title>PROBLEMS</title>
+                ...
+            
+            
+            
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.7" 
+                    extension="2014-06-09" />
+        <!-- Procedures Section (entries optional) (V2) -->
+        <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" 
+                      codeSystemName="LOINC" displayName="HISTORY OF PROCEDURES" />
+        <title>PROCEDURES</title>
+                ...
+            
+            
+            
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.1" 
+                    extension="2014-06-09" />
+        <!-- Reason for Referral Section V2  -->
+        <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" 
+                      code="42349-1" displayName="REASON FOR REFERRAL" />
+        <title>REASON FOR REFERRAL</title>
+                ...
+            
+            
+            
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01" />
+        <!-- Results Section (entries required) (V3) -->
+        <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" 
+                      codeSystemName="LOINC" displayName="RESULTS" />
+        <title>RESULTS</title>
+                ...
+            
+            
+            
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01" />
+        <!-- Social history section (V3)-->
+        <code code="29762-2" codeSystem="2.16.840.1.113883.6.1"
+                      displayName="Social History" />
+        <title>SOCIAL HISTORY</title>
+                ...
+            
+            
+            
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01" />
+        <!-- Vital Signs Section (V3)-->
+        <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" 
+                      codeSystemName="LOINC" displayName="VITAL SIGNS" />
+        <title>VITAL SIGNS</title>
+                        ...
+            
+            
+            
+      </section>
+    </component>
+  </structuredBody>
+</component>

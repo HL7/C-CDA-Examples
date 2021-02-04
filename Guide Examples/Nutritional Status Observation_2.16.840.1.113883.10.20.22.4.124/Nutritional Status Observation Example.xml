@@ -1,0 +1,32 @@
+<observation classCode="OBS" moodCode="EVN">
+  <!--  Nutritional Status Observation -->
+  <templateId root="2.16.840.1.113883.10.20.22.4.124" />
+  <id root="c12ecaaf-53f8-4593-8f79-359aeaa3948b" />
+  <code code="75305-3" 
+          displayName="Nutrition status"
+          codeSystem="2.16.840.1.113883.6.1" 
+          codeSystemName="LOINC">
+    <originalText>Nutritional Status</originalText>
+  </code>
+  <statusCode code="completed" />
+  <effectiveTime value="20130512" />
+  <value xsi:type="CD" code="248324001"
+          codeSystem="2.16.840.1.113883.6.96" 
+          codeSystemName="SNOMED-CT" 
+          displayName="well nourished" />
+  <entryRelationship typeCode="SUBJ">
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- ** Nutrition Assessment** -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.138" /> 
+            ...
+        
+    </observation>
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- ** Nutrition Assessment** -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.138" />
+            ...
+        
+    </observation>
+  </entryRelationship>
+</observation>
+    

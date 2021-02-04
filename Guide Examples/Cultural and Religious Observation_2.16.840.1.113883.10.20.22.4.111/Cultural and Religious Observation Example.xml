@@ -1,0 +1,15 @@
+<entry>
+  <observation classCode="OBS" moodCode="EVN">
+    <!-- **Cultural and Religious Observation **-->
+    <templateId root="2.16.840.1.113883.10.20.22.4.111" />
+    <id root="37f76c51-6411-4e1d-8a37-957fd49d2cef" />
+    <code code="75281-6" codeSystem="2.16.840.1.113883.6.1"
+                    displayName="Personal belief" />
+    <statusCode code="completed" />
+    <effectiveTime>
+      <low value="20130312" />
+    </effectiveTime>
+    <value xsi:type="ST">Does not accept blood transfusions, or donates, or
+            stores blood for transfusion.</value>
+  </observation>
+</entry>

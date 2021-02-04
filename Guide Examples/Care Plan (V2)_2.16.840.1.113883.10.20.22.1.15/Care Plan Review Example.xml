@@ -1,0 +1,13 @@
+<!-- This participant represents the Care Plan review. 
+  If the date in the time element is in the past, 
+  then this review has already taken place. 
+  If the date in the time element is in the future, 
+  then this is the date of the next scheduled review. -->
+<!-- This example shows a Care Plan Review that has already taken place -->
+<participant typeCode="IND">
+  <functionCode code="425268008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Review of Care Plan" />
+  <time value="20130801" />
+  <associatedEntity classCode="ASSIGNED">
+    <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c" />
+  </associatedEntity>
+</participant>

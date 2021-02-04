@@ -1,0 +1,7 @@
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.6.2.9"/>
+  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+  <value xsi:type="CD" code="121112" codeSystem="1.2.840.10008.2.16.4"
+       codeSystemName="DCM"
+       displayName="Source of Measurement"/>
+</observation>

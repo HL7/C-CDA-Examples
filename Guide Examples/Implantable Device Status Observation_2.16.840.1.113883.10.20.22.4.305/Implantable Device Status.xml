@@ -1,0 +1,14 @@
+      
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.305" extension="2019-06-21"/>
+  <code  code="C160939" displayName="Implantable Device Status" 
+         codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+  <value xsi:type="CD" code="C160942"   codeSystem="2.16.840.1.113883.3.26.1.1" 
+        displayName="Reduced Function" codeSystemName="NCI  Thesaurus" 
+        sdtc:valueSet="2.16.840.1.113762.1.4.1021.48">
+    <originalText>
+      <reference value="#ImplantableDeviceStatus_1"/>
+    </originalText>
+  </value>
+</observation>
+    

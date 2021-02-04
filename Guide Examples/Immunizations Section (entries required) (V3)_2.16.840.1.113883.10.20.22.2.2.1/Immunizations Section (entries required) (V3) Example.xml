@@ -1,0 +1,69 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.1" extension="2015-08-01" />
+  <!--  ********  Immunizations section template   ******** -->
+  <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations" />
+  <title>Immunizations</title>
+  <text>
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>Vaccine</th>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <content ID="immun1" />Influenza virus vaccine, IM
+                    
+                    
+          </td>
+          <td>Nov 1999</td>
+          <td>Completed</td>
+        </tr>
+        <tr>
+          <td>
+            <content ID="immun2" />Influenza virus vaccine, IM
+                    
+                    
+          </td>
+          <td>Dec 1998</td>
+          <td>Completed</td>
+        </tr>
+        <tr>
+          <td>
+            <content ID="immun3" />
+            Pneumococcal polysaccharide vaccine, IM
+                    
+                    
+          </td>
+          <td>Dec 1998</td>
+          <td>Completed</td>
+        </tr>
+        <tr>
+          <td>
+            <content ID="immun4" />Tetanus and diphtheria toxoids, IM
+                    
+                    
+          </td>
+          <td>1997</td>
+          <td>Refused</td>
+        </tr>
+      </tbody>
+    </table>
+  </text>
+  <entry typeCode="DRIV">
+    <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+      <templateId root="2.16.840.1.113883.10.20.22.4.52" />
+      <!--  ****  Immunization activity template  **** -->
+      ...
+    
+        
+        
+    </substanceAdministration>
+  </entry>
+  ...
+
+
+</section>

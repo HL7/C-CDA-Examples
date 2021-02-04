@@ -1,0 +1,81 @@
+<!-- 
+  ********************************************************
+  Health Concern section
+  ********************************************************
+-->
+<act classCode="ACT" moodCode="EVN">
+  <!-- Health Concern Act of a pneumonia diagnosis -->
+  <templateId root="2.16.840.1.113883.10.20.22.4.132" />
+  <id root="4eab0e52-dd7d-4285-99eb-72d32ddb195c" />
+  <code code="75310-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health Concern" />
+  <statusCode code="active" />
+  <effectiveTime value="20130616" />
+  <entryRelationship typeCode="REFR">
+    <!-- Problem Observation (V2) -->
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2014-06-09" />
+      <id root="8dfacd73-1682-4cc4-9351-e54ccea83612" />
+      <code code="29308-4" 
+            codeSystem="2.16.840.1.113883.6.1" 
+            codeSystemName="LOINC" 
+            displayName="Diagnosis"/>
+      <statusCode code="completed" />
+      <effectiveTime>
+        <!-- Date of diagnosis -->
+        <low value="20130616" />
+      </effectiveTime>
+      <value xsi:type="CD" code="233604007" 
+            codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" 
+            displayName="Pneumonia" />
+      <!-- This Entry Reference refers to a goal, intervention, actual 
+         outcome, or some other entry present in the Care Plan
+         that the Health Concern is related to-->
+      <entryRelationship typeCode="REFR">
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.122" />
+          <!-- This ID equals the ID of the goal of a pulse 
+                        ox greater than 92% -->
+          <id root="3700b3b0-fbed-11e2-b778-0800200c9a66" />
+          <!-- The code is nulled to "NP" Not Present" -->
+          <code nullFlavor="NP" />
+          <statusCode code="completed" />
+        </act>
+      </entryRelationship>
+    </observation>
+  </entryRelationship>
+</act>
+
+...
+
+
+<!-- 
+  ********************************************************
+  Expected Outcomes/Goals section
+  ********************************************************
+-->
+
+...
+
+
+<entry>
+  <!-- This is an observation about the expected outcome of a pulse ox reading
+       of 92 or greater.  The Id is the same as the ID as the ID of the 
+       pneumonia problem above  -->
+  <observation classCode="OBS" moodCode="GOL">
+    <id root="3700b3b0-fbed-11e2-b778-0800200c9a66" />
+    <code code="59408-5" 
+          codeSystem="2.16.840.1.113883.6.1" 
+          codeSystemName="LOINC" 
+          displayName="Oxygen saturation in Arterial blood by Pulse oximetry"/>
+    <statusCode code="active" />
+    <value xsi:type="IVL_PQ">
+      <low value="92" unit="%" />
+    </value>
+    <!-- There could be another Entry Reference here referring to the 
+            related health concern, actual outcome, or intervention -->
+    ...
+    
+  
+  </observation>
+</entry>
+...

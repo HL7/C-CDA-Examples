@@ -1,0 +1,9 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.18.2.12"/>
+  <code code="59775-7" codeSystem="2.16.840.1.113883.6.1" 
+        codeSystemName="LOINC" 
+        displayName="PROCEDURE DISPOSITION"/>
+  <title>PROCEDURE DISPOSITION</title>
+  <text>The patient was taken to the Endoscopy Recovery Unit in stable
+        condition.</text>
+</section>

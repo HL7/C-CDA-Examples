@@ -1,0 +1,64 @@
+<component>
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01" />
+    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History" />
+    <title>SOCIAL HISTORY</title>
+    <text>
+        . . .
+        </text>
+    <entry>
+      <observation classCode="OBS" moodCode="EVN">
+        <!-- Social history observation V2-->
+        <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2015-08-01" />							
+       ...
+          
+            
+            
+      </observation>
+    </entry>
+    <entry>
+      <observation classCode="OBS" moodCode="EVN">
+        <!-- ** Current smoking status observation ** -->
+        <templateId root="2.16.840.1.113883.10.20.22.4.78" extension="2014-06-09" />
+	 ...
+          
+            
+            
+            
+      </observation>
+    </entry>
+    <entry>
+      <observation classCode="OBS" moodCode="EVN">
+        <!-- Caregiver Characteristics -->
+        <templateId root="2.16.840.1.113883.10.20.22.4.72" />
+       ...
+    
+            
+            
+            
+      </observation>
+    </entry>
+    <entry>
+      <observation classCode="OBS" moodCode="EVN">
+        <!-- **Cultural and Religious Observations(NEW)**-->
+        <templateId root="2.16.840.1.113883.10.20.22.4.111" />
+        ...
+    
+            
+            
+            
+      </observation>
+    </entry>
+    <entry>
+      <observation classCode="OBS" moodCode="EVN">
+        <!-- ** Characteristics of Care Environment** -->
+        <templateId root="2.16.840.1.113883.10.20.22.4.109" />
+       ...
+    
+            
+            
+            
+      </observation>
+    </entry>
+  </section>
+</component>

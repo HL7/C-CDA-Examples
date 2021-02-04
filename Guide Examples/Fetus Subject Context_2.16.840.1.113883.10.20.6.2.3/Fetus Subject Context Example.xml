@@ -1,0 +1,9 @@
+<relatedSubject>
+  <templateId root="2.16.840.1.113883.10.20.6.2.3"/>
+  <code code="121026"
+        codeSystem="1.2.840.10008.2.16.4"
+        displayName="Fetus"/>
+  <subject>
+    <name>fetus_1</name>
+  </subject>
+</relatedSubject>

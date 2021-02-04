@@ -1,0 +1,31 @@
+<section>
+  <!-- Notes Section -->
+  <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01"/>
+  <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Consultation note"/>
+  <title>Consultation Notes</title>
+  <text>
+    <list>
+      <item ID="ConsultNote1">
+        <paragraph>Dr. Specialist - September 8, 2016</paragraph>
+        <paragraph>Evaluated patient due to symptoms of...</paragraph>
+      </item>
+    </list>
+  </text>
+  <!-- Note Activity entry -->
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01"/>
+      <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName=?ote?
+                
+        <!-- Code must match or be equivalent to section code -->
+        <translation code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Consultation note" />
+      </code>
+      <text>
+        <reference value="#ConsultNote1" />
+      </text>
+      <statusCode code="completed"/>
+      <!-- Clinically-relevant time of the note -->
+      <effectiveTime value="20160908" />
+      <!--...-->
+    </entry>
+  </section>

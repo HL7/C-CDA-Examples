@@ -1,0 +1,67 @@
+<entry>
+  <observation classCode="OBS" moodCode="EVN">
+    <!-- Wound Observation template -->
+    <templateId root="2.16.840.1.113883.10.20.22.4.114" extension=�2015-08-01� />
+    <id root="ab1791b0-5c71-11db-b0de-0800200c9a66" />
+    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+    <statusCode code="completed" />
+    <effectiveTime>
+      <low value="20013103" />
+    </effectiveTime>
+    <value xsi:type="CD" code="425144005" codeSystem="2.16.840.1.113883.6.6" displayName="Minor open wound" />
+    <targetSiteCode code="182295001" codeSystem="2.16.840.1.113883.6.96" displayName="anterior aspect of knee" />
+    <author>
+          ...
+        </author>
+    <entryRelationship typeCode="COMP">
+      <observation classCode="OBS" moodCode="EVN">
+        <!-- Wound Measurements Observation -->
+        <templateId root="2.16.840.1.113883.10.20.22.4.133" />
+               ...
+        
+            
+            
+      </observation>
+    </entryRelationship>
+    <entryRelationship typeCode="COMP">
+      <observation classCode="OBS" moodCode="EVN">
+        <!-- Wound Measurements Observation . -->
+        <templateId root="2.16.840.1.113883.10.20.22.4.133" />
+               ...
+        
+                
+            
+      </observation>
+    </entryRelationship>
+    <entryRelationship typeCode="COMP">
+      <observation classCode="OBS" moodCode="EVN">
+        <!-- Wound Characteristic -->
+        <templateId root="2.16.840.1.113883.10.20.22.4.134" />
+              ...
+        
+                    
+            
+      </observation>
+    </entryRelationship>
+    <entryRelationship typeCode="COMP">
+      <observation classCode="OBS" moodCode="EVN">
+        <!-- Number of Pressure Ulcers -->
+        <templateId root="2.16.840.1.113883.10.20.22.4.76" />
+       ...
+      
+                        
+            
+      </observation>
+    </entryRelationship>
+    <entryRelationship typeCode="COMP">
+      <observation classCode="OBS" moodCode="EVN">
+        <!-- Highest Pressure  Ulcers Stage -->
+        <templateId root="2.16.840.1.113883.10.20.22.4.77" />
+              ...
+         
+                            
+            
+      </observation>
+    </entryRelationship>
+  </observation>
+</entry>

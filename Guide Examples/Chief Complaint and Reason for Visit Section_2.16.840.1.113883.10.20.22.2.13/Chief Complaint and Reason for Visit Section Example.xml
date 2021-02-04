@@ -1,0 +1,9 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.13"/>
+  <code code="46239-0" 
+          codeSystem="2.16.840.1.113883.6.1" 
+          codeSystemName="LOINC" 
+          displayName="CHIEF COMPLAINT AND REASON FOR VISIT"/>
+  <title> CHIEF COMPLAINT</title>
+  <text>Back Pain</text>
+</section>

@@ -1,0 +1,63 @@
+<observation classCode="OBS" moodCode="GOL">
+  <templateId root="2.16.840.1.113883.10.20.22.4.121" />
+  <id root="3700b3b0-fbed-11e2-b778-0800200c9a66" />
+  <code code="59408-5" 
+        codeSystem="2.16.840.1.113883.6.1" 
+        codeSystemName="LOINC" 
+        displayName="Oxygen saturation in Arterial blood by Pulse oximetry" />
+  <statusCode code="active" />
+  <effectiveTime value="20130902" />
+  <value xsi:type="IVL_PQ">
+    <low value="92" unit="%" />
+  </value>
+  <!--
+    If the author is set to the recordTarget (patient), this is a patient goal.  
+    If the author is set to a provider, this is a provider goal. 
+    If both patient and provider are set as authors, this is a negotiated goal.
+  -->
+  <!-- Provider Author -->
+  <author>
+    <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+    ...
+  
+  </author>
+  <!-- Patient Author -->
+  <author typeCode="AUT">
+    <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+    ...
+  
+  </author>
+  <!-- This entryRelationship represents the relationship "Goal REFERS TO Health Concern" -->
+  <entryRelationship typeCode="REFR">
+    <!-- Entry Reference Concern Act -->
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.122" />
+      <!-- This id points to an already defined Health Concern in the Health Concerns Section -->
+      <id root="4eab0e52-dd7d-4285-99eb-72d32ddb195c" />
+      ...
+    
+    </act>
+  </entryRelationship>
+  <!-- Priority Preference -->
+  <entryRelationship typeCode="RSON">
+    <!-- Priority Preference - this is the preference that the patient 
+      (specified by the Author Participation template)
+                  places on the Goal -->
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.143" />
+      ...
+    
+    </observation>
+  </entryRelationship>
+  <!--  Priority Preference - this is the preference that the provider 
+    (specified by the Author Participation template)
+     places on the Goal -->
+  <entryRelationship typeCode="RSON">
+    <!--  Priority Preference -->
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.143" />
+      ...
+    
+    </observation>
+  </entryRelationship>
+</observation>

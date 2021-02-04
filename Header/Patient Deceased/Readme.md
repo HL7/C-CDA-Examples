@@ -1,36 +1,36 @@
-##Approval Status 
+## Approval Status 
 
 * Approval Status: Approved
 * Example Task Force: 4/19/2018
 * SDWG: 6/27/2019
 
 
-###C-CDA 2.1 Example:
+### C-CDA 2.1 Example:
 
 * US Realm Header: 2.16.840.1.113883.10.20.22.1.1:2015-08-01
 
 
-###Reference to full CDA sample:
+### Reference to full CDA sample:
 
 * Empty CCD
 
-###Validation location
+### Validation location
 
-* [SITE](https://sitenv.org/sandbox-ccda/ccda-validator)
+* [SITE](https://site.healthit.gov/sandbox-ccda/ccda-validator)
 
 
-###Comments
+### Comments
 
 * This is an example of how to use sdtc extension of deceasedInd. See this site for more on CDA extensions: http://wiki.hl7.org/index.php?title=CDA_R2_Extensions
 
-###Certification
+### Certification
 * ONC
 
-###Custodian
+### Custodian
 
 * John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
 
-###Keywords
+### Keywords
 
 * deceasedInd,deceasedTime
 

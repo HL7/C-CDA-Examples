@@ -1,0 +1,34 @@
+<supply classCode="SPLY" moodCode="INT">
+  <templateId root="2.16.840.1.113883.10.20.22.4.17" extension="2014-06-09" />
+  <id root="aba2fc75-1a43-435f-8309-d24e4be5f1cd" />
+  <statusCode code="completed" />
+  <effectiveTime xsi:type="IVL_TS">
+    <low value="20070103" />
+    <high nullFlavor="UNK" />
+  </effectiveTime>
+  <repeatNumber value="1" />
+  <quantity value="75" />
+  <product>
+    <manufacturedProduct classCode="MANU">
+      <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09" />
+            
+            . . .
+
+        
+    </manufacturedProduct>
+  </product>
+  <author>
+        
+    . . . 
+
+    </author>
+  <entryRelationship typeCode="SUBJ" inversionInd="true">
+    <act classCode="ACT" moodCode="INT">
+      <templateId root="2.16.840.1.113883.10.20.22.4.20" extension="2014-06-09" />
+            
+            . . .
+
+        
+    </act>
+  </entryRelationship>
+</supply>

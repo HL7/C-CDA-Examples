@@ -1,0 +1,24 @@
+<section>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.26"/>
+  <code code="10184-0" 
+             displayName="HOSPITAL DISCHARGE PHYSICAL"
+             codeSystem="2.16.840.1.113883.6.1" 
+             codeSystemName="LOINC"/>
+  <title>Hospital Discharge Physical</title>
+  <text>GENERAL: Well-developed, slightly obese man. 
+        
+    <br/>
+             NECK: Supple, with no jugular venous distension. 
+        
+    <br/>
+             HEART: Intermittent tachycardia without murmurs or gallops.
+        
+    <br/>
+             PULMONARY: Decreased breath sounds, but no clear-cut rales or
+             wheezes. 
+        
+    <br/>
+             EXTREMITIES: Free of edema.
+    
+  </text>
+</section>

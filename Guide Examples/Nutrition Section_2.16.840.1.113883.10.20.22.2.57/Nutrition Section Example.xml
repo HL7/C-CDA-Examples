@@ -1,0 +1,30 @@
+    
+<section>
+  <!--  Nutrition Section  -->
+  <templateId root="2.16.840.1.113883.10.20.22.2.57" />
+  <code code="61144-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diet and Nutrition" />
+  <title>NUTRITION SECTION</title>
+  <text>
+    <paragraph>Nutritional Status: well nourished</paragraph>
+    <paragraph>Nutrition Assessment: Dietary Requirements; low sodium diet, Dietary Intake, high carbohydrate diet; BMI 25-29 overweight </paragraph>
+    <paragraph>Nutritional Recommendations: BMI 22; Nutrition Education "Lean Meats"</paragraph>
+  </text>
+  <entry>
+    <!-- SHOULD HAVE Nutritional Status Observation  -->
+    <observation classCode="OBS" moodCode="EVN">
+      <!--  contains NUTRITIONAL STATUS Observation -->
+      <templateId root="2.16.840.1.113883.10.20.22.4.124" />
+                ...
+                
+      <entryRelationship typeCode="SUBJ">
+        <observation classCode="OBS" moodCode="EVN">
+          <!-- ** Nutritional Assessment observation** -->
+          <templateId root="2.16.840.1.113883.10.20.22.4.138" />
+          <id root="ab1791b0-5c71-11db-b0de-0800200c9a66" />
+                       ...
+                    
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entry>
+</section>

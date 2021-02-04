@@ -1,0 +1,22 @@
+<observation classCode="OBS" moodCode="EVN">
+  <!-- New templateId for Birth Sex -->
+  <!-- Not asserting conformance to Social History Observation due to different vocab. -->
+  <templateId root="2.16.840.1.113883.10.20.22.4.200" extension="2016-06-01"/>
+  <code code="76689-9" codeSystem="2.16.840.1.113883.6.1" 
+            displayName="Sex Assigned At Birth"/>
+  <text>
+    <reference value="#BSex_Narrative1"/>
+  </text>
+  <statusCode code="completed"/>
+  <!-- effectiveTime if present should match birthTime -->
+  <!-- Request  name change to QRDA value set (2.16.840.1.113762.1.4.1) - ONC Birth Sex -->
+  <value xsi:type="CD" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" 
+            code="F" displayName="Female">
+    <originalText>
+      <reference value="#BSex_value"/>
+    </originalText>
+  </value>
+  <author>
+           ...
+    </author>
+</observation>

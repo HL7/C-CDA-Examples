@@ -1,0 +1,33 @@
+<act classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.64"/>
+  <code code="48767-8" displayName="Annotation Comment" 
+        codeSystemName="LOINC" 
+        codeSystem="2.16.840.1.113883.6.1"/>
+  <text>The patient stated that he was looking forward to an upcoming 
+    vacation to New York with his family.  He was concerned that he may
+    not have enough medication for the trip.  An additional prescription 
+    was provided to cover that period of time.
+        
+    <reference value="#PntrtoSectionText"/>
+  </text>
+  <author>
+    <time value="20050329224411+0500"/>
+    <assignedAuthor>
+      <id extension="KP00017" root="2.16.840.1.113883.19.5"/>
+      <addr>
+        <streetAddressLine>21 North Ave.</streetAddressLine>
+        <city>Burlington</city>
+        <state>MA</state>
+        <postalCode>02368</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom use="WP" value="tel:(555)555-1003"/>
+      <assignedPerson>
+        <name>
+          <given>Henry</given>
+          <family>Seven</family>
+        </name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+</act>

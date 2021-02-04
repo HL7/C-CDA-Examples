@@ -1,0 +1,12 @@
+
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.500.2" extention="2019-07-01"/>
+  <!--Care Team Type-->
+  <code code="86744-0" 
+        codeSystem="2.16.840.1.113883.6.1"
+        displayName="Care team" />
+  <statusCode code="completed" />
+  <value xsi:type="CD" code="LA28865-6" 
+        codeSystem="2.16.840.1.113883.6.1"
+        displayName="Longitudinal care-coordination focused care team"/>
+</observation>

@@ -1,0 +1,29 @@
+<organizer moodCode="EVN" classCode="CLUSTER">
+  <templateId root="2.16.840.1.113883.10.20.22.4.45" extension="2015-08-01" />
+  <statusCode code="completed" />
+  <subject>
+    <relatedSubject classCode="PRS">
+      <code code="FTH" displayName="Father" codeSystemName="HL7 FamilyMember" codeSystem="2.16.840.1.113883.5.111">
+        <translation code="9947008" displayName="Natural father" codeSystemName="SNOMED" codeSystem="2.16.840.1.113883.6.96" />
+      </code>
+      <subject>
+        <sdtc:id root="2.16.840.1.113883.19.5.99999.2" extension="99999999" />
+        <id root="2.16.840.1.113883.19.5.99999.2" extension="1234" />
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
+        <birthTime value="1910" />
+        <!-- Example use of sdtc extensions :-->
+        <!-- <sdtc:deceasedInd value="true"/><sdtc:deceasedTime value="1967"/> 
+                -->
+      </subject>
+    </relatedSubject>
+  </subject>
+  <component>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01" />
+            . . .
+       
+        
+        
+    </observation>
+  </component>
+</organizer>

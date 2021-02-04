@@ -1,0 +1,41 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.38" extension="2014-06-09" />
+  <code code="29549-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MEDICATIONS ADMINISTERED" />
+  <title>MEDICATIONS ADMINISTERED</title>
+  <text>
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>Medication</th>
+          <th>Directions</th>
+          <th>Start Date</th>
+          <th>Status</th>
+          <th>Indications</th>
+          <th>Fill Instructions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <content ID="MedAdministered_1">
+                            Proventil 0.09 MG/ACTUAT inhalant solution
+                        </content>
+          </td>
+          <td>0.09 MG/ACTUAT inhalant solution, 2 puffs QID PRN wheezing</td>
+          <td>20070103</td>
+          <td>Active</td>
+          <td>Pneumonia (233604007 SNOMED CT)</td>
+          <td>Generic Substitution Allowed</td>
+        </tr>
+      </tbody>
+    </table>
+  </text>
+  <entry typeCode="DRIV">
+    <substanceAdministration classCode="SBADM" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09" />
+      <!-- ** MEDICATION ACTIVITY V2 ** -->
+                ...
+        
+    </substanceAdministration>
+  </entry>
+</section>

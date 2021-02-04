@@ -1,0 +1,49 @@
+<entry>
+  <organizer classCode="CLUSTER" moodCode="EVN">
+    <!-- Mental Status Organizer V3-->
+    <templateId root="2.16.840.1.113883.10.20.22.4.75" extension="2015-08-01" />
+    <id root="a7bc1062-8649-42a0-833d-ekd65bd013c9" />
+    <code code="75275-8" 
+                                    displayName="Cognitive function"
+                                    codeSystem="2.16.840.1.113883.6.1"
+                                    codeSystemName="LOINC" />
+    <statusCode code="completed" />
+    <component>
+      <observation classCode="OBS" moodCode="EVN">
+        <!-- Mental Status Observation V3-->
+        <templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2015-08-01" />
+                 ...
+ 
+                
+                
+        <code code="373930000" displayName="Cognitive function" 
+                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+          <translation code="75275-8" 
+                                    displayName="Cognitive function"
+                                    codeSystem="2.16.840.1.113883.6.1"
+                                    codeSystemName="LOINC"></translation>
+        </code>
+        <statusCode code="completed"/>
+                            ...
+        
+            
+        <!-- Value element holds the Cognitive Function assessment -->
+            
+                   ...
+            
+      </observation>
+    </component>
+    <component>
+      <observation classCode="OBS" moodCode="EVN">
+        <!-- Mental Status Observation V3 -->
+        <templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2015-08-01" />
+              ...
+            
+                
+            
+            
+            
+      </observation>
+    </component>
+  </organizer>
+</entry>

@@ -1,0 +1,16 @@
+<entryRelationship typeCode="REFR">
+  <observation classCode="OBS" moodCode="EVN">
+    <!-- Prognosis -->
+    <templateId root="2.16.840.1.113883.10.20.22.4.113" />
+    <id root="2097c709-291b-4a0f-bef9-ad9b23b3bb43" />
+    <code code="75328-5" 
+             codeSystem="2.16.840.1.113883.6.1" 
+             codeSystemName="LOINC" 
+             displayName="Prognosis" />
+    <statusCode code="completed" />
+    <effectiveTime>
+      <low value="20130301" />
+    </effectiveTime>
+    <value xsi:type="CD" code="67334001" codeSystem="2.16.840.1.113883.6.96" displayName="guarded prognosis" codeSystemName="SNOMED CT" />
+  </observation>
+</entryRelationship>

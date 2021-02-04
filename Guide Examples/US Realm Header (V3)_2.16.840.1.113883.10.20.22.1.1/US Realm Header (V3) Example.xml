@@ -1,0 +1,20 @@
+<ClinicalDocument>
+  <realmCode code="US" />
+  <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3" />
+  <!-- CCD template -->
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01" />
+  <!-- Globally unique identifier for the document  -->
+  <id extension="TT988" root="2.16.840.1.113883.19.5.99999.1" />
+  <code code="34133-9" displayName="Summarization of Episode Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+  <!-- Title of the document -->
+  <title>Patient Chart Summary</title>
+  <effectiveTime value="201209151030-0800" />
+  <confidentialityCode code="N" displayName="normal" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" />
+  <languageCode code="en-US" />
+  <setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19" />
+  <!-- Version of the document -->
+  <versionNumber value="1" />
+     . . .
+
+
+</ClinicalDocument>

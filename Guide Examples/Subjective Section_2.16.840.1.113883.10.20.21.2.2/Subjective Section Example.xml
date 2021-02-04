@@ -1,0 +1,18 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.21.2.2"/>
+  <code	code="61150-9" codeSystem="2.16.840.1.113883.6.1" 
+         codeSystemName="LOINC" 
+         displayName="SUBJECTIVE"/>
+  <title>SUBJECTIVE DATA</title>
+  <text>
+    <paragraph>
+       I have used the peripheral nerve stimulator in my back for five days. 
+        While using it I found that I was able to do physical activity 
+        without pain. However, afterwards for one day, I would feel pain but 
+        then it would go away. I also noticed that I didn�t have to take the 
+        Vicodin as much. I took 2 less Vicodin per day and 2 less tramadol 
+        everyday. I have not lain in my bed in a year and a half. I sleep in 
+        a recliner. 
+      </paragraph>
+  </text>
+</section>

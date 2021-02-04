@@ -1,0 +1,16 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.28" extension="2015-08-01" />
+  <code code="59776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PROCEDURE FINDINGS" />
+  <title>Procedure Findings</title>
+  <text>A 6 mm sessile polyp was found in the ascending colon and removed by snare, no cautery. Bleeding was controlled. Moderate diverticulosis  and hemorrhoids were incidentally noted.</text>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2014-06-09" />
+      <!-- Problem Observation -->
+        ...
+      
+        
+        
+    </observation>
+  </entry>
+</section>

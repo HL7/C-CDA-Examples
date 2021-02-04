@@ -1,0 +1,17 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.22.1" extension="2015-08-01" />
+  <!-- Encounters Section - Entries required -->
+  <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters" />
+  <title>Encounters</title>
+  <text>
+    ...
+  </text>
+  <entry typeCode="DRIV">
+    <encounter classCode="ENC" moodCode="EVN">
+      <!-- Encounter Activities -->
+            ...
+        
+        
+    </encounter>
+  </entry>
+</section>

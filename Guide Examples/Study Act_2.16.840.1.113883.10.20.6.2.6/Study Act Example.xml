@@ -1,0 +1,13 @@
+<act classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.6.2.6"/>
+  <id root="1.2.840.113619.2.62.994044785528.114289542805"/>
+  <code code="113014" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Study"/>
+  <!-- **** Series ****-->
+  <entryRelationship typeCode="COMP">
+    <act classCode="ACT" moodCode="EVN">
+
+         . . .
+
+        </act>
+  </entryRelationship>
+</act>

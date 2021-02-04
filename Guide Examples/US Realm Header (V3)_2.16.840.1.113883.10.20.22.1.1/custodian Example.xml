@@ -1,0 +1,16 @@
+<custodian>
+  <assignedCustodian>
+    <representedCustodianOrganization>
+      <id extension="321CX" root="1.1.1.1.1.1.1.1.3" />
+      <name>Good Health HIE</name>
+      <telecom use="WP" value="tel:+1(555)555-1009" />
+      <addr use="WP">
+        <streetAddressLine>1009 Healthcare Drive </streetAddressLine>
+        <city>Portland</city>
+        <state>OR</state>
+        <postalCode>99123</postalCode>
+        <country>US</country>
+      </addr>
+    </representedCustodianOrganization>
+  </assignedCustodian>
+</custodian>

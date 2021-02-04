@@ -1,0 +1,11 @@
+<entryRelationship typeCode="COMP">
+  <observation classCode="OBS" moodCode="EVN">
+    <!-- Wound Characteristic -->
+    <templateId root="2.16.840.1.113883.10.20.22.4.134" />
+    <id root="763428a0-eb35-11e2-91e2-0700200c9a66" />
+    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+    <statusCode code="completed" />
+    <effectiveTime value="20013103" />
+    <value xsi:type="CD" code="447547000" displayName="Offensive wound odor" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" />
+  </observation>
+</entryRelationship>

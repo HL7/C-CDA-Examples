@@ -1,0 +1,52 @@
+<organizer classCode="CLUSTER" moodCode="EVN">
+  <!-- Functional Status Organizer V2-->
+  <templateId root="2.16.840.1.113883.10.20.22.4.66" extension="2014-06-09" />
+  <id root="a7bc1062-8649-42a0-833d-eed65bd017c9" />
+  <code code="d5" displayName="Self-Care" codeSystem="2.16.840.1.113883.6.254" codeSystemName="ICF" />
+  <statusCode code="completed" />
+  <author>
+    <time value="200130311" />
+    <assignedAuthor>
+      <id extension="KP00017" root="2.16.840.1.113883.19.5" />
+      <addr>
+        <streetAddressLine>1003 Health Care
+                    Drive</streetAddressLine>
+        <city>Ann Arbor</city>
+        <state>MI</state>
+        <postalCode>02368</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom use="WP" value="tel:(555)555-1003" />
+      <assignedPerson>
+        <name>
+          <given>Assigned</given>
+          <family>Amanda</family>
+        </name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <component>
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- Functional Status Observation V2-->
+      <templateId root="2.16.840.1.113883.10.20.22.4.67" extension="2014-06-09" />
+            ...
+        
+    </observation>
+  </component>
+  <component>
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- Functional Status Observation V2-->
+      <templateId root="2.16.840.1.113883.10.20.22.4.67" extension="2014-06-09" />
+            ...
+        
+    </observation>
+  </component>
+  <component>
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- Self-Care Activities (ADL and IADL)-->
+      <templateId root="2.16.840.1.113883.10.20.22.4.128" />
+            ...
+        
+    </observation>
+  </component>
+</organizer>

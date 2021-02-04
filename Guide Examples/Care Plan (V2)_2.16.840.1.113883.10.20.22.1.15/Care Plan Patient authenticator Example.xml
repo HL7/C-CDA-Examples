@@ -1,0 +1,14 @@
+<!-- This authenticator represents patient agreement or 
+  sign-off of the Care Plan-->
+<authenticator>
+  <time value="20130802" />
+  <signatureCode code="S" />
+  <sdtc:signatureText mediaType="text/xml" representation="B64">omSJUEdmde9j44zmMiromSJUEdmde9j44zmMirdMDSsWdIJdksIJR3373jeu83
+    6edjzMMIjdMDSsWdIJdksIJR3373jeu83MNYD83jmMdomSJUEdmde9j44zmMir ...
+    MNYD83jmMdomSJUEdmde9j44zmMir6edjzMMIjdMDSsWdIJdksIJR3373jeu83
+    4zmMir6edjzMMIjdMDSsWdIJdksIJR3373jeu83==</sdtc:signatureText>
+  <assignedEntity>
+    <id extension="996-756-495" root="2.16.840.1.113883.19.5" />
+    <code code="ONESELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code" />
+  </assignedEntity>
+</authenticator>

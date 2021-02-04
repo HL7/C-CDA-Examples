@@ -1,0 +1,22 @@
+<act classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.63"/>
+  <id root="1.2.840.113619.2.62.994044785528.20060823223142485051"/>
+  <code code="113015" codeSystem="1.2.840.10008.2.16.4"
+          codeSystemName="DCM" displayName="Series">
+    <qualifier>
+      <name code="121139" codeSystem="1.2.840.10008.2.16.4"
+                  codeSystemName="DCM" displayName="Modality"/>
+      <value code="CR" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"
+                   displayName="Computed Radiography"/>
+    </qualifier>
+  </code>
+  <!-- **** SOP Instance UID *** -->
+  <entryRelationship typeCode="COMP">
+    <observation classCode="DGIMG" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
+...
+
+        
+    </observation>
+  </entryRelationship>
+</act>

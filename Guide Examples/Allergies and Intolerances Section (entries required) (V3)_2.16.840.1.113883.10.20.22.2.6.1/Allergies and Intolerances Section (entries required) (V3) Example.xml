@@ -1,0 +1,18 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01" />
+  <code code="48765-2" displayName="Allergies, adverse reactions, alerts" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+  <title>Allergies</title>
+  <text>
+      ...
+    </text>
+  <entry typeCode="DRIV">
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2014-06-09" />
+      <!--   Allergy Concern Act template   -->
+        ...
+      
+        
+        
+    </act>
+  </entry>
+</section>

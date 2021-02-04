@@ -1,0 +1,13 @@
+<participantRole classCode="MANU">
+  <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+  <id root="2.16.840.1.113883.3.3719"   
+      extension="(01)51022222233336(11)141231(17)150707(10)A213B1(21)1234" 
+      assigningAuthorityName="FDA"/>
+  <playingDevice>
+    <code code="90412006" codeSystem="2.16.840.1.113883.6.96"   
+          displayName="Colonoscope"/>
+  </playingDevice>
+  <scopingEntity>
+    <id root="2.16.840.1.113883.3.3719"/>
+  </scopingEntity>
+</participantRole>

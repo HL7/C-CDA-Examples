@@ -1,0 +1,21 @@
+<performer typeCode="PPRF">
+  <assignedEntity>
+    <id extension="IO00017" root="2.16.840.1.113883.19.5" />
+    <code code="207RG0100X" codeSystem="2.16.840.1.113883.6.96" codeSystemName="NUCC" displayName="Gastroenterologist" />
+    <addr>
+      <streetAddressLine>1001 Hospital Lane</streetAddressLine>
+      <city>Ann Arbor</city>
+      <state>MI</state>
+      <postalCode>99999</postalCode>
+      <country>US</country>
+    </addr>
+    <telecom value="tel:(999)555-1212" />
+    <assignedPerson>
+      <name>
+        <prefix>Dr.</prefix>
+        <given>Tony</given>
+        <family>Tum</family>
+      </name>
+    </assignedPerson>
+  </assignedEntity>
+</performer>

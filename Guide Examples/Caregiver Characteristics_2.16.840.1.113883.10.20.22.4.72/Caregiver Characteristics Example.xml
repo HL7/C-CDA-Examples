@@ -1,0 +1,16 @@
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.72"/>
+  <id root="c6b5a04b-2bf4-49d1-8336-636a3813df0c"/>
+  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+  <statusCode code="completed"/>
+  <value xsi:type="CD" code="422615001"
+                 codeSystem="2.16.840.1.113883.6.96"
+                 displayName="caregiver difficulty providing 
+                              physical care"/>
+  <participant typeCode="IND">
+    <participantRole classCode="CAREGIVER">
+      <code code="MTH" codeSystem="2.16.840.1.113883.5.111"
+                    displayName="Mother"/>
+    </participantRole>
+  </participant>
+</observation>

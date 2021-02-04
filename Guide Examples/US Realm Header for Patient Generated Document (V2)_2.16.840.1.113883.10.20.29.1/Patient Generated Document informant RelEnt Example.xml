@@ -1,0 +1,25 @@
+<informant>
+  <!-- An Errata has been accepted to allow relatedEntity under Informant. #XXXX -->
+  <relatedEntity classCode="IND">
+    <!-- id using HL7 example OID. -->
+    <id extension="999.17" root="2.16.840.1.113883.19" />
+    <code code="SIS" displayName="Sister" codeSystem="2.16.840.1.113883.11.20.12.1" codeSystemName="Personal And Legal Relationship Role Type" />
+    <addr use="HP">
+      <!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
+      <streetAddressLine>2222 Home Street</streetAddressLine>
+      <city>Boston</city>
+      <state>MA</state>
+      <postalCode>02368</postalCode>
+      <!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
+      <country>US</country>
+    </addr>
+    <!-- HP is "primary home" from HL7 AddressUse 2.16.840.1.113883.5.1119 -->
+    <telecom value="tel:(555)555-2004" use="HP" />
+    <assignedPerson>
+      <name>
+        <given>Alice</given>
+        <family>Everyman</family>
+      </name>
+    </assignedPerson>
+  </relatedEntity>
+</informant>

@@ -1,0 +1,48 @@
+<section classCode="DOCSECT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.6.1.1"/>
+  <code code="121181" 
+    codeSystem="1.2.840.10008.2.16.4"
+    codeSystemName="DCM" 
+    displayName="DICOM Object Catalog"/>
+  <entry>
+    <!-- **** Study Act **** -->
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.6.2.6"/>
+      <id root="1.2.840.113619.2.62.994044785528.114289542805"/>
+      <code code="113014"  
+        codeSystem="1.2.840.10008.2.16.4"
+        codeSystemName="DCM" 
+        displayName="Study"/>
+      <!-- **** Series Act****-->
+      <entryRelationship typeCode="COMP">
+        <act classCode="ACT" moodCode="EVN">
+          <id root="1.2.840.113619.2.62.994044785528.20060823223142485051"/>
+          <code code="113015" 
+            codeSystem="1.2.840.10008.2.16.4"
+            codeSystemName="DCM" 
+            displayName="Series">
+            ...
+          </code>
+          <!-- **** SOP Instance UID *** -->
+          <!-- 2 References -->
+          <entryRelationship typeCode="COMP">
+            <observation classCode="DGIMG" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
+              ...
+              
+            
+            </observation>
+          </entryRelationship>
+          <entryRelationship typeCode="COMP">
+            <observation classCode="DGIMG" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
+              ...
+              
+            
+            </observation>
+          </entryRelationship>
+        </act>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>

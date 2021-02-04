@@ -1,0 +1,24 @@
+<entry>
+  <act classCode="ACT" moodCode="EVN">
+    <templateId root="2.16.840.1.113883.10.20.22.4.141" />
+    <code code="432138007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="handoff communication (procedure)" />
+    <statusCode code="completed" />
+    <effectiveTime value="20130712" />
+    <author typeCode="AUT">
+      <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+      <time value="20130730" />
+      <assignedAuthor>
+        <id root="d839038b-7171-4165-a760-467925b43857" />
+              ...
+            
+      </assignedAuthor>
+    </author>
+    <participant typeCode="IRCP">
+      <participantRole>
+        <code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy" displayName="Registered Nurse" />
+                ...
+            
+      </participantRole>
+    </participant>
+  </act>
+</entry>

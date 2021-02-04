@@ -1,0 +1,13 @@
+<entry>
+  <act moodCode="INT" classCode="ACT">
+    <!-- Nutrition Recommendation ACT-->
+    <templateId root="2.16.840.1.113883.10.20.22.4.130" />
+    <id root="9a6d1bac-17d3-4195-89a4-1121bc809a5c" />
+    <code code="61310001" 
+               displayName="nutrition education" 
+               codeSystem="2.16.840.1.113883.6.96" 
+               codeSystemName="SNOMED CT" />
+    <statusCode code="active" />
+    <effectiveTime value="20130512" />
+  </act>
+</entry>

@@ -1,0 +1,24 @@
+<participant typeCode="IND">
+  <time xsi:type="IVL_TS">
+    <low value="19551125" />
+    <high value="20121126" />
+  </time>
+  <associatedEntity classCode="NOK">
+    <code code="MTH" codeSystem="2.16.840.1.113883.5.111" />
+    <addr>
+      <streetAddressLine>17 Daws Rd.</streetAddressLine>
+      <city>Blue Bell</city>
+      <state>MA</state>
+      <postalCode>02368</postalCode>
+      <country>US</country>
+    </addr>
+    <telecom value="tel:(555)555-2006" use="WP" />
+    <associatedPerson>
+      <name>
+        <prefix>Mrs.</prefix>
+        <given>Martha</given>
+        <family>Mum</family>
+      </name>
+    </associatedPerson>
+  </associatedEntity>
+</participant>

@@ -1,0 +1,25 @@
+<text>
+  <paragraph>
+    <caption>Finding</caption>
+    <content ID="Fndng2">The cardiomediastinum is within normal limits. The trachea is midline. The previously described opacity at the medial right lung base has cleared. There are no new infiltrates. There is a new round density at the left hilus, superiorly (diameter about 45mm). A CT scan is recommended for further evaluation. The pleural spaces are clear. The visualized musculoskeletal structures and the upper abdomen are stable and unremarkable.</content>
+  </paragraph>
+  ...
+
+
+</text>
+<entry>
+  <observation classCode="OBS" moodCode="EVN">
+    <!-- Text Observation -->
+    <templateId root="2.16.840.1.113883.10.20.6.2.12"/>
+    <code code="121071" codeSystem="1.2.840.10008.2.16.4" 
+          codeSystemName="DCM" displayName="Finding"/>
+    <value xsi:type="ED">
+      <reference value="#Fndng2"/>
+    </value>
+    ...
+    
+        
+    <!-- entryRelationships to SOP Instance Observations and Quantity 
+         Measurement Observations may go here -->
+  </observation>
+</entry>

@@ -1,0 +1,37 @@
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.500" extension="2019-07-01"/>
+  <code code="85847-2" codeSystem="2.16.840.1.113883.6.1"/>
+  <title>Patient Care Teams</title>
+  <text>
+    <list>
+      <item>
+        <content ID= "CareTeamName1">Inpatient Diabetes Care Team</content> (
+        <content>Active</content>) (10/08/2018 - )
+                      
+        <table>
+          <thead>
+            <tr>
+              <th>Member</th>
+              <th>Role on Team</th>
+              <th>Status</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dr. Henry Seven </td>
+              <td ID="CT1_M01">PCP</td>
+              <td>(Active)</td>
+              <td>10/18/2019</td>
+            </tr>
+          </tbody>
+        </table>
+      </item>
+    </list>
+  </text>
+  <entry>
+    <!--Care Team Organizer-->
+... entry info here, if coded data available for care team members... 
+          
+  </entry>
+</section>

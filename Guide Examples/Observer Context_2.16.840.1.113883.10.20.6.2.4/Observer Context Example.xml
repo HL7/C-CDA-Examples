@@ -1,0 +1,11 @@
+<assignedAuthor>
+  <templateId root="2.16.840.1.113883.10.20.6.2.4"/>
+  <id extension="121008" root="2.16.840.1.113883.19.5"/>
+  <assignedPerson>
+    <name>
+      <given>Richard</given>
+      <family>Blitz</family>
+      <suffix>MD</suffix>
+    </name>
+  </assignedPerson>
+</assignedAuthor>

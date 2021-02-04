@@ -1,0 +1,21 @@
+<supply classCode="SPLY" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.18" extension="2014-06-09" />
+  <id root="1.2.3.4.56789.1" extension="cb734647-fc99-424c-a864-7e3cda82e704" />
+  <statusCode code="completed" />
+  <effectiveTime value="201208151450-0800" />
+  <repeatNumber value="1" />
+  <quantity value="75" />
+  <product>
+    <manufacturedProduct classCode="MANU">
+      <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09" />
+            . . .
+
+        
+    </manufacturedProduct>
+  </product>
+  <performer>
+    <assignedEntity>
+        . . .
+        </assignedEntity>
+  </performer>
+</supply>

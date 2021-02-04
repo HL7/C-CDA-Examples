@@ -1,0 +1,22 @@
+<component>
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.2.10" extension="2015-08-01" />
+    <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="29545-1" displayName="Physical Findings" />
+    <title>Physical Examination</title>
+    <!--**10.4.1 Physical Exam at Transfer -->
+    <text>
+      <list listType="ordered">
+        <item>Recurrent GI bleed of unknown etiology; hypotension perhaps
+                    secondary to this but as likely secondary to polypharmacy.</item>
+        <item>Acute on chronic anemia secondary to #1.</item>
+        <item>Azotemia, acute renal failure with volume loss secondary to
+                    #1.</item>
+        <item>Hyperkalemia secondary to #3 and on ACE and K+ supplement.</item>
+        <item>Other chronic diagnoses as noted above, currently stable.</item>
+      </list>
+    </text>
+        ...
+    
+    
+  </section>
+</component>

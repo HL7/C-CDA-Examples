@@ -1,0 +1,23 @@
+<informationRecipient>
+  <intendedRecipient>
+    <informationRecipient>
+      <name>
+        <given>Nancy</given>
+        <family>Nightingale</family>
+        <suffix qualifier="AC">RN</suffix>
+      </name>
+    </informationRecipient>
+    <receivedOrganization>
+      <name>Community Health and Hospitals</name>
+      <telecom value="tel:+1(555)-555-1002" use="WP" />
+      <addr use="WP">
+        <streetAddressLine>Cardiac Stepdown Unit, 4B </streetAddressLine>
+        <streetAddressLine>1002 Healthcare Drive </streetAddressLine>
+        <city>Ann Arbor</city>
+        <state>MI</state>
+        <postalCode>97857</postalCode>
+        <country>US</country>
+      </addr>
+    </receivedOrganization>
+  </intendedRecipient>
+</informationRecipient>

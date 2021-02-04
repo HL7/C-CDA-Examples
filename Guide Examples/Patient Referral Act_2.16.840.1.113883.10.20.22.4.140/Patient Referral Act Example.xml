@@ -1,0 +1,42 @@
+<entry>
+  <act classCode="ACT" moodCode="INT">
+    <!--Patient Referral Act-->
+    <templateId root="2.16.840.1.113883.10.20.22.4.140" />
+    <id root="70bdd7db-e02d-4eff-9829-35e3b7d9e154" />
+    <code code="44383000" displayName="Patient referral for consultation" codeSystemName="SNOMED" codeSystem="2.16.840.1.113883.6.96" />
+    <statusCode code="active" />
+    <effectiveTime value="20130311" />
+    <priorityCode code="A" 
+               codeSystem="2.16.840.1.113883.5.7" 
+               codeSystemName="ActPriority" 
+               displayName="ASAP"/>
+    <author>
+      <time value="200130311" />
+      <assignedAuthor>
+        <id extension="KP00017" root="2.16.840.1.113883.19.5" />
+        <addr>
+          <streetAddressLine>1003 Health Care
+                        Drive</streetAddressLine>
+          <city>Ann Arbor</city>
+          <state>MI</state>
+          <postalCode>02368</postalCode>
+          <country>US</country>
+        </addr>
+        <telecom use="WP" value="tel:(555)555-1003" />
+        <assignedPerson>
+          <name>
+            <given>Assigned</given>
+            <family>Amanda</family>
+          </name>
+        </assignedPerson>
+      </assignedAuthor>
+    </author>
+    <entryRelationship typeCode="SUBJ">
+      <observation classCode="OBS" moodCode="EVN">
+        <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+        <statusCode code="completed" />
+        <value xsi:type="CD" code="268528005" displayName="full care by specialist" codeSystem="2.16.840.1.113883.6.96" />
+      </observation>
+    </entryRelationship>
+  </act>
+</entry>

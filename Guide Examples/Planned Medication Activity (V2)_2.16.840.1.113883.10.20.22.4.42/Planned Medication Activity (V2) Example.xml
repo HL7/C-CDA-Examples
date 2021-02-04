@@ -1,0 +1,41 @@
+<substanceAdministration moodCode="INT" classCode="SBADM">
+  <templateId root="2.16.840.1.113883.10.20.22.4.42" extension="2014-06-09" />
+  <!-- Planned Medication Activity (V2)-->
+  <id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66" />
+  <text>Heparin 0.25 ml Prefilled Syringe</text>
+  <statusCode code="active" />
+  <!-- The effectiveTime in a planned medication activity 
+    represents the time that the medication activity should occur. -->
+  <effectiveTime value="20130905" />
+  <consumable>
+    <manufacturedProduct classCode="MANU">
+      <!-- Medication Information (V2) -->
+      ...
+    
+    </manufacturedProduct>
+  </consumable>
+  <entryRelationship typeCode="REFR">
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- Patient Priority Preference-->
+      ...
+    
+    </observation>
+  </entryRelationship>
+  <entryRelationship typeCode="REFR">
+    <observation classCode="OBS" moodCode="EVN">
+      <!-- Provider Priority Preference-->
+      ...
+    
+    </observation>
+  </entryRelationship>
+  <entryRelationship typeCode="RSON">
+    <!-- Indication (V2) -->
+    ...
+  
+  </entryRelationship>
+  <entryRelationship typeCode="SUBJ">
+    <!-- Instruction (V2) -->
+    ...
+  
+  </entryRelationship>
+</substanceAdministration>
