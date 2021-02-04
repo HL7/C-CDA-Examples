@@ -3,7 +3,8 @@
 * Approval Status: Approved
 * Example Task Force: 4/10/2014
 * SDWG: 4/24/2014
-* SDWG C-CDA R2.1 Upgrade: 12/1/2016    
+* SDWG C-CDA R2.1 Upgrade: 12/1/2016  
+* Example Task Force Updated: 2/4/2021
 
 ### C-CDA 2.1 Example:
 
@@ -21,20 +22,17 @@
 
 * [SITE](https://site.healthit.gov/sandbox-ccda/ccda-validator)
 
-
 ### Comments
 
-* This is an example of an allergy to a drug class (penicillins) using NDF-RT as terminology with information on both allergic reaction and reaction severity. See DSTU 219 for update regarding act/code
+* This is an example of an allergy to a drug class (penicillins) using SNOMED CT as terminology with information on both allergic reaction and reaction severity. See DSTU 219 for update regarding act/code
+
 ### Custodian
 
 * John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
 
-
-
 ### Keywords
 
 * substance, allergies, allergy
-
 
 ### Permalink
 
