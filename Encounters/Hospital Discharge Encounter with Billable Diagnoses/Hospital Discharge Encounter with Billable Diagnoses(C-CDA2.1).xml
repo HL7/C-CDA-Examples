@@ -133,10 +133,9 @@
 								<!-- This represents the date of biological onset. Since this is a coded diagnosis, this may not be documented.-->
 								<low nullFlavor="UNK" />
 							</effectiveTime>
-							<!-- This denotes that the diagnosis is the principal diagnosis. There is generally only a single diagnosis for coded bill.-->
-							<!-- This current modeling aligns with QRDA. Substantial discussion occurred on the task force regarding this method. --> 
-							<!-- Additional comments on this approach should be included in comments on the QRDA Implementation Guide. We will revisit if QRDA changes their standard approach.  --> 
-							<priorityCode code="63161005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Principal"/>
+							<!-- QRDA R5.2  -- Updated to use Rank Observation to indicate  Principal Diagnosis. There is generally only a single diagnosis for coded bill.-->
+							<!-- priorityCode is No longer recommended to indicate principal diagnosis -->
+							<!--  <priorityCode code="63161005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Principal"/> -->
 							<!-- This is a hospital discharge diagnosis, so the ICD-9 (or ICD-10) diagnosis is in translation. -->
 							<!-- If a SNOMED is available for this, it could be included, but mapping back from ICD-9 may not always be possible. -->
 							<value xsi:type="CD" nullFlavor="OTH">
@@ -160,6 +159,14 @@
 									</assignedPerson>
 								</assignedAuthor>
 							</author>
+							<!-- QDM Attribute: Diagnosis - Rank (Principal diagnosis is indicated with a rank of 1 -->
+							<entryRelationship typeCode="REFR">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.24.3.166" extension="2019-12-01"/>
+									<code code="263486008" displayName="Rank" codeSystem="2.16.840.1.113883.6.96"/>
+									<value xsi:type="INT" value="1"/>
+								</observation>
+							</entryRelationship>
 						</observation>
 					</entryRelationship>
 				</act>
@@ -194,10 +201,8 @@
 								<!-- This represents the date of biological onset. Since this is a coded diagnosis, this may not be documented.-->
 								<low nullFlavor="UNK" />
 							</effectiveTime>
-							<!-- This denotes that the diagnosis is a secondary diagnosis. There may be multiple secondary diagnoses on coded bills.-->
-							<!-- This current modeling aligns with QRDA. Substantial discussion occurred on the task force regarding this method. --> 
-							<!-- Additional comments on this approach should be included in comments on the QRDA Implementation Guide. We will revisit if QRDA changes their standard approach.  --> 
-							<priorityCode code="2603003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Secondary"/>
+							<!-- QRDA R5.2  -- Updated to use Rank Observation to indicate Secondary Diagnosis. priorityCode is No longer recommended. -->
+							<!-- <priorityCode code="2603003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Secondary"/> -->
 							<!-- This is a hospital discharge diagnosis, so the ICD-9 (or ICD-10) diagnosis is in translation. -->
 							<!-- If a SNOMED is available for this, it could be included, but mapping back from ICD-9 may not always be possible. -->
 							<value xsi:type="CD" nullFlavor="OTH">
@@ -221,6 +226,15 @@
 									</assignedPerson>
 								</assignedAuthor>
 							</author>
+							<!--  Diagnosis - Rank (Secondary diagnosis is indicated with a rank of 2) -->
+							<!-- This denotes that the diagnosis is a secondary diagnosis. There may be multiple secondary diagnoses on coded bills.-->
+							<entryRelationship typeCode="REFR">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.24.3.166" extension="2019-12-01"/>
+									<code code="263486008" displayName="Rank" codeSystem="2.16.840.1.113883.6.96"/>
+									<value xsi:type="INT" value="2"/>
+								</observation>
+							</entryRelationship>
 						</observation>
 					</entryRelationship>
 				</act>
