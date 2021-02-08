@@ -13,7 +13,9 @@
 * 2.16.840.1.113883.10.20.22.4.32
 * 2.16.840.1.113883.10.20.22.4.33:2015-08-01
 * 2.16.840.1.113883.10.20.22.4.4:2015-08-01
+* 2.16.840.1.113883.10.20.24.3.166
 * 2.16.840.1.113883.10.20.22.4.119
+
 
 ### Reference to full CDA sample:
 * Encounter in empty CCD
@@ -26,7 +28,7 @@
 
 ### Comments
 
-* This is an example of a hospitalization with discharge diagnoses. Meaningful Use requires a place to document encounter diagnoses, and this example attempts to satisfy. This example aligns with QRDA suggestion for encounter diagnosis.
+* This is an example of a hospitalization with discharge diagnoses. Meaningful Use requires a place to document encounter diagnoses, and this example attempts to satisfy. This example aligns with QRDA suggestion to use a Rank Observation for Principal diagnosis.
 ### Custodian
 
 * John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
