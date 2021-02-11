@@ -3,7 +3,7 @@
 * Approval Status: Approved
 * Example Task Force: 4/19/2018
 * SDWG: 6/27/2019
-
+* Updated Example Name and Comments: 2/11/2021
 
 ### C-CDA 2.1 Example:
 
