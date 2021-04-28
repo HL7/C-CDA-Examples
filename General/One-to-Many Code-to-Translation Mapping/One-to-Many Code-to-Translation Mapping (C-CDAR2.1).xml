@@ -1,0 +1,57 @@
+<!-- This example offers a non-normative way to handle coded concepts that require more than one code in a given codeSystem to be fully represented.
+     For example, the concept "Diabetes mellitus AND insipidus with optic atrophy AND deafness" exists in IMO's problem vocabulary, and can be represented
+     by a single SNOMED code, but can't be fully represented by any one ICD-10 code. A sender could choose to translate this concept into ICD-10 codes
+     as follows: -->
+<value xsi:type="CD" code="70694009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Diabetes mellitus AND insipidus with optic atrophy AND deafness">
+    <!-- One translation per codeSystem, and receivers that don't understand the qualifier will still be able to look at each translation and at least get part of the picture. Receivers that do should interpret the qualifier SUMM as ANDing these problems together. -->
+    <translation code="E11.39" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Type 2 diabetes mellitus with other diabetic ophthalmic complication">
+        <qualifier>
+            <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
+            <value code="E23.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Diabetes insipidus" />
+        </qualifier>
+        <qualifier>
+            <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
+            <value code="H47.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Unspecified optic atrophy" />
+        </qualifier>
+        <qualifier>
+            <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
+            <value code="H91.90" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Unspecified hearing loss, unspecified ear" />
+        </qualifier>
+        <qualifier>
+            <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
+            <value code="E11.69" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Type 2 diabetes mellitus with other specified complication" />
+        </qualifier>
+    </translation>
+    
+    <!-- Different translation, different codeSystem... -->
+    <translation code="18598" codeSystem="2.16.840.1.113883.3.247.1.1" codeSystemName="Intelligent Medical Objects ProblemIT" />
+    
+    <!-- Other translations as above... -->
+</value>
+
+<!-- Now, let’s consider a different problem that can't be represented by one SNOMED, ICD-10, etc. code. Here, the qualifier is also included directly underneath the value--that is, we use the same semantics for the value itself as we do for its translations. For instance, the problem "Diabetes mellitus due to underlying condition with chronic kidney disease on chronic dialysis (CMS/HCC)" might look like this: -->
+<value xsi:type="CD" code="8801005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Secondary diabetes mellitus">
+    <!-- Additional qualifiers representing the concepts not captured in the first SNOMED code -->
+    <qualifier>
+        <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
+        <value code="105502003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Dependence on renal dialysis" />
+    </qualifier>
+    <qualifier>
+        <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
+        <value code="709044004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Chronic kidney disease" />
+    </qualifier>
+    
+    <!-- ICD-10 translation with its own associated qualifiers as necessary: -->
+    <translation code="E08.22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Diabetes mellitus due to underlying condition with diabetic chronic kidney disease">
+        <qualifier>
+            <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
+            <value code="N18.6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="End stage renal disease" />
+        </qualifier>
+        <qualifier>
+            <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
+            <value code="Z99.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Dependence on renal dialysis" />
+        </qualifier>
+    </translation>
+    
+    <!-- Other translations as above... -->
+</value>
