@@ -6,7 +6,7 @@
                ...
 
         
-    <code code="43" codeSystem="2.16.840.1.113883.6.59" displayName="Hepatitis B Vaccine" codeSystemName="CVX" />
+    <code code="43" codeSystem="2.16.840.1.113883.12.292" displayName="Hepatitis B Vaccine" codeSystemName="CVX" />
   </consumable>
   <entryRelationship typeCode="COMP">
     <!-- This entryRelationship sequenceNumber indicates this is #2 in the series -->
