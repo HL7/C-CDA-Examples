@@ -2048,9 +2048,9 @@ PLAN OF TREATMENT
 									<templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
 									<!--  ********   Immunization Medication Information    ******** -->
 									<manufacturedMaterial>
-										<code code="88" codeSystem="2.16.840.1.113883.6.59" displayName="Influenza virus vaccine" codeSystemName="CVX">
+										<code code="88" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza virus vaccine" codeSystemName="CVX">
 											<originalText>Influenza virus vaccine</originalText>
-											<translation code="111" displayName="influenza, live, intranasal" codeSystemName="CVX" codeSystem="2.16.840.1.113883.6.59"/>
+											<translation code="111" displayName="influenza, live, intranasal" codeSystemName="CVX" codeSystem="2.16.840.1.113883.12.292"/>
 										</code>
 										<lotNumberText>1</lotNumberText>
 									</manufacturedMaterial>
