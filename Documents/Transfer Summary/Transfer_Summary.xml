@@ -1460,11 +1460,11 @@ IMMUNIZATIONS SECTION (entries required) V2
                   <!-- ** Immunization medication information ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
                   <manufacturedMaterial>
-                    <code code="88" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza virus vaccine"
+                    <code code="88" codeSystem="2.16.840.1.113883.6.59" displayName="Influenza virus vaccine"
                       codeSystemName="CVX">
                       <originalText>Influenza, seasonal, IM</originalText>
                       <translation code="141" displayName="Influenza, seasonal, injectable" codeSystemName="CVX"
-                        codeSystem="2.16.840.1.113883.12.292" />
+                        codeSystem="2.16.840.1.113883.6.59" />
                     </code>
                     <lotNumberText>1</lotNumberText>
                   </manufacturedMaterial>
@@ -1553,13 +1553,13 @@ IMMUNIZATIONS SECTION (entries required) V2
                   <!-- ** Immunization medication information ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
                   <manufacturedMaterial>
-                    <code code="88" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza virus vaccine"
+                    <code code="88" codeSystem="2.16.840.1.113883.6.59" displayName="Influenza virus vaccine"
                       codeSystemName="CVX">
                       <originalText>
                         <reference value="#immi2" />
                       </originalText>
                       <translation code="141" displayName="Influenza, seasonal, injectable" codeSystemName="CVX"
-                        codeSystem="2.16.840.1.113883.12.292" />
+                        codeSystem="2.16.840.1.113883.6.59" />
                     </code>
                     <lotNumberText>1</lotNumberText>
                   </manufacturedMaterial>
@@ -1648,13 +1648,13 @@ IMMUNIZATIONS SECTION (entries required) V2
                   <!-- ** Immunization medication information ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
                   <manufacturedMaterial>
-                    <code code="33" codeSystem="2.16.840.1.113883.12.292"
+                    <code code="33" codeSystem="2.16.840.1.113883.6.59"
                       displayName="Pneumococcal polysaccharide vaccine" codeSystemName="CVX">
                       <originalText>
                         <reference value="#immi3" />
                       </originalText>
                       <translation code="109" displayName="Pneumococcal NOS" codeSystemName="CVX"
-                        codeSystem="2.16.840.1.113883.12.292" />
+                        codeSystem="2.16.840.1.113883.6.59" />
                     </code>
                     <lotNumberText>1</lotNumberText>
                   </manufacturedMaterial>
@@ -1733,13 +1733,13 @@ IMMUNIZATIONS SECTION (entries required) V2
                   <!-- ** Immunization medication information ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
                   <manufacturedMaterial>
-                    <code code="103" codeSystem="2.16.840.1.113883.12.292"
+                    <code code="103" codeSystem="2.16.840.1.113883.6.59"
                       displayName="Tetanus and diphtheria toxoids - preservative free" codeSystemName="CVX">
                       <originalText>
                         <reference value="#immi4" />
                       </originalText>
                       <translation code="09" displayName="Tetanus and diphtheria toxoids - preservative free"
-                        codeSystemName="CVX" codeSystem="2.16.840.1.113883.12.292" />
+                        codeSystemName="CVX" codeSystem="2.16.840.1.113883.6.59" />
                     </code>
                     <lotNumberText>1</lotNumberText>
                   </manufacturedMaterial>
@@ -1824,7 +1824,7 @@ IMMUNIZATIONS SECTION (entries required) V2
                   <!-- ** Immunization medication information ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
                   <manufacturedMaterial>
-                    <code code="45" codeSystem="2.16.840.1.113883.12.292" displayName="Hepatitis B vaccine"
+                    <code code="45" codeSystem="2.16.840.1.113883.6.59" displayName="Hepatitis B vaccine"
                       codeSystemName="CVX" />
                     <lotNumberText>1</lotNumberText>
                   </manufacturedMaterial>
@@ -3460,11 +3460,11 @@ PLAN OF TREATMENT V2
                   <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
                   <!--  ********   Immunization Medication Information    ******** -->
                   <manufacturedMaterial>
-                    <code code="88" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza virus vaccine"
+                    <code code="88" codeSystem="2.16.840.1.113883.6.59" displayName="Influenza virus vaccine"
                       codeSystemName="CVX">
                       <originalText>Influenza virus vaccine</originalText>
                       <translation code="111" displayName="influenza, live, intranasal" codeSystemName="CVX"
-                        codeSystem="2.16.840.1.113883.12.292" />
+                        codeSystem="2.16.840.1.113883.6.59" />
                     </code>
                     <lotNumberText>1</lotNumberText>
                   </manufacturedMaterial>
