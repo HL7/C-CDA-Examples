@@ -1,0 +1,127 @@
+<structuredBody>
+    <!--Clinical Notes-->
+    <component>
+        <section>
+            <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01" />
+            <code code="11488-4" displayName="Consultation note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+            <title>Consultation Notes</title>
+            <text>
+                <content ID="Note1">Clinical Note Text: Dr Albert Davis diagnosed Ms Happy Kid to be suffering from Fever and suspected Pneumonia and recommended admission to the Community Health Hospitals.<br />
+                </content>
+            </text>
+            <entry>
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01" />
+                    <code code="34109-9" displayName="Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                        <translation code="11488-4" displayName="Consultation note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                    </code>
+                    <text>
+                        <reference value="#Note1" />
+                    </text>
+                    <statusCode code="completed" />
+                    <effectiveTime value="20150801" />
+                </act>
+            </entry>
+        </section>
+    </component>
+    <!--Clinical Notes-->
+    <component>
+        <section>
+            <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01" />
+            <code code="18842-5" displayName="Discharge Summary note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+            <title>Discharge Summary Notes</title>
+            <text>
+                <content ID="Note2">Discharge Summary Note Text: Dr Albert Davis diagnosed Ms Happy Kid to be suffering from Fever and suspected Pneumonia and recommended admission to the Community Health Hospitals.<br />
+                </content>
+            </text>
+            <entry>
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01" />
+                    <code code="34109-9" displayName="Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                        <translation code="18842-5" displayName="Discharge Summary note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                    </code>
+                    <text>
+                        <reference value="#Note2" />
+                    </text>
+                    <statusCode code="completed" />
+                    <effectiveTime value="20150801" />
+                </act>
+            </entry>
+        </section>
+    </component>
+    <!--Clinical Notes-->
+    <component>
+        <section>
+            <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01" />
+            <code code="34117-2" displayName="History and Physical Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+            <title>History and Physical Note</title>
+            <text>
+                <content ID="Note3">History and Physical Note Text: Dr Albert Davis diagnosed Ms Happy Kid to be suffering from Fever and suspected Pneumonia and recommended admission to the Community Health Hospitals.<br />
+                </content>
+            </text>
+            <entry>
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01" />
+                    <code code="34109-9" displayName="Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                        <translation code="34117-2" displayName="History and Physical Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                    </code>
+                    <text>
+                        <reference value="#Note3" />
+                    </text>
+                    <statusCode code="completed" />
+                    <effectiveTime value="20150801" />
+                </act>
+            </entry>
+        </section>
+    </component>
+    <!--Clinical Notes-->
+    <component>
+        <section>
+            <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01" />
+            <code code="28570-0" displayName="Procedure Notes" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+            <title>Procedure Notes</title>
+            <text>
+                <content ID="Note4">Procedures Note Text: Dr Albert Davis diagnosed Ms Happy Kid to be suffering from Fever and suspected Pneumonia and recommended admission to the Community Health Hospitals.<br />
+                </content>
+            </text>
+            <entry>
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01" />
+                    <code code="34109-9" displayName="Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                        <translation code="28570-0" displayName="Procedure Notes" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                    </code>
+                    <text>
+                        <reference value="#Note4" />
+                    </text>
+                    <statusCode code="completed" />
+                    <effectiveTime value="20150801" />
+                </act>
+            </entry>
+        </section>
+    </component>
+    <!--Clinical Notes-->
+    <component>
+        <section>
+            <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01" />
+            <code code="11506-3" displayName="Progress Notes" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+            <title>Progress Notes</title>
+            <text>
+                <content ID="Note5">Progress Note Text: Dr Albert Davis diagnosed Ms Happy Kid to be suffering from Fever and suspected Pneumonia and recommended admission to the Community Health Hospitals.<br />
+                </content>
+            </text>
+            <entry>
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01" />
+                    <code code="34109-9" displayName="Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                        <translation code="11506-3" displayName="Progress Notes" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                    </code>
+                    <text>
+                        <reference value="#Note5" />
+                    </text>
+                    <statusCode code="completed" />
+                    <effectiveTime value="20150801" />
+                </act>
+            </entry>
+        </section>
+    </component>
+</structuredBody>

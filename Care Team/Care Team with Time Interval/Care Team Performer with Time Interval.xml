@@ -1,0 +1,41 @@
+<performer typeCode="PRF">
+    <time  xsi:type="IVL_TS">
+        <low value="201506221000" />
+        <high value="201506221030" />
+    </time>
+    <functionCode nullFlavor="UNK" />
+    <assignedEntity>
+        <id extension="c3bf11d8-205e-4a6f-9b4c-55b001469bf5" root="2.16.840.1.113883.4.6" />
+        <code nullFlavor="UNK" />
+        <addr>
+            <streetAddressLine>2472, Rocky Place</streetAddressLine>
+            <streetAddressLine nullFlavor="NI" />
+            <city>Beaverton</city>
+            <state>OR</state>
+            <postalCode>97006</postalCode>
+            <country nullFlavor="NI" />
+        </addr>
+        <telecom value="555-555-1002" />
+        <assignedPerson>
+            <name>
+                <prefix>Dr</prefix>
+                <given>Albert</given>
+                <family>Davis</family>
+                <suffix>Dr</suffix>
+            </name>
+        </assignedPerson>
+        <representedOrganization>
+            <id nullFlavor="UNK" />
+            <name>Neighborhood Physicians Practice</name>
+            <telecom nullFlavor="NI" />
+            <addr>
+                <streetAddressLine>2472, Rocky place</streetAddressLine>
+                <streetAddressLine nullFlavor="NI" />
+                <city>Beaverton</city>
+                <state>OR</state>
+                <postalCode>97006</postalCode>
+                <country nullFlavor="NI" />
+            </addr>
+        </representedOrganization>
+    </assignedEntity>
+</performer>
