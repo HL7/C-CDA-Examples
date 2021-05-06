@@ -1,5 +1,5 @@
 <!-- This example offers a non-normative way to handle coded concepts that require more than one code in a given codeSystem to be fully represented.
-     Per CDA 2.6.8 Qualifier: "Use of qualifiers outside the boundaries specified by the code system is a non-conformant use of the CD data type," which
+     Per CDA §2.6.8 Qualifier: "Use of qualifiers outside the boundaries specified by the code system is a non-conformant use of the CD data type," which
      this example is doing. However, given the need to solve this problem, this example was put forward as one potential solution in the absence of any better one.
      Implementers seeking to address this problem are encouraged to come forward with better alternatives if they exist.
 
