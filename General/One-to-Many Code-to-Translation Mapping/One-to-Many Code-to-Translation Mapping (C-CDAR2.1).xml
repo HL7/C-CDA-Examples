@@ -7,7 +7,8 @@
      by a single SNOMED code, but can't be fully represented by any one ICD-10 code. A sender could choose to translate this concept into ICD-10 codes
      as follows: -->
 <value xsi:type="CD" code="70694009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Diabetes mellitus AND insipidus with optic atrophy AND deafness">
-    <!-- One translation per codeSystem, and receivers that don't understand the qualifier will still be able to look at each translation and at least get part of the picture. Receivers that do should interpret the qualifier SUMM as ANDing these problems together. -->
+    <!-- One translation per codeSystem, and receivers that don't understand the qualifier will still be able to look at each translation and at least get part of the picture.
+         Receivers that do should interpret the qualifier SUMM as ANDing these problems together. -->
     <translation code="E11.39" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Type 2 diabetes mellitus with other diabetic ophthalmic complication">
         <qualifier>
             <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
@@ -33,7 +34,9 @@
     <!-- Other translations as above... -->
 </value>
 
-<!-- Now, let’s consider a different problem that can't be represented by one SNOMED, ICD-10, etc. code. Here, the qualifier is also included directly underneath the value--that is, we use the same semantics for the value itself as we do for its translations. For instance, the problem "Diabetes mellitus due to underlying condition with chronic kidney disease on chronic dialysis (CMS/HCC)" might look like this: -->
+<!-- Now, let’s consider a different problem that can't be represented by one SNOMED, ICD-10, etc. code. Here, the qualifier is also included directly underneath the value--
+     that is, we use the same semantics for the value itself as we do for its translations. For instance, the problem "Diabetes mellitus due to underlying condition with
+     chronic kidney disease on chronic dialysis (CMS/HCC)" might look like this: -->
 <value xsi:type="CD" code="8801005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Secondary diabetes mellitus">
     <!-- Additional qualifiers representing the concepts not captured in the first SNOMED code -->
     <qualifier>
