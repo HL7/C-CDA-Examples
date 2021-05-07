@@ -9,7 +9,7 @@
             <!-- Systems receiving a section with RTF SHALL be capable of displaying the section.text. -->
             <item ID="note1"> 
                 <caption>Nursing Note written by Nick Nurse</caption>
-                <paragraph>Completed rounds; no incident</paragraph>
+                <paragraph>0700-1900 Nursing Note: Patient’s vital signs were stable as documented throughout shift on 2L Oxygen via nasal cannula. His lungs are diminished with scattered crackles. Bowel sounds are active and the patient had a bowel movement x 2 today, both soft. Incontinent of urine and wearing a diaper. Skin intact at this time. Skin color is pale. 2+ non-pitting edema noted in bilateral calves and ankles. Assessed patient and reconciled medications. Spoke with daughter, pt’s power of attorney, to provide updates and education on the patient's condition. Laboratory obtained morning labs without problem and vascular therapy placed a new 18g peripheral IV as the previous one was due for a change. Pt took all morning meds without problem. Reoriented patient and provided opportunities for toileting and for making needs known every 1-2 hours today to lessen risk of fall.</paragraph>
             </item>
         </list>
     </text>
@@ -19,13 +19,34 @@
     <entry typeCode="DRIV">
         <act classCode="ACT" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01"/>
-            <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName=”Note”>
+            <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note">
                 <translation code="34746-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Nurse Note" />
             </code>
-
-            <text mediaType="text/rtf" representation="B64">e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdFxkZWZsYW5nMTAzM3tcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgQ2FsaWJyaTt9fQ0Ke1wqXGdlbmVyYXRvciBSaWNoZWQyMCA2LjMuOTYwMH1cdmlld2tpbmQ0XHVjMSANClxwYXJkXHNhMjAwXHNsMjc2XHNsbXVsdDFcZjBcZnMyMlxsYW5nOSBDb21wbGV0ZWQgcm91bmRzOyBubyBpbmNpZGVudFxwYXINCn0NCiA=
+            
+            <text mediaType="text/rtf" representation="B64">
+                e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdFxkZWZsYW5nMTAzM3tcZm9u
+                dHRibHtcZjBcZm5pbFxmY2hhcnNldDAgQ2FsaWJyaTt9fQ0Ke1xjb2xvcnRibCA7XHJlZDUxXGdy
+                ZWVuNTFcYmx1ZTUxO30NCntcKlxnZW5lcmF0b3IgUmljaGVkMjAgMTAuMC4xODM2Mn1cdmlld2tp
+                bmQ0XHVjMSANClxwYXJkXHNhMjAwXHNsMjc2XHNsbXVsdDFcY2YxXGJcZjBcZnMyMlxsYW5nOSAw
+                NzAwLTE5MDAgTnVyc2luZyBOb3RlOiBcY2YwXGIwIFBhdGllbnRccnF1b3RlIHMgdml0YWwgc2ln
+                bnMgd2VyZSBzdGFibGUgYXMgZG9jdW1lbnRlZCB0aHJvdWdob3V0IHNoaWZ0IG9uIDJMIE94eWdl
+                biB2aWEgbmFzYWwgY2FubnVsYS4gSGlzIGx1bmdzIGFyZSBkaW1pbmlzaGVkIHdpdGggc2NhdHRl
+                cmVkIGNyYWNrbGVzLiBCb3dlbCBzb3VuZHMgYXJlIGFjdGl2ZSBhbmQgdGhlIHBhdGllbnQgaGFk
+                IGEgYm93ZWwgbW92ZW1lbnQgeCAyIHRvZGF5LCBib3RoIHNvZnQuIEluY29udGluZW50IG9mIHVy
+                aW5lIGFuZCB3ZWFyaW5nIGEgZGlhcGVyLiBTa2luIGludGFjdCBhdCB0aGlzIHRpbWUuIFNraW4g
+                Y29sb3IgaXMgcGFsZS4gMisgbm9uLXBpdHRpbmcgZWRlbWEgbm90ZWQgaW4gYmlsYXRlcmFsIGNh
+                bHZlcyBhbmQgYW5rbGVzLiBBc3Nlc3NlZCBwYXRpZW50IGFuZCByZWNvbmNpbGVkIG1lZGljYXRp
+                b25zLiBTcG9rZSB3aXRoIGRhdWdodGVyLCBwdFxycXVvdGUgcyBwb3dlciBvZiBhdHRvcm5leSwg
+                dG8gcHJvdmlkZSB1cGRhdGVzIGFuZCBlZHVjYXRpb24gb24gdGhlIHBhdGllbnQncyBjb25kaXRp
+                b24uIExhYm9yYXRvcnkgb2J0YWluZWQgbW9ybmluZyBsYWJzIHdpdGhvdXQgcHJvYmxlbSBhbmQg
+                dmFzY3VsYXIgdGhlcmFweSBwbGFjZWQgYSBuZXcgMThnIHBlcmlwaGVyYWwgSVYgYXMgdGhlIHBy
+                ZXZpb3VzIG9uZSB3YXMgZHVlIGZvciBhIGNoYW5nZS4gUHQgdG9vayBhbGwgbW9ybmluZyBtZWRz
+                IHdpdGhvdXQgcHJvYmxlbS4gUmVvcmllbnRlZCBwYXRpZW50IGFuZCBwcm92aWRlZCBvcHBvcnR1
+                bml0aWVzIGZvciB0b2lsZXRpbmcgYW5kIGZvciBtYWtpbmcgbmVlZHMga25vd24gZXZlcnkgMS0y
+                IGhvdXJzIHRvZGF5IHRvIGxlc3NlbiByaXNrIG9mIGZhbGwuXHBhcg0KfQ0KAA==
                 <reference value="#note1"/>
             </text>
             <!-- Author Participant information here -->
         </act>
     </entry>
+</section>
