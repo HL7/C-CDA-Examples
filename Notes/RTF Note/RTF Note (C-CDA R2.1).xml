@@ -22,7 +22,7 @@
             <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note">
                 <translation code="34746-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Nurse Note" />
             </code>
-            
+            <!-- This Base64 example includes line breaks which is optional --> 
             <text mediaType="text/rtf" representation="B64">
                 e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdFxkZWZsYW5nMTAzM3tcZm9u
                 dHRibHtcZjBcZm5pbFxmY2hhcnNldDAgQ2FsaWJyaTt9fQ0Ke1xjb2xvcnRibCA7XHJlZDUxXGdy
