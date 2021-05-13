@@ -11,7 +11,7 @@
       <!-- ** Immunization medication information ** -->
       <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
       <manufacturedMaterial>
-        <code code="33" codeSystem="2.16.840.1.113883.6.59" displayName="Pneumococcal polysaccharide vaccine" codeSystemName="CVX">
+        <code code="33" codeSystem="2.16.840.1.113883.12.292" displayName="Pneumococcal polysaccharide vaccine" codeSystemName="CVX">
           <translation code="854981" displayName="Pneumovax 23 (Pneumococcal vaccine polyvalent) Injectable Solution" codeSystemName="RxNORM" codeSystem="2.16.840.1.113883.6.88" />
         </code>
         <lotNumberText>1</lotNumberText>
