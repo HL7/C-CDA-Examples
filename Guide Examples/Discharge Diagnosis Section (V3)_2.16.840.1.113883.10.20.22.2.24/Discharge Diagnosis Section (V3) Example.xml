@@ -1,11 +1,11 @@
 <section>
   <!-- Discharge Diagnosis Section Template Id -->
   <templateId root="2.16.840.1.113883.10.20.22.2.24" extension="2015-08-01" />
-  <code code="11535-2" displayName="Hospital Discharge Diagnosis"
+  <code code="78375-3" displayName="Discharge Diagnosis"
                                 codeSystem="2.16.840.1.113883.6.1"
                                 codeSystemName="LOINC">
     <!-- Code being sought for Discharge Diagnosis - note: Concept will not be Prognosis -->
-    <translation code="C-CDAV2-DDN" displayName="Discharge Diagnosis"
+    <translation code="11535-2" displayName="Hospital Discharge Diagnosis"
                                     codeSystem="2.16.840.1.113883.6.1"
                                     codeSystemName="LOINC"></translation>
   </code>
