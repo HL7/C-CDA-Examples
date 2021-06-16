@@ -4,7 +4,6 @@
   <code code="78375-3" displayName="Discharge Diagnosis"
                                 codeSystem="2.16.840.1.113883.6.1"
                                 codeSystemName="LOINC">
-    <!-- Code being sought for Discharge Diagnosis - note: Concept will not be Prognosis -->
     <translation code="11535-2" displayName="Hospital Discharge Diagnosis"
                                     codeSystem="2.16.840.1.113883.6.1"
                                     codeSystemName="LOINC"></translation>
