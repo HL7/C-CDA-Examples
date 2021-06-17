@@ -142,22 +142,24 @@
 						<!-- This represents the date of biological onset. -->
 						<low value="20150227"/>
 					</effectiveTime>
-					<!-- This is an IMO propriatary code that could be used as the primary vocabulary for a certain problem list, and reflects what is returned from the IMO example also in this directory-->
-					<value xsi:type="CD" code="65167828" codeSystem="2.16.840.1.113883.3.247.1.1" codeSystemName="IMOProblemIT" displayName="Chronic pain of both knees">
+					<!-- If the 3rd party vocabulary code doesn't point to a SNOMED code, you can put just nullFlavor in the value node: nullFlavor='OTH' -->
+					<value xsi:type="CD" code="1003722009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Pain of Knee Region">
 						<originalText>Chronic pain of both knees</originalText>
-					    <!-- In this case, we are putting the qualifiers directly on the value, to pass along the grouping of ICD-10's IMO says their concept represents in full. -->
-				        <qualifier>
-				            <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
-				            <value code="M25.561" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Pain in Right Knee" />
-				        </qualifier>
-				        <qualifier>
-				            <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
-				            <value code="M25.562" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Pain in Left Knee" />
-				        </qualifier>
-				        <qualifier>
-				            <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
-				            <value code="G89.29" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Other chronic pain" />
-				        </qualifier>
+						<!-- This is an 3rd party propriatary code that could be used as the primary vocabulary for a certain problem list, and reflects what is returned from the IMO example also in this directory-->
+						<translation code="65167828" codeSystem="2.16.840.1.113883.3.247.1.1" codeSystemName="3rdPartyCodeSystem" displayName="Chronic pain of both knees">
+							<qualifier>
+							    <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
+							    <value code="M25.561" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Pain in Right Knee" />
+							</qualifier>
+							<qualifier>
+							    <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
+							    <value code="M25.562" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Pain in Left Knee" />
+							</qualifier>
+							<qualifier>
+							    <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
+							    <value code="G89.29" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Other chronic pain" />
+							</qualifier>
+						</translation>
 					</value>
 					<author>
 						<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
