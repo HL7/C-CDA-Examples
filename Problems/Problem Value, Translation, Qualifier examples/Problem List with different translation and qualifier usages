@@ -14,14 +14,14 @@
 			</thead>
 			<tbody>
 				<tr ID="Problem1">
-					<td>Diabetes mellitus AND insipidus with optic atrophy AND deafness</td>
+					<td ID="Problem1Text">Diabetes mellitus AND insipidus with optic atrophy AND deafness</td>
 					<td>
 						<content>Onset: February 27 2014</content>
 					</td>
 					<td>Active</td>
 				</tr>
 				<tr ID="Problem2">
-					<td>Chronic pain of both knees</td>
+					<td ID="Problem2Text">Chronic pain of both knees</td>
 					<td>
 						<content>Onset: February 27 2015</content>
 					</td>
@@ -63,6 +63,9 @@
 					</effectiveTime>
 					<!-- This is a SNOMED code as the primary vocabulary for problem lists-->
 					<value xsi:type="CD" code="70694009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Diabetes mellitus AND insipidus with optic atrophy AND deafness">
+					    <originalText>
+						<reference value="#Problem1Text"/>
+					    </originalText>					
 					    <!-- One translation per codeSystem, and receivers that don't understand the qualifier will still be able to look at each translation and at least get part of the picture. Receivers that do should interpret the qualifier SUMM as ANDing these problems together. -->
 					    <translation code="E11.39" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Type 2 diabetes mellitus with other diabetic ophthalmic complication">
 					        <qualifier>
@@ -144,7 +147,9 @@
 					</effectiveTime>
 					<!-- If the 3rd party vocabulary code doesn't point to a SNOMED code, you can put just nullFlavor in the value node: nullFlavor='OTH' -->
 					<value xsi:type="CD" code="1003722009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Pain of Knee Region">
-						<originalText>Chronic pain of both knees</originalText>
+						<originalText>
+							<reference value="#Problem2Text"/>
+						</originalText>
 						<!-- This is an 3rd party propriatary code that could be used as the primary vocabulary for a certain problem list, and reflects what is returned from the IMO example also in this directory-->
 						<translation code="65167828" codeSystem="2.16.840.1.113883.3.247.1.1" codeSystemName="3rdPartyCodeSystem" displayName="Chronic pain of both knees">
 							<qualifier>
