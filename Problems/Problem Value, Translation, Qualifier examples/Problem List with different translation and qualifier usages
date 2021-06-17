@@ -150,7 +150,7 @@
 						<originalText>
 							<reference value="#Problem2Text"/>
 						</originalText>
-						<!-- This is an 3rd party propriatary code that could be used as the primary vocabulary for a certain problem list, and reflects what is returned from the IMO example also in this directory-->
+						<!-- This is an 3rd party proprietary code that could be used as the primary vocabulary for a certain problem list, and reflects what is returned from the 3rd party -->
 						<translation code="65167828" codeSystem="2.16.840.1.113883.3.247.1.1" codeSystemName="3rdPartyCodeSystem" displayName="Chronic pain of both knees">
 							<qualifier>
 							    <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
