@@ -23,7 +23,7 @@
 * This example illustrates how to structure an active problem with value codes that need translation & qualifiers.
 * 
 ### Custodian
-*
+* Dave Carlson (dcarlson@mieweb.com)
 * Brett Marquard brett@waveoneassociates.com (GitHub: brettmarquard)
  
 ### Keywords
