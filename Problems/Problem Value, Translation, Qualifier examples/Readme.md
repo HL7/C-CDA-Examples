@@ -1,7 +1,8 @@
 ## Approval Status 
 
-* Approval Status: Approved
+* Approval Status: Pending
 * Example Task Force: 6/17/2021
+* SDWG: 
 
 ### C-CDA 2.1 Example:
 
@@ -23,7 +24,7 @@
 * 
 ### Custodian
 *
-* Brett Marquard brett@riverrockassociates.com (GitHub: brettmarquard)
+* Brett Marquard brett@waveoneassociates.com (GitHub: brettmarquard)
  
 ### Keywords
 
