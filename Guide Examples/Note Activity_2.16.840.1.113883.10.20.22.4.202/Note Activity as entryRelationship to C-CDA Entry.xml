@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <section>
   <!-- C-CDA 2.1 Procedures Section -->
   <templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
@@ -12,7 +11,7 @@
           <th>Description</th>
           <th>Date and Time (Range)</th>
           <th>Status</th>
-          <th>Notes</th>
+          <th>Notes</th> 
         </tr>
       </thead>
       <tbody>
@@ -50,8 +49,7 @@
       <entryRelationship typeCode="COMP">
         <act classCode="ACT" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01"/>
-          <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName=?ote?
-                        
+          <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note" >
             <translation code="28570-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure note" />
           </code>
           <text>
