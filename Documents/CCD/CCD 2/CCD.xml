@@ -61,7 +61,7 @@
 			<!-- MC is "mobile contact" from HL7 AddressUse 2.16.840.1.113883.5.1119 -->
 			<telecom value="tel:+1(444)444-4444" use="MC"/>
 			<!-- Multiple telecoms are possible -->
-			<telecom value="mailto://Isbella.Jones.CCD@gmail.com"/>
+			<telecom value="mailto:Isbella.Jones.CCD@gmail.com"/>
 			<patient>
 				<name use="L">
 					<given>Isabella</given>
