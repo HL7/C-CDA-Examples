@@ -21,7 +21,7 @@
         <!-- MC is "mobile contact" from HL7 AddressUse 2.16.840.1.113883.5.1119 -->
         <telecom value="tel:+1(565)867-5309" use="MC"/>
         <!-- Multiple telecoms are possible -->
-        <telecom value="mailto://adam@diameterhealth.com" use="WP"/>
+        <telecom value="mailto:adam@diameterhealth.com" use="WP"/>
         <patient>
             <name use="L">
                 <given>Adam</given>
