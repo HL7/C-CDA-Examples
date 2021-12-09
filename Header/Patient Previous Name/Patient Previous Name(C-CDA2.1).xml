@@ -3,20 +3,24 @@
     <patientRole>
         <id extension="444222222" root="2.16.840.1.113883.4.1"/>
         <patient>
-            <!-- SDWG reviewed and approved approach for recording a birth name and legal name -->
+            <!-- SDWG reviewed and approved approach for recording a previous name and legal name -->
             <name use="L">
-                <given>Alice</given>
+                <given>Jimmy</given>
                 <given>Jones</given>
-                <family>Newman</family>
+                <family>Newman</family> <!-- A name without a validTime is considered current -->     
             </name>
             <name> 
-                <given qualifier="BR">Alicia</given> <!-- BR = Birth name-->
+                <given>Sam</given> 
                 <given>Jones</given>
-                <family qualifier="BR">Newman</family> <!-- BR = Birth name-->
-                <!-- Optional valid time - best practice -->
+                <family>Newman</family> 
+                <!-- Systems may have an explicit field to capture the date/time a name changed -->
+                <!-- Low is when this name is active. It may be captured from a patient/caregiver, external system, or a system may default on first entry  -->
+                <!-- High is populated when the name is no longer active. It may be captured from a patient/caregiver, or when an external system reports a new name -->
+                <!-- Systems that don't capture when a name changed may use high/nullFlavor='UNK'-->
+                <!-- High should be omitted for current name -->                
                 <validTime>
-                    <low value="20010505"/>
-                    <high value="20010510"/>
+                    <low value="20000505"/>
+                    <high value="20100510"/>
                 </validTime>
             </name>		
         </patient>
