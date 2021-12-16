@@ -11,7 +11,7 @@
 	<!-- Code is not required for unstructured documents, although this is a PDF of an discharge summary -->
 	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="11490-0" displayName="Discharge summarization note"/>
 	<title>Community Health and Hospitals: Discharge Summary</title>
-	<effectiveTime value="20090329224411-0500"/>
+	<effectiveTime value="20090329224411-0700"/>
 	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
 	<languageCode code="en-US"/>
 	<setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
@@ -65,7 +65,7 @@
 		</patientRole>
 	</recordTarget>
 	<author>
-		<time value="20090329224411-0500"/>
+		<time value="20090329224411-0700"/>
 		<assignedAuthor>
 			<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 			<code code="200000000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians"/>
