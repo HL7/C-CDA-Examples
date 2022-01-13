@@ -1,0 +1,98 @@
+<!-- Based on: Med Relative Dose IV Drug
+     http://cdasearch.hl7.org/examples/view/5ac26c0e0e797a000bb5d3be -->
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.1" /> 
+    <templateId root="2.16.840.1.113883.10.20.22.2.1" extension="2014-06-09" /> 
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1" /> 
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09" /> 
+    <id root="4A2D0868-7307-11EC-BD4E-460231621F93" /> 
+    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication use Narrative" /> 
+    <title>Medications</title> 
+    <text>
+       <!-- ... -->
+    </text>
+    <!-- Example mixture:
+            diphenhydrAMINE 12.5 mg/5 mL ELIX 1.6667 mL, lidocaine 2 % SOLN 1.6667 mL,
+            aluminum & magnesium hydroxide-simethicone 400-400-40 mg/5mL SUSP 1.6667 mL -->
+    <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="INT">
+            <templateId root="2.16.840.1.113883.10.20.22.4.16" /> 
+            <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09" /> 
+            <id extension="1012722087" root="1.2.840.114350.1.13.861.1.7.2.798268" /> 
+            <text>
+                <reference value="#sig5" /> 
+            </text>
+            <statusCode code="active" /> 
+            <effectiveTime xsi:type="IVL_TS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <low value="20220111" /> 
+                <high value="20220119055900+0000" /> 
+            </effectiveTime>
+            <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <period unit="d" value=".5" /> 
+            </effectiveTime>
+            <routeCode code="C38289" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Mouth/Throat">
+                <originalText>Mouth/Throat</originalText> 
+            </routeCode>
+            <!-- Overall mixture dose: 5 mL -->
+            <doseQuantity unit="mL" value="5" /> 
+            <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23" /> 
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09" /> 
+                    <manufacturedMaterial>
+                        <!-- There's no code for this mixture... -->
+                        <code codeSystem="2.16.840.1.113883.6.88" nullFlavor="OTH">
+                            <originalText>
+                                <reference value="#med5" /> 
+                            </originalText>
+                        </code>
+                    </manufacturedMaterial>
+                </manufacturedProduct>
+            </consumable>
+            <!-- diphenhydrAMINE 12.5 mg/5 mL ELIX 1.6667 mL -->
+            <participant typeCode="CSM">
+                <participantRole classCode="MANU">
+                    <code code="410942007" displayName="Drug or medicament"
+                        codeSystem="2.16.840.1.113883.6.96"/>
+                    <playingEntity classCode="MMAT">
+                        <!-- Ingredient concentration SHOULD be encapsulated in the RxNorm code -->
+                        <code code="997155" displayName="diphenhydramine hydrochloride 2.5 MG/ML"
+                            codeSystem="2.16.840.1.113883.6.88"
+                            codeSystemName="RxNorm"/>
+                        <quantity value="1.6667" unit="mL" />
+                    </playingEntity>
+                </participantRole>
+            </participant>
+            <!-- lidocaine 2 % SOLN 1.6667 mL -->
+            <participant typeCode="CSM">
+                <participantRole classCode="MANU">
+                    <code code="410942007" displayName="Drug or medicament"
+                        codeSystem="2.16.840.1.113883.6.96"/>
+                    <playingEntity classCode="MMAT">
+                        <code code="6387" displayName="lidocaine"
+                            codeSystem="2.16.840.1.113883.6.88"
+                            codeSystemName="RxNorm"/>
+                        <quantity value="1.6667" unit="mL" />
+                        <!-- If the RxNorm code doesn't include a concentration,
+                             use a second quantity to specify one. -->
+                        <quantity value="2" unit="%" />
+                    </playingEntity>
+                </participantRole>
+            </participant>
+            <!-- aluminum & magnesium hydroxide-simethicone 400-400-40 mg/5mL SUSP 1.6667 mL -->
+            <participant typeCode="CSM">
+                <participantRole classCode="MANU">
+                    <code code="410942007" displayName="Drug or medicament"
+                        codeSystem="2.16.840.1.113883.6.96"/>
+                    <playingEntity classCode="MMAT">
+                        <code code="237870"
+                            displayName="aluminum hydroxide 80 MG/ML / magnesium hydroxide 80 MG/ML / simethicone 8 MG/ML Oral Suspension"
+                            codeSystem="2.16.840.1.113883.6.88"
+                            codeSystemName="RxNorm"/>
+                        <quantity value="1.6667" unit="mL" />
+                    </playingEntity>
+                </participantRole>
+            </participant> 
+        </substanceAdministration>
+    </entry>
+</section>
