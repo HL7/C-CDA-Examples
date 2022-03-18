@@ -11,15 +11,15 @@
        <!-- ... -->
     </text>
     <!-- Example mixture:
-            diphenhydrAMINE hydrochloride 3 mg/mL ELIX 1.6667 mL, lidocaine 3 % SOLN 1.6667 mL,
-            aluminum & magnesium hydroxide-simethicone 400-400-40 mg/5mL SUSP 1.6667 mL -->
+            diphenhydrAMINE hydrochloride 5 mg, lidocaine 50 mg,
+            aluminum & magnesium hydroxide-simethicone 80-80-8 mg/mL SUSP 1.6667 mL -->
     <entry typeCode="DRIV">
         <substanceAdministration classCode="SBADM" moodCode="INT">
             <templateId root="2.16.840.1.113883.10.20.22.4.16" /> 
             <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09" /> 
             <id extension="1012722087" root="1.2.840.114350.1.13.861.1.7.2.798268" /> 
             <text>
-                <reference nullFlavor="NI" /> 
+                <reference value="#Med1"/>diphenhydrAMINE hydrochloride 5 mg, lidocaine 50 mg, aluminum & magnesium hydroxide-simethicone 80-80-8 mg/mL SUSP 1.6667 mL
             </text>
             <statusCode code="active" /> 
             <effectiveTime xsi:type="IVL_TS">
@@ -45,7 +45,7 @@
                         <!-- There's no code for this mixture... -->
                         <code codeSystem="2.16.840.1.113883.6.88" nullFlavor="OTH" />
                         <!-- The element SHOULD contain the name of the medication. -->
-                        <name>diphenhydrAMINE hydrochloride 3 mg/mL ELIX 1.6667 mL, lidocaine 3 % SOLN 1.6667 mL, aluminum &amp; magnesium hydroxide-simethicone 400-400-40 mg/5mL SUSP 1.6667 mL</name>
+                        <name>diphenhydrAMINE hydrochloride 5 mg, lidocaine 50 mg, aluminum & magnesium hydroxide-simethicone 80-80-8 mg/mL SUSP 1.6667 mL</name>
                         <!-- This code represents the pharmaceutical dose form (e.g., tablet, capsule, liquid) and SHOULD be present, if not implied by the product.
                             It MAY be present if implied by the product.
                             The value of this code may affect the units used in the substance administration quantity element. -->
@@ -55,24 +55,17 @@
                                  pharm:expirationTime
                                  pharm:asContent
                                  pharm:asSpecializedKind -->
-                        <!-- diphenhydrAMINE hydrochloride 3 mg/mL ELIX 1.6667 mL -->
+                        <!-- diphenhydrAMINE hydrochloride 5 mg -->
                         <!-- The value of @classCode shall be drawn from value set 2.16.840.1.113883.1.11.10430 RoleClassIngredientEntity (DYNAMIC).
                              Here, the classCode of "ACTI" indicates that this is an active ingredient. -->
                         <pharm:ingredient classCode="ACTI">
                             <!-- The pharm:code SHOULD encapsulate the ingredient's concentration.
-                                
-                                 If it does, then the pharm:numerator SHALL represent the amount of the ingredient
-                                 in the mixture and the pharm:denominator SHALL be 1.
-                                 
-                                 If it doesn't, then the pharm:denominator SHALL represent the amount of the ingredient in the mixture,
-                                 and the pharm:numerator SHALL represent the concentration multipled by that amount.
-                                 
+
                                  The pharm:quantity below demonstrates the case where the pharm:code doesn't encapsulate the ingredient's
-                                 concentration. Here, the pharm:denominator is the amount of this ingredient present in the mixture (1.6667 mL)
-                                 and so the pharm:numerator is the concentration (3 MG/mL) times the amount (1.6667 mL) = 5 mg. -->
+                                 concentration. Here, we want 5 mg of this ingredient in the mixture overall, so the numerator is just 5 mg. -->
                             <pharm:quantity>
                                 <pharm:numerator xsi:type="PQ" value="5" unit="mg" />
-                                <pharm:denominator xsi:type="PQ" value="1.6667" unit="mL" />
+                                <pharm:denominator xsi:type="PQ" value="1" />
                             </pharm:quantity>
                             <pharm:ingredientSubstance classCode="MMAT" determinerCode="KIND">
                                 <!-- The pharm:code SHOULD encapsulate the ingredient's concentration, but this one doesn't. -->
@@ -81,16 +74,11 @@
                                     codeSystemName="RxNorm"/>
                             </pharm:ingredientSubstance>
                         </pharm:ingredient>
-                        <!-- lidocaine 3 % SOLN 1.6667 mL -->
+                        <!-- lidocaine 50 mg -->
                         <pharm:ingredient classCode="ACTI">
-                            <!-- Here's another example of what to do if the pharm:code doesn't encapsulate the ingredient's concentration
-                                 (and why it really just should). -->
                             <pharm:quantity>
-                                <!-- 3 percent * 1.6667 mL = 5 percent-mL. For UCUM units, a period (.) is the multiplication operator, so this
-                                     could be represented as follows: -->
-                                <pharm:numerator xsi:type="PQ" value="5" unit="%.mL" />
-                                <!-- Once again, the pharm:denominator represents the amount of this ingredient here. -->
-                                <pharm:denominator xsi:type="PQ" value="1.6667" unit="mL" />
+                                <pharm:numerator xsi:type="PQ" value="50" unit="mg" />
+                                <pharm:denominator xsi:type="PQ" value="1" />
                             </pharm:quantity>
                             <pharm:ingredientSubstance classCode="MMAT" determinerCode="KIND">
                                 <!-- The pharm:code SHOULD encapsulate the ingredient's concentration, but this one doesn't either. -->
@@ -99,11 +87,12 @@
                                     codeSystemName="RxNorm"/>
                             </pharm:ingredientSubstance>
                         </pharm:ingredient>
-                        <!-- aluminum & magnesium hydroxide-simethicone 400-400-40 mg/5mL SUSP 1.6667 mL -->
+                        <!-- aluminum & magnesium hydroxide-simethicone 80-80-8 mg/mL SUSP 1.6667 mL -->
                         <pharm:ingredient classCode="ACTI">
                             <!-- Here, because the pharm:code encapsulates this ingredient's concentration, the pharm:numerator
-                                 represents the amount of the ingredient in the mixture and the pharm:denominator is 1. -->
+                                 is given in mL instead of mg. The pharm:denominator is still 1. -->
                             <pharm:quantity>
+                                <!-- 1.6667 mL of this ingredient = 133-133-13 mg -->
                                 <pharm:numerator xsi:type="PQ" value="1.667" unit="mL" />
                                 <pharm:denominator xsi:type="PQ" value="1" />
                             </pharm:quantity>
