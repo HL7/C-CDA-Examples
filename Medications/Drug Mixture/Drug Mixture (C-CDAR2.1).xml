@@ -19,7 +19,7 @@
             <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09" /> 
             <id extension="1012722087" root="1.2.840.114350.1.13.861.1.7.2.798268" /> 
             <text>
-                <reference value="#Med1"/>diphenhydrAMINE hydrochloride 5 mg, lidocaine 50 mg, aluminum & magnesium hydroxide-simethicone 80-80-8 mg/mL SUSP 1.6667 mL
+                <reference value="#Med1"/>diphenhydrAMINE hydrochloride 5 mg, lidocaine 50 mg, aluminum &amp; magnesium hydroxide-simethicone 80-80-8 mg/mL SUSP 1.6667 mL
             </text>
             <statusCode code="active" /> 
             <effectiveTime xsi:type="IVL_TS">
