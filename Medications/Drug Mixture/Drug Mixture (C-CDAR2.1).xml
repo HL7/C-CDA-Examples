@@ -45,7 +45,7 @@
                         <!-- There's no code for this mixture... -->
                         <code codeSystem="2.16.840.1.113883.6.88" nullFlavor="OTH" />
                         <!-- The element SHOULD contain the name of the medication. -->
-                        <name>diphenhydrAMINE hydrochloride 5 mg, lidocaine 50 mg, aluminum & magnesium hydroxide-simethicone 80-80-8 mg/mL SUSP 1.6667 mL</name>
+                        <name>diphenhydrAMINE hydrochloride 5 mg, lidocaine 50 mg, aluminum &amp; magnesium hydroxide-simethicone 80-80-8 mg/mL SUSP 1.6667 mL</name>
                         <!-- This code represents the pharmaceutical dose form (e.g., tablet, capsule, liquid) and SHOULD be present, if not implied by the product.
                             It MAY be present if implied by the product.
                             The value of this code may affect the units used in the substance administration quantity element. -->
