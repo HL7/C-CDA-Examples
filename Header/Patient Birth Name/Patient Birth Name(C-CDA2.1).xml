@@ -1,0 +1,24 @@
+<recordTarget>
+    <!-- Note: several other data elements (telecom, address, etc.) are required to meet C-CDA R2.1 requirements -->
+    <patientRole>
+        <id extension="444222222" root="2.16.840.1.113883.4.1"/>
+        <patient>
+            <!-- SDWG reviewed and approved approach for recording a birth name and legal name -->
+            <name use="L">
+                <given>Alice</given>
+                <given>Jones</given>
+                <family>Newman</family>
+            </name>
+            <name> 
+                <given qualifier="BR">Alicia</given> <!-- BR = Birth name-->
+                <given>Jones</given>
+                <family qualifier="BR">Newman</family> <!-- BR = Birth name-->
+                <!-- Optional valid time - best practice -->
+                <validTime>
+                    <low value="20010505"/>
+                    <high value="20210510"/>
+                </validTime>
+            </name>		
+        </patient>
+    </patientRole>
+</recordTarget>

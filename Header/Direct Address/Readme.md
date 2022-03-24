@@ -21,7 +21,7 @@
 * Lisa Nelson
 
 ### Keywords
-* recordTarget, patient, provider organization, identifiers
+* recordTarget, patient, provider organization, identifiers, alternative patient identifier, alternate identifier
 
 
 

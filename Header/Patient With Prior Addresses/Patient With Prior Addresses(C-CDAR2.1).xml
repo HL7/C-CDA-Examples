@@ -41,7 +41,7 @@
             </useablePeriod>
         </addr>
         <telecom value="tel:+1(565)867-5309" use="MC"/>
-        <telecom value="mailto://adam@diameterhealth.com" use="WP"/>
+        <telecom value="mailto:adam@diameterhealth.com" use="WP"/>
         <patient>
             <name use="L">
                 <given>Adam</given>

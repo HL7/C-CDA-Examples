@@ -21,7 +21,7 @@
         <!-- MC is "mobile contact" from HL7 AddressUse 2.16.840.1.113883.5.1119 -->
         <telecom value="tel:+1(565)867-5309" use="MC"/>
         <!-- Multiple telecoms are possible -->
-        <telecom value="mailto://adam@diameterhealth.com" use="WP"/>
+        <telecom value="mailto:adam@diameterhealth.com" use="WP"/>
         <patient>
             <name use="L">
                 <given>Adam</given>
@@ -40,8 +40,8 @@
             <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="OMB Standards for Race and Ethnicity"/>
             <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="OMB Standards for Race and Ethnicity"/>
             <languageCommunication>
-                <languageCode code="eng"/>
-                <!-- "eng" is ISO 639-2 alpha-3 code for "English" -->
+                <languageCode code="en"/>
+                <!-- "en" is ISO 639-1 alpha-2 code for "English" -->
                 <modeCode code="ESP" displayName="Expressed spoken" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
                 <proficiencyLevelCode code="E" displayName="Excellent" codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency"/>
                 <preferenceInd value="true"/>
