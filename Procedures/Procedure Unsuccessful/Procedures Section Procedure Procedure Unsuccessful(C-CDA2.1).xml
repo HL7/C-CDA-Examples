@@ -1,0 +1,85 @@
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+	<code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+		displayName="HISTORY OF PROCEDURES"/>
+	<title>Procedures</title>
+	<text>
+		<table>
+			<thead>
+				<tr>
+					<th>Procedure</th>
+					<th>Date and Time (Range)</th>
+					<th>Comment</th>
+					<th>Reason</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ID="Procedure1">
+					<td ID="ProcedureDesc1">Chest X-ray</td>
+					<td>03/31/2022 04:49 PM CST</td>
+					<td ID="Procedure_0_comment">Unsuccessful</td>
+					<td ID="Procedure_0_reason">Image unreadable</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry>
+		<procedure moodCode="EVN" classCode="PROC">
+			<templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+			<templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+			<id root="9037af8a-b28f-4bb5-8a02-ff6ea1f24cb0"/>
+			<code code="168731009" displayName="Standard chest X-ray"
+				codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+				<originalText>
+					<reference value="#ProcedureDesc1"/>
+				</originalText>
+			</code>
+			<text>
+				<reference value="#Procedure1"/>
+			</text>
+			<!-- statusCode is completed because the procedure is complete, even though it was unsuccessful -->
+			<statusCode code="completed"/>
+			<!-- Effective times can be either a value or interval. For procedures with start and stop times, an interval would be more appropriate -->
+			<effectiveTime value="20220331164901-0500"/>
+			<entryRelationship typeCode="SUBJ" inversionInd="true">
+				<!-- QUESTION: Is this act also suitable for inclusion in a Result Organizer??? -->
+				<act classCode="ACT" moodCode="EVN">
+					<!-- No templateId currently exists for this...
+                 		 One may be created in a future version of the C-CDA Companion Guide. -->
+					<!-- REQUIRED: This code is the most important part of the act... it's really the
+                		 only core requirement for marking the procedure as unsuccessful. -->
+					<code code="103709008" codeSystem="2.16.840.1.113883.6.96"
+						displayName="Failed attempted procedure"/>
+					<!-- OPTIONAL: May contain info about why the procedure was unsuccessful -->
+					<text>
+						<reference value="#Procedure_0_reason" />
+					</text>
+					<!-- This statusCode is always "completed" since it refers to the action of having
+						 documented that the procedure was unsuccessful. -->
+					<statusCode code="completed"/>
+					<!-- OPTIONAL: Instant the procedure was marked as unsuccessful -->
+					<effectiveTime value="20220331165432-0500"/>
+					<!-- OPTIONAL: Author who marked the procedure as unsuccessful -->
+					<author>
+						<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+						<time value="20220331165432-0500"/>
+						<assignedAuthor>
+							<id extension="99999999" root="2.16.840.1.113883.4.6"/>
+							<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101"
+								codeSystemName="Health Care Provider Taxonomy"
+								displayName="Family Medicine"/>
+							<telecom use="WP" value="tel:555-555-1002"/>
+							<assignedPerson>
+								<name>
+									<given>Henry</given>
+									<family>Seven</family>
+								</name>
+							</assignedPerson>
+						</assignedAuthor>
+					</author>
+				</act>
+			</entryRelationship>
+		</procedure>
+	</entry>
+</section>
