@@ -11,15 +11,14 @@
        <!-- ... -->
     </text>
     <!-- Example mixture:
-            diphenhydrAMINE hydrochloride 5 mg, lidocaine 50 mg,
-            aluminum & magnesium hydroxide-simethicone 80-80-8 mg/mL SUSP 1.6667 mL -->
+            diphenhydrAMINE hydrochloride 5 mg, lidocaine 50 mg in aluminum & magnesium hydroxide-simethicone 80-80-8 mg/mL -->
     <entry typeCode="DRIV">
         <substanceAdministration classCode="SBADM" moodCode="INT">
             <templateId root="2.16.840.1.113883.10.20.22.4.16" /> 
             <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09" /> 
             <id extension="1012722087" root="1.2.840.114350.1.13.861.1.7.2.798268" /> 
             <text>
-                <reference value="#Med1"/>diphenhydrAMINE hydrochloride 5 mg, lidocaine 50 mg, aluminum &amp; magnesium hydroxide-simethicone 80-80-8 mg/mL SUSP 1.6667 mL
+                <reference value="#Med1"/>diphenhydrAMINE hydrochloride 5 mg, lidocaine 50 mg in aluminum &amp; magnesium hydroxide-simethicone 80-80-8 mg/mL SUSP 1.6667 mL
             </text>
             <statusCode code="active" /> 
             <effectiveTime xsi:type="IVL_TS">
@@ -59,16 +58,18 @@
                         <!-- The value of @classCode shall be drawn from value set 2.16.840.1.113883.1.11.10430 RoleClassIngredientEntity (DYNAMIC).
                              Here, the classCode of "ACTI" indicates that this is an active ingredient. -->
                         <pharm:ingredient classCode="ACTI">
-                            <!-- The pharm:code SHOULD encapsulate the ingredient's concentration.
+                            <!-- The pharm:quantity below demonstrates the case where the pharm:code doesn't encapsulate the ingredient's
+                                 concentration, although this is likely to be more rare than the case where it does. For an example of the more common case,
+                                 see the following two ingredients in this example.
 
-                                 The pharm:quantity below demonstrates the case where the pharm:code doesn't encapsulate the ingredient's
-                                 concentration. Here, we want 5 mg of this ingredient in the mixture overall, so the numerator is just 5 mg. -->
+                                 Here, we want 5 mg of this ingredient per dose, so each 1 mL of the mixture (the denominator)
+                                 contains 1 mg (the numerator) of diphenhydramine. -->
                             <pharm:quantity>
-                                <pharm:numerator xsi:type="PQ" value="5" unit="mg" />
-                                <pharm:denominator xsi:type="PQ" value="1" />
+                                <pharm:numerator xsi:type="PQ" value="1" unit="mg" />
+                                <pharm:denominator xsi:type="PQ" value="1" unit="mL" />
                             </pharm:quantity>
                             <pharm:ingredientSubstance classCode="MMAT" determinerCode="KIND">
-                                <!-- The pharm:code SHOULD encapsulate the ingredient's concentration, but this one doesn't. -->
+                                <!-- This pharm:code DOES NOT encapsulate the ingredient's concentration! -->
                                 <pharm:code code="1362" displayName="diphenhydrAMINE hydrochloride"
                                     codeSystem="2.16.840.1.113883.6.88"
                                     codeSystemName="RxNorm"/>
@@ -76,28 +77,50 @@
                         </pharm:ingredient>
                         <!-- lidocaine 50 mg -->
                         <pharm:ingredient classCode="ACTI">
+                            <!-- The pharm:quantity refers to the amount of the active ingredient in the final mixture, and does NOT
+                                 necessarily specify the amount of this ingredient to be added. Thus, 10 mg/mL of lidocaine (the quantity below)
+                                 times 5 mL (the doseQuantity) = 50 mg in each dose.
+
+                                 However, the concentration of lidocaine specified by the pharm:code (50 MG/ML) is a component of determining
+                                 how much of the ingredient will be added to the final mixture. Starting with lidocaine at 50 mg/ML,
+                                 to create one 5 mL dose of the final mixture, a compounding pharmacist would use 1 mL of this specific product. -->
                             <pharm:quantity>
-                                <pharm:numerator xsi:type="PQ" value="50" unit="mg" />
-                                <pharm:denominator xsi:type="PQ" value="1" />
+                                <pharm:numerator xsi:type="PQ" value="10" unit="mg" />
+                                <pharm:denominator xsi:type="PQ" value="1" unit="mL" />
                             </pharm:quantity>
                             <pharm:ingredientSubstance classCode="MMAT" determinerCode="KIND">
-                                <!-- The pharm:code SHOULD encapsulate the ingredient's concentration, but this one doesn't either. -->
-                                <pharm:code code="6387" displayName="lidocaine"
+                                <pharm:code code="1011092" displayName="lidocaine hydrochloride 50 MG/ML"
                                     codeSystem="2.16.840.1.113883.6.88"
                                     codeSystemName="RxNorm"/>
                             </pharm:ingredientSubstance>
                         </pharm:ingredient>
-                        <!-- aluminum & magnesium hydroxide-simethicone 80-80-8 mg/mL SUSP 1.6667 mL -->
+                        
+                        <!-- ALTERNATE EXAMPLE: This ingredient isn't part of this mixture, but demonstrates how an active ingredient with multiple different
+                                                components may be represented in one.
                         <pharm:ingredient classCode="ACTI">
-                            <!-- Here, because the pharm:code encapsulates this ingredient's concentration, the pharm:numerator
-                                 is given in mL instead of mg. The pharm:denominator is still 1. -->
+                            Each 5 mL dose of the final product contains 0.04 mg of allantoin, 0.004 mg of benzethnonium chloride, and 0.08 mg of lidocaine.
                             <pharm:quantity>
-                                <!-- 1.6667 mL of this ingredient = 133-133-13 mg -->
-                                <pharm:numerator xsi:type="PQ" value="1.667" unit="mL" />
-                                <pharm:denominator xsi:type="PQ" value="1" />
+                                <pharm:numerator xsi:type="PQ" value="0.4" unit="mg" />
+                                <pharm:denominator xsi:type="PQ" value="1" unit="mL" />
                             </pharm:quantity>
                             <pharm:ingredientSubstance classCode="MMAT" determinerCode="KIND">
-                                <!-- The pharm:code SHOULD encapsulate the ingredient's concentration, and this one does. -->
+                                <pharm:code code="2566834" displayName="allantoin 0.02 MG/MG / benzethonium chloride 0.002 MG/MG / lidocaine hydrochloride 0.04 MG/MG Oral Ge"
+                                    codeSystem="2.16.840.1.113883.6.88"
+                                    codeSystemName="RxNorm"/>
+                            </pharm:ingredientSubstance>
+                        </pharm:ingredient>
+                        -->
+                        
+                        <!-- aluminum & magnesium hydroxide-simethicone -->
+                        <pharm:ingredient classCode="BASE">
+                            <!-- The quantity of a mixture's base should always just use the nullFlavor "QS". -->
+                            <pharm:quantity nullFlavor="QS" />
+                            <pharm:ingredientSubstance classCode="MMAT" determinerCode="KIND">
+                                <!-- This pharm:code encapsulates the ingredient's concentration.
+                                     QUESTION: What implications, if any, does specifying the concentration of a base ingredient have? That is,
+                                               would this mean something different if it instead had the pharm:code 307746 (for 40/40/4 mg/mL
+                                               instead of 80/80/8)? Since the quantity is simply "QS" it seems like we're indifferent about how
+                                               much of a base ingredient ends up in the final mixture. Is that true? -->
                                 <pharm:code code="237870"
                                     displayName="aluminum hydroxide 80 MG/ML / magnesium hydroxide 80 MG/ML / simethicone 8 MG/ML Oral Suspension"
                                     codeSystem="2.16.840.1.113883.6.88"
