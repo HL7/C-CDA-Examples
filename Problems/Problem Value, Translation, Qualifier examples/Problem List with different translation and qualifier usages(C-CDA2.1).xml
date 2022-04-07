@@ -1,197 +1,111 @@
 <section>
-	<templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
-	<templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
-	<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" displayName="Problem List"/>
-	<title>Problem List</title>
-	<text>
-		<table>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Dates</th>
-					<th>Status</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr ID="Problem1">
-					<td ID="Problem1Text">Diabetes mellitus AND insipidus with optic atrophy AND deafness</td>
-					<td>
-						<content>Onset: February 27 2014</content>
-					</td>
-					<td>Active</td>
-				</tr>
-				<tr ID="Problem2">
-					<td ID="Problem2Text">Chronic pain of both knees</td>
-					<td>
-						<content>Onset: February 27 2015</content>
-					</td>
-					<td>Active</td>
-				</tr>
-			</tbody>
-		</table>
-	</text>
-	<entry>
-		<act classCode="ACT" moodCode="EVN">
-			<templateId root="2.16.840.1.113883.10.20.22.4.3" />
-			<templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
-			<id root="102ca2e9-884c-4523-a2b4-1b6c3469c397"/>
-			<code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
-			<!-- Since this is an active problem, the concern status is active. -->
-			<!-- While clinicians can track resolved problems, generally active problems will have active concern status and resolved concerns will be completed -->
-			<statusCode code="active"/>
-			<effectiveTime>
-				<!-- This equates to the time the concern was authored in the patient's chart. This may frequently be an EHR timestamp-->
-				<low value="20140302124536-0500"/>
-			</effectiveTime>
-			<entryRelationship typeCode="SUBJ">
-				<observation classCode="OBS" moodCode="EVN">
-					<templateId root="2.16.840.1.113883.10.20.22.4.4" />
-					<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
-					<id extension="10241104348" root="1.3.6.1.4.1.22812.4.111.0.4.1.2.1"/>
-					<code code="55607006" displayName="Problem"
-						codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-						<translation code="75326-9" codeSystem="2.16.840.1.113883.6.1"
-							codeSystemName="LOINC" displayName="Problem"/>
-					</code>
-					<text>
-						<reference value="#Problem1"/>
-					</text>
-					<statusCode code="completed"/>
-					<effectiveTime>
-						<!-- This represents the date of biological onset. -->
-						<low value="20140227"/>
-					</effectiveTime>
-					<!-- This is a SNOMED code as the primary vocabulary for problem lists-->
-					<value xsi:type="CD" code="70694009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Diabetes mellitus AND insipidus with optic atrophy AND deafness">
-					    <originalText>
-						<reference value="#Problem1Text"/>
-					    </originalText>					
-					    <!-- One translation per codeSystem, and receivers that don't understand the qualifier will still be able to look at each translation and at least get part of the picture. Receivers that do should interpret the qualifier SUMM as ANDing these problems together. -->
-					    <translation code="E11.39" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Type 2 diabetes mellitus with other diabetic ophthalmic complication">
-					        <qualifier>
-					            <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
-					            <value code="E23.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Diabetes insipidus" />
-					        </qualifier>
-					        <qualifier>
-					            <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
-					            <value code="H47.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Unspecified optic atrophy" />
-					        </qualifier>
-					        <qualifier>
-					            <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
-					            <value code="H91.90" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Unspecified hearing loss, unspecified ear" />
-					        </qualifier>
-					        <qualifier>
-					            <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
-					            <value code="E11.69" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Type 2 diabetes mellitus with other specified complication" />
-					        </qualifier>
-					    </translation>
-					</value>
-					<author>
-						<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-						<time value="20140302124536"/>
-						<assignedAuthor>
-							<id extension="66666" root="2.16.840.1.113883.4.6"/>
-							<code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
-								codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
-							<addr>
-								<streetAddressLine>6666 StreetName St.</streetAddressLine>
-								<city>Silver Spring</city>
-								<state>MD</state>
-								<postalCode>20901</postalCode>
-								<country>US</country>
-							</addr>
-							<telecom value="tel:+1(301)666-6666" use="WP"/>
-							<assignedPerson>
-								<name>
-									<given>Heartly</given>
-									<family>Sixer</family>
-									<suffix>MD</suffix>
-								</name>
-							</assignedPerson>
-						</assignedAuthor>
-					</author>
-				</observation>
-			</entryRelationship>
-		</act>
-	</entry>
-	<entry>
-		<act classCode="ACT" moodCode="EVN">
-			<templateId root="2.16.840.1.113883.10.20.22.4.3" />
-			<templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
-			<id root="102ca2e9-884c-4523-a2b4-1b6c3469c397"/>
-			<code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
-			<!-- Since this is an active problem, the concern status is active. -->
-			<!-- While clinicians can track resolved problems, generally active problems will have active concern status and resolved concerns will be completed -->
-			<statusCode code="active"/>
-			<effectiveTime>
-				<!-- This equates to the time the concern was authored in the patient's chart. This may frequently be an EHR timestamp-->
-				<low value="20150302124536-0500"/>
-			</effectiveTime>
-			<entryRelationship typeCode="SUBJ">
-				<observation classCode="OBS" moodCode="EVN">
-					<templateId root="2.16.840.1.113883.10.20.22.4.4" />
-					<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
-					<id extension="10241104348" root="1.3.6.1.4.1.22812.4.111.0.4.1.2.1"/>
-					<code code="55607006" displayName="Problem"
-						codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-						<translation code="75326-9" codeSystem="2.16.840.1.113883.6.1"
-							codeSystemName="LOINC" displayName="Problem"/>
-					</code>
-					<text>
-						<reference value="#Problem2"/>
-					</text>
-					<statusCode code="completed"/>
-					<effectiveTime>
-						<!-- This represents the date of biological onset. -->
-						<low value="20150227"/>
-					</effectiveTime>
-					<!-- If the 3rd party vocabulary code doesn't point to a SNOMED code, you can put just nullFlavor in the value node: nullFlavor='OTH' -->
-					<value xsi:type="CD" code="1003722009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Pain of Knee Region">
-						<originalText>
-							<reference value="#Problem2Text"/>
-						</originalText>
-						<!-- This is an 3rd party proprietary code that could be used as the primary vocabulary for a certain problem list, and reflects what is returned from the 3rd party -->
-						<translation code="65167828" codeSystem="2.16.840.1.113883.3.247.1.1" codeSystemName="3rdPartyCodeSystem" displayName="Chronic pain of both knees">
-							<qualifier>
-							    <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
-							    <value code="M25.561" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Pain in Right Knee" />
-							</qualifier>
-							<qualifier>
-							    <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
-							    <value code="M25.562" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Pain in Left Knee" />
-							</qualifier>
-							<qualifier>
-							    <name code="SUMM" displayName="summarized by" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" />
-							    <value code="G89.29" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Other chronic pain" />
-							</qualifier>
-						</translation>
-					</value>
-					<author>
-						<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-						<time value="20150302124536"/>
-						<assignedAuthor>
-							<id extension="66666" root="2.16.840.1.113883.4.6"/>
-							<code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
-								codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
-							<addr>
-								<streetAddressLine>6666 StreetName St.</streetAddressLine>
-								<city>Silver Spring</city>
-								<state>MD</state>
-								<postalCode>20901</postalCode>
-								<country>US</country>
-							</addr>
-							<telecom value="tel:+1(301)666-6666" use="WP"/>
-							<assignedPerson>
-								<name>
-									<given>Heartly</given>
-									<family>Sixer</family>
-									<suffix>MD</suffix>
-								</name>
-							</assignedPerson>
-						</assignedAuthor>
-					</author>
-				</observation>
-			</entryRelationship>
-		</act>
-	</entry>	
+    <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+    <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" displayName="Problem List"/>
+    <title>Problem List</title>
+    <text>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Dates</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ID="Problem1">
+                    <td ID="Problem1Text">Diabetes mellitus due to underlying condition with chronic kidney disease on chronic dialysis (CMS/HCC)</td>
+                    <td>
+                        <content>Onset: February 27 2014</content>
+                    </td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    <entry>
+        <act classCode="ACT" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.3" />
+            <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+            <id root="102ca2e9-884c-4523-a2b4-1b6c3469c397"/>
+            <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+            <!-- Since this is an active problem, the concern status is active. -->
+            <!-- While clinicians can track resolved problems, generally active problems will have active concern status and resolved concerns will be completed -->
+            <statusCode code="active"/>
+            <effectiveTime>
+                <!-- This equates to the time the concern was authored in the patient's chart. This may frequently be an EHR timestamp-->
+                <low value="20140302124536-0500"/>
+            </effectiveTime>
+            <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                    <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                    <id extension="10241104348" root="1.3.6.1.4.1.22812.4.111.0.4.1.2.1"/>
+                    <code code="55607006" displayName="Problem"
+                        codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                        <translation code="75326-9" codeSystem="2.16.840.1.113883.6.1"
+                            codeSystemName="LOINC" displayName="Problem"/>
+                    </code>
+                    <text>
+                        <reference value="#Problem1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <!-- This represents the date of biological onset. -->
+                        <low value="20140227"/>
+                    </effectiveTime>
+                    <!-- Post-coordination can be used for SNOMED to create a single problem encapsulating multiple
+                         codes. No such semantics have been agreed on yet for other code systems. -->
+                    <value xsi:type="CD" code="8801005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Secondary diabetes mellitus">
+                        <originalText>
+                            <reference value="#Problem1Text" />
+                        </originalText>
+                        <!-- Additional qualifiers representing the concepts not captured in the first SNOMED code. The qualifier/name
+                             uses the SNOMED code "associated with" or its children ("causative agent", "due to", or "temporarily related to"). -->
+                        <qualifier>
+                            <name code="47429007" displayName="Associated with" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                            <value code="105502003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Dependence on renal dialysis" />
+                        </qualifier>
+                        <qualifier>
+                            <name code="47429007" displayName="Associated with" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                            <value code="709044004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Chronic kidney disease" />
+                        </qualifier>
+                        
+                        <!-- ICD-10 translation. Note the lack of specificity due to not having qualifiers! -->
+                        <translation code="E08.22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Diabetes mellitus due to underlying condition with diabetic chronic kidney disease" />
+                        
+                        <!-- 3rd-party vocabulary codes (for example, from terminology vendors) may also allow senders to represent complex problems
+                             without losing specificity... however, this requires both the sender and receiver to understand the same vendor terminology. -->
+                        <translation code="65167828" codeSystem="2.16.840.1.113883.3.247.1.1" codeSystemName="3rdPartyCodeSystem" displayName="Diabetes mellitus due to underlying condition with diabetic chronic kidney disease" />
+                        
+                        <!-- Other translations as above... -->
+                    </value>
+                    <author>
+                        <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                        <time value="20140302124536"/>
+                        <assignedAuthor>
+                            <id extension="66666" root="2.16.840.1.113883.4.6"/>
+                            <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
+                                codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+                            <addr>
+                                <streetAddressLine>6666 StreetName St.</streetAddressLine>
+                                <city>Silver Spring</city>
+                                <state>MD</state>
+                                <postalCode>20901</postalCode>
+                                <country>US</country>
+                            </addr>
+                            <telecom value="tel:+1(301)666-6666" use="WP"/>
+                            <assignedPerson>
+                                <name>
+                                    <given>Heartly</given>
+                                    <family>Sixer</family>
+                                    <suffix>MD</suffix>
+                                </name>
+                            </assignedPerson>
+                        </assignedAuthor>
+                    </author>
+                </observation>
+            </entryRelationship>
+        </act>
+    </entry>
 </section>
