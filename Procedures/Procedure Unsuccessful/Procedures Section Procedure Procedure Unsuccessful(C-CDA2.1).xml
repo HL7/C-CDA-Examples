@@ -43,7 +43,6 @@
 			<!-- Effective times can be either a value or interval. For procedures with start and stop times, an interval would be more appropriate -->
 			<effectiveTime value="20220331164901-0500"/>
 			<entryRelationship typeCode="SUBJ" inversionInd="true">
-				<!-- QUESTION: Is this act also suitable for inclusion in a Result Organizer??? -->
 				<act classCode="ACT" moodCode="EVN">
 					<!-- No templateId currently exists for this...
                  		 One may be created in a future version of the C-CDA Companion Guide. -->
