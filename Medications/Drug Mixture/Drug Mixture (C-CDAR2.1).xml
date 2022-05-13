@@ -60,11 +60,11 @@
                         <pharm:ingredient classCode="ACTI">
                             <!-- The pharm:quantity below demonstrates the case where the pharm:code doesn't encapsulate the ingredient's
                                  concentration, although this is likely to be more rare than the case where it does. For an example of the more common case,
-                                 see the following two ingredients in this example.
-
-                                 Here, we want 5 mg of this ingredient per dose, so each 1 mL of the mixture (the denominator)
-                                 contains 1 mg (the numerator) of diphenhydramine. -->
+                                 see the following two ingredients in this example. -->
                             <pharm:quantity>
+                                <!-- For ingredients with an unspecified concentration, the pharm:quantity
+                                represents the amount of the INGREDIENT in the mixture:
+                                1 mg of diphenhydrAMINE hydrochloride per 1 mL of the mixture. -->
                                 <pharm:numerator xsi:type="PQ" value="1" unit="mg" />
                                 <pharm:denominator xsi:type="PQ" value="1" unit="mL" />
                             </pharm:quantity>
@@ -77,18 +77,24 @@
                         </pharm:ingredient>
                         <!-- lidocaine 50 mg -->
                         <pharm:ingredient classCode="ACTI">
-                            <!-- The pharm:quantity refers to the amount of the active ingredient in the final mixture, and does NOT
-                                 necessarily specify the amount of this ingredient to be added. Thus, 10 mg/mL of lidocaine (the quantity below)
-                                 times 5 mL (the doseQuantity) = 50 mg in each dose.
-
-                                 However, the concentration of lidocaine specified by the pharm:code (50 MG/ML) is a component of determining
-                                 how much of the ingredient will be added to the final mixture. Starting with lidocaine at 50 mg/ML,
-                                 to create one 5 mL dose of the final mixture, a compounding pharmacist would use 1 mL of this specific product. -->
+                            <!-- The pharm:quantity below demonstrates the case where the pharm:code encapsulates the ingredient's
+                                 concentration. -->
                             <pharm:quantity>
-                                <pharm:numerator xsi:type="PQ" value="10" unit="mg" />
+                                <!-- For ingredients with a specified concentration, the pharm:quantity
+                                     represents the amount of the PRODUCT in the mixture:
+                                     0.2 mL of a 50 mg/mL lidocaine solution per 1 mL of the mixture.
+
+                                     Receivers may multiply these together to obtain the concentration of the INGREDIENT:
+                                     (0.2 mL / 1 mL) * (50 mg/mL) = 10 mg of lidocaine / 1 mL of the mixture.
+
+                                     Note that sending "10 mg" as the quantity/numerator for "lidocaine hydrochloride 50 mg/mL"
+                                     would be incorrect and create an inconsistency with compound ingredients (see ALTERNATE
+                                     EXAMPLE below). -->
+                                <pharm:numerator xsi:type="PQ" value="0.2" unit="mL" />
                                 <pharm:denominator xsi:type="PQ" value="1" unit="mL" />
                             </pharm:quantity>
                             <pharm:ingredientSubstance classCode="MMAT" determinerCode="KIND">
+                                <!-- This pharm:code encapsulates the ingredient's concentration! -->
                                 <pharm:code code="1011092" displayName="lidocaine hydrochloride 50 MG/ML"
                                     codeSystem="2.16.840.1.113883.6.88"
                                     codeSystemName="RxNorm"/>
@@ -98,13 +104,21 @@
                         <!-- ALTERNATE EXAMPLE: This ingredient isn't part of this mixture, but demonstrates how an active ingredient with multiple different
                                                 components may be represented in one.
                         <pharm:ingredient classCode="ACTI">
-                            Each 5 mL dose of the final product contains 0.04 mg of allantoin, 0.004 mg of benzethnonium chloride, and 0.08 mg of lidocaine.
+                            Once again, this pharm:quantity represents the amount of the compound PRODUCT in the mixture:
+                            0.4 mg of "allantoin 0.02 mg/mg / benzethonium chloride 0.002 mg/mg / lidocaine hydrochloride 0.04 mg/mg Oral Gel"
+                            per 1 mL of the mixture.
+
+                            Receivers may multiply these together to obtain the concentration of each INGREDIENT:
+                            (0.4 mg / 1 mL) * (allantoin 0.02 mg/mg) = 0.008 mg of allantoin / 1 mL of the mixture
+                            (0.4 mg / 1 mL) * (benzethonium chloride 0.002 mg/mg) = 0.0008 mg of benzethonium chloride / 1 mL of the mixture
+                            (0.4 mg / 1 mL) * (lidocaine hydrochloride 0.04 mg/mg) = 0.016 mg of lidocaine hydrochloride / 1 mL of the mixture
+
                             <pharm:quantity>
                                 <pharm:numerator xsi:type="PQ" value="0.4" unit="mg" />
                                 <pharm:denominator xsi:type="PQ" value="1" unit="mL" />
                             </pharm:quantity>
                             <pharm:ingredientSubstance classCode="MMAT" determinerCode="KIND">
-                                <pharm:code code="2566834" displayName="allantoin 0.02 MG/MG / benzethonium chloride 0.002 MG/MG / lidocaine hydrochloride 0.04 MG/MG Oral Ge"
+                                <pharm:code code="2566834" displayName="allantoin 0.02 MG/MG / benzethonium chloride 0.002 MG/MG / lidocaine hydrochloride 0.04 MG/MG Oral Gel"
                                     codeSystem="2.16.840.1.113883.6.88"
                                     codeSystemName="RxNorm"/>
                             </pharm:ingredientSubstance>
