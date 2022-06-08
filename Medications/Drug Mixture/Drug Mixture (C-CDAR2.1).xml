@@ -36,7 +36,8 @@
             <consumable typeCode="CSM">
                 <manufacturedProduct classCode="MANU">
                     <!-- This manufacturedProduct conforms to both the C-CDA Medication Information (V2)
-                         template AND the UV Medication Information (detail) template. -->
+                         template AND the UV Medication Information (detail) template:
+                         https://art-decor.org/art-decor/decor-templates--pharmcda-?section=templates&id=2.16.840.1.113883.10.21.4.11 -->
                     <templateId root="2.16.840.1.113883.10.20.22.4.23" /> 
                     <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09" /> 
                     <templateId root="2.16.840.1.113883.10.21.4.11" />
