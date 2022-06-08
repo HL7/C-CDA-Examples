@@ -2,7 +2,7 @@
 
 * Approval Status: Pending
 * Example Task Force: 12/16/2021
-* SDWG C-CDA R2.1 Upgrade: 
+* SDWG: 
 
 ### C-CDA 2.1 Example:
 
