@@ -127,14 +127,13 @@
                         
                         <!-- aluminum & magnesium hydroxide-simethicone -->
                         <pharm:ingredient classCode="BASE">
-                            <!-- The quantity of a mixture's base should always just use the nullFlavor "QS". -->
+                            <!-- The quantity of a mixture's base should generally just use the nullFlavor "QS". -->
                             <pharm:quantity nullFlavor="QS" />
                             <pharm:ingredientSubstance classCode="MMAT" determinerCode="KIND">
-                                <!-- This pharm:code encapsulates the ingredient's concentration.
-                                     QUESTION: What implications, if any, does specifying the concentration of a base ingredient have? That is,
-                                               would this mean something different if it instead had the pharm:code 307746 (for 40/40/4 mg/mL
-                                               instead of 80/80/8)? Since the quantity is simply "QS" it seems like we're indifferent about how
-                                               much of a base ingredient ends up in the final mixture. Is that true? -->
+                                <!-- For BASE ingredients, pharm:code may include the ingredient's concentration.
+                                     This is to ensure that the correct base product is used when there are multiple strengths available (D5W vs D10W).
+                                     Since pharm:quantity is not specified for base ingredients, there is no simple calculation for a final
+                                     concentration of the base. Typically, bases are not therapeutic and the final concentration isn’t a concern. -->
                                 <pharm:code code="237870"
                                     displayName="aluminum hydroxide 80 MG/ML / magnesium hydroxide 80 MG/ML / simethicone 8 MG/ML Oral Suspension"
                                     codeSystem="2.16.840.1.113883.6.88"
