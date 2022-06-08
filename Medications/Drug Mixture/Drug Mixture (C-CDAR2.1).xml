@@ -127,7 +127,10 @@
                         
                         <!-- aluminum & magnesium hydroxide-simethicone -->
                         <pharm:ingredient classCode="BASE">
-                            <!-- The quantity of a mixture's base should generally just use the nullFlavor "QS". -->
+                            <!-- The quantity of a mixture's base should generally just use the nullFlavor "QS".
+                                 Note that "QS" isn't part of the set of allowed nullFlavors in CDA R2.0--it's only
+                                 normative in CDA R2.1--but since this element comes from outside the CDA namespace,
+                                 neither the CDA R2.0 nor the CDA R2.1 validation rules apply to it. -->
                             <pharm:quantity nullFlavor="QS" />
                             <pharm:ingredientSubstance classCode="MMAT" determinerCode="KIND">
                                 <!-- For BASE ingredients, pharm:code may include the ingredient's concentration.
