@@ -1,143 +1,150 @@
 <section>
-  <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
-  <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
-  <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
-    displayName="Plan of care note"/>
-  <title>Plan of Treatment</title>
-  <text>
-    <table>
-      <caption>Scheduled Procedures</caption>
-      <colgroup>
-        <col width="40%"/>
-        <col width="10%"/>
-        <col width="25%" span="2"/>
-      </colgroup>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Priority</th>
-          <th>Associated Diagnoses</th>
-          <th>Date/Time</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr ID="procedure32">
-          <td>
-            <content ID="procedure32name">Appendectomy Open</content>
-          </td>
-          <td>Urgent</td>
-          <td>
-            <paragraph>Appendicitis</paragraph>
-          </td>
-          <td>04/30/2022 9:00 PM CDT</td>
-        </tr>
-      </tbody>
-    </table>
-  </text>
-  <entry>
-    <!-- Planned Procedure (V2) -->
-    <procedure classCode="PROC" moodCode="INT">
-      <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
-      <templateId root="2.16.840.1.113883.10.20.22.4.41" extension="2014-06-09"/>
-      <id extension="237181-1-1" root="1.2.840.114350.1.13.861.1.7.1.1988.2"/>
-      <code code="44950" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"
-        displayName="Appendectomy">
-        <originalText>Appendectomy Open<reference value="#procedure32name"/></originalText>
-        <translation code="80146002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
-          displayName="Excision of appendix"/>
-      </code>
-      <text>
-        <reference value="#procedure32"/>
-      </text>
-      <statusCode code="active"/>
-      <effectiveTime>
-        <low value="20220430210000-0500"/>
-        <high value="20220430213200-0500"/>
-      </effectiveTime>
-      <!-- Omitted: MAY contain zero or more [0..*] performer (CONF:1098-30449) -->
-      <!-- Omitted: SHOULD contain zero or one [0..1] Author Participation (CONF:1098-31979) -->
-      <!-- Priority Preference -->
-      <entryRelationship typeCode="REFR">
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.22.4.143"/>
-          <id nullFlavor="NI"/>
-          <code code="225773000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
-            displayName="Preference"/>
-          <effectiveTime value="20220430201102-0500"/>
-          <value code="394849002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
-            displayName="High priority" xsi:type="CD"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-        </observation>
-      </entryRelationship>
-      <!-- Indication -->
-      <entryRelationship typeCode="RSON">
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-          <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09"/>
-          <id extension="86579" root="1.2.840.114350.1.13.861.1.7.2.696871"/>
-          <code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
-            displayName="Problem"/>
-          <text>Appendicitis</text>
-          <statusCode code="completed"/>
-          <value code="74400008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
-            xsi:type="CD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <translation code="K37" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10"/>
-            <translation code="541" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9"/>
-            <translation code="72283" codeSystem="2.16.840.1.113883.3.247.1.1"
-              codeSystemName="Intelligent Medical Objects ProblemIT"/>
-          </value>
-        </observation>
-      </entryRelationship>
-      <!-- Omitted: MAY contain zero or more [0..*] entryRelationship (CONF:1098-31985) such that it
+    <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+    <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+        displayName="Plan of care note"/>
+    <title>Plan of Treatment</title>
+    <text>
+        <table>
+            <caption>Scheduled Procedures</caption>
+            <colgroup>
+                <col width="40%"/>
+                <col width="10%"/>
+                <col width="25%" span="2"/>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Priority</th>
+                    <th>Associated Diagnoses</th>
+                    <th>Date/Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ID="procedure32">
+                    <td>
+                        <content ID="procedure32name">Appendectomy Open</content>
+                    </td>
+                    <td>Urgent</td>
+                    <td>
+                        <paragraph>Appendicitis</paragraph>
+                    </td>
+                    <td>04/30/2022 9:00 PM CDT</td>
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    <entry>
+        <!-- Planned Procedure (V2) -->
+        <procedure classCode="PROC" moodCode="INT">
+            <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.41" extension="2014-06-09"/>
+            <id extension="237181-1-1" root="1.2.840.114350.1.13.861.1.7.1.1988.2"/>
+            <code code="44950" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"
+                displayName="Appendectomy">
+                <originalText>Appendectomy Open<reference value="#procedure32name"/></originalText>
+                <translation code="80146002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
+                    displayName="Excision of appendix"/>
+            </code>
+            <text>
+                <reference value="#procedure32"/>
+            </text>
+            <statusCode code="active"/>
+            <effectiveTime>
+                <low value="20220430210000-0500"/>
+                <high value="20220430213200-0500"/>
+            </effectiveTime>
+            <!-- Omitted: MAY contain zero or more [0..*] performer (CONF:1098-30449) -->
+            <!-- Omitted: SHOULD contain zero or one [0..1] Author Participation (CONF:1098-31979) -->
+            <!-- Priority Preference -->
+            <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.143"/>
+                    <id nullFlavor="NI"/>
+                    <code code="225773000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
+                        displayName="Preference"/>
+                    <effectiveTime value="20220430201102-0500"/>
+                    <value code="394849002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
+                        displayName="High priority" xsi:type="CD"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </observation>
+            </entryRelationship>
+            <!-- Indication -->
+            <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09"/>
+                    <id extension="86579" root="1.2.840.114350.1.13.861.1.7.2.696871"/>
+                    <code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
+                        displayName="Problem"/>
+                    <text>Appendicitis</text>
+                    <statusCode code="completed"/>
+                    <value code="74400008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
+                        xsi:type="CD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <translation code="K37" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10"/>
+                        <translation code="541" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9"/>
+                        <translation code="72283" codeSystem="2.16.840.1.113883.3.247.1.1"
+                            codeSystemName="Intelligent Medical Objects ProblemIT"/>
+                    </value>
+                </observation>
+            </entryRelationship>
+            <!-- Omitted: MAY contain zero or more [0..*] entryRelationship (CONF:1098-31985) such that it
                         SHALL contain exactly one [1..1] Instruction (V2) (CONF:1098-31989). -->
-      <!-- Omitted: MAY contain zero or more [0..*] entryRelationship (CONF:1098-31990) such that it
+            <!-- Omitted: MAY contain zero or more [0..*] entryRelationship (CONF:1098-31990) such that it
                         SHALL contain exactly one [1..1] Planned Coverage (CONF:1098-31992). -->
-
-      <!-- Alternative planned procedures: first alternative -->
-      <entryRelationship typeCode="OPTN">
-        <!-- "OPTN" = has option
-         A relationship between a source Act that provides more detailed properties to the target Act.
-         The source act thus is a specialization of the target act, but instead of mentioning all the inherited properties it only mentions new property bindings or refinements.
-         The typical use case is to specify certain alternative variants of one kind of Act. The priorityNumber attribute is used to weigh refinements as preferred over other alternative refinements.
-         Example: several routing options for a drug are specified as one SubstanceAdministration for the general treatment with attached refinements for the various routing options. -->
-
-        <procedure classCode="PROC" moodCode="PRP">
-          <!-- "PRP" = proposal
-           A non-mandated intent to perform an act. Used to record intents that are explicitly not Orders. Professional responsibility for the 'proposal' may or may not be present. -->
-          <code code="44960" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"
-            displayName="Appendectomy; for ruptured appendix with abscess or generalized peritonitis"
-          />
+            
+            <!-- This entryRelationship contains an organizer listing alternative planned procedures... -->
+            <entryRelationship typeCode="REFR">
+                <organizer classCode="CLUSTER" moodCode="PRP">
+                    <!-- "PRP" = proposal
+                         A non-mandated intent to perform an act. Used to record intents that are explicitly not Orders.
+                         Professional responsibility for the 'proposal' may or may not be present. -->
+                    <!-- It would be nice to have an organizer/code here with a value like "alternative procedure options,"
+                         although I haven't been able to find anything like that. -->
+                    
+                    <statusCode code="active" />
+                    
+                    <!-- First alternative -->
+                    <component>
+                        <procedure classCode="SUBST" moodCode="PRP">
+                            <!-- "SUBST" = substitution
+                                 Indicates that the subject Act has undergone or should undergo substitution of a type indicated by Act.code. -->
+                            <code code="44960" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"
+                                displayName="Appendectomy; for ruptured appendix with abscess or generalized peritonitis" />
+                        </procedure>
+                    </component>
+                    
+                    <!-- Second alternative -->
+                    <component>
+                        <procedure classCode="SUBST" moodCode="PRP">
+                            <code code="44970" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"
+                                displayName="Laparoscopy, surgical, appendectomy" />
+                        </procedure>
+                    </component>
+                    
+                    <!-- Third alternative -->
+                    <component>
+                        <organizer classCode="CLUSTER" moodCode="PRP">
+                            <statusCode code="active" />
+                            <!-- To represent multiple combined procedures as one option, an organizer may be used to group multiple proposed procedures.
+                                 This option comprises a laparoscopic appendectomy... -->
+                            <component>
+                                <procedure classCode="SUBST" moodCode="PRP">
+                                    <code code="44970" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"
+                                        displayName="Laparoscopy, surgical, appendectomy" />
+                                </procedure>
+                            </component>
+                            <!-- ...AND wound debridement! -->
+                            <component>
+                                <procedure classCode="SUBST" moodCode="PRP">
+                                    <code code="11042" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"
+                                        displayName="Debridement, subcutaneous tissue (includes epidermis and dermis, if performed); first 20 sq cm or less" />
+                                </procedure>
+                            </component>
+                        </organizer>
+                    </component>
+                </organizer>
+            </entryRelationship>
         </procedure>
-      </entryRelationship>
-      
-      <!-- Alternative planned procedures: second alternative -->
-      <entryRelationship typeCode="OPTN">
-        <procedure classCode="PROC" moodCode="PRP">
-          <code code="44970" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"
-            displayName="Laparoscopy, surgical, appendectomy"/>
-        </procedure>
-      </entryRelationship>
-      
-      <!-- Alternative planned procedures: third alternative -->
-      <entryRelationship typeCode="OPTN">
-        <organizer classCode="CLUSTER" moodCode="PRP">
-          <!-- To represent multiple combined procedures as one option, an organizer may be used to group multiple proposed procedures.
-               This option comprises a laparoscopic appendectomy... -->
-          <component>
-            <procedure classCode="PROC" moodCode="PRP">
-              <code code="44970" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"
-                displayName="Laparoscopy, surgical, appendectomy"/>
-            </procedure>
-          </component>
-          <!-- ...AND wound debridement! -->
-          <component>
-            <procedure classCode="PROC" moodCode="PRP">
-              <code code="11042" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"
-                displayName="Debridement, subcutaneous tissue (includes epidermis and dermis, if performed); first 20 sq cm or less" />
-            </procedure>
-          </component>
-        </organizer>
-      </entryRelationship>
-    </procedure>
-  </entry>
+    </entry>
 </section>
