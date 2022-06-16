@@ -93,7 +93,8 @@
             <!-- Omitted: MAY contain zero or more [0..*] entryRelationship (CONF:1098-31990) such that it
                         SHALL contain exactly one [1..1] Planned Coverage (CONF:1098-31992). -->
             
-            <!-- This entryRelationship contains an organizer listing alternative planned procedures... -->
+            <!-- This entryRelationship contains an organizer listing alternative planned procedures...
+                 The options below should be read as: CPT 44960 OR 44970 OR (44970 AND 11042) -->
             <entryRelationship typeCode="REFR">
                 <organizer classCode="CLUSTER" moodCode="PRP">
                     <!-- "PRP" = proposal
