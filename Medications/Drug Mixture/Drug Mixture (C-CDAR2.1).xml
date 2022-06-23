@@ -1,4 +1,7 @@
-<!-- Note the use of the urn:ihe:pharm:medication namespace, as necessitated by the UV Medication Information (detail) template. -->
+<!-- Note the use of the urn:ihe:pharm:medication namespace, which is required by the UV Medication Information (detail) template.
+     The CDA schema doesn't recognize content from this namespace and so flags it as invalid by default, although extension content from other namespaces
+     is allowed in CDA even when not recognized by the schema (see 1.4 CDA Extensibility).
+ -->
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm:medication">
     <templateId root="2.16.840.1.113883.10.20.22.2.1" /> 
     <templateId root="2.16.840.1.113883.10.20.22.2.1" extension="2014-06-09" /> 
