@@ -1,0 +1,155 @@
+<!-- Note the use of the urn:ihe:pharm:medication namespace, which is required by the UV Medication Information (detail) template.
+     The CDA schema doesn't recognize content from this namespace and so flags it as invalid by default, although extension content from other namespaces
+     is allowed in CDA even when not recognized by the schema (see 1.4 CDA Extensibility).
+ -->
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm:medication">
+    <templateId root="2.16.840.1.113883.10.20.22.2.1" /> 
+    <templateId root="2.16.840.1.113883.10.20.22.2.1" extension="2014-06-09" /> 
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1" /> 
+    <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09" /> 
+    <id root="4A2D0868-7307-11EC-BD4E-460231621F93" /> 
+    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication use Narrative" /> 
+    <title>Medications</title> 
+    <text>
+       <!-- ... -->
+    </text>
+    <!-- Example mixture:
+            diphenhydrAMINE hydrochloride 5 mg, lidocaine 50 mg in aluminum & magnesium hydroxide-simethicone 80-80-8 mg/mL -->
+    <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="INT">
+            <templateId root="2.16.840.1.113883.10.20.22.4.16" /> 
+            <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09" /> 
+            <id extension="1012722087" root="1.2.840.114350.1.13.861.1.7.2.798268" /> 
+            <text>
+                <reference value="#Med1"/>diphenhydrAMINE hydrochloride 5 mg, lidocaine 50 mg in aluminum &amp; magnesium hydroxide-simethicone 80-80-8 mg/mL SUSP 1.6667 mL
+            </text>
+            <statusCode code="active" /> 
+            <effectiveTime xsi:type="IVL_TS">
+                <low value="20220111" /> 
+                <high value="20220119055900+0000" /> 
+            </effectiveTime>
+            <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period unit="d" value=".5" /> 
+            </effectiveTime>
+            <routeCode code="C38289" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Mouth/Throat">
+                <originalText>Mouth/Throat</originalText> 
+            </routeCode>
+            <!-- The patient should take 5 mL of this mixture at a time. -->
+            <doseQuantity unit="mL" value="5" /> 
+            <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                    <!-- This manufacturedProduct conforms to both the C-CDA Medication Information (V2)
+                         template AND the UV Medication Information (detail) template:
+                         https://art-decor.org/art-decor/decor-templates--pharmcda-?section=templates&id=2.16.840.1.113883.10.21.4.11 -->
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23" /> 
+                    <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09" /> 
+                    <templateId root="2.16.840.1.113883.10.21.4.11" />
+                    <manufacturedMaterial>
+                        <!-- There's no code for this mixture... -->
+                        <code codeSystem="2.16.840.1.113883.6.88" nullFlavor="OTH" />
+                        <!-- The element SHOULD contain the name of the medication. -->
+                        <name>diphenhydrAMINE hydrochloride 5 mg, lidocaine 50 mg, aluminum &amp; magnesium hydroxide-simethicone 80-80-8 mg/mL SUSP 1.6667 mL</name>
+                        <!-- This code represents the pharmaceutical dose form (e.g., tablet, capsule, liquid) and SHOULD be present, if not implied by the product.
+                            It MAY be present if implied by the product.
+                            The value of this code may affect the units used in the substance administration quantity element. -->
+                        <pharm:formCode code="385023001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Oral solution" />
+                        <!-- The following other elements MAY be included, in order:
+                                 lotNumberText
+                                 pharm:expirationTime
+                                 pharm:asContent
+                                 pharm:asSpecializedKind -->
+                        <!-- diphenhydrAMINE hydrochloride 5 mg -->
+                        <!-- The value of @classCode shall be drawn from value set 2.16.840.1.113883.1.11.10430 RoleClassIngredientEntity (DYNAMIC).
+                             Here, the classCode of "ACTI" indicates that this is an active ingredient. -->
+                        <pharm:ingredient classCode="ACTI">
+                            <!-- The pharm:quantity below demonstrates the case where the pharm:code doesn't encapsulate the ingredient's
+                                 concentration, although this is likely to be more rare than the case where it does. For an example of the more common case,
+                                 see the following two ingredients in this example. -->
+                            <pharm:quantity>
+                                <!-- For ingredients with an unspecified concentration, the pharm:quantity
+                                represents the amount of the INGREDIENT in the mixture:
+                                1 mg of diphenhydrAMINE hydrochloride per 1 mL of the mixture. -->
+                                <pharm:numerator xsi:type="PQ" value="1" unit="mg" />
+                                <pharm:denominator xsi:type="PQ" value="1" unit="mL" />
+                            </pharm:quantity>
+                            <pharm:ingredientSubstance classCode="MMAT" determinerCode="KIND">
+                                <!-- This pharm:code DOES NOT encapsulate the ingredient's concentration! -->
+                                <pharm:code code="1362" displayName="diphenhydrAMINE hydrochloride"
+                                    codeSystem="2.16.840.1.113883.6.88"
+                                    codeSystemName="RxNorm"/>
+                            </pharm:ingredientSubstance>
+                        </pharm:ingredient>
+                        <!-- lidocaine 50 mg -->
+                        <pharm:ingredient classCode="ACTI">
+                            <!-- The pharm:quantity below demonstrates the case where the pharm:code encapsulates the ingredient's
+                                 concentration. -->
+                            <pharm:quantity>
+                                <!-- For ingredients with a specified concentration, the pharm:quantity
+                                     represents the amount of the PRODUCT in the mixture:
+                                     0.2 mL of a 50 mg/mL lidocaine solution per 1 mL of the mixture.
+
+                                     Receivers may multiply these together to obtain the concentration of the INGREDIENT:
+                                     (0.2 mL / 1 mL) * (50 mg/mL) = 10 mg of lidocaine / 1 mL of the mixture.
+
+                                     Note that sending "10 mg" as the quantity/numerator for "lidocaine hydrochloride 50 mg/mL"
+                                     would be incorrect and create an inconsistency with compound ingredients (see ALTERNATE
+                                     EXAMPLE below). -->
+                                <pharm:numerator xsi:type="PQ" value="0.2" unit="mL" />
+                                <pharm:denominator xsi:type="PQ" value="1" unit="mL" />
+                            </pharm:quantity>
+                            <pharm:ingredientSubstance classCode="MMAT" determinerCode="KIND">
+                                <!-- This pharm:code encapsulates the ingredient's concentration! -->
+                                <pharm:code code="1011092" displayName="lidocaine hydrochloride 50 MG/ML"
+                                    codeSystem="2.16.840.1.113883.6.88"
+                                    codeSystemName="RxNorm"/>
+                            </pharm:ingredientSubstance>
+                        </pharm:ingredient>
+                        
+                        <!-- ALTERNATE EXAMPLE: This ingredient isn't part of this mixture, but demonstrates how an active ingredient with multiple different
+                                                components may be represented in one.
+                        <pharm:ingredient classCode="ACTI">
+                            Once again, this pharm:quantity represents the amount of the compound PRODUCT in the mixture:
+                            0.4 mg of "allantoin 0.02 mg/mg / benzethonium chloride 0.002 mg/mg / lidocaine hydrochloride 0.04 mg/mg Oral Gel"
+                            per 1 mL of the mixture.
+
+                            Receivers may multiply these together to obtain the concentration of each INGREDIENT:
+                            (0.4 mg / 1 mL) * (allantoin 0.02 mg/mg) = 0.008 mg of allantoin / 1 mL of the mixture
+                            (0.4 mg / 1 mL) * (benzethonium chloride 0.002 mg/mg) = 0.0008 mg of benzethonium chloride / 1 mL of the mixture
+                            (0.4 mg / 1 mL) * (lidocaine hydrochloride 0.04 mg/mg) = 0.016 mg of lidocaine hydrochloride / 1 mL of the mixture
+
+                            <pharm:quantity>
+                                <pharm:numerator xsi:type="PQ" value="0.4" unit="mg" />
+                                <pharm:denominator xsi:type="PQ" value="1" unit="mL" />
+                            </pharm:quantity>
+                            <pharm:ingredientSubstance classCode="MMAT" determinerCode="KIND">
+                                <pharm:code code="2566834" displayName="allantoin 0.02 MG/MG / benzethonium chloride 0.002 MG/MG / lidocaine hydrochloride 0.04 MG/MG Oral Gel"
+                                    codeSystem="2.16.840.1.113883.6.88"
+                                    codeSystemName="RxNorm"/>
+                            </pharm:ingredientSubstance>
+                        </pharm:ingredient>
+                        -->
+                        
+                        <!-- aluminum & magnesium hydroxide-simethicone -->
+                        <pharm:ingredient classCode="BASE">
+                            <!-- The quantity of a mixture's base should generally just use the nullFlavor "QS".
+                                 Note that "QS" isn't part of the set of allowed nullFlavors in CDA R2.0--it's only
+                                 normative in CDA R2.1--but since this element comes from outside the CDA namespace,
+                                 neither the CDA R2.0 nor the CDA R2.1 validation rules apply to it. -->
+                            <pharm:quantity nullFlavor="QS" />
+                            <pharm:ingredientSubstance classCode="MMAT" determinerCode="KIND">
+                                <!-- For BASE ingredients, pharm:code may include the ingredient's concentration.
+                                     This is to ensure that the correct base product is used when there are multiple strengths available (D5W vs D10W).
+                                     Since pharm:quantity is not specified for base ingredients, there is no simple calculation for a final
+                                     concentration of the base. Typically, bases are not therapeutic and the final concentration isn’t a concern. -->
+                                <pharm:code code="237870"
+                                    displayName="aluminum hydroxide 80 MG/ML / magnesium hydroxide 80 MG/ML / simethicone 8 MG/ML Oral Suspension"
+                                    codeSystem="2.16.840.1.113883.6.88"
+                                    codeSystemName="RxNorm"/>
+                            </pharm:ingredientSubstance>
+                        </pharm:ingredient>
+                    </manufacturedMaterial>
+                </manufacturedProduct>
+            </consumable>
+        </substanceAdministration>
+    </entry>
+</section>
