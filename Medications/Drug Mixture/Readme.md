@@ -1,8 +1,8 @@
 ## Approval Status 
 
-* Approval Status: Pending
-* Example Task Force: ???
-* SDWG: ???
+* Approval Status: Approved
+* Example Task Force: 2022-06-23
+* SDWG: Pending
 
 ### C-CDA 2.1 Example:
 
@@ -21,6 +21,9 @@
 ### Comments
 
 * This is an example of a mixture of three or more different drug ingredients, each with a different relative concentration.
+* Note the use of the urn:ihe:pharm:medication namespace, which is required by the UV Medication Information (detail) template.
+  The CDA schema doesn't recognize content from this namespace and so flags it as invalid by default, although extension content from other namespaces
+  is allowed in CDA even when not recognized by the schema (see 1.4 CDA Extensibility).
 
 ### Custodian
 
