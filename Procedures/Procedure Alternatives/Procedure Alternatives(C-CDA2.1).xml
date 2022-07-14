@@ -79,12 +79,10 @@
                         displayName="Problem"/>
                     <text>Appendicitis</text>
                     <statusCode code="completed"/>
-                    <value code="74400008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
+                    <value code="74400008" displayName="Appendicitis" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
                         xsi:type="CD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                         <translation code="K37" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10"/>
                         <translation code="541" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9"/>
-                        <translation code="72283" codeSystem="2.16.840.1.113883.3.247.1.1"
-                            codeSystemName="Intelligent Medical Objects ProblemIT"/>
                     </value>
                 </observation>
             </entryRelationship>
@@ -94,14 +92,14 @@
                         SHALL contain exactly one [1..1] Planned Coverage (CONF:1098-31992). -->
             
             <!-- This entryRelationship contains an organizer listing alternative planned procedures...
-                 The options below should be read as: CPT 44960 OR 44970 OR (44970 AND 11042) -->
+                 The options below should be read as: CPT 44960 OR 44970 -->
             <entryRelationship typeCode="REFR">
                 <organizer classCode="CLUSTER" moodCode="PRP">
                     <!-- "PRP" = proposal
                          A non-mandated intent to perform an act. Used to record intents that are explicitly not Orders.
                          Professional responsibility for the 'proposal' may or may not be present. -->
-                    <!-- It would be nice to have an organizer/code here with a value like "alternative procedure options,"
-                         although I haven't been able to find anything like that. -->
+                    <!-- Implementers may include an organizer/code here with a value "alternative procedure options,"
+                         although we were unable to find an appropriate one.  -->
                     
                     <statusCode code="active" />
                     
@@ -122,28 +120,7 @@
                                 displayName="Laparoscopy, surgical, appendectomy" />
                         </procedure>
                     </component>
-                    
-                    <!-- Third alternative -->
-                    <component>
-                        <organizer classCode="CLUSTER" moodCode="PRP">
-                            <statusCode code="active" />
-                            <!-- To represent multiple combined procedures as one option, an organizer may be used to group multiple proposed procedures.
-                                 This option comprises a laparoscopic appendectomy... -->
-                            <component>
-                                <procedure classCode="SUBST" moodCode="PRP">
-                                    <code code="44970" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"
-                                        displayName="Laparoscopy, surgical, appendectomy" />
-                                </procedure>
-                            </component>
-                            <!-- ...AND wound debridement! -->
-                            <component>
-                                <procedure classCode="SUBST" moodCode="PRP">
-                                    <code code="11042" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"
-                                        displayName="Debridement, subcutaneous tissue (includes epidermis and dermis, if performed); first 20 sq cm or less" />
-                                </procedure>
-                            </component>
-                        </organizer>
-                    </component>
+                    <!-- To represent multiple combined procedures as one option, an organizer may be used to group multiple proposed procedures -->
                 </organizer>
             </entryRelationship>
         </procedure>
