@@ -1,5 +1,4 @@
 <section>
-  <!--...    -->
   <text>
     <list>
       <item ID="note1">
@@ -13,10 +12,11 @@
     <act>
       <code>...</code>
       <text mediaType="text/rtf" representation="B64">e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdFxkZWZsYW5nMTAzM3tcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgQ2FsaWJyaTt9fQ0Ke1wqXGdlbmVyYXRvciBSaWNoZWQyMCA2LjMuOTYwMH1cdmlld2tpbmQ0XHVjMSANClxwYXJkXHNhMjAwXHNsMjc2XHNsbXVsdDFcZjBcZnMyMlxsYW5nOSBDb21wbGV0ZWQgcm91bmRzOyBubyBpbmNpZGVudFxwYXINCn0NCiA=            
+								
                 
         <reference value="#note1"/>
       </text>
       <!--...-->
     </act>
   </entry>
-</section>
+</section> 

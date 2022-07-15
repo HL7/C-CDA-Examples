@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section>
   <!-- C-CDA 2.1 Procedures Section -->
   <templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
@@ -11,7 +12,7 @@
           <th>Description</th>
           <th>Date and Time (Range)</th>
           <th>Status</th>
-          <th>Notes</th> 
+          <th>Notes</th>
         </tr>
       </thead>
       <tbody>
@@ -30,7 +31,7 @@
   <entry typeCode="DRIV">
     <!-- Procedures should be used for care that directly changes the patient's physical state.-->
     <procedure moodCode="EVN" classCode="PROC">
-      <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+      <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
       <id root="64af26d5-88ef-4169-ba16-c6ef16a1824f"/>
       <code code="6025007" displayName="Laparoscopic appendectomy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
         <originalText>
@@ -49,7 +50,7 @@
       <entryRelationship typeCode="COMP">
         <act classCode="ACT" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01"/>
-          <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note" >
+          <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="note">
             <translation code="28570-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure note" />
           </code>
           <text>
@@ -65,12 +66,14 @@
             <time value="20140204083215-0500" />
             <assignedAuthor>
               <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c" />
-              <name>Dr. Physician</name>
+              <assignedPerson>
+                <name>Dr. Physician</name>
+              </assignedPerson>
             </assignedAuthor>
           </author>
           <!-- Reference to encounter -->
           <entryRelationship typeCode="COMP" inversionInd="true">
-            <encounter>
+            <encounter classCode="ENC" moodCode="EVN">
               <!-- Encounter ID matches an encounter in the Encounters Section -->
               <id root="1.2.3.4" />
             </encounter>
