@@ -1,0 +1,49 @@
+<!-- The Health Concern act  -->
+<act classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.132"/>
+  <templateId root="2.16.840.1.113883.10.20.22.4.132"
+										extension="2015-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.4.132"
+										extension="2022-06-01"/>
+  <id root="1.3.6.1.4.1.22812.4.222.334.4.32" extension="1148128"/>
+  <code code="75310-3" displayName="Health concerns Document"
+										codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <statusCode code="active"/>
+  <entryRelationship typeCode="REFR">
+    <!-- The Health Concern's (SDOH) Problem Observation wrapped by the Health Concern act -->
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.4"
+												extension="2015-08-01"/>
+      <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+      <id extension="1148128"
+												root="1.3.6.1.4.1.22812.4.222.334.4.1.2.1"/>
+      <code code="404684003"
+												displayName="Clinical Finding (finding)"
+												codeSystem="2.16.840.1.113883.6.96"
+												codeSystemName="SNOMED CT">
+        <translation code="75321-0"
+												displayName="Clinical Finding"
+												codeSystem="2.16.840.1.113883.6.1"
+												codeSystemName="LOINC"/>
+      </code>
+      <text>
+        <reference
+												value="#_de1ab32d-dd06-40c0-b7c2-5fed94e4ecd6"/>
+      </text>
+      <statusCode code="completed"/>
+      <effectiveTime xsi:type="IVL_TS">
+        <low value="20180701"/>
+        <!-- The high value has a nullFlavor of "NI" (No Information) because it is an ongoing finding -->
+        <high nullFlavor="NI"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="733423003"
+												displayName="Food insecurity (finding)"
+												codeSystem="2.16.840.1.113883.6.96"
+												codeSystemName="SNOMED CT">
+        <originalText>
+          <reference value="#_HealthConcern1"/>
+        </originalText>
+      </value>
+    </observation>
+  </entryRelationship>
+</act>

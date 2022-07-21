@@ -1,0 +1,17 @@
+<!-- Care Team Member Schedule Observation (contained in Care Team Member Act) -->
+<entry>
+  <observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.113883.10.20.22.4.500.3" extension="2016-06-01"/>
+    <templateId root="2.16.840.1.113883.10.20.22.4.500.3" extension="2022-06-01"/>
+    <code code="57203-2" displayName="Episode Timing [CMS Assessment]"
+								codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    <text>
+      <reference value="#CareTeam_CT"/>
+    </text>
+    <statusCode code="completed"/>
+    <value xsi:type="IVL_TS">
+      <low value="20210401"/>
+      <high value="20210412"/>
+    </value>
+  </observation>
+</entry>

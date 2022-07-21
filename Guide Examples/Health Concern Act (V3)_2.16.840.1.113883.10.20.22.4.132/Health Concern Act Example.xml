@@ -1,0 +1,91 @@
+<act classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.132" />
+  <templateId root="2.16.840.1.113883.10.20.22.4.132" extension="2015-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.4.132" extension="2022-06-01"/>
+  <id root="4eab0e52-dd7d-4285-99eb-72d32ddb195c" />
+  <code code="75310-3" 
+        codeSystem="2.16.840.1.113883.6.1" 
+        codeSystemName="LOINC" 
+        displayName="Health Concern" />
+  <!-- This Health Concern has a statusCode of active because it is an active concern -->
+  <statusCode code="active" />
+  <!-- The effective time is the date that the Health Concern started being followed - 
+     this does not necessarily correlate to the onset date of the contained health issues-->
+  <effectiveTime value="20130616" />
+  <!-- Health Concern: Current every day smoker-->
+  <entryRelationship typeCode="REFR">
+    <!-- Tobacco Use (V2) -->
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.85" extension="2014-06-09" />
+      ...
+    
+        
+        
+    </observation>
+  </entryRelationship>
+  <!-- Health Concern Problem: Respiratory insufficiency -->
+  <entryRelationship typeCode="REFR">
+    <!-- Problem Observation (V2) -->
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
+      ...
+    
+        
+        
+    </observation>
+  </entryRelationship>
+  <!-- Health Concern Diagnosis: Pneumonia -->
+  <entryRelationship typeCode="REFR">
+    <!-- Problem Observation (V2) -->
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
+      ...
+    
+        
+        
+    </observation>
+  </entryRelationship>
+  <!-- 
+        This is an entry relationship of the SPRT (support) type which shows 
+        that the productive cough supports the Health Concern (Problem: Respiratory 
+        Insufficiency and Diagnosis: Pneumonia
+        This entryRelationship represents the relationship: 
+         Health Concern HAS SUPPORT Observation
+       -->
+  <entryRelationship typeCode="SPRT">
+    <!-- Problem Observation (V2) -->
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
+      ...
+    
+        
+        
+    </observation>
+  </entryRelationship>
+  <!-- Priority Preference -->
+  <entryRelationship typeCode="RSON">
+    <!-- Priority Preference - this is the preference that the patient 
+      (specified by the Author Participation template)
+       places on the Health Concern -->
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.143" />
+      ...
+    
+        
+        
+    </observation>
+  </entryRelationship>
+  <!--  Priority Preference - this is the preference that the provider 
+    (specified by the Author Participation template)
+     places on the Health Concern -->
+  <entryRelationship typeCode="RSON">
+    <!--  Priority Preference -->
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.143" />
+      ...
+    
+        
+        
+    </observation>
+  </entryRelationship>
+</act>

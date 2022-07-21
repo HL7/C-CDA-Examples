@@ -1,0 +1,41 @@
+						
+
+<observation classCode="OBS" moodCode="EVN">
+  <!-- ** Problem Observation ** -->
+  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
+  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2022-06-01" />
+  <id root="ab1791b0-5c71-11db-b0de-0800200c9a66" />
+  <code code="64572001" displayName="Condition" 
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+    <translation code="75323-6" 
+									codeSystem="2.16.840.1.113883.6.1" 
+									codeSystemName="LOINC" 
+									displayName="Condition"/>
+  </code>
+  <!-- The statusCode reflects the status of the observation itself -->
+  <statusCode code="completed" />
+  <effectiveTime>
+    <!-- The low value reflects the date of onset -->
+    <!-- Based on patient symptoms, presumed onset is July 3, 2013 -->
+    <low value="20130703" />
+    <!-- The high value reflects when the problem was known to be resolved -->
+    <!-- Based on signs and symptoms, appears to be resolved on Aug 14, 2013 -->
+    <high value="20080814" />
+  </effectiveTime>
+  <value xsi:type="CD" 
+								code="233604007" 
+								codeSystem="2.16.840.1.113883.6.96"  
+								displayName="Pneumonia" />
+  <author typeCode="AUT">
+    <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+    <time value="200808141030-0800" />
+    <assignedAuthor>
+      <id extension="555555555" root="2.16.840.1.113883.4.6" />
+      <code code="207QA0505X" 
+										displayName="Adult Medicine" 
+										codeSystem="2.16.840.1.113883.6.101"
+										codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
+    </assignedAuthor>
+  </author>
+</observation>

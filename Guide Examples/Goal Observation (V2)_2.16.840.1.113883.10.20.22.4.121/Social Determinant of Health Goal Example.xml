@@ -1,0 +1,30 @@
+    
+
+
+
+<entry>
+  <observation classCode="OBS" moodCode="GOL">
+    <templateId root="2.16.840.1.113883.10.20.22.4.121" />
+    <templateId root="2.16.840.1.113883.10.20.22.4.121" extension="2022-06-01"/>
+    <id extension="3241" 
+                                root="1.2.840.114350.1.13.6289.1.7.2.737179"/>
+    <code code="8689-2" displayName="History of Social function" 
+                             codeSystem="2.16.840.1.113883.5.61" 
+                          codeSystemName="LOINC">
+      <originalText>
+        <reference value="#goal1"/>
+      </originalText>
+    </code>
+    <statusCode code="active"/>
+    <effectiveTime>
+      <!-- The effectiveTime/low indicates the desired "Achieve by" 
+                                date -->
+      <low value="20220814"/>
+      <high nullFlavor="NI"/>
+      <value xsi:type="CD" code="1078229009"  
+                                displayName="Food security (finding)" 
+                          codeSystem="2.16.840.1.113883.6.96" 
+                            codeSystemName="SNOMED CT"/>
+    </effectiveTime>
+  </observation>
+</entry>

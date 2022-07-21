@@ -1,9 +1,8 @@
-    
 <!-- UDI Organizer -->
 <organizer classCode="CLUSTER" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.22.4.312"
+  <templateId root="2.16.840.1.113883.10.20.22.4.311"
         extension="2019-06-21"/>
-  <id assigningAuthorityName="FDA" extension="(01)4328998989(11)160330(10)ABC124" root="GS1"/>
+  <id assigningAuthorityName="FDA" extension="(01)99994328998989(11)160330(10)ABC124(17)200712(21)2302991ABC210181" root="GS1"/>
   <code code="74711-3" codeSystem="2.16.840.1.113883.6.1"
         displayName="Unique Device Identifier"/>
   <statusCode code="completed"/>

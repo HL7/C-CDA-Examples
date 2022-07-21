@@ -1,0 +1,24 @@
+<author>
+  <!-- Provenance - Author Participation -->
+  <templateId root="2.16.840.1.113883.10.20.22.5.6" extension="2019-10-01"/>
+  <time value="201308011235-0800"/>
+  <assignedAuthor>
+    <!-- NPI of Author (example) -->
+    <id root="2.16.840.1.113883.4.6" extension="1234567"/>
+    <assignedPerson>
+      <name>
+        <given>Nurse</given>
+        <family>Nightingale</family>
+        <suffix>RN</suffix>
+      </name>
+    </assignedPerson>
+    <representedOrganization>
+      <!-- Tax Identifier of Organization is Unknown -->
+      <id root="2.16.840.1.113883.5.1008" nullFlavor="UNK"/>
+      <!-- NPI of Organization -->
+      <id root="2.16.840.1.113883.4.6" extension="1104145838"/>
+      <name>Good Health Hospital</name>
+      <telecom value="tel:+1(555)867-5309"/>
+    </representedOrganization>
+  </assignedAuthor>
+</author>

@@ -1,0 +1,18 @@
+<observation classCode="OBS" moodCode="EVN">
+  <!-- Gender Identity Observation -->
+  <templateId root="2.16.840.1.113883.10.20.34.3.45" extension="2019-04-01" />
+  <templateId root="2.16.840.1.113883.10.20.34.3.45" extension="2022-06-01" />
+  <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7" />
+  <code code="76691-5" 
+    displayName="Gender identity" 
+    codeSystem="2.16.840.1.113883.6.1" 
+    codeSystemName="LOINC" />
+  <statusCode code="completed" />
+  <effectiveTime>
+    <low value="20180703" />
+  </effectiveTime>
+  <value xsi:type="CD" code="446141000124107" 
+							displayName="Identifies as female gender (finding)" 
+							codeSystem="2.16.840.1.113883.6.96"
+							codeSystemName="SNOMED CT" />
+</observation>
