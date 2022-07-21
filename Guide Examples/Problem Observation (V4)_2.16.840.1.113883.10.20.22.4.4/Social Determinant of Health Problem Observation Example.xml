@@ -1,0 +1,30 @@
+						
+
+<!-- SDOH Problem -->
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2022-06-01"/>
+  <id extension="68993"
+										root="1.2.840.114350.1.13.6289.1.7.2.768076"/>
+  <id root="093A5380-00CE-11E6-B4C5-0050568B000B" extension="1.1"/>
+  <code code="55607006" codeSystem="2.16.840.1.113883.6.96"
+										codeSystemName="SNOMED CT" displayName="Problem">
+    <originalText>
+      <reference value="#ProblemObs_1_PT1"/>
+    </originalText>
+    <translation code="75326-9"
+											codeSystem="2.16.840.1.113883.6.1"
+											codeSystemName="LOINC" displayName="Problem"/>
+  </code>
+  <text>
+    <reference value="#ProblemObs1"/>
+  </text>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="20140909"/>
+  </effectiveTime>
+  <value xsi:type="CD" code="445281000124101" displayName="Nutrition impaired due to limited access to healthful foods (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+    <translation code="Z59.48" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD-10-CM" displayName="Other specified lack of adequate food"/>
+  </value>
+</observation>

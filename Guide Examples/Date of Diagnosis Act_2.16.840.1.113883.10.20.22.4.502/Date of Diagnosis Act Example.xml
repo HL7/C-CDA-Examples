@@ -1,0 +1,15 @@
+<!-- INSIDE PROBLEM OBSERVATION -->
+<entryRelationship typeCode="COMP">
+  <act classCode="ACT" moodCode="EVN">
+    <templateId root="2.16.840.1.113883.10.20.22.4.502" extension="2022-06-01"/>
+    <code code="77975-1" codeSystem="2.16.840.1.113883.6.1"
+							codeSystemName="LOINC"
+							displayName="Earliest date of diagnosis"/>
+    <text>
+      <reference value="#ProblemObs_1_PS1"/>
+    </text>
+    <statusCode code="completed"/>
+    <!-- SHALL to the year (MAY be more specific) -->
+    <effectiveTime value="200802"/>
+  </act>
+</entryRelationship>

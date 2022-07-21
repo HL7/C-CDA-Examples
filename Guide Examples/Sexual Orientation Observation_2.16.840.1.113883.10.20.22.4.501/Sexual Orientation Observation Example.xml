@@ -1,0 +1,16 @@
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.501" extension="2022-06-01"/>
+  <id root="7919e027-592e-4f22-9344-12460ec8c368" />
+  <code code="76690-7" 
+    displayName="Sexual Orientation" 
+    codeSystem="2.16.840.1.113883.6.1" 
+    codeSystemName="LOINC" />
+  <statusCode code="completed" />
+  <effectiveTime>
+    <low value="201211" />
+  </effectiveTime>
+  <value xsi:type="CD" code="20430005" 
+    displayName="Heterosexual state" 
+    codeSystem="2.16.840.1.113883.6.96"
+    codeSystemName="SNOMED CT" />
+</observation>

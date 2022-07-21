@@ -1,0 +1,21 @@
+                       
+
+
+<entry>
+  <procedure classCode="PROC" moodCode="RQO">
+    <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
+    <templateId root="2.16.840.1.113883.10.20.22.4.41" extension="2014-06-09"/>
+    <templateId root="2.16.840.1.113883.10.20.22.4.41" extension="2022-06-01"/>
+    <id extension="2448483" root="1.2.840.114350.1.13.5552.1.7.2.798268"/>
+    <code code="464171000124102" codeSystem="2.16.840.1.113883.6.96" displayName="Referral to Senior Farmers' Market Nutrition Program (procedure)" codeSystemName="SNOMED-CT">
+      <originalText>
+        <reference value="#Procedure1name"/>
+      </originalText>
+    </code>
+    <text>
+      <reference value="#Procedure1"/>
+    </text>
+    <statusCode code="completed"/>
+    <effectiveTime value="20160413"/>
+  </procedure>
+</entry>

@@ -1,0 +1,8 @@
+ 
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.86" extension="2022-06-01"/>
+  <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
+  <code code="60715-0" displayName="Defensive Reaction - Head and Neck Response" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <statusCode code="completed"/>
+  <value xsi:type="INT" value="3"/>
+</observation> 

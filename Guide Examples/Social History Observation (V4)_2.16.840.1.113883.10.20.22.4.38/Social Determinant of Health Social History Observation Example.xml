@@ -1,0 +1,32 @@
+					
+
+<!-- SDOH Social History Observation -->
+<entry>
+  <observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
+    <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2015-08-01"/>
+    <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2022-06-01"/>
+    <id extension="64020-Z9311" root="1.2.840.114350.1.13.6289.1.7.1.1040.1"/>
+    <code code="160476009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Social / personal history observable (observable entity)">
+      <translation code="8689-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Social function"/>
+    </code>
+    <text>
+      <reference value="#SocialHistory_3"/>
+    </text>
+    <statusCode code="completed"/>
+    <effectiveTime value="20160412"/>
+    <value xsi:type="CD" code="706875005" displayName="Insufficient food supply (finding)" 
+								
+								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT">
+      <originalText>
+        <reference value="#SH3_SO"/>
+      </originalText>
+    </value>
+    <author>
+      <time value="20160412"/>
+      <assignedAuthor>
+        <id extension="10.1" root="1.2.840.114350.1.1"/>
+      </assignedAuthor>
+    </author>
+  </observation>
+</entry>

@@ -1,0 +1,23 @@
+   
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.69" extension="2022-06-01"/>
+  <id root="c6b5a04b-2bf4-49d1-8336-636a3813df0b"/>
+  <code code="54614-3" 
+             displayName="Brief Interview for Mental Status"
+             codeSystem="2.16.840.1.113883.6.1" 
+             codeSystemName="LOINC"/>
+  <derivationExpr>Text description of the calculation</derivationExpr>
+  <statusCode code="completed"/>
+  <effectiveTime value="20120214"/>
+  <!-- Summed score of the component values -->
+  <value xsi:type="INT" value="7"/>
+  <entryRelationship typeCode="COMP">
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+            
+            . . .
+
+    
+    </observation>      
+  </entryRelationship>
+</observation>
