@@ -1,8 +1,5 @@
 <component>
     <section>
-        <!-- conforms to Immunizations section with entries optional -->
-        <templateId root="2.16.840.1.113883.10.20.22.2.2"/>
-        <templateId root="2.16.840.1.113883.10.20.22.2.2" extension="2015-08-01"/>
         <!-- Immunizations section with entries required -->
         <templateId root="2.16.840.1.113883.10.20.22.2.2.1"/>
         <templateId root="2.16.840.1.113883.10.20.22.2.2.1" extension="2015-08-01"/>
@@ -18,7 +15,7 @@
                         <th>Lot Number</th>
                         <th>Date</th>
                         <th>Status</th>
-                        <th>Historical</th>
+                        <th>Source</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -37,7 +34,7 @@
                 <!-- ** Immunization activity ** -->
                 <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
                 <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01"/>
-                <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
+                <id root="3b3e2533-46aa-4e3f-b675-12ac6749cdcd"/>
                 <text>
                     <reference value="#immun1"/>
                 </text>
@@ -92,7 +89,7 @@
                 <informant>
                     <assignedEntity>
                         <!-- This is a fictional OID and identifier for the patient. This should be adapted to local implementation -->
-                        <id root="2.16.840.1.113883.3.3208.101.2" extension="20130607100800-Patient1"/>
+                        <id root="2.16.840.1.113883.3.3208.101.2" extension="20130607100800-Patient2"/>
                         <addr use="HP">
                             <streetAddressLine>1111 StreetName St.</streetAddressLine>
                             <city>Silver Spring</city>
