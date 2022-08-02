@@ -1,0 +1,26 @@
+<procedure classCode="PROC" moodCode="EVN">
+  <!-- Procedure Activity Procedure  -->
+  <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+  <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09" />
+  <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2022-06-01" />
+  <id root="d5b614bd-01ce-410d-8726-e1fd01dcc72a" />
+  <code code="103716009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Stent Placement">
+    <originalText>
+      <reference value="#Proc1" />
+    </originalText>
+  </code>
+  <statusCode code="completed" />
+  <effectiveTime value="20130512" />
+  <targetSiteCode code="28273000" displayName="bile duct" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+  <specimen typeCode="SPC">
+    <specimenRole classCode="SPEC">
+      <id root="a6d7b927-2b70-43c7-bdf3-0e7c4133062c" />
+      <specimenPlayingEntity>
+        <code code="57259009" codeSystem="2.16.840.1.113883.6.96" displayName="gallbladder bile" />
+      </specimenPlayingEntity>
+    </specimenRole>
+  </specimen>
+  <performer>
+    ...
+  </performer>
+</procedure>	
