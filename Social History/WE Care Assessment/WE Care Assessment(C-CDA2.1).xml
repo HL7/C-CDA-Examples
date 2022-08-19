@@ -1,0 +1,386 @@
+<section>
+	<!-- An assessment should be included in the section where it is appropriate in clinical context -->
+	<!-- Other asssessments may go into other sections. Depression screening is clinically appropriate for Mental Status -->
+	<templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+	<code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+		displayName="Social History"/>
+	<title>Social History</title>
+	<text>
+		<table>
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>Assessment</th>
+					<th>Value</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Note that WE Care doesn't include total score, detailed responses shown below -->
+				<tr>
+					<td ID="assessment" colspan="5">WE Care Survey</td>
+				</tr>
+				<!-- WE CARE Questions -->
+				<tr ID="assessment1">
+					<td>06/22/2015</td>
+					<td>WE CARE Question: Do you have a high school degree?</td>
+					<td>No</td>
+				</tr>
+				<tr ID="assessment2">
+					<td>06/22/2015</td>
+					<td>WE CARE Question: If no, would you like help to get a GED?</td>
+					<td>Yes</td>
+				</tr>
+				<tr ID="assessment3">
+					<td>06/22/2015</td>
+					<td>WE CARE Question: Do you have a job?</td>
+					<td>Yes</td>
+				</tr>
+				<tr ID="assessment4">
+					<td>06/22/2015</td>
+					<td>WE CARE Question: If no, would you like help with finding employment and or
+						job training?</td>
+					<td>Maybe Later</td>
+				</tr>
+				<!-- How do we code no answer. FHIR NLM LHC Omits -->
+				<tr ID="assessment5">
+					<td>06/22/2015</td>
+					<td>WE CARE Question: Do you need daycare for your child?</td>
+					<td>Yes</td>
+				</tr>
+				<tr ID="assessment6">
+					<td>06/22/2015</td>
+					<td>WE CARE Question: If yes, would you like help finding it?</td>
+					<td>Yes</td>
+				</tr>
+				<tr ID="assessment7">
+					<td>06/22/2015</td>
+					<td>WE CARE Question: Do you think you are at risk of becoming homeless?</td>
+					<td>Yes</td>
+				</tr>
+				<tr ID="assessment8">
+					<td>06/22/2015</td>
+					<td>WE CARE Question: If yes, would you like help with this?</td>
+					<td>No</td>
+				</tr>
+				<tr ID="assessment9">
+					<td>06/22/2015</td>
+					<td>WE CARE Question: If yes, is this an emergency?</td>
+					<td>No</td>
+				</tr>
+				<tr ID="assessment10">
+					<td>06/22/2015</td>
+					<td>WE CARE Question: Do you always have enough food for your family?</td>
+					<td>No</td>
+				</tr>
+				<tr ID="assessment11">
+					<td>06/22/2015</td>
+					<td>WE CARE Question: If no, would you like help with this?</td>
+					<td>Yes</td>
+				</tr>
+				<tr ID="assessment12">
+					<td>06/22/2015</td>
+					<td>WE CARE Question: If yes, do you need food for tonight?</td>
+					<td>Yes</td>
+				</tr>
+				<tr ID="assessment13">
+					<td>06/22/2015</td>
+					<td>WE CARE Question: Do you have trouble paying your heating bill and or
+						electricity bill?</td>
+					<td>Yes</td>
+				</tr>
+				<tr ID="assessment14">
+					<td>06/22/2015</td>
+					<td>WE CARE Question: If yes, would you like help with this?</td>
+					<td>Yes</td>
+				</tr>
+				<tr ID="assessment15">
+					<td>06/22/2015</td>
+					<td>WE CARE Question: If yes, are you at risk of having your utilities shut off
+						in the next week?</td>
+					<td>No</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry typeCode="DRIV">
+		<observation classCode="OBS" moodCode="EVN">
+			<!-- Assessment Scale Observation -->
+			<templateId root="2.16.840.1.113883.10.20.22.4.69"/>
+			<id root="48a7c8f7-30d6-4173-b3c4-4ad4abcfdb1a"/>
+			<code code="96447-8" displayName="WE CARE Survey" codeSystem="2.16.840.1.113883.6.1"
+				codeSystemName="LOINC"/>
+			<text>
+				<reference value="#assessment"/>
+			</text>
+			<statusCode code="completed"/>
+			<effectiveTime value="20150622"/>
+			<!-- Note that the value attribute is required in an assessment scale observation. Since LOINC organizes this information -->
+			<!-- Where the total score is part of the panel, that total score code is shown through entryRelationship to supporting observation -->
+			<!-- The WE CARE scale does NOT have a total score so a nullFlavor of NA is most appropriate -->
+			<value xsi:type="CD" nullFlavor="NA"/>
+			<entryRelationship typeCode="COMP">
+				<observation classCode="OBS" moodCode="EVN">
+					<!-- Assessment Scale Supporting Observation -->
+					<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+					<id root="a6a704ab-271a-4bfa-9f0d-1581da2b1235"/>
+					<code code="96446-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#assessment1"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20150622"/>
+					<value xsi:type="INT" value="2"/>
+					<!-- Systems may send a second value with LOINC answer concept  -->
+					<!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+					<value xsi:type="CO" code="LA32-8" displayName="No"
+						codeSystem="2.16.840.1.113883.6.1"/>
+
+				</observation>
+			</entryRelationship>
+			<!-- The total score may be adequate for some use cases, although detail components can be sent as shown below as warranted by use case -->
+			<entryRelationship typeCode="COMP">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+					<id root="a6a704ab-271a-4bfa-9f0d-1581da2b1186"/>
+					<code code="96445-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#assessment2"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20150622"/>
+					<value xsi:type="INT" value="1"/>
+					<!-- Systems may send a second value with LOINC answer concept  -->
+					<!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+					<value xsi:type="CO" code="LA33-6" displayName="Yes"
+						codeSystem="2.16.840.1.113883.6.1"/>
+				</observation>
+			</entryRelationship>
+			<entryRelationship typeCode="COMP">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+					<id root="466f43c8-fc2b-4161-b9a1-2d88688e5f74"/>
+					<code code="96444-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#assessment3"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20150622"/>
+					<value xsi:type="INT" value="1"/>
+					<!-- Systems may send a second value with LOINC answer concept  -->
+					<!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+					<value xsi:type="CO" code="LA33-6" displayName="Yes"
+						codeSystem="2.16.840.1.113883.6.1"/>
+				</observation>
+			</entryRelationship>
+			<entryRelationship typeCode="COMP">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+					<id root="e3e5b3d7-76f5-48f1-8ba0-b2b4e6314f95"/>
+					<code code="96443-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#assessment4"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20150622"/>
+					<value xsi:type="INT" value="3"/>
+					<!-- Systems may send a second value with LOINC answer concept  -->
+					<!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+					<value xsi:type="CO" code="LA31439-5" displayName="Maybe Later"
+						codeSystem="2.16.840.1.113883.6.1"/>
+				</observation>
+			</entryRelationship>
+			<entryRelationship typeCode="COMP">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+					<id root="4d77eb67-6588-4f77-b506-1d987eee1711"/>
+					<code code="96442-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#assessment5"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20150622"/>
+					<value xsi:type="INT" value="1"/>
+					<!-- Systems may send a second value with LOINC answer concept  -->
+					<!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+					<value xsi:type="CO" code="LA33-6" displayName="Yes"
+						codeSystem="2.16.840.1.113883.6.1"/>
+				</observation>
+			</entryRelationship>
+			<entryRelationship typeCode="COMP">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+					<id root="b24d5a2c-48d6-46a0-bd92-1c901e577cc3"/>
+					<code code="96433-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#assessment6"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20150622"/>
+					<value xsi:type="INT" value="1"/>
+					<!-- Systems may send a second value with LOINC answer concept  -->
+					<!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+					<value xsi:type="CO" code="LA33-6" displayName="Yes"
+						codeSystem="2.16.840.1.113883.6.1"/>
+				</observation>
+			</entryRelationship>
+			<entryRelationship typeCode="COMP">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+					<id root="c67c51ea-4928-449d-b6c0-0f85b1975e07"/>
+					<code code="96441-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#assessment7"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20150622"/>
+					<value xsi:type="INT" value="1"/>
+					<!-- Systems may send a second value with LOINC answer concept  -->
+					<!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+					<value xsi:type="CO" code="LA33-6" displayName="Yes"
+						codeSystem="2.16.840.1.113883.6.1"/>
+				</observation>
+			</entryRelationship>
+			<entryRelationship typeCode="COMP">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+					<id root="68301d32-9158-429b-92b6-1f1e553a2f8c"/>
+					<code code="96440-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#assessment8"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20150622"/>
+					<value xsi:type="INT" value="2"/>
+					<value xsi:type="INT" value="2"/>
+					<!-- Systems may send a second value with LOINC answer concept  -->
+					<!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+					<value xsi:type="CO" code="LA32-8" displayName="No"
+						codeSystem="2.16.840.1.113883.6.1"/>
+				</observation>
+			</entryRelationship>
+			<entryRelationship typeCode="COMP">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+					<id root="400a66ad-3d5f-4b6e-913e-81e46241d83b"/>
+					<code code="96439-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#assessment9"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20150622"/>
+					<value xsi:type="INT" value="2"/>
+					<value xsi:type="INT" value="2"/>
+					<!-- Systems may send a second value with LOINC answer concept  -->
+					<!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+					<value xsi:type="CO" code="LA32-8" displayName="No"
+						codeSystem="2.16.840.1.113883.6.1"/>
+				</observation>
+			</entryRelationship>
+			<entryRelationship typeCode="COMP">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+					<id root="36792a59-7905-406e-a920-701a2ae746be"/>
+					<code code="96434-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#assessment10"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20150622"/>
+					<value xsi:type="INT" value="2"/>
+					<value xsi:type="INT" value="2"/>
+					<!-- Systems may send a second value with LOINC answer concept  -->
+					<!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+					<value xsi:type="CO" code="LA32-8" displayName="No"
+						codeSystem="2.16.840.1.113883.6.1"/>
+				</observation>
+			</entryRelationship>
+			<entryRelationship typeCode="COMP">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+					<id root="36792a59-7905-406e-a920-701a2ae746be"/>
+					<code code="96438-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#assessment11"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20150622"/>
+					<value xsi:type="INT" value="1"/>
+					<!-- Systems may send a second value with LOINC answer concept  -->
+					<!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+					<value xsi:type="CO" code="LA33-6" displayName="Yes"
+						codeSystem="2.16.840.1.113883.6.1"/>
+				</observation>
+			</entryRelationship>
+			<entryRelationship typeCode="COMP">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+					<id root="36792a59-7905-406e-a920-701a2ae746be"/>
+					<code code="96437-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#assessment12"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20150622"/>
+					<value xsi:type="INT" value="1"/>
+					<!-- Systems may send a second value with LOINC answer concept  -->
+					<!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+					<value xsi:type="CO" code="LA33-6" displayName="Yes"
+						codeSystem="2.16.840.1.113883.6.1"/>
+				</observation>
+			</entryRelationship>
+			<entryRelationship typeCode="COMP">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+					<id root="36792a59-7905-406e-a920-701a2ae746be"/>
+					<code code="96436-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#assessment13"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20150622"/>
+					<value xsi:type="INT" value="1"/>
+					<!-- Systems may send a second value with LOINC answer concept  -->
+					<!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+					<value xsi:type="CO" code="LA33-6" displayName="Yes"
+						codeSystem="2.16.840.1.113883.6.1"/>
+				</observation>
+			</entryRelationship>
+			<entryRelationship typeCode="COMP">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+					<id root="36792a59-7905-406e-a920-701a2ae746be"/>
+					<code code="96753-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#assessment14"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20150622"/>
+					<value xsi:type="INT" value="1"/>
+					<!-- Systems may send a second value with LOINC answer concept  -->
+					<!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+					<value xsi:type="CO" code="LA33-6" displayName="Yes"
+						codeSystem="2.16.840.1.113883.6.1"/>
+				</observation>
+			</entryRelationship>
+			<entryRelationship typeCode="COMP">
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+					<id root="36792a59-7905-406e-a920-701a2ae746be"/>
+					<code code="96435-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<text>
+						<reference value="#assessment15"/>
+					</text>
+					<statusCode code="completed"/>
+					<effectiveTime value="20150622"/>
+					<value xsi:type="INT" value="2"/>
+					<value xsi:type="INT" value="2"/>
+					<!-- Systems may send a second value with LOINC answer concept  -->
+					<!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+					<value xsi:type="CO" code="LA32-8" displayName="No"
+						codeSystem="2.16.840.1.113883.6.1"/>
+				</observation>
+			</entryRelationship>
+		</observation>
+	</entry>
+</section>
