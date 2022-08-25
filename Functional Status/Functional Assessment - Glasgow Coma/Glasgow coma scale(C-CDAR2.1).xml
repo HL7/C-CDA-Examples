@@ -13,7 +13,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr> 
+                <!-- If desired you can include individual questions/answer here - see PHQ9 Example -->
                     <td ID="assessmentTotal">Glasgow coma scale</td>
                     <td>February 14,2012</td>
                     <td>9</td>
@@ -24,6 +25,7 @@
     <entry>
         <observation classCode="OBS" moodCode="EVN">
             <templateId root="2.16.840.1.113883.10.20.22.4.69"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.69" extension="2022-06-01"/>
             <id root="4f6d8f2d-2efd-41c4-8ef1-465e00706948"/>
             <code code="35088-4" displayName="Glasgow coma scale"
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -34,6 +36,7 @@
             <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.86" extension="2022-06-01"/>
                     <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
                     <code code="9267-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GCS EYE"/>             
                     <statusCode code="completed"/>
@@ -47,6 +50,7 @@
             <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.86" extension="2022-06-01"/>
                     <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
                     <code code="99268-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GCS MOTOR"/>               
                     <statusCode code="completed"/>
@@ -60,6 +64,7 @@
             <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.86" extension="2022-06-01"/>
                     <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
                     <code code="9270-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GCS VERBAL"/>
                      <statusCode code="completed"/>
@@ -73,6 +78,7 @@
             <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.86" extension="2022-06-01"/>
                     <id root="9daa31dd-2a72-40b8-a8e9-34c266935a15"/>
                     <code code="9269-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Score Total"/>
                     <text>
