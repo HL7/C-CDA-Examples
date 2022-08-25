@@ -1,0 +1,93 @@
+<section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.14"/>
+    <templateId root="2.16.840.1.113883.10.20.22.2.14" extension="2014-06-09"/>
+    <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional Status"/>
+    <title>FUNCTIONAL STATUS</title>
+    <text>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Assessment</th>
+                    <th>Effective Dates</th>
+                    <th>Results of Evaluation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> 
+                <!-- If desired you can include individual questions/answer here - see PHQ9 Example -->
+                    <td ID="assessmentTotal">Glasgow coma scale</td>
+                    <td>February 14,2012</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+        </table>
+    </text>
+    <entry>
+        <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.69"/>
+            <templateId root="2.16.840.1.113883.10.20.22.4.69" extension="2022-06-01"/>
+            <id root="4f6d8f2d-2efd-41c4-8ef1-465e00706948"/>
+            <code code="35088-4" displayName="Glasgow coma scale"
+                codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            <statusCode code="completed"/>   
+            <effectiveTime value="20120214"/>
+            <!-- Summed score is also in an observation below -->
+            <value xsi:type="INT" value="9"/>
+            <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.86" extension="2022-06-01"/>
+                    <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
+                    <code code="9267-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GCS EYE"/>             
+                    <statusCode code="completed"/>
+                    <value xsi:type="INT" value="3"/>
+                    <!-- Systems may send a second value with LOINC answer concept  -->
+                    <!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+                    <value xsi:type="CO" code="LA6555-2" displayName="Eye opening to verbal command"
+                        codeSystem="2.16.840.1.113883.6.1"/>
+                </observation>
+            </entryRelationship>
+            <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.86" extension="2022-06-01"/>
+                    <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
+                    <code code="99268-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GCS MOTOR"/>               
+                    <statusCode code="completed"/>
+                    <value xsi:type="INT" value="3"/>
+                    <!-- Systems may send a second value with LOINC answer concept  -->
+                    <!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+                    <value xsi:type="CO" code="LA6564-4" displayName="Flexion to pain"
+                        codeSystem="2.16.840.1.113883.6.1"/>
+                </observation>
+            </entryRelationship>
+            <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.86" extension="2022-06-01"/>
+                    <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
+                    <code code="9270-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GCS VERBAL"/>
+                     <statusCode code="completed"/>
+                    <value xsi:type="INT" value="3"/>
+                    <!-- Systems may send a second value with LOINC answer concept  -->
+                    <!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+                    <value xsi:type="CO" code="LA6559-4" displayName="Inappropriate words"
+                        codeSystem="2.16.840.1.113883.6.1"/>
+                </observation>
+            </entryRelationship>
+            <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.4.86" extension="2022-06-01"/>
+                    <id root="9daa31dd-2a72-40b8-a8e9-34c266935a15"/>
+                    <code code="9269-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Score Total"/>
+                    <text>
+                        <reference value="#assessmentTotal"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <value xsi:type="INT" value="9"/>
+                </observation>
+            </entryRelationship>
+        </observation>
+    </entry>
+</section>
