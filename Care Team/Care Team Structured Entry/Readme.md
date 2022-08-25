@@ -18,7 +18,7 @@
 
 ### Comments
 
-* This is an example of how to send a Care Team with narrative only. Updated 3/5/2020 with proper templateId.
+* This is an example of how to send a Care Team with structured entries. 
 
 ### Custodian
 
