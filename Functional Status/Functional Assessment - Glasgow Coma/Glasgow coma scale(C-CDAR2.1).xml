@@ -29,8 +29,8 @@
                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
             <statusCode code="completed"/>   
             <effectiveTime value="20120214"/>
-            <!-- Summed score is in an observation below -->
-            <value xsi:type="CD" nullFlavor="NA"/>
+            <!-- Summed score is also in an observation below -->
+            <value xsi:type="INT" value="9"/>
             <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
