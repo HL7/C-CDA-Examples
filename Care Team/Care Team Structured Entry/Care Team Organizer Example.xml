@@ -1,16 +1,17 @@
 <section>
   <templateId root="2.16.840.1.113883.10.20.22.2.500" extension="2019-07-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.2.500" extension="2022-06-01"/>
   <code code="85847-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Care team information"/>
   <text>
     <list>
       <item>
         <table>
           <thead>
-          <tr>
-            <th>Name</th>
-            <th>Focus</th>
-            <th>Nature</th>
-            <th>Time</th>
+            <tr>
+              <th>Name</th>
+              <th>Focus</th>
+              <th>Nature</th>
+              <th>Time</th>
             </tr>
           </thead>
           <tbody>
@@ -30,16 +31,16 @@
         </table>
         <table>
           <thead>
-          <tr>
-            <th>Name</th>
-            <th>Role</th>
-            <th>Specialty</th>
-            <th>Address</th>
-            <th>Phone</th>
-            <th>Email</th>
-            <th>Organization</th>
-            <th>Dates</th>
-          </tr>
+            <tr>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Specialty</th>
+              <th>Address</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Organization</th>
+              <th>Dates</th>
+            </tr>
           </thead>
           <tbody>
             <tr ID="CareTeamParticipants1">
@@ -102,6 +103,8 @@
             <assignedEntity>
               <id root="B00B14E8-CDE4-48EA-8A09-01BC4945122A" extension="1"/>
               <id root="1.5.5.5.5.5.5"/>
+              <!-- This is a fictional NPI so it will not validate if checked -->
+              <id extension="5555555555" root="2.16.840.1.113883.4.6"/>
               <addr>
                 <streetAddressLine>100 Main St. Suite 100</streetAddressLine>
                 <city>Hope Valley</city>
