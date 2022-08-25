@@ -1,9 +1,10 @@
 <section>
-    <!-- Mental Status Section --> 
-    <!-- An assessment should be included in the section where it is appropriate in clinical context --> 
-    <!-- Other asssessments may go into other sections. Depression screening is clinically appropriate for Mental Status --> 
-    <templateId root="2.16.840.1.113883.10.20.22.2.56" extension="2015-08-01" />
-    <code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MENTAL STATUS" />
+    <!-- Mental Status Section -->
+    <!-- An assessment should be included in the section where it is appropriate in clinical context -->
+    <!-- Other asssessments may go into other sections. Depression screening is clinically appropriate for Mental Status -->
+    <templateId root="2.16.840.1.113883.10.20.22.2.56" extension="2015-08-01"/>
+    <code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+        displayName="MENTAL STATUS"/>
     <title>MENTAL STATUS</title>
     <text>
         <table>
@@ -17,79 +18,93 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Note that sending the total score may be adequate for some use cases, although both total and detail responses shown below --> 
-                <!-- PHQ-9 Total Score --> 
+                <!-- Note that sending the total score may be adequate for some use cases, although both total and detail responses shown below -->
+                <!-- PHQ-9 Total Score -->
                 <tr>
                     <td ID="assessment" colspan="5">PHQ-9 Questionnaire (panel)</td>
                 </tr>
-                <tr ID="assessment1">
+                <tr ID="assessmentTotal">
                     <td>06/22/2015</td>
                     <td>PHQ-9 Total Score</td>
                     <td>12</td>
                     <td ID="assessmentReferenceRange">0-4</td>
                     <td>High</td>
                 </tr>
-                <!-- PHQ-9 Component Questions --> 
-                <tr ID="assessment2">
+                <!-- PHQ-9 Component Questions -->
+                <tr ID="assessment1">
                     <td>06/22/2015</td>
                     <td>PHQ-9 Question: Little interest or pleasure in doing things?</td>
                     <td>0 (Not at all)</td>
                     <td/>
                     <td/>
                 </tr>
-                <tr ID="assessment3">
+                <tr ID="assessment2">
                     <td>06/22/2015</td>
                     <td>PHQ-9 Question: Feeling down, depressed, or hopeless?</td>
                     <td>1 (Several days)</td>
                     <td/>
                     <td/>
                 </tr>
-                <tr ID="assessment4">
+                <tr ID="assessment3">
                     <td>06/22/2015</td>
-                    <td>PHQ-9 Question: Trouble falling or staying asleep, or sleeping too much?</td>
+                    <td>PHQ-9 Question: Trouble falling or staying asleep, or sleeping too
+                        much?</td>
                     <td>2 (More than half the days)</td>
                     <td/>
                     <td/>
                 </tr>
-                <tr ID="assessment5">
+                <tr ID="assessment4">
                     <td>06/22/2015</td>
                     <td>PHQ-9 Question: Feeling tired or having little energy?</td>
                     <td>0 (Not at all)</td>
                     <td/>
                     <td/>
                 </tr>
-                <tr ID="assessment6">
+                <tr ID="assessment5">
                     <td>06/22/2015</td>
                     <td>PHQ-9 Question: Poor appetite or overeating?</td>
                     <td>1 (Several days)</td>
                     <td/>
                     <td/>
                 </tr>
+                <tr ID="assessment6">
+                    <td>06/22/2015</td>
+                    <td>PHQ-9 Question: Feeling bad about yourself-or that you are a failure or have
+                        let yourself or your family down?</td>
+                    <td>3 (Nearly Every Day)</td>
+                    <td/>
+                    <td/>
+                </tr>
                 <tr ID="assessment7">
                     <td>06/22/2015</td>
-                    <td>PHQ-9 Question: Feeling bad about yourself-or that you are a failure or have let yourself or your family down?</td>
-                    <td>3 (Nearly Every Day)</td>
+                    <td>PHQ-9 Question: Trouble concentrating on things, such as reading the
+                        newspaper or watching television?</td>
+                    <td>2 (More than half the days)</td>
                     <td/>
                     <td/>
                 </tr>
                 <tr ID="assessment8">
                     <td>06/22/2015</td>
-                    <td>PHQ-9 Question: Trouble concentrating on things, such as reading the newspaper or watching television?</td>
-                    <td>2 (More than half the days)</td>
+                    <td>PHQ-9 Question: Moving or speaking so slowly that other people could have
+                        noticed. Or the opposite-being so fidgety or restless that you have been
+                        moving around a lot more than usual?</td>
+                    <td>3 (Nearly Every Day)</td>
                     <td/>
                     <td/>
                 </tr>
                 <tr ID="assessment9">
                     <td>06/22/2015</td>
-                    <td>PHQ-9 Question: Moving or speaking so slowly that other people could have noticed. Or the opposite-being so fidgety or restless that you have been moving around a lot more than usual?</td>
-                    <td>3 (Nearly Every Day)</td>
+                    <td>PHQ-9 Question: Thoughts that you would be better off dead, or of hurting
+                        yourself in some way?</td>
+                    <td>0 (Not at all)</td>
                     <td/>
                     <td/>
                 </tr>
                 <tr ID="assessment10">
                     <td>06/22/2015</td>
-                    <td>PHQ-9 Question: Thoughts that you would be better off dead, or of hurting yourself in some way?</td>
-                    <td>0 (Not at all)</td>
+                    <td>PHQ-9 How difficult have these problems made it for you to do your work,
+                        take care of things at home, or get along with other people?</td>
+                    <td>(Not difficult at all)</td>
                     <td/>
                     <td/>
                 </tr>
@@ -98,50 +113,55 @@
     </text>
     <entry typeCode="DRIV">
         <observation classCode="OBS" moodCode="EVN">
-            <!-- Assessment Scale Observation --> 
+            <!-- Assessment Scale Observation -->
             <templateId root="2.16.840.1.113883.10.20.22.4.69"/>
             <id root="f1aa44dd-6f39-4f5c-b267-897c3824b673"/>
-            <code code="44249-1" displayName="PHQ-9 quick depression assessment panel" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            <code code="44249-1" displayName="PHQ-9 quick depression assessment panel"
+                codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
             <text>
                 <reference value="#assessment"/>
             </text>
             <statusCode code="completed"/>
             <effectiveTime value="20150622"/>
-            <!-- Note that the value attribute is required in an assessment scale observation. Since LOINC organizes this information --> 
-            <!-- where the total score is part of the panel, that total score code is shown through entryRelationship to supporting observation --> 
-            <!-- The total score, however, is the most relevant value of the panel, so it has also been elevated to the panel value --> 
-            <!-- INT is preferred for assessments such as a questionnaire. Units are not allowed for xsi:type="INT" -->  
-            <value xsi:type="INT" value="12" />
+            <!-- Note that the value attribute is required in an assessment scale observation. Since LOINC organizes this information -->
+            <!-- where the total score is part of the panel, that total score code is shown through entryRelationship to supporting observation -->
+            <!-- The total score, however, is the most relevant value of the panel, so it has also been elevated to the panel value -->
+            <!-- INT is preferred for assessments such as a questionnaire. Units are not allowed for xsi:type="INT" -->
+            <value xsi:type="INT" value="12"/>
             <interpretationCode code="H" codeSystem="2.16.840.1.113883.5.83"/>
             <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
-                    <!-- Assessment Scale Supporting Observation --> 
+                    <!-- Assessment Scale Supporting Observation -->
                     <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
                     <id root="a6a704ab-271a-4bfa-9f0d-1581da2b1235"/>
                     <code code="44261-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                     <text>
-                        <reference value="#assessment1"/>
+                        <reference value="#assessmentTotal"/>
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime value="20150622"/>
-                    <!-- Definition of "PQ" A dimensioned quantity expressing the result of a measurement act.--> 
-                    <!-- Definition of "INT" Integer numbers (-1,0,1,2, 100, 3398129, etc.) are precise numbers that are results of counting and enumerating..--> 
-                    <!-- INT is preferred for assessments such as a questionnaire. Units are not allowed for xsi:type="INT" -->  
-                    <value xsi:type="INT" value="12" />													
+                    <!-- Definition of "PQ" A dimensioned quantity expressing the result of a measurement act.-->
+                    <!-- Definition of "INT" Integer numbers (-1,0,1,2, 100, 3398129, etc.) are precise numbers that are results of counting and enumerating..-->
+                    <!-- INT is preferred for assessments such as a questionnaire. Units are not allowed for xsi:type="INT" -->
+                    <value xsi:type="INT" value="12"/>
                 </observation>
             </entryRelationship>
-            <!-- The total score may be adequate for some use cases, although detail components can be sent as shown below as warranted by use case --> 
+            <!-- The total score may be adequate for some use cases, although detail components can be sent as shown below as warranted by use case -->
             <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
                     <id root="a6a704ab-271a-4bfa-9f0d-1581da2b1186"/>
                     <code code="44250-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                     <text>
-                        <reference value="#assessment2"/>
+                        <reference value="#assessment1"/>
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime value="20150622"/>
-                    <value xsi:type="INT" value="0" />													
+                    <value xsi:type="INT" value="0"/>
+                    <!-- Systems may send a second value with LOINC answer concept  -->
+                    <!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+                    <value xsi:type="CO" code="LA6568-5" displayName="Not at all"
+                        codeSystem="2.16.840.1.113883.6.1"/>
                 </observation>
             </entryRelationship>
             <entryRelationship typeCode="COMP">
@@ -150,11 +170,15 @@
                     <id root="466f43c8-fc2b-4161-b9a1-2d88688e5f74"/>
                     <code code="44255-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                     <text>
-                        <reference value="#assessment3"/>
+                        <reference value="#assessment2"/>
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime value="20150622"/>
-                    <value xsi:type="INT" value="1" />													
+                    <value xsi:type="INT" value="1"/>
+                    <!-- Systems may send a second value with LOINC answer concept  -->
+                    <!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+                    <value xsi:type="CO" code="LA6569-3" displayName="Several days"
+                        codeSystem="2.16.840.1.113883.6.1"/>
                 </observation>
             </entryRelationship>
             <entryRelationship typeCode="COMP">
@@ -163,11 +187,15 @@
                     <id root="e3e5b3d7-76f5-48f1-8ba0-b2b4e6314f95"/>
                     <code code="44259-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                     <text>
-                        <reference value="#assessment4"/>
+                        <reference value="#assessment3"/>
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime value="20150622"/>
-                    <value xsi:type="INT" value="2" />													
+                    <value xsi:type="INT" value="2"/>
+                    <!-- Systems may send a second value with LOINC answer concept  -->
+                    <!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+                    <value xsi:type="CO" code="LA6570-1" displayName="More than half the days"
+                        codeSystem="2.16.840.1.113883.6.1"/>
                 </observation>
             </entryRelationship>
             <entryRelationship typeCode="COMP">
@@ -176,11 +204,15 @@
                     <id root="4d77eb67-6588-4f77-b506-1d987eee1711"/>
                     <code code="44254-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                     <text>
-                        <reference value="#assessment5"/>
+                        <reference value="#assessment4"/>
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime value="20150622"/>
-                    <value xsi:type="INT" value="0" />													
+                    <value xsi:type="INT" value="0"/>
+                    <!-- Systems may send a second value with LOINC answer concept  -->
+                    <!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+                    <value xsi:type="CO" code="LA6568-5" displayName="Not at all"
+                        codeSystem="2.16.840.1.113883.6.1"/>
                 </observation>
             </entryRelationship>
             <entryRelationship typeCode="COMP">
@@ -189,11 +221,15 @@
                     <id root="b24d5a2c-48d6-46a0-bd92-1c901e577cc3"/>
                     <code code="44251-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                     <text>
-                        <reference value="#assessment6"/>
+                        <reference value="#assessment5"/>
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime value="20150622"/>
-                    <value xsi:type="INT" value="1" />													
+                    <value xsi:type="INT" value="1"/>
+                    <!-- Systems may send a second value with LOINC answer concept  -->
+                    <!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+                    <value xsi:type="CO" code="LA6569-3" displayName="Several days"
+                        codeSystem="2.16.840.1.113883.6.1"/>
                 </observation>
             </entryRelationship>
             <entryRelationship typeCode="COMP">
@@ -202,11 +238,15 @@
                     <id root="c67c51ea-4928-449d-b6c0-0f85b1975e07"/>
                     <code code="44258-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                     <text>
-                        <reference value="#assessment7"/>
+                        <reference value="#assessment6"/>
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime value="20150622"/>
-                    <value xsi:type="INT" value="3" />													
+                    <value xsi:type="INT" value="3"/>
+                    <!-- Systems may send a second value with LOINC answer concept  -->
+                    <!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+                    <value xsi:type="CO" code="LA6571-9" displayName="Nearly every day"
+                        codeSystem="2.16.840.1.113883.6.1"/>
                 </observation>
             </entryRelationship>
             <entryRelationship typeCode="COMP">
@@ -215,11 +255,15 @@
                     <id root="68301d32-9158-429b-92b6-1f1e553a2f8c"/>
                     <code code="44252-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                     <text>
-                        <reference value="#assessment8"/>
+                        <reference value="#assessment7"/>
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime value="20150622"/>
-                    <value xsi:type="INT" value="2" />													
+                    <value xsi:type="INT" value="2"/>
+                    <!-- Systems may send a second value with LOINC answer concept  -->
+                    <!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+                    <value xsi:type="CO" code="LA6570-1" displayName="More than half the days"
+                        codeSystem="2.16.840.1.113883.6.1"/>
                 </observation>
             </entryRelationship>
             <entryRelationship typeCode="COMP">
@@ -228,11 +272,15 @@
                     <id root="400a66ad-3d5f-4b6e-913e-81e46241d83b"/>
                     <code code="44253-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                     <text>
-                        <reference value="#assessment9"/>
+                        <reference value="#assessment8"/>
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime value="20150622"/>
-                    <value xsi:type="INT" value="3" />													
+                    <value xsi:type="INT" value="3"/>
+                    <!-- Systems may send a second value with LOINC answer concept  -->
+                    <!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+                    <value xsi:type="CO" code="LA6571-9" displayName="Nearly every day"
+                        codeSystem="2.16.840.1.113883.6.1"/>
                 </observation>
             </entryRelationship>
             <entryRelationship typeCode="COMP">
@@ -241,27 +289,47 @@
                     <id root="36792a59-7905-406e-a920-701a2ae746be"/>
                     <code code="44260-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                     <text>
+                        <reference value="#assessment9"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime value="20150622"/>
+                    <value xsi:type="INT" value="0"/>
+                    <!-- Systems may send a second value with LOINC answer concept  -->
+                    <!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+                    <value xsi:type="CO" code="LA6568-5" displayName="Not at all"
+                        codeSystem="2.16.840.1.113883.6.1"/>
+                </observation>
+            </entryRelationship>
+            <!-- New question for PHQ9 (question 10) not included in score -->
+            <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+                    <id root="aa81195f-3cd4-4b55-b79b-1eb71bc42c9e"/>
+                    <code code="69722-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <text>
                         <reference value="#assessment10"/>
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime value="20150622"/>
-                    <value xsi:type="INT" value="0" />													
+                    <!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
+                    <value xsi:type="CO" code="LA6572-7" displayName="Not difficult at all"
+                        codeSystem="2.16.840.1.113883.6.1"/>
                 </observation>
             </entryRelationship>
             <referenceRange>
                 <observationRange>
                     <text>
-                        <reference value="#assessmentReferenceRange" />
+                        <reference value="#assessmentReferenceRange"/>
                     </text>
                     <value xsi:type="IVL_INT">
-                        <low value="0" />
-                        <high value="4" />
+                        <low value="0"/>
+                        <high value="4"/>
                     </value>
                     <!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation a specific patient value-->
                     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
                 </observationRange>
                 <!-- Other ranges may be included as well (such as a high range) as considered appropriate per observation and use case -->
-            </referenceRange>								
+            </referenceRange>
         </observation>
     </entry>
 </section>
