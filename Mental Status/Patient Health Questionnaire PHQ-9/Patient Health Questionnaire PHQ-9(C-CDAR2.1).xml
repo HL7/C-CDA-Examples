@@ -104,7 +104,7 @@
                     <td>06/22/2015</td>
                     <td>PHQ-9 How difficult have these problems made it for you to do your work,
                         take care of things at home, or get along with other people?</td>
-                    <td>0 (Not at all)</td>
+                    <td>(Not difficult at all)</td>
                     <td/>
                     <td/>
                 </tr>
@@ -300,6 +300,7 @@
                         codeSystem="2.16.840.1.113883.6.1"/>
                 </observation>
             </entryRelationship>
+            <!-- New question for PHQ9 (question 10) not included in score -->
             <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                     <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
@@ -310,8 +311,6 @@
                     </text>
                     <statusCode code="completed"/>
                     <effectiveTime value="20150622"/>
-                    <value xsi:type="INT" value="0"/>
-                    <!-- Systems may send a second value with LOINC answer concept  -->
                     <!-- xsi:type could be CD or CO - CO Indicates to receiver that these values can be put in an ordered list -->
                     <value xsi:type="CO" code="LA6572-7" displayName="Not difficult at all"
                         codeSystem="2.16.840.1.113883.6.1"/>
