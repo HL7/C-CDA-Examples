@@ -201,7 +201,7 @@
 								<!-- This represents the date of biological onset. Since this is a coded diagnosis, this may not be documented.-->
 								<low nullFlavor="UNK" />
 							</effectiveTime>
-							<!-- QRDA R5.2  -- Updated to use Rank Observation to indicate Secondary Diagnosis. priorityCode is No longer recommended. -->
+							<!-- QRDA R5.2: Updated to use Rank Observation to indicate Secondary Diagnosis. priorityCode is No longer recommended. -->
 							<!-- <priorityCode code="2603003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Secondary"/> -->
 							<!-- This is a hospital discharge diagnosis, so the ICD-9 (or ICD-10) diagnosis is in translation. -->
 							<!-- If a SNOMED is available for this, it could be included, but mapping back from ICD-9 may not always be possible. -->
