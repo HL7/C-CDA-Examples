@@ -1,188 +1,198 @@
-<!-- This example is created to help with the documentation associated with the following quality measure -->
-<!-- Closing the Referral Loop: https://ecqi.healthit.gov/ecqm/measures/cms50v7 --> 
-<!-- This includes a first section of planned referral that opens the loop and a second section of planned referral which closes loop --> 
-<!-- While both XML sections are included below, in real implementations, they would be expected to be split between two separate documents --> 
-<component>
-    <section>
-        <!-- We've attempted to align/harmonize this example with both C-CDA and guidance from the IHE 360X -->
-        <!-- See information on IHE 360x profile here: https://www.ihe.net/uploadedFiles/Documents/PCC/IHE_PCC_Suppl_360X.pdf --> 
-        <!-- See pages 8 and 44 making recommendation for Patient Referral Act -->  
-        <!-- The interventions section is used below since that was the recommended of IHE 360XS document -->
-        <!-- But this entry could also be used inside of a Reason for Referral section or other open-template section like Plan of Treatment --> 
-        <templateId root="2.16.840.1.113883.10.20.21.2.3" extension="2015-08-01"/>
-        <templateId root="2.16.840.1.113883.10.20.22.2.3"/>
-        <code code="62387-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Interventions Provided"/>
-        <title>Interventions</title>
-        <!-- one patient referral act in the human readable text and as a discrete entry -->
-        <text>
-            <table>
-                <caption>Planned Referral</caption>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Date</th>
-                        <th>Details</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ID="ID0EFFFFFFCAB3">
-                        <td ID="ID0EFAAAAACAB3">Referral to Specialist</td>
-                        <td>June 23, 2018</td>
-                        <td>Dr. Henry Levine Eighth, as soon as possible</td>
-                    </tr>
-                </tbody>
-            </table>
-        </text>
-        <!-- a patient referral act -->
-        <entry>
-            <act moodCode="INT" classCode="PCPR">
-                <templateId root="2.16.840.1.113883.10.20.22.4.140" />
-                <!-- This id may be referenced in the note received afterward --> 
-                <id root="9a6d1bac-17d3-4195-89a4-1121bc809b4e" />
-                <code code="103697008" displayName="Patient referral to specialist" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" >
-                    <originalText>
-                        <reference value="#ID0EFAAAAACAB3"/>
-                    </originalText>
-                </code>
-                <text>
-                    <!-- referencing the entire text -->
-                    <reference value="#ID0EFFFFFFCAB3"/>
-                </text>
-                <statusCode code="active" />
-                <effectiveTime value="20180623" />
-                <priorityCode code="A" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority" displayName="ASAP"/>
-                <participant typeCode="REFT">
-                    <participantRole>
-                        <!-- Having this be an NPI may be used to identify completion of referral --> 
-                        <id root="2.16.840.1.113883.4.6" extension="1093929010" />
-                        <code code="207Q00000X" displayName="Allopathic &amp; Osteopathic Physicians : Family Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" />
-                        <addr>
-                            <streetAddressLine>100 Main St</streetAddressLine>
-                            <city>Horsham</city>
-                            <state>PA</state>
-                            <postalCode>19044</postalCode>
-                            <country>US</country>
-                        </addr>
-                        <telecom nullFlavor="UNK" />
-                        <playingEntitye>
-                            <name>
-                                <family>Eighth</family>
-                                <given>Henry</given>
-                                <given>Levine</given>
-                            </name>
-                        </playingEntitye>
-                    </participantRole>
-                </participant>
-            </act>
-        </entry>
-    </section>
-</component>
-<!-- The section below would likely be included in a separate document, although included here for a single sample --> 
-<component>
-    <section>
-        <!-- Notes Section -->
-        <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01"/>
-        <!-- This Notes Section is not intended to replace a C-CDA Consultation Note Document -->
-        <!-- If your system captures Consultation Note information in Discrete sections it's not recommended to lump all the text together here. -->
-        <!-- This Notes Section could be included in a Consultation Note Document with other discrete sections (Results, Vitals etc.)-->
-        <!-- This Notes Section is most appropriate for an encounter specific document. Other sections of doucments may also close notes -->
-        <!-- If this Notes section were included in a CCD, each Note Activity entry should be linked to an appropriate Encounter entry in the Encounters section -->
-        <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
-            displayName="Consultation note"/>
-        <title>Consultation Notes</title>
-        <text>
-            <list>
-                <item ID="ConsultNote1">
-                    <paragraph>Dr. Henry Level Eighth - June 23, 2018</paragraph>
-                    <paragraph> Dear Reerring Doctor: Thank you for referring Ms. Everywoman for evaluation. As
-                        you know, she is a 40-year-old woman who has had chronic gastrointestinal
-                        symptoms. Approximately 18 years ago, she was hospitalized with a bleeding
-                        ulcer. She had a CT scan of the abdomen, which revealed findings consistent with
-                        focal nodular hyperplasia (FNH). She has had epigastric abdominal pain as well
-                        as a significant change in her bowel movements from baseline constipation to
-                        frequent diarrhea. The past medical history is otherwise negative. She takes no
-                        prescription medications. The remainder of the history is not contributory. </paragraph>
-                    <paragraph>Physical examination revealed a well-appearing woman. The vital signs
-                        were normal. The head and neck were unremarkable. The lung fields were clear.
-                        The heart exam was normal. The abdomen was obese with normal bowel sounds. There
-                        was no tenderness, mass, or hepatosplenomegaly. </paragraph>
-                    <paragraph>Endoscopic evaluation revealed a normal colonoscopy. Biopsies taken
-                        throughout the colon were essentially unremarkable. Stool tests for pathogenic
-                        organisms were negative. Of note, on the upper endoscopy examination, no
-                        significant abnormalities were seen; however, upon biopsy, features of celiac
-                        disease were noted.</paragraph>
-                    <paragraph> In summary, this 40-year-old woman has evidence of celiac disease. We
-                        discussed the diagnosis in detail in the office. She was advised to undertake a
-                        lifelong gluten-free diet. Followup laboratories in my office were notable for a
-                        low serum iron with a low-normal ferritin. The bone density was normal. Repeat
-                        triple-phase CT scan of the liver revealed no change in the right hepatic lobe
-                        lesion, which is consistent with FNH. I advised periodic reevaluation of the
-                        liver with imaging, as well as followup for any potential development of
-                        nutritional deficiencies. She should take an iron supplement and continue on a
-                        lifelong gluten-free diet. </paragraph>
-                    <paragraph>Thank you for the courtesy of this referral. I would be pleased to see
-                        Ms. Everywoman in followup.</paragraph>
-                </item>
-            </list>
-        </text>
-        <!-- Note Activity entry -->
-        <entry>
-            <act classCode="ACT" moodCode="EVN">
-                <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01"/>
-                <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note">
-                    <!-- Code must match or be equivalent to section code -->
-                    <translation code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Consultation note"/>
-                    <!-- Additional SNOMED code which is equivalent to the LOINC consultation note code -->
-                    <!-- The quality measure CMS550 v7 requires a concept from 2.16.840.1.113883.3.464.1003.121.12.1006 --> 
-                    <translation code="371530004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Clinical consultation report (record artifact)" />
-                </code>
-                <text>
-                    <reference value="#ConsultNote1"/>
-                </text>
-                <statusCode code="completed"/>
-                <!-- Clinically-relevant time of the note -->
-                <effectiveTime value="20160908"/>
-                <!-- Author Participation -->
-                <author>
-                    <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-                    <!-- Time note was actually written -->
-                    <time value="20180623083215-0500"/>
-                    <assignedAuthor>
-                        <!-- This NPI helps track the planned referral to the person who actually performed -->
-                        <id root="2.16.840.1.113883.4.6" extension="1093929010" />
-                        <code code="207Q00000X" displayName="Allopathic &amp; Osteopathic Physicians : Family Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" />
-                        <addr nullFlavor="UNK" />
-                        <telecom nullFlavor="UNK" />
-                        <assignedPerson>
-                            <name>
-                                <family>Eighth</family>
-                                <given>Henry</given>
-                                <given>Levine</given>
-                            </name>
-                        </assignedPerson>
-                        <representedOrganization>
-                            <id root="2.16.840.1.113883.3.1.1.1.1." extension="0001" />
-                            <name>Default Practice</name>
-                            <telecom use="WP" nullFlavor="UNK" />
-                            <addr>
-                                <streetAddressLine>100 Main St</streetAddressLine>
-                                <city>Horsham</city>
-                                <state>PA</state>
-                                <postalCode>19044</postalCode>
-                                <country>US</country>
-                            </addr>
-                        </representedOrganization>
-                    </assignedAuthor>
-                </author>
-                <reference typeCode="REFR">
-                    <externalAct classCode="ACT" moodCode="EVN">
-                        <!-- This refers to the Patient Referral Act act/id of the planned referral -->
-                        <!-- The quality measure CMS550 v7 requires this identifier to link (related) the completed encounter to the requested referral --> 
-                        <id root="9a6d1bac-17d3-4195-89a4-1121bc809b4e"/>
-                        <code code="103697008" displayName="Patient referral to specialist" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
-                    </externalAct>
-                </reference>
-            </act>
-        </entry>
-    </section>
-</component>
+<ClinicalDocument>
+    <!-- This ClinicalDocument's structure is stubbed with the minimum elements necessary
+         to demonstrate the locations of the entries across multiple different sections;
+         however, required content like the document header and section LOINC codes
+         has been omitted. -->
+    <component>
+        <structuredBody>
+            <!-- This example is created to help with the documentation associated with the following quality measure -->
+            <!-- Closing the Referral Loop: https://ecqi.healthit.gov/ecqm/measures/cms50v7 --> 
+            <!-- This includes a first section of planned referral that opens the loop and a second section of planned referral which closes loop --> 
+            <!-- While both XML sections are included below, in real implementations, they would be expected to be split between two separate documents --> 
+            <component>
+                <section>
+                    <!-- We've attempted to align/harmonize this example with both C-CDA and guidance from the IHE 360X -->
+                    <!-- See information on IHE 360x profile here: https://www.ihe.net/uploadedFiles/Documents/PCC/IHE_PCC_Suppl_360X.pdf --> 
+                    <!-- See pages 8 and 44 making recommendation for Patient Referral Act -->  
+                    <!-- The interventions section is used below since that was the recommended of IHE 360XS document -->
+                    <!-- But this entry could also be used inside of a Reason for Referral section or other open-template section like Plan of Treatment --> 
+                    <templateId root="2.16.840.1.113883.10.20.21.2.3" extension="2015-08-01"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.3"/>
+                    <code code="62387-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Interventions Provided"/>
+                    <title>Interventions</title>
+                    <!-- one patient referral act in the human readable text and as a discrete entry -->
+                    <text>
+                        <table>
+                            <caption>Planned Referral</caption>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ID="ID0EFFFFFFCAB3">
+                                    <td ID="ID0EFAAAAACAB3">Referral to Specialist</td>
+                                    <td>June 23, 2018</td>
+                                    <td>Dr. Henry Levine Eighth, as soon as possible</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <!-- a patient referral act -->
+                    <entry>
+                        <act moodCode="INT" classCode="PCPR">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.140" />
+                            <!-- This id may be referenced in the note received afterward --> 
+                            <id root="9a6d1bac-17d3-4195-89a4-1121bc809b4e" />
+                            <code code="103697008" displayName="Patient referral to specialist" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" >
+                                <originalText>
+                                    <reference value="#ID0EFAAAAACAB3"/>
+                                </originalText>
+                            </code>
+                            <text>
+                                <!-- referencing the entire text -->
+                                <reference value="#ID0EFFFFFFCAB3"/>
+                            </text>
+                            <statusCode code="active" />
+                            <effectiveTime value="20180623" />
+                            <priorityCode code="A" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority" displayName="ASAP"/>
+                            <participant typeCode="REFT">
+                                <participantRole>
+                                    <!-- Having this be an NPI may be used to identify completion of referral --> 
+                                    <id root="2.16.840.1.113883.4.6" extension="1093929010" />
+                                    <code code="207Q00000X" displayName="Allopathic &amp; Osteopathic Physicians : Family Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" />
+                                    <addr>
+                                        <streetAddressLine>100 Main St</streetAddressLine>
+                                        <city>Horsham</city>
+                                        <state>PA</state>
+                                        <postalCode>19044</postalCode>
+                                        <country>US</country>
+                                    </addr>
+                                    <telecom nullFlavor="UNK" />
+                                    <playingEntitye>
+                                        <name>
+                                            <family>Eighth</family>
+                                            <given>Henry</given>
+                                            <given>Levine</given>
+                                        </name>
+                                    </playingEntitye>
+                                </participantRole>
+                            </participant>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+            <!-- The section below would likely be included in a separate document, although included here for a single sample --> 
+            <component>
+                <section>
+                    <!-- Notes Section -->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01"/>
+                    <!-- This Notes Section is not intended to replace a C-CDA Consultation Note Document -->
+                    <!-- If your system captures Consultation Note information in Discrete sections it's not recommended to lump all the text together here. -->
+                    <!-- This Notes Section could be included in a Consultation Note Document with other discrete sections (Results, Vitals etc.)-->
+                    <!-- This Notes Section is most appropriate for an encounter specific document. Other sections of doucments may also close notes -->
+                    <!-- If this Notes section were included in a CCD, each Note Activity entry should be linked to an appropriate Encounter entry in the Encounters section -->
+                    <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="Consultation note"/>
+                    <title>Consultation Notes</title>
+                    <text>
+                        <list>
+                            <item ID="ConsultNote1">
+                                <paragraph>Dr. Henry Level Eighth - June 23, 2018</paragraph>
+                                <paragraph> Dear Reerring Doctor: Thank you for referring Ms. Everywoman for evaluation. As
+                                    you know, she is a 40-year-old woman who has had chronic gastrointestinal
+                                    symptoms. Approximately 18 years ago, she was hospitalized with a bleeding
+                                    ulcer. She had a CT scan of the abdomen, which revealed findings consistent with
+                                    focal nodular hyperplasia (FNH). She has had epigastric abdominal pain as well
+                                    as a significant change in her bowel movements from baseline constipation to
+                                    frequent diarrhea. The past medical history is otherwise negative. She takes no
+                                    prescription medications. The remainder of the history is not contributory. </paragraph>
+                                <paragraph>Physical examination revealed a well-appearing woman. The vital signs
+                                    were normal. The head and neck were unremarkable. The lung fields were clear.
+                                    The heart exam was normal. The abdomen was obese with normal bowel sounds. There
+                                    was no tenderness, mass, or hepatosplenomegaly. </paragraph>
+                                <paragraph>Endoscopic evaluation revealed a normal colonoscopy. Biopsies taken
+                                    throughout the colon were essentially unremarkable. Stool tests for pathogenic
+                                    organisms were negative. Of note, on the upper endoscopy examination, no
+                                    significant abnormalities were seen; however, upon biopsy, features of celiac
+                                    disease were noted.</paragraph>
+                                <paragraph> In summary, this 40-year-old woman has evidence of celiac disease. We
+                                    discussed the diagnosis in detail in the office. She was advised to undertake a
+                                    lifelong gluten-free diet. Followup laboratories in my office were notable for a
+                                    low serum iron with a low-normal ferritin. The bone density was normal. Repeat
+                                    triple-phase CT scan of the liver revealed no change in the right hepatic lobe
+                                    lesion, which is consistent with FNH. I advised periodic reevaluation of the
+                                    liver with imaging, as well as followup for any potential development of
+                                    nutritional deficiencies. She should take an iron supplement and continue on a
+                                    lifelong gluten-free diet. </paragraph>
+                                <paragraph>Thank you for the courtesy of this referral. I would be pleased to see
+                                    Ms. Everywoman in followup.</paragraph>
+                            </item>
+                        </list>
+                    </text>
+                    <!-- Note Activity entry -->
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01"/>
+                            <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note">
+                                <!-- Code must match or be equivalent to section code -->
+                                <translation code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Consultation note"/>
+                                <!-- Additional SNOMED code which is equivalent to the LOINC consultation note code -->
+                                <!-- The quality measure CMS550 v7 requires a concept from 2.16.840.1.113883.3.464.1003.121.12.1006 --> 
+                                <translation code="371530004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Clinical consultation report (record artifact)" />
+                            </code>
+                            <text>
+                                <reference value="#ConsultNote1"/>
+                            </text>
+                            <statusCode code="completed"/>
+                            <!-- Clinically-relevant time of the note -->
+                            <effectiveTime value="20160908"/>
+                            <!-- Author Participation -->
+                            <author>
+                                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                                <!-- Time note was actually written -->
+                                <time value="20180623083215-0500"/>
+                                <assignedAuthor>
+                                    <!-- This NPI helps track the planned referral to the person who actually performed -->
+                                    <id root="2.16.840.1.113883.4.6" extension="1093929010" />
+                                    <code code="207Q00000X" displayName="Allopathic &amp; Osteopathic Physicians : Family Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" />
+                                    <addr nullFlavor="UNK" />
+                                    <telecom nullFlavor="UNK" />
+                                    <assignedPerson>
+                                        <name>
+                                            <family>Eighth</family>
+                                            <given>Henry</given>
+                                            <given>Levine</given>
+                                        </name>
+                                    </assignedPerson>
+                                    <representedOrganization>
+                                        <id root="2.16.840.1.113883.3.1.1.1.1." extension="0001" />
+                                        <name>Default Practice</name>
+                                        <telecom use="WP" nullFlavor="UNK" />
+                                        <addr>
+                                            <streetAddressLine>100 Main St</streetAddressLine>
+                                            <city>Horsham</city>
+                                            <state>PA</state>
+                                            <postalCode>19044</postalCode>
+                                            <country>US</country>
+                                        </addr>
+                                    </representedOrganization>
+                                </assignedAuthor>
+                            </author>
+                            <reference typeCode="REFR">
+                                <externalAct classCode="ACT" moodCode="EVN">
+                                    <!-- This refers to the Patient Referral Act act/id of the planned referral -->
+                                    <!-- The quality measure CMS550 v7 requires this identifier to link (related) the completed encounter to the requested referral --> 
+                                    <id root="9a6d1bac-17d3-4195-89a4-1121bc809b4e"/>
+                                    <code code="103697008" displayName="Patient referral to specialist" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+                                </externalAct>
+                            </reference>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

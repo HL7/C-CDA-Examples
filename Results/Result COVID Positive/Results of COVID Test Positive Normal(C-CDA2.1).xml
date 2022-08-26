@@ -50,8 +50,8 @@
                     <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
                     <id root="5a6be91a-32d5-4d24-a8bd-07d10a33414d"/>
                     <!-- This is a LOINC code uses respiratory sample which would include nasal pharynx swab. Other codes that could be used in different circumstances include -->
-                    <!-- All potential codes for different sample sites or methods include: 94306-8, 94307-6, 94308-4, 94309-2, 94310-0, 94311-8, 94312-6, 94313-4, 94314-2, 94315-9, 94316-7, 94499-1, 94500-6
-                        <!-- 94501-4, 94502-2, 94503-0, 94504-8, 94505-5, 94506-3, 94507-1, 94508-9, 94509-7, 94510-5, 94511-3, 94531-1, 94532-9, 94533-7, 94534-5, 94547-7	-->
+                    <!-- All potential codes for different sample sites or methods include: 94306-8, 94307-6, 94308-4, 94309-2, 94310-0, 94311-8, 94312-6, 94313-4, 94314-2, 94315-9, 94316-7,
+                         94499-1, 94500-6, 94501-4, 94502-2, 94503-0, 94504-8, 94505-5, 94506-3, 94507-1, 94508-9, 94509-7, 94510-5, 94511-3, 94531-1, 94532-9, 94533-7, 94534-5, 94547-7 -->
                     <!-- You can check LOINC code detail by using their open API, such as https://loinc.org/94500-6/ -->
                     <!-- Please note that these are pre-release LOINC codes and codes may change over time -->
                     <code code="94500-6" displayName="SARS coronavirus 2 RNA" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>

@@ -1,6 +1,6 @@
 <!-- moodCode matches the parent substanceAdministration EVN or INT -->
-<substanceAdministration classCode=�SBADM� moodCode=�EVN�>
-  <templateId root=�2.16.840.1.113883.10.20.22.4.147�/>
+<substanceAdministration classCode="SBADM" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.147"/>
   <code code="76662-6" 
           codeSystem="2.16.840.1.113883.6.1" 
           codeSystemName="LOINC" 
@@ -11,7 +11,7 @@
   </text>
   <consumable>
     <manufacturedProduct>
-      <manufacturedLabeledDrug nullFlavor=�NA�/>
+      <manufacturedLabeledDrug nullFlavor="NA"/>
     </manufacturedProduct>
   </consumable>
 </substanceAdministration>

@@ -177,7 +177,7 @@
 										</observation>
 									</component>
 									<!-- Distinct Identification assigned wherever donation pulled from-->
-									<!-- The distinct identification code may be equivalent to the serial number, lot or batch number, or the donation identification number. 
+									<!-- The distinct identification code may be equivalent to the serial number, lot or batch number, or the donation identification number.  -->
 									<!-- The appropriate value should be provided as the distinct identification code. -->
 									<!-- <component>
 										<observation classCode="OBS" moodCode="EVN">

@@ -1,5 +1,4 @@
-   
-<observation classCode="OBS" moodCode="EVN">
+ <observation classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.69"/>
   <id root="c6b5a04b-2bf4-49d1-8336-636a3813df0b"/>
   <code code="54614-3" 
@@ -15,9 +14,8 @@
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
             
-            . . .
+      <!-- . . . -->
 
-    
-        
-    </entryRelationship>
-  </observation>
+    </observation>
+  </entryRelationship>
+</observation>

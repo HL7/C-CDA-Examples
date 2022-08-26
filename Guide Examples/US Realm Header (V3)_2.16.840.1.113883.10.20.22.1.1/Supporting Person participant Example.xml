@@ -1,42 +1,45 @@
-<participant typeCode="IND">
-  <!-- typeCode "IND" represents an individual -->
-  <associatedEntity classCode="NOK">
-    <!-- classCode "NOK" represents the patient's next of kin-->
-    <addr use="HP">
-      <streetAddressLine>2222 Home Street</streetAddressLine>
-      <city>Beaverton</city>
-      <state>OR</state>
-      <postalCode>97867</postalCode>
-      <country>US</country>
-    </addr>
-    <telecom value="tel:+1(555)555-2008" use="MC" />
-    <associatedPerson>
-      <name>
-        <given>Boris</given>
-        <given qualifier="CL">Bo</given>
-        <family>Betterhalf</family>
-      </name>
-    </associatedPerson>
-  </associatedEntity>
-</participant>
-<!-- Entities playing multiple roles are recorded in multiple participants -->
-<participant typeCode="IND">
-  <associatedEntity classCode="ECON">
-    <!-- classCode "ECON" represents an emergency contact -->
-    <addr use="HP">
-      <streetAddressLine>2222 Home Street</streetAddressLine>
-      <city>Beaverton</city>
-      <state>OR</state>
-      <postalCode>97867</postalCode>
-      <country>US</country>
-    </addr>
-    <telecom value="tel:+1(555)555-2008" use="MC" />
-    <associatedPerson>
-      <name>
-        <given>Boris</given>
-        <given qualifier="CL">Bo</given>
-        <family>Betterhalf</family>
-      </name>
-    </associatedPerson>
-  </associatedEntity>
-</participant>
+<ClinicalDocument>
+  <!-- ... -->
+  <participant typeCode="IND">
+    <!-- typeCode "IND" represents an individual -->
+    <associatedEntity classCode="NOK">
+      <!-- classCode "NOK" represents the patient's next of kin-->
+      <addr use="HP">
+        <streetAddressLine>2222 Home Street</streetAddressLine>
+        <city>Beaverton</city>
+        <state>OR</state>
+        <postalCode>97867</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom value="tel:+1(555)555-2008" use="MC" />
+      <associatedPerson>
+        <name>
+          <given>Boris</given>
+          <given qualifier="CL">Bo</given>
+          <family>Betterhalf</family>
+        </name>
+      </associatedPerson>
+    </associatedEntity>
+  </participant>
+  <!-- Entities playing multiple roles are recorded in multiple participants -->
+  <participant typeCode="IND">
+    <associatedEntity classCode="ECON">
+      <!-- classCode "ECON" represents an emergency contact -->
+      <addr use="HP">
+        <streetAddressLine>2222 Home Street</streetAddressLine>
+        <city>Beaverton</city>
+        <state>OR</state>
+        <postalCode>97867</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom value="tel:+1(555)555-2008" use="MC" />
+      <associatedPerson>
+        <name>
+          <given>Boris</given>
+          <given qualifier="CL">Bo</given>
+          <family>Betterhalf</family>
+        </name>
+      </associatedPerson>
+    </associatedEntity>
+  </participant>
+</ClinicalDocument>

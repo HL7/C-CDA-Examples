@@ -2,7 +2,7 @@
 <observation classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.318" extension="2019-06-21"/>
   <code code="C106044" displayName="MRI Safety Status" 
-            codeSystem="2.16.840.1.113883.3.26.1.1"codeSystemName="NCI Thesaurus"/>
+            codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
   <value xsi:type="CD" code="C113844" codeSystem="2.16.840.1.113883.3.26.1.1"
               displayName="Labeling does not contain MRI Safety Information" 
               codeSystemName="NCI Thesaurus" sdtc:valueSet="2.16.840.1.113762.1.4.1021.46">

@@ -9,15 +9,14 @@
         codeSystem="2.16.840.1.113883.6.1" 
         codeSystemName="LOINC" 
         displayName="Alcoholic drinks per day"></translation>
-    <statusCode code="completed" />
-    <effectiveTime>
-      <low value="20120215" />
-    </effectiveTime>
-    <value xsi:type="PQ" value="12" />
-    <author typeCode="AUT">
-      <templateId root="2.16.840.1.113883.10.20.22.4.119" />
-    ...
-  
-        
-    </author>
-  </observation>
+  </code>
+  <statusCode code="completed" />
+  <effectiveTime>
+    <low value="20120215" />
+  </effectiveTime>
+  <value xsi:type="PQ" value="12" />
+  <author typeCode="AUT">
+    <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+    <!-- ... -->
+  </author>
+</observation>

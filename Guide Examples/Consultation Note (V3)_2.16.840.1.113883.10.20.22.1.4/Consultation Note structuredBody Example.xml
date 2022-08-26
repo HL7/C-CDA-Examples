@@ -69,7 +69,7 @@
     <component>
       <section>
         <templateId root="2.16.840.1.113883.10.20.22.2.10" 
-                    extension="2014-06-09"" />
+                    extension="2014-06-09" />
         <!--  Plan of Treatment Section (V2) template  -->
         <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" 
                       codeSystemName="LOINC" displayName="Treatment plan" />

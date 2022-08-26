@@ -9,7 +9,7 @@
   <entryRelationship typeCode="SUBJ" inversionInd="false">
     <observation classCode="OBS" moodCode="EVN">
       <!-- Problem observation template -->
-      <templateId root="2.16.840.1.113883.10.20.22.4.4" extension=�2015-08-01� />
+      <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
                 ...
             
         
