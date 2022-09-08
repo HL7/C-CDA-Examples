@@ -38,7 +38,7 @@
                     <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
                     <templateId root="2.16.840.1.113883.10.20.22.4.86" extension="2022-06-01"/>
                     <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
-                    <code code="9267-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GCS EYE"/>             
+                    <code code="9267-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score eye opening"/>             
                     <statusCode code="completed"/>
                     <value xsi:type="INT" value="3"/>
                     <!-- Systems may send a second value with LOINC answer concept  -->
@@ -52,7 +52,7 @@
                     <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
                     <templateId root="2.16.840.1.113883.10.20.22.4.86" extension="2022-06-01"/>
                     <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
-                    <code code="99268-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GCS MOTOR"/>               
+                    <code code="9268-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score motor"/>               
                     <statusCode code="completed"/>
                     <value xsi:type="INT" value="3"/>
                     <!-- Systems may send a second value with LOINC answer concept  -->
@@ -66,7 +66,7 @@
                     <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
                     <templateId root="2.16.840.1.113883.10.20.22.4.86" extension="2022-06-01"/>
                     <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
-                    <code code="9270-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GCS VERBAL"/>
+                    <code code="9270-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score verbal"/>
                      <statusCode code="completed"/>
                     <value xsi:type="INT" value="3"/>
                     <!-- Systems may send a second value with LOINC answer concept  -->
@@ -80,7 +80,7 @@
                     <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
                     <templateId root="2.16.840.1.113883.10.20.22.4.86" extension="2022-06-01"/>
                     <id root="9daa31dd-2a72-40b8-a8e9-34c266935a15"/>
-                    <code code="9269-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Score Total"/>
+                    <code code="9269-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score total"/>
                     <text>
                         <reference value="#assessmentTotal"/>
                     </text>
