@@ -1,3 +1,6 @@
+## Example Moved
+See [CDA Search Header Examples](https://cdasearch.hl7.org/sections/Header)
+
 ## SDWG Supported Sample from Implementation Guide
 
 The initial load of this repository in January 2021 includes all examples (figures) from the June 2019 Errata published PDF of C-CDA 2.1 and 2019 release of C-CDA Companion Guide. 

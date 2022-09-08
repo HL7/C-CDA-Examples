@@ -23,7 +23,7 @@
             <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Male" codeSystemName="AdministrativeGender"/>
             <birthTime value="19521022"/>
             <!-- A full CDA example may include the Deceased Observation to indicate cause of death -->
-            <!-- A Deceased Observation may be present in any section -- Problem List is a suitable location -->
+            <!-- A Deceased Observation may be present in any section; Problem List is a suitable location -->
 	    <!-- Stylesheets are strongly recommended to include human viewable rendering of the deceased indication and time when present -->
 	    <!-- Systems may send deceased indication, time, or both. Sending only time is not recommeded. -->
             <sdtc:deceasedInd value="true" />

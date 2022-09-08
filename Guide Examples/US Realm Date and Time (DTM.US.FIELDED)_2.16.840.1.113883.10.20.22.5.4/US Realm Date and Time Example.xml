@@ -1,8 +1,12 @@
-<!-- Common values for date/time elements would range in precision to the day YYYYMMDD to precision to the second with a time zone offset YYYYMMDDHHMMSS - ZZzz -->
-<!-- time element with TS data type precise to the day for a birthdate -->
-<time value=�19800531�/>
-<!-- effectiveTime element with IVL<TS> data type precise to the second for an observation -->
-<effectiveTime>
-  <low value='20110706122735-0800'/>
-  <high value='20110706122815-0800'/>
-</effectiveTime>
+<observation classCode="OBS" moodCode="EVN">
+  <!-- effectiveTime element with IVL<TS> data type precise to the second for an observation -->
+  <effectiveTime>
+    <low value="20110706122735-0800"/>
+    <high value="20110706122815-0800"/>
+  </effectiveTime>
+  <author>
+    <!-- Common values for date/time elements would range in precision to the day YYYYMMDD to precision to the second with a time zone offset YYYYMMDDHHMMSS - ZZzz -->
+    <!-- time element with TS data type precise to the day for a birthdate -->
+    <time value="19800531"/>
+  </author>
+</observation>

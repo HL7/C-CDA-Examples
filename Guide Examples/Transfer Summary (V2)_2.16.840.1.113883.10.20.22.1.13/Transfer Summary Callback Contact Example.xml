@@ -2,7 +2,7 @@
   <time value="20050329224411+0500" />
   <associatedEntity classCode="ASSIGNED">
     <id extension="99999999" root="2.16.840.1.113883.4.6" />
-    <code code="200000000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic & Osteopathic Physicians" />
+    <code code="200000000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians" />
     <addr>
       <streetAddressLine>1002 Healthcare Drive </streetAddressLine>
       <city>Ann Arbor</city>

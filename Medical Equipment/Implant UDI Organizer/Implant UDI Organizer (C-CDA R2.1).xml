@@ -177,7 +177,7 @@
 										</observation>
 									</component>
 									<!-- Distinct Identification assigned wherever donation pulled from-->
-									<!-- The distinct identification code may be equivalent to the serial number, lot or batch number, or the donation identification number. 
+									<!-- The distinct identification code may be equivalent to the serial number, lot or batch number, or the donation identification number.  -->
 									<!-- The appropriate value should be provided as the distinct identification code. -->
 									<!-- <component>
 										<observation classCode="OBS" moodCode="EVN">
@@ -201,7 +201,7 @@
 									<component>
 										<observation classCode="OBS" moodCode="EVN">
 											<templateId root="2.16.840.1.113883.10.20.22.4.317" extension="2019-06-21"/>
-											<code code="C99285"displayName="Model Number" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/> 
+											<code code="C99285" displayName="Model Number" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/> 
 											<value xsi:type="ED"> 
 												<reference value="#ModelNumber_1"/>
 											</value> 											

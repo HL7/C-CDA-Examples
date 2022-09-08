@@ -37,8 +37,8 @@
             <!-- This LOINC code was suggested by Regenstrief but is undergoing changed expected in 2020 -->
             <!-- As more specific codes are developed in LOINC (and possibly SNOMED), other codes may be more appropriate -->
             <code code="66547-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Things to smoke" >
-                <!-- Discussed 722499006 in translation and agreed not an appropriate trsnlation.
-                    <!-- The code 722499006 aligns with 2019 guidance https://www.healthit.gov/isa/representing-patient-electronic-cigarette-use-vaping -->
+                <!-- Discussed 722499006 in translation and agreed not an appropriate trsnlation. -->
+                <!-- The code 722499006 aligns with 2019 guidance https://www.healthit.gov/isa/representing-patient-electronic-cigarette-use-vaping -->
             </code>
             <text>
                 <reference value="#_a1305452-cddd-4654-980f-bba6745588e8"/>

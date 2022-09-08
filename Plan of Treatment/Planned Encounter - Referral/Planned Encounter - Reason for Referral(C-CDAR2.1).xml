@@ -10,126 +10,136 @@ This example also includes details of the referral as text and Planned Encounter
 there are systems that might very well represent the data in the Plan of Treatment section, based upon the test data statement about Scheduled date.
  -->
 
-<!-- here is the minimally necessary Reason for Referral section with the text showing the scheduled referral
-			note: depending upon how the test data are interpreted the content of the text may vary as regards the Scheduled date.
- -->
-<component>
-    <section>
-        <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.1"/>
-        <code code="42349-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reason For Referral"/>
-        <title>Reason For Referral</title>
-        <text>Pulmonary function tests, Dr. Penny Puffer, Tel: 555-555-1049, 1047 Healthcare Drive, Portland, OR 97005, Scheduled date: 08/17/2012</text>
-    </section>
-</component>
-<!-- here is the optional section for Plan of Care with the Planned Encounter -->
-<component>
-    <section>
-        <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
-        <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
-        <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of Care"/>
-        <title>Plan of Care</title>
-        <!-- one Planned Encounter in the human readable text and as a discrete entry -->
-        <text>
-            <!-- this section may contain many different Planned items, so we use the table caption to help identify each -->
-            <table>
-                <caption>Planned Encounters</caption>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Date</th>
-                        <th>Details</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td ID="ID0EFFFFFFCA">
-                            <content ID="ID0EFAAAAACA">Pulmonary Function Tests; Dr. Penny Puffer, Tel: 555-555-1049, 1047 Healthcare Drive, Portland OR 97005</content>
-                        </td>
-                        <td>17-Aug-2012</td>
-                        <td ID="ID0EAAAAAAAAACA">Indication: Costal Chondritis</td>
-                    </tr>
-                </tbody>
-            </table>
-        </text>
-        <!-- a planned encounter entry -->
-        <entry>
-            <!-- encounter with moodCode indicating Intent -->
-            <encounter classCode="ENC" moodCode="INT">
-                <!-- Planned Encounter templateId -->
-                <templateId root="2.16.840.1.113883.10.20.22.4.40" extension="2014-06-09"/>
-                <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
-                <id extension="52487" root="1.3.6.1.42424242.4.99930.4.3.4"/>
-                <!-- templateId and id are all that are required or specified in C-CDA R1.1; with C-CDA R2.0 the documentation changes quite a bit -->
-                <!-- code from the Planned Encounter Type value set; 11429006 is reflective of the example data, but local policy and use may result in selection of a different code -->
-                <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="11429006" displayName="consultation">
-                    <!-- referencing back to the text of the type-->
-                    <originalText>
-                        <reference value="#ID0EFAAAAACA"/>
-                    </originalText>
-                </code>
-                <text>
-                    <!-- referencing the entire text -->
-                    <reference value="#ID0EFFFFFFCA"/>
-                </text>
-                <statusCode code="active"/>
-                <effectiveTime>
-                    <!-- appointment requested for Test date + 2 days , so 8/17/2012 -->
-                    <low value="20120817"/>
-                </effectiveTime>
-                <!-- the requested Penny Puffer provider -->
-                <performer typeCode="PRF">
-                    <assignedEntity>
-                        <id extension="3333333333" root="2.16.840.1.113883.4.6"/>
-                        <addr>
-                            <streetAddressLine>1047 Healthcare Dr</streetAddressLine>
-                            <city>Portland</city>
-                            <state>OR</state>
-                            <postalCode>97005</postalCode>
-                            <country>US</country>
-                        </addr>
-                        <telecom value="tel:+1-(555)555-1049"/>
-                        <assignedPerson>
-                            <name>
-                                <prefix>Dr</prefix>
-                                <given>Penny</given>
-                                <family>Puffer</family>
-                            </name>
-                        </assignedPerson>
-                    </assignedEntity>
-                </performer>
-                <!-- Penny Puffer office location as a service delivery location -->
-                <participant typeCode="LOC">
-                    <participantRole classCode="SDLOC">
-                        <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                        <code code="1212-0" codeSystem="2.16.840.1.113883.6.259" displayName="Any Age Mixed Acuity Unit"/>
-                        <telecom nullFlavor="UNK"/>
-                        <playingEntity classCode="PLC">
-                            <name>Dr. Penny Puffer Office</name>
-                        </playingEntity>
-                    </participantRole>
-                </participant>
-                <!-- this references the indication (reason) for the planned encounter; example data suggests the reason was the encounter diagnosis
-					L)	Encounter Diagnosis
-						 - Costal Chondritis, [SNOMED-CT: 64109004], Start: 8/15/2012, Active
-			 -->
-                <entryRelationship typeCode="RSON">
-                    <observation classCode="OBS" moodCode="EVN">
-                        <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09"/>
-                        <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                        <id extension="45678" root="1.3.6.1.4.1.42424242.4.99930.4.4.1.2.1"/>
-                        <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="282291009" displayName="Diagnosis"/>
-                        <text>
-                            <reference value="#ID0EAAAAAAAAACA"/>
-                        </text>
-                        <statusCode code="completed"/>
-                        <effectiveTime>
-                            <low value="20120815"/>
-                        </effectiveTime>
-                        <!-- includes the code for Costal Chondritis -->
-                        <value xsi:type="CD" code="64109004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Costal Chondritis"/>
-                    </observation>
-                </entryRelationship>
-            </encounter>
-        </entry>
-    </section>
-</component>
+<ClinicalDocument>
+    <!-- This ClinicalDocument's structure is stubbed with the minimum elements necessary
+         to demonstrate the locations of the entries across multiple different sections;
+         however, required content like the document header and section LOINC codes
+         has been omitted. -->
+    <component>
+        <structuredBody>
+            <!-- here is the minimally necessary Reason for Referral section with the text showing the scheduled referral
+            			note: depending upon how the test data are interpreted the content of the text may vary as regards the Scheduled date.
+             -->
+            <component>
+                <section>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.1"/>
+                    <code code="42349-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reason For Referral"/>
+                    <title>Reason For Referral</title>
+                    <text>Pulmonary function tests, Dr. Penny Puffer, Tel: 555-555-1049, 1047 Healthcare Drive, Portland, OR 97005, Scheduled date: 08/17/2012</text>
+                </section>
+            </component>
+            <!-- here is the optional section for Plan of Care with the Planned Encounter -->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+                    <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of Care"/>
+                    <title>Plan of Care</title>
+                    <!-- one Planned Encounter in the human readable text and as a discrete entry -->
+                    <text>
+                        <!-- this section may contain many different Planned items, so we use the table caption to help identify each -->
+                        <table>
+                            <caption>Planned Encounters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td ID="ID0EFFFFFFCA">
+                                        <content ID="ID0EFAAAAACA">Pulmonary Function Tests; Dr. Penny Puffer, Tel: 555-555-1049, 1047 Healthcare Drive, Portland OR 97005</content>
+                                    </td>
+                                    <td>17-Aug-2012</td>
+                                    <td ID="ID0EAAAAAAAAACA">Indication: Costal Chondritis</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <!-- a planned encounter entry -->
+                    <entry>
+                        <!-- encounter with moodCode indicating Intent -->
+                        <encounter classCode="ENC" moodCode="INT">
+                            <!-- Planned Encounter templateId -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.40" extension="2014-06-09"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
+                            <id extension="52487" root="1.3.6.1.42424242.4.99930.4.3.4"/>
+                            <!-- templateId and id are all that are required or specified in C-CDA R1.1; with C-CDA R2.0 the documentation changes quite a bit -->
+                            <!-- code from the Planned Encounter Type value set; 11429006 is reflective of the example data, but local policy and use may result in selection of a different code -->
+                            <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="11429006" displayName="consultation">
+                                <!-- referencing back to the text of the type-->
+                                <originalText>
+                                    <reference value="#ID0EFAAAAACA"/>
+                                </originalText>
+                            </code>
+                            <text>
+                                <!-- referencing the entire text -->
+                                <reference value="#ID0EFFFFFFCA"/>
+                            </text>
+                            <statusCode code="active"/>
+                            <effectiveTime>
+                                <!-- appointment requested for Test date + 2 days , so 8/17/2012 -->
+                                <low value="20120817"/>
+                            </effectiveTime>
+                            <!-- the requested Penny Puffer provider -->
+                            <performer typeCode="PRF">
+                                <assignedEntity>
+                                    <id extension="3333333333" root="2.16.840.1.113883.4.6"/>
+                                    <addr>
+                                        <streetAddressLine>1047 Healthcare Dr</streetAddressLine>
+                                        <city>Portland</city>
+                                        <state>OR</state>
+                                        <postalCode>97005</postalCode>
+                                        <country>US</country>
+                                    </addr>
+                                    <telecom value="tel:+1-(555)555-1049"/>
+                                    <assignedPerson>
+                                        <name>
+                                            <prefix>Dr</prefix>
+                                            <given>Penny</given>
+                                            <family>Puffer</family>
+                                        </name>
+                                    </assignedPerson>
+                                </assignedEntity>
+                            </performer>
+                            <!-- Penny Puffer office location as a service delivery location -->
+                            <participant typeCode="LOC">
+                                <participantRole classCode="SDLOC">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+                                    <code code="1212-0" codeSystem="2.16.840.1.113883.6.259" displayName="Any Age Mixed Acuity Unit"/>
+                                    <telecom nullFlavor="UNK"/>
+                                    <playingEntity classCode="PLC">
+                                        <name>Dr. Penny Puffer Office</name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                            <!-- this references the indication (reason) for the planned encounter; example data suggests the reason was the encounter diagnosis
+            					L)	Encounter Diagnosis
+            						 - Costal Chondritis, [SNOMED-CT: 64109004], Start: 8/15/2012, Active
+            			 -->
+                            <entryRelationship typeCode="RSON">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                                    <id extension="45678" root="1.3.6.1.4.1.42424242.4.99930.4.4.1.2.1"/>
+                                    <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="282291009" displayName="Diagnosis"/>
+                                    <text>
+                                        <reference value="#ID0EAAAAAAAAACA"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime>
+                                        <low value="20120815"/>
+                                    </effectiveTime>
+                                    <!-- includes the code for Costal Chondritis -->
+                                    <value xsi:type="CD" code="64109004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Costal Chondritis"/>
+                                </observation>
+                            </entryRelationship>
+                        </encounter>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

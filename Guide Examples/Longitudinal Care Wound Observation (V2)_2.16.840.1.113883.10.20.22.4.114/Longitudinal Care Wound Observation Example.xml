@@ -1,7 +1,7 @@
 <entry>
   <observation classCode="OBS" moodCode="EVN">
     <!-- Wound Observation template -->
-    <templateId root="2.16.840.1.113883.10.20.22.4.114" extension=�2015-08-01� />
+    <templateId root="2.16.840.1.113883.10.20.22.4.114" extension="2015-08-01" />
     <id root="ab1791b0-5c71-11db-b0de-0800200c9a66" />
     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
     <statusCode code="completed" />
