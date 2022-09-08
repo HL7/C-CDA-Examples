@@ -13,7 +13,7 @@
                 <!-- If you have an id for your goal, include here -->
                 <id nullFlavor="UNK"/>
                 <code nullFlavor="UNK"/>
-                <text><reference value="#Goals"></reference></text>
+                <text><reference value="#Goals" /></text>
                 <statusCode code="active"/>
                 <!-- Author could be included to indicate a patient authored goal or a provider different than the document or section author. -->
                 <!-- See HL7 DSTU comment which relaxed the requirement to include the author (867) -->

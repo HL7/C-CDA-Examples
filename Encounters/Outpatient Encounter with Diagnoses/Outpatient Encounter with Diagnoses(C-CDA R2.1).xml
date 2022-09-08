@@ -44,7 +44,7 @@
                 <originalText><reference value="#Encounter1_type"/>
                 </originalText>
             </code>
-            <text><reference value="#Encounter1"></reference></text>
+            <text><reference value="#Encounter1" /></text>
             <!-- August 15, 2012 - added time (pacific time) since but not present in test data -->
             <effectiveTime value="201208151000-0800"/>
             <!-- Not specified in test data, but could infer Dr. Khan from the test scenario narrative-->
@@ -55,7 +55,7 @@
                     <code code="207R00000X" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Health Care Provider Taxonomy" 
                         displayName="Internal Medicine">
-                        <originalText><reference value="Encounter1_performer_type"></reference></originalText>
+                        <originalText><reference value="Encounter1_performer_type" /></originalText>
                     </code>
                     <assignedPerson>
                         <name>
@@ -116,7 +116,7 @@
                             <!-- Test data is SNOMED but in practice this is probably an ICD9/10 code -->
                             <value xsi:type="CD" code="64109004" displayName="Costal Chondritis"
                                 codeSystem="2.16.840.1.113883.6.96">
-                                <originalText><reference value="#Encounter1_diagnosis"></reference></originalText>
+                                <originalText><reference value="#Encounter1_diagnosis" /></originalText>
                             </value>
                             <entryRelationship typeCode="REFR">
                                 <observation classCode="OBS" moodCode="EVN"> 
@@ -130,7 +130,7 @@
                                     <statusCode code="completed"/>
                                     <value xsi:type="CD" code="55561003" displayName="Active"
                                         codeSystem="2.16.840.1.113883.6.96">
-                                        <originalText><reference value="#Encounter1_diagnosis_status"></reference></originalText>
+                                        <originalText><reference value="#Encounter1_diagnosis_status" /></originalText>
                                     </value>
                                 </observation>                                             
                             </entryRelationship>

@@ -24,7 +24,7 @@
                     <td ID="MS_Type1">Cognitive Status</td> 
                     <td>August 15 2012, 5:32pm</td>
                     <td ID="MS_Finding1">No impairment</td>
-                    <td></td>
+                    <td />
                 </tr>
             </tbody>
         </table>
@@ -38,7 +38,7 @@
             <id root="faa09c19-fa1f-4a6c-ae79-10a3b711550f"/>
             <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="373930000" displayName="Cognitive function finding">
                 <originalText>
-                    <reference value="#MS_Type1"></reference>
+                    <reference value="#MS_Type1" />
                 </originalText>
                 <translation code="75275-8" 
                     displayName="Cognitive function"

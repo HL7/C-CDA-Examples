@@ -6,7 +6,7 @@
                                 codeSystemName="LOINC">
     <translation code="78375-3" displayName="Discharge Diagnosis"
                                     codeSystem="2.16.840.1.113883.6.1"
-                                    codeSystemName="LOINC"></translation>
+                                    codeSystemName="LOINC" />
   </code>
   <title>Discharge Diagnosis</title>
   <text>Diverticula of intestine</text>
