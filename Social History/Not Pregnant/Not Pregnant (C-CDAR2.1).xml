@@ -17,7 +17,7 @@
             <statusCode code="completed"/>
             <effectiveTime value="20110410"/>
             <value xsi:type="CD" code="77386006" 
-                displayName="pregnant" 
+                displayName="Pregnancy" 
                 codeSystem="2.16.840.1.113883.6.96"/>
         </observation>
     </entry>	

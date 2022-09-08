@@ -12,7 +12,7 @@
     </effectiveTime>
     <performer typeCode="PRF">
       <functionCode code="PCP" 
-                displayName="Primary Care Provider"
+                displayName="primary care physician"
                 codeSystem="2.16.840.1.113883.5.88"
                 codeSystemName="ParticipationFunction">
         <originalText>Primary Care Provider</originalText>

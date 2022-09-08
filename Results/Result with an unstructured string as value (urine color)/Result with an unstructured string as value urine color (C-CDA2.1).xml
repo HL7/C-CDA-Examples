@@ -59,7 +59,7 @@
 					<!-- Representing a result returned as unstructured string-->
 					<!-- There may be a code for this and other colors, but this would be practice when the code is not provided or unkonwn-->
 					<value xsi:type="ST">Amber</value>
-					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 				</observation>
 			</component>
 			<!-- A complete urinanalysis would return multiple components, but only the urine color example is shown above-->

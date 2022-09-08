@@ -14,11 +14,11 @@
     <templateId root="2.16.840.1.113883.4.823.1.1.1" extension="2016-07-01"/>
     
     <id root="2.16.840.1.113883.3.3208.101.1" extension="20130607100315-CCDA-CCD"/>
-    <code  code="81334-5" displayName="Personal adv care plan" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    <code  code="81334-5" displayName="Patient Personal advance care plan" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
     <title>Personal Advance Care Document</title>
     
     <effectiveTime value="20140731172200-0600"/>
-    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" />
     <languageCode code="en-US"/>
     <!-- **IMPORTANT** The SetID of the document maps to the "version number" of the advance care plan in the custodian system. -->
     <setId root="2.16.840.1.113883.4.823.1.12345" extension="123"/>

@@ -9,7 +9,7 @@
       <reference value="#ProcedureDesc3"/>
     </originalText>
     <translation code="97802" codeSystem="2.16.840.1.113883.6.12"
-		displayName="Medical nutrition therapy; initial" codeSystemName="CPT"/>
+		displayName="Medical nutrition therapy; initial assessment and intervention, individual, face-to-face with the patient, each 15 minutes" codeSystemName="CPT"/>
     <translation code="S9470" codeSystem="2.16.840.1.113883.6.13"
 		displayName="Nutritional counseling, diet" codeSystemName="HCPCS"/>
   </code>

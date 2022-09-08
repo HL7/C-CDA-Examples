@@ -31,7 +31,7 @@
                         <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
                         <manufacturedMaterial>
                             <code code="166" codeSystem="2.16.840.1.113883.12.292"
-                                displayName="influenza, intradermal, quadrivalent, preservative free"
+                                displayName="influenza, intradermal, quadrivalent, preservative free, injectable"
                                 codeSystemName="CVX">
                                 <originalText>
                                     <reference value="#ImmunizationProduct_1"/>
@@ -54,7 +54,7 @@
                         <!-- Included the reason since it may be relevant to a future clinician or quality measurement -->
                         <templateId root="2.16.840.1.113883.10.20.22.4.53"/>
                         <id root="c1296315-9a6d-45a2-aac0-ee225d375409"/>
-                        <code displayName="Patient Objection" code="PATOBJ"
+                        <code displayName="patient objection" code="PATOBJ"
                             codeSystemName="HL7 ActNoImmunizationReason" codeSystem="2.16.840.1.113883.5.8"/>
                         <statusCode code="completed"/>
                     </observation>								

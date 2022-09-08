@@ -11,7 +11,7 @@
   </code>
   <statusCode code="aborted" />
   <effectiveTime value="20110203" />
-  <priorityCode code="CR" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority" displayName="Callback results" />
+  <priorityCode code="CR" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority" displayName="callback results" />
   <value nullFlavor="NA" />
   <methodCode nullFlavor="UNK" />
   <targetSiteCode code="416949008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Abdomen and pelvis" />

@@ -3,7 +3,7 @@
     <!-- Identifier based on the person's Direct Address which is a secure and trusted mechanism for identifying 
 				a person discretely. The root of the id is the OID of the HISP Assigning Authority for the Direct Address-->
     <id extension="adameveryman@direct.sampleHISP.com" root="2.16.123.123.12345.1234" />
-    <code code="ONESELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code" />
+    <code code="ONESELF" displayName="self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code" />
     <addr use="HP">
       <!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
       <streetAddressLine>2222 Home Street</streetAddressLine>

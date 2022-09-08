@@ -14,7 +14,7 @@
     <templateId root="2.16.840.1.113883.10.20.22.1.4" extension="2015-08-01"/>
     <id extension="TT988" root="2.16.840.1.113883.19.5.99999.1"/>
     <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="11488-4"
-        displayName="Consultation Note">
+        displayName="Consult note">
         <!-- Additional SNOMED code which is equivalent to the LOINC consultation note code -->
         <!-- The quality measure CMS50 v7 requires a concept from 2.16.840.1.113883.3.464.1003.121.12.1006 -->
         <!-- There is a potential for the LOINC codes to be added to the prior value set, although it is not currently available -->
@@ -23,7 +23,7 @@
     </code>
     <title>Community Health Consult Note</title>
     <effectiveTime value="201806230900-0800"/>
-    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" />
     <languageCode code="en-US"/>
     <setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
     <versionNumber value="1"/>
@@ -67,7 +67,7 @@
                 <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238"
                     codeSystemName="Race &amp; Ethnicity - CDC"/>
                 <!-- The raceCode extension is only used if raceCode is valued -->
-                <sdtc:raceCode code="2076-8" displayName="Hawaiian or Other Pacific Islander"
+                <sdtc:raceCode code="2076-8" displayName="Native Hawaiian or Other Pacific Islander"
                     codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
                 <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino"
                     codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
@@ -132,7 +132,7 @@
         <time value="20130731"/>
         <assignedAuthor>
             <id extension="555555555" root="2.16.840.1.113883.4.6"/>
-            <code code="207QA0505X" displayName="Adult Medicine"
+            <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine"
                 codeSystem="2.16.840.1.113883.6.101"
                 codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
             <addr>
@@ -227,7 +227,7 @@
         <signatureCode code="S"/>
         <assignedEntity>
             <id extension="555555555" root="2.16.840.1.113883.4.6"/>
-            <code code="207QA0505X" displayName="Adult Medicine"
+            <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine"
                 codeSystem="2.16.840.1.113883.6.101"
                 codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
             <addr>
@@ -254,7 +254,7 @@
             <!-- Note that the following id corresponds to referral request -->
             <!-- The semantics indicate that the referral was closed/completed -->
             <id root="9a6d1bac-17d3-4195-89a4-1121bc809b4e"/>
-            <code code="103697008" displayName="Patient referral to specialist"
+            <code code="103697008" displayName="Patient referral for dental care"
                 codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96"/>
         </order>
     </inFulfillmentOf>
@@ -262,7 +262,7 @@
         <encompassingEncounter>
             <id extension="9937012" root="2.16.840.1.113883.19"/>
             <code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" code="99213"
-                displayName="Evaluation and Management"/>
+                displayName="Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using time for code selection, 20-29 minutes of total time is spent on the date of the encounter."/>
             <effectiveTime value="20180623"/>
             <location>
                 <healthCareFacility>

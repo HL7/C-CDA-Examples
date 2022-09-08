@@ -7,7 +7,7 @@
     <!-- This Notes Section is most appropriate for an encounter specific document -->
     <!-- If this Notes section were included in a CCD, each Note Activity entry should be linked to an appropriate Encounter entry in the Encounters section -->
     <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
-        displayName="Consultation note"/>
+        displayName="Consult note"/>
     <title>Consultation Notes</title>
     <text>
         <list>
@@ -52,7 +52,7 @@
                 displayName="Note">
                 <!-- Code must match or be equivalent to section code -->
                 <translation code="11488-4" codeSystem="2.16.840.1.113883.6.1"
-                    codeSystemName="LOINC" displayName="Consultation note"/>
+                    codeSystemName="LOINC" displayName="Consult note"/>
             </code>
             <text>
                 <reference value="#ConsultNote1"/>

@@ -60,7 +60,7 @@
                         <translation xsi:type="CD" code="V49.75" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9" displayName="Below Knee Amputation Status" />
                     </value>
                     <!-- Recommendation of task force that laterality on problems should be in targetSiteCode rather than on the value or value/translation elements -->
-                    <targetSiteCode xsi:type="CD" code="30021000" codeSystem="2.16.840.1.113883.6.96" displayName="Lower leg structure">
+                    <targetSiteCode xsi:type="CD" code="30021000" codeSystem="2.16.840.1.113883.6.96" displayName="Structure of lower extremity from knee to ankle">
                         <!-- This is an example of a qualifer which would affect a quality measure (e.g. cms 123 Diabetes Foot Exam) -->
                         <qualifier>
                             <name code="272741003" codeSystem="2.16.840.1.113883.6.96" displayName="Laterality" />

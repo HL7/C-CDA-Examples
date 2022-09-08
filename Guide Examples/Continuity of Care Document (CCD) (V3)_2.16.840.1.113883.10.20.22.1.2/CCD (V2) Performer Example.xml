@@ -4,7 +4,7 @@
   </functionCode>
   <assignedEntity>
     <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-    <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" />
+    <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" />
     <addr>
             ...
         </addr>

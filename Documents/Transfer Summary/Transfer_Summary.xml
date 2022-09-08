@@ -26,10 +26,10 @@
   <templateId root="2.16.840.1.113883.10.20.22.1.13" />
   <id root="04fc2b90-10e0-11e2-892e-0800200c9a66" />
   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18761-7"
-    displayName="Provider Unspecified Transfer Summary" />
+    displayName="Transfer summary note" />
   <title>Transfer Summary</title>
   <effectiveTime value="201309210500-0800" />
-  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" />
   <languageCode code="eng" />
   <setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19" />
   <versionNumber value="1" />
@@ -74,7 +74,7 @@
         <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238"
           codeSystemName="Race &amp; Ethnicity - CDC" />
         <!-- The raceCode extension is only used if raceCode is valued -->
-        <sdtc:raceCode code="2076-8" displayName="Hawaiian or Other Pacific Islander"
+        <sdtc:raceCode code="2076-8" displayName="Native Hawaiian or Other Pacific Islander"
           codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
         <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238"
           codeSystemName="Race &amp; Ethnicity - CDC" />
@@ -139,7 +139,7 @@
     <time value="20130730" />
     <assignedAuthor>
       <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
       <addr>
         <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -251,7 +251,7 @@
     <signatureCode code="S" />
     <assignedEntity>
       <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
       <addr>
         <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -277,7 +277,7 @@
     <signatureCode code="S" />
     <assignedEntity>
       <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
       <addr>
         <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -322,11 +322,11 @@
   </participant>
   <!-- Patient Support Identification -->
   <participant typeCode="IND">
-    <functionCode code="407543004" displayName="Primary Carer" codeSystem="2.16.840.1.113883.6.96"
+    <functionCode code="407543004" displayName="Primary caregiver" codeSystem="2.16.840.1.113883.6.96"
       codeSystemName="SNOMED-CT" />
     <!-- Caregiver -->
     <associatedEntity classCode="CAREGIVER">
-      <code code="MTH" codeSystem="2.16.840.1.113883.5.111" />
+      <code code="MTH" codeSystem="2.16.840.1.113883.5.111" displayName="mother" />
       <addr>
         <streetAddressLine>17 Daws Rd.</streetAddressLine>
         <city>Ann Arbor</city>
@@ -352,12 +352,12 @@
       </effectiveTime>
       <performer typeCode="PRF">
         <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction"
-          displayName="Primary Care Provider">
+          displayName="primary care physician">
           <originalText>Primary Care Provider</originalText>
         </functionCode>
         <assignedEntity>
           <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-          <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+          <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
             codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
           <addr>
             <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -392,7 +392,7 @@
       <performer typeCode="PRF">
         <assignedEntity>
           <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-          <code code="207RN0300X" displayName="Nephrologist" codeSystem="2.16.840.1.113883.6.101"
+          <code code="207RN0300X" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Nephrology" codeSystem="2.16.840.1.113883.6.101"
             codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
           <addr>
             <streetAddressLine>1004 Healthcare Drive</streetAddressLine>
@@ -497,7 +497,7 @@ ALLERGIES AND INTOLERANCES SECTION (ENTRIES REQUIRED) V2
                 <time value="199805011145-0800" />
                 <assignedAuthor>
                   <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                  <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                 </assignedAuthor>
               </author>
@@ -525,7 +525,7 @@ ALLERGIES AND INTOLERANCES SECTION (ENTRIES REQUIRED) V2
                     <time value="199805011145-0800" />
                     <assignedAuthor>
                       <id extension="222223333" root="2.16.840.1.113883.4.6" />
-                      <code code="207KA0200X" displayName="Allergy" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207KA0200X" displayName="Allopathic &amp; Osteopathic Physicians; Allergy &amp; Immunology, Allergy" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -607,7 +607,7 @@ ALLERGIES AND INTOLERANCES SECTION (ENTRIES REQUIRED) V2
                 <time value="199805011145-0800" />
                 <assignedAuthor>
                   <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                  <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                 </assignedAuthor>
               </author>
@@ -634,14 +634,14 @@ ALLERGIES AND INTOLERANCES SECTION (ENTRIES REQUIRED) V2
                     <time value="201010110915-0800" />
                     <assignedAuthor>
                       <id extension="222223333" root="2.16.840.1.113883.4.6" />
-                      <code code="207KA0200X" displayName="Allergy" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207KA0200X" displayName="Allopathic &amp; Osteopathic Physicians; Allergy &amp; Immunology, Allergy" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
                   <participant typeCode="CSM">
                     <participantRole classCode="MANU">
                       <playingEntity classCode="MMAT">
-                        <code code="2670" displayName="Codeine" codeSystem="2.16.840.1.113883.6.88"
+                        <code code="2670" displayName="codeine" codeSystem="2.16.840.1.113883.6.88"
                           codeSystemName="RxNorm" />
                       </playingEntity>
                     </participantRole>
@@ -751,7 +751,7 @@ ADVANCE DIRECTIVES V2
                 <time value="201308011235-0800" />
                 <assignedAuthor>
                   <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c" />
-                  <code code="163W00000X" displayName="Registered nurse" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="163W00000X" displayName="Nursing Service Providers; Registered Nurse" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                   <assignedPerson>
                     <name>
@@ -777,14 +777,14 @@ ADVANCE DIRECTIVES V2
                     <low value="20110219" />
                     <high nullFlavor="NA" />
                   </effectiveTime>
-                  <value xsi:type="CD" code="304253006" displayName="Do not resuscitate"
+                  <value xsi:type="CD" code="304253006" displayName="Not for resuscitation"
                     codeSystem="2.16.840.1.113883.6.96" />
                   <author>
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="201308011235-0800" />
                     <assignedAuthor>
                       <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c" />
-                      <code code="163W00000X" displayName="Registered nurse" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="163W00000X" displayName="Nursing Service Providers; Registered Nurse" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                       <assignedPerson>
                         <name>
@@ -803,7 +803,7 @@ ADVANCE DIRECTIVES V2
                     <time value="201102019" />
                     <participantRole>
                       <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                       <playingEntity>
                         <name>
@@ -856,7 +856,7 @@ ASSESSMENT SECTION
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.22.2.8" />
-          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51848-0" displayName="ASSESSMENT" />
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51848-0" displayName="Evaluation note" />
           <title>ASSESSMENT</title>
           <text>
             <list listType="ordered">
@@ -909,7 +909,7 @@ ENCOUNTERS SECTION (ENTRIES REQUIRED)
               <templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2014-06-09" />
               <!-- Encounter Activities V2 -->
               <id root="2a620155-9d11-439e-92b3-5d9815ff4de8" />
-              <code code="99241" displayName="Office consultation - 15 minutes" codeSystemName="CPT"
+              <code code="99241" displayName="Office consultation for a new or established patient, which requires these 3 key components: A problem focused history; A problem focused examination; and Straightforward medical decision making. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are self limited or minor. Typically, 15 minutes are spent face-to-face with the patient and/or family." codeSystemName="CPT"
                 codeSystem="2.16.840.1.113883.6.12" codeSystemVersion="4">
                 <originalText>Checkup Examination<reference value="#Encounter1" />
                 </originalText>
@@ -921,7 +921,7 @@ ENCOUNTERS SECTION (ENTRIES REQUIRED)
                 <assignedEntity>
                   <id />
                   <code code="59058001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
-                    displayName="General Physician" />
+                    displayName="General physician" />
                   <addr>
                     <streetAddressLine>102 Health Drive</streetAddressLine>
                     <city>Ann Arbor</city>
@@ -949,7 +949,7 @@ ENCOUNTERS SECTION (ENTRIES REQUIRED)
                   <templateId root="2.16.840.1.113883.10.20.22.4.32" />
                   <!-- Service Delivery Location template -->
                   <code code="1060-3" codeSystem="2.16.840.1.113883.6.259"
-                    codeSystemName="HL7 HealthcareServiceLocation" displayName="Inpatient medical ward" />
+                    codeSystemName="HL7 HealthcareServiceLocation" displayName="Medical Ward" />
                   <addr>
                     <streetAddressLine>17 Daws Rd.</streetAddressLine>
                     <city>Blue Bell</city>
@@ -1022,7 +1022,7 @@ FAMILY HISTORY V1
               <statusCode code="completed" />
               <subject>
                 <relatedSubject classCode="PRS">
-                  <code code="FTH" displayName="Father" codeSystemName="FamilyRelationshipRoleType"
+                  <code code="FTH" displayName="father" codeSystemName="FamilyRelationshipRoleType"
                     codeSystem="2.16.840.1.113883.5.111">
                     <translation code="9947008" displayName="Biological father" codeSystemName="SNOMED"
                       codeSystem="2.16.840.1.113883.6.96" />
@@ -1041,7 +1041,7 @@ FAMILY HISTORY V1
                   <!-- ** Family history observation ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2014-06-09" />
                   <id root="d42ebf70-5c89-11db-b0de-0800200c9a66" />
-                  <code code="64572001" displayName="Condition" codeSystemName="SNOMED CT"
+                  <code code="64572001" displayName="Disease" codeSystemName="SNOMED CT"
                     codeSystem="2.16.840.1.113883.6.96" />
                   <statusCode code="completed" />
                   <effectiveTime value="1967" />
@@ -1073,7 +1073,7 @@ FAMILY HISTORY V1
                   <!-- ** Family history observation ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2014-06-09" />
                   <id root="5bfe3ec0-5c8b-11db-b0de-0800200c9a66" />
-                  <code code="64572001" displayName="Condition" codeSystemName="SNOMED CT"
+                  <code code="64572001" displayName="Disease" codeSystemName="SNOMED CT"
                     codeSystem="2.16.840.1.113883.6.96" />
                   <statusCode code="completed" />
                   <effectiveTime value="1950" />
@@ -1106,7 +1106,7 @@ FUNCTIONAL STATUS V2
         <section>
           <templateId root="2.16.840.1.113883.10.20.22.2.14" extension="2014-06-09" />
           <!-- Functional Status Section template V2-->
-          <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional Status" />
+          <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional status assessment note" />
           <title>FUNCTIONAL STATUS</title>
           <text>
             <table border="1" width="100%">
@@ -1143,7 +1143,7 @@ FUNCTIONAL STATUS V2
                 <time value="201307061145-0800" />
                 <assignedAuthor>
                   <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                  <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                 </assignedAuthor>
               </author>
@@ -1159,14 +1159,14 @@ FUNCTIONAL STATUS V2
                   </text>
                   <statusCode code="completed" />
                   <effectiveTime value="20130311" />
-                  <value xsi:type="CD" code="165245003" displayName=" Independent walking"
+                  <value xsi:type="CD" code="165245003" displayName="Independent walking"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="201307061145-0800" />
                     <assignedAuthor>
                       <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -1213,7 +1213,7 @@ FUNCTIONAL STATUS V2
                     <time value="201307061148-0800" />
                     <assignedAuthor>
                       <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -1231,7 +1231,7 @@ GENERAL STATUS V1
       <component>
         <section>
           <templateId root="2.16.840.1.113883.10.20.2.5" />
-          <code code="10210-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GENERAL STATUS" />
+          <code code="10210-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Physical findings of General status Narrative" />
           <title>GENERAL STATUS</title>
           <text>
             <paragraph>Alert and in good spirits, mild distress.</paragraph>
@@ -1350,7 +1350,7 @@ HOSPITAL DISCHARGE DIAGNOSIS SECTION V2
                     <low value="20130212" />
                   </effectiveTime>
                   <value xsi:type="CD" code="49008000" codeSystem="2.16.840.1.113883.6.96"
-                    displayName="Kidney malrotation" />
+                    displayName="Malrotation of kidney" />
                   <author>
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="200130311" />
@@ -1453,14 +1453,14 @@ IMMUNIZATIONS SECTION (entries required) V2
               <statusCode code="completed" />
               <effectiveTime value="199911" />
               <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1"
-                codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular injection" />
+                codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular Route of Administration" />
               <doseQuantity value="50" unit="ug" />
               <consumable>
                 <manufacturedProduct classCode="MANU">
                   <!-- ** Immunization medication information ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
                   <manufacturedMaterial>
-                    <code code="88" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza virus vaccine"
+                    <code code="88" codeSystem="2.16.840.1.113883.12.292" displayName="influenza virus vaccine, unspecified formulation"
                       codeSystemName="CVX">
                       <originalText>Influenza, seasonal, IM</originalText>
                       <translation code="141" displayName="Influenza, seasonal, injectable" codeSystemName="CVX"
@@ -1503,7 +1503,7 @@ IMMUNIZATIONS SECTION (entries required) V2
                 <time value="20130730" />
                 <assignedAuthor>
                   <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                  <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                   <addr>
                     <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -1527,7 +1527,7 @@ IMMUNIZATIONS SECTION (entries required) V2
                 <act classCode="ACT" moodCode="INT">
                   <!-- ** Instructions ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.20" extension="2014-06-09" />
-                  <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education" />
+                  <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="Immunization education" />
                   <text>
                     <reference value="#immunSect" /> Possible flu-like symptoms for three days. </text>
                   <statusCode code="completed" />
@@ -1546,14 +1546,14 @@ IMMUNIZATIONS SECTION (entries required) V2
               <statusCode code="completed" />
               <effectiveTime value="19981215" />
               <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1"
-                codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular injection" />
+                codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular Route of Administration" />
               <doseQuantity value="50" unit="ug" />
               <consumable>
                 <manufacturedProduct classCode="MANU">
                   <!-- ** Immunization medication information ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
                   <manufacturedMaterial>
-                    <code code="88" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza virus vaccine"
+                    <code code="88" codeSystem="2.16.840.1.113883.12.292" displayName="influenza virus vaccine, unspecified formulation"
                       codeSystemName="CVX">
                       <originalText>
                         <reference value="#immi2" />
@@ -1598,7 +1598,7 @@ IMMUNIZATIONS SECTION (entries required) V2
                 <time value="20130730" />
                 <assignedAuthor>
                   <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                  <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                   <addr>
                     <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -1622,7 +1622,7 @@ IMMUNIZATIONS SECTION (entries required) V2
                 <act classCode="ACT" moodCode="INT">
                   <!-- ** Instructions ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.20" extension="2014-06-09" />
-                  <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education" />
+                  <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="Immunization education" />
                   <text>
                     <reference value="#immunSect" /> Possible flu-like symptoms for three days. </text>
                   <statusCode code="completed" />
@@ -1641,7 +1641,7 @@ IMMUNIZATIONS SECTION (entries required) V2
               <statusCode code="completed" />
               <effectiveTime value="19981215" />
               <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1"
-                codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular injection" />
+                codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular Route of Administration" />
               <doseQuantity value="50" unit="ug" />
               <consumable>
                 <manufacturedProduct classCode="MANU">
@@ -1649,11 +1649,11 @@ IMMUNIZATIONS SECTION (entries required) V2
                   <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
                   <manufacturedMaterial>
                     <code code="33" codeSystem="2.16.840.1.113883.12.292"
-                      displayName="Pneumococcal polysaccharide vaccine" codeSystemName="CVX">
+                      displayName="pneumococcal polysaccharide vaccine, 23 valent" codeSystemName="CVX">
                       <originalText>
                         <reference value="#immi3" />
                       </originalText>
-                      <translation code="109" displayName="Pneumococcal NOS" codeSystemName="CVX"
+                      <translation code="109" displayName="pneumococcal vaccine, unspecified formulation" codeSystemName="CVX"
                         codeSystem="2.16.840.1.113883.12.292" />
                     </code>
                     <lotNumberText>1</lotNumberText>
@@ -1693,7 +1693,7 @@ IMMUNIZATIONS SECTION (entries required) V2
                 <time value="20130730" />
                 <assignedAuthor>
                   <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                  <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                   <addr>
                     <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -1726,7 +1726,7 @@ IMMUNIZATIONS SECTION (entries required) V2
               <statusCode code="completed" />
               <effectiveTime value="19981215" />
               <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1"
-                codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular injection" />
+                codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular Route of Administration" />
               <doseQuantity value="50" unit="ug" />
               <consumable>
                 <manufacturedProduct classCode="MANU">
@@ -1734,11 +1734,11 @@ IMMUNIZATIONS SECTION (entries required) V2
                   <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
                   <manufacturedMaterial>
                     <code code="103" codeSystem="2.16.840.1.113883.12.292"
-                      displayName="Tetanus and diphtheria toxoids - preservative free" codeSystemName="CVX">
+                      displayName="meningococcal C conjugate vaccine" codeSystemName="CVX">
                       <originalText>
                         <reference value="#immi4" />
                       </originalText>
-                      <translation code="09" displayName="Tetanus and diphtheria toxoids - preservative free"
+                      <translation code="09" displayName="tetanus and diphtheria toxoids, adsorbed, preservative free, for adult use"
                         codeSystemName="CVX" codeSystem="2.16.840.1.113883.12.292" />
                     </code>
                     <lotNumberText>1</lotNumberText>
@@ -1778,7 +1778,7 @@ IMMUNIZATIONS SECTION (entries required) V2
                 <time value="20130730" />
                 <assignedAuthor>
                   <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                  <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                   <addr>
                     <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -1803,7 +1803,7 @@ IMMUNIZATIONS SECTION (entries required) V2
                   <!-- ** Immunization refusal ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.53" />
                   <id root="2a620155-9d11-439e-92b3-5d9815ff4dd8" />
-                  <code displayName="Patient Objection" code="PATOBJ" codeSystemName="HL7 ActNoImmunizationReason"
+                  <code displayName="patient objection" code="PATOBJ" codeSystemName="HL7 ActNoImmunizationReason"
                     codeSystem="2.16.840.1.113883.5.8" />
                   <statusCode code="completed" />
                 </observation>
@@ -1818,13 +1818,13 @@ IMMUNIZATIONS SECTION (entries required) V2
               <statusCode code="completed" />
               <effectiveTime value="20130801" />
               <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1"
-                codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular injection" />
+                codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular Route of Administration" />
               <consumable>
                 <manufacturedProduct classCode="MANU">
                   <!-- ** Immunization medication information ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
                   <manufacturedMaterial>
-                    <code code="45" codeSystem="2.16.840.1.113883.12.292" displayName="Hepatitis B vaccine"
+                    <code code="45" codeSystem="2.16.840.1.113883.12.292" displayName="hepatitis B vaccine, unspecified formulation"
                       codeSystemName="CVX" />
                     <lotNumberText>1</lotNumberText>
                   </manufacturedMaterial>
@@ -1860,7 +1860,7 @@ IMMUNIZATIONS SECTION (entries required) V2
                 <time value="20130730" />
                 <assignedAuthor>
                   <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                  <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                   <addr>
                     <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -2027,20 +2027,20 @@ MEDICAL EQUIPMENT V2
               <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09" />
               <id root="d5b614bd-01ce-410d-8726-e1fd01dcc72a" />
               <code code="103716009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
-                displayName="Stent Placement">
+                displayName="Placement of stent">
                 <originalText>
                   <reference value="#Proc1" />
                 </originalText>
               </code>
               <statusCode code="completed" />
               <effectiveTime value="20130512" />
-              <targetSiteCode code="28273000" displayName="bile duct" codeSystem="2.16.840.1.113883.6.96"
+              <targetSiteCode code="28273000" displayName="Bile duct structure" codeSystem="2.16.840.1.113883.6.96"
                 codeSystemName="SNOMED CT" />
               <specimen typeCode="SPC">
                 <specimenRole classCode="SPEC">
                   <id root="a6d7b927-2b70-43c7-bdf3-0e7c4133062c" />
                   <specimenPlayingEntity>
-                    <code code="57259009" codeSystem="2.16.840.1.113883.6.96" displayName="gallbladder bile" />
+                    <code code="57259009" codeSystem="2.16.840.1.113883.6.96" displayName="Gallbladder bile" />
                   </specimenPlayingEntity>
                 </specimenRole>
               </specimen>
@@ -2083,7 +2083,7 @@ MENTAL STATUS SECTION (NEW)
         <section>
           <templateId root="2.16.840.1.113883.10.20.22.2.56" />
           <!-- Mental Status Section -->
-          <code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MENTAL STATUS" />
+          <code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Mental status Narrative" />
           <title>MENTAL STATUS</title>
           <text>
             <table border="1" width="100%">
@@ -2123,7 +2123,7 @@ MENTAL STATUS SECTION (NEW)
               <!-- Mental Status Observation template -->
               <templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2014-06-09" />
               <id root="c12ecaaf-53f8-4593-8f79-359aeaa3948b" />
-              <code code="75275-8" displayName="Cognitive function" codeSystem="2.16.840.1.113883.6.1"
+              <code code="75275-8" displayName="Cognitive function [Interpretation]" codeSystem="2.16.840.1.113883.6.1"
                 codeSystemName="LOINC" />
               <statusCode code="completed" />
               <effectiveTime value="20130311" />
@@ -2157,7 +2157,7 @@ MENTAL STATUS SECTION (NEW)
               <!-- Mental Status Oservation V2 -->
               <templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2014-06-09" />
               <id root="c6b5a04b-2bf4-49d1-8336-636a3813df0a" />
-              <code code="75275-8" displayName="Cognitive function" codeSystem="2.16.840.1.113883.6.1"
+              <code code="75275-8" displayName="Cognitive function [Interpretation]" codeSystem="2.16.840.1.113883.6.1"
                 codeSystemName="LOINC" />
               <statusCode code="completed" />
               <effectiveTime value="20130311" />
@@ -2198,11 +2198,11 @@ MENTAL STATUS SECTION (NEW)
                   <!-- Mental Status Oservation V2 -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2014-06-09" />
                   <id root="c6b5a04b-2bf4-49d1-8336-636a3813df0a" />
-                  <code code="75275-8" displayName="Cognitive function" codeSystem="2.16.840.1.113883.6.1"
+                  <code code="75275-8" displayName="Cognitive function [Interpretation]" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC" />
                   <statusCode code="completed" />
                   <effectiveTime value="20130311" />
-                  <value xsi:type="CD" code="286569004" displayName="difficulty understanding own emotions"
+                  <value xsi:type="CD" code="286569004" displayName="Difficulty understanding own emotions"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
                   <author>
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
@@ -2232,11 +2232,11 @@ MENTAL STATUS SECTION (NEW)
                   <!-- Mental Status Oservation V2 -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2014-06-09" />
                   <id root="c6b5a04b-2bf4-49d1-8336-636a3813df0a" />
-                  <code code="75275-8" displayName="Cognitive function" codeSystem="2.16.840.1.113883.6.1"
+                  <code code="75275-8" displayName="Cognitive function [Interpretation]" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC" />
                   <statusCode code="completed" />
                   <effectiveTime value="20130311" />
-                  <value xsi:type="CD" code="288760009" displayName="difficulty communicating thoughts"
+                  <value xsi:type="CD" code="288760009" displayName="Difficulty communicating thoughts"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
                   <author>
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
@@ -2293,24 +2293,24 @@ NUTRITION SECTION
               <statusCode code="completed" />
               <effectiveTime value="20130512" />
               <value xsi:type="CD" code="248324001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"
-                displayName="well nourished" />
+                displayName="Well nourished" />
               <entryRelationship typeCode="SUBJ">
                 <observation classCode="OBS" moodCode="EVN">
                   <!-- ** Nutrition Assessment** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.138" />
                   <id root="ab1791b0-5c71-11db-b0de-0800200c9a66" />
-                  <code code="75303-8" displayName="Nutrition assessment" codeSystem="2.16.840.1.113883.6.1"
+                  <code code="75303-8" displayName="Nutrition assessment Narrative" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC" />
                   <statusCode code="completed" />
                   <effectiveTime value="20130512" />
-                  <value xsi:type="CD" code="386619000" displayName="low sodium diet (finding)"
+                  <value xsi:type="CD" code="386619000" displayName="Low sodium diet (finding)"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="20130730" />
                     <assignedAuthor>
                       <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                       <addr>
                         <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -2337,7 +2337,7 @@ NUTRITION SECTION
                   <!-- ** Nutrition Assessment ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.138" />
                   <id root="ab1791b0-5c71-11db-b0de-0800200c9a66" />
-                  <code code="75303-8" displayName="Nutrition assessment" codeSystem="2.16.840.1.113883.6.1"
+                  <code code="75303-8" displayName="Nutrition assessment Narrative" codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC" />
                   <statusCode code="completed" />
                   <effectiveTime value="20130512" />
@@ -2348,7 +2348,7 @@ NUTRITION SECTION
                     <time value="20130730" />
                     <assignedAuthor>
                       <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                       <addr>
                         <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -2431,7 +2431,7 @@ MEDICATIONS SECTION V2
                 <period value="6" unit="h" />
               </effectiveTime>
               <routeCode code="C38216" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"
-                displayName="RESPIRATORY (INHALATION)" />
+                displayName="Inhalation Route of Administration" />
               <doseQuantity value="2" />
               <administrationUnitCode code="PUFF" displayName="Puff" codeSystem="2.16.840.1.113883.5.85"
                 codeSystemName="orderableDrugForm" />
@@ -2441,7 +2441,7 @@ MEDICATIONS SECTION V2
                   <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09" />
                   <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8" />
                   <manufacturedMaterial>
-                    <code code="573621" displayName="Proventil 0.09 MG/ACTUAT inhalant solution"
+                    <code code="573621" displayName="albuterol 0.09 MG/ACTUAT [Proventil]"
                       codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" />
                   </manufacturedMaterial>
                   <manufacturerOrganization>
@@ -2466,7 +2466,7 @@ MEDICATIONS SECTION V2
                 <participantRole classCode="MANU">
                   <!-- ** Drug vehicle ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.24" />
-                  <code code="412307009" displayName="drug vehicle" codeSystem="2.16.840.1.113883.6.96" />
+                  <code code="412307009" displayName="Drug vehicle" codeSystem="2.16.840.1.113883.6.96" />
                   <playingEntity classCode="MMAT">
                     <code code="324049" displayName="Aerosol" codeSystem="2.16.840.1.113883.6.88"
                       codeSystemName="RxNorm" />
@@ -2479,7 +2479,7 @@ MEDICATIONS SECTION V2
                   <!-- ** Indication ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09" />
                   <id root="db734647-fc99-424c-a864-7e3cda82e703" extension="45665" />
-                  <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96"
+                  <code code="404684003" displayName="Clinical finding" codeSystem="2.16.840.1.113883.6.96"
                     codeSystemName="SNOMED CT" />
                   <statusCode code="completed" />
                   <effectiveTime>
@@ -2493,7 +2493,7 @@ MEDICATIONS SECTION V2
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.123" />
                   <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8" />
-                  <code code="395170001" displayName="medication monitoring(regine/therapy"
+                  <code code="395170001" displayName="Medication monitoring"
                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" />
                   <statusCode code="completed" />
                   <effectiveTime xsi:type="IVL_TS">
@@ -2529,7 +2529,7 @@ MEDICATIONS SECTION V2
                 <period value="12" unit="h" />
               </effectiveTime>
               <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"
-                displayName="ORAL" />
+                displayName="Oral Route of Administration" />
               <doseQuantity value="1" />
               <consumable>
                 <manufacturedProduct classCode="MANU">
@@ -2537,7 +2537,7 @@ MEDICATIONS SECTION V2
                   <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09" />
                   <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8" />
                   <manufacturedMaterial>
-                    <code code="197380" displayName="Atenolol 25 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88"
+                    <code code="197380" displayName="atenolol 25 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88"
                       codeSystemName="RxNorm" />
                   </manufacturedMaterial>
                 </manufacturedProduct>
@@ -2547,10 +2547,10 @@ MEDICATIONS SECTION V2
                   <!-- ** Indication V2 ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09" />
                   <id root="e63166c7-6482-4a44-83a1-37ccdbde725b" />
-                  <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96"
+                  <code code="404684003" displayName="Clinical finding" codeSystem="2.16.840.1.113883.6.96"
                     codeSystemName="SNOMED CT" />
                   <statusCode code="completed" />
-                  <value xsi:type="CD" code="38341003" displayName="Hypertension" codeSystem="2.16.840.1.113883.6.96" />
+                  <value xsi:type="CD" code="38341003" displayName="Hypertensive disorder, systemic arterial" codeSystem="2.16.840.1.113883.6.96" />
                 </observation>
               </entryRelationship>
             </substanceAdministration>
@@ -2614,7 +2614,7 @@ PAYERS SECTION V2
                     <templateId root="2.16.840.1.113883.10.20.22.4.87" />
                     <assignedEntity>
                       <id root="2.16.840.1.113883.19" />
-                      <code code="PAYOR" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleClassRelationship" />
+                      <code code="PAYOR" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleClassRelationship" displayName="invoice payor" />
                       <addr use="WP">
                         <!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
                         <streetAddressLine>123 Insurance Road</streetAddressLine>
@@ -2637,7 +2637,7 @@ PAYERS SECTION V2
                     <time />
                     <assignedEntity>
                       <id root="329fcdf0-7ab3-11db-9fe1-0800200c9a66" />
-                      <code code="GUAR" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleClassRelationship" />
+                      <code code="GUAR" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleClassRelationship" displayName="guarantor" />
                       <addr use="HP">
                         <!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
                         <streetAddressLine>17 Daws Rd.</streetAddressLine>
@@ -2668,7 +2668,7 @@ PAYERS SECTION V2
                     <participantRole classCode="PAT">
                       <id root="14d4a520-7aae-11db-9fe1-0800200c9a66" extension="1138345" />
                       <!-- Health plan ID for patient. -->
-                      <code code="SELF" codeSystem="2.16.840.1.113883.5.111" displayName="Self" />
+                      <code code="SELF" codeSystem="2.16.840.1.113883.5.111" displayName="self" />
                       <addr use="HP">
                         <!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
                         <streetAddressLine>17 Daws Rd.</streetAddressLine>
@@ -2767,7 +2767,7 @@ PAYERS SECTION V2
                   <value xsi:type="CD" code="425144005" codeSystem="2.16.840.1.113883.6.6"
                     displayName="pressure ulcer stage 3" />
                   <targetSiteCode code="182295001" codeSystem="2.16.840.1.113883.6.96"
-                    displayName="anterior aspect of knee"> </targetSiteCode>
+                    displayName="Structure of anterior aspect of knee"> </targetSiteCode>
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="200130311" />
@@ -2850,7 +2850,7 @@ PAYERS SECTION V2
                         displayName=" Highest Pressure Ulcer Stage" />
                       <statusCode code="completed" />
                       <value xsi:type="CD" code="421306004" codeSystem="2.16.840.1.113883.6.96"
-                        displayName="necrotic eschar" />
+                        displayName="Necrotic eschar" />
                     </observation>
                   </entryRelationship>
                 </observation>
@@ -2870,7 +2870,7 @@ PLAN OF TREATMENT V2
         <section>
           <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09" />
           <!--  **** Plan of Treatment section V2 template  **** -->
-          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan" />
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of care note" />
           <title>TREATMENT PLAN</title>
           <text>
             <content styleCode="Bold"> Hand-off Communication:</content>
@@ -2960,7 +2960,7 @@ PLAN OF TREATMENT V2
             <act classCode="ACT" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.141" />
               <code code="432138007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
-                displayName="handoff communication (procedure)" />
+                displayName="Handoff communication (procedure)" />
               <statusCode code="completed" />
               <effectiveTime value="20130712" />
               <author typeCode="AUT">
@@ -2969,7 +2969,7 @@ PLAN OF TREATMENT V2
                 <assignedAuthor>
                   <id root="d839038b-7171-4165-a760-467925b43857" />
                   <code code="163W00000X" codeSystem="2.16.840.1.113883.6.101"
-                    codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Registered nurse" />
+                    codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Nursing Service Providers; Registered Nurse" />
                   <assignedPerson>
                     <name>
                       <given>Nurse</given>
@@ -2983,7 +2983,7 @@ PLAN OF TREATMENT V2
                 <participantRole>
                   <id extension="1138345" root="2.16.840.1.113883.19" />
                   <code code="163W00000X" codeSystem="2.16.840.1.113883.6.101"
-                    codeSystemName="NUCC Health Care Provider Taxonomy" displayName="Registered Nurse" />
+                    codeSystemName="NUCC Health Care Provider Taxonomy" displayName="Nursing Service Providers; Registered Nurse" />
                   <addr>
                     <streetAddressLine>1006 Health Drive</streetAddressLine>
                     <city>Ann Arbor</city>
@@ -3008,7 +3008,7 @@ PLAN OF TREATMENT V2
               <templateId root="2.16.840.1.113883.10.20.22.4.40" extension="2014-06-09" />
               <!-- Planned Encounter V2 template -->
               <id root="9a6d1bac-17d3-4195-89a4-1121bc809b4d" />
-              <code code="185349003" displayName="encounter for check-up (procedure)" codeSystemName="SNOMED CT"
+              <code code="185349003" displayName="Encounter for check up (procedure)" codeSystemName="SNOMED CT"
                 codeSystem="2.16.840.1.113883.6.96"> </code>
               <statusCode code="active" />
               <effectiveTime value="20130615" />
@@ -3016,7 +3016,7 @@ PLAN OF TREATMENT V2
                 <assignedEntity>
                   <id root="2a620155-9d11-439e-92a3-5d9815ff4de8" />
                   <code code="158965000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"
-                    displayName="Medical Practitioner" />
+                    displayName="Medical practitioner" />
                   <addr>
                     <streetAddressLine>1006 Health Drive</streetAddressLine>
                     <city>Ann Arbor</city>
@@ -3039,7 +3039,7 @@ PLAN OF TREATMENT V2
                 <time value="20130730" />
                 <assignedAuthor>
                   <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                  <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                   <addr>
                     <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -3088,7 +3088,7 @@ PLAN OF TREATMENT V2
                     <time value="20130730" />
                     <assignedAuthor>
                       <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                       <addr>
                         <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -3137,7 +3137,7 @@ PLAN OF TREATMENT V2
                 <time value="20130730" />
                 <assignedAuthor>
                   <id root="d839038b-7171-4165-a760-467925b43857" />
-                  <code code="163W00000X" displayName="Registered nurse" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="163W00000X" displayName="Nursing Service Providers; Registered Nurse" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                   <assignedPerson>
                     <name>
@@ -3227,13 +3227,13 @@ PLAN OF TREATMENT V2
               <templateId root="2.16.840.1.113883.10.20.22.4.39" extension="2014-06-09" />
               <!-- Planned Act (V2) -->
               <id root="9a6d1bac-17d3-4195-89a4-1121bc809a5c" />
-              <code code="225358003" displayName="wound care (regime/therapy)" codeSystem="2.16.840.1.113883.6.96"
+              <code code="225358003" displayName="Wound care (regime/therapy)" codeSystem="2.16.840.1.113883.6.96"
                 codeSystemName="SNOMED CT" />
               <statusCode code="active" />
               <effectiveTime value="20130615" />
               <participant typeCode="IND">
                 <participantRole classCode="IND">
-                  <code code="MTH" codeSystem="2.16.840.1.113883.5.111" displayName="Mother" />
+                  <code code="MTH" codeSystem="2.16.840.1.113883.5.111" displayName="mother" />
                 </participantRole>
               </participant>
               <!-- Priority Preference -->
@@ -3275,7 +3275,7 @@ PLAN OF TREATMENT V2
                     <time value="20130730" />
                     <assignedAuthor>
                       <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                       <addr>
                         <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -3304,7 +3304,7 @@ PLAN OF TREATMENT V2
               <!-- Nutrition Recommendation ACT-->
               <templateId root="2.16.840.1.113883.10.20.22.4.130" />
               <id root="9a6d1bac-17d3-4195-89a4-1121bc809a5c" />
-              <code code="61310001" displayName="nutrition eduction" codeSystem="2.16.840.1.113883.6.96"
+              <code code="61310001" displayName="Nutrition education" codeSystem="2.16.840.1.113883.6.96"
                 codeSystemName="SNOMED CT" />
               <statusCode code="active" />
               <effectiveTime value="20130512" />
@@ -3421,7 +3421,7 @@ PLAN OF TREATMENT V2
                     <time value="20130730" />
                     <assignedAuthor>
                       <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                       <addr>
                         <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -3460,10 +3460,10 @@ PLAN OF TREATMENT V2
                   <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" />
                   <!--  ********   Immunization Medication Information    ******** -->
                   <manufacturedMaterial>
-                    <code code="88" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza virus vaccine"
+                    <code code="88" codeSystem="2.16.840.1.113883.12.292" displayName="influenza virus vaccine, unspecified formulation"
                       codeSystemName="CVX">
                       <originalText>Influenza virus vaccine</originalText>
-                      <translation code="111" displayName="influenza, live, intranasal" codeSystemName="CVX"
+                      <translation code="111" displayName="influenza virus vaccine, live, attenuated, for intranasal use" codeSystemName="CVX"
                         codeSystem="2.16.840.1.113883.12.292" />
                     </code>
                     <lotNumberText>1</lotNumberText>
@@ -3510,7 +3510,7 @@ PLAN OF TREATMENT V2
                     <time value="20130730" />
                     <assignedAuthor>
                       <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                       <addr>
                         <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -3536,7 +3536,7 @@ PLAN OF TREATMENT V2
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20" extension="2014-06-09" />
                   <!-- ** Instructions Template ** -->
-                  <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education" />
+                  <code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="Immunization education" />
                   <text>Possible flu-like symptoms for three days.</text>
                   <statusCode code="completed" />
                 </act>
@@ -3563,8 +3563,8 @@ PLAN OF TREATMENT V2
                   <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8" />
                   <manufacturedMaterial>
                     <code code="573621" codeSystem="2.16.840.1.113883.6.88"
-                      displayName="Proventil 0.09 MG/ACTUAT inhalant solution">
-                      <translation code="573621" displayName="Proventil 0.09 MG/ACTUAT inhalant solution"
+                      displayName="albuterol 0.09 MG/ACTUAT [Proventil]">
+                      <translation code="573621" displayName="albuterol 0.09 MG/ACTUAT [Proventil]"
                         codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" />
                     </code>
                   </manufacturedMaterial>
@@ -3609,7 +3609,7 @@ PLAN OF TREATMENT V2
                 <time value="20130730" />
                 <assignedAuthor>
                   <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                  <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                   <addr>
                     <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -3688,7 +3688,7 @@ PROBLEM SECTION v2
                 <time value="201307061145-0800" />
                 <assignedAuthor>
                   <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                  <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                 </assignedAuthor>
               </author>
@@ -3697,7 +3697,7 @@ PROBLEM SECTION v2
                   <!-- ** Problem observation ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2014-06-09" />
                   <id root="ab1791b0-5c71-11db-b0de-0800200c9a66" />
-                  <code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" />
+                  <code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Disease" />
                   <!-- The statusCode reflects the status of the observation itself -->
                   <statusCode code="completed" />
                   <effectiveTime>
@@ -3708,13 +3708,13 @@ PROBLEM SECTION v2
                     <high nullFlavor="UNK"/>
                   </effectiveTime>
                   <value xsi:type="CD" code="93870000" codeSystem="2.16.840.1.113883.6.96"
-                    displayName="malignant neoplasm of liver (disorder)" />
+                    displayName="Malignant neoplasm of liver (disorder)" />
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="20130703" />
                     <assignedAuthor>
                       <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                       <addr>
                         <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -3783,7 +3783,7 @@ PROBLEM SECTION v2
                 <!-- Same as Concern effectiveTime/low -->
                 <assignedAuthor>
                   <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                  <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                 </assignedAuthor>
               </author>
@@ -3792,7 +3792,7 @@ PROBLEM SECTION v2
                   <!-- ** Problem observation ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2014-06-09" />
                   <id root="11d088a8-b957-401c-8ee0-3bd20a772fc0" />
-                  <code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" />
+                  <code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Disease" />
                   <!-- The statusCode reflects the status of the observation itself -->
                   <statusCode code="completed" />
                   <effectiveTime>
@@ -3807,7 +3807,7 @@ PROBLEM SECTION v2
                     <time value="200704141515-0800" />
                     <assignedAuthor>
                       <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -3818,7 +3818,7 @@ PROBLEM SECTION v2
                   <!-- ** Problem observation ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2014-06-09" />
                   <id root="4991db40-4c4f-41e8-9146-50c12d716424" />
-                  <code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" />
+                  <code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Disease" />
                   <!-- The statusCode reflects the status of the observation itself -->
                   <statusCode code="completed" />
                   <effectiveTime>
@@ -3832,7 +3832,7 @@ PROBLEM SECTION v2
                     <time value="200704171515-0800" />
                     <assignedAuthor>
                       <id extension="222334444" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -3863,7 +3863,7 @@ PROBLEM SECTION v2
                 <time value="199803161030-0800" />
                 <assignedAuthor>
                   <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                  <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                 </assignedAuthor>
               </author>
@@ -3872,7 +3872,7 @@ PROBLEM SECTION v2
                   <!-- ** Problem observation ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2014-06-09" />
                   <id root="10506b4d-c30a-4220-8bec-97bff9568fd1" />
-                  <code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" />
+                  <code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Disease" />
                   <!-- The statusCode reflects the status of the observation itself -->
                   <statusCode code="completed" />
                   <effectiveTime>
@@ -3893,7 +3893,7 @@ PROBLEM SECTION v2
                     <time value="199803161030-0800" />
                     <assignedAuthor>
                       <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -4012,7 +4012,7 @@ PROCEDURES SECTION (ENTRIES REQUIRED) V2
               <statusCode code="aborted" />
               <effectiveTime value="20110203" />
               <priorityCode code="CR" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"
-                displayName="Callback results" />
+                displayName="callback results" />
               <value xsi:type="CD" />
               <methodCode nullFlavor="UNK" />
               <targetSiteCode code="416949008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
@@ -4041,7 +4041,7 @@ PROCEDURES SECTION (ENTRIES REQUIRED) V2
                   <templateId root="2.16.840.1.113883.10.20.22.4.32" />
                   <!-- Service Delivery Location template -->
                   <code code="1060-3" codeSystem="2.16.840.1.113883.6.259"
-                    codeSystemName="HL7 HealthcareServiceLocation" displayName="Inpatient medical ward" />
+                    codeSystemName="HL7 HealthcareServiceLocation" displayName="Medical Ward" />
                   <addr>
                     <streetAddressLine>17 Daws Rd.</streetAddressLine>
                     <city>Blue Bell</city>
@@ -4070,7 +4070,7 @@ PROCEDURES SECTION (ENTRIES REQUIRED) V2
               <statusCode code="completed" />
               <effectiveTime value="20110203" />
               <priorityCode code="CR" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"
-                displayName="Callback results" />
+                displayName="callback results" />
               <performer>
                 <assignedEntity>
                   <id root="2.16.840.1.113883.19" extension="1234" />
@@ -4095,7 +4095,7 @@ PROCEDURES SECTION (ENTRIES REQUIRED) V2
                   <templateId root="2.16.840.1.113883.10.20.22.4.32" />
                   <!-- Service Delivery Location template -->
                   <code code="1060-3" codeSystem="2.16.840.1.113883.6.259"
-                    codeSystemName="HL7 HealthcareServiceLocation" displayName="Inpatient medical ward" />
+                    codeSystemName="HL7 HealthcareServiceLocation" displayName="Medical Ward" />
                   <addr>
                     <streetAddressLine>17 Daws Rd.</streetAddressLine>
                     <city>Blue Bell</city>
@@ -4143,7 +4143,7 @@ REASON FOR REFERRAL V2
                 <assignedAuthor>
                   <id root="d839038b-7171-4165-a760-467925b43857" />
                   <code code="163W00000X" codeSystem="2.16.840.1.113883.6.101"
-                    codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Registered nurse" />
+                    codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Nursing Service Providers; Registered Nurse" />
                   <assignedPerson>
                     <name>
                       <given>Nurse</given>
@@ -4157,7 +4157,7 @@ REASON FOR REFERRAL V2
                 <observation classCode="OBS" moodCode="EVN">
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                   <statusCode code="completed" />
-                  <value xsi:type="CD" code="268528005" displayName="full care by specialist"
+                  <value xsi:type="CD" code="268528005" displayName="Full care by specialist"
                     codeSystem="2.16.840.1.113883.6.96" />
                 </observation>
               </entryRelationship>
@@ -4290,13 +4290,13 @@ RESULTS SECTION (ENTRIES REQUIRED) V2
                   <statusCode code="completed" />
                   <effectiveTime value="201303110830-0800" />
                   <value xsi:type="PQ" value="13.2" unit="g/dL" />
-                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" />
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="201303110830-0800" />
                     <assignedAuthor>
                       <id extension="333444444" root="2.16.840.1.113883.4.6" />
-                      <code code="246Q00000X" displayName="Technician, Pathology" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="246Q00000X" displayName=""Technologists, Technicians &amp; Other Technical Service Providers"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -4323,13 +4323,13 @@ RESULTS SECTION (ENTRIES REQUIRED) V2
                       <originalText>6.7 billion per liter</originalText>
                     </translation>
                   </value>
-                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" />
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="201303110830-0800" />
                     <assignedAuthor>
                       <id extension="333444444" root="2.16.840.1.113883.4.6" />
-                      <code code="246Q00000X" displayName="Technician, Pathology" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="246Q00000X" displayName=""Technologists, Technicians &amp; Other Technical Service Providers"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -4355,13 +4355,13 @@ RESULTS SECTION (ENTRIES REQUIRED) V2
                   <statusCode code="completed" />
                   <effectiveTime value="201303110830-0800" />
                   <value xsi:type="PQ" value="123" unit="10*9/L" />
-                  <interpretationCode code="LX" codeSystem="2.16.840.1.113883.5.83" />
+                  <interpretationCode code="LX" codeSystem="2.16.840.1.113883.5.83" displayName="below low threshold" />
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="201303110830-0800" />
                     <assignedAuthor>
                       <id extension="333444444" root="2.16.840.1.113883.4.6" />
-                      <code code="246Q00000X" displayName="Technician, Pathology" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="246Q00000X" displayName=""Technologists, Technicians &amp; Other Technical Service Providers"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -4393,7 +4393,7 @@ RESULTS SECTION (ENTRIES REQUIRED) V2
                     <time value="201303110830-0800" />
                     <assignedAuthor>
                       <id extension="333444444" root="2.16.840.1.113883.4.6" />
-                      <code code="246Q00000X" displayName="Technician, Pathology" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="246Q00000X" displayName=""Technologists, Technicians &amp; Other Technical Service Providers"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -4417,13 +4417,13 @@ RESULTS SECTION (ENTRIES REQUIRED) V2
                   <statusCode code="completed" />
                   <effectiveTime value="201303110830-0800" />
                   <value xsi:type="PQ" value="4.21" unit="10*12/L" />
-                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" />
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="201303110830-0800" />
                     <assignedAuthor>
                       <id extension="333444444" root="2.16.840.1.113883.4.6" />
-                      <code code="246Q00000X" displayName="Technician, Pathology" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="246Q00000X" displayName=""Technologists, Technicians &amp; Other Technical Service Providers"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -4444,7 +4444,7 @@ RESULTS SECTION (ENTRIES REQUIRED) V2
               <!-- ** Result organizer ** -->
               <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2014-06-09" />
               <id root="122ed3ae-6d9e-43d0-bfa2-434ea34b1426" />
-              <code code="166312007" displayName="Blood chemistry test" codeSystem="2.16.840.1.113883.6.96"
+              <code code="166312007" displayName="Blood chemistry" codeSystem="2.16.840.1.113883.6.96"
                 codeSystemName="SNOMED CT" />
               <statusCode code="active" />
               <effectiveTime>
@@ -4461,7 +4461,7 @@ RESULTS SECTION (ENTRIES REQUIRED) V2
                   <statusCode code="active" />
                   <effectiveTime value="200803200930-0800" />
                   <value xsi:type="PQ" nullFlavor="NI" />
-                  <interpretationCode code="N" displayName="normal" codeSystem="2.16.840.1.113883.5.83" />
+                  <interpretationCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.83" />
                 </observation>
               </component>
             </organizer>
@@ -4543,7 +4543,7 @@ SOCIAL HISTORY V2
                 <time value="20130730" />
                 <assignedAuthor>
                   <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                  <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                   <addr>
                     <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -4573,13 +4573,13 @@ SOCIAL HISTORY V2
               <code code="72166-2" codeSystem="2.16.840.1.113883.6.1" displayName="Tobacco smoking status NHIS" />
               <statusCode code="completed" />
               <effectiveTime value="20130621"> </effectiveTime>
-              <value xsi:type="CD" code="8517006" displayName="Former smoker" codeSystem="2.16.840.1.113883.6.96" />
+              <value xsi:type="CD" code="8517006" displayName="Ex-smoker" codeSystem="2.16.840.1.113883.6.96" />
               <author typeCode="AUT">
                 <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                 <time value="20130730" />
                 <assignedAuthor>
                   <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-                  <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                  <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                     codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                   <addr>
                     <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
@@ -4610,10 +4610,10 @@ SOCIAL HISTORY V2
               <statusCode code="completed" />
               <effectiveTime value="20130312" />
               <value xsi:type="CD" code="422615001" codeSystem="2.16.840.1.113883.6.96"
-                displayName="caregiver difficulty providing physical care" />
+                displayName="Caregiver difficulty providing physical care" />
               <participant typeCode="IND">
                 <participantRole classCode="CAREGIVER">
-                  <code code="MTH" codeSystem="2.16.840.1.113883.5.111" displayName="Mother" />
+                  <code code="MTH" codeSystem="2.16.840.1.113883.5.111" displayName="mother" />
                 </participantRole>
               </participant>
             </observation>
@@ -4640,7 +4640,7 @@ SOCIAL HISTORY V2
               <statusCode code="completed" />
               <effectiveTime value="20130312" />
               <!--SHALL Value. If xsi:type is CD, SHOULD SNOMED -->
-              <value xsi:type="CD" code="308899009" displayName="unsatisfactory living conditions (finding)"
+              <value xsi:type="CD" code="308899009" displayName="Unsatisfactory living conditions (finding)"
                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
             </observation>
           </entry>
@@ -4657,7 +4657,7 @@ VITAL SIGNS V2
         <section>
           <!-- ** Vital Signs section with entries required ** -->
           <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2014-06-09" />
-          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="VITAL SIGNS" />
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs" />
           <title>VITAL SIGNS</title>
           <text>
             <table border="1" width="100%">
@@ -4715,17 +4715,17 @@ VITAL SIGNS V2
                   <!-- ** Vital sign observation ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09" />
                   <id root="ed9589fd-fda0-41f7-a3d0-dc537554f5c2" />
-                  <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height" />
+                  <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body height" />
                   <statusCode code="completed" />
                   <effectiveTime value="20120910" />
                   <value xsi:type="PQ" value="177" unit="cm" />
-                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" />
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="201209101145-0800" />
                     <assignedAuthor>
                       <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -4741,13 +4741,13 @@ VITAL SIGNS V2
                   <statusCode code="completed" />
                   <effectiveTime value="20130212" />
                   <value xsi:type="PQ" value="86" unit="kg" />
-                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" />
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="201209101145-0800" />
                     <assignedAuthor>
                       <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -4759,17 +4759,17 @@ VITAL SIGNS V2
                   <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09" />
                   <id root="a0e39c70-9674-4b2a-9837-cdf74200d8d5" />
                   <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
-                    displayName="Intravascular Systolic" />
+                    displayName="Systolic blood pressure" />
                   <statusCode code="completed" />
                   <effectiveTime value="20130801" />
                   <value xsi:type="PQ" value="132" unit="mm[Hg]" />
-                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" />
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="201209101145-0800" />
                     <assignedAuthor>
                       <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -4781,17 +4781,17 @@ VITAL SIGNS V2
                   <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09" />
                   <id root="1c2748b7-e440-41ba-bc01-dde97d84a036" />
                   <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
-                    displayName="BP Diastolic" />
+                    displayName="Diastolic blood pressure" />
                   <statusCode code="completed" />
                   <effectiveTime value="20120910" />
                   <value xsi:type="PQ" value="88" unit="mm[Hg]" />
-                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" />
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="201109010915-0800" />
                     <assignedAuthor>
                       <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -4815,17 +4815,17 @@ VITAL SIGNS V2
                   <!-- ** Vital sign observation ** -->
                   <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09" />
                   <id root="05c047cd-28c3-41cd-be6c-56f8cc0c3f2f" />
-                  <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height" />
+                  <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body height" />
                   <statusCode code="completed" />
                   <effectiveTime value="20110901" />
                   <value xsi:type="PQ" value="177" unit="cm" />
-                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" />
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="201109010915-0800" />
                     <assignedAuthor>
                       <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -4841,13 +4841,13 @@ VITAL SIGNS V2
                   <statusCode code="completed" />
                   <effectiveTime value="20110901" />
                   <value xsi:type="PQ" value="88" unit="kg" />
-                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" />
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="201109010915-0800" />
                     <assignedAuthor>
                       <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -4859,17 +4859,17 @@ VITAL SIGNS V2
                   <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09" />
                   <id root="b046c35a-59c7-4215-ae09-9a8409a30b21" />
                   <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
-                    displayName="BP Systolic" />
+                    displayName="Systolic blood pressure" />
                   <statusCode code="completed" />
                   <effectiveTime value="20110901" />
                   <value xsi:type="PQ" value="128" unit="mm[Hg]" />
-                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" />
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="201109010915-0800" />
                     <assignedAuthor>
                       <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -4881,17 +4881,17 @@ VITAL SIGNS V2
                   <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09" />
                   <id root="44f54e66-fb4b-4ee5-9ced-9574ef307a23" />
                   <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
-                    displayName="BP Diastolic" />
+                    displayName="Diastolic blood pressure" />
                   <statusCode code="completed" />
                   <effectiveTime value="20110901" />
                   <value xsi:type="PQ" value="80" unit="mm[Hg]" />
-                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" />
+                  <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
                   <author typeCode="AUT">
                     <templateId root="2.16.840.1.113883.10.20.22.4.119" />
                     <time value="201109010915-0800" />
                     <assignedAuthor>
                       <id extension="555555555" root="2.16.840.1.113883.4.6" />
-                      <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>

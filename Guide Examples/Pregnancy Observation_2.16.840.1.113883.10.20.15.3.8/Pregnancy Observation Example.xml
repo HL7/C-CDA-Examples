@@ -7,7 +7,7 @@
     <low value="20110410"/>
   </effectiveTime>
   <value xsi:type="CD" code="77386006" 
-         displayName="pregnant" 
+         displayName="Pregnancy" 
          codeSystem="2.16.840.1.113883.6.96"/>
   <entryRelationship typeCode="REFR">
     <templateId root="2.16.840.1.113883.10.20.15.3.1"/>

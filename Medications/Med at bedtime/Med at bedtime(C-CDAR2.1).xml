@@ -51,7 +51,7 @@
                 <event code="HS"/>
             </effectiveTime>
             <!-- This route uses the NCI (National Cancer Institute) Thesauraus code system, which is constrained to the value set of 2.16.840.1.113883.3.88.12.3221.8.7 (FDA Medication Route) -->
-            <routeCode code="C38299" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="SUBCUTANEOUS" codeSystemName="NCI Thesaurus"/>
+            <routeCode code="C38299" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Subcutaneous Route of Administration" codeSystemName="NCI Thesaurus"/>
             <!-- Since this dose is not pre-coordinated, specify both the amount with units in UCUM. [IU] is international units -->
             <!-- Note that this basal insulin is not administered on a sliding scale and a specific dose is administered-->
             <doseQuantity value="40" unit="[IU]"/>
@@ -62,7 +62,7 @@
                     <manufacturedMaterial>
                         <!-- Medications should be specified at a level corresponding to prescription when possible (branded medication below)-->
                         <!-- Note the medication code specified in the test data is 261551, but that is not used since it's not an administered product (just brand name)-->
-                        <code code="847232" codeSystem="2.16.840.1.113883.6.88" displayName="3 ML Insulin Glargine 100 UNT/ML Pen Injector [Lantus]" codeSystemName="RxNorm">
+                        <code code="847232" codeSystem="2.16.840.1.113883.6.88" displayName="3 ML insulin glargine 100 UNT/ML Pen Injector [Lantus]" codeSystemName="RxNorm">
                             <originalText>
                                 <reference value="#MedicationName_6"/>
                             </originalText>

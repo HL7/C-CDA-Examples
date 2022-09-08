@@ -5,5 +5,5 @@
     <reference value="#healthstatus" />
   </text>
   <statusCode code="completed" />
-  <value xsi:type="CD" code="81323004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Alive and well" />
+  <value xsi:type="CD" code="81323004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Normal general body function" />
 </observation>

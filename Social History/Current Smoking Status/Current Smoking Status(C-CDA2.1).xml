@@ -30,7 +30,7 @@
 			<!--Note: This template represents a “snapshot in time” observation, simply reflecting what the patient’s 
 					current smoking status is at the time of the observation. As a result, the effectiveTime is constrained 
 					to just a time stamp, and will approximately correspond with the author/time. -->			
-			<value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="449868002" displayName="Current every day smoker"/>
+			<value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="449868002" displayName="Smokes tobacco daily"/>
 			<author>
 				<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 				<time value="201406061032-0500"/>
@@ -67,7 +67,7 @@
 					smoking and will have no effectiveTime/high to indicated that the patient is still smoking. -->
 				<low value="1992" />
 			</effectiveTime>
-			<value xsi:type="CD" code="160604004" displayName="Moderate cigarette smoker, 10-19/day" codeSystem="2.16.840.1.113883.6.96" />
+			<value xsi:type="CD" code="160604004" displayName="Moderate cigarette smoker" codeSystem="2.16.840.1.113883.6.96" />
 			<author>
 				<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 				<time value="201406061032-0500"/>

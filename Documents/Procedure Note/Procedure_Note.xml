@@ -24,10 +24,10 @@
 	<!-- Procedure Note Template -->
 	<templateId root="2.16.840.1.113883.10.20.22.1.6" extension="2014-06-09"/>
 	<id extension="TT988" root="2.16.840.1.113883.19.5.99999.1"/>
-	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="28570-0" displayName="Procedure Note"/>
+	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="28570-0" displayName="Procedure note"/>
 	<title>Community Health and Hospitals: Procedure Note</title>
 	<effectiveTime value="201209161911-0400"/>
-	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" />
 	<languageCode code="en-US"/>
 	<setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
 	<versionNumber value="1"/>
@@ -61,7 +61,7 @@
 				<raceCode code="1966-1" displayName="Aleut" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
 				<ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
 				<guardian>
-					<code code="GRPRN" displayName="Grandparent" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code"/>
+					<code code="GRPRN" displayName="grandparent" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code"/>
 					<!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
 					<addr use="HP">
 						<streetAddressLine>1357 Amber Drive</streetAddressLine>
@@ -253,7 +253,7 @@
 		</assignedEntity>
 	</authenticator>
 	<participant typeCode="IND">
-		<functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" codeSystemName="participationFunction" displayName="Primary Care Physician"/>
+		<functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" codeSystemName="participationFunction" displayName="primary care physician"/>
 		<associatedEntity classCode="PROV">
 			<associatedPerson>
 				<name>
@@ -271,7 +271,7 @@
 				<high value="201209161911-0400"/>
 			</effectiveTime>
 			<performer typeCode="PRF">
-				<functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction" displayName="Primary Care Provider">
+				<functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction" displayName="primary care physician">
 					<originalText>Primary Care Provider</originalText>
 				</functionCode>
 				<time>
@@ -311,7 +311,7 @@
 				</assignedEntity>
 			</performer>
 			<performer typeCode="PPRF">
-				<functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction" displayName="Primary Care Provider">
+				<functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction" displayName="primary care physician">
 					<originalText>Primary Care Provider</originalText>
 				</functionCode>
 				<time>
@@ -320,7 +320,7 @@
 				</time>
 				<assignedEntity>
 					<id extension="PseudoMD-3" root="2.16.840.1.113883.4.6"/>
-					<code code="207RG0100X" displayName="Gastroenterologist" codeSystemName="Provider Codes" codeSystem="2.16.840.1.113883.6.101"/>
+					<code code="207RG0100X" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Gastroenterology" codeSystemName="Provider Codes" codeSystem="2.16.840.1.113883.6.101"/>
 					<addr>
 						<streetAddressLine>1001 Village Avenue</streetAddressLine>
 						<city>Portland</city>
@@ -362,7 +362,7 @@
 	<componentOf>
 		<encompassingEncounter>
 			<id extension="9937012" root="2.16.840.1.113883.19"/>
-			<code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" code="99213" displayName="Evaluation and Management"/>
+			<code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" code="99213" displayName="Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using time for code selection, 20-29 minutes of total time is spent on the date of the encounter."/>
 			<effectiveTime>
 				<low value="200902271300-0500"/>
 				<high value="200902271300-0500"/>
@@ -384,7 +384,7 @@
 			<component>
 				<section>
 					<templateId root="2.16.840.1.113883.10.20.22.2.8"/>
-					<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51848-0" displayName="ASSESSMENT"/>
+					<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51848-0" displayName="Evaluation note"/>
 					<title>Assessment</title>
 					<text>
 						<list listType="ordered">
@@ -402,7 +402,7 @@
 				<section>
 					<templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
 					<!-- *** Plan of Treatment section *** -->
-					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of care note"/>
 					<title>Plan of Treatment</title>
 					<text>
 						<table border="1" width="100%">
@@ -574,14 +574,14 @@
 							<effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
 								<period value="1" unit="h"/>
 							</effectiveTime>
-							<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="INTRAVENOUS"/>
+							<routeCode code="C38276" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Intravenous Route of Administration"/>
 							<doseQuantity value="20" unit="mg/mL"/>
 							<rateQuantity value="2" unit="ml/min"/>
 							<maxDoseQuantity nullFlavor="UNK">
 								<numerator nullFlavor="UNK"/>
 								<denominator nullFlavor="UNK"/>
 							</maxDoseQuantity>
-							<administrationUnitCode code="C38276" displayName="INTRAVENOUS" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+							<administrationUnitCode code="C38276" displayName="Intravenous Route of Administration" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
 							<consumable>
 								<manufacturedProduct classCode="MANU">
 									<templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
@@ -640,7 +640,7 @@
 							<effectiveTime>
 								<low value="20080103"/>
 							</effectiveTime>
-							<value xsi:type="CD" code="103679000" codeSystem="2.16.840.1.113883.6.96" displayName="Sessile Polyp"/>
+							<value xsi:type="CD" code="103679000" codeSystem="2.16.840.1.113883.6.96" displayName="Sessile polyp"/>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 								<time value="20050329224411-0500"/>
@@ -663,7 +663,7 @@
 							<effectiveTime>
 								<low value="20080103"/>
 							</effectiveTime>
-							<value xsi:type="CD" code="429430001" codeSystem="2.16.840.1.113883.6.96" displayName="diverticulosis of sigmoid"/>
+							<value xsi:type="CD" code="429430001" codeSystem="2.16.840.1.113883.6.96" displayName="Diverticulosis of sigmoid colon"/>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 								<time value="20050329224411-0500"/>
@@ -686,7 +686,7 @@
 							<effectiveTime>
 								<low value="20080103"/>
 							</effectiveTime>
-							<value xsi:type="CD" code="90458007" codeSystem="2.16.840.1.113883.6.96" displayName="internal hemorrhoids"/>
+							<value xsi:type="CD" code="90458007" codeSystem="2.16.840.1.113883.6.96" displayName="Internal hemorrhoids"/>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 								<time value="20050329224411-0500"/>
@@ -729,7 +729,7 @@
 			<component>
 				<section>
 					<templateId root="2.16.840.1.113883.10.20.22.2.37" extension="2014-06-09"/>
-					<code code="55109-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Complications"/>
+					<code code="55109-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Complications Document"/>
 					<title>Complications</title>
 					<text ID="complic1">Asthmatic symptoms while under general anesthesia. </text>
 					<entry>
@@ -745,7 +745,7 @@
 							<effectiveTime>
 								<low value="20080103"/>
 							</effectiveTime>
-							<value xsi:type="CD" code="390798007" codeSystem="2.16.840.1.113883.6.96" displayName="asthma finding"/>
+							<value xsi:type="CD" code="390798007" codeSystem="2.16.840.1.113883.6.96" displayName="Asthma finding"/>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 								<time value="20050329224411-0500"/>
@@ -797,7 +797,7 @@
 									<effectiveTime>
 										<low value="20080103"/>
 									</effectiveTime>
-									<value xsi:type="CD" code="103679000" codeSystem="2.16.840.1.113883.6.96" displayName="Sessile Polyp"/>
+									<value xsi:type="CD" code="103679000" codeSystem="2.16.840.1.113883.6.96" displayName="Sessile polyp"/>
 									<author>
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="20050329224411-0500"/>
@@ -820,7 +820,7 @@
 									<effectiveTime>
 										<low value="20080103"/>
 									</effectiveTime>
-									<value xsi:type="CD" code="429430001" codeSystem="2.16.840.1.113883.6.96" displayName="diverticulosis of sigmoid"/>
+									<value xsi:type="CD" code="429430001" codeSystem="2.16.840.1.113883.6.96" displayName="Diverticulosis of sigmoid colon"/>
 									<author>
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="20050329224411-0500"/>
@@ -843,7 +843,7 @@
 									<effectiveTime>
 										<low value="20080103"/>
 									</effectiveTime>
-									<value xsi:type="CD" code="90458007" codeSystem="2.16.840.1.113883.6.96" displayName="internal hemorrhoids"/>
+									<value xsi:type="CD" code="90458007" codeSystem="2.16.840.1.113883.6.96" displayName="Internal hemorrhoids"/>
 									<author>
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="20050329224411-0500"/>

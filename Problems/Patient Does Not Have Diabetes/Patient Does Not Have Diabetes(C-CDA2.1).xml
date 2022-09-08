@@ -45,7 +45,7 @@
                 <assignedAuthor>
                     <id extension="666545666" root="2.16.840.1.113883.4.6"/>
                     <code code="363LA2100X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC"
-                        displayName="Nurse Practitioner - Acute Care"/>
+                        displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Acute Care"/>
                     <addr>
                         <streetAddressLine>6666 StreetName St.</streetAddressLine>
                         <city>Silver Spring</city><state>MD</state><postalCode>20901</postalCode>
@@ -87,7 +87,7 @@
                     <!-- It would be equally valid to have a longer range of time over which this statement was represented as being true. -->
                     <!-- As a maximum, you would never indicate an effectiveTime/high that was greater than the current point in time. -->
                     <value xsi:type="CD" code="44054006"
-                        displayName="Diabetes Mellitus Type 2 (Disorder)"
+                        displayName="Diabetes mellitus type 2 (disorder)"
                         codeSystem="2.16.840.1.113883.6.96"
                         codeSystemName="SNOMED CT">
                         <originalText><reference value="#problem1"></reference></originalText>

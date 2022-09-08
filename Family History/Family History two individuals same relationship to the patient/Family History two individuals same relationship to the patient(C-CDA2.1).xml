@@ -28,7 +28,7 @@
 					<!-- Identifies relationship; though there are two brothers, the separation into 
 					     two different organizers with their own subject identifies these as two 
 					     distinct individuals. The subject/@sdtc:id can also futher identify the individuals.-->
-					<code code="BRO" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="Brother">
+					<code code="BRO" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="brother">
 						<originalText>
 							<reference value="#FamHist1rel"/>
 						</originalText>
@@ -37,7 +37,7 @@
 						<!-- Unique ID for the brother as an individual -->
 						<sdtc:id extension="98765432-1" root="1.3.6.1.4.1.16517.1" xmlns:sdtc="urn:hl7-org:sdtc" />
 						<name>James</name>
-						<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+						<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Male" />
 						<birthTime value="1982" />
 					</subject>
 				</relatedSubject>
@@ -49,8 +49,8 @@
 					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
 					<!-- Unique ID for this individual observation -->
 					<id root="02faa204-0000-4610-864f-cb50b650d0fa" />
-					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
-						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
+					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Disease" >
+						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family member" />
 					</code>
 					<text>
 						<reference value="#FamHist1prob1" />
@@ -59,7 +59,7 @@
 					<!-- Since we do not know when the brother was diagnosed with High Blood pressure, the effective time is UNKown -->
 					<effectiveTime nullFlavor="UNK" />
 					<!-- SNOMED code for High Blood Pressure -->
-					<value xsi:type="CD" code="59621000" codeSystem="2.16.840.1.113883.6.96" displayName="Essential Hypertension">
+					<value xsi:type="CD" code="59621000" codeSystem="2.16.840.1.113883.6.96" displayName="Essential hypertension">
 						<originalText>
 							<reference value="#FamHist1prob1"/>
 						</originalText>
@@ -73,8 +73,8 @@
 					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
 					<!-- Unique ID for this individual observation -->
 					<id root="03faa204-0000-4610-864f-cb50b650d0fa" />
-					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
-						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
+					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Disease" >
+						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family member" />
 					</code>
 					<text>
 						<reference value="#FamHist1prob2" />
@@ -83,7 +83,7 @@
 					<!-- Since we do not know when the brother was diagnosed with Diabetes, the effective time is UNKown -->
 					<effectiveTime nullFlavor="UNK" />
 					<!-- SNOMED code for Diabetes -->
-					<value xsi:type="CD" code="73211009" codeSystem="2.16.840.1.113883.6.96" displayName="Diabetes Mellitus">
+					<value xsi:type="CD" code="73211009" codeSystem="2.16.840.1.113883.6.96" displayName="Diabetes mellitus">
 						<originalText>
 							<reference value="#FamHist1prob2"/>
 						</originalText>
@@ -105,7 +105,7 @@
 					<!-- Identifies relationship; though there are two brothers, the separation into 
 						two different organizers with their own subject identifies these as two 
 						distinct individuals. The subject/@sdtc:id can also futher identify the individuals.-->
-					<code code="BRO" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="Brother">
+					<code code="BRO" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="brother">
 						<originalText>
 							<reference value="#FamHist2rel"/>
 						</originalText>
@@ -114,7 +114,7 @@
 						<!-- Unique ID for the brother as an individual; note the extension is different from James's id -->
 						<sdtc:id extension="98765432-2" root="1.3.6.1.4.1.16517.1" xmlns:sdtc="urn:hl7-org:sdtc" />
 						<name>Gerald</name>
-						<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
+						<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Male" />
 						<birthTime value="1985" />
 					</subject>
 				</relatedSubject>
@@ -126,8 +126,8 @@
 					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
 					<!-- Unique ID for this individual observation -->
 					<id root="03faa204-1111-4610-864f-cb50b650d0fa" />
-					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
-						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
+					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Disease" >
+						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family member" />
 					</code>
 					<statusCode code="completed"/>
 					<!-- Since we do not know when the brother was diagnosed with asthma, the effective time is UNKown -->

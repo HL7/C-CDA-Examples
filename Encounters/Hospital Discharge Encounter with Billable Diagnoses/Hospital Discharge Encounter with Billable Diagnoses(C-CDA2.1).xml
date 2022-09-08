@@ -43,7 +43,7 @@
 			<templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
 			<id root="248b2c03-2013-e138-07d1-001A64958C30"/>
 			<!-- CPT code should be used for ambulatory visits, but for a hosptialization, another codeSystem is more appropriate-->
-			<code code="99238" displayName="Discharge day management services" codeSystem="2.16.840.1.113883.6.12">
+			<code code="99238" displayName="Hospital discharge day management; 30 minutes or less" codeSystem="2.16.840.1.113883.6.12">
 				<originalText>
 					<reference value="#Enc1_Type"/>
 				</originalText>
@@ -89,7 +89,7 @@
 				<!-- Service Delivery Location Template -->
 				<participantRole classCode="SDLOC">
 					<templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-					<code code="1061-1" codeSystem="2.16.840.1.113883.6.259" codeSystemName="Healthcare Service Location" displayName="Inpatient medical ward" />
+					<code code="1061-1" codeSystem="2.16.840.1.113883.6.259" codeSystemName="Healthcare Service Location" displayName="Medical-Surgical Ward" />
 					<addr use="WP">
 						<streetAddressLine>1002 Healthcare Dr</streetAddressLine>
 						<city>Portland</city>
@@ -122,7 +122,7 @@
 							<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
 							<id root="20cdd1a0-6136-4939-802f-edfebe9320bc"/>
 							<!-- We'll use the type of diagnosis, since this is a coded diagnosis, not from problem list-->
-							<code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="282291009" displayName="Diagnosis">
+							<code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="282291009" displayName="Diagnosis interpretation">
 								<translation code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis"/>
 							</code>
 							<text>
@@ -149,7 +149,7 @@
 								<time value="20141031"/>
 								<assignedAuthor>
 									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
-									<code code="204C00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Neuromusculoskeletal Medicine, Sports Medicine" />
+									<code code="204C00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; "Neuromusculoskeletal Medicine, Sports Medicine"" />
 									<telecom use="WP" value="tel:555-555-1002"/>
 									<assignedPerson>
 										<name>
@@ -190,7 +190,7 @@
 							<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
 							<id root="5f9b714d-a6ec-4f8f-95ae-ea75e5a54bac"/>
 							<!-- We'll use the type of diagnosis, since this is a coded diagnosis, not from problem list-->
-							<code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="282291009" displayName="Diagnosis">
+							<code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="282291009" displayName="Diagnosis interpretation">
 								<translation code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis"/>
 							</code>
 							<text>
@@ -216,7 +216,7 @@
 								<time value="20141031"/>
 								<assignedAuthor>
 									<id extension="99999999" root="2.16.840.1.113883.4.6"/>
-									<code code="204C00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Neuromusculoskeletal Medicine, Sports Medicine" />
+									<code code="204C00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; "Neuromusculoskeletal Medicine, Sports Medicine"" />
 									<telecom use="WP" value="tel:555-555-1002"/>
 									<assignedPerson>
 										<name>

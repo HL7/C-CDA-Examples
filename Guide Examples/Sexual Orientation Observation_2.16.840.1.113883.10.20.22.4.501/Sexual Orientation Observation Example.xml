@@ -10,7 +10,7 @@
     <low value="201211" />
   </effectiveTime>
   <value xsi:type="CD" code="20430005" 
-    displayName="Heterosexual state" 
+    displayName="Heterosexual" 
     codeSystem="2.16.840.1.113883.6.96"
     codeSystemName="SNOMED CT" />
 </observation>

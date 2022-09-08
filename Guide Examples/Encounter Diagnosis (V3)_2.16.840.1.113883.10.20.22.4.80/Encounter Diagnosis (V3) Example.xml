@@ -1,6 +1,6 @@
 <act classCode="ACT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.80" extension="2015-08-01" />
-  <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName=" DIAGNOSIS" />
+  <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis" />
   <statusCode code="active" />
   <effectiveTime>
     <low value="20903003" />

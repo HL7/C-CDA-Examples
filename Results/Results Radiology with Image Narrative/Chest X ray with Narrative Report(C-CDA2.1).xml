@@ -53,7 +53,7 @@
 					<templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
 					<!-- Results Observation -->
 					<id root="e1aa44dd-6f39-2f5c-b267-897c3824b563"/>
-					<code code="36643-5" displayName="Chest X-ray 2 Views" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+					<code code="36643-5" displayName="XR Chest 2 Views" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
 						<!-- a translation code may be helpful and used by some EHRs to denote that this is a textual response of result impression -->
 					</code>
 					<text>
@@ -70,7 +70,7 @@
 						<time value="20150225103206-0500"/>
 						<assignedAuthor>
 							<id extension="66666" root="2.16.840.1.113883.4.6"/>
-							<code code="111NR0200X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Radiology"/>
+							<code code="111NR0200X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Chiropractic Providers; Chiropractor, Radiology"/>
 							<addr>
 								<streetAddressLine>6666 StreetName St.</streetAddressLine>
 								<city>Silver Spring</city>

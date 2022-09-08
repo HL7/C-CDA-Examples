@@ -72,7 +72,7 @@
 							<originalText>THOUS/MCL</originalText>
 						</translation>
 					</value>
-					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 					<!-- Optional reference range - in this case no UCUM available -->
 					<referenceRange>
 						<observationRange>
@@ -90,7 +90,7 @@
 								</high>
 							</value>
 							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation a specific patient value-->
-							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 						</observationRange>
 					</referenceRange>
 				</observation>

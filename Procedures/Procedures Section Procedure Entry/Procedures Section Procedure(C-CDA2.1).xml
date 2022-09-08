@@ -55,7 +55,7 @@
 				displayName="Laparoscopic procedure" codeSystemName="SNOMED-CT"/>
 			<!-- targetSiteCode indicates the body site addressed by procedure and must be from value set 2.16.840.1.113883.3.88.12.3221.8.9-->
 			<targetSiteCode code="181255000" codeSystem="2.16.840.1.113883.6.96"
-				displayName="Entire Appendix" codeSystemName="SNOMED-CT"/>
+				displayName="Entire appendix" codeSystemName="SNOMED-CT"/>
 		</procedure>
 	</entry>
 </section>

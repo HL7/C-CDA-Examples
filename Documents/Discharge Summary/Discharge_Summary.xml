@@ -24,10 +24,10 @@
 	<!-- *** Note: The next templateId, code and title will differ depending on what type of document is being sent. *** -->
 	<templateId root="2.16.840.1.113883.10.20.22.1.8" extension="2014-06-09"/>
 	<id extension="TT988" root="2.16.840.1.113883.19.5.99999.1"/>
-	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18842-5" displayName="Discharge summarization note"/>
+	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18842-5" displayName="Discharge summary"/>
 	<title>Community Health and Hospitals: Discharge Summary</title>
 	<effectiveTime value="201409171904-0500"/>
-	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" />
 	<languageCode code="en-US"/>
 	<setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
 	<versionNumber value="1"/>
@@ -61,7 +61,7 @@
 				<raceCode code="2028-9" displayName="Asian" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
 				<ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
 				<guardian>
-					<code code="GRPRN" displayName="Grandparent" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code"/>
+					<code code="GRPRN" displayName="grandparent" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code"/>
 					<addr use="HP">
 						<!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
 						<streetAddressLine>1357 Amber Drive</streetAddressLine>
@@ -289,7 +289,7 @@
 			<high value="20140916"/>
 		</time>
 		<associatedEntity classCode="NOK">
-			<code code="MTH" codeSystem="2.16.840.1.113883.5.111"/>
+			<code code="MTH" codeSystem="2.16.840.1.113883.5.111" displayName="mother" />
 			<addr>
 				<streetAddressLine>17 Daws Rd.</streetAddressLine>
 				<city>Beaverton</city>
@@ -364,7 +364,7 @@
 				</time>
 				<assignedEntity>
 					<id extension="PseudoMD-3" root="2.16.840.1.113883.4.6"/>
-					<code code="207RG0100X" displayName="Gastroenterologist" codeSystemName="Provider Codes" codeSystem="2.16.840.1.113883.6.101"/>
+					<code code="207RG0100X" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Gastroenterology" codeSystemName="Provider Codes" codeSystem="2.16.840.1.113883.6.101"/>
 					<addr>
 						<streetAddressLine>1001 Village Avenue</streetAddressLine>
 						<city>Portland</city>
@@ -537,7 +537,7 @@
 									<participant typeCode="CSM">
 										<participantRole classCode="MANU">
 											<playingEntity classCode="MMAT">
-												<code code="7980" displayName="Penicillin G" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+												<code code="7980" displayName="penicillin G" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
 													<originalText>
 														<reference value="#allergen1"/>
 													</originalText>
@@ -604,7 +604,7 @@
 									<participant typeCode="CSM">
 										<participantRole classCode="MANU">
 											<playingEntity classCode="MMAT">
-												<code code="2670" displayName="Codeine" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+												<code code="2670" displayName="codeine" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
 													<originalText>
 														<reference value="#allergen2"/>
 													</originalText>
@@ -671,7 +671,7 @@
 										<low value="1998"/>
 									</effectiveTime>
 									<!-- This specifies that the allergy is to a food in contrast to other allergies (drug) -->
-									<value xsi:type="CD" code="414285001" displayName="Food allergy (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+									<value xsi:type="CD" code="414285001" displayName="Allergy to food (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 									<participant typeCode="CSM">
 										<participantRole classCode="MANU">
 											<playingEntity classCode="MMAT">
@@ -698,7 +698,7 @@
 											<effectiveTime>
 												<low value="1998"/>
 											</effectiveTime>
-											<value xsi:type="CD" code="247472004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Hives"/>
+											<value xsi:type="CD" code="247472004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Wheal"/>
 											<entryRelationship typeCode="SUBJ" inversionInd="true">
 												<observation classCode="OBS" moodCode="EVN">
 													<!-- Severity Observation template -->
@@ -708,7 +708,7 @@
 														<reference value="#severity3"/>
 													</text>
 													<statusCode code="completed"/>
-													<value xsi:type="CD" code="6736007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="moderate"/>
+													<value xsi:type="CD" code="6736007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Moderate"/>
 												</observation>
 											</entryRelationship>
 										</observation>
@@ -835,7 +835,7 @@
 									<effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
 										<period value="6" unit="h"/>
 									</effectiveTime>
-									<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+									<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral Route of Administration"/>
 									<!-- This relates directly to the code used for medication. Since it's a tablet, then only specified needed in dose is 1x per administration-->
 									<doseQuantity value="1"/>
 									<consumable>
@@ -845,7 +845,7 @@
 											<id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
 											<manufacturedMaterial>
 												<!-- Medications should be specified at a level corresponding to prescription when possible, such as 600mg oral tablet (non-branded)-->
-												<code code="197806" displayName="Ibuprofen 600mg Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+												<code code="197806" displayName="ibuprofen 600 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
 													<originalText>
 														<reference value="#MedicationName_0"/>
 													</originalText>
@@ -904,7 +904,7 @@
 							<statusCode code="completed"/>
 							<subject>
 								<relatedSubject classCode="PRS">
-									<code code="FTH" displayName="Father" codeSystemName="HL7 FamilyMember" codeSystem="2.16.840.1.113883.5.111">
+									<code code="FTH" displayName="father" codeSystemName="HL7 FamilyMember" codeSystem="2.16.840.1.113883.5.111">
 										<translation code="9947008" displayName="Biological father" codeSystemName="SNOMED" codeSystem="2.16.840.1.113883.6.96"/>
 									</code>
 									<subject>
@@ -918,7 +918,7 @@
 									<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2014-06-09"/>
 									<!-- Family History Observation template -->
 									<id root="d42ebf70-5c89-11db-b0de-0800200c9a66"/>
-									<code code="64572001" displayName="Condition" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96"/>
+									<code code="64572001" displayName="Disease" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96"/>
 									<statusCode code="completed"/>
 									<effectiveTime value="1967"/>
 									<value xsi:type="CD" code="22298006" codeSystem="2.16.840.1.113883.6.96" displayName="Myocardial infarction"/>
@@ -948,7 +948,7 @@
 									<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2014-06-09"/>
 									<!-- ******** Family history observation template ******** -->
 									<id root="5bfe3ec0-5c8b-11db-b0de-0800200c9a66"/>
-									<code code="64572001" displayName="Condition" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96"/>
+									<code code="64572001" displayName="Disease" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96"/>
 									<statusCode code="completed"/>
 									<effectiveTime value="1916"/>
 									<value xsi:type="CD" code="46635009" codeSystem="2.16.840.1.113883.6.96" displayName="Diabetes mellitus type 1"/>
@@ -972,7 +972,7 @@
 				<section>
 					<!-- Functional status section -->
 					<templateId root="2.16.840.1.113883.10.20.22.2.14" extension="2014-06-09"/>
-					<code code="47420-5" codeSystem="2.16.840.1.113883.6.1"/>
+					<code code="47420-5" codeSystem="2.16.840.1.113883.6.1" displayName="Functional status assessment note" />
 					<title>Functional Status</title>
 					<text>
 						<table border="1" width="100%">
@@ -1007,7 +1007,7 @@
 							<effectiveTime>
 								<low value="200702"/>
 							</effectiveTime>
-							<value xsi:type="CD" code="267036007" codeSystem="2.16.840.1.113883.6.96" displayName="dyspnea"/>
+							<value xsi:type="CD" code="267036007" codeSystem="2.16.840.1.113883.6.96" displayName="Dyspnea"/>
 						</observation>
 					</entry>
 				</section>
@@ -1080,7 +1080,7 @@
 			<component>
 				<section>
 					<templateId root="2.16.840.1.113883.10.20.22.2.41"/>
-					<code code="8653-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOSPITAL DISCHARGE INSTRUCTIONS"/>
+					<code code="8653-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital Discharge instructions"/>
 					<title>HOSPITAL DISCHARGE INSTRUCTIONS</title>
 					<text>
 						<list listType="ordered">
@@ -1197,7 +1197,7 @@
 							</text>
 							<statusCode code="completed"/>
 							<effectiveTime value="20140901"/>
-							<routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular injection"/>
+							<routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular Route of Administration"/>
 							<doseQuantity value="50" unit="ug"/>
 							<consumable>
 								<manufacturedProduct classCode="MANU">
@@ -1218,7 +1218,7 @@
 								<act classCode="ACT" moodCode="INT">
 									<templateId root="2.16.840.1.113883.10.20.22.4.20" extension="2014-06-09"/>
 									<!-- ** Instructions Template ** -->
-									<code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="immunization education"/>
+									<code code="171044003" codeSystem="2.16.840.1.113883.6.96" displayName="Immunization education"/>
 									<text>
 										<reference value="#immun1instr"/>
 									</text>
@@ -1238,14 +1238,14 @@
 							</text>
 							<statusCode code="cancelled"/>
 							<effectiveTime value="20140901"/>
-							<routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular injection"/>
+							<routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular Route of Administration"/>
 							<doseQuantity value="50" unit="ug"/>
 							<consumable>
 								<manufacturedProduct classCode="MANU">
 									<templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
 									<!-- ******** Immunization Medication Information ******** -->
 									<manufacturedMaterial>
-										<code code="103" codeSystem="2.16.840.1.113883.12.292" displayName="Tetanus and diphtheria toxoids - preservative free" codeSystemName="CVX">
+										<code code="103" codeSystem="2.16.840.1.113883.12.292" displayName="meningococcal C conjugate vaccine" codeSystemName="CVX">
 											<originalText>Tetanus and diphtheria toxoids - preservative free </originalText>
 										</code>
 										<lotNumberText nullFlavor="NA"/>
@@ -1260,7 +1260,7 @@
 									<templateId root="2.16.840.1.113883.10.20.22.4.53"/>
 									<!-- Immunization Refusal -->
 									<id root="2a620155-9d11-439e-92b3-5d9815ff4dd8"/>
-									<code displayName="Patient Objection" code="PATOBJ" codeSystemName="HL7 ActNoImmunizationReason" codeSystem="2.16.840.1.113883.5.8"/>
+									<code displayName="patient objection" code="PATOBJ" codeSystemName="HL7 ActNoImmunizationReason" codeSystem="2.16.840.1.113883.5.8"/>
 									<statusCode code="completed"/>
 								</observation>
 							</entryRelationship>
@@ -1273,7 +1273,7 @@
 				<section>
 					<templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
 					<!-- **** Plan of Care section template **** -->
-					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of care note"/>
 					<title>PLAN OF CARE</title>
 					<text>
 						<table border="1" width="100%">
@@ -1451,7 +1451,7 @@
 							<!-- methodCode indicates how the procedure was performed. It cannot conflict with the code used for procedure-->
 							<methodCode code="51316009" codeSystem="2.16.840.1.113883.6.96" displayName="Laparoscopic procedure" codeSystemName="SNOMED-CT"/>
 							<!-- targetSiteCode indicates the body site addressed by procedure and must be from value set 2.16.840.1.113883.3.88.12.3221.8.9-->
-							<targetSiteCode code="181255000" codeSystem="2.16.840.1.113883.6.96" displayName="Entire Appendix" codeSystemName="SNOMED-CT"/>
+							<targetSiteCode code="181255000" codeSystem="2.16.840.1.113883.6.96" displayName="Entire appendix" codeSystemName="SNOMED-CT"/>
 						</procedure>
 					</entry>
 				</section>
@@ -1492,7 +1492,7 @@
 							<code code="72166-2" codeSystem="2.16.840.1.113883.6.1"/>
 							<statusCode code="completed"/>
 							<effectiveTime value="201409101254-0500"/>
-							<value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="266919005" displayName="Never Smoker"/>
+							<value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="266919005" displayName="Never smoked tobacco"/>
 							<author>
 								<time value="201409101254-0500"/>
 								<assignedAuthor>
@@ -1516,7 +1516,7 @@
 			<component>
 				<section>
 					<templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2014-06-09"/>
-					<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="VITAL SIGNS"/>
+					<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
 					<title>VITAL SIGNS</title>
 					<text>
 						<table border="1" width="100%">
@@ -1561,14 +1561,14 @@
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<!-- Vital Sign Observation template -->
 									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height"/>
+									<code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body height"/>
 									<text>
 										<reference value="#vit1"/>
 									</text>
 									<statusCode code="completed"/>
 									<effectiveTime value="201409160845-0500"/>
 									<value xsi:type="PQ" value="177" unit="cm"/>
-									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 								</observation>
 							</component>
 							<component>
@@ -1583,7 +1583,7 @@
 									<statusCode code="completed"/>
 									<effectiveTime value="201409160845-0500"/>
 									<value xsi:type="PQ" value="86" unit="kg"/>
-									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 								</observation>
 							</component>
 							<component>
@@ -1591,14 +1591,14 @@
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<!-- Vital Sign Observation template -->
 									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular Systolic"/>
+									<code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Systolic blood pressure"/>
 									<text>
 										<reference value="#vit4"/>
 									</text>
 									<statusCode code="completed"/>
 									<effectiveTime value="201409160845-0500"/>
 									<value xsi:type="PQ" value="80" unit="mm[Hg]"/>
-									<interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83" displayName="Low" />
 								</observation>
 							</component>
 							<component>
@@ -1606,14 +1606,14 @@
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<!-- Vital Sign Observation template -->
 									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular Diastolic"/>
+									<code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diastolic blood pressure"/>
 									<text>
 										<reference value="#vit5"/>
 									</text>
 									<statusCode code="completed"/>
 									<effectiveTime value="201409160845-0500"/>
 									<value xsi:type="PQ" value="55" unit="mm[Hg]"/>
-									<interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83" displayName="Low" />
 								</observation>
 							</component>
 						</organizer>

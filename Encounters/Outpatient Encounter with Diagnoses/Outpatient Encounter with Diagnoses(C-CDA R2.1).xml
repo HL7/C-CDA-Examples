@@ -38,7 +38,7 @@
             <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
             <id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
             <!-- Selected reasonable encounter/code. Not in test data -->
-            <code code="99213" displayName="Office outpatient visit 15 minutes"
+            <code code="99213" displayName="Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using time for code selection, 20-29 minutes of total time is spent on the date of the encounter."
                 codeSystemName="CPT" codeSystem="2.16.840.1.113883.6.12"
                 codeSystemVersion="4">
                 <originalText><reference value="#Encounter1_type"/>
@@ -54,7 +54,7 @@
                     <id root="2.16.840.1.113883.4.6" extension="12345678910"/>
                     <code code="207R00000X" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Health Care Provider Taxonomy" 
-                        displayName="Internal Medicine">
+                        displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine">
                         <originalText><reference value="Encounter1_performer_type"></reference></originalText>
                     </code>
                     <assignedPerson>
@@ -103,7 +103,7 @@
                             <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
                             <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
                             <id root="db734647-fc99-424c-a864-7e3cda82e704"/>
-                            <code code="282291009" displayName="Diagnosis" codeSystem="2.16.840.1.113883.6.96"
+                            <code code="282291009" displayName="Diagnosis interpretation" codeSystem="2.16.840.1.113883.6.96"
                                 codeSystemName="SNOMED CT">
                                 <translation code="29308-4" displayName="Diagnosis" codeSystem="2.16.840.1.113883.6.1"
                                     codeSystemName="LOINC"/>
@@ -114,7 +114,7 @@
                                 <low value="20120815"/>
                             </effectiveTime>
                             <!-- Test data is SNOMED but in practice this is probably an ICD9/10 code -->
-                            <value xsi:type="CD" code="64109004" displayName="Costal Chondritis"
+                            <value xsi:type="CD" code="64109004" displayName="Costal chondritis"
                                 codeSystem="2.16.840.1.113883.6.96">
                                 <originalText><reference value="#Encounter1_diagnosis"></reference></originalText>
                             </value>

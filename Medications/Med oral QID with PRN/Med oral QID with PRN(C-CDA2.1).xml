@@ -56,7 +56,7 @@
             <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
                 <period value="6" unit="h"/>
             </effectiveTime>
-            <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+            <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral Route of Administration"/>
             <!-- This relates directly to the code used for medication. Since it's a tablet, then only specified needed in dose is 1x per administration-->
             <doseQuantity value="1"/>
             <consumable>
@@ -67,7 +67,7 @@
                     <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
                     <manufacturedMaterial>
                         <!-- Medications should be specified at a level corresponding to prescription when possible, such as 600mg oral tablet (non-branded)-->
-                        <code code="197806" displayName="Ibuprofen 600mg Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                        <code code="197806" displayName="ibuprofen 600 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
                             <originalText>
                                 <reference value="#MedicationName_0"/>
                             </originalText>
@@ -84,7 +84,7 @@
                 <assignedAuthor>
                     <id extension="66666" root="2.16.840.1.113883.4.6"/>
                     <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
-                        codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+                        codeSystemName="NUCC" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Cardiovascular Disease"/>
                     <addr>
                         <streetAddressLine>6666 StreetName St.</streetAddressLine>
                         <city>Silver Spring</city>

@@ -24,10 +24,10 @@
 	<!-- Consultation Note V2  -->
 	<templateId root="2.16.840.1.113883.10.20.22.1.4" extension="2014-06-09"/>
 	<id extension="TT988" root="2.16.840.1.113883.19.5.99999.1"/>
-	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="11488-4" displayName="Consultation Note"/>
+	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="11488-4" displayName="Consult note"/>
 	<title>Community Health Consult Note</title>
 	<effectiveTime value="201308010500-0800"/>
-	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" />
 	<languageCode code="en-US"/>
 	<setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
 	<versionNumber value="1"/>
@@ -66,7 +66,7 @@
 					categories defined by OMB Standards -->
 				<raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
 				<!-- The raceCode extension is only used if raceCode is valued -->
-				<sdtc:raceCode code="2076-8" displayName="Hawaiian or Other Pacific Islander" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
+				<sdtc:raceCode code="2076-8" displayName="Native Hawaiian or Other Pacific Islander" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
 				<ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
 				<guardian>
 					<code code="POWATT" displayName="Power of Attorney" codeSystem="2.16.840.1.113883.1.11.19830" codeSystemName="ResponsibleParty"/>
@@ -125,7 +125,7 @@
 		<time value="20130731"/>
 		<assignedAuthor>
 			<id extension="555555555" root="2.16.840.1.113883.4.6"/>
-			<code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
+			<code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
 			<addr>
 				<streetAddressLine>1004 Healthcare Drive </streetAddressLine>
 				<city>Portland</city>
@@ -218,7 +218,7 @@
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="555555555" root="2.16.840.1.113883.4.6"/>
-			<code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
+			<code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
 			<addr>
 				<streetAddressLine>1004 Healthcare Drive </streetAddressLine>
 				<city>Portland</city>
@@ -242,7 +242,7 @@
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="555555555" root="2.16.840.1.113883.4.6"/>
-			<code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
+			<code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
 			<addr>
 				<streetAddressLine>1004 Healthcare Drive </streetAddressLine>
 				<city>Portland</city>
@@ -288,13 +288,13 @@
 	<inFulfillmentOf typeCode="FLFS">
 		<order classCode="ACT" moodCode="RQO">
 			<id root="2.16.840.1.113883.6.96" extension="1298989898"/>
-			<code code="388975008" displayName="Weight Reduction Consultation" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+			<code code="388975008" displayName="Weight reduction consultation" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 		</order>
 	</inFulfillmentOf>
 	<componentOf>
 		<encompassingEncounter>
 			<id extension="9937012" root="2.16.840.1.113883.19"/>
-			<code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" code="99213" displayName="Evaluation and Management"/>
+			<code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" code="99213" displayName="Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using time for code selection, 20-29 minutes of total time is spent on the date of the encounter."/>
 			<effectiveTime>
 				<low value="20130731"/>
 				<high value="20130731"/>
@@ -392,7 +392,7 @@ ALLERGIES AND INTOLERANCES SECTION (ENTRIES REQUIRED) V2
 										<time value="199805011145-0800"/>
 										<assignedAuthor>
 											<id extension="222223333" root="2.16.840.1.113883.4.6"/>
-											<code code="207KA0200X" displayName="Allergy" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
+											<code code="207KA0200X" displayName="Allopathic &amp; Osteopathic Physicians; Allergy &amp; Immunology, Allergy" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
 										</assignedAuthor>
 									</author>
 									<participant typeCode="CSM">
@@ -497,7 +497,7 @@ ALLERGIES AND INTOLERANCES SECTION (ENTRIES REQUIRED) V2
 									<participant typeCode="CSM">
 										<participantRole classCode="MANU">
 											<playingEntity classCode="MMAT">
-												<code code="2670" displayName="Codeine" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+												<code code="2670" displayName="codeine" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
 											</playingEntity>
 										</participantRole>
 									</participant>
@@ -559,7 +559,7 @@ ASSESSMENT
 			<component>
 				<section>
 					<templateId root="2.16.840.1.113883.10.20.22.2.8"/>
-					<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51848-0" displayName="ASSESSMENT"/>
+					<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51848-0" displayName="Evaluation note"/>
 					<title>ASSESSMENT</title>
 					<text>
 						<list listType="ordered">
@@ -597,7 +597,7 @@ FUNCTIONAL STATUS
 				<section>
 					<templateId root="2.16.840.1.113883.10.20.22.2.14" extension="2014-06-09"/>
 					<!-- Functional Status Section template V2-->
-					<code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional Status"/>
+					<code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional status assessment note"/>
 					<title>FUNCTIONAL STATUS</title>
 					<text>
 						<table border="1" width="100%">
@@ -647,7 +647,7 @@ FUNCTIONAL STATUS
 									</text>
 									<statusCode code="completed"/>
 									<effectiveTime value="20130731"/>
-									<value xsi:type="CD" code="165245003" displayName=" Independent walking" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+									<value xsi:type="CD" code="165245003" displayName="Independent walking" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="201307061145-0800"/>
@@ -759,7 +759,7 @@ MEDICATIONS SECTION V2
 							<effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
 								<period value="6" unit="h"/>
 							</effectiveTime>
-							<routeCode code="C38216" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="RESPIRATORY (INHALATION)"/>
+							<routeCode code="C38216" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Inhalation Route of Administration"/>
 							<doseQuantity value="2"/>
 							<administrationUnitCode code="PUFF" displayName="Puff" codeSystem="2.16.840.1.113883.5.85" codeSystemName="orderableDrugForm"/>
 							<consumable>
@@ -768,7 +768,7 @@ MEDICATIONS SECTION V2
 									<templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
 									<id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
 									<manufacturedMaterial>
-										<code code="573621" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+										<code code="573621" displayName="albuterol 0.09 MG/ACTUAT [Proventil]" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
 									</manufacturedMaterial>
 									<manufacturerOrganization>
 										<name>Medication Factory Inc.</name>
@@ -792,7 +792,7 @@ MEDICATIONS SECTION V2
 								<participantRole classCode="MANU">
 									<!-- ** Drug vehicle ** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-									<code code="412307009" displayName="drug vehicle" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96"/>
+									<code code="412307009" displayName="Drug vehicle" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96"/>
 									<playingEntity classCode="MMAT">
 										<code code="324049" displayName="Aerosol" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
 										<name>Aerosol</name>
@@ -817,7 +817,7 @@ MEDICATIONS SECTION V2
 								<act classCode="ACT" moodCode="INT">
 									<templateId root="2.16.840.1.113883.10.20.22.4.123"/>
 									<id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
-									<code code="395170001" displayName="medication monitoring(regine/therapy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+									<code code="395170001" displayName="Medication monitoring" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 									<statusCode code="completed"/>
 									<effectiveTime xsi:type="IVL_TS">
 										<low value="20130615"/>
@@ -851,7 +851,7 @@ MEDICATIONS SECTION V2
 							<effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
 								<period value="12" unit="h"/>
 							</effectiveTime>
-							<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="ORAL"/>
+							<routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral Route of Administration"/>
 							<doseQuantity value="1"/>
 							<consumable>
 								<manufacturedProduct classCode="MANU">
@@ -859,7 +859,7 @@ MEDICATIONS SECTION V2
 									<templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
 									<id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
 									<manufacturedMaterial>
-										<code code="197380" displayName="Atenolol 25 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+										<code code="197380" displayName="atenolol 25 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
 									</manufacturedMaterial>
 								</manufacturedProduct>
 							</consumable>
@@ -870,7 +870,7 @@ MEDICATIONS SECTION V2
 									<id root="e63166c7-6482-4a44-83a1-37ccdbde725b"/>
 									<code code="75321-0" displayName="Clinical Finding" codeSystem="2.16.840.1.113883.5.6" codeSystemName="LOINC"/>
 									<statusCode code="completed"/>
-									<value xsi:type="CD" code="38341003" displayName="Hypertension" codeSystem="2.16.840.1.113883.6.96"/>
+									<value xsi:type="CD" code="38341003" displayName="Hypertensive disorder, systemic arterial" codeSystem="2.16.840.1.113883.6.96"/>
 								</observation>
 							</entryRelationship>
 						</substanceAdministration>
@@ -887,7 +887,7 @@ MENTAL STATUS SECTION (NEW)
 				<section>
 					<templateId root="2.16.840.1.113883.10.20.22.2.56"/>
 					<!-- Mental Status Section -->
-					<code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MENTAL STATUS"/>
+					<code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Mental status Narrative"/>
 					<title>MENTAL STATUS</title>
 					<text>
 						<table border="1" width="100%">
@@ -927,7 +927,7 @@ MENTAL STATUS SECTION (NEW)
 							<!-- Mental Status Observation template -->
 							<templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2014-06-09"/>
 							<id root="c12ecaaf-53f8-4593-8f79-359aeaa3948b"/>
-							<code code="75275-8" displayName="Cognitive function" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"> </code>
+							<code code="75275-8" displayName="Cognitive function [Interpretation]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"> </code>
 							<statusCode code="completed"/>
 							<effectiveTime value="20130731"/>
 							<value xsi:type="CD" code="11163003" displayName="Intact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
@@ -959,7 +959,7 @@ MENTAL STATUS SECTION (NEW)
 							<!-- Mental Status Observation V2 -->
 							<templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2014-06-09"/>
 							<id root="c6b5a04b-2bf4-49d1-8336-636a3813df0a"/>
-							<code code="75275-8" displayName="Cognitive function" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+							<code code="75275-8" displayName="Cognitive function [Interpretation]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 							<statusCode code="completed"/>
 							<effectiveTime value="20130731"/>
 							<value xsi:type="CD" code="61372001" displayName="Aggressive behavior" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
@@ -998,10 +998,10 @@ MENTAL STATUS SECTION (NEW)
 									<!-- Mental Status Observation V2 -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2014-06-09"/>
 									<id root="c6b5a04b-2bf4-49d1-8336-636a3813df0a"/>
-									<code code="75275-8" displayName="Cognitive function" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<code code="75275-8" displayName="Cognitive function [Interpretation]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<statusCode code="completed"/>
 									<effectiveTime value="20130731"/>
-									<value xsi:type="CD" code="286569004" displayName="difficulty understanding own emotions" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
+									<value xsi:type="CD" code="286569004" displayName="Difficulty understanding own emotions" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
 									<author>
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="200130311"/>
@@ -1030,10 +1030,10 @@ MENTAL STATUS SECTION (NEW)
 									<!-- Mental Status Observation V2 -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2014-06-09"/>
 									<id root="c6b5a04b-2bf4-49d1-8336-636a3813df0a"/>
-									<code code="75275-8" displayName="Cognitive function" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<code code="75275-8" displayName="Cognitive function [Interpretation]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<statusCode code="completed"/>
 									<effectiveTime value="20130731"/>
-									<value xsi:type="CD" code="288760009" displayName="difficulty communicating thoughts" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
+									<value xsi:type="CD" code="288760009" displayName="Difficulty communicating thoughts" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
 									<author>
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="200130311"/>
@@ -1086,16 +1086,16 @@ NUTRITION SECTION
 							</code>
 							<statusCode code="completed"/>
 							<effectiveTime value="20130512"/>
-							<value xsi:type="CD" code="248324001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="well nourished"/>
+							<value xsi:type="CD" code="248324001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Well nourished"/>
 							<entryRelationship typeCode="SUBJ">
 								<observation classCode="OBS" moodCode="EVN">
 									<!-- ** Nutrition Assessment** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.138"/>
 									<id root="ab1791b0-5c71-11db-b0de-0800200c9a66"/>
-									<code code="75303-8" displayName="Nutrition assessment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<code code="75303-8" displayName="Nutrition assessment Narrative" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<statusCode code="completed"/>
 									<effectiveTime value="20130512"/>
-									<value xsi:type="CD" code="386619000" displayName="low sodium diet (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
+									<value xsi:type="CD" code="386619000" displayName="Low sodium diet (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="20130730"/>
@@ -1110,7 +1110,7 @@ NUTRITION SECTION
 									<!-- ** Nutrition Assessment ** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.138"/>
 									<id root="ab1791b0-5c71-11db-b0de-0800200c9a66"/>
-									<code code="75303-8" displayName="Nutrition assessment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<code code="75303-8" displayName="Nutrition assessment Narrative" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<statusCode code="completed"/>
 									<effectiveTime value="20130512"/>
 									<value xsi:type="CD" code="430186007" displayName="excessive dietary carbohydrate intake(finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
@@ -1150,7 +1150,7 @@ Plan of Treatment Section (V2)
 				<section>
 					<templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
 					<!--  **** Plan of Treatment section V2 template  **** -->
-					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of care note"/>
 					<title>TREATMENT PLAN</title>
 					<text>
 						<content styleCode="Bold"> Hand-off Communication:</content>
@@ -1199,7 +1199,7 @@ Plan of Treatment Section (V2)
 					<entry>
 						<act classCode="ACT" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.10.20.22.4.141"/>
-							<code code="432138007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="handoff communication (procedure)"/>
+							<code code="432138007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Handoff communication (procedure)"/>
 							<statusCode code="completed"/>
 							<effectiveTime value="20130712"/>
 							<author typeCode="AUT">
@@ -1212,7 +1212,7 @@ Plan of Treatment Section (V2)
 							<participant typeCode="IRCP">
 								<participantRole>
 									<id root="73add9b3-307d-44ad-bd3e-93f3bd0a3910"/>
-									<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Registered Nurse"/>
+									<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Nursing Service Providers; Registered Nurse"/>
 									<addr>
 										<streetAddressLine>1006 Health Drive</streetAddressLine>
 										<city>Ann Arbor</city>
@@ -1237,13 +1237,13 @@ Plan of Treatment Section (V2)
 							<templateId root="2.16.840.1.113883.10.20.22.4.40" extension="2014-06-09"/>
 							<!-- Planned Encounter V2 template -->
 							<id root="9a6d1bac-17d3-4195-89a4-1121bc809b4d"/>
-							<code code="185349003" displayName="encounter for check-up (procedure)" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96"> </code>
+							<code code="185349003" displayName="Encounter for check up (procedure)" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96"> </code>
 							<statusCode code="active"/>
 							<effectiveTime value="20131015"/>
 							<performer>
 								<assignedEntity>
 									<id root="2a620155-9d11-439e-92a3-5d9815ff4de8"/>
-									<code code="158965000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Medical Practitioner"/>
+									<code code="158965000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Medical practitioner"/>
 									<addr>
 										<streetAddressLine>1006 Health Drive</streetAddressLine>
 										<city>Ann Arbor</city>
@@ -1310,7 +1310,7 @@ Plan of Treatment Section (V2)
 								<time value="20130730"/>
 								<assignedAuthor>
 									<id root="d839038b-7171-4165-a760-467925b43857"/>
-									<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Registered nurse"/>
+									<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Nursing Service Providers; Registered Nurse"/>
 									<assignedPerson>
 										<name>
 											<given>Nurse</given>
@@ -1337,7 +1337,7 @@ Plan of Treatment Section (V2)
 							<!-- Nutrition Recommendation ACT-->
 							<templateId root="2.16.840.1.113883.10.20.22.4.130"/>
 							<id root="9a6d1bac-17d3-4195-89a4-1121bc809a5c"/>
-							<code code="61310001" displayName="nutrition eduction" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+							<code code="61310001" displayName="Nutrition education" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<statusCode code="active"/>
 							<effectiveTime value="20130731"/>
 						</act>
@@ -1471,7 +1471,7 @@ PROBLEM SECTION v2
 										<!-- Based on patient symptoms, presumed onset is July 3, 2013 -->
 										<!-- Absence of effectiveTime/high means the condition is not resolved -->
 									</effectiveTime>
-									<value xsi:type="CD" code="195977004" codeSystem="2.16.840.1.113883.6.96" displayName="mixed asthma"/>
+									<value xsi:type="CD" code="195977004" codeSystem="2.16.840.1.113883.6.96" displayName="Mixed asthma"/>
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="200704141515-0800"/>
@@ -1500,7 +1500,7 @@ PROBLEM SECTION v2
 										<time value="200704171515-0800"/>
 										<assignedAuthor>
 											<id extension="222334444" root="2.16.840.1.113883.4.6"/>
-											<code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
+											<code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
 										</assignedAuthor>
 									</author>
 								</observation>
@@ -1591,7 +1591,7 @@ REASON FOR REFERRAL V2
 								<time value="20130730"/>
 								<assignedAuthor>
 									<id root="d839038b-7171-4165-a760-467925b43857"/>
-									<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Registered nurse"/>
+									<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Nursing Service Providers; Registered Nurse"/>
 									<assignedPerson>
 										<name>
 											<given>Nurse</given>
@@ -1605,7 +1605,7 @@ REASON FOR REFERRAL V2
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
 									<statusCode code="completed"/>
-									<value xsi:type="CD" code="268528005" displayName="full care by specialist" codeSystem="2.16.840.1.113883.6.96"/>
+									<value xsi:type="CD" code="268528005" displayName="Full care by specialist" codeSystem="2.16.840.1.113883.6.96"/>
 								</observation>
 							</entryRelationship>
 						</act>
@@ -1700,13 +1700,13 @@ RESULTS SECTION V2
 									<statusCode code="completed"/>
 									<effectiveTime value="201303110830-0800"/>
 									<value xsi:type="PQ" value="13.2" unit="g/dL"/>
-									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="201303110830-0800"/>
 										<assignedAuthor>
 											<id extension="333444444" root="2.16.840.1.113883.4.6"/>
-											<code code="246Q00000X" displayName="Technician, Pathology" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
+											<code code="246Q00000X" displayName=""Technologists, Technicians &amp; Other Technical Service Providers"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
 										</assignedAuthor>
 									</author>
 									<referenceRange>
@@ -1732,7 +1732,7 @@ RESULTS SECTION V2
 											<originalText>6.7 billion per liter</originalText>
 										</translation>
 									</value>
-									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="201303110830-0800"/>
@@ -1762,7 +1762,7 @@ RESULTS SECTION V2
 									<statusCode code="completed"/>
 									<effectiveTime value="201303110830-0800"/>
 									<value xsi:type="PQ" value="123" unit="10*9/L"/>
-									<interpretationCode code="A" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="A" codeSystem="2.16.840.1.113883.5.83" displayName="Abnormal" />
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="201303110830-0800"/>
@@ -1792,7 +1792,7 @@ RESULTS SECTION V2
 									<statusCode code="completed"/>
 									<effectiveTime value="201303110830-0800"/>
 									<value xsi:type="PQ" value="35.3" unit="%"/>
-									<interpretationCode code="A" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="A" codeSystem="2.16.840.1.113883.5.83" displayName="Abnormal" />
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="201303110830-0800"/>
@@ -1819,7 +1819,7 @@ RESULTS SECTION V2
 									<statusCode code="completed"/>
 									<effectiveTime value="201303110830-0800"/>
 									<value xsi:type="PQ" value="4.21" unit="10*12/L"/>
-									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="201303110830-0800"/>
@@ -1844,7 +1844,7 @@ RESULTS SECTION V2
 							<!-- ** Result organizer ** -->
 							<templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2014-06-09"/>
 							<id root="122ed3ae-6d9e-43d0-bfa2-434ea34b1426"/>
-							<code code="166312007" displayName="Blood chemistry test" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+							<code code="166312007" displayName="Blood chemistry" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<statusCode code="active"/>
 							<effectiveTime>
 								<low value="200803200930-0800"/>
@@ -1881,7 +1881,7 @@ VITAL SIGNS SECTION V2
 				<section>
 					<!-- ** Vital Signs section with entries required ** -->
 					<templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2014-06-09"/>
-					<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="VITAL SIGNS"/>
+					<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
 					<title>VITAL SIGNS</title>
 					<text>
 						<table border="1" width="100%">
@@ -1927,11 +1927,11 @@ VITAL SIGNS SECTION V2
 									<!-- ** Vital sign observation ** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<id root="ed9589fd-fda0-41f7-a3d0-dc537554f5c2"/>
-									<code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height"/>
+									<code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body height"/>
 									<statusCode code="completed"/>
 									<effectiveTime value="20120910"/>
 									<value xsi:type="PQ" value="177" unit="cm"/>
-									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="201209101145-0800"/>
@@ -1950,7 +1950,7 @@ VITAL SIGNS SECTION V2
 									<statusCode code="completed"/>
 									<effectiveTime value="20120910"/>
 									<value xsi:type="PQ" value="86" unit="kg"/>
-									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="201209101145-0800"/>
@@ -1965,11 +1965,11 @@ VITAL SIGNS SECTION V2
 									<!-- ** Vital sign observation ** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<id root="a0e39c70-9674-4b2a-9837-cdf74200d8d5"/>
-									<code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular Systolic"/>
+									<code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Systolic blood pressure"/>
 									<statusCode code="completed"/>
 									<effectiveTime value="20120910"/>
 									<value xsi:type="PQ" value="132" unit="mm[Hg]"/>
-									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="201209101145-0800"/>
@@ -1984,11 +1984,11 @@ VITAL SIGNS SECTION V2
 									<!-- ** Vital sign observation ** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<id root="1c2748b7-e440-41ba-bc01-dde97d84a036"/>
-									<code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BP Diastolic"/>
+									<code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diastolic blood pressure"/>
 									<statusCode code="completed"/>
 									<effectiveTime value="20120910"/>
 									<value xsi:type="PQ" value="88" unit="mm[Hg]"/>
-									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="201109010915-0800"/>
@@ -2016,11 +2016,11 @@ VITAL SIGNS SECTION V2
 									<!-- ** Vital sign observation ** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<id root="05c047cd-28c3-41cd-be6c-56f8cc0c3f2f"/>
-									<code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height"/>
+									<code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body height"/>
 									<statusCode code="completed"/>
 									<effectiveTime value="20110901"/>
 									<value xsi:type="PQ" value="177" unit="cm"/>
-									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="201109010915-0800"/>
@@ -2039,7 +2039,7 @@ VITAL SIGNS SECTION V2
 									<statusCode code="completed"/>
 									<effectiveTime value="20110901"/>
 									<value xsi:type="PQ" value="88" unit="kg"/>
-									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="201109010915-0800"/>
@@ -2054,11 +2054,11 @@ VITAL SIGNS SECTION V2
 									<!-- ** Vital sign observation ** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<id root="b046c35a-59c7-4215-ae09-9a8409a30b21"/>
-									<code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BP Systolic"/>
+									<code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Systolic blood pressure"/>
 									<statusCode code="completed"/>
 									<effectiveTime value="20110901"/>
 									<value xsi:type="PQ" value="128" unit="mm[Hg]"/>
-									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="201109010915-0800"/>
@@ -2073,11 +2073,11 @@ VITAL SIGNS SECTION V2
 									<!-- ** Vital sign observation ** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<id root="44f54e66-fb4b-4ee5-9ced-9574ef307a23"/>
-									<code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BP Diastolic"/>
+									<code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diastolic blood pressure"/>
 									<statusCode code="completed"/>
 									<effectiveTime value="20110901"/>
 									<value xsi:type="PQ" value="80" unit="mm[Hg]"/>
-									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 										<time value="201109010915-0800"/>

@@ -2,12 +2,12 @@
   <templateId root="2.16.840.1.113883.10.20.6.2.13"/>
   <code code="18782-3" codeSystem="2.16.840.1.113883.6.1" 
         codeSystemName="LOINC" 
-        displayName="Study observation"/>
+        displayName="Radiology Study observation"/>
   <statusCode code="completed"/>
   <value xsi:type="CD" code="309530007" 
         codeSystem="2.16.840.1.113883.6.96" 
         codeSystemName="SNOMED CT" 
-        displayName="Hilar mass"/>
+        displayName="Mass of hilum"/>
   <!-- entryRelationship elements referring to SOP Instance Observations 
        or Quantity Measurement Observations may appear here -->
 </observation>

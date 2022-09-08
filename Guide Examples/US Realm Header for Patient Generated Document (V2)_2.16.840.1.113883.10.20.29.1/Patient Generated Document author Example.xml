@@ -8,7 +8,7 @@
 				The PGD Header Template includes further conformance constraints on the code element to encode the personal or legal 
 				relationship of the author when they are person who is not acting in the role of a clinician.. 
 			-->
-    <code code="ONESELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code" />
+    <code code="ONESELF" displayName="self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code" />
     <addr use="HP">
       <!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
       <streetAddressLine>2222 Home Street</streetAddressLine>

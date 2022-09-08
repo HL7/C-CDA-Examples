@@ -4,7 +4,7 @@
   <code code="12" displayName="Medicare Secondary Working Aged Beneficiary or Spouse with Employer Group Health Plan" 
              codeSystemName="Insurance Type Code (x12N-1336)"
              codeSystem="2.16.840.1.113883.6.255.1336">
-    <translation code="2" displayName="Medicare" 
+    <translation code="2" displayName="MEDICAID" 
                                     codeSystem="2.16.840.1.113883.3.221.5" codeSystemName="Source of Payment Typology (PHDSC)"></translation>
   </code>
   <statusCode code="completed" />
@@ -17,7 +17,7 @@
     </time>
     <assignedEntity>
       <id root="2.16.840.1.113883.19" />
-      <code code="PAYOR" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleCode" />
+      <code code="PAYOR" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleCode" displayName="invoice payor" />
       <addr use="WP">
         <streetAddressLine>123 Insurance Road</streetAddressLine>
         <city>Blue Bell</city>
@@ -78,7 +78,7 @@
     <participantRole classCode="PAT">
       <!-- Health plan ID for patient. -->
       <id root="1.1.1.1.1.1.1.1.14" extension="1138345" />
-      <code code="SELF" codeSystem="2.16.840.1.113883.5.111" />
+      <code code="SELF" codeSystem="2.16.840.1.113883.5.111" displayName="self" />
       <addr use="HP">
         <streetAddressLine>17 Daws Rd.</streetAddressLine>
         <city>Blue Bell</city>

@@ -47,7 +47,7 @@
             <routeCode code="C38276"
                 codeSystem="2.16.840.1.113883.3.26.1.1"
                 codeSystemName="NCI Thesaurus"
-                displayName="INTRAVENOUS"/>
+                displayName="Intravenous Route of Administration"/>
             <!-- an absolute dose quantity is unknown at the time the order is placed because 
                  the drug is prepared based on the weight at the time of administration. -->
             <!-- unit of measure taken from UCUM: http://download.hl7.de/documents/ucum/ucumdata.html -->
@@ -72,13 +72,13 @@
             <participant typeCode="CSM">
                 <participantRole classCode="MANU">
                     <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-                    <code code="412307009" displayName="drug vehicle"
+                    <code code="412307009" displayName="Drug vehicle"
                         codeSystem="2.16.840.1.113883.6.96"/>
                     <playingEntity classCode="MMAT">
                         <!-- bevacizumab is prepared with a compatible solution for continuous infusion. 
 	                         In this example, we use normal saline for preparation. 
 	                    -->
-                        <code code="1807639" displayName="1000 ML Sodium Chloride 9 MG/ML Injection"
+                        <code code="1807639" displayName="1000 ML sodium chloride 9 MG/ML Injection"
                             codeSystem="2.16.840.1.113883.6.88"
                             codeSystemName="RxNorm"/>
                         <name>Sodium Chloride 0.9%</name>

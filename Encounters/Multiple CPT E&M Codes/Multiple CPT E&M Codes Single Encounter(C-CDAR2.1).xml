@@ -51,7 +51,7 @@
                         <templateId root="2.16.840.1.113883.10.20.22.4.80" assigningAuthorityName="CCDA Encounter Diagnosis" extension="2015-08-01" />
                         <templateId root="2.16.840.1.113883.10.20.22.4.80" assigningAuthorityName="CCDA Encounter Diagnosis" />
                         <id root="2.16.840.1.113883.3.140.1.1918489287.6.10.7" extension="449" />
-                        <code code="29308-4" displayName="ENCOUNTER DIAGNOSIS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                        <code code="29308-4" displayName="Diagnosis" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                         <entryRelationship typeCode="SUBJ" inversionInd="false">
                             <observation classCode="OBS" moodCode="EVN" negationInd="false">
                                 <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" extension="2015-08-01" />
@@ -124,17 +124,17 @@
                 </entryRelationship>
                 <entryRelationship typeCode="REFR" inversionInd="false">
                     <act classCode="ACT" moodCode="EVN">
-                        <code code="99408" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" displayName="Alcohol and/or substance abuse structured screening and brief intervention services" />
+                        <code code="99408" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" displayName="Alcohol and/or substance (other than tobacco) abuse structured screening (eg, AUDIT, DAST), and brief intervention (SBI) services; 15 to 30 minutes" />
                     </act>
                 </entryRelationship>
                 <entryRelationship typeCode="REFR" inversionInd="false">
                     <act classCode="ACT" moodCode="EVN">
-                        <code code="99394" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" displayName="Well Office Visit Established Patient Ages 12-17"/>
+                        <code code="99394" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" displayName="Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnostic procedures, established patient; adolescent"/>
                     </act>
                 </entryRelationship>
                 <entryRelationship typeCode="REFR" inversionInd="false">
                     <act classCode="ACT" moodCode="EVN">
-                        <code code="99213" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" displayName="Office Visit, Established Patient Level 3"/>
+                        <code code="99213" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12" displayName="Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using time for code selection, 20-29 minutes of total time is spent on the date of the encounter."/>
                     </act>
                 </entryRelationship>
             </encounter>

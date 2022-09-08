@@ -3,7 +3,7 @@
   <!-- Family History Observation template -->
   <id root="d42ebf70-5c89-11db-b0de-0800200c9a66" />
   <code code="75323-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Condition">
-    <translation code="64572001" displayName="Condition" 
+    <translation code="64572001" displayName="Disease" 
                                     codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"></translation>
   </code>
   <statusCode code="completed" />

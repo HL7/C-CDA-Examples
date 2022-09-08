@@ -132,7 +132,7 @@
                             <low value="20140227"/>
                         </effectiveTime>
                         <!-- This is a SNOMED code as the primary vocabulary for problem lists-->
-                        <value xsi:type="CD" code="385093006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Community Acquired Pneumonia"/>							
+                        <value xsi:type="CD" code="385093006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Community acquired pneumonia"/>							
                     </observation>
                 </entryRelationship>
             </act>

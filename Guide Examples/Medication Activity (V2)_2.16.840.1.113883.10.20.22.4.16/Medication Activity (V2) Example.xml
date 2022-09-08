@@ -13,7 +13,7 @@
   <routeCode code="C38288" 
             codeSystem="2.16.840.1.113883.3.26.1.1" 
             codeSystemName="NCI Thesaurus" 
-            displayName="ORAL"/>
+            displayName="Oral Route of Administration"/>
   <doseQuantity value="1"/>
   <consumable>
     <manufacturedProduct classCode="MANU">
@@ -23,7 +23,7 @@
       <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
       <manufacturedMaterial>
         <code code="197380"  
-              displayName="Atenolol 25 MG Oral Tablet" 
+              displayName="atenolol 25 MG Oral Tablet" 
               codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
       </manufacturedMaterial>
     </manufacturedProduct>
@@ -41,7 +41,7 @@
       <statusCode code="completed"/>
       <value xsi:type="CD" 
              code="38341003" 
-             displayName="Hypertension" 
+             displayName="Hypertensive disorder, systemic arterial" 
              codeSystem="2.16.840.1.113883.6.96"/>
     </observation>
   </entryRelationship>

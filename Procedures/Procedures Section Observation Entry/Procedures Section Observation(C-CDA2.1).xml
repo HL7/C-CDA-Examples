@@ -27,7 +27,7 @@
 			<templateId root="2.16.840.1.113883.10.20.22.4.13"/>
 			<templateId root="2.16.840.1.113883.10.20.22.4.13" extension="2014-06-09"/>
 			<id root="c03e5445-af1b-4911-a419-e2782f21448c"/>
-			<code code="268400002" codeSystem="2.16.840.1.113883.6.96" displayName="12 lead ECG" codeSystemName="SNOMED-CT">
+			<code code="268400002" codeSystem="2.16.840.1.113883.6.96" displayName="12 lead electrocardiogram" codeSystemName="SNOMED-CT">
 				<originalText>
 					<reference value="#ProcedureDesc2"/>
 				</originalText>
@@ -42,7 +42,7 @@
 			<statusCode code="completed"/>
 			<effectiveTime value="20140329091522-0500" />
 			<!-- When choosing an observation, value records relevant findings-->
-			<value xsi:type="CD" code="251135002" codeSystem="2.16.840.1.113883.6.96" displayName="Borderline normal ECG" codeSystemName="SNOMED-CT" />
+			<value xsi:type="CD" code="251135002" codeSystem="2.16.840.1.113883.6.96" displayName="Borderline normal electrocardiogram" codeSystemName="SNOMED-CT" />
 		</observation>
 	</entry>
 </section>

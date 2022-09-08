@@ -46,7 +46,7 @@
 				<time value="20140104"/>
 				<assignedAuthor>
 					<id extension="99999999" root="2.16.840.1.113883.4.6"/>
-					<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine" />
+					<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine" />
 					<telecom use="WP" value="tel:555-555-1002"/>
 					<assignedPerson>
 						<name>
@@ -73,13 +73,13 @@
 						<low value="2006"/>
 					</effectiveTime>
 					<!-- This specifies that the allergy is to a medication in contrast to other allergies (substance) -->
-					<value xsi:type="CD" code="416098002" displayName="drug allergy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"></value>
+					<value xsi:type="CD" code="416098002" displayName="Allergy to drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"></value>
 					<author>
 						<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 						<time value="20140104"/>
 						<assignedAuthor>
 							<id extension="99999999" root="2.16.840.1.113883.4.6"/>
-							<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine" />
+							<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine" />
 							<telecom use="WP" value="tel:555-555-1002"/>
 							<assignedPerson>
 								<name>

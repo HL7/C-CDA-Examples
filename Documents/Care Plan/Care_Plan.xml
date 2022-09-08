@@ -24,7 +24,7 @@
 	<code code="52521-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Overall Plan of Care/Advance Care Directives"/>
 	<title>Good Health Hospital Care Plan</title>
 	<effectiveTime value="201308201120-0800"/>
-	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" />
 	<languageCode code="en-US"/>
 	<!-- This document is the second document in the set (see setId for id for the set -->
 	<setId root="004bb033-b948-4f4c-b5bf-a8dbd7d8dd40"/>
@@ -67,7 +67,7 @@
 				<!-- CDC Race and Ethnicity code set contains the five minimum race and ethnicity categories defined by OMB Standards -->
 				<raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
 				<!-- The raceCode extension is only used if raceCode is valued -->
-				<sdtc:raceCode code="2076-8" displayName="Hawaiian or Other Pacific Islander" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
+				<sdtc:raceCode code="2076-8" displayName="Native Hawaiian or Other Pacific Islander" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
 				<ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
 				<guardian>
 					<code code="POWATT" displayName="Power of Attorney" codeSystem="2.16.840.1.113883.1.11.19830" codeSystemName="ResponsibleParty"/>
@@ -126,7 +126,7 @@
 		<time value="20130730"/>
 		<assignedAuthor>
 			<id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
-			<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Registered nurse"/>
+			<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Nursing Service Providers; Registered Nurse"/>
 			<addr>
 				<streetAddressLine>1004 Healthcare Drive </streetAddressLine>
 				<city>Portland</city>
@@ -260,7 +260,7 @@
       4zmMir6edjzMMIjdMDSsWdIJdksIJR3373jeu83==</sdtc:signatureText>
 		<assignedEntity>
 			<id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
-			<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Registered nurse"/>
+			<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse"/>
 			<addr>
 				<streetAddressLine>1004 Healthcare Drive </streetAddressLine>
 				<city>Portland</city>
@@ -293,7 +293,7 @@
       4zmMir6edjzMMIjdMDSsWdIJdksIJR3373jeu83==</sdtc:signatureText>
 		<assignedEntity>
 			<id extension="444222222" root="2.16.840.1.113883.4.1"/>
-			<code code="ONESELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
+			<code code="ONESELF" displayName="self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
 			<addr use="HP">
 				<!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
 				<streetAddressLine>2222 Home Street</streetAddressLine>
@@ -316,7 +316,7 @@
          If the date in the time element is in the future, then this is the date of the next scheduled review. -->
 	<!-- This example shows a Care Plan Review that has already taken place -->
 	<participant typeCode="VRF">
-		<functionCode code="425268008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Review of Care Plan"/>
+		<functionCode code="425268008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Review of care plan"/>
 		<time value="20130801"/>
 		<associatedEntity classCode="ASSIGNED">
 			<id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
@@ -326,7 +326,7 @@
   If the date in the time element is in the future,  then this is the date of the next scheduled review. -->
 	<!-- This example shows a Scheduled Care Plan Review that is in the future -->
 	<participant typeCode="VRF">
-		<functionCode code="425268008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Review of Care Plan"/>
+		<functionCode code="425268008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Review of care plan"/>
 		<time value="20131001"/>
 		<associatedEntity classCode="ASSIGNED">
 			<id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
@@ -388,7 +388,7 @@
 				<time value="20130715223615-0800"/>
 				<assignedEntity>
 					<id extension="5555555555" root="2.16.840.1.113883.4.6"/>
-					<code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
+					<code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
 					<addr>
 						<streetAddressLine>1004 Healthcare Drive </streetAddressLine>
 						<city>Portland</city>
@@ -543,7 +543,7 @@ Health Concerns section
 										<!-- The low value reflects the start date of the current or past tobacco use observation -->
 										<low value="20090214"/>
 									</effectiveTime>
-									<value xsi:type="CD" code="449868002" displayName="Current every day smoker" codeSystem="2.16.840.1.113883.6.96"/>
+									<value xsi:type="CD" code="449868002" displayName="Smokes tobacco daily" codeSystem="2.16.840.1.113883.6.96"/>
 								</observation>
 							</entryRelationship>
 							<!-- Health Concern Problem: Respiratory insufficiency -->
@@ -663,7 +663,7 @@ Health Concerns section
 						<act classCode="ACT" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.10.20.22.4.136"/>
 							<id root="cbcbf20a-d011-449f-87d1-a23cc3e5f7cf"/>
-							<code code="281694009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="At risk for"/>
+							<code code="281694009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Finding of at risk"/>
 							<!-- This Health Risk has a statusCode of active because it is an active risk -->
 							<statusCode code="active"/>
 							<!-- The effective time is the date that the Health Risk started being followed - 
@@ -675,12 +675,12 @@ Health Concerns section
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2014-06-09"/>
 									<id root="8dfacd73-1682-4cc4-9351-e54ccea83612"/>
-									<code code="281694009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="At risk"/>
+									<code code="281694009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Finding of at risk"/>
 									<statusCode code="completed"/>
 									<effectiveTime>
 										<low value="20130613"/>
 									</effectiveTime>
-									<value xsi:type="CD" code="409623005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Malignant neoplastic disease"/>
+									<value xsi:type="CD" code="409623005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Respiratory insufficiency"/>
 								</observation>
 							</entryRelationship>
 							<!-- Priority Preference -->
@@ -802,7 +802,7 @@ Health Concerns section
 								<time value="20130730"/>
 								<assignedAuthor>
 									<id root="d839038b-7171-4165-a760-467925b43857"/>
-									<code code="163W00000X" displayName="Registered nurse" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
+									<code code="163W00000X" displayName="Nursing Service Providers; Registered Nurse" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
 									<assignedPerson>
 										<name>
 											<given>Nurse</given>
@@ -957,7 +957,7 @@ Interventions Section
 								<act classCode="ACT" moodCode="INT">
 									<templateId root="2.16.840.1.113883.10.20.22.4.39" extension="2014-06-09"/>
 									<id root="7658963e-54da-496f-bf18-dea1dddaa3b0"/>
-									<code code="423171007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Elevate head of bed"/>
+									<code code="423171007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Elevation of head of bed"/>
 									<statusCode code="active"/>
 									<effectiveTime value="20130902"/>
 									<!-- Author Participation Template: 
@@ -1100,7 +1100,7 @@ Interventions Section
 								<act classCode="ACT" moodCode="EVN">
 									<!-- Handoff Communication template - This template represents provider hand-off communication.  -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.141"/>
-									<code code="432138007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="handoff communication (procedure)"/>
+									<code code="432138007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Handoff communication (procedure)"/>
 									<statusCode code="completed"/>
 									<effectiveTime value="20130712"/>
 									<author typeCode="AUT">
@@ -1108,7 +1108,7 @@ Interventions Section
 										<time value="20130731"/>
 										<assignedAuthor>
 											<id root="d839038b-7171-4165-a760-467925b43857"/>
-											<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Registered nurse"/>
+											<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Nursing Service Providers; Registered Nurse"/>
 											<assignedPerson>
 												<name>
 													<given>Nurse</given>
@@ -1121,7 +1121,7 @@ Interventions Section
 									<participant typeCode="IRCP">
 										<participantRole>
 											<id extension="1138345" root="2.16.840.1.113883.19"/>
-											<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy" displayName="Registered Nurse"/>
+											<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy" displayName="Nursing Service Providers; Registered Nurse"/>
 											<addr>
 												<streetAddressLine>1006 Health Drive</streetAddressLine>
 												<city>Ann Arbor</city>
@@ -1157,7 +1157,7 @@ Interventions Section
 								<act classCode="ACT" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.10.20.22.4.12" extension="2014-06-09"/>
 									<id root="7658963e-54da-496f-bf18-dea1dddaa3b0"/>
-									<code code="423171007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Elevate head of bed"/>
+									<code code="423171007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Elevation of head of bed"/>
 									<statusCode code="completed"/>
 									<!-- When this act took place -->
 									<effectiveTime value="20130801"/>
@@ -1201,7 +1201,7 @@ Interventions Section
 								<act classCode="ACT" moodCode="EVN">
 									<!-- Handoff Communication template - This template represents provider hand-off communication.  -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.141"/>
-									<code code="432138007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="handoff communication (procedure)"/>
+									<code code="432138007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Handoff communication (procedure)"/>
 									<statusCode code="completed"/>
 									<effectiveTime value="20130712"/>
 									<author typeCode="AUT">
@@ -1209,7 +1209,7 @@ Interventions Section
 										<time value="20130731"/>
 										<assignedAuthor>
 											<id root="d839038b-7171-4165-a760-467925b43857"/>
-											<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Registered nurse"/>
+											<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Nursing Service Providers; Registered Nurse"/>
 											<assignedPerson>
 												<name>
 													<given>Nurse</given>
@@ -1222,7 +1222,7 @@ Interventions Section
 									<participant typeCode="IRCP">
 										<participantRole>
 											<id extension="1138345" root="2.16.840.1.113883.19"/>
-											<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy" displayName="Registered Nurse"/>
+											<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy" displayName="Nursing Service Providers; Registered Nurse"/>
 											<addr>
 												<streetAddressLine>1006 Health Drive</streetAddressLine>
 												<city>Ann Arbor</city>
@@ -1333,7 +1333,7 @@ Interventions Section
 							<reference typeCode="REFR">
 								<externalDocument classCode="DOCCLIN" moodCode="EVN">
 									<id root="1.2.840.113619.2.62.994044785528.12" extension="20060828170821659"/>
-									<code code="18842-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Disharge Summarization Note"/>
+									<code code="18842-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Discharge summary"/>
 								</externalDocument>
 							</reference>
 						</act>

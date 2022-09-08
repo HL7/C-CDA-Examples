@@ -4,7 +4,7 @@
     <!-- Other asssessments may go into other sections. Depression screening is clinically appropriate for Mental Status -->
     <templateId root="2.16.840.1.113883.10.20.22.2.56" extension="2015-08-01"/>
     <code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
-        displayName="MENTAL STATUS"/>
+        displayName="Mental status Narrative"/>
     <title>MENTAL STATUS</title>
     <text>
         <table>
@@ -128,7 +128,7 @@
             <!-- The total score, however, is the most relevant value of the panel, so it has also been elevated to the panel value -->
             <!-- INT is preferred for assessments such as a questionnaire. Units are not allowed for xsi:type="INT" -->
             <value xsi:type="INT" value="12"/>
-            <interpretationCode code="H" codeSystem="2.16.840.1.113883.5.83"/>
+            <interpretationCode code="H" codeSystem="2.16.840.1.113883.5.83" displayName="High" />
             <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
                     <!-- Assessment Scale Supporting Observation -->
@@ -326,7 +326,7 @@
                         <high value="4"/>
                     </value>
                     <!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation a specific patient value-->
-                    <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                    <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
                 </observationRange>
                 <!-- Other ranges may be included as well (such as a high range) as considered appropriate per observation and use case -->
             </referenceRange>

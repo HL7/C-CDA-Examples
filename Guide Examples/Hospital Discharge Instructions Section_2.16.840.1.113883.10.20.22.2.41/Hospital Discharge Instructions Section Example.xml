@@ -2,7 +2,7 @@
   <templateId root="2.16.840.1.113883.10.20.22.2.41"/>
   <code code="8653-8" codeSystem="2.16.840.1.113883.6.1" 
         codeSystemName="LOINC" 
-        displayName="HOSPITAL DISCHARGE INSTRUCTIONS"/>
+        displayName="Hospital Discharge instructions"/>
   <title>HOSPITAL DISCHARGE INSTRUCTIONS</title>
   <text>
     <list listType="ordered">

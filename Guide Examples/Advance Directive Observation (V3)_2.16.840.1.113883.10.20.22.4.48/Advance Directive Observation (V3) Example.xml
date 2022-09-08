@@ -4,7 +4,7 @@
     <templateId root="2.16.840.1.113883.10.20.22.4.48" 
         extension="2015-08-01" />
     <id root="9b54c3c9-1673-49c7-aef9-b037ed72ed27" />
-    <code code="304251008" displayName="Resuscitation" 
+    <code code="304251008" displayName="Resuscitation status" 
                                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
       <translation code="75320-2" 
                                     displayName="Advance Directive"
@@ -29,7 +29,7 @@
       <assignedAuthor>
         <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c" />
         <code code="163W00000X" 
-            displayName="Registered nurse" 
+            displayName="Nursing Service Providers; Registered Nurse" 
             codeSystem="2.16.840.1.113883.6.101" 
             codeSystemName="Health Care Provider Taxonomy (HIPAA)" />
         <assignedPerson>
@@ -53,7 +53,7 @@
         <code code="163W00000X" 
              codeSystem="2.16.840.1.113883.6.101" 
              codeSystemName="Health Care Provider Taxonomy (HIPAA)" 
-             displayName="Registered nurse" />
+             displayName="Nursing Service Providers; Registered Nurse" />
         <addr>
           ...
         </addr>
@@ -70,7 +70,7 @@
     </participant>
     <participant typeCode="CST">
       <participantRole classCode="AGNT">
-        <code code="MTH" codeSystem="2.16.840.1.113883.5.111" displayName="Mother" />
+        <code code="MTH" codeSystem="2.16.840.1.113883.5.111" displayName="mother" />
         <addr>
           ...
         </addr>

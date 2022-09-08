@@ -9,7 +9,7 @@
       <low value="20013103" />
     </effectiveTime>
     <value xsi:type="CD" code="425144005" codeSystem="2.16.840.1.113883.6.6" displayName="Minor open wound" />
-    <targetSiteCode code="182295001" codeSystem="2.16.840.1.113883.6.96" displayName="anterior aspect of knee" />
+    <targetSiteCode code="182295001" codeSystem="2.16.840.1.113883.6.96" displayName="Structure of anterior aspect of knee" />
     <author>
           ...
         </author>

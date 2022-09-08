@@ -4,7 +4,7 @@
     <templateId root="2.16.840.1.113883.10.20.22.4.75" extension="2015-08-01" />
     <id root="a7bc1062-8649-42a0-833d-ekd65bd013c9" />
     <code code="75275-8" 
-                                    displayName="Cognitive function"
+                                    displayName="Cognitive function [Interpretation]"
                                     codeSystem="2.16.840.1.113883.6.1"
                                     codeSystemName="LOINC" />
     <statusCode code="completed" />
@@ -16,10 +16,10 @@
  
                 
                 
-        <code code="373930000" displayName="Cognitive function" 
+        <code code="373930000" displayName="Cognitive function finding" 
                                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
           <translation code="75275-8" 
-                                    displayName="Cognitive function"
+                                    displayName="Cognitive function [Interpretation]"
                                     codeSystem="2.16.840.1.113883.6.1"
                                     codeSystemName="LOINC"></translation>
         </code>

@@ -3,7 +3,7 @@
     <!-- Sensory and Speech Status(NEW)-->
     <templateId root="2.16.840.1.113883.10.20.22.4.127" />
     <id root="c6b5a04b-2bf4-49d1-8336-636a3813df0a" />
-    <code code="47078008" displayName="Hearing" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" />
+    <code code="47078008" displayName="Hearing, function" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" />
     <statusCode code="completed" />
     <effectiveTime value="200130311" />
     <value xsi:type="CD" code="260379002" displayName="Impaired" codeSystemName="SNOMED CT" />
