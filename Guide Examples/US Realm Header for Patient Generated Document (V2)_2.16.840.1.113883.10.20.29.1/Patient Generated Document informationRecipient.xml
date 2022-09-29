@@ -1,55 +1,58 @@
-<!-- The document is intended for multiple recipients, Adam himself and his PCP physician. -->
-<informationRecipient>
-  <intendedRecipient>
-    <!-- Identifier based on the person's Direct Address which is a secure and trusted mechanism for identifying 
+<ClinicalDocument>
+  <!-- ... -->
+  <!-- The document is intended for multiple recipients, Adam himself and his PCP physician. -->
+  <informationRecipient>
+    <intendedRecipient>
+      <!-- Identifier based on the person's Direct Address which is a secure and trusted mechanism for identifying 
 				a person discretely. The root of the id is the OID of the HISP Assigning Authority for the Direct Address-->
-    <id extension="adameveryman@direct.sampleHISP.com" root="2.16.123.123.12345.1234" />
-    <informationRecipient>
-      <name>
-        <given>Adam</given>
-        <family>Everyman</family>
-      </name>
-    </informationRecipient>
-    <receivedOrganization>
-      <!-- id using HL7 example OID. -->
-      <id extension="999.3" root="2.16.840.1.113883.19" />
-      <name>MyPersonalHealthRecord.Com</name>
-    </receivedOrganization>
-  </intendedRecipient>
-</informationRecipient>
-<informationRecipient>
-  <intendedRecipient>
-    <!-- Unique/Trusted id using HL7 example OID. -->
-    <id extension="999.4" root="2.16.840.1.113883.19" />
-    <!-- The physician's NPI number -->
-    <id extension="1122334455" root="2.16.840.1.113883.4.6" />
-    <!-- The physician's Direct Address -->
-    <!-- Identifier based on the person's Direct Address which is a secure and trusted mechanism for identifying 
-				a person discretely. The root of the id is the OID of the HISP Assigning Authority for the Direct Address-->
-    <id extension="DrP@direct.sampleHISP2.com" root="2.16.123.123.12345.4321" />
-    <telecom use="WP" value="tel:(781)555-1212" />
-    <telecom use="WP" value="mailto:DrP@direct.sampleHISP2.com" />
-    <informationRecipient>
-      <name>
-        <prefix>Dr.</prefix>
-        <given>Patricia</given>
-        <family>Primary</family>
-      </name>
-    </informationRecipient>
-    <receivedOrganization>
+      <id extension="adameveryman@direct.sampleHISP.com" root="2.16.123.123.12345.1234" />
+      <informationRecipient>
+        <name>
+          <given>Adam</given>
+          <family>Everyman</family>
+        </name>
+      </informationRecipient>
+      <receivedOrganization>
+        <!-- id using HL7 example OID. -->
+        <id extension="999.3" root="2.16.840.1.113883.19" />
+        <name>MyPersonalHealthRecord.Com</name>
+      </receivedOrganization>
+    </intendedRecipient>
+  </informationRecipient>
+  <informationRecipient>
+    <intendedRecipient>
       <!-- Unique/Trusted id using HL7 example OID. -->
-      <id extension="999.2" root="2.16.840.1.113883.19" />
-      <!-- NPI for the organization -->
-      <id extension="1234567890" root="2.16.840.1.113883.4.6" />
-      <name>Good Health Internal Medicine</name>
+      <id extension="999.4" root="2.16.840.1.113883.19" />
+      <!-- The physician's NPI number -->
+      <id extension="1122334455" root="2.16.840.1.113883.4.6" />
+      <!-- The physician's Direct Address -->
+      <!-- Identifier based on the person's Direct Address which is a secure and trusted mechanism for identifying 
+				a person discretely. The root of the id is the OID of the HISP Assigning Authority for the Direct Address-->
+      <id extension="DrP@direct.sampleHISP2.com" root="2.16.123.123.12345.4321" />
       <telecom use="WP" value="tel:(781)555-1212" />
-      <addr>
-        <streetAddressLine>100 Health Drive</streetAddressLine>
-        <city>Boston</city>
-        <state>MA</state>
-        <postalCode>02368</postalCode>
-        <country>USA</country>
-      </addr>
-    </receivedOrganization>
-  </intendedRecipient>
-</informationRecipient>
+      <telecom use="WP" value="mailto:DrP@direct.sampleHISP2.com" />
+      <informationRecipient>
+        <name>
+          <prefix>Dr.</prefix>
+          <given>Patricia</given>
+          <family>Primary</family>
+        </name>
+      </informationRecipient>
+      <receivedOrganization>
+        <!-- Unique/Trusted id using HL7 example OID. -->
+        <id extension="999.2" root="2.16.840.1.113883.19" />
+        <!-- NPI for the organization -->
+        <id extension="1234567890" root="2.16.840.1.113883.4.6" />
+        <name>Good Health Internal Medicine</name>
+        <telecom use="WP" value="tel:(781)555-1212" />
+        <addr>
+          <streetAddressLine>100 Health Drive</streetAddressLine>
+          <city>Boston</city>
+          <state>MA</state>
+          <postalCode>02368</postalCode>
+          <country>USA</country>
+        </addr>
+      </receivedOrganization>
+    </intendedRecipient>
+  </informationRecipient>
+</ClinicalDocument>
