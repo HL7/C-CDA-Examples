@@ -6,5 +6,5 @@
           displayName="Characteristics of residence" />
   <statusCode code="completed" />
   <effectiveTime value="20130312" />
-  <value xsi:type="CD" code="308899009" displayName="unsatisfactory living conditions (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+  <value xsi:type="CD" code="308899009" displayName="Unsatisfactory living conditions (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
 </observation>

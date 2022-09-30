@@ -19,7 +19,7 @@
       <effectiveTime>
         <low value="20130613" />
       </effectiveTime>
-      <value xsi:type="CD" code="409623005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Malignant neoplastic disease" />
+      <value xsi:type="CD" code="409623005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Respiratory insufficiency" />
     </observation>
   </entryRelationship>
   ...

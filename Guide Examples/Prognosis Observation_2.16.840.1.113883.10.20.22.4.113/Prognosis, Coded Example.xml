@@ -11,6 +11,6 @@
     <effectiveTime>
       <low value="20130301" />
     </effectiveTime>
-    <value xsi:type="CD" code="67334001" codeSystem="2.16.840.1.113883.6.96" displayName="guarded prognosis" codeSystemName="SNOMED CT" />
+    <value xsi:type="CD" code="67334001" codeSystem="2.16.840.1.113883.6.96" displayName="Guarded prognosis" codeSystemName="SNOMED CT" />
   </observation>
 </entryRelationship>

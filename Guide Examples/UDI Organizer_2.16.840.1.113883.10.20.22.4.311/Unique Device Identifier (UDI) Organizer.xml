@@ -133,7 +133,7 @@
                 codeSystem="2.16.840.1.113883.3.26.1.1"
                 codeSystemName="NCI Thesaurus"/>
       <value xsi:type="CD" code="C113844"
-                codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Labeling does not contain MRI Safety Information"
+                codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Labeling does not Contain MRI Safety Information"
                 codeSystemName="NCI Thesaurus" sdtc:valueSet="2.16.840.1.113762.1.4.1021.46">
         <originalText>
           <reference value="#MRISafety_1"/>

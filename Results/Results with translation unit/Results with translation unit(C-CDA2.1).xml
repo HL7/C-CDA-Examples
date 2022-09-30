@@ -57,14 +57,14 @@
 					</effectiveTime>
 					<!-- Representing a result which has been translated from a non-UCUM code (e.g. result reported from external lab)-->
 					<value xsi:type="PQ" value="152" unit="10*3/uL"/>
-					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 					<!-- This entryRelationship presents the translation from originalText to the units-->
 					<entryRelationship typeCode="COMP">
 						<observation classCode="OBS" moodCode="EVN">
 							<code code="246514001" displayName="units"
 								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<value xsi:type="CD" code="10*3/uL" codeSystem="2.16.840.1.113883.6.8"
-								codeSystemName="UCUM">
+								codeSystemName="UCUM" displayName="thousand per microliter">
 								<originalText>THOUS/MCL</originalText>
 							</value>
 						</observation>
@@ -77,7 +77,7 @@
 								<high value="400" unit="10*3/uL"/>
 							</value>
 							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation a specific patient value-->
-							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 						</observationRange>
 					</referenceRange>
 				</observation>

@@ -9,6 +9,6 @@
     </text>
     <statusCode code="completed" />
     <effectiveTime value="200130311" />
-    <value xsi:type="CD" code="129035000" displayName="independent with dressing" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+    <value xsi:type="CD" code="129035000" displayName="Independent with dressing" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
   </observation>
 </entry>

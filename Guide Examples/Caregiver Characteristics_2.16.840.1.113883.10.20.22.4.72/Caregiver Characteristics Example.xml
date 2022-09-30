@@ -10,7 +10,7 @@
   <participant typeCode="IND">
     <participantRole classCode="CAREGIVER">
       <code code="MTH" codeSystem="2.16.840.1.113883.5.111"
-                    displayName="Mother"/>
+                    displayName="mother"/>
     </participantRole>
   </participant>
 </observation>

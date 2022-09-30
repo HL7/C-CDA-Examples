@@ -3,7 +3,7 @@
 <relatedDocument typeCode="RPLC">
   <parentDocument>
     <id root="223769be-f6ee-4b04-a0ce-b56ae998c880" />
-    <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Care Plan" />
+    <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of care note" />
     <setId root="004bb033-b948-4f4c-b5bf-a8dbd7d8dd40" />
     <versionNumber value="1" />
   </parentDocument>

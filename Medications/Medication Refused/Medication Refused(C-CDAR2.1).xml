@@ -53,7 +53,7 @@
                     <id root="2a620155-9d11-439e-92b3-5d9815ff4eb8"/>
                     <manufacturedMaterial>
                         <!-- Medications should be specified at a level corresponding to prescription when possible, such as 600mg oral tablet (non-branded)-->
-                        <code code="314076" displayName="Lisninopril 10mg Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                        <code code="314076" displayName="lisinopril 10 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
                             <originalText>
                                 <reference value="#MedicationName_0"/>
                             </originalText>
@@ -68,7 +68,7 @@
                 <assignedAuthor>
                     <id extension="66666" root="2.16.840.1.113883.4.6"/>
                     <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
-                        codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+                        codeSystemName="NUCC" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Cardiovascular Disease"/>
                     <addr>
                         <streetAddressLine>6666 StreetName St.</streetAddressLine>
                         <city>Silver Spring</city>
@@ -108,7 +108,7 @@
                         <low value="20180315112305-0500"/>
                     </effectiveTime>
                     <!-- sdtc:valueset extension is required in many QRDA templates. It's allowed in C-CDA. -->
-                    <value xsi:type="CD" code="105480006" codeSystem="2.16.840.1.113883.6.96"  codeSystemName="SNOMED CT" displayName="Refusal of treatment by patient" sdtc:valueSet="2.16.840.1.113883.3.526.3.1008" />
+                    <value xsi:type="CD" code="105480006" codeSystem="2.16.840.1.113883.6.96"  codeSystemName="SNOMED CT" displayName="Procedure declined by patient" sdtc:valueSet="2.16.840.1.113883.3.526.3.1008" />
                 </observation>
             </entryRelationship>
         </substanceAdministration>

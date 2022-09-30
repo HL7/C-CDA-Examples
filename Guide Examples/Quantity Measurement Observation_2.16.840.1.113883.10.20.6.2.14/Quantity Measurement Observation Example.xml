@@ -2,7 +2,7 @@
   <templateId root="2.16.840.1.113883.10.20.6.2.14"/>
   <code code="439984002" codeSystem="2.16.840.1.113883.6.96" 
         codeSystemName="SNM3" 
-        displayName="Diameter of structure">
+        displayName="Diameter of structure by imaging measurement">
     <originalText>
       <reference value="#Diam2"/>
     </originalText>

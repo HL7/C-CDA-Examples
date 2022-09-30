@@ -58,7 +58,7 @@
             <effectiveTime xsi:type="PIVL_TS" operator="A">
                 <period value="1" unit="d" />
             </effectiveTime>
-            <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+            <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral Route of Administration"/>
             <!-- The patient could not recall any specific dosage of this medication-->
             <!-- The nullFlavor of UNK is used since there is a dosage but it is unknown by C-CDA document author-->
             <doseQuantity nullFlavor="UNK"/>
@@ -70,7 +70,7 @@
                     <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
                         <!-- Medications should be specified at a level corresponding to prescription when possible -->
                         <!-- Since this is an over-the-counter supplement and the patient could not describe brand or dose, ingredient is shown-->
-                        <code code="236121" codeSystem="2.16.840.1.113883.6.88" displayName="ECHINACEA ANGUSTIFOLIA Extract" codeSystemName="RxNorm">
+                        <code code="236121" codeSystem="2.16.840.1.113883.6.88" displayName="Echinacea angustifolia extract" codeSystemName="RxNorm">
                             <originalText>
                                 <reference value="#MedicationName_8"/>
                             </originalText>
@@ -85,7 +85,7 @@
                 <assignedAuthor>
                     <id extension="66666" root="2.16.840.1.113883.4.6"/>
                     <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
-                        codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+                        codeSystemName="NUCC" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Cardiovascular Disease"/>
                     <addr>
                         <streetAddressLine>6666 StreetName St.</streetAddressLine>
                         <city>Silver Spring</city>

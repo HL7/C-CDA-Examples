@@ -46,7 +46,7 @@
                             <templateId root="2.16.840.1.113883.10.20.22.4.140" />
                             <!-- This id may be referenced in the note received afterward --> 
                             <id root="9a6d1bac-17d3-4195-89a4-1121bc809b4e" />
-                            <code code="103697008" displayName="Patient referral to specialist" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96">
+                            <code code="103697008" displayName="Patient referral for dental care" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96">
                                 <originalText>
                                     <reference value="#ID0EFAAAAACAB3"/>
                                 </originalText>
@@ -62,7 +62,7 @@
                                 <participantRole>
                                     <!-- Having this be an NPI may be used to identify completion of referral --> 
                                     <id root="2.16.840.1.113883.4.6" extension="1093929010" />
-                                    <code code="207Q00000X" displayName="Allopathic &amp; Osteopathic Physicians : Family Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" />
+                                    <code code="207Q00000X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" />
                                     <addr>
                                         <streetAddressLine>100 Main St</streetAddressLine>
                                         <city>Horsham</city>
@@ -95,7 +95,7 @@
                     <!-- This Notes Section is most appropriate for an encounter specific document. Other sections of doucments may also close notes -->
                     <!-- If this Notes section were included in a CCD, each Note Activity entry should be linked to an appropriate Encounter entry in the Encounters section -->
                     <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
-                        displayName="Consultation note"/>
+                        displayName="Consult note"/>
                     <title>Consultation Notes</title>
                     <text>
                         <list>
@@ -138,7 +138,7 @@
                             <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01"/>
                             <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note">
                                 <!-- Code must match or be equivalent to section code -->
-                                <translation code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Consultation note"/>
+                                <translation code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Consult note"/>
                                 <!-- Additional SNOMED code which is equivalent to the LOINC consultation note code -->
                                 <!-- The quality measure CMS550 v7 requires a concept from 2.16.840.1.113883.3.464.1003.121.12.1006 --> 
                                 <translation code="371530004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Clinical consultation report (record artifact)" />
@@ -157,7 +157,7 @@
                                 <assignedAuthor>
                                     <!-- This NPI helps track the planned referral to the person who actually performed -->
                                     <id root="2.16.840.1.113883.4.6" extension="1093929010" />
-                                    <code code="207Q00000X" displayName="Allopathic &amp; Osteopathic Physicians : Family Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" />
+                                    <code code="207Q00000X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" />
                                     <addr nullFlavor="UNK" />
                                     <telecom nullFlavor="UNK" />
                                     <assignedPerson>
@@ -186,7 +186,7 @@
                                     <!-- This refers to the Patient Referral Act act/id of the planned referral -->
                                     <!-- The quality measure CMS550 v7 requires this identifier to link (related) the completed encounter to the requested referral --> 
                                     <id root="9a6d1bac-17d3-4195-89a4-1121bc809b4e"/>
-                                    <code code="103697008" displayName="Patient referral to specialist" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
+                                    <code code="103697008" displayName="Patient referral for dental care" codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" />
                                 </externalAct>
                             </reference>
                         </act>

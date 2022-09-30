@@ -48,7 +48,7 @@
 				<assignedAuthor>
 					<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 					<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101"
-                          codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine"/>
+                          codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine"/>
 					<telecom use="WP" value="tel:555-555-1002"/>
 					<assignedPerson>
 						<name>
@@ -76,14 +76,14 @@
 						<low value="1998"/>
 					</effectiveTime>
 					<!-- This specifies that the allergy is to a substance (cat hair) in contrast to other allergies (drug) -->
-					<value xsi:type="CD" code="419199007" displayName="allergy to substance"
+					<value xsi:type="CD" code="419199007" displayName="Allergy to substance"
 						codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 					<author>
 						<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 						<time value="20100103"/>
 						<assignedAuthor>
 							<id extension="99999999" root="2.16.840.1.113883.4.6"/>
-							<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine" />
+							<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine" />
 							<telecom use="WP" value="tel:555-555-1002"/>
 							<assignedPerson>
 								<name>
@@ -136,7 +136,7 @@
 								<low value="1998"/>
 							</effectiveTime>
 							<value xsi:type="CD" code="64144002" codeSystem="2.16.840.1.113883.6.96"
-								codeSystemName="SNOMED CT" displayName="Rash"/>
+								codeSystemName="SNOMED CT" displayName="Pruritic rash"/>
 							<entryRelationship typeCode="SUBJ" inversionInd="true">
 								<observation classCode="OBS" moodCode="EVN">
 									<!-- Severity Observation template -->
@@ -151,7 +151,7 @@
 									<statusCode code="completed"/>
 									<value xsi:type="CD" code="6736007"
 										codeSystem="2.16.840.1.113883.6.96"
-										codeSystemName="SNOMED CT" displayName="moderate"/>
+										codeSystemName="SNOMED CT" displayName="Moderate"/>
 								</observation>
 							</entryRelationship>
 						</observation>

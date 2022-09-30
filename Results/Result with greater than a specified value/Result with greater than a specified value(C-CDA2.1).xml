@@ -72,7 +72,7 @@
 								<high value="140" unit="mg/dL"/>
 							</value>
 							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation a specific patient value-->
-							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 						</observationRange>
 					</referenceRange>
 					<referenceRange>
@@ -83,7 +83,7 @@
 								<high value="500" unit="mg/dL"/>
 							</value>
 							<!-- This interpretation code denotes that this reference range is for hight results. This is not the interpretation a specific patient value-->
-							<interpretationCode code="H" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="H" codeSystem="2.16.840.1.113883.5.83" displayName="High" />
 						</observationRange>
 					</referenceRange>
 				</observation>

@@ -78,7 +78,7 @@
 						<low value="20140203092205-0500"/>
 					</effectiveTime>
 					<!-- sdtc:valueset extension is required in many QRDA templates. It's allowed in C-CDA. -->
-					<value xsi:type="CD" code="105480006" codeSystem="2.16.840.1.113883.6.96"  codeSystemName="SNOMED CT" displayName="Refusal of treatment by patient" sdtc:valueSet="2.16.840.1.113883.3.526.3.1008" />
+					<value xsi:type="CD" code="105480006" codeSystem="2.16.840.1.113883.6.96"  codeSystemName="SNOMED CT" displayName="Procedure declined by patient" sdtc:valueSet="2.16.840.1.113883.3.526.3.1008" />
 				</observation>
 			</entryRelationship>
 		</procedure>

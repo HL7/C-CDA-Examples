@@ -31,7 +31,7 @@
             <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
                 <period unit="d" value=".5" /> 
             </effectiveTime>
-            <routeCode code="C38289" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Mouth/Throat">
+            <routeCode code="C38289" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oropharyngeal Route of Administration">
                 <originalText>Mouth/Throat</originalText> 
             </routeCode>
             <!-- The patient should take 5 mL of this mixture at a time. -->
@@ -74,7 +74,7 @@
                             </pharm:quantity>
                             <pharm:ingredientSubstance classCode="MMAT" determinerCode="KIND">
                                 <!-- This pharm:code DOES NOT encapsulate the ingredient's concentration! -->
-                                <pharm:code code="1362" displayName="diphenhydrAMINE hydrochloride"
+                                <pharm:code code="1362" displayName="diphenhydramine hydrochloride"
                                     codeSystem="2.16.840.1.113883.6.88"
                                     codeSystemName="RxNorm"/>
                             </pharm:ingredientSubstance>

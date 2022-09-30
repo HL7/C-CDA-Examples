@@ -50,7 +50,7 @@
                 <assignedAuthor>
                     <id extension="12345" root="2.16.840.1.113883.4.6"/>
                     <code code="207RX0202X" codeSystem="2.16.840.1.113883.6.101"
-                        codeSystemName="Health Care Provider Taxonomy" displayName="Medical Oncology"/>
+                        codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Medical Oncology"/>
                     <telecom use="WP" value="tel:555-555-1234"/>
                     <assignedPerson>
                         <name>
@@ -78,7 +78,7 @@
                         <high value="20180401"/>
                     </effectiveTime>
                     <!-- This specifies that the allergy is to a medication in contrast to other allergies (substance) -->
-                    <value xsi:type="CD" code="59037007" displayName="Drug intolerance (disorder)"
+                    <value xsi:type="CD" code="59037007" displayName="Intolerance to drug (finding)"
                         codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
                     <author>
                         <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
@@ -87,7 +87,7 @@
                             <id extension="99999999" root="2.16.840.1.113883.4.6"/>
                             <code code="207RX0202X" codeSystem="2.16.840.1.113883.6.101"
                                 codeSystemName="Health Care Provider Taxonomy"
-                                displayName="Medical Oncology"/>
+                                displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Medical Oncology"/>
                             <telecom use="WP" value="tel:555-555-1234"/>
                             <assignedPerson>
                                 <name>

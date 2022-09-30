@@ -4,7 +4,7 @@
     <templateId root="2.16.840.1.113883.10.20.22.4.138" />
     <id root="ab1791b0-5c71-11db-b0de-0800200c9a66" />
     <code code="75303-8" 
-              displayName="Nutrition assessment"
+              displayName="Nutrition assessment Narrative"
               codeSystem="2.16.840.1.113883.6.1" 
               codeSystemName="LOINC" />
     <statusCode code="completed" />

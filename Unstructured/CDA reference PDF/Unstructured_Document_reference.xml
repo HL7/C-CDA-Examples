@@ -23,10 +23,10 @@
 	<!-- Unstructured Document Template -->
 	<templateId root="2.16.840.1.113883.10.20.22.1.10" extension="2014-06-09"/>
 	<id extension="TT988" root="2.16.840.1.113883.19.5.99999.1"/>
-	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="11490-0" displayName="Discharge summarization note"/>
+	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="11490-0" displayName="Physician Discharge summary"/>
 	<title>Community Health and Hospitals: Discharge Summary (UD)</title>
 	<effectiveTime value="201209161918-0400"/>
-	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" />
 	<languageCode code="en-US"/>
 	<setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
 	<versionNumber value="1"/>
@@ -59,7 +59,7 @@
 				<raceCode code="1966-1" displayName="Aleut" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
 				<ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
 				<guardian>
-					<code code="GRPRN" displayName="Grandparent" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code"/>
+					<code code="GRPRN" displayName="grandparent" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code"/>
 					<!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
 					<addr use="HP">
 						<streetAddressLine>1357 Amber Drive</streetAddressLine>

@@ -1,8 +1,8 @@
 <participant typeCode="IND">
-  <functionCode code="407543004" displayName="Primary Carer" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" />
+  <functionCode code="407543004" displayName="Primary caregiver" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" />
   <!-- Caregiver -->
   <associatedEntity classCode="CAREGIVER">
-    <code code="MTH" codeSystem="2.16.840.1.113883.5.111" />
+    <code code="MTH" codeSystem="2.16.840.1.113883.5.111" displayName="mother" />
     <addr>
       <streetAddressLine>17 Daws Rd.</streetAddressLine>
       <city>Ann Arbor</city>

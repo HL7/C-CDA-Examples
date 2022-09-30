@@ -92,7 +92,7 @@
 							<code code="246514001" displayName="units"
 								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 							<value xsi:type="CD" code="mg/dL" codeSystem="2.16.840.1.113883.6.8"
-								codeSystemName="UCUM"/>
+								codeSystemName="UCUM" displayName="milligram per deciliter" />
 						</observation>
 					</entryRelationship>
 				</observation>

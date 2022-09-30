@@ -61,7 +61,7 @@
                     <high value="6" unit="h"/>
                 </period>
             </effectiveTime>
-            <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="ORAL"/>
+            <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral Route of Administration"/>
             <doseQuantity value="2" unit="mL" />
             <consumable>
                 <manufacturedProduct classCode="MANU">
@@ -80,7 +80,7 @@
                 <assignedAuthor>
                     <id extension="54321" root="2.16.840.1.113883.4.6"/>
                     <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101"
-                        codeSystemName="NUCC" displayName="Family Medicine"/>
+                        codeSystemName="NUCC" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine"/>
                     <addr>
                         <streetAddressLine>9987 ProviderPractice St.</streetAddressLine>
                         <city>Anytown</city>
@@ -105,7 +105,7 @@
                     <templateId root="2.16.840.1.113883.10.20.22.4.25" extension="2014-06-09"/>
                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
                     <!-- pre-condition PRN for cough specified for this medication. -->
-                    <value xsi:type="CD" code="49727002" codeSystem="2.16.840.1.113883.6.96" displayName="cough" />
+                    <value xsi:type="CD" code="49727002" codeSystem="2.16.840.1.113883.6.96" displayName="Cough" />
                 </criterion>
             </precondition>
         </substanceAdministration>        

@@ -8,7 +8,7 @@
   </code>
   <statusCode code="completed" />
   <effectiveTime value="20110203" />
-  <priorityCode code="CR" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority" displayName="Callback results" />
+  <priorityCode code="CR" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority" displayName="callback results" />
   <performer>
     <assignedEntity>
       <id root="2.16.840.1.113883.19" extension="1234" />

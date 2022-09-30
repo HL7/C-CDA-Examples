@@ -9,6 +9,6 @@
     4zmMir6edjzMMIjdMDSsWdIJdksIJR3373jeu83==</sdtc:signatureText>
   <assignedEntity>
     <id extension="996-756-495" root="2.16.840.1.113883.19.5" />
-    <code code="ONESELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code" />
+    <code code="ONESELF" displayName="self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code" />
   </assignedEntity>
 </authenticator>

@@ -7,7 +7,7 @@
     <templateId root="2.16.840.1.113883.10.20.22.2.14"/>
     <templateId root="2.16.840.1.113883.10.20.22.2.14" extension="2014-06-09"/>
     <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
-        displayName="Functional Status"/>
+        displayName="Functional status assessment note"/>
     <title>Functional Status</title>
     <!-- Narrative organized as a single table. Some systems may prefer simple paragraph-->
     <text>
@@ -51,7 +51,7 @@
                 <low value="20120815173215-0500"/>
             </effectiveTime>
             <value xsi:type="CD" code="66557003" codeSystem="2.16.840.1.113883.6.96"
-                codeSystemName="SNOMED CT" displayName="No Impairment">
+                codeSystemName="SNOMED CT" displayName="Disability evaluation, normal, no disability, no impairment">
                 <originalText>
                     <reference value="#FS_Finding1"/>
                 </originalText>

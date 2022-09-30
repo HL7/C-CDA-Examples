@@ -6,7 +6,7 @@
   <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
   <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2022-06-01" />
   <id root="ab1791b0-5c71-11db-b0de-0800200c9a66" />
-  <code code="64572001" displayName="Condition" 
+  <code code="64572001" displayName="Disease" 
 								codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
     <translation code="75323-6" 
 									codeSystem="2.16.840.1.113883.6.1" 
@@ -33,7 +33,7 @@
     <assignedAuthor>
       <id extension="555555555" root="2.16.840.1.113883.4.6" />
       <code code="207QA0505X" 
-										displayName="Adult Medicine" 
+										displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" 
 										codeSystem="2.16.840.1.113883.6.101"
 										codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
     </assignedAuthor>

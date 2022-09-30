@@ -10,7 +10,7 @@
     <!-- The high value reflects the end date of the observation/value (moderate smoker) -->
     <high value="20110215" />
   </effectiveTime>
-  <value xsi:type="CD" code="160604004" displayName="Moderate cigarette smoker, 10-19/day" codeSystem="2.16.840.1.113883.6.96" />
+  <value xsi:type="CD" code="160604004" displayName="Moderate cigarette smoker" codeSystem="2.16.840.1.113883.6.96" />
   <author typeCode="AUT">
     <time value="201209101145-0800" />
     <assignedAuthor>

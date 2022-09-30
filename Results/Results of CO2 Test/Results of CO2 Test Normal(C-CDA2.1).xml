@@ -57,7 +57,7 @@
 					<effectiveTime value="201208151005-0800"/>
 					<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 						xsi:type="PQ" unit="mmol/L" value="27"/>
-					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 					<referenceRange>
 						<observationRange>
 							<!--Alternatively a text/reference@value similar to the one in Observation/text could be used
@@ -69,7 +69,7 @@
 								<high value="29" unit="mmol/L" />
 							</value>
 							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation a specific patient value-->
-							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 						</observationRange>
 					</referenceRange>
 				</observation>

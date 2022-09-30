@@ -64,7 +64,7 @@
                     <effectiveTime xsi:type="PIVL_TS" operator="A">
                         <period value="1" unit="d"/>
                     </effectiveTime>
-                    <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+                    <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral Route of Administration"/>
                     <!-- This relates directly to the code used for medication. This medication is administered as an oral table, so no unit is needed -->
                     <!-- Azithromycin is commonly prescribed 2 tablets on day 1, which is shown below -->
                     <doseQuantity value ="2" />
@@ -76,7 +76,7 @@
                             <id root="a9a55f64-3953-4f2c-b52e-c77399b854ae"/>
                             <manufacturedMaterial>
                                 <!-- Medications should be specified at a level corresponding to prescription when possible, such as 250mg oral tablet (non-branded)-->
-                                <code code="308460" displayName="Azithromycin 250 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                                <code code="308460" displayName="azithromycin 250 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
                                     <originalText>
                                         <reference value="#MedicationName_2"/>
                                     </originalText>
@@ -112,7 +112,7 @@
                     <effectiveTime xsi:type="PIVL_TS" operator="A">
                         <period value="1" unit="d"/>
                     </effectiveTime>
-                    <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+                    <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral Route of Administration"/>
                     <!-- This relates directly to the code used for medication. This medication is administered as an oral table, so no unit is needed, but it has varying dosage over its course. -->
                     <!-- Azithromycin is commonly prescribed 2 tablets on day 1 then 1 tablet daily thereafter. -->
                     <doseQuantity value ="1" />
@@ -124,7 +124,7 @@
                             <id root="a9a55f64-3953-4f2c-b52e-c77399b8xxxx"/>
                             <manufacturedMaterial>
                                 <!-- Medications should be specified at a level corresponding to prescription when possible, such as 250mg oral tablet (non-branded)-->
-                                <code code="308460" displayName="Azithromycin 250 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                                <code code="308460" displayName="azithromycin 250 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
                                     <originalText>
                                         <reference value="#MedicationName_2"/>
                                     </originalText>

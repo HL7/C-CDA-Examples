@@ -6,7 +6,7 @@
     <!-- The test data also included the No Impairment code. -->
     <!-- Section not backwards compaitble with prior 2.16.840.1.113883.10.20.22.2.14 since new section --> 
     <templateId root="2.16.840.1.113883.10.20.22.2.56" extension="2015-08-01" />
-    <code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MENTAL STATUS" />
+    <code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Mental status Narrative" />
     <title>MENTAL STATUS</title>    
     <!-- Narrative organized as a single table. Some systems may prefer separate tables for functional vs. cognitive assessments -->
     <text>
@@ -41,7 +41,7 @@
                     <reference value="#MS_Type1" />
                 </originalText>
                 <translation code="75275-8" 
-                    displayName="Cognitive function"
+                    displayName="Cognitive function [Interpretation]"
                     codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC"/>
             </code>
@@ -52,7 +52,7 @@
             <effectiveTime>
                 <low value="20120815173215-0500"/>
             </effectiveTime>
-            <value xsi:type="CD" code="66557003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="No Impairment">
+            <value xsi:type="CD" code="66557003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Disability evaluation, normal, no disability, no impairment">
                 <originalText>
                     <reference value="#MS_Finding1"/>
                 </originalText>

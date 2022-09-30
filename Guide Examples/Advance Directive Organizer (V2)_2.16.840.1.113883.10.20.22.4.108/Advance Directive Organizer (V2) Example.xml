@@ -17,7 +17,7 @@
     <assignedAuthor>
       <id extension="5555555551" root="2.16.840.1.113883.4.6" />
       <code code="163W00000X" 
-        displayName="Registered nurse" 
+        displayName="Nursing Service Providers; Registered Nurse" 
         codeSystem="2.16.840.1.113883.6.101"
         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
       <assignedPerson>

@@ -5,7 +5,7 @@
   <code codeSystem="2.16.840.1.113883.6.1" 
         codeSystemName="LOINC" 
         code="57133-1"
-        displayName="Referral Note" />
+        displayName="Referral note" />
   <setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19" />
   <versionNumber value="1" />
 </externalDocument>

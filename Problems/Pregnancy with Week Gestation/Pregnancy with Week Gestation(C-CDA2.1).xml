@@ -60,7 +60,7 @@
 					</effectiveTime>
 					<!-- This is a SNOMED code as the primary vocabulary for problem lists-->
 					<!-- This SNOMED aligns with pregancy observation value set: 2.16.840.1.113762.1.4.1099.24 -->
-					<value xsi:type="CD" code="77386006" displayName="pregnant" codeSystem="2.16.840.1.113883.6.96">
+					<value xsi:type="CD" code="77386006" displayName="Pregnancy" codeSystem="2.16.840.1.113883.6.96">
 						<originalText>
 							<reference value="#problem00001"/>
 						</originalText>
@@ -74,7 +74,7 @@
 						<time value="201903101256-0500"/>
 						<assignedAuthor>
 							<id extension="66666" root="2.16.840.1.113883.4.6"/>
-							<code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+							<code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Cardiovascular Disease"/>
 							<addr>
 								<streetAddressLine>6666 StreetName St.</streetAddressLine>
 								<city>Silver Spring</city>
@@ -97,7 +97,7 @@
 						<observation classCode="OBS" moodCode="EVN">
 							<!-- Template for Estimated Date of Delivery -->
 							<templateId root="2.16.840.1.113883.10.20.15.3.1"/>
-							<code code="11778-8" codeSystem="2.16.840.1.113883.6.1" displayName="Estimated date of delivery"/>
+							<code code="11778-8" codeSystem="2.16.840.1.113883.6.1" displayName="Delivery date Estimated"/>
 							<text>
 								<reference value="#Problem1Detail"/>
 							</text>

@@ -45,7 +45,7 @@
                 <!-- See DSTU 423 of C-CDA 1.1 for more information http://www.hl7.org/dstucomments/showdetail_comment.cfm?commentid=423 -->
                 <effectiveTime value="201309111603-0700"/>
                 <!-- Since this is a one-time administration, there is no inclusion ofa second effectiveTIme to represent dose frequency (PIVL_TS or EIVL_TS)-->
-                <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="ORAL" codeSystemName="National Cancer Institute Thesaurus" />
+                <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Oral Route of Administration" codeSystemName="National Cancer Institute Thesaurus" />
                 <doseQuantity value="2" />
                 <consumable>
                     <manufacturedProduct classCode="MANU">
@@ -54,7 +54,7 @@
                         <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
                         <manufacturedMaterial>
                             <!-- Medications should be specified at a level corresponding to prescription when possible (non-branded below)-->
-                            <code code="243670" codeSystem="2.16.840.1.113883.6.88" displayName="Aspirin 81 MG Oral Tablet">
+                            <code code="243670" codeSystem="2.16.840.1.113883.6.88" displayName="aspirin 81 MG Oral Tablet">
                                 <originalText>
                                     <reference value="#MedicationName_7"/>
                                 </originalText>
@@ -69,7 +69,7 @@
                     <assignedAuthor>
                         <id extension="66666" root="2.16.840.1.113883.4.6"/>
                         <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC"
-                            displayName="Cardiovascular Disease"/>
+                            displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Cardiovascular Disease"/>
                         <addr>
                             <streetAddressLine>6666 StreetName St.</streetAddressLine>
                             <city>Silver Spring</city>
