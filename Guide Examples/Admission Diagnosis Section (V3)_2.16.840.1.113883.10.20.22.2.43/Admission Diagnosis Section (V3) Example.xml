@@ -1,7 +1,7 @@
 <section>
   <templateId root="2.16.840.1.113883.10.20.22.2.43" extension="2015-08-01"/>
   <code code="46241-6" codeSystem="2.16.840.1.113883.6.1" displayName="Hospital Admission Diagnosis">
-    <translation code="42347-5" codeSystem="2.16.840.1.113883.6.1" displayName="Admission Diagnosis"></translation>
+    <translation code="42347-5" codeSystem="2.16.840.1.113883.6.1" displayName="Admission Diagnosis" />
   </code>
   <title>HOSPITAL ADMISSION DIAGNOSIS</title>
   <text>Appendicitis</text>

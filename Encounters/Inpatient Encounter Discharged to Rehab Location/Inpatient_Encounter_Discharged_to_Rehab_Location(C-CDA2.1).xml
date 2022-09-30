@@ -50,9 +50,9 @@
                 </text>
                 <effectiveTime value="201209271300-0500"/>
                 <!-- This shows use of the discharge disposition extension AND shows using both the suggested encoding from C-CDA R2.1 and local Good Health Hospital codes. -->
-                <sdtc:dischargeDispositionCode code="04" codeSystem="2.16.840.1.113883.12.112"  codeSystemName="HL7 Discharge Disposition" displayName="Discharged/transferred to an intermediate-care facility (ICF)" >
+                <sdtc:dischargeDispositionCode code="04" codeSystem="2.16.840.1.113883.12.112"  codeSystemName="HL7 Discharge Disposition" displayName="Discharged/transferred to an intermediate-care facility (ICF)">
                     <originalText>
-                        <reference value="#Encounter1_DischargedDispositionCode"></reference>
+                        <reference value="#Encounter1_DischargedDispositionCode" />
                     </originalText>
                     <!-- Good Health Hospital (local OID) to represent their local code system. -->
                     <translation code="HOSSVR" codeSystem="2.16.840.1.113883.19.5" codeSystemName="Community Medical Center Local Discharge Codes" displayName="SUNNYVIEW REHAB HOSPITAL"/>

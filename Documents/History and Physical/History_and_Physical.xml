@@ -1963,7 +1963,7 @@ SOCIAL HISTORY
 							<!--  ********  Social history observation template   ******** -->
 							<id root="37f76c51-6411-4e1d-8a37-957fd49d2cef"/>
 						  <code code="74013-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
-						    displayName="Alcoholic drinks per day" >
+						    displayName="Alcoholic drinks per day">
 								<originalText>
 									<reference value="#soc3"/>
 								</originalText>

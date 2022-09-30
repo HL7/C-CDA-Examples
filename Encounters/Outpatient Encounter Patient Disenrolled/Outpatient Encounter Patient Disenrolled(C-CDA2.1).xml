@@ -52,7 +52,7 @@
                 <!--  This shows use of the discharge disposition extension AND shows using both the suggested encoding from C-CDA R2.1 and some local Good Health Hospital codes. -->
                 <sdtc:dischargeDispositionCode nullFlavor="OTH">
                     <originalText>
-                        <reference value="#Encounter1_DischargeDispositionCode"></reference>
+                        <reference value="#Encounter1_DischargeDispositionCode" />
                     </originalText>
                     <!-- Good Health Hospital (local OID) to represent their local code system. -->
                     <translation code="DE" codeSystem="2.16.840.1.113883.19.5" codeSystemName="Community Urgent Care Local Discharge Code" displayName="Disenrolled"/>

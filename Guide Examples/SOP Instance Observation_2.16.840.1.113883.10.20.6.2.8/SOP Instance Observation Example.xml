@@ -3,7 +3,7 @@
   <id root="1.2.840.113619.2.62.994044785528.20060823.200608232232322.3"/>
   <code code="1.2.840.10008.5.1.4.1.1.1"
 codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"
-displayName="Computed Radiography Image Storage"></code>
+displayName="Computed Radiography Image Storage" />
   <text mediaType="application/dicom">
     <reference value="http://www.example.org/wado?requestType=WADO&amp;studyUID=1.2.840.113619.2.62.994044785528.114289542805&amp;seriesUID=1.2.840.113619.2.62.994044785528.20060823223142485051&amp;objectUID=1.2.840.113619.2.62.994044785528.20060823.200608232232322.3&amp;contentType=application/dicom"/>
     <!--reference to image 1 (PA) -->

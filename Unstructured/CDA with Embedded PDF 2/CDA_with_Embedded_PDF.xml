@@ -38,7 +38,7 @@
                 <country>US</country>
             </addr>
             <telecom value="tel:+1(301)111-1111" use="HP"/>
-            <telecom value="mailto:roger.r.mcbee@fakegmail.com"></telecom>
+            <telecom value="mailto:roger.r.mcbee@fakegmail.com" />
             <patient>
                 <name use="L"><given>Roger</given><given>Rienman</given><family>McBee</family></name>
                 <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"

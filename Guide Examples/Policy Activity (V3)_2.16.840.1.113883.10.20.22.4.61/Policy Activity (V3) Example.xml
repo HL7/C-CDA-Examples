@@ -5,7 +5,7 @@
              codeSystemName="Insurance Type Code (x12N-1336)"
              codeSystem="2.16.840.1.113883.6.255.1336">
     <translation code="2" displayName="Medicare" 
-                                    codeSystem="2.16.840.1.113883.3.221.5" codeSystemName="Source of Payment Typology (PHDSC)"></translation>
+                                    codeSystem="2.16.840.1.113883.3.221.5" codeSystemName="Source of Payment Typology (PHDSC)" />
   </code>
   <statusCode code="completed" />
   <!-- Insurance company information -->

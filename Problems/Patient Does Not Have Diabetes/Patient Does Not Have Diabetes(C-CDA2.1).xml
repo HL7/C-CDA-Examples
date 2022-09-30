@@ -18,7 +18,7 @@
             <tbody>
                 <tr ID="problems1">
                     <td>12/01/2015 16:05:06</td>
-                    <td></td>
+                    <td />
                     <td>Active</td>
                     <td ID="problem1">No Diabetes (ruled out)</td>
                 </tr>
@@ -33,7 +33,7 @@
             <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
             <id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
             <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
-            <text><reference value="#Concern_1"></reference></text>
+            <text><reference value="#Concern_1" /></text>
             <statusCode code="completed"/> <!-- The concern is not active, in terms of there being an active condition to be managed.-->
             <effectiveTime>
                 <low value="20151201071605"/> <!-- Time at which THIS “concern” began being tracked.-->
@@ -77,7 +77,7 @@
                         <translation code="75326-9" codeSystem="2.16.840.1.113883.6.1"
                             codeSystemName="LOINC" displayName="Problem"/>
                     </code>
-                    <text><reference value="#problems1"></reference></text>
+                    <text><reference value="#problems1" /></text>
                     <statusCode code="completed"/>
                     <effectiveTime>
                         <low value="20151201160506"/>
@@ -90,7 +90,7 @@
                         displayName="Diabetes Mellitus Type 2 (Disorder)"
                         codeSystem="2.16.840.1.113883.6.96"
                         codeSystemName="SNOMED CT">
-                        <originalText><reference value="#problem1"></reference></originalText>
+                        <originalText><reference value="#problem1" /></originalText>
                     </value>
                 </observation>
             </entryRelationship>

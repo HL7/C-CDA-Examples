@@ -34,7 +34,7 @@
 							<templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
 							<templateId root="2.16.840.1.113883.10.20.22.4.1"/>
 							<id root="7d5a02b0-67a4-11db-bd13-0800200c9a66"/>
-							<code code="5048-4" displayName="Nuclear Ab [Titer] in Serum by Immunofluorescence" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"></code>
+							<code code="5048-4" displayName="Nuclear Ab [Titer] in Serum by Immunofluorescence" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
 							<statusCode code="completed"/>
 							<effectiveTime>
 								<low value="201703191230-0800"/>
@@ -52,7 +52,7 @@
 										</text>
 									<statusCode code="completed"/>
 									<effectiveTime value="201703191230-0800"/>
-									<value xsi:type="ST" >
+									<value xsi:type="ST">
 										Borderline, equal to 1:80
 									</value>
 									<!-- Borderline is considered abnormal -->

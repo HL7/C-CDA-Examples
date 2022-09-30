@@ -73,7 +73,7 @@
 						<low value="2006"/>
 					</effectiveTime>
 					<!-- This specifies that the allergy is to a medication in contrast to other allergies (substance) -->
-					<value xsi:type="CD" code="416098002" displayName="drug allergy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"></value>
+					<value xsi:type="CD" code="416098002" displayName="drug allergy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
 					<author>
 						<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 						<time value="20140104"/>

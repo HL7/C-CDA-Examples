@@ -46,7 +46,7 @@
 					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
 					<!-- Unique ID for this individual observation -->
 					<id root="02faa204-3333-4610-864f-cb50b650d0fa" />
-					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
+					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition">
 						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
 					</code>
 					<text>
@@ -75,7 +75,7 @@
 					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
 					<!-- Unique ID for this individual observation -->
 					<id root="04faa204-3333-4610-864f-cb50b650d0fa" />
-					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition" >
+					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition">
 						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
 					</code>
 					<text>

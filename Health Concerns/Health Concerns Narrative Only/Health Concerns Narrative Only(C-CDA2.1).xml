@@ -13,7 +13,7 @@
                 <id nullFlavor="UNK"/>
                 <!-- Fixed act/code in C-CDA -->
                 <code code="75310-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health Concern"/>
-                <text><reference value="#Concern"></reference></text>
+                <text><reference value="#Concern" /></text>
                 <statusCode code="active"/>
             </act>
         </entry>
