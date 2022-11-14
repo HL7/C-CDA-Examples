@@ -14,7 +14,7 @@
         <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
         <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
         <code code="88122-7" displayName="(I/We) worried whether (my/our) food would run out before (I/we) got money to buy more"
-                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="SNOMED"/>
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
         <statusCode code="completed"/>
         <value xsi:type="CD" code="LA28397-0" displayName="Often true" codeSystem="2.16.840.1.113883.6.1">
           <translation code="1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -26,7 +26,7 @@
         <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
         <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
         <code code="88123-5" displayName="Within the past 12Mo the food we bought just didn't last and we didn't have money to get more"
-                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="SNOMED"/>
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
         <statusCode code="completed"/>
         <value xsi:type="CD" code="LA28397-0" displayName="Often true" codeSystem="2.16.840.1.113883.6.1">
           <translation code="1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -38,7 +38,7 @@
         <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
         <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
         <code code="88124-3" displayName="Food insecurity risk [HVS]"
-                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="SNOMED"/>
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
         <statusCode code="completed"/>
         <value xsi:type="CD" code="LA19952-3" displayName="At risk" codeSystem="2.16.840.1.113883.6.1"/>
       </observation>
