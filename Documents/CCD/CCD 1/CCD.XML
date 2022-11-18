@@ -2878,7 +2878,7 @@
                     <time value="200803190830-0800" />
                     <assignedAuthor>
                       <id extension="333444444" root="2.16.840.1.113883.4.6" />
-                      <code code="246Q00000X" displayName=""Technologists, Technicians &amp; Other Technical Service Providers"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="246Q00000X" displayName="&quot;Technologists, Technicians &amp; Other Technical Service Providers&quot;; &quot;Specialist/Technologist, Pathology&quot;&quot;Technologists, Technicians &amp; Other Technical Service Providers&quot;; &quot;Specialist/Technologist, Pathology&quot;"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -2911,7 +2911,7 @@
                     <time value="200803190830-0800" />
                     <assignedAuthor>
                       <id extension="333444444" root="2.16.840.1.113883.4.6" />
-                      <code code="246Q00000X" displayName=""Technologists, Technicians &amp; Other Technical Service Providers"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="246Q00000X" displayName="&quot;Technologists, Technicians &amp; Other Technical Service Providers&quot;; &quot;Specialist/Technologist, Pathology&quot;&quot;Technologists, Technicians &amp; Other Technical Service Providers&quot;; &quot;Specialist/Technologist, Pathology&quot;"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -2943,7 +2943,7 @@
                     <time value="200803190830-0800" />
                     <assignedAuthor>
                       <id extension="333444444" root="2.16.840.1.113883.4.6" />
-                      <code code="246Q00000X" displayName=""Technologists, Technicians &amp; Other Technical Service Providers"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="246Q00000X" displayName="&quot;Technologists, Technicians &amp; Other Technical Service Providers&quot;; &quot;Specialist/Technologist, Pathology&quot;&quot;Technologists, Technicians &amp; Other Technical Service Providers&quot;; &quot;Specialist/Technologist, Pathology&quot;"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -2975,7 +2975,7 @@
                     <time value="200803190830-0800" />
                     <assignedAuthor>
                       <id extension="333444444" root="2.16.840.1.113883.4.6" />
-                      <code code="246Q00000X" displayName=""Technologists, Technicians &amp; Other Technical Service Providers"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="246Q00000X" displayName="&quot;Technologists, Technicians &amp; Other Technical Service Providers&quot;; &quot;Specialist/Technologist, Pathology&quot;&quot;Technologists, Technicians &amp; Other Technical Service Providers&quot;; &quot;Specialist/Technologist, Pathology&quot;"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
@@ -3005,7 +3005,7 @@
                     <time value="200803190830-0800" />
                     <assignedAuthor>
                       <id extension="333444444" root="2.16.840.1.113883.4.6" />
-                      <code code="246Q00000X" displayName=""Technologists, Technicians &amp; Other Technical Service Providers"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101"
+                      <code code="246Q00000X" displayName="&quot;Technologists, Technicians &amp; Other Technical Service Providers&quot;; &quot;Specialist/Technologist, Pathology&quot;&quot;Technologists, Technicians &amp; Other Technical Service Providers&quot;; &quot;Specialist/Technologist, Pathology&quot;"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101"
                         codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
                     </assignedAuthor>
                   </author>
