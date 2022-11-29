@@ -62,7 +62,7 @@
 										<time value="201703191230-0800"/>
 										<assignedAuthor>
 											<id extension="333444444" root="2.16.840.1.113883.4.6"/>
-											<code code="246Q00000X" displayName="&quot;Technologists, Technicians &amp; Other Technical Service Providers&quot;; &quot;Specialist/Technologist, Pathology&quot;&quot;Technologists, Technicians &amp; Other Technical Service Providers&quot;; &quot;Specialist/Technologist, Pathology&quot;"; "Specialist/Technologist, Pathology"" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
+											<code code="246Q00000X" displayName="&quot;Technologists, Technicians &amp; Other Technical Service Providers&quot;; &quot;Specialist/Technologist, Pathology&quot;" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
 										</assignedAuthor>
 									</author>
 									<!-- Example showing multiple referenceRanges-->
