@@ -6,7 +6,8 @@
     <reference value="#criticality"/>
   </text>
   <statusCode code="completed"/>
-  <value xsi:type="CD" code="High" displayName="High Criticality - NEED PROPER 
-               CODE" codeSystem="2.16.840.1.113883.6.96" 
-               codeSystemName="SNOMED CT"/>
+  <value xsi:type="CD" code="CRITH"
+    displayName="high criticality"
+    codeSystem="2.16.840.1.113883.5.1063"
+    codeSystemName="ObservationValue" />
 </observation>
