@@ -5,7 +5,7 @@
                                 codeSystemName="LOINC">
     <translation code="75311-1" displayName="Discharge Medications"
                                     codeSystem="2.16.840.1.113883.6.1"
-                                    codeSystemName="LOINC"></translation>
+                                    codeSystemName="LOINC" />
   </code>
   <title>Discharge Medications</title>
   <text>

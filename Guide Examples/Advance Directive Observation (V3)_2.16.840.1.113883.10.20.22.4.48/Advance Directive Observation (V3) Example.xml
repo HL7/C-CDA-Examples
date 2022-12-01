@@ -9,7 +9,7 @@
       <translation code="75320-2" 
                                     displayName="Advance Directive"
                                     codeSystem="2.16.840.1.113883.6.1"
-                                    codeSystemName="LOINC"></translation>
+                                    codeSystemName="LOINC" />
     </code>
     <statusCode code="completed" />
     <effectiveTime>

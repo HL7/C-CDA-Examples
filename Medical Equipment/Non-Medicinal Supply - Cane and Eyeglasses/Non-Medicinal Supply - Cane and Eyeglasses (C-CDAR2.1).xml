@@ -40,7 +40,7 @@
 			<templateId root="2.16.840.1.113883.10.20.22.4.50" extension="2014-06-09"/>
 			<id extension="2744999" root="1.2.840.999.1.13.5552.1.7.2.99999"/>
 			<text>
-				<reference value="#equipment1"></reference>
+				<reference value="#equipment1" />
 			</text>
 			<statusCode code="active"/>
 			<!-- low represents when person first received supply -->
@@ -79,7 +79,7 @@
 				codeSystemName="SNOMEDCT" displayName="Durable medical equipment (physical object)">
 			</code>
 			<text>
-				<reference value="#equipment2"></reference>
+				<reference value="#equipment2" />
 			</text>
 			<statusCode code="active"/>
 			<!-- low represents when person first received supply -->

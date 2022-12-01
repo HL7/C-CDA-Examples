@@ -70,7 +70,7 @@
                     <statusCode code="completed"/>
                     <!-- 
 					   <text>
-						  <reference value="#Action1"></reference>
+						  <reference value="#Action1" />
 					   </text>
 								-->
                     <!-- In this example, the instruction was given at the same time that the goal was set.
@@ -111,7 +111,7 @@
                     <statusCode code="completed"/>
                     <!-- 
 						<text>
-						  <reference value="#Action2"></reference>
+						  <reference value="#Action2" />
 						</text>
 					-->
                     <!-- In this example, the instruction was given at the same time that the goal was set.

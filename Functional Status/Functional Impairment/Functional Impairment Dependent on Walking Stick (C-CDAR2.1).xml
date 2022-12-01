@@ -22,7 +22,7 @@
                     <td ID="FS_Type">Functional Status</td> 
                     <td>August 15 2012, 5:32pm</td>
                     <td ID="FS_Finding1">Dependence on walking stick</td>
-                    <td></td>
+                    <td />
                 </tr>
             </tbody>
         </table>
@@ -35,7 +35,7 @@
             <id root="e4f9eb37-52ca-4e95-90f3-570dace107e6"/>
             <code code="54522-8" displayName="Functional status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
                 <originalText>
-                    <reference value="#FS_Type1"></reference>
+                    <reference value="#FS_Type1" />
                 </originalText>
             </code>
             <text>

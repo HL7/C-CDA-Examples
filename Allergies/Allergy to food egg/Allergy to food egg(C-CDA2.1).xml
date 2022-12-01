@@ -73,7 +73,7 @@
 						<low value="1998"/>
 					</effectiveTime>
 					<!-- This specifies that the allergy is to a food in contrast to other allergies (drug) -->
-					<value xsi:type="CD" code="414285001" displayName="Food allergy (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"></value>
+					<value xsi:type="CD" code="414285001" displayName="Food allergy (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
 					<author>
 						<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 						<time value="20140104"/>

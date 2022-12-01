@@ -24,8 +24,7 @@
 					<td>05/20/2014 7:36pm</td>
 					<!-- You can consolidate Systolic and Diastolic in human view if desired but should retain separate references-->
 					<td>
-						<content ID="SystolicBP_2">120</content>/<content ID="DiastolicBP_2"
-							>80</content>mm[Hg] </td>
+						<content ID="SystolicBP_2">120</content>/<content ID="DiastolicBP_2">80</content>mm[Hg] </td>
 					<td ID="Pulse_2">80 /min</td>
 					<td ID="Temp_2">99.0 F</td>
 					<td ID="RespRate_2">18 /min</td>

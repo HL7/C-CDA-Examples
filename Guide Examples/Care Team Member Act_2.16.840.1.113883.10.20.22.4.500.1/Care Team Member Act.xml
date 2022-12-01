@@ -25,7 +25,7 @@
                           codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction">
             <originalText 
               xmlns="urn:hl7-org:v3">
-              <reference value="#CT1_M01"></reference>
+              <reference value="#CT1_M01" />
             </originalText>
           </functionCode>
           <!-- A care team member role -->

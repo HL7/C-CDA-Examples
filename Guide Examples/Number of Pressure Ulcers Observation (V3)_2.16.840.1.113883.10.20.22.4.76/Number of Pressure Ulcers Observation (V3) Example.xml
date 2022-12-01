@@ -8,7 +8,7 @@
       <translation code="75277-4" 
                                     displayName="Number of pressure ulcers"
                                     codeSystem="2.16.840.1.113883.6.1"
-                                    codeSystemName="LOINC"></translation>
+                                    codeSystemName="LOINC" />
     </code>
     <statusCode code="completed" />
     <value xsi:type="INT" value="3" />

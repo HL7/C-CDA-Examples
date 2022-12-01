@@ -23,7 +23,7 @@
                     <!-- Some systems may just report this to day rather than hour and minute timestamp. Both of which are acceptable. -->
                     <td>August 15 2012, 5:32pm</td>
                     <td ID="MS_Finding1">Memory Impairment</td>
-                    <td></td>
+                    <td />
                 </tr>
             </tbody>
         </table>
@@ -37,7 +37,7 @@
             <!-- In C-CDA R2.1 August 2015 this is a fixed code. SDWG may change to a value set in STU comment 1367 -->
             <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="373930000" displayName="Cognitive function finding">
                 <originalText>
-                    <reference value="#MS_Type1"></reference>
+                    <reference value="#MS_Type1" />
                 </originalText>
                 <translation code="75275-8" 
                     displayName="Cognitive function"

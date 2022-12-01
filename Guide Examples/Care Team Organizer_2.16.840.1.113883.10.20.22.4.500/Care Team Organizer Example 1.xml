@@ -6,7 +6,7 @@
     <id root="1.1.1.1.1.1"/>
     <code code="86744-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Care Team">
       <originalText>
-        <reference value="#CareTeamName1"></reference>
+        <reference value="#CareTeamName1" />
       </originalText>
     </code>
     <!--Care Team Status - https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.15933/expansion-->
@@ -36,7 +36,7 @@
                           codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction">
             <originalText 
               xmlns="urn:hl7-org:v3">
-              <reference value="#CT1_M01"></reference>
+              <reference value="#CT1_M01" />
             </originalText>
           </functionCode>
           <!-- A care team member role -->
