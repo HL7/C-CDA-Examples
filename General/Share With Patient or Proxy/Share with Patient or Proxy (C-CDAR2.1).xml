@@ -1,0 +1,186 @@
+<section xmlns:sdtc="urn:hl7-org:sdtc">
+  <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01"/>
+  <code code="11506-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Progress note"/>
+  <title>Progress Notes</title>
+  <text>
+    <list>
+      <item>
+        <caption>Evelyne Thims-Groeber, MD - 01/25/2023 12:09 PM CST</caption>
+        <paragraph ID="Note1">Patient is awake, alert, and oriented x3...</paragraph>
+      </item>
+    </list>
+  </text>
+  
+  <!-- This example uses a Note Activity, but the information below could go inside any entry. -->
+  
+  <!-- EXAMPLE 1: Here's what we're doing today. -->
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01" />
+      <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note">
+        <translation code="11506-3" codeSystem="2.16.840.1.113883.6.1" displayName="Progress note" codeSystemName="LOINC" />
+      </code>
+      <text>
+        <reference value="#Note1" />
+      </text>
+      <statusCode code="completed" />
+      <effectiveTime value="20230125120924-0600" />
+      
+      <!-- Note is not shared with patient (ie patient is currently uninformed).
+           Also, implicitly: Don't share this with the patient. -->
+      <subject>
+        <awarenessCode code="U" codeSystem="2.16.840.1.113883.5.137" codeSystemName="TargetAwareness" displayName="uninformed" />
+        <relatedSubject>
+          <code code="116154003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Patient (person)" />
+        </relatedSubject>
+      </subject>
+      
+      <!-- Author, etc. omitted for brevity... -->
+      
+    </act>
+  </entry>
+  
+  <!-- EXAMPLE 2: Child acts could provide the flexibility to represent things like "share this with a
+                  proxy, but not the patient" or "share this with the patient after a certain time." -->
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01" />
+      <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note">
+        <translation code="11506-3" codeSystem="2.16.840.1.113883.6.1" displayName="Progress note" codeSystemName="LOINC" />
+      </code>
+      <text>
+        <reference value="#Note1" />
+      </text>
+      <statusCode code="completed" />
+      <effectiveTime value="20230125120924-0600" />
+      
+      <!-- Note is not shared with patient (ie patient is currently uninformed) -->
+      <subject>
+        <awarenessCode code="U" codeSystem="2.16.840.1.113883.5.137" codeSystemName="TargetAwareness" displayName="uninformed" />
+        <relatedSubject>
+          <code code="116154003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Patient (person)" />
+        </relatedSubject>
+      </subject>
+      
+      <!-- Author, etc. omitted for brevity... -->
+      
+      <!-- Note is not shared with proxy either -->
+      <participant typeCode="IRCP"> <!-- IRCP = information recipient -->
+        <awarenessCode code="U" codeSystem="2.16.840.1.113883.5.137" codeSystemName="TargetAwareness" displayName="uninformed" />
+        <participantRole>
+          <!-- Optional: If multiple proxies are involved, they can be distinguished using specific ids. -->
+          <id root="1.2.840.114350.1.13.861.1.7.2.827665" extension="103672" />
+          <!-- One other option use codes from the the RoleCode codeSystem (urn:oid:2.16.840.1.113883.5.111) for more specificity;
+               for example, "PRN" = Parent. I'm not actually aware of any reason SNOMED won't suffice here though. -->
+          <code code="451171000124107" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Default healthcare surrogate" />
+          <!-- May add addr, telecom, playingEntity/name, etc... -->
+        </participantRole>
+      </participant>
+      
+      <!-- However, this note can be shared with the proxy after 12:00 PM on 2023-01-29. -->
+      <entryRelationship typeCode="SUBJ" inversionInd="true">
+        <act classCode="ACT" moodCode="INT">
+          <!-- Intend to inform the subject... -->
+          <code code="223458004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Informing" />
+          <statusCode code="active" />
+          <!-- ...on or after 12:00 PM on 2023-01-29... -->
+          <effectiveTime>
+            <low value="20230129120000-0600" />
+            <high nullFlavor="NA" />
+          </effectiveTime>
+          <subject>
+            <relatedSubject>
+              <!-- ...and the subject is the proxy. (Note that this id matches the id of the participant above!) -->
+              <sdtc:id root="1.2.840.114350.1.13.861.1.7.2.827665" extension="103672" />
+              <code code="451171000124107" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Default healthcare surrogate" />
+              <!-- May add addr, telecom, subject/name, etc... -->
+            </relatedSubject>
+          </subject>
+        </act>
+      </entryRelationship>
+      
+      <!-- But it still shouldn't be shared with the patient. -->
+      <!-- QUESTION: Is this entryRelationship necessary? How much intent does an awarenessCode
+                     carry on its own? Does saying "the patient is uninformed" imply "and you should
+                     keep it that way," or is this act important to have for that? -->
+      <entryRelationship typeCode="SUBJ" inversionInd="true">
+        <act classCode="ACT" moodCode="INT" negationInd="true">
+          <!-- Intend NOT to inform the subject (@negationInd="true")... -->
+          <code code="223458004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Informing" />
+          <statusCode code="active" />
+          <!-- ...effective from when the note was signed -->
+          <effectiveTime>
+            <low value="20230125120924-0600" />
+            <high nullFlavor="NA" />
+          </effectiveTime>
+          <subject>
+            <relatedSubject>
+              <!-- ...and the subject is the patient. -->
+              <code code="116154003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Patient (person)" />
+              <!-- May add addr, telecom, subject/name, etc... -->
+            </relatedSubject>
+          </subject>
+        </act>
+      </entryRelationship>
+      
+    </act>
+  </entry>
+  
+  <!-- EXAMPLE 3: Same as example 2, but if we're using those acts, is it even necessary to have the subject and participant
+                  appear separately (at the top act level)? Or would it make more sense to just slip their current awarenessCodes
+                  into the informing acts? -->
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01" />
+      <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note">
+        <translation code="11506-3" codeSystem="2.16.840.1.113883.6.1" displayName="Progress note" codeSystemName="LOINC" />
+      </code>
+      <text>
+        <reference value="#Note1" />
+      </text>
+      <statusCode code="completed" />
+      <effectiveTime value="20230125120924-0600" />
+      
+      <!-- No subject/participant here! -->
+      
+      <entryRelationship typeCode="SUBJ" inversionInd="true">
+        <act classCode="ACT" moodCode="INT">
+          <code code="223458004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Informing" />
+          <statusCode code="active" />
+          <effectiveTime>
+            <low value="20230129120000-0600" />
+            <high nullFlavor="NA" />
+          </effectiveTime>
+          <subject>
+            <!-- Parent is currently uninformed! -->
+            <awarenessCode code="U" codeSystem="2.16.840.1.113883.5.137" codeSystemName="TargetAwareness" displayName="uninformed" />
+            <relatedSubject>
+              <sdtc:id root="1.2.840.114350.1.13.861.1.7.2.827665" extension="103672" />
+              <code code="451171000124107" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Default healthcare surrogate" />
+            </relatedSubject>
+          </subject>
+        </act>
+      </entryRelationship>
+      
+      <entryRelationship typeCode="SUBJ" inversionInd="true">
+        <act classCode="ACT" moodCode="INT" negationInd="true">
+          <code code="223458004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Informing" />
+          <statusCode code="active" />
+          <effectiveTime>
+            <low value="20230125120924-0600" />
+            <high nullFlavor="NA" />
+          </effectiveTime>
+          <subject>
+            <!-- Patient is currently uninformed! -->
+            <awarenessCode code="U" codeSystem="2.16.840.1.113883.5.137" codeSystemName="TargetAwareness" displayName="uninformed" />
+            <relatedSubject>
+              <code code="116154003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Patient (person)" />
+            </relatedSubject>
+          </subject>
+        </act>
+      </entryRelationship>
+      
+    </act>
+  </entry>
+  
+</section>
