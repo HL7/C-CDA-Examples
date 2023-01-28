@@ -183,4 +183,64 @@
     </act>
   </entry>
   
+  <!-- EXAMPLE 4: Is "share this with the patient, but only after X time" the same as "don't share this with the patient until this time?
+                  Probably; in that case, perhaps this act should *always* have negationInd="true" and the effectiveTime/high should indicate
+                            (if present) the instant at which the info can be shared. -->
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01" />
+      <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note">
+        <translation code="11506-3" codeSystem="2.16.840.1.113883.6.1" displayName="Progress note" codeSystemName="LOINC" />
+      </code>
+      <text>
+        <reference value="#Note1" />
+      </text>
+      <statusCode code="completed" />
+      <effectiveTime value="20230125120924-0600" />
+      
+      <!-- No subject/participant here! -->
+      
+      <!-- Can only share this with the proxy *after* 2023-01-19 at 12:00 PM -->
+      <entryRelationship typeCode="SUBJ" inversionInd="true">
+        <!-- negationInd="true": don't share this with the patient... -->
+        <act classCode="ACT" moodCode="INT" negationInd="true">
+          <code code="223458004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Informing" />
+          <statusCode code="active" />
+          <effectiveTime>
+            <low value="20230125120924-0600" />
+            <!-- ...until 2023-01-29 at 12:00 PM. -->
+            <high value="20230129120000-0600" />
+          </effectiveTime>
+          <subject>
+            <!-- Parent is currently uninformed! -->
+            <awarenessCode code="U" codeSystem="2.16.840.1.113883.5.137" codeSystemName="TargetAwareness" displayName="uninformed" />
+            <relatedSubject>
+              <sdtc:id root="1.2.840.114350.1.13.861.1.7.2.827665" extension="103672" />
+              <code code="451171000124107" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Default healthcare surrogate" />
+            </relatedSubject>
+          </subject>
+        </act>
+      </entryRelationship>
+      
+      <entryRelationship typeCode="SUBJ" inversionInd="true">
+        <act classCode="ACT" moodCode="INT" negationInd="true">
+          <code code="223458004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Informing" />
+          <statusCode code="active" />
+          <effectiveTime>
+            <low value="20230125120924-0600" />
+            <high nullFlavor="NA" />
+          </effectiveTime>
+          <subject>
+            <!-- Patient is currently uninformed! -->
+            <awarenessCode code="U" codeSystem="2.16.840.1.113883.5.137" codeSystemName="TargetAwareness" displayName="uninformed" />
+            <relatedSubject>
+              <code code="116154003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Patient (person)" />
+            </relatedSubject>
+          </subject>
+        </act>
+      </entryRelationship>
+      
+    </act>
+  </entry>
+  
 </section>
