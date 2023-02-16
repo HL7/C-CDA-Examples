@@ -116,9 +116,8 @@
           <!-- This one applies indefinitely -->
           <effectiveTime>
             <low value="20230125120924-0600"/>
-            <high nullFlavor="NA"/>
           </effectiveTime>
-          <!-- Don't share it with anyone but the patient (?) -->
+          <!-- Don't share it with anyone but the patient -->
           <value xsi:type="CE" code="NOAUTH" codeSystem="2.16.840.1.113883.5.1063"
             codeSystemName="SecurityObservationValueCodeSystem"
             displayName="no disclosure without subject authorization"/>
