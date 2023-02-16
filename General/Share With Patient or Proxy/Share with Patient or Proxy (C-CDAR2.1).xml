@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section>
+  <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+  <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+    displayName="Relevant diagnostic tests and/or laboratory data"/>
+  <title>Results</title>
+  <!-- Some sensitive information, like a positive HIV result, may not be appropriate
+         to disclose to the patient or their proxies until a certain point in time. -->
+  <text>
+    <list>
+      <item>
+        <caption>HIV 1 and 2 Ab panel - Serum, Plasma or Blood by Rapid
+          immunoassay</caption>
+        <table>
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Value / Unit</th>
+              <th>Interpretation</th>
+              <th>Reference Range</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ID="LabResult1">
+              <td>HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid
+                immunoassay</td>
+              <td>Reactive</td>
+              <td>Abnormal</td>
+              <td>Reference (Normal) for this test is not detected</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <table>
+          <caption>Disclosure Details</caption>
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Information safe to disclose?</th>
+              <th>Effective Until</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ID="DisclosureDetails1">
+              <td>Patient</td>
+              <td>No</td>
+              <td>01/29/2023 12:00 PM CST</td>
+            </tr>
+            <tr ID="DisclosureDetails2">
+              <td>Proxies</td>
+              <td>Not without patient authorization</td>
+              <td>Indefinite</td>
+            </tr>
+          </tbody>
+        </table>
+      </item>
+    </list>
+  </text>
+  <entry>
+    <organizer classCode="BATTERY" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+      <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+      <id root="b4a47651-8375-44f8-89fd-0261a72a0698"/>
+      <code code="89365-1"
+        displayName="HIV 1 and 2 Ab panel - Serum, Plasma or Blood by Rapid immunoassay"
+        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="202003221426-0500"/>
+        <high value="202003221426-0500"/>
+      </effectiveTime>
+      <component>
+        <observation classCode="OBS" moodCode="EVN">
+          <!-- Positive HIV result... -->
+        </observation>
+      </component>
+      <component>
+        <!-- Don't share with patient until 12:00 PM on 2023-01-29 -->
+        <observation classCode="OBS" moodCode="EVN">
+          <!-- Security Observation -->
+          <templateId root="2.16.840.1.113883.3.445.21" assigningAuthorityName="HL7 CBCC"/>
+          <!-- Refrain Policy Code template -->
+          <templateId root="2.16.840.1.113883.3.445.23" assigningAuthorityName="HL7 CBCC"/>
+          <code code="SECCONOBS" codeSystem="2.16.840.1.113883.1.11.20457"
+            displayName="Security Classification"
+            codeSystemName="HL7 SecurityObservationTypeCodeSystem"/>
+          <text>
+            <reference value="#DisclosureDetails1" />
+          </text>
+          <effectiveTime>
+            <!-- Instant result was finalized -->
+            <low value="20230125120924-0600"/>
+            <!-- Instant result can be shared -->
+            <high value="20230129120000-0600"/>
+          </effectiveTime>
+          <value xsi:type="CE" code="NOPAT" codeSystem="2.16.840.1.113883.5.1063"
+            codeSystemName="SecurityObservationValueCodeSystem"
+            displayName="no disclosure to patient, family or caregivers without attending provider's authorization"
+          />
+        </observation>
+      </component>
+      <component>
+        <!-- Share with patient, but hide from their proxies indefinitely -->
+        <observation classCode="OBS" moodCode="EVN">
+          <!-- Security Observation -->
+          <templateId root="2.16.840.1.113883.3.445.21" assigningAuthorityName="HL7 CBCC"/>
+          <!-- Refrain Policy Code template -->
+          <templateId root="2.16.840.1.113883.3.445.23" assigningAuthorityName="HL7 CBCC"/>
+          <code code="SECCONOBS" codeSystem="2.16.840.1.113883.1.11.20457"
+            displayName="Security Classification"
+            codeSystemName="HL7 SecurityObservationTypeCodeSystem"/>
+          <text>
+            <reference value="#DisclosureDetails2" />
+          </text>
+          <!-- This one applies indefinitely -->
+          <effectiveTime>
+            <low value="20230125120924-0600"/>
+          </effectiveTime>
+          <!-- Don't share it with anyone but the patient -->
+          <value xsi:type="CE" code="NOAUTH" codeSystem="2.16.840.1.113883.5.1063"
+            codeSystemName="SecurityObservationValueCodeSystem"
+            displayName="no disclosure without subject authorization"/>
+        </observation>
+      </component>
+    </organizer>
+  </entry>
+</section>
