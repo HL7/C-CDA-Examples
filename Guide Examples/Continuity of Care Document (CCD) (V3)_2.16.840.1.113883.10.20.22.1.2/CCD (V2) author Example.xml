@@ -2,7 +2,7 @@
   <time value="201209151030-0800" />
   <assignedAuthor>
     <id extension="5555555555" root="2.16.840.1.113883.4.6" />
-    <code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy" />
+    <code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy" />
     <addr>
       <streetAddressLine>1004 Healthcare Drive </streetAddressLine>
       <city>Portland</city>

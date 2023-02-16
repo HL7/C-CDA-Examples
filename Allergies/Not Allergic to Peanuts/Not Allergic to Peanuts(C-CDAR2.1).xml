@@ -27,7 +27,7 @@
                     <time value="20140104"/>
                     <assignedAuthor>
                         <id extension="99999999" root="2.16.840.1.113883.4.6"/>
-                        <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine" />
+                        <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine" />
                         <telecom use="WP" value="tel:555-555-1002"/>
                         <assignedPerson>
                             <name>
@@ -56,13 +56,13 @@
                         </effectiveTime>
                         <!-- This specifies that the allergy is to a substance -->
                         <!-- Considered 'Allergy to peanuts' above but decided to use substance since this is what systems will expect -->     
-                        <value xsi:type="CD" code="414285001" displayName="food allergy" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                        <value xsi:type="CD" code="414285001" displayName="Allergy to food" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                         <author>
                             <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
                             <time value="20140104"/>
                             <assignedAuthor>
                                 <id extension="99999999214" root="2.16.840.1.113883.4.6"/>
-                                <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine" />
+                                <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine" />
                                 <telecom use="WP" value="tel:555-555-1002"/>
                                 <assignedPerson>
                                     <name>
@@ -77,7 +77,7 @@
                                 <playingEntity classCode="MMAT">
                                     <!-- SNOMED is used to report specific susbtance -->
                                     <!-- Considered 'Allergy to peanuts' above but decided to use substance since this is what systems will expect -->                                
-                                    <code code="762952008" displayName="Peanuts" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                                    <code code="762952008" displayName="Peanut" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                                 </playingEntity>
                             </participantRole>
                         </participant>

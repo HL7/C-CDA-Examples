@@ -18,7 +18,7 @@
 	<templateId root="2.16.840.1.113883.10.20.22.1.2"/>
 	<!-- Globally unique identifier for the document  -->
 	<id extension="TT662" root="2.16.840.1.113883.19.5.99999.1"/>
-	<code code="34133-9" displayName="Summarization of Episode Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+	<code code="34133-9" displayName="Summary of episode note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 	<!-- Title of this document -->
 	<title>CCD Demonstrating Replacement of Prior CCD</title>
 	<effectiveTime value="201507221800-0500" />
@@ -84,7 +84,7 @@
 		<assignedAuthor>
 			<id extension="111111" root="2.16.840.1.113883.4.6"/>
 			<code code="281P00000X" codeSystem="2.16.840.1.113883.6.101"
-				displayName="Chronic Disease Hospital"/>
+				displayName="Hospitals; Chronic Disease Hospital"/>
 			<addr>
 				<streetAddressLine>1002 Healthcare Dr</streetAddressLine>
 				<city>Portland</city>
@@ -286,7 +286,7 @@
 	<documentationOf>
 		<serviceEvent classCode="PCPR">
 			<code code="423123007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"
-				displayName="Burn by Fire"/>
+				displayName="Burn caused by fire"/>
 			<effectiveTime>
 				<low value="2015072218-0500"/>
 				<high value="2015072223-0500"/>
@@ -296,12 +296,12 @@
 			https://github.com/gecole/HL7-Task-Force-Examples/blob/master/CareTeamToC170.314b2Ambulatory.xml
 			db -->
 			<performer typeCode="PRF">
-				<functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction" displayName="Primary Care Provider">
+				<functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction" displayName="primary care physician">
 					<originalText>Primary Care Provider</originalText>
 				</functionCode>
 				<assignedEntity>
 					<id extension="5555555555" root="2.16.840.1.113883.4.6"/>
-					<code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
+					<code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
 					<addr>
 						<streetAddressLine>1002 Healthcare Dr</streetAddressLine>
 						<city>Portland</city>
@@ -342,7 +342,7 @@
 					<!-- the provider is a Registered Nurse - may not be so -->
 					<!-- note: we don't know what Mary is from the test data
 						 but since not specified, RN should not be an issue -db -->
-					<code codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy" code="163W00000X" displayName="Registered Nurse"/>
+					<code codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy" code="163W00000X" displayName="Nursing Service Providers; Registered Nurse"/>
 					<addr>
 						<streetAddressLine>1002 Healthcare Dr</streetAddressLine>
 						<city>Portland</city>
@@ -367,7 +367,7 @@
 	<relatedDocument typeCode="RPLC">
 		<parentDocument>
 			<id extension="TT661" root="2.16.840.1.113883.19.5.99999.1"/>
-			<code code="34133-9" displayName="Summarization of Episode Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+			<code code="34133-9" displayName="Summary of episode note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 			<!-- While not required, there is a benefit of using <setId> and <versionNumber> as a secondary key on documents.   
 			If the flow from a document source system or repository to a destination system is infrequent or  not able to guarantee 
 			sequential transmission of  document revisions.  The setId and versionNumber pair are actually better for detecting which 
@@ -433,7 +433,7 @@
 									<effectiveTime nullFlavor="NA"/>
 									<!-- using Drug allergy (disorder) along with negationInd instead -db -->
 									<value xsi:type="CD" code="416098002"
-										displayName="Drug allergy (disorder)"
+										displayName="Allergy to drug (finding)"
 										codeSystem="2.16.840.1.113883.6.96"
 										codeSystemName="SNOMED CT">
 									</value>
@@ -751,7 +751,7 @@
 			<component>
 				<section nullFlavor="NI">
 					<templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01" />
-					<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="VITAL SIGNS" />
+					<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs" />
 					<title>VITAL SIGNS</title>
 					<text>No Recorded Vital Signs</text>
 				</section>
@@ -802,7 +802,7 @@
 							<effectiveTime value="20150722"/>
 							<!-- The value represents the patient's smoking status currently observed. -->
 							<!-- Consol Smoking Status Meaningful Use2 SHALL contain exactly one [1..1] value (CONF:1098-14810), which SHALL be selected from ValueSet Current Smoking Status 2.16.840.1.113883.11.20.9.38 STATIC 2014-09-01 (CONF:1098-14817) -db -->
-							<value xsi:type="CD" code="449868002" displayName="Current every day smoker" codeSystem="2.16.840.1.113883.6.96"/>
+							<value xsi:type="CD" code="449868002" displayName="Smokes tobacco daily" codeSystem="2.16.840.1.113883.6.96"/>
 						</observation>
 					</entry>					
 					<!-- removed Social history observation (V3) entry for "Alcoholic drinks per day" -db -->
@@ -861,7 +861,7 @@
 					<templateId root="2.16.840.1.113883.10.20.22.2.8"/>
 					<code codeSystem="2.16.840.1.113883.6.1" 
 						 codeSystemName="LOINC" code="51848-0" 
-						 displayName="ASSESSMENTS"/>
+						 displayName="Evaluation note"/>
 					<title>ASSESSMENTS</title>
 					<text>No assessment information</text>
 				</section>
@@ -874,7 +874,7 @@
 					<!--  **** Plan of Treatment Section (V2) **** -->
 					<templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
 					<templateId root="2.16.840.1.113883.10.20.22.2.10"/>
-					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of care note"/>
 					<title>TREATMENT PLAN</title>
 					<text>
 						No Plan of treatment
@@ -958,7 +958,7 @@
 					  code="8653-8"
 					  codeSystem="2.16.840.1.113883.6.1"
 					  codeSystemName="LOINC"
-					  displayName="HOSPITAL DISCHARGE INSTRUCTIONS"/>
+					  displayName="Hospital Discharge instructions"/>
 					<title>HOSPITAL DISCHARGE INSTRUCTIONS</title>
 					<!-- Unstructured text field -->
 					<text>
@@ -985,7 +985,7 @@
 					<!-- There is no R1.1 version of this template -db -->
 					<templateId root="2.16.840.1.113883.10.20.22.2.56" extension="2015-08-01" />
 					<!-- Mental Status Section -->
-					<code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MENTAL STATUS" />
+					<code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Mental status Narrative" />
 					<title>MENTAL STATUS</title>
 					<text>No information</text>
 				</section>	
@@ -1003,7 +1003,7 @@
 					<templateId root="2.16.840.1.113883.10.20.22.2.14" extension="2014-06-09"/>
 					<!-- Functional Status Section -->
 					<templateId root="2.16.840.1.113883.10.20.22.2.14"/>
-					<code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional Status"/>
+					<code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional status assessment note"/>
 					<title>FUNCTIONAL STATUS</title>
 					<text>No information</text>
 				</section>

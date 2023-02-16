@@ -18,7 +18,7 @@
     <act classCode="ACT" moodCode="INT">
       <templateId root="2.16.840.1.113883.10.20.22.4.12" extension="2015-08-01" />
       <id root="7658963e-54da-496f-bf18-dea1dddaa3b0" />
-      <code code="423171007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Elevate head of bed" />
+      <code code="423171007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Elevation of head of bed" />
       <statusCode code="active" />
     </act>
   </entryRelationship>

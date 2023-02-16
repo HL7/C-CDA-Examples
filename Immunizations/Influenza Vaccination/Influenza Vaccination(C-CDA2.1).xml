@@ -49,7 +49,7 @@
                         <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
                         <manufacturedMaterial>
                             <code code="88" codeSystem="2.16.840.1.113883.12.292"
-                                displayName="Influenza virus vaccine" codeSystemName="CVX">
+                                displayName="influenza virus vaccine, unspecified formulation" codeSystemName="CVX">
                                 <originalText>
                                     <reference value="#ImmunizationProduct_100"/>
                                 </originalText>
@@ -94,7 +94,7 @@
                     <time value="20100815"/>
                     <assignedAuthor>
                         <id extension="99999999" root="2.16.840.1.113883.4.6"/>
-                        <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine" />
+                        <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine" />
                         <telecom use="WP" value="tel:555-555-1002"/>
                         <assignedPerson>
                             <name>

@@ -6,7 +6,7 @@ codeSystemName="LOINC" />
   <statusCode code="completed" />
   <effectiveTime value="200803190830-0800" />
   <value xsi:type="PQ" value="35.3" unit="%" />
-  <interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83" />
+  <interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83" displayName="Low" />
   <author>
     <time value="200803190830-0800" />
     <assignedAuthor>
@@ -38,7 +38,7 @@ codeSystemName="LOINC" />
         <low value="34.9" unit="%" />
         <high value="44.5" unit="%" />
       </value>
-      <interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83"/>
+      <interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83" displayName="Low" />
     </observationRange>
   </referenceRange>
 </observation>

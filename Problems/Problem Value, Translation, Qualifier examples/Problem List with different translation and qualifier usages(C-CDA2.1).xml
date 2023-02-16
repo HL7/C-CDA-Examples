@@ -86,7 +86,7 @@
                         <assignedAuthor>
                             <id extension="66666" root="2.16.840.1.113883.4.6"/>
                             <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
-                                codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+                                codeSystemName="NUCC" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Cardiovascular Disease"/>
                             <addr>
                                 <streetAddressLine>6666 StreetName St.</streetAddressLine>
                                 <city>Silver Spring</city>

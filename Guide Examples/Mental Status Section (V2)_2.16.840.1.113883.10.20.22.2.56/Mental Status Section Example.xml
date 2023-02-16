@@ -1,7 +1,7 @@
 <section>
   <templateId root="2.16.840.1.113883.10.20.22.2.14" extension="2015-08-01" />
   <!-- Mental Status Section -->
-  <code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MENTAL STATUS" />
+  <code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Mental status Narrative" />
   <title>MENTAL STATUS</title>
   <text>
       ...

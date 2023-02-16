@@ -104,7 +104,7 @@
                     <low value="20160413"/>
                 </effectiveTime>
                 <!-- Example without qualifier -->
-                <targetSiteCode code="82169009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Structure of left knee"/>
+                <targetSiteCode code="82169009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Structure of left knee region"/>
                 <participant typeCode="DEV">
                     <participantRole classCode="MANU">
                         <templateId root="2.16.840.1.113883.10.20.22.4.37"/>

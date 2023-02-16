@@ -33,7 +33,7 @@ there are systems that might very well represent the data in the Plan of Treatme
                 <section>
                     <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
                     <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
-                    <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of Care"/>
+                    <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of care note"/>
                     <title>Plan of Care</title>
                     <!-- one Planned Encounter in the human readable text and as a discrete entry -->
                     <text>
@@ -68,7 +68,7 @@ there are systems that might very well represent the data in the Plan of Treatme
                             <id extension="52487" root="1.3.6.1.42424242.4.99930.4.3.4"/>
                             <!-- templateId and id are all that are required or specified in C-CDA R1.1; with C-CDA R2.0 the documentation changes quite a bit -->
                             <!-- code from the Planned Encounter Type value set; 11429006 is reflective of the example data, but local policy and use may result in selection of a different code -->
-                            <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="11429006" displayName="consultation">
+                            <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="11429006" displayName="Consultation">
                                 <!-- referencing back to the text of the type-->
                                 <originalText>
                                     <reference value="#ID0EFAAAAACA"/>
@@ -108,7 +108,7 @@ there are systems that might very well represent the data in the Plan of Treatme
                             <participant typeCode="LOC">
                                 <participantRole classCode="SDLOC">
                                     <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
-                                    <code code="1212-0" codeSystem="2.16.840.1.113883.6.259" displayName="Any Age Mixed Acuity Unit"/>
+                                    <code code="1212-0" codeSystem="2.16.840.1.113883.6.259" displayName="Mixed Age Mixed Acuity Unit"/>
                                     <telecom nullFlavor="UNK"/>
                                     <playingEntity classCode="PLC">
                                         <name>Dr. Penny Puffer Office</name>
@@ -124,7 +124,7 @@ there are systems that might very well represent the data in the Plan of Treatme
                                     <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09"/>
                                     <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
                                     <id extension="45678" root="1.3.6.1.4.1.42424242.4.99930.4.4.1.2.1"/>
-                                    <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="282291009" displayName="Diagnosis"/>
+                                    <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="282291009" displayName="Diagnosis interpretation"/>
                                     <text>
                                         <reference value="#ID0EAAAAAAAAACA"/>
                                     </text>
@@ -133,7 +133,7 @@ there are systems that might very well represent the data in the Plan of Treatme
                                         <low value="20120815"/>
                                     </effectiveTime>
                                     <!-- includes the code for Costal Chondritis -->
-                                    <value xsi:type="CD" code="64109004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Costal Chondritis"/>
+                                    <value xsi:type="CD" code="64109004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Costal chondritis"/>
                                 </observation>
                             </entryRelationship>
                         </encounter>

@@ -35,7 +35,7 @@
       <observation classCode="OBS" moodCode="EVN">
         <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
         <statusCode code="completed" />
-        <value xsi:type="CD" code="268528005" displayName="full care by specialist" codeSystem="2.16.840.1.113883.6.96" />
+        <value xsi:type="CD" code="268528005" displayName="Full care by specialist" codeSystem="2.16.840.1.113883.6.96" />
       </observation>
     </entryRelationship>
   </act>

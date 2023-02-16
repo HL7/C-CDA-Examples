@@ -59,7 +59,7 @@
                     <high value="6" unit="h"/>
                 </period>
             </effectiveTime>
-            <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+            <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral Route of Administration"/>
             <!-- This relates directly to the code used for medication. Since it's a tablet, then only specified needed in dose is 2x per administration-->
             <doseQuantity value="2"/>
             <consumable>
@@ -70,7 +70,7 @@
                     <id root="0be61984-eaa5-46b3-b75b-1d1ba28b5fff"/>
                     <manufacturedMaterial>
                         <!-- Medications should be specified at a level corresponding to prescription when possible, such as 30mg oral tablet (branded)-->
-                        <code code="1049529" displayName="Sudafed 30 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                        <code code="1049529" displayName="pseudoephedrine hydrochloride 30 MG Oral Tablet [Sudafed]" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
                             <originalText>
                                 <reference value="#MedicationName_1"/>
                             </originalText>
@@ -85,7 +85,7 @@
                 <assignedAuthor>
                     <id extension="66666" root="2.16.840.1.113883.4.6"/>
                     <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101"
-                        codeSystemName="NUCC" displayName="Cardiovascular Disease"/>
+                        codeSystemName="NUCC" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Cardiovascular Disease"/>
                     <addr>
                         <streetAddressLine>6666 StreetName St.</streetAddressLine>
                         <city>Silver Spring</city>

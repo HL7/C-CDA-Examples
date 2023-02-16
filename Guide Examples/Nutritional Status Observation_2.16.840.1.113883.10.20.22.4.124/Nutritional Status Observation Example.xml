@@ -13,7 +13,7 @@
   <value xsi:type="CD" code="248324001"
           codeSystem="2.16.840.1.113883.6.96" 
           codeSystemName="SNOMED-CT" 
-          displayName="well nourished" />
+          displayName="Well nourished" />
   <entryRelationship typeCode="SUBJ">
     <observation classCode="OBS" moodCode="EVN">
       <!-- ** Nutrition Assessment** -->

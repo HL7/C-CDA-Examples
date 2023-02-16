@@ -36,7 +36,7 @@
             <!-- There are LOINC panel codes for a COVID as well as a CPT code-->
             <!-- Panel codes include: 94306-8, 94503-0, 94504-8, 94531-1 -->
             <!-- Please note that these are pre-release LOINC codes and codes may change over time -->
-            <code code="94531-1" displayName="SARS coronavirus 2 RNA panel" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            <code code="94531-1" displayName="SARS-CoV-2 (COVID-19) RNA panel - Respiratory specimen by NAA with probe detection" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
             <!-- Alternatively CPT codes may be used in the panel as what was ordered -->
             <!-- <code code="87635" displayName="Infectious agent detection by nucleic acid (DNA or RNA); severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) (Coronavirus disease [COVID-19]), amplified probe technique" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT"/> -->
             <statusCode code="completed"/>
@@ -54,7 +54,7 @@
                          94499-1, 94500-6, 94501-4, 94502-2, 94503-0, 94504-8, 94505-5, 94506-3, 94507-1, 94508-9, 94509-7, 94510-5, 94511-3, 94531-1, 94532-9, 94533-7, 94534-5, 94547-7 -->
                     <!-- You can check LOINC code detail by using their open API, such as https://loinc.org/94500-6/ -->
                     <!-- Please note that these are pre-release LOINC codes and codes may change over time -->
-                    <code code="94500-6" displayName="SARS coronavirus 2 RNA" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <code code="94500-6" displayName="SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                     <text>
                         <reference value="#LabResult3"/>
                     </text>
@@ -62,13 +62,13 @@
                     <effectiveTime value="202003221426-0500"/>
                     <!-- Since this is a pre-release code there is not an established answer list and this may vary -->
                     <value xsi:type="CD" code="260373001" codeSystemName="SNOMED-CT" displayName="Detected" codeSystem="2.16.840.1.113883.6.96"/>
-                    <interpretationCode code="A" codeSystem="2.16.840.1.113883.5.83"/>
+                    <interpretationCode code="A" codeSystem="2.16.840.1.113883.5.83" displayName="Abnormal" />
                     <referenceRange>
                         <observationRange>
                             <text>Reference (Normal) for this test is not detected</text>
                             <value xsi:type="CD" code="260415000" codeSystemName="SNOMED-CT" displayName="Not Detected" codeSystem="2.16.840.1.113883.6.96"/>
                             <!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation a specific patient value-->
-                            <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+                            <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
                         </observationRange>
                     </referenceRange>
                 </observation>

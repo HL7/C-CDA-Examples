@@ -4,7 +4,7 @@
     <!-- Note that in C-CDA 1.1, functional and cognitive status (mental) are within the same section -->
     <!-- Section not backwards compaitble with prior 2.16.840.1.113883.10.20.22.2.14 since new section --> 
     <templateId root="2.16.840.1.113883.10.20.22.2.56" extension="2015-08-01" />
-    <code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MENTAL STATUS" />
+    <code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Mental status Narrative" />
     <title>MENTAL STATUS</title>    
     <!-- Narrative organized as a single table. Some systems may prefer separate tables for functional vs. cognitive assessments -->
     <text>
@@ -40,7 +40,7 @@
                     <reference value="#MS_Type1" />
                 </originalText>
                 <translation code="75275-8" 
-                    displayName="Cognitive function"
+                    displayName="Cognitive function [Interpretation]"
                     codeSystem="2.16.840.1.113883.6.1"
                     codeSystemName="LOINC"/>
             </code>

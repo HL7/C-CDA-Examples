@@ -24,10 +24,10 @@
 	<!-- Diagnostic Imaging Report Template -->
 	<templateId root="2.16.840.1.113883.10.20.22.1.5" extension="2014-06-09"/>
 	<id root="2.16.840.1.113883.19.4.27" extension="20060828170821659"/>
-	<code code="18748-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic Imaging Report"/>
+	<code code="18748-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic imaging study"/>
 	<title>Chest X-Ray, PA and LAT View</title>
 	<effectiveTime value="20050329171504-0500"/>
-	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" />
 	<languageCode code="en-US"/>
 	<setId extension="111199021" root="2.16.840.1.113883.19"/>
 	<versionNumber value="1"/>
@@ -48,14 +48,14 @@
 					<given>Adam</given>
 					<family>Everyman</family>
 				</name>
-				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Male" />
 				<birthTime value="19541125"/>
 				<maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatusCode"/>
 				<religiousAffiliationCode code="1013" displayName="Christian" codeSystemName="HL7 Religious Affiliation " codeSystem="2.16.840.1.113883.5.1076"/>
 				<raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
 				<ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
 				<guardian>
-					<code code="GRFTH" displayName="Grandfather" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code"/>
+					<code code="GRFTH" displayName="grandfather" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code"/>
 					<addr use="HP">
 						<streetAddressLine>17 Daws Rd.</streetAddressLine>
 						<city>Blue Bell</city>
@@ -82,7 +82,7 @@
 				</birthplace>
 				<languageCommunication>
 					<languageCode code="fr-CN"/>
-					<modeCode code="RWR" displayName="Received Written" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
+					<modeCode code="RWR" displayName="Received written" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
 					<proficiencyLevelCode code="G" displayName="Good" codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency"/>
 					<preferenceInd value="true"/>
 				</languageCommunication>
@@ -250,7 +250,7 @@
 				<templateId root="2.16.840.1.113883.10.20.6.2.1"/>
 				<assignedEntity>
 					<id extension="121008" root="2.16.840.1.113883.19.5"/>
-				  <code code="2085R0202X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Diagnostic Radiology"/>
+				  <code code="2085R0202X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Allopathic &amp; Osteopathic Physicians; Radiology, Diagnostic Radiology"/>
 					<addr nullFlavor="NI"/>
 					<telecom nullFlavor="NI"/>
 					<assignedPerson>
@@ -279,7 +279,7 @@
 				<templateId root="2.16.840.1.113883.10.20.6.2.2" extension="2014-06-09"/>
 				<assignedEntity>
 					<id extension="44444444" root="2.16.840.1.113883.4.6"/>
-					<code code="208D00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="General Practice"/>
+					<code code="208D00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" displayName="Allopathic &amp; Osteopathic Physicians; General Practice"/>
 					<addr nullFlavor="NI"/>
 					<telecom nullFlavor="NI"/>
 					<assignedPerson>
@@ -397,7 +397,7 @@ End of Reason for study Section
 **********************************************************************
   -->
 				<section>
-					<code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History"/>
+					<code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History general Narrative - Reported"/>
 					<title>History</title>
 					<text>
 						<paragraph>
@@ -473,7 +473,7 @@ End of Reason for study Section
 									<!-- no DICOM attribute  <statusCode code="completed"/> -->
 									<effectiveTime value="20060823223912"/>
 									<value xsi:type="PQ" value="45" unit="mm">
-										<translation code="mm" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM" codeSystemVersion="1.5"/>
+										<translation code="mm" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM" codeSystemVersion="1.5" displayName="millimeter" />
 									</value>
 									<!-- inferred from image -->
 									<entryRelationship typeCode="SUBJ">

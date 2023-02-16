@@ -2,7 +2,7 @@
   <assignedEntity>
     <!-- id using HL7 example OID. -->
     <id extension="999.1" root="2.16.840.1.113883.19" />
-    <code code="ONESELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code" />
+    <code code="ONESELF" displayName="self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code" />
     <addr use="HP">
       <!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
       <streetAddressLine>2222 Home Street</streetAddressLine>

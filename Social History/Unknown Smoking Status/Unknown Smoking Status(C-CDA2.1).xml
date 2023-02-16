@@ -31,7 +31,7 @@
 					current smoking status is at the time of the observation. As a result, the effectiveTime is constrained 
 					to just a time stamp, and will approximately correspond with the author/time. -->
 			<!-- The use of a specfic SNOMED code for unknown smoker is an encouraged variation from C-CDA practices in other sections -->
-			<value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="266927001" displayName="Unknown if ever smoked"/>
+			<value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="266927001" displayName="Tobacco smoking consumption unknown"/>
 			<author>
 				<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 				<time value="201406061032-0500"/>

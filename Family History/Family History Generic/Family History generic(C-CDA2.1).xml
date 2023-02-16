@@ -35,7 +35,7 @@
 			<subject>
 				<relatedSubject classCode="PRS">
 					<!-- Identifies this subject as a generic 'Family Member' -->
-					<code code="FAMMEMB" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="Family Member" />
+					<code code="FAMMEMB" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 RoleCode" displayName="family member" />
 					<!-- No additional subject information is necessary, since we are not talking about an individual person -->
 				</relatedSubject>
 			</subject>
@@ -46,8 +46,8 @@
 					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
 					<!-- Unique ID for this individual observation -->
 					<id root="02faa204-3333-4610-864f-cb50b650d0fa" />
-					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition">
-						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
+					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Disease">
+						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family member" />
 					</code>
 					<text>
 						<reference value="#FH1" />
@@ -59,7 +59,7 @@
 						 Note: explicitly NOT using 266894000: FH Cardiovascular disease, since we are scoped by the "family member"
 						 The family member has 'Heart Disease', not a 'Family History of Heart Disease'
 						-->
-					<value xsi:type="CD" code="56265001" codeSystem="2.16.840.1.113883.6.96" displayName="Heart Disease (Disorder)">
+					<value xsi:type="CD" code="56265001" codeSystem="2.16.840.1.113883.6.96" displayName="Heart disease (disorder)">
 						<originalText>
 							<reference value="#FHGeneric1prob"/>
 						</originalText>
@@ -75,8 +75,8 @@
 					<templateId root="2.16.840.1.113883.10.20.22.4.46" extension="2015-08-01"/>
 					<!-- Unique ID for this individual observation -->
 					<id root="04faa204-3333-4610-864f-cb50b650d0fa" />
-					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition">
-						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family Member" />
+					<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Disease">
+						<translation code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition Family member" />
 					</code>
 					<text>
 						<reference value="#FH2" />

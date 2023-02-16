@@ -31,7 +31,7 @@
 				<originalText>
 					<reference value="#ProcedureDesc3"/>
 				</originalText>
-				<translation code="97802" codeSystem="2.16.840.1.113883.6.12" displayName="Medical nutrition therapy; initial" codeSystemName="CPT" />
+				<translation code="97802" codeSystem="2.16.840.1.113883.6.12" displayName="Medical nutrition therapy; initial assessment and intervention, individual, face-to-face with the patient, each 15 minutes" codeSystemName="CPT" />
 				<translation code="S9470" codeSystem="2.16.840.1.113883.6.13" displayName="Nutritional counseling, diet" codeSystemName="HCPCS"/>
 				<!-- For some activities, ICD-9 and ICD-10 procedure codes may not apply (e.g. nutritional counseling). ICD-9 and ICD-10 diagnosis codes translate and shown below-->
 				<translation code="V65.3" codeSystem="2.16.840.1.113883.6.103" displayName="Dietary surveillance and counseling" codeSystemName="ICD-9 Diagnosis"/>

@@ -1,6 +1,6 @@
 <section>
   <templateId root="2.16.840.1.113883.10.20.22.2.9" extension="2014-06-09" />
-  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51847-2" displayName="ASSESSMENT AND PLAN" />
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51847-2" displayName="Evaluation + Plan note" />
   <title>ASSESSMENT AND PLAN</title>
   <text>
       ...

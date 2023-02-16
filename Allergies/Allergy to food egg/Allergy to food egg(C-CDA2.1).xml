@@ -46,7 +46,7 @@
 				<time value="20140104"/>
 				<assignedAuthor>
 					<id extension="99999999" root="2.16.840.1.113883.4.6"/>
-					<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine" />
+					<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine" />
 					<telecom use="WP" value="tel:555-555-1002"/>
 					<assignedPerson>
 						<name>
@@ -73,13 +73,13 @@
 						<low value="1998"/>
 					</effectiveTime>
 					<!-- This specifies that the allergy is to a food in contrast to other allergies (drug) -->
-					<value xsi:type="CD" code="414285001" displayName="Food allergy (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+					<value xsi:type="CD" code="414285001" displayName="Allergy to food (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
 					<author>
 						<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
 						<time value="20140104"/>
 						<assignedAuthor>
 							<id extension="99999999" root="2.16.840.1.113883.4.6"/>
-							<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine" />
+							<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine" />
 							<telecom use="WP" value="tel:555-555-1002"/>
 							<assignedPerson>
 								<name>
@@ -131,7 +131,7 @@
 								<low value="1998"/>
 								<high nullFlavor="UNK"/>
 							</effectiveTime>
-							<value xsi:type="CD" code="247472004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Hives"/>
+							<value xsi:type="CD" code="247472004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Wheal"/>
 							<entryRelationship typeCode="SUBJ" inversionInd="true">
 								<observation classCode="OBS" moodCode="EVN">
 									<!-- Severity Observation template -->
@@ -143,7 +143,7 @@
 										<reference value="#allergy5reactionseverity"/>
 									</text>
 									<statusCode code="completed"/>
-									<value xsi:type="CD" code="6736007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="moderate"/>
+									<value xsi:type="CD" code="6736007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Moderate"/>
 								</observation>
 							</entryRelationship>
 						</observation>

@@ -36,7 +36,7 @@
                 <templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
                 <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
                 <id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
-                <code code="99213" displayName="Office outpatient visit 15 minutes" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12">
+                <code code="99213" displayName="Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using time for code selection, 20-29 minutes of total time is spent on the date of the encounter." codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12">
                     <originalText>
                         <reference value="#Encounter1_Type"/>
                     </originalText>
@@ -61,7 +61,7 @@
                     <assignedEntity>
                         <!-- Provider NPI "333444555" -->
                         <id extension="333444555" root="2.16.840.1.113883.4.6"/>
-                        <code code="59058001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="General Physician"/>
+                        <code code="59058001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="General physician"/>
                     </assignedEntity>
                 </performer>
                 <participant typeCode="LOC">
@@ -89,7 +89,7 @@
                         <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
                         <id root="db734647-fc99-424c-a864-7e3cda82e703" extension="45665"/>
                         <!-- code is required; MAY be selected from ValueSet Problem Type (LOINC) urn:oid:2.16.840.1.113883.3.88.12.3221.7.2 STATIC 2014-09-02 (CONF:1098-31229) -->
-                        <code code="404684003" displayName="Finding" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96">
+                        <code code="404684003" displayName="Clinical finding" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96">
                             <!--  of course this MAY be present 
 										<translation code="75321-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clinical finding"/>-->
                         </code>

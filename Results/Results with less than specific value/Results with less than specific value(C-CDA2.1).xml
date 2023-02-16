@@ -63,7 +63,7 @@
 						<!-- Note that if the inclusive attribute is not specified, then it defaults to true -->
 						<high value="5" unit="pg/mL" inclusive="true"/>
 					</value>
-					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 					<referenceRange>
 						<observationRange>
 							<!-- Reference ranges can be expressed as structured physical quantity interval-->
@@ -72,7 +72,7 @@
 								<high value="100" unit="pg/mL"/>
 							</value>
 							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation a specific patient value-->
-							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 						</observationRange>
 					</referenceRange>
 				</observation>

@@ -1,7 +1,7 @@
 <section>
   <templateId root="2.16.840.1.113883.10.20.21.2.45"
          extension="2014-06-09" />
-  <code code="69730-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="INSTRUCTIONS" />
+  <code code="69730-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Instructions" />
   <title>INSTRUCTIONS</title>
   <text>
     Patient may have low grade fever, mild joint pain and injection area   

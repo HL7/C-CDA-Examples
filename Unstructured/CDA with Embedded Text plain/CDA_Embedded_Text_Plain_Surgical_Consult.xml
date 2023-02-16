@@ -9,10 +9,10 @@
 	<templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2014-08-01"/>
 	<templateId root="2.16.840.1.113883.10.20.22.1.10" extension="2015-08-01"/>
 	<id extension="X451212" root="2.16.840.1.113883.19.5.999535454.1"/>
-	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34847-4" displayName="Surgery Consult Note"/>
+	<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34847-4" displayName="Surgery Consult note"/>
 	<title>Community Health and Hospitals: SURGICAL CONSULT</title>
 	<effectiveTime value="202004201918-0800"/>
-	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" />
 	<languageCode code="en-US"/>
 	<setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
 	<versionNumber value="1"/>

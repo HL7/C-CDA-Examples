@@ -8,11 +8,11 @@
     <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
     <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
     <id root="2.16.840.1.113883.3.109" extension="bf6b3a62-4293-47b4-9f14-c8829a156f4b"/>
-    <code code="34133-9" displayName="SUMMARIZATION OF EPISODE NOTE"
+    <code code="34133-9" displayName="Summary of episode note"
         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
     <title>Continuity of Care Document (C-CDA)</title>
     <effectiveTime value="20170528150200-0400"/>
-    <confidentialityCode code="N" displayName="Normal Sharing" codeSystem="2.16.840.1.113883.5.25"
+    <confidentialityCode code="N" displayName="normal" codeSystem="2.16.840.1.113883.5.25"
         codeSystemName="HL7 Confidentiality"/>
     <languageCode code="en-US"/>
     <recordTarget>

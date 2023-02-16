@@ -6,7 +6,7 @@
   <!-- The effectiveTime reflects when the current smoking status was observed. -->
   <effectiveTime value="20120910" />
   <!-- The value represents the patient's smoking status currently observed. -->
-  <value xsi:type="CD" code="8517006" displayName="Former smoker" codeSystem="2.16.840.1.113883.6.96" />
+  <value xsi:type="CD" code="8517006" displayName="Ex-smoker" codeSystem="2.16.840.1.113883.6.96" />
   <author typeCode="AUT">
     <time value="199803161030-0800" />
     <assignedAuthor>

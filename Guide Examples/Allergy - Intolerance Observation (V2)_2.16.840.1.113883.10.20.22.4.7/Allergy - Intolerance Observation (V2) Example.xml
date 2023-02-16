@@ -21,7 +21,7 @@
   <participant typeCode="CSM">
     <participantRole classCode="MANU">
       <playingEntity classCode="MMAT">
-        <code code="2670" displayName="Codeine" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" />
+        <code code="2670" displayName="codeine" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" />
       </playingEntity>
     </participantRole>
   </participant>

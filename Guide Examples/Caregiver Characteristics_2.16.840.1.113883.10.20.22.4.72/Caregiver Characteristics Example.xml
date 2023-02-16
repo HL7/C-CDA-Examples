@@ -5,12 +5,11 @@
   <statusCode code="completed"/>
   <value xsi:type="CD" code="422615001"
                  codeSystem="2.16.840.1.113883.6.96"
-                 displayName="caregiver difficulty providing 
-                              physical care"/>
+                 displayName="caregiver difficulty providing physical care"/>
   <participant typeCode="IND">
     <participantRole classCode="CAREGIVER">
       <code code="MTH" codeSystem="2.16.840.1.113883.5.111"
-                    displayName="Mother"/>
+                    displayName="mother"/>
     </participantRole>
   </participant>
 </observation>

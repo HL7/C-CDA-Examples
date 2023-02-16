@@ -2,7 +2,7 @@
   <observation classCode="OBS" moodCode="EVN">
     <templateId root="2.16.840.1.113883.10.20.22.4.69"  extension="2022-06-01"/>
     <id root="c6b5a04b-2bf4-49d1-8336-636a3813df0b"/>
-    <code code="88121-9" displayName="Hunger Vital Signs"
+    <code code="88121-9" displayName="Hunger Vital Sign [HVS]"
                                 codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
     <derivationExpr>Text description of the calculation</derivationExpr>
     <statusCode code="completed"/>

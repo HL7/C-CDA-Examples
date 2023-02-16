@@ -5,7 +5,7 @@
   <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01" />
   <!-- Globally unique identifier for the document  -->
   <id extension="TT988" root="2.16.840.1.113883.19.5.99999.1" />
-  <code code="34133-9" displayName="Summarization of Episode Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+  <code code="34133-9" displayName="Summary of episode note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
   <!-- Title of the document -->
   <title>Patient Chart Summary</title>
   <effectiveTime value="201209151030-0800" />

@@ -131,7 +131,7 @@
 					<statusCode code="completed"/>
 					<effectiveTime value="201210020908-0500"/>
 					<value xsi:type="PQ" value="140" unit="mmol/L" />
-					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 					<referenceRange>
 						<observationRange>
 							<text>135-145 mmol/L</text>
@@ -141,7 +141,7 @@
 								<high value="145" unit="mmol/L"/>
 							</value>
 							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation of specific patient result-->
-							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 						</observationRange>
 					</referenceRange>
 				</observation>
@@ -162,7 +162,7 @@
 					<statusCode code="completed"/>
 					<effectiveTime value="201210020908-0500"/>
 					<value xsi:type="PQ" value="4.2" unit="mmol/L" />
-					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 					<referenceRange>
 						<observationRange>
 							<text>3.5-5.2 mmol/L</text>
@@ -172,7 +172,7 @@
 								<high value="5.2" unit="mmol/L"/>
 							</value>
 							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation of specific patient result-->
-							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 						</observationRange>
 					</referenceRange>
 				</observation>
@@ -193,7 +193,7 @@
 					<statusCode code="completed"/>
 					<effectiveTime value="201210020908-0500"/>
 					<value xsi:type="PQ" value="98" unit="mmol/L" />
-					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 					<referenceRange>
 						<observationRange>
 							<text>95-110 mmol/L</text>
@@ -203,7 +203,7 @@
 								<high value="110" unit="mmol/L"/>
 							</value>
 							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation of specific patient result-->
-							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 						</observationRange>
 					</referenceRange>
 				</observation>
@@ -225,7 +225,7 @@
 					<statusCode code="completed"/>
 					<effectiveTime value="201210020908-0500"/>
 					<value xsi:type="PQ" value="24" unit="mmol/L" />
-					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 					<referenceRange>
 						<observationRange>
 							<text>23-29 mmol/L</text>
@@ -235,7 +235,7 @@
 								<high value="29" unit="mmol/L"/>
 							</value>
 							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation of specific patient result-->
-							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 						</observationRange>
 					</referenceRange>
 				</observation>
@@ -256,7 +256,7 @@
 					<statusCode code="completed"/>
 					<effectiveTime value="201210020908-0500"/>
 					<value xsi:type="PQ" value="10" unit="md/dL" />
-					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 					<referenceRange>
 						<observationRange>
 							<text>8-24 mg/dL</text>
@@ -266,7 +266,7 @@
 								<high value="24" unit="mg/dL"/>
 							</value>
 							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation of specific patient result-->
-							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 						</observationRange>
 					</referenceRange>
 				</observation>
@@ -287,7 +287,7 @@
 					<statusCode code="completed"/>
 					<effectiveTime value="201210020908-0500"/>
 					<value xsi:type="PQ" value="1.2" unit="mg/dL" />
-					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 					<referenceRange>
 						<observationRange>
 							<text>0.8-1.3 mg/dL</text>
@@ -297,7 +297,7 @@
 								<high value="1.3" unit="mg/dL"/>
 							</value>
 							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation of specific patient result-->
-							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 						</observationRange>
 					</referenceRange>
 				</observation>
@@ -318,7 +318,7 @@
 					<statusCode code="completed"/>
 					<effectiveTime value="201210020908-0500"/>
 					<value xsi:type="PQ" value="185" unit="mmol/L" />
-					<interpretationCode code="H" codeSystem="2.16.840.1.113883.5.83"/>
+					<interpretationCode code="H" codeSystem="2.16.840.1.113883.5.83" displayName="High" />
 					<referenceRange>
 						<observationRange>
 							<text>70-140 mg/dL</text>
@@ -328,7 +328,7 @@
 								<high value="140" unit="mg/dL"/>
 							</value>
 							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation of specific patient result-->
-							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 						</observationRange>
 					</referenceRange>
 					<referenceRange>
@@ -340,7 +340,7 @@
 								<high nullFlavor="PINF"/>
 							</value>
 							<!-- This interpretation code denotes that this reference range is for high results. This is not the interpretation of specific patient result-->
-							<interpretationCode code="H" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="H" codeSystem="2.16.840.1.113883.5.83" displayName="High" />
 						</observationRange>
 					</referenceRange>
 				</observation>
@@ -376,7 +376,7 @@
 					<statusCode code="completed"/>
 					<effectiveTime value="201210020908-0500"/>
 					<value xsi:type="PQ" value="0.01" unit="ng/mL" />
-					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 					<referenceRange>
 						<observationRange>
 							<text>0.0-0.1 ng/mL</text>
@@ -386,7 +386,7 @@
 								<high value="0.1" unit="ng/mL"/>
 							</value>
 							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation a specific patient value-->
-							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 						</observationRange>
 					</referenceRange>
 				</observation>
@@ -421,7 +421,7 @@
 					<statusCode code="completed"/>
 					<effectiveTime value="201210031008-0500"/>
 					<value xsi:type="PQ" value="0.01" unit="ng/mL" />
-					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+					<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 					<referenceRange>
 						<observationRange>
 							<text>0.0-0.1 ng/mL</text>
@@ -431,7 +431,7 @@
 								<high value="0.1" unit="ng/mL"/>
 							</value>
 							<!-- This interpretation code denotes that this reference range is for normal results. This is not the interpretation of specific patient result-->
-							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal" />
 						</observationRange>
 					</referenceRange>
 				</observation>

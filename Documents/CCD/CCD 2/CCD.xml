@@ -25,7 +25,7 @@
 	<templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2014-06-09"/>
 	<!-- Globally unique identifier for the document. Can only be [1..1] -->
 	<id extension="EHRVersion2.0" root="be84a8e4-a22e-4210-a4a6-b3c48273e84c"/>
-	<code code="34133-9" displayName="Summarization of Episode Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+	<code code="34133-9" displayName="Summary of episode note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 	<!-- Title of this document -->
 	<title>Summary of Patient Chart</title>
 	<!-- This is the time of document generation -->
@@ -142,7 +142,7 @@
 		<time value="20141015103026-0500"/>
 		<assignedAuthor>
 			<id extension="5555555555" root="2.16.840.1.113883.4.6"/>
-			<code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
+			<code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
 			<addr>
 				<streetAddressLine>1004 Healthcare Drive </streetAddressLine>
 				<city>Portland</city>
@@ -287,7 +287,7 @@
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="5555555555" root="2.16.840.1.113883.4.6"/>
-			<code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
+			<code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
 			<addr>
 				<streetAddressLine>1004 Healthcare Drive </streetAddressLine>
 				<city>Portland</city>
@@ -312,7 +312,7 @@
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="5555555555" root="2.16.840.1.113883.4.6"/>
-			<code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
+			<code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
 			<addr>
 				<streetAddressLine>1004 Healthcare Drive </streetAddressLine>
 				<city>Portland</city>
@@ -387,12 +387,12 @@
 					In this scenario, when chart summary was created -->
 			</effectiveTime>
 			<performer typeCode="PRF">
-				<functionCode code="PCP" displayName="Primary Care Provider" codeSystem="2.16.840.1.113883.5.88" codeSystemName="Participation Function">
+				<functionCode code="PCP" displayName="primary care physician" codeSystem="2.16.840.1.113883.5.88" codeSystemName="Participation Function">
 					<originalText>Primary Care Provider</originalText>
 				</functionCode>
 				<assignedEntity>
 					<id extension="5555555555" root="2.16.840.1.113883.4.6"/>
-					<code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
+					<code code="207QA0505X" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
 					<addr>
 						<streetAddressLine>1004 Healthcare Drive </streetAddressLine>
 						<city>Portland</city>
@@ -584,7 +584,7 @@
 							<!-- methodCode indicates how the procedure was performed. It cannot conflict with the code used for procedure-->
 							<methodCode code="51316009" codeSystem="2.16.840.1.113883.6.96" displayName="Laparoscopic procedure" codeSystemName="SNOMED-CT"/>
 							<!-- targetSiteCode indicates the body site addressed by procedure and must be from value set 2.16.840.1.113883.3.88.12.3221.8.9-->
-							<targetSiteCode code="181255000" codeSystem="2.16.840.1.113883.6.96" displayName="Entire Appendix" codeSystemName="SNOMED-CT"/>
+							<targetSiteCode code="181255000" codeSystem="2.16.840.1.113883.6.96" displayName="Entire appendix" codeSystemName="SNOMED-CT"/>
 							<performer>
 								<assignedEntity>
 									<id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
@@ -617,7 +617,7 @@
 						<observation classCode="OBS" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.10.20.22.4.13" extension="2014-06-09"/>
 							<id root="c03e5445-af1b-4911-a419-e2782f21448c"/>
-							<code xsi:type="CE" code="268400002" codeSystem="2.16.840.1.113883.6.96" displayName="12 lead ECG" codeSystemName="SNOMED-CT">
+							<code xsi:type="CE" code="268400002" codeSystem="2.16.840.1.113883.6.96" displayName="12 lead electrocardiogram" codeSystemName="SNOMED-CT">
 								<originalText> Electrocardiogram (12-Lead)<reference value="#ProcedureDesc2"/>
 								</originalText>
 								<translation xsi:type="CE" code="93000" codeSystem="2.16.840.1.113883.6.12" displayName="Electrocardiogram, complete" codeSystemName="CPT"/>
@@ -631,9 +631,9 @@
 							<statusCode code="completed"/>
 							<effectiveTime value="20141001103026-0500"/>
 							<!-- When choosing an observation, value records relevant findings-->
-							<value xsi:type="CD" code="251135002" codeSystem="2.16.840.1.113883.6.96" displayName="Borderline normal ECG" codeSystemName="SNOMED-CT"/>
+							<value xsi:type="CD" code="251135002" codeSystem="2.16.840.1.113883.6.96" displayName="Borderline normal electrocardiogram" codeSystemName="SNOMED-CT"/>
 							<!-- targetSiteCode indicates the body site addressed by observation and must be from value set 2.16.840.1.113883.3.88.12.3221.8.9-->
-							<targetSiteCode code="302509004" codeSystem="2.16.840.1.113883.6.96" displayName="Entire Heart" codeSystemName="SNOMED-CT"/>
+							<targetSiteCode code="302509004" codeSystem="2.16.840.1.113883.6.96" displayName="Entire heart" codeSystemName="SNOMED-CT"/>
 							<performer>
 								<assignedEntity>
 									<id root="2.16.840.1.113883.19.5.9999.456" extension="2981823"/>
@@ -669,7 +669,7 @@
 							<code xsi:type="CE" code="61310001" codeSystem="2.16.840.1.113883.6.96" displayName="Nutrition education" codeSystemName="SNOMED-CT">
 								<originalText> Individual Counseling For Medical Nutrition<reference value="#ProcedureDesc3"/>
 								</originalText>
-								<translation xsi:type="CE" code="97802" codeSystem="2.16.840.1.113883.6.12" displayName="Medical nutrition therapy; initial" codeSystemName="CPT"/>
+								<translation xsi:type="CE" code="97802" codeSystem="2.16.840.1.113883.6.12" displayName="Medical nutrition therapy; initial assessment and intervention, individual, face-to-face with the patient, each 15 minutes" codeSystemName="CPT"/>
 								<translation xsi:type="CE" code="S9470" codeSystem="2.16.840.1.113883.6.13" displayName="Nutritional counseling, diet" codeSystemName="HCPCS"/>
 								<!-- For some activities, ICD-9 and ICD-10 procedure codes may not apply (e.g. nutritional counseling). ICD-9 and ICD-10 diagnosis codes translate and shown below-->
 								<translation xsi:type="CE" code="V65.3" codeSystem="2.16.840.1.113883.6.103" displayName="Dietary surveillance and counseling" codeSystemName="ICD-9 Diagnosis"/>
@@ -810,7 +810,7 @@
 								constrained to just a time stamp, and will approximately correspond with the author/time. -->
 							<effectiveTime value="20141001103026-0500"/>
 							<!-- The value represents the patient's smoking status currently observed. -->
-							<value xsi:type="CD" code="266927001" displayName="Unknown if ever smoked" codeSystem="2.16.840.1.113883.6.96"/>
+							<value xsi:type="CD" code="266927001" displayName="Tobacco smoking consumption unknown" codeSystem="2.16.840.1.113883.6.96"/>
 							<author typeCode="AUT">
 								<time value="20141001103026-0500"/>
 								<assignedAuthor>
@@ -829,7 +829,7 @@
 					<!-- Height, Weight, Body Mass Index, Systolic Blood Pressure, Diastloic Blood Pressure, Heart Rate (Pulse)
 					 Respiratory Rate, Pulse Oximetry (spO2), Temperature, Body Surface Area, Head Circumference-->
 					<templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2014-06-09"/>
-					<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital Signs"/>
+					<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
 					<title>Vital Signs (Last Filed)</title>
 					<text>
 						<table>
@@ -876,7 +876,7 @@
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<id root="fdbd831b-5919-4f06-9467-76b07022f8e8"/>
-									<code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SYSTOLIC BLOOD PRESSURE"/>
+									<code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Systolic blood pressure"/>
 									<text>
 										<!-- This reference identifies content in human readable formatted text-->
 										<reference value="#SystolicBP_1"/>
@@ -898,7 +898,7 @@
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<id root="553f3f45-9046-4659-b3e7-5de904003550"/>
-									<code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DIASTOLIC BLOOD PRESSURE"/>
+									<code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diastolic blood pressure"/>
 									<text>
 										<reference value="#DiastolicBP_1"/>
 									</text>
@@ -917,7 +917,7 @@
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<id root="77bfe276-a1dd-4372-9072-e603905acc07"/>
-									<code code="8867-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HEART RATE"/>
+									<code code="8867-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Heart rate"/>
 									<text>
 										<reference value="#Pulse_1"/>
 									</text>
@@ -936,7 +936,7 @@
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<id root="24faa204-db62-4610-864f-cb50b650d0fa"/>
-									<code code="8310-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BODY TEMPERATURE"/>
+									<code code="8310-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body temperature"/>
 									<text>
 										<reference value="#Temp_1"/>
 									</text>
@@ -955,7 +955,7 @@
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<id root="79f25395-8ec6-488b-8c05-becc97f79995"/>
-									<code code="9279-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="RESPIRATORY RATE"/>
+									<code code="9279-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Respiratory rate"/>
 									<text>
 										<reference value="#RespRate_1"/>
 									</text>
@@ -974,7 +974,7 @@
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<id root="6d3fa9f8-6049-41bd-b0c3-b0196bb6bd37"/>
-									<code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HEIGHT"/>
+									<code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body height"/>
 									<text>
 										<reference value="#Height_1"/>
 									</text>
@@ -1012,7 +1012,7 @@
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
 									<id root="5858e765-2ffe-413f-9197-260f2c6e7aa8"/>
-									<code code="39156-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BODY MASS INDEX"/>
+									<code code="39156-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body mass index (BMI) [Ratio]"/>
 									<text>
 										<reference value="#BMI_1"/>
 									</text>
