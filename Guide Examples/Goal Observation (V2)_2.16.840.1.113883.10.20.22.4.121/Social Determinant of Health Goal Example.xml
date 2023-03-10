@@ -17,12 +17,13 @@
     </code>
     <statusCode code="active"/>
     <effectiveTime>
-      <!-- The effectiveTime/low indicates the desired "Achieve by" 
-                                date -->
+      <!-- The effectiveTime/low indicates the desired "Achieve by" date -->
       <low value="20220814"/>
       <high nullFlavor="NI"/>
-	</effectiveTime>
-    <value xsi:type="CD" code="1078229009" displayName="Food security (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-
+	  </effectiveTime>
+      <value xsi:type="CD" code="1078229009"  
+                                displayName="Food security (finding)" 
+                          codeSystem="2.16.840.1.113883.6.96" 
+                            codeSystemName="SNOMED CT"/>
   </observation>
 </entry>
