@@ -1,8 +1,8 @@
 ## Approval Status
 
-* Approval Status: Pending
+* Approval Status: Approved
 * Example Task Force: 5/5/2022
-* SDWG: TBD
+* SDWG: 3/9/2023
 
 ## Templates
 

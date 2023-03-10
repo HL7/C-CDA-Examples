@@ -2,7 +2,7 @@
 
 * Approval Status: Approved
 * Example Task Force: 2022-06-23
-* SDWG: Pending
+* SDWG: 3/9/2023
 
 ### C-CDA 2.1 Example:
 
