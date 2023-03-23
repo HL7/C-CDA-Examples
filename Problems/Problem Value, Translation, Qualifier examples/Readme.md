@@ -2,7 +2,7 @@
 
 * Approval Status: Approved
 * Example Task Force: 4/7/2022 (previously approved 6/17/2021 example available [here](https://github.com/HL7/C-CDA-Examples/blob/cae7f0c426645649f48c4749b1098b2ad84725fb/Problems/Problem%20Value%2C%20Translation%2C%20Qualifier%20examples/Problem%20List%20with%20different%20translation%20and%20qualifier%20usages(C-CDA2.1).xml))
-* SDWG: 4/7/2022 update not yet approved (SD pre-approved 4/22/2021)
+* SDWG: 3/9/2023
 
 ### C-CDA 2.1 Example:
 
