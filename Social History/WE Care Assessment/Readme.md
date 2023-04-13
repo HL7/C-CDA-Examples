@@ -1,13 +1,13 @@
 ## Approval Status 
 
-* Approval Status: 
-* Example Task Force: 
-* SDWG: 
+* Approval Status: Approved
+* Example Task Force: 4/6/2023
+* SDWG: Approved: 4/6/2023
 
 ### C-CDA 2.1 Example:
 * Social History Section 2.16.840.1.113883.10.20.22.2.17:2015-08-01
-* Assessment Scale Observation 2.16.840.1.113883.10.20.22.4.69
-* Assessment Scale Supporting Observation 2.16.840.1.113883.10.20.22.4.86
+* Assessment Scale Observation 2.16.840.1.113883.10.20.22.4.69:2022-06-01
+* Assessment Scale Supporting Observation 2.16.840.1.113883.10.20.22.4.86:2015-08-01
 
 ### Reference to full CDA sample:
 * None
