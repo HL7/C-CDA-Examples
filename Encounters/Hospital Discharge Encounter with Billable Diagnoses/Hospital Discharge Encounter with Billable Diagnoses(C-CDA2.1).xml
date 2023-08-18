@@ -43,7 +43,7 @@
 			<templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
 			<id root="248b2c03-2013-e138-07d1-001A64958C30"/>
 			<!-- CPT code should be used for ambulatory visits, but for a hosptialization, another codeSystem is more appropriate-->
-			<code code="99238" displayName="Hospital discharge day management; 30 minutes or less" codeSystem="2.16.840.1.113883.6.12">
+			<code code="99238" displayName="Hospital inpatient or observation discharge day management; 30 minutes or less on the date of the encounter" codeSystem="2.16.840.1.113883.6.12">
 				<originalText>
 					<reference value="#Enc1_Type"/>
 				</originalText>
