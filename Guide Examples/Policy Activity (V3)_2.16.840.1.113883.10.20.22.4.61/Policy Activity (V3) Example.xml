@@ -16,7 +16,8 @@
       <high nullFlavor="UNK" />
     </time>
     <assignedEntity>
-      <id root="2.16.840.1.113883.19" />
+      <!-- NAIC Example -->
+      <id root="2.16.840.1.113883.6.300" extension="999999"/> 
       <code code="PAYOR" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleCode" displayName="invoice payor" />
       <addr use="WP">
         <streetAddressLine>123 Insurance Road</streetAddressLine>
@@ -94,6 +95,7 @@
           <given>A.</given>
           <family>Everyman</family>
         </name>
+        <sdtc:birthTime value="19750501"/> 
       </playingEntity>
     </participantRole>
   </participant>
