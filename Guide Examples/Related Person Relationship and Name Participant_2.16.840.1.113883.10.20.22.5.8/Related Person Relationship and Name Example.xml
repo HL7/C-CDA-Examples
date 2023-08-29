@@ -1,0 +1,30 @@
+	
+
+<participant typeCode="IND">
+  <!-- typeCode "IND" represents indirect -->
+  <templateId root="2.16.840.1.113883.10.20.22.5.8" extension="2023-05-01"/>
+  <!-- SHALL be from INDRoleclassCodes 2.16.840.1.113883.11.20.9.33 -->
+  <associatedEntity classCode="PRS">
+    <!-- classCode "PRS" represents personal relationship -->
+    <!-- Personal And Legal Relationship Role Type Value Set -->
+    <code code="MTH" codeSystem="2.16.840.1.113883.5.111"/>
+    <!-- OPTIONAL US Realm Address -->
+    <addr use="HP">
+      <streetAddressLine>2222 Home Street</streetAddressLine>
+      <city>Beaverton</city>
+      <state>OR</state>
+      <postalCode>97867</postalCode>
+      <country>US</country>
+    </addr>
+    <!-- OPTIONAL TELECOM -->
+    <telecom value="tel:+1(555)555-2008" use="MC"/>
+    <associatedPerson>
+      <!-- REQUIRED US Realm Person Name Format -->
+      <name>
+        <given>Boris</given>
+        <given qualifier="CL">Bo</given>
+        <family>Betterhalf</family>
+      </name>
+    </associatedPerson>
+  </associatedEntity>
+</participant>

@@ -1,0 +1,15 @@
+                        
+
+
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.506" extension="2023-05-01"/>
+  <id root="c6b5a04b-2bf4-49d1-8336-636a3813df0bc"/>
+  <code code="95370-3" codeSystem="2.16.840.1.113883.6.1"
+                                codeSystemName="LOINC" displayName="Tribal affiliation"/>
+  <statusCode code="completed"/>
+  <!-- The effectiveTime reflects when the current tribal affiliation status was observed. -->
+  <effectiveTime value="20230501"/>
+  <value xsi:type="CD" code="68"
+                                displayName="Cow Creek Band of Umpqua Tribe of Indians"
+                                codeSystem="2.16.840.1.113883.5.140" codeSystemName="TribalEntityUS"/>
+</observation>

@@ -1,0 +1,85 @@
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.505"
+                                extension="2023-05-01"/>
+  <code code="89571-4" displayName="Disability Status [CUBS]"
+                                codeSystem="2.16.840.1.113883.6.1"/>
+  <statusCode code="completed"/>
+  <effectiveTime value="20221111"/>
+  <!-- From LOINC Answer Set associated with Disability Status [CUBS] -->
+  <value xsi:type="CD" code="LA29243-5"
+                                displayName="I'm Vulnerable - I sometimes or periodically have acute or chronic symptoms affecting housing, employment, social interactions, etc."
+                                codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <!-- May contain an Assessment Scale template With Assessment Scale observation containing the disability related questions   -->
+  <entryRelationship typeCode="COMP">
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+      <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
+      <code code="69856-3"
+                                        displayName="Are you deaf, or do you have serious difficulty hearing?"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <statusCode code="completed"/>
+      <value xsi:type="CD" code="LA33-6" displayName="Yes"
+                                        codeSystem="2.16.840.1.113883.6.1"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship typeCode="COMP">
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+      <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
+      <code code="69857-1"
+                                        displayName="Are you blind, or do you have serious difficulty seeing, even when wearing glasses?"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <statusCode code="completed"/>
+      <value xsi:type="CD" code="LA33-6" displayName="Yes"
+                                        codeSystem="2.16.840.1.113883.6.1"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship typeCode="COMP">
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+      <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
+      <code code="69858-9"
+                                        displayName="Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions??"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <statusCode code="completed"/>
+      <value xsi:type="CD" code="LA33-6" displayName="Yes"
+                                        codeSystem="2.16.840.1.113883.6.1"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship typeCode="COMP">
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+      <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
+      <code code="69859-7"
+                                        displayName="Do you have serious difficulty walking or climbing stairs?"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <statusCode code="completed"/>
+      <value xsi:type="CD" code="LA33-6" displayName="Yes"
+                                        codeSystem="2.16.840.1.113883.6.1"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship typeCode="COMP">
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+      <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
+      <code code="69860-5"
+                                        displayName="Do you have difficulty dressing or bathing?"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <statusCode code="completed"/>
+      <value xsi:type="CD" code="LA33-6" displayName="Yes"
+                                        codeSystem="2.16.840.1.113883.6.1"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship typeCode="COMP">
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
+      <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
+      <code code="69861-3"
+                                        displayName="Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a physician's office or shopping?"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <statusCode code="completed"/>
+      <value xsi:type="CD" code="LA33-6" displayName="Yes"
+                                        codeSystem="2.16.840.1.113883.6.1"/>
+    </observation>
+  </entryRelationship>
+</observation>
