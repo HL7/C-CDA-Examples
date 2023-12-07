@@ -1,0 +1,21 @@
+						
+
+<observation classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.504"
+								extension="2023-05-01"/>
+  <id root="f4dce790-8328-11db-9fe1-0800200c9a47"/>
+  <code code="86188-0" codeSystem="2.16.840.1.113883.6.1"
+								codeSystemName="LOINC" displayName="History of occupation industry"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <!-- SHALL low/value. The low value reflects the start date of the stated industry -->
+    <low value="2009"/>
+    <!-- MAY high/value. The high value reflects the end date of the stated industry. 
+									An absent high value means the industry is/was current at the time the document was generated -->
+    <high value="202206"/>
+  </effectiveTime>
+  <value xsi:type="CD" code="811111.001118"
+								displayName="Automotive repair and replacement shops, general [General Automotive Repair]"
+								codeSystem="2.16.840.1.114222.4.5.327"
+								codeSystemName="Occupational Data for Health (ODH)"/>
+</observation>

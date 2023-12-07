@@ -1,0 +1,17 @@
+<observation classCode="OBS" moodCode="INT">
+  <!-- [C-CDA PREG] Pregnancy Intention in Next Year -->
+  <templateId root="2.16.840.1.113883.10.20.22.4.281" extension="2023-05-01" />
+  <id root="b06f4c63-5d18-48d3-9c75-f10bba135525" />
+  <code code="86645-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+    displayName="Future pregnancy intention Reported"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="20170107"/>
+    <!-- High value should be 1 year from low date -->
+    <high value="20180107"/>
+  </effectiveTime>
+  <value xsi:type="CD" code="454401000124105" 
+    codeSystem="2.16.840.1.113883.6.96" 
+    codeSystemName="SNOMED CT"
+    displayName="No desire to become pregnant"/>
+</observation>
