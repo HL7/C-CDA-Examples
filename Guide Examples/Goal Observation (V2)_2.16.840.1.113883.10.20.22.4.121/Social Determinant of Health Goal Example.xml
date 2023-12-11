@@ -9,7 +9,7 @@
     <id extension="3241" 
                                 root="1.2.840.114350.1.13.6289.1.7.2.737179"/>
     <code code="8689-2" displayName="History of Social function" 
-                             codeSystem="2.16.840.1.113883.5.6.1" 
+                             codeSystem="2.16.840.1.113883.6.1" 
                           codeSystemName="LOINC">
       <originalText>
         <reference value="#goal1"/>
