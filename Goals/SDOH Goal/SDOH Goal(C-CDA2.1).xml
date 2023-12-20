@@ -1,0 +1,39 @@
+<section>
+    <!-- Goals Section -->
+    <templateId root="2.16.840.1.113883.10.20.22.2.60"/>
+    <code code="61146-7" displayName="Goals" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    <title>Goals Section</title>
+    <text>
+        <paragraph ID="goal1">Patient is seeking stable housing.</paragraph>
+    </text>
+    <entry>
+        <observation classCode="OBS" moodCode="GOL">
+            <templateId root="2.16.840.1.113883.10.20.22.4.121" />
+            <templateId root="2.16.840.1.113883.10.20.22.4.121" extension="2022-06-01"/>
+            <id extension="3241" 
+                root="1.2.840.114350.1.13.6289.1.7.2.737179"/>
+            <code code="8689-2" displayName="History of Social function" 
+                codeSystem="2.16.840.1.113883.6.1" 
+                codeSystemName="LOINC">
+            </code>
+            <text>
+                <reference value="#goal1"/>
+            </text>
+            <statusCode code="active"/>
+            <effectiveTime>
+                <!-- The effectiveTime/low indicates the desired "Achieve by" date -->
+                <low value="20220814"/>
+                <high nullFlavor="NI"/>
+            </effectiveTime>
+            <value xsi:type="CD" code="611211000124100"  
+                displayName="Housing security (finding)" 
+                codeSystem="2.16.840.1.113883.6.96" 
+                codeSystemName="SNOMED CT">
+                <translation code="Z59.1" codeSystem="2.16.840.1.113883.6.90"
+                    codeSystemName="ICD-10-CM"
+                    displayName="Inadequate Housing"/>
+                
+            </value>
+        </observation>
+    </entry>
+</section>
