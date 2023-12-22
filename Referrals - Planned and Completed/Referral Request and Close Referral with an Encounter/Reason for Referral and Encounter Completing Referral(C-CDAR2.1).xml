@@ -134,7 +134,9 @@ S                                    <id root="706d2c19-fb67-49e0-8344-e74f357c3
                     <entryRelationship typeCode="SUBJ" inversionInd="true">
                         <observation classCode="OBS" moodCode="EVN">
                             <!-- Find a code for referral status? -->
-                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <!-- SNOMED Concept is classified as Finding - Should be Observable Entity-->
+                            <code code="309012006" displayName="Referral Status"
+                                codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96">
                             <statusCode code="completed" />
                             <effectiveTime value="20180625"/>
                             <!-- Customer Specified Referral status -->
