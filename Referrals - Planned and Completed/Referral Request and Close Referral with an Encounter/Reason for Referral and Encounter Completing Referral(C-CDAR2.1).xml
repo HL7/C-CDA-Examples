@@ -131,7 +131,16 @@ S                                    <id root="706d2c19-fb67-49e0-8344-e74f357c3
                                     - Can repeat effectiveTime and value here to match Problem Observation, but not required
                                 </observation>
                                 </entryRelationship> -->
-                    
+                    <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <!-- Find a code for referral status? -->
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <statusCode code="completed" />
+                            <effectiveTime value="20180625"/>
+                            <!-- Customer Specified Referral status -->
+                            <value xsi:type="CD" code="Eligible" displayName="Eligible" codeSystem="2.16.840.1.113883.17.9509.7"/>
+                          </observation>
+                    </entryRelationship>
                 </act>
             </entry>
         </section>
