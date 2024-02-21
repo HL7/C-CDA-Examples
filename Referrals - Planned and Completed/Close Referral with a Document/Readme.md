@@ -8,7 +8,7 @@
 
 * Consultation Note Document: 2.16.840.1.113883.10.20.22.1.4:2015-08-1
 
-## Validation location: ##
+## Validation location:
 
 * Lantana Validator
 
