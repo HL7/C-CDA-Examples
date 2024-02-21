@@ -24,11 +24,11 @@
 
 ## Custodian
 
-John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
+* John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
 
 ## Keywords
 
-Closing Loop, externalAct, Interventions, inFulfillmentOf
+* Closing Loop, externalAct, Interventions, inFulfillmentOf
 
 ### Permalink
 
