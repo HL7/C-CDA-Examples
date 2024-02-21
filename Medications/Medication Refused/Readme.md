@@ -12,9 +12,8 @@
 
 ## Validation location:
 
-TBD
-
-Reference to full CDA sample: TBD
+* TBD
+* Reference to full CDA sample: TBD
 
 ## Comments
 
@@ -29,6 +28,6 @@ Reference to full CDA sample: TBD
 * medication, negation
 
 
-### Permalink 
+### Permalink
 
 * [http://cdasearch.hl7.org/examples/view/7057bf1a-48d4-4038-84e6-ea549e27f4d5](http://cdasearch.hl7.org/examples/view/7057bf1a-48d4-4038-84e6-ea549e27f4d5)
