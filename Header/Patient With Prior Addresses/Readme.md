@@ -22,8 +22,7 @@
 
 
 
-### Validation 
-* location
+### Validation location
 
 * https://site.healthit.gov/sandbox-ccda/ccda-validator
 
@@ -45,8 +44,7 @@
 
 ### Keywords
 
-* 
-Demographics
+* Demographics
 
 
 ### Permalink 
