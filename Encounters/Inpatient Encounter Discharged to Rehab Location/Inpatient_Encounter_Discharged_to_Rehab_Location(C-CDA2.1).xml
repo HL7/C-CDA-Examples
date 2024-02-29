@@ -36,7 +36,7 @@
                 <templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
                 <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
                 <id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
-                <code code="99221" displayName="Initial hospital care, per day, for the evaluation and management of a patient, which requires these 3 key components: A detailed or comprehensive history; A detailed or comprehensive examination; and Medical decision making that is straightforward or of low complexity. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the problem(s) requiring admission are of low severity. Typically, 30 minutes are spent at the bedside and on the patient's hospital floor or unit." codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12">
+                <code code="99221" displayName="Initial hospital inpatient or observation care, per day, for the evaluation and management of a patient, which requires a medically appropriate history and/or examination and straightforward or low level medical decision making. When using total time on the date of the encounter for code selection, 40 minutes must be met or exceeded." codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12">
                     <originalText>
                         <reference value="#Encounter1_Type"/>
                     </originalText>
