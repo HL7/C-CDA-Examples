@@ -134,7 +134,7 @@
           <given>A.</given>
           <family>Everyman</family>
         </name>
-		<sdtc:birthTime date="20201103">
+        <sdtc:birthTime value="19750501"/> 
       </playingEntity>
     </participantRole>
   </participant>

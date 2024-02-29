@@ -1,0 +1,21 @@
+<!--  Contained in a Procedure that was not performed (example) -->
+<entryRelationship typeCode="RSON">
+  <!-- ** Reason (V4) ** -->
+  <observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.113883.10.20.24.3.88" extension="2023-05-01" />
+    <id root="5750a5bb-6a01-4b99-9b1c-cda56b1dce0c" />
+    <code code="77301-0" 
+                   codeSystem="2.16.840.1.113883.6.1" 
+                   displayName="Reason care action performed or not"  
+                   codeSystemName="LOINC" />
+    <statusCode code="completed" />
+    <effectiveTime>
+      <low value="20230926"/>
+    </effectiveTime>
+    <value xsi:type="CD" 
+               code="57054005" 
+               codeSystem="2.16.840.1.113883.6.96" 
+               codeSystemName="SNOMED CT"
+               displayName="Acute myocardial infarction" />
+  </observation>
+</entryRelationship>

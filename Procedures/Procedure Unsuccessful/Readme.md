@@ -11,9 +11,7 @@
 
 ## Validation location:
 
-TBD
-
-Reference to full CDA sample: N/A
+* TBD - Reference to full CDA sample: N/A
 
 ## Comments
 
@@ -28,6 +26,6 @@ Reference to full CDA sample: N/A
 * procedure, unsuccessful
 
 
-### Permalink 
+### Permalink
 
 * TBD

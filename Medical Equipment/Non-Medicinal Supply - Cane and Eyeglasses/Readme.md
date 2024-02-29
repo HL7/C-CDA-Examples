@@ -14,7 +14,7 @@
 * SITE
 
 ### Comments
-* This example demonstrates how to represent equipment supplied to or used by a 
+* This example demonstrates how to represent equipment supplied to or used by a
 patient such as wheelchairs, canes, walkers, hearing aids, eye glasses.
 
 ### Certification
@@ -26,4 +26,4 @@ patient such as wheelchairs, canes, walkers, hearing aids, eye glasses.
 ### Keywords
 * Non-Medicinal Devices; Medical Devices
 
-Permalink
+### Permalink

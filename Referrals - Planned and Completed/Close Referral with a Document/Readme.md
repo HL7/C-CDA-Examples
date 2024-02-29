@@ -1,14 +1,14 @@
-### Approval Status 
+### Approval Status
 
-* Approval Status: Approved 
+* Approval Status: Approved
 * Example Task Force: 10/16/2018
 * SDWG: 12/6/2018
 
-## Templates ##
+## Templates
 
 * Consultation Note Document: 2.16.840.1.113883.10.20.22.1.4:2015-08-1
 
-## Validation location: ##
+## Validation location:
 
 * Lantana Validator
 
@@ -20,12 +20,12 @@
 
 ## Custodian
 
-John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
+* John D'Amore jdamore@diameterhealth.com (GitHub: jddamore)
 
 ## Keywords
 
-Closing Loop, externalAct, Interventions, inFulfillmentOf
+* Closing Loop, externalAct, Interventions, inFulfillmentOf
 
-### Permalink 
+### Permalink
 
 * [http://cdasearch.hl7.org/examples/view/af3a01e2-21a1-42e7-af70-72c30a4170a1](http://cdasearch.hl7.org/examples/view/af3a01e2-21a1-42e7-af70-72c30a4170a1)

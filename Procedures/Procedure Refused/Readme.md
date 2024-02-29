@@ -12,9 +12,7 @@
 
 ## Validation location:
 
-TBD
-
-Reference to full CDA sample: N/A
+* TBD - Reference to full CDA sample: N/A
 
 ## Comments
 
@@ -29,6 +27,6 @@ Reference to full CDA sample: N/A
 * procedure, negation
 
 
-### Permalink 
+### Permalink
 
 * [http://cdasearch.hl7.org/examples/view/a60f4f25-c82c-4306-88ae-e0760e7315fc](http://cdasearch.hl7.org/examples/view/a60f4f25-c82c-4306-88ae-e0760e7315fc)
