@@ -9,7 +9,7 @@
     </text>
     <entry>
         <observation classCode="OBS" moodCode="GOL">
-            <templateId root="2.16.840.1.113883.10.20.22.4.121"/>
+        <!--    <templateId root="2.16.840.1.113883.10.20.22.4.121"/> Validator complains when I include both-->
             <templateId root="2.16.840.1.113883.10.20.22.4.121" extension="2022-06-01"/>
             <id extension="3241" root="1.2.840.114350.1.13.6289.1.7.2.737179"/>
             <code code="8689-2" displayName="History of Social function"
@@ -57,6 +57,20 @@
                     </assignedPerson>
                 </assignedAuthor>
             </author>
+            <!-- Embedded Reason template with ICD -->
+            <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                    <!-- Reason (V2) -->
+                    <templateId root="2.16.840.1.113883.10.20.24.3.88" extension="2014-12-01" />
+                    <id root="3fbadea2-c481-4784-b972-3a571aae31c7" />
+                    <code code="77301-0" codeSystem="2.16.840.1.113883.6.1" displayName="Reason care action performed or not" codeSystemName="LOINC" />
+                    <statusCode code="completed" />
+                    <effectiveTime>
+                        <low value="20220813"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="Z59.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD-10-CM" displayName="Inadequate Housing"/> 
+                </observation>
+            </entryRelationship>
         </observation>
     </entry>
 </section>
