@@ -29,6 +29,7 @@
                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
             </value>
             <!-- To link to an ICD concept, it's recommended to include an entryRelationship RSON to the Problem or Health concern-->
+            <!-- Alternatively the Reason template can be used -->
             <!-- If the author is the recordTarget (patient), this is a patient goal. If the author is a provider, 
                 this is a provider goal. If both patient and provider are authors, this is a negotiated goal. 
                 If no author is present, it is assumed the document or section author(s) is the author of this goal. -->
@@ -61,7 +62,7 @@
             <entryRelationship typeCode="RSON">
                 <observation classCode="OBS" moodCode="EVN">
                     <!-- Reason (V2) -->
-                    <templateId root="2.16.840.1.113883.10.20.24.3.88" extension="2014-12-01" />
+                    <templateId root="2.16.840.1.113883.10.20.24.3.88" extension="2023-05-01" />
                     <id root="3fbadea2-c481-4784-b972-3a571aae31c7" />
                     <code code="77301-0" codeSystem="2.16.840.1.113883.6.1" displayName="Reason care action performed or not" codeSystemName="LOINC" />
                     <statusCode code="completed" />
