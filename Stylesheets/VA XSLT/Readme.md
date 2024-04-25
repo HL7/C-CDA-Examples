@@ -14,7 +14,7 @@
 
 ### Comments
 
-* This is an example XSLT developed by the VA to provide easy access to information in a CDA document. HL7 posts here with NO WARRANTY. A system incorporating SHALL do a security and user review before releasing. The zip can be downloaded [here](https://github.com/hl7/c-cDA-Examples/Stylesheets/VA%20XSLT)
+* This is an example XSLT developed by the VA to provide easy access to information in a CDA document. HL7 posts here with NO WARRANTY. A system incorporating SHALL do a security and user review before releasing. The zip can be downloaded [here](https://github.com/HL7/C-CDA-Examples/tree/master/Stylesheets/VA%20XSLT)
 
 ### Custodian
 
