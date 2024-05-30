@@ -40,7 +40,7 @@
 			<statusCode code="active"/>
 			<effectiveTime>
 				<!-- This equates to the time the concern was authored in the patient's chart. This may frequently be an EHR timestamp-->
-				<low value="20140302124536-0500"/>
+				<low value="2014032124536-0500"/>
 			</effectiveTime>
 			<entryRelationship typeCode="SUBJ">
 				<!-- SDOH Problem -->
@@ -61,7 +61,7 @@
 
 					<statusCode code="completed"/>
 					<effectiveTime>
-						<low value="20140302124536-0500"/>
+						<low value="2014032124536-0500"/>
 					</effectiveTime>
 					<value xsi:type="CD" code="445281000124101"
 						displayName="Nutrition impaired due to limited access to healthful foods (finding)"
