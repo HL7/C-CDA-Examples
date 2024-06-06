@@ -1,5 +1,5 @@
 <section>
-  <!-- Payers section IGpg352 -->
+  <!-- https://confluence.hl7.org/display/SD/Health+Insurance+Information -->
   <templateId root="2.16.840.1.113883.10.20.22.2.18" extension="2015-08-01"></templateId>
   <templateId root="2.16.840.1.113883.10.20.22.2.18"></templateId>
   <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payer"></code>
@@ -8,24 +8,24 @@
     <table>
       <thead>
         <tr>
-          <th>Payer</th>
-          <th>Policy Id</th>
-          <th>Coverage Id</th>
-          <th>Subscriber's Name</th>
-          <th>Subscriber Id</th>
-          <th>Effective Date</th>
-          <th>Expiration Date</th>
+          <th>Payer / ID</th>
+          <th>Group ID</th>
+          <th>Plan Type / ID </th>
+          <th>Coverage Period</th>
+          <th>Member's Name / ID</th>
+          <th>Subscriber's Name / ID</th>
+          <th>Guarantor</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td ID="payer-1">Good Health PPO OR XYZ Insurance</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td ID="payer-1">Good Health Insurance (999999)</td>
+          <td>XYZ Insurance (330221)</td>
+          <td>PPO (131)</td>
+          <td>unknown</td>
+          <td>Bobby A. Everyman</td>
+          <td>Robert B. Everyman</td>
+          <td>Adam Franke Everyman</td>
         </tr>
       </tbody>
     </table>
