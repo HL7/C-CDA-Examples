@@ -24,7 +24,8 @@
 
 ### Comments
 
-* This example illustrates how to structure an Active SDOH problem with a translation to ICD10
+* This example illustrates how to structure an Active SDOH problem with a translation to ICD10.
+* Some systems may document active SDOH issues in the Social History Section or the Health Concerns Section. Gravity and other industry initiatives may provide additional guidance on best practices.
 
 ### Custodian
 
