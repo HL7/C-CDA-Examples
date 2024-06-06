@@ -52,9 +52,6 @@
 					<id root="093A5380-00CE-11E6-B4C5-0050568B000B" extension="1.1"/>
 					<code code="55607006" codeSystem="2.16.840.1.113883.6.96"
 						codeSystemName="SNOMED CT" displayName="Problem">
-						<originalText>
-							<reference value="#ProblemObs_1_PT1"/>
-						</originalText>
 						<translation code="75326-9" codeSystem="2.16.840.1.113883.6.1"
 							codeSystemName="LOINC" displayName="Problem"/>
 					</code>
