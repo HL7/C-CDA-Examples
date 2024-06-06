@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+	<templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+	<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" displayName="Problem List"/>
+	<title>Problem List</title>
+	<text>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Dates</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ID="ProblemObs1">
+					<td ID="Problem1">Nutrition impaired due to limited access to healthful
+						foods</td>
+					<td>
+						<content>Onset: March 21 2014</content>
+					</td>
+					<td>Active</td>
+				</tr>
+			</tbody>
+		</table>
+	</text>
+	<entry>
+		<act classCode="ACT" moodCode="EVN">
+			<templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+			<templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+			<id root="102ca2e9-884c-4523-a2b4-1b6c3469c397"/>
+			<code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+			<!-- Since this is an active problem, the concern status is active. -->
+			<!-- While clinicians can track resolved problems, generally active problems will have active concern status and resolved concerns will be completed -->
+			<text>
+				<reference value="#ProblemObs1"/>
+			</text>
+			<statusCode code="active"/>
+			<effectiveTime>
+				<!-- This equates to the time the concern was authored in the patient's chart. This may frequently be an EHR timestamp-->
+				<low value="2014032124536-0500"/>
+			</effectiveTime>
+			<entryRelationship typeCode="SUBJ">
+				<!-- SDOH Problem -->
+				<observation classCode="OBS" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+					<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+					<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2022-06-01"/>
+					<id extension="68993" root="1.2.840.114350.1.13.6289.1.7.2.768076"/>
+					<id root="093A5380-00CE-11E6-B4C5-0050568B000B" extension="1.1"/>
+					<code code="55607006" codeSystem="2.16.840.1.113883.6.96"
+						codeSystemName="SNOMED CT" displayName="Problem">
+						<translation code="75326-9" codeSystem="2.16.840.1.113883.6.1"
+							codeSystemName="LOINC" displayName="Problem"/>
+					</code>
+
+					<statusCode code="completed"/>
+					<effectiveTime>
+						<low value="2014032124536-0500"/>
+					</effectiveTime>
+					<value xsi:type="CD" code="445281000124101"
+						displayName="Nutrition impaired due to limited access to healthful foods (finding)"
+						codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+						<originalText>
+							<reference value="#Problem1"/>
+						</originalText>
+						<translation code="Z59.48" codeSystem="2.16.840.1.113883.6.90"
+							codeSystemName="ICD-10-CM"
+							displayName="Other specified lack of adequate food"/>
+					</value>
+					<!-- Optional Author Element-->
+					<author>
+						<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+						<time value="20140302124536-0500"/>
+						<assignedAuthor>
+							<id extension="666545666" root="2.16.840.1.113883.4.6"/>
+							<code code="363LA2100X" codeSystem="2.16.840.1.113883.6.101"
+								codeSystemName="NUCC"
+								displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Acute Care"/>
+							<addr>
+								<streetAddressLine>6666 StreetName St.</streetAddressLine>
+								<city>Silver Spring</city>
+								<state>MD</state>
+								<postalCode>20901</postalCode>
+								<country>US</country>
+							</addr>
+							<telecom value="tel:+1(301)666-6666" use="WP"/>
+							<assignedPerson>
+								<name>
+									<given>Jenheartly</given>
+									<family>Sixer</family>
+									<suffix>NP</suffix>
+								</name>
+							</assignedPerson>
+							<!-- Optional Organization Element-->
+							<representedOrganization>
+								<id root="2.16.840.1.113883.19.5"/>
+								<name>Neighborhood Physicians Practice</name>
+							</representedOrganization>
+						</assignedAuthor>
+					</author>
+				</observation>
+			</entryRelationship>
+		</act>
+	</entry>
+</section>
