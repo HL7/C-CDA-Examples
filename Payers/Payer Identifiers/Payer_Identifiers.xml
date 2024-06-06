@@ -117,7 +117,7 @@
           </performer>
           <!-- Covered party -->
           <participant typeCode="COV">
-            <templateId root="2.16.840.1.113883.10.20.22.4.89.2" />
+            <templateId root="2.16.840.1.113883.10.20.22.4.89" />
             <time>
               <low nullFlavor="UNK" />
               <high nullFlavor="UNK" />
@@ -146,7 +146,7 @@
           </participant>
           <!-- Policy holder - only present if the holder/subscriber is different from the member, this should not be present if Covered Party role is 'SELF' -->
           <participant typeCode="HLD">
-            <templateId root="2.16.840.1.113883.10.20.22.4.90.2" />
+            <templateId root="2.16.840.1.113883.10.20.22.4.90" />
             <participantRole>
               <!-- Subscriber Identifier - root represents the payer's OID for subscriber IDs, extension represents the actual subscriber ID -->
               <!-- On many insurance plans, the Member ID # is the same subscriber and dependents -->
