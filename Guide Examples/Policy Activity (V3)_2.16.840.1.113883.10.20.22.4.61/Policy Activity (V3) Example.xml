@@ -1,11 +1,16 @@
-<act classCode="ACT" moodCode="EVN">
+  <act classCode="ACT" moodCode="EVN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
   <templateId root="2.16.840.1.113883.10.20.22.4.61" extension="2015-08-01" />
-  <id root="3e676a50-7aac-11db-9fe1-0800200c9a66" />
-  <code code="12" displayName="Medicare Secondary Working Aged Beneficiary or Spouse with Employer Group Health Plan" 
+  <!-- Group Identifier - root represents the payer's OID for their group numbers, i.e. Blue Cross, United, etc.; extension represents the actual group identifier -->
+  <!-- From a practical standpoint, the id records here are not "usable" for defining the id's of the act, discuss with Benjamin Flessner? -->
+  <id assigningAuthorityName="XYZ Insurance" root="1.1.1.3.4.5" extension="320221" /> <!-- This is the Group # -->
+  
+  <!-- https://www.tn.gov/content/dam/tn/health/documents/DOR_Manual_2017_P1_1.pdf -->
+  <code code="PR" displayName="Preferred Provider Organization (PPO)" 
              codeSystemName="Insurance Type Code (x12N-1336)"
-             codeSystem="2.16.840.1.113883.6.255.1336">
-    <translation code="2" displayName="MEDICAID" 
-                                    codeSystem="2.16.840.1.113883.3.221.5" codeSystemName="Source of Payment Typology (PHDSC)" />
+             codeSystem="2.16.840.1.113883.3.88.12.3221.5.2">
+    <!-- Fixed codeSystem below -->
+    <translation code="3712" displayName="PPO" 
+      codeSystem="2.16.840.1.113883.3.221.5" codeSystemName="Source of Payment Typology (PHDSC)" />
   </code>
   <statusCode code="completed" />
   <!-- Insurance company information -->
@@ -16,9 +21,10 @@
       <high nullFlavor="UNK" />
     </time>
     <assignedEntity>
-      <!-- NAIC Example -->
-      <id root="2.16.840.1.113883.6.300" extension="999999"/> 
-      <code code="PAYOR" codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7 RoleCode" displayName="invoice payor" />
+      <!-- Payor Identifier - The root is a KNOWN root/unique identifier to an openly available assigning authority, such as National Association of Insurance Commissioners (NAIC) (2.16.840.1.113883.6.300), and the extension identifiers the payer within that authority -->
+      <id assigningAuthorityName="National Association of Insurance Commissioners (NAIC)" root="2.16.840.1.113883.6.300" extension="999999"/>
+      <!-- Removed HL7 from fix of RoleCode to RoleClass -->
+      <code code="PAYOR" codeSystem="2.16.840.1.113883.5.110" codeSystemName="RoleClass" displayName="invoice payor" />
       <addr use="WP">
         <streetAddressLine>123 Insurance Road</streetAddressLine>
         <city>Blue Bell</city>
@@ -77,9 +83,9 @@
       <high nullFlavor="UNK" />
     </time>
     <participantRole classCode="PAT">
-      <!-- Health plan ID for patient. -->
-      <id root="1.1.1.1.1.1.1.1.14" extension="1138345" />
-      <code code="SELF" codeSystem="2.16.840.1.113883.5.111" displayName="self" />
+      <!-- Member Identifier - root represents the payer's OID for member IDs, extension represents the actual member ID -->
+      <id assigningAuthorityName="XYZ Insurance Covered Member ID #" root="1.1.1.1.1.1.1.1.14" extension="22494935-3" />
+      <code code="CHILD" codeSystem="2.16.840.1.113883.5.111" displayName="child" />
       <addr use="HP">
         <streetAddressLine>17 Daws Rd.</streetAddressLine>
         <city>Blue Bell</city>
@@ -89,9 +95,8 @@
       </addr>
       <playingEntity>
         <name>
-          <!-- Name is needed if different than name on health plan. -->
-          <prefix>Mr.</prefix>
-          <given>Frank</given>
+          <!-- Name is needed if different than the name recorded on the health plan.  Birth Date is required if you include this. -->
+          <given>Bobby</given>
           <given>A.</given>
           <family>Everyman</family>
         </name>
@@ -99,11 +104,13 @@
       </playingEntity>
     </participantRole>
   </participant>
-  <!-- Policy holder -->
+  <!-- Policy holder - only present if the holder/subscriber is different from the member, this should not be present if Covered Party role is 'SELF' -->
   <participant typeCode="HLD">
     <templateId root="2.16.840.1.113883.10.20.22.4.90.2" />
     <participantRole>
-      <id extension="1138345" root="2.16.840.1.113883.19" />
+      <!-- Subscriber Identifier - root represents the payer's OID for subscriber IDs, extension represents the actual subscriber ID -->
+      <!-- On many insurance plans, the Member ID # is the same subscriber and dependents -->
+      <id assigningAuthorityName="XYZ Insurance Subscriber ID #" root="1.1.1.1.1.1.1.1.14" extension="22494935-1" />
       <addr use="HP">
         <streetAddressLine>17 Daws Rd.</streetAddressLine>
         <city>Blue Bell</city>
@@ -111,14 +118,22 @@
         <postalCode>02368</postalCode>
         <country>US</country>
       </addr>
+      <playingEntity>
+        <name>
+          <!-- Name is needed if different than the name recorded on the health plan. -->
+          <given>Robert</given>
+          <given>B.</given>
+          <family>Everyman</family>
+        </name>
+      </playingEntity>	  
     </participantRole>
   </participant>
+  <!-- typeCode REFR and moodCode DEF mean this is the plan definition  -->
   <entryRelationship typeCode="REFR">
-    <act classCode="ACT" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.1.19" />
-             . . .
-        
-        
+    <act classCode="ACT" moodCode="DEF">
+      <id assigningAuthorityName="XYZ Insurance" root="2.9.3.4.195" extension="131" /> <!-- This is the Plan id -->
+      <code nullFlavor="NA"/>
+      <text>Good Health PPO</text>        
     </act>
   </entryRelationship>
 </act>
