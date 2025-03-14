@@ -1,0 +1,51 @@
+<component>
+    <!-- here is the optional Plan of Treatment -->
+    <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+        <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+        <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+            displayName="Plan of care note"/>
+        <title>Plan of Treatment</title>
+        <!-- one Planned Procedure in the human readable text and as a discrete entry -->
+        <text>
+            <!-- this section may contain many different Planned items, so we use the table caption to help identify each -->
+            <table>
+                <caption>Planned Procedure</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ID="Procedure1">
+                        <td ID="Procedure1name">Nutrition education</td>
+                        <td>April 13, 2024</td>
+                        <td/>
+                    </tr>
+                </tbody>
+            </table>
+        </text>
+        <!-- a planned procedure entry -->
+        <entry>
+            <procedure classCode="PROC" moodCode="RQO">
+                <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
+                <templateId root="2.16.840.1.113883.10.20.22.4.41" extension="2014-06-09"/>
+                <templateId root="2.16.840.1.113883.10.20.22.4.41" extension="2022-06-01"/>
+                <id extension="2448483543" root="1.2.840.114350.1.13.5552.1.7.2.798268"/>
+                <!-- Systems may indicate concept is from SDOH value set: 2.16.840.1.113762.1.4.1196.790 by using sdtc:valueSet -->
+                <code code="61310001" codeSystem="2.16.840.1.113883.6.96" displayName="Nutrition education (procedure)" codeSystemName="SNOMED-CT">
+                    <originalText>
+                        <reference value="#Procedure1name"/>
+                    </originalText>
+                </code>
+                <text>
+                    <reference value="#Procedure1"/>
+                </text>
+                <statusCode code="active"/>
+                <effectiveTime value="20240413"/>
+            </procedure>
+        </entry>
+    </section>
+</component>
