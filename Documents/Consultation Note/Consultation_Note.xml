@@ -689,7 +689,7 @@ FUNCTIONAL STATUS
 									<id root="c6b5a04b-2bf4-49d1-8336-636a3813df0a"/>
 									<code code="46008-9 " displayName="Bathing" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="200130311"/>
+									<effectiveTime value="200103051"/>
 									<value xsi:type="CD" code="371153006" displayName="Independent" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
 									<author typeCode="AUT">
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
@@ -933,7 +933,7 @@ MENTAL STATUS SECTION (NEW)
 							<value xsi:type="CD" code="11163003" displayName="Intact" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-								<time value="200130311"/>
+								<time value="200103051"/>
 								<assignedAuthor>
 									<id extension="KP00017" root="2.16.840.1.113883.19.5"/>
 									<addr>
@@ -965,7 +965,7 @@ MENTAL STATUS SECTION (NEW)
 							<value xsi:type="CD" code="61372001" displayName="Aggressive behavior" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
 							<author>
 								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-								<time value="200130311"/>
+								<time value="200103051"/>
 								<assignedAuthor>
 									<id extension="KP00017" root="2.16.840.1.113883.19.5"/>
 									<addr>
@@ -1004,7 +1004,7 @@ MENTAL STATUS SECTION (NEW)
 									<value xsi:type="CD" code="286569004" displayName="Difficulty understanding own emotions" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
 									<author>
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-										<time value="200130311"/>
+										<time value="200103051"/>
 										<assignedAuthor>
 											<id extension="KP00017" root="2.16.840.1.113883.19.5"/>
 											<addr>
@@ -1036,7 +1036,7 @@ MENTAL STATUS SECTION (NEW)
 									<value xsi:type="CD" code="288760009" displayName="Difficulty communicating thoughts" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"> </value>
 									<author>
 										<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
-										<time value="200130311"/>
+										<time value="200103051"/>
 										<assignedAuthor>
 											<id extension="KP00017" root="2.16.840.1.113883.19.5"/>
 											<addr>
