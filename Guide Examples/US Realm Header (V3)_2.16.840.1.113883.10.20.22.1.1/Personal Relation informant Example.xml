@@ -1,7 +1,7 @@
 <informant>
   <relatedEntity classCode="PRS">
     <!-- classCode "PRS" represents a person with personal relationship with the patient -->
-    <code code="SPS" displayName="SPOUSE" codeSystem="2.16.840.1.113883.1.11.19563" codeSystemName="Personal Relationship Role Type Value Set" />
+    <code code="SPS" displayName="SPOUSE" codeSystem="2.16.840.1.113883.5.111" codeSystemName="Role Code"/>
     <relatedPerson>
       <name>
         <given>Boris</given>
